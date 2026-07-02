@@ -1,0 +1,4009 @@
+{
+  "generatedAt": "2026-07-01T23:15:18.977Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/bestiary/",
+  "safety": "Controlled index scan only. Nothing is imported into ReinaDataService.",
+  "fetch": {
+    "statusCode": 200,
+    "tlsMode": "certificate-verification-disabled",
+    "contentLength": 95489
+  },
+  "totalCreatures": 799,
+  "creatures": [
+    {
+      "name": "Abyssal Calamary",
+      "lookupKey": "abyssal calamary",
+      "url": "https://tibiavault.com/#bestiary/Abyssal%20Calamary"
+    },
+    {
+      "name": "Acid Blob",
+      "lookupKey": "acid blob",
+      "url": "https://tibiavault.com/#bestiary/Acid%20Blob"
+    },
+    {
+      "name": "Acolyte of Darkness",
+      "lookupKey": "acolyte of darkness",
+      "url": "https://tibiavault.com/#bestiary/Acolyte%20of%20Darkness"
+    },
+    {
+      "name": "Acolyte of the Cult",
+      "lookupKey": "acolyte of the cult",
+      "url": "https://tibiavault.com/#bestiary/Acolyte%20of%20the%20Cult"
+    },
+    {
+      "name": "Adept of the Cult",
+      "lookupKey": "adept of the cult",
+      "url": "https://tibiavault.com/#bestiary/Adept%20of%20the%20Cult"
+    },
+    {
+      "name": "Adult Goanna",
+      "lookupKey": "adult goanna",
+      "url": "https://tibiavault.com/#bestiary/Adult%20Goanna"
+    },
+    {
+      "name": "Adventurer",
+      "lookupKey": "adventurer",
+      "url": "https://tibiavault.com/#bestiary/Adventurer"
+    },
+    {
+      "name": "Afflicted Strider",
+      "lookupKey": "afflicted strider",
+      "url": "https://tibiavault.com/#bestiary/Afflicted%20Strider"
+    },
+    {
+      "name": "Agrestic Chicken",
+      "lookupKey": "agrestic chicken",
+      "url": "https://tibiavault.com/#bestiary/Agrestic%20Chicken"
+    },
+    {
+      "name": "Albino Dragon",
+      "lookupKey": "albino dragon",
+      "url": "https://tibiavault.com/#bestiary/Albino%20Dragon"
+    },
+    {
+      "name": "Amazon",
+      "lookupKey": "amazon",
+      "url": "https://tibiavault.com/#bestiary/Amazon"
+    },
+    {
+      "name": "Ancient Scarab",
+      "lookupKey": "ancient scarab",
+      "url": "https://tibiavault.com/#bestiary/Ancient%20Scarab"
+    },
+    {
+      "name": "Angry Sugar Fairy",
+      "lookupKey": "angry sugar fairy",
+      "url": "https://tibiavault.com/#bestiary/Angry%20Sugar%20Fairy"
+    },
+    {
+      "name": "Animated Feather",
+      "lookupKey": "animated feather",
+      "url": "https://tibiavault.com/#bestiary/Animated%20Feather"
+    },
+    {
+      "name": "Animated Snowman",
+      "lookupKey": "animated snowman",
+      "url": "https://tibiavault.com/#bestiary/Animated%20Snowman"
+    },
+    {
+      "name": "Arachnophobica",
+      "lookupKey": "arachnophobica",
+      "url": "https://tibiavault.com/#bestiary/Arachnophobica"
+    },
+    {
+      "name": "Arctic Faun",
+      "lookupKey": "arctic faun",
+      "url": "https://tibiavault.com/#bestiary/Arctic%20Faun"
+    },
+    {
+      "name": "Armadile",
+      "lookupKey": "armadile",
+      "url": "https://tibiavault.com/#bestiary/Armadile"
+    },
+    {
+      "name": "Askarak Demon",
+      "lookupKey": "askarak demon",
+      "url": "https://tibiavault.com/#bestiary/Askarak%20Demon"
+    },
+    {
+      "name": "Askarak Lord",
+      "lookupKey": "askarak lord",
+      "url": "https://tibiavault.com/#bestiary/Askarak%20Lord"
+    },
+    {
+      "name": "Askarak Prince",
+      "lookupKey": "askarak prince",
+      "url": "https://tibiavault.com/#bestiary/Askarak%20Prince"
+    },
+    {
+      "name": "Assassin",
+      "lookupKey": "assassin",
+      "url": "https://tibiavault.com/#bestiary/Assassin"
+    },
+    {
+      "name": "Azure Frog",
+      "lookupKey": "azure frog",
+      "url": "https://tibiavault.com/#bestiary/Azure%20Frog"
+    },
+    {
+      "name": "Badger",
+      "lookupKey": "badger",
+      "url": "https://tibiavault.com/#bestiary/Badger"
+    },
+    {
+      "name": "Baleful Bunny",
+      "lookupKey": "baleful bunny",
+      "url": "https://tibiavault.com/#bestiary/Baleful%20Bunny"
+    },
+    {
+      "name": "Bandit",
+      "lookupKey": "bandit",
+      "url": "https://tibiavault.com/#bestiary/Bandit"
+    },
+    {
+      "name": "Bane Bringer",
+      "lookupKey": "bane bringer",
+      "url": "https://tibiavault.com/#bestiary/Bane%20Bringer"
+    },
+    {
+      "name": "Bane of Light",
+      "lookupKey": "bane of light",
+      "url": "https://tibiavault.com/#bestiary/Bane%20of%20Light"
+    },
+    {
+      "name": "Banshee",
+      "lookupKey": "banshee",
+      "url": "https://tibiavault.com/#bestiary/Banshee"
+    },
+    {
+      "name": "Barbarian Bloodwalker",
+      "lookupKey": "barbarian bloodwalker",
+      "url": "https://tibiavault.com/#bestiary/Barbarian%20Bloodwalker"
+    },
+    {
+      "name": "Barbarian Brutetamer",
+      "lookupKey": "barbarian brutetamer",
+      "url": "https://tibiavault.com/#bestiary/Barbarian%20Brutetamer"
+    },
+    {
+      "name": "Barbarian Headsplitter",
+      "lookupKey": "barbarian headsplitter",
+      "url": "https://tibiavault.com/#bestiary/Barbarian%20Headsplitter"
+    },
+    {
+      "name": "Barbarian Skullhunter",
+      "lookupKey": "barbarian skullhunter",
+      "url": "https://tibiavault.com/#bestiary/Barbarian%20Skullhunter"
+    },
+    {
+      "name": "Barkless Devotee",
+      "lookupKey": "barkless devotee",
+      "url": "https://tibiavault.com/#bestiary/Barkless%20Devotee"
+    },
+    {
+      "name": "Barkless Fanatic",
+      "lookupKey": "barkless fanatic",
+      "url": "https://tibiavault.com/#bestiary/Barkless%20Fanatic"
+    },
+    {
+      "name": "Bashmu",
+      "lookupKey": "bashmu",
+      "url": "https://tibiavault.com/#bestiary/Bashmu"
+    },
+    {
+      "name": "Bat",
+      "lookupKey": "bat",
+      "url": "https://tibiavault.com/#bestiary/Bat"
+    },
+    {
+      "name": "Bear",
+      "lookupKey": "bear",
+      "url": "https://tibiavault.com/#bestiary/Bear"
+    },
+    {
+      "name": "Behemoth",
+      "lookupKey": "behemoth",
+      "url": "https://tibiavault.com/#bestiary/Behemoth"
+    },
+    {
+      "name": "Bellicose Orger",
+      "lookupKey": "bellicose orger",
+      "url": "https://tibiavault.com/#bestiary/Bellicose%20Orger"
+    },
+    {
+      "name": "Berrypest",
+      "lookupKey": "berrypest",
+      "url": "https://tibiavault.com/#bestiary/Berrypest"
+    },
+    {
+      "name": "Berserker Chicken",
+      "lookupKey": "berserker chicken",
+      "url": "https://tibiavault.com/#bestiary/Berserker%20Chicken"
+    },
+    {
+      "name": "Betrayed Wraith",
+      "lookupKey": "betrayed wraith",
+      "url": "https://tibiavault.com/#bestiary/Betrayed%20Wraith"
+    },
+    {
+      "name": "Biting Book",
+      "lookupKey": "biting book",
+      "url": "https://tibiavault.com/#bestiary/Biting%20Book"
+    },
+    {
+      "name": "Black Sheep",
+      "lookupKey": "black sheep",
+      "url": "https://tibiavault.com/#bestiary/Black%20Sheep"
+    },
+    {
+      "name": "Black Sphinx Acolyte",
+      "lookupKey": "black sphinx acolyte",
+      "url": "https://tibiavault.com/#bestiary/Black%20Sphinx%20Acolyte"
+    },
+    {
+      "name": "Blemished Spawn",
+      "lookupKey": "blemished spawn",
+      "url": "https://tibiavault.com/#bestiary/Blemished%20Spawn"
+    },
+    {
+      "name": "Blightwalker",
+      "lookupKey": "blightwalker",
+      "url": "https://tibiavault.com/#bestiary/Blightwalker"
+    },
+    {
+      "name": "Bloated Man-Maggot",
+      "lookupKey": "bloated man maggot",
+      "url": "https://tibiavault.com/#bestiary/Bloated%20Man-Maggot"
+    },
+    {
+      "name": "Blood Beast",
+      "lookupKey": "blood beast",
+      "url": "https://tibiavault.com/#bestiary/Blood%20Beast"
+    },
+    {
+      "name": "Blood Crab",
+      "lookupKey": "blood crab",
+      "url": "https://tibiavault.com/#bestiary/Blood%20Crab"
+    },
+    {
+      "name": "Blood Hand",
+      "lookupKey": "blood hand",
+      "url": "https://tibiavault.com/#bestiary/Blood%20Hand"
+    },
+    {
+      "name": "Blood Priest",
+      "lookupKey": "blood priest",
+      "url": "https://tibiavault.com/#bestiary/Blood%20Priest"
+    },
+    {
+      "name": "Blue Djinn",
+      "lookupKey": "blue djinn",
+      "url": "https://tibiavault.com/#bestiary/Blue%20Djinn"
+    },
+    {
+      "name": "Bluebeak",
+      "lookupKey": "bluebeak",
+      "url": "https://tibiavault.com/#bestiary/Bluebeak"
+    },
+    {
+      "name": "Boar",
+      "lookupKey": "boar",
+      "url": "https://tibiavault.com/#bestiary/Boar"
+    },
+    {
+      "name": "Boar Man",
+      "lookupKey": "boar man",
+      "url": "https://tibiavault.com/#bestiary/Boar%20Man"
+    },
+    {
+      "name": "Bog Frog",
+      "lookupKey": "bog frog",
+      "url": "https://tibiavault.com/#bestiary/Bog%20Frog"
+    },
+    {
+      "name": "Bog Raider",
+      "lookupKey": "bog raider",
+      "url": "https://tibiavault.com/#bestiary/Bog%20Raider"
+    },
+    {
+      "name": "Bonebeast",
+      "lookupKey": "bonebeast",
+      "url": "https://tibiavault.com/#bestiary/Bonebeast"
+    },
+    {
+      "name": "Bonelord",
+      "lookupKey": "bonelord",
+      "url": "https://tibiavault.com/#bestiary/Bonelord"
+    },
+    {
+      "name": "Bony Sea Devil",
+      "lookupKey": "bony sea devil",
+      "url": "https://tibiavault.com/#bestiary/Bony%20Sea%20Devil"
+    },
+    {
+      "name": "Boogy",
+      "lookupKey": "boogy",
+      "url": "https://tibiavault.com/#bestiary/Boogy"
+    },
+    {
+      "name": "Brachiodemon",
+      "lookupKey": "brachiodemon",
+      "url": "https://tibiavault.com/#bestiary/Brachiodemon"
+    },
+    {
+      "name": "Brain Squid",
+      "lookupKey": "brain squid",
+      "url": "https://tibiavault.com/#bestiary/Brain%20Squid"
+    },
+    {
+      "name": "Braindeath",
+      "lookupKey": "braindeath",
+      "url": "https://tibiavault.com/#bestiary/Braindeath"
+    },
+    {
+      "name": "Bramble Wyrmling",
+      "lookupKey": "bramble wyrmling",
+      "url": "https://tibiavault.com/#bestiary/Bramble%20Wyrmling"
+    },
+    {
+      "name": "Branchy Crawler",
+      "lookupKey": "branchy crawler",
+      "url": "https://tibiavault.com/#bestiary/Branchy%20Crawler"
+    },
+    {
+      "name": "Breach Brood",
+      "lookupKey": "breach brood",
+      "url": "https://tibiavault.com/#bestiary/Breach%20Brood"
+    },
+    {
+      "name": "Bride of Night",
+      "lookupKey": "bride of night",
+      "url": "https://tibiavault.com/#bestiary/Bride%20of%20Night"
+    },
+    {
+      "name": "Brimstone Bug",
+      "lookupKey": "brimstone bug",
+      "url": "https://tibiavault.com/#bestiary/Brimstone%20Bug"
+    },
+    {
+      "name": "Brinebrute Inferniarch",
+      "lookupKey": "brinebrute inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Brinebrute%20Inferniarch"
+    },
+    {
+      "name": "Broken Shaper",
+      "lookupKey": "broken shaper",
+      "url": "https://tibiavault.com/#bestiary/Broken%20Shaper"
+    },
+    {
+      "name": "Broodrider Inferniarch",
+      "lookupKey": "broodrider inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Broodrider%20Inferniarch"
+    },
+    {
+      "name": "Bug",
+      "lookupKey": "bug",
+      "url": "https://tibiavault.com/#bestiary/Bug"
+    },
+    {
+      "name": "Bulltaur Alchemist",
+      "lookupKey": "bulltaur alchemist",
+      "url": "https://tibiavault.com/#bestiary/Bulltaur%20Alchemist"
+    },
+    {
+      "name": "Bulltaur Brute",
+      "lookupKey": "bulltaur brute",
+      "url": "https://tibiavault.com/#bestiary/Bulltaur%20Brute"
+    },
+    {
+      "name": "Bulltaur Forgepriest",
+      "lookupKey": "bulltaur forgepriest",
+      "url": "https://tibiavault.com/#bestiary/Bulltaur%20Forgepriest"
+    },
+    {
+      "name": "Burning Book",
+      "lookupKey": "burning book",
+      "url": "https://tibiavault.com/#bestiary/Burning%20Book"
+    },
+    {
+      "name": "Burning Gladiator",
+      "lookupKey": "burning gladiator",
+      "url": "https://tibiavault.com/#bestiary/Burning%20Gladiator"
+    },
+    {
+      "name": "Burster Spectre",
+      "lookupKey": "burster spectre",
+      "url": "https://tibiavault.com/#bestiary/Burster%20Spectre"
+    },
+    {
+      "name": "Butterfly (Blue)",
+      "lookupKey": "butterfly blue",
+      "url": "https://tibiavault.com/#bestiary/Butterfly%20(Blue)"
+    },
+    {
+      "name": "Butterfly (Purple)",
+      "lookupKey": "butterfly purple",
+      "url": "https://tibiavault.com/#bestiary/Butterfly%20(Purple)"
+    },
+    {
+      "name": "Butterfly (Red)",
+      "lookupKey": "butterfly red",
+      "url": "https://tibiavault.com/#bestiary/Butterfly%20(Red)"
+    },
+    {
+      "name": "Cake Golem",
+      "lookupKey": "cake golem",
+      "url": "https://tibiavault.com/#bestiary/Cake%20Golem"
+    },
+    {
+      "name": "Calamary",
+      "lookupKey": "calamary",
+      "url": "https://tibiavault.com/#bestiary/Calamary"
+    },
+    {
+      "name": "Candy Floss Elemental",
+      "lookupKey": "candy floss elemental",
+      "url": "https://tibiavault.com/#bestiary/Candy%20Floss%20Elemental"
+    },
+    {
+      "name": "Candy Horror",
+      "lookupKey": "candy horror",
+      "url": "https://tibiavault.com/#bestiary/Candy%20Horror"
+    },
+    {
+      "name": "Capricious Phantom",
+      "lookupKey": "capricious phantom",
+      "url": "https://tibiavault.com/#bestiary/Capricious%20Phantom"
+    },
+    {
+      "name": "Carniphila",
+      "lookupKey": "carniphila",
+      "url": "https://tibiavault.com/#bestiary/Carniphila"
+    },
+    {
+      "name": "Carnivostrich",
+      "lookupKey": "carnivostrich",
+      "url": "https://tibiavault.com/#bestiary/Carnivostrich"
+    },
+    {
+      "name": "Carrion Worm",
+      "lookupKey": "carrion worm",
+      "url": "https://tibiavault.com/#bestiary/Carrion%20Worm"
+    },
+    {
+      "name": "Cat",
+      "lookupKey": "cat",
+      "url": "https://tibiavault.com/#bestiary/Cat"
+    },
+    {
+      "name": "Cave Chimera",
+      "lookupKey": "cave chimera",
+      "url": "https://tibiavault.com/#bestiary/Cave%20Chimera"
+    },
+    {
+      "name": "Cave Devourer",
+      "lookupKey": "cave devourer",
+      "url": "https://tibiavault.com/#bestiary/Cave%20Devourer"
+    },
+    {
+      "name": "Cave Parrot",
+      "lookupKey": "cave parrot",
+      "url": "https://tibiavault.com/#bestiary/Cave%20Parrot"
+    },
+    {
+      "name": "Cave Rat",
+      "lookupKey": "cave rat",
+      "url": "https://tibiavault.com/#bestiary/Cave%20Rat"
+    },
+    {
+      "name": "Centipede",
+      "lookupKey": "centipede",
+      "url": "https://tibiavault.com/#bestiary/Centipede"
+    },
+    {
+      "name": "Chakoya Toolshaper",
+      "lookupKey": "chakoya toolshaper",
+      "url": "https://tibiavault.com/#bestiary/Chakoya%20Toolshaper"
+    },
+    {
+      "name": "Chakoya Tribewarden",
+      "lookupKey": "chakoya tribewarden",
+      "url": "https://tibiavault.com/#bestiary/Chakoya%20Tribewarden"
+    },
+    {
+      "name": "Chakoya Windcaller",
+      "lookupKey": "chakoya windcaller",
+      "url": "https://tibiavault.com/#bestiary/Chakoya%20Windcaller"
+    },
+    {
+      "name": "Chasm Spawn",
+      "lookupKey": "chasm spawn",
+      "url": "https://tibiavault.com/#bestiary/Chasm%20Spawn"
+    },
+    {
+      "name": "Chicken",
+      "lookupKey": "chicken",
+      "url": "https://tibiavault.com/#bestiary/Chicken"
+    },
+    {
+      "name": "Chocolate Blob",
+      "lookupKey": "chocolate blob",
+      "url": "https://tibiavault.com/#bestiary/Chocolate%20Blob"
+    },
+    {
+      "name": "Choking Fear",
+      "lookupKey": "choking fear",
+      "url": "https://tibiavault.com/#bestiary/Choking%20Fear"
+    },
+    {
+      "name": "Cinder Wyrmling",
+      "lookupKey": "cinder wyrmling",
+      "url": "https://tibiavault.com/#bestiary/Cinder%20Wyrmling"
+    },
+    {
+      "name": "Clay Guardian",
+      "lookupKey": "clay guardian",
+      "url": "https://tibiavault.com/#bestiary/Clay%20Guardian"
+    },
+    {
+      "name": "Cliff Strider",
+      "lookupKey": "cliff strider",
+      "url": "https://tibiavault.com/#bestiary/Cliff%20Strider"
+    },
+    {
+      "name": "Cloak of Terror",
+      "lookupKey": "cloak of terror",
+      "url": "https://tibiavault.com/#bestiary/Cloak%20of%20Terror"
+    },
+    {
+      "name": "Clomp",
+      "lookupKey": "clomp",
+      "url": "https://tibiavault.com/#bestiary/Clomp"
+    },
+    {
+      "name": "Cobra",
+      "lookupKey": "cobra",
+      "url": "https://tibiavault.com/#bestiary/Cobra"
+    },
+    {
+      "name": "Cobra Assassin",
+      "lookupKey": "cobra assassin",
+      "url": "https://tibiavault.com/#bestiary/Cobra%20Assassin"
+    },
+    {
+      "name": "Cobra Scout",
+      "lookupKey": "cobra scout",
+      "url": "https://tibiavault.com/#bestiary/Cobra%20Scout"
+    },
+    {
+      "name": "Cobra Vizier",
+      "lookupKey": "cobra vizier",
+      "url": "https://tibiavault.com/#bestiary/Cobra%20Vizier"
+    },
+    {
+      "name": "Converter",
+      "lookupKey": "converter",
+      "url": "https://tibiavault.com/#bestiary/Converter"
+    },
+    {
+      "name": "Coral Frog",
+      "lookupKey": "coral frog",
+      "url": "https://tibiavault.com/#bestiary/Coral%20Frog"
+    },
+    {
+      "name": "Corrupted Ghost",
+      "lookupKey": "corrupted ghost",
+      "url": "https://tibiavault.com/#bestiary/Corrupted%20Ghost"
+    },
+    {
+      "name": "Corrupted Skeleton",
+      "lookupKey": "corrupted skeleton",
+      "url": "https://tibiavault.com/#bestiary/Corrupted%20Skeleton"
+    },
+    {
+      "name": "Corym Charlatan",
+      "lookupKey": "corym charlatan",
+      "url": "https://tibiavault.com/#bestiary/Corym%20Charlatan"
+    },
+    {
+      "name": "Corym Skirmisher",
+      "lookupKey": "corym skirmisher",
+      "url": "https://tibiavault.com/#bestiary/Corym%20Skirmisher"
+    },
+    {
+      "name": "Corym Vanguard",
+      "lookupKey": "corym vanguard",
+      "url": "https://tibiavault.com/#bestiary/Corym%20Vanguard"
+    },
+    {
+      "name": "Courage Leech",
+      "lookupKey": "courage leech",
+      "url": "https://tibiavault.com/#bestiary/Courage%20Leech"
+    },
+    {
+      "name": "Cow",
+      "lookupKey": "cow",
+      "url": "https://tibiavault.com/#bestiary/Cow"
+    },
+    {
+      "name": "Crab",
+      "lookupKey": "crab",
+      "url": "https://tibiavault.com/#bestiary/Crab"
+    },
+    {
+      "name": "Crape Man",
+      "lookupKey": "crape man",
+      "url": "https://tibiavault.com/#bestiary/Crape%20Man"
+    },
+    {
+      "name": "Crawler",
+      "lookupKey": "crawler",
+      "url": "https://tibiavault.com/#bestiary/Crawler"
+    },
+    {
+      "name": "Crazed Beggar",
+      "lookupKey": "crazed beggar",
+      "url": "https://tibiavault.com/#bestiary/Crazed%20Beggar"
+    },
+    {
+      "name": "Crazed Summer Rearguard",
+      "lookupKey": "crazed summer rearguard",
+      "url": "https://tibiavault.com/#bestiary/Crazed%20Summer%20Rearguard"
+    },
+    {
+      "name": "Crazed Summer Vanguard",
+      "lookupKey": "crazed summer vanguard",
+      "url": "https://tibiavault.com/#bestiary/Crazed%20Summer%20Vanguard"
+    },
+    {
+      "name": "Crazed Winter Rearguard",
+      "lookupKey": "crazed winter rearguard",
+      "url": "https://tibiavault.com/#bestiary/Crazed%20Winter%20Rearguard"
+    },
+    {
+      "name": "Crazed Winter Vanguard",
+      "lookupKey": "crazed winter vanguard",
+      "url": "https://tibiavault.com/#bestiary/Crazed%20Winter%20Vanguard"
+    },
+    {
+      "name": "Cream Blob",
+      "lookupKey": "cream blob",
+      "url": "https://tibiavault.com/#bestiary/Cream%20Blob"
+    },
+    {
+      "name": "Creepy Crawler",
+      "lookupKey": "creepy crawler",
+      "url": "https://tibiavault.com/#bestiary/Creepy%20Crawler"
+    },
+    {
+      "name": "Crimson Frog",
+      "lookupKey": "crimson frog",
+      "url": "https://tibiavault.com/#bestiary/Crimson%20Frog"
+    },
+    {
+      "name": "Crocodile",
+      "lookupKey": "crocodile",
+      "url": "https://tibiavault.com/#bestiary/Crocodile"
+    },
+    {
+      "name": "Crusader",
+      "lookupKey": "crusader",
+      "url": "https://tibiavault.com/#bestiary/Crusader"
+    },
+    {
+      "name": "Crustacea Gigantica",
+      "lookupKey": "crustacea gigantica",
+      "url": "https://tibiavault.com/#bestiary/Crustacea%20Gigantica"
+    },
+    {
+      "name": "Crypt Construct",
+      "lookupKey": "crypt construct",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Construct"
+    },
+    {
+      "name": "Crypt Defiler",
+      "lookupKey": "crypt defiler",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Defiler"
+    },
+    {
+      "name": "Crypt Fiend",
+      "lookupKey": "crypt fiend",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Fiend"
+    },
+    {
+      "name": "Crypt Mage",
+      "lookupKey": "crypt mage",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Mage"
+    },
+    {
+      "name": "Crypt Shambler",
+      "lookupKey": "crypt shambler",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Shambler"
+    },
+    {
+      "name": "Crypt Warden",
+      "lookupKey": "crypt warden",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Warden"
+    },
+    {
+      "name": "Crypt Warrior",
+      "lookupKey": "crypt warrior",
+      "url": "https://tibiavault.com/#bestiary/Crypt%20Warrior"
+    },
+    {
+      "name": "Crystal Spider",
+      "lookupKey": "crystal spider",
+      "url": "https://tibiavault.com/#bestiary/Crystal%20Spider"
+    },
+    {
+      "name": "Crystal Wolf",
+      "lookupKey": "crystal wolf",
+      "url": "https://tibiavault.com/#bestiary/Crystal%20Wolf"
+    },
+    {
+      "name": "Crystalcrusher",
+      "lookupKey": "crystalcrusher",
+      "url": "https://tibiavault.com/#bestiary/Crystalcrusher"
+    },
+    {
+      "name": "Cult Believer",
+      "lookupKey": "cult believer",
+      "url": "https://tibiavault.com/#bestiary/Cult%20Believer"
+    },
+    {
+      "name": "Cult Enforcer",
+      "lookupKey": "cult enforcer",
+      "url": "https://tibiavault.com/#bestiary/Cult%20Enforcer"
+    },
+    {
+      "name": "Cult Scholar",
+      "lookupKey": "cult scholar",
+      "url": "https://tibiavault.com/#bestiary/Cult%20Scholar"
+    },
+    {
+      "name": "Cunning Werepanther",
+      "lookupKey": "cunning werepanther",
+      "url": "https://tibiavault.com/#bestiary/Cunning%20Werepanther"
+    },
+    {
+      "name": "Cursed Ape",
+      "lookupKey": "cursed ape",
+      "url": "https://tibiavault.com/#bestiary/Cursed%20Ape"
+    },
+    {
+      "name": "Cursed Book",
+      "lookupKey": "cursed book",
+      "url": "https://tibiavault.com/#bestiary/Cursed%20Book"
+    },
+    {
+      "name": "Cursed Prospector",
+      "lookupKey": "cursed prospector",
+      "url": "https://tibiavault.com/#bestiary/Cursed%20Prospector"
+    },
+    {
+      "name": "Cyclops",
+      "lookupKey": "cyclops",
+      "url": "https://tibiavault.com/#bestiary/Cyclops"
+    },
+    {
+      "name": "Cyclops Drone",
+      "lookupKey": "cyclops drone",
+      "url": "https://tibiavault.com/#bestiary/Cyclops%20Drone"
+    },
+    {
+      "name": "Cyclops Smith",
+      "lookupKey": "cyclops smith",
+      "url": "https://tibiavault.com/#bestiary/Cyclops%20Smith"
+    },
+    {
+      "name": "Cyclursus",
+      "lookupKey": "cyclursus",
+      "url": "https://tibiavault.com/#bestiary/Cyclursus"
+    },
+    {
+      "name": "Damaged Crystal Golem",
+      "lookupKey": "damaged crystal golem",
+      "url": "https://tibiavault.com/#bestiary/Damaged%20Crystal%20Golem"
+    },
+    {
+      "name": "Damaged Worker Golem",
+      "lookupKey": "damaged worker golem",
+      "url": "https://tibiavault.com/#bestiary/Damaged%20Worker%20Golem"
+    },
+    {
+      "name": "Dark Apprentice",
+      "lookupKey": "dark apprentice",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Apprentice"
+    },
+    {
+      "name": "Dark Carnisylvan",
+      "lookupKey": "dark carnisylvan",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Carnisylvan"
+    },
+    {
+      "name": "Dark Faun",
+      "lookupKey": "dark faun",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Faun"
+    },
+    {
+      "name": "Dark Magician",
+      "lookupKey": "dark magician",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Magician"
+    },
+    {
+      "name": "Dark Monk",
+      "lookupKey": "dark monk",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Monk"
+    },
+    {
+      "name": "Dark Torturer",
+      "lookupKey": "dark torturer",
+      "url": "https://tibiavault.com/#bestiary/Dark%20Torturer"
+    },
+    {
+      "name": "Darklight Construct",
+      "lookupKey": "darklight construct",
+      "url": "https://tibiavault.com/#bestiary/Darklight%20Construct"
+    },
+    {
+      "name": "Darklight Emitter",
+      "lookupKey": "darklight emitter",
+      "url": "https://tibiavault.com/#bestiary/Darklight%20Emitter"
+    },
+    {
+      "name": "Darklight Matter",
+      "lookupKey": "darklight matter",
+      "url": "https://tibiavault.com/#bestiary/Darklight%20Matter"
+    },
+    {
+      "name": "Darklight Source",
+      "lookupKey": "darklight source",
+      "url": "https://tibiavault.com/#bestiary/Darklight%20Source"
+    },
+    {
+      "name": "Darklight Striker",
+      "lookupKey": "darklight striker",
+      "url": "https://tibiavault.com/#bestiary/Darklight%20Striker"
+    },
+    {
+      "name": "Dawnfire Asura",
+      "lookupKey": "dawnfire asura",
+      "url": "https://tibiavault.com/#bestiary/Dawnfire%20Asura"
+    },
+    {
+      "name": "Death Blob",
+      "lookupKey": "death blob",
+      "url": "https://tibiavault.com/#bestiary/Death%20Blob"
+    },
+    {
+      "name": "Death Priest",
+      "lookupKey": "death priest",
+      "url": "https://tibiavault.com/#bestiary/Death%20Priest"
+    },
+    {
+      "name": "Deathling Scout",
+      "lookupKey": "deathling scout",
+      "url": "https://tibiavault.com/#bestiary/Deathling%20Scout"
+    },
+    {
+      "name": "Deathling Spellsinger",
+      "lookupKey": "deathling spellsinger",
+      "url": "https://tibiavault.com/#bestiary/Deathling%20Spellsinger"
+    },
+    {
+      "name": "Deepling Brawler",
+      "lookupKey": "deepling brawler",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Brawler"
+    },
+    {
+      "name": "Deepling Elite",
+      "lookupKey": "deepling elite",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Elite"
+    },
+    {
+      "name": "Deepling Guard",
+      "lookupKey": "deepling guard",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Guard"
+    },
+    {
+      "name": "Deepling Master Librarian",
+      "lookupKey": "deepling master librarian",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Master%20Librarian"
+    },
+    {
+      "name": "Deepling Scout",
+      "lookupKey": "deepling scout",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Scout"
+    },
+    {
+      "name": "Deepling Spellsinger",
+      "lookupKey": "deepling spellsinger",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Spellsinger"
+    },
+    {
+      "name": "Deepling Tyrant",
+      "lookupKey": "deepling tyrant",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Tyrant"
+    },
+    {
+      "name": "Deepling Warrior",
+      "lookupKey": "deepling warrior",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Warrior"
+    },
+    {
+      "name": "Deepling Worker",
+      "lookupKey": "deepling worker",
+      "url": "https://tibiavault.com/#bestiary/Deepling%20Worker"
+    },
+    {
+      "name": "Deepsea Blood Crab",
+      "lookupKey": "deepsea blood crab",
+      "url": "https://tibiavault.com/#bestiary/Deepsea%20Blood%20Crab"
+    },
+    {
+      "name": "Deepworm",
+      "lookupKey": "deepworm",
+      "url": "https://tibiavault.com/#bestiary/Deepworm"
+    },
+    {
+      "name": "Deer",
+      "lookupKey": "deer",
+      "url": "https://tibiavault.com/#bestiary/Deer"
+    },
+    {
+      "name": "Defiler",
+      "lookupKey": "defiler",
+      "url": "https://tibiavault.com/#bestiary/Defiler"
+    },
+    {
+      "name": "Demon",
+      "lookupKey": "demon",
+      "url": "https://tibiavault.com/#bestiary/Demon"
+    },
+    {
+      "name": "Demon Outcast",
+      "lookupKey": "demon outcast",
+      "url": "https://tibiavault.com/#bestiary/Demon%20Outcast"
+    },
+    {
+      "name": "Demon Parrot",
+      "lookupKey": "demon parrot",
+      "url": "https://tibiavault.com/#bestiary/Demon%20Parrot"
+    },
+    {
+      "name": "Demon Skeleton",
+      "lookupKey": "demon skeleton",
+      "url": "https://tibiavault.com/#bestiary/Demon%20Skeleton"
+    },
+    {
+      "name": "Destroyer",
+      "lookupKey": "destroyer",
+      "url": "https://tibiavault.com/#bestiary/Destroyer"
+    },
+    {
+      "name": "Devourer",
+      "lookupKey": "devourer",
+      "url": "https://tibiavault.com/#bestiary/Devourer"
+    },
+    {
+      "name": "Diabolic Imp",
+      "lookupKey": "diabolic imp",
+      "url": "https://tibiavault.com/#bestiary/Diabolic%20Imp"
+    },
+    {
+      "name": "Diamond Servant",
+      "lookupKey": "diamond servant",
+      "url": "https://tibiavault.com/#bestiary/Diamond%20Servant"
+    },
+    {
+      "name": "Diamond Servant Replica",
+      "lookupKey": "diamond servant replica",
+      "url": "https://tibiavault.com/#bestiary/Diamond%20Servant%20Replica"
+    },
+    {
+      "name": "Dire Penguin",
+      "lookupKey": "dire penguin",
+      "url": "https://tibiavault.com/#bestiary/Dire%20Penguin"
+    },
+    {
+      "name": "Diremaw",
+      "lookupKey": "diremaw",
+      "url": "https://tibiavault.com/#bestiary/Diremaw"
+    },
+    {
+      "name": "Distorted Phantom",
+      "lookupKey": "distorted phantom",
+      "url": "https://tibiavault.com/#bestiary/Distorted%20Phantom"
+    },
+    {
+      "name": "Dog",
+      "lookupKey": "dog",
+      "url": "https://tibiavault.com/#bestiary/Dog"
+    },
+    {
+      "name": "Doom Deer",
+      "lookupKey": "doom deer",
+      "url": "https://tibiavault.com/#bestiary/Doom%20Deer"
+    },
+    {
+      "name": "Doomsday Cultist",
+      "lookupKey": "doomsday cultist",
+      "url": "https://tibiavault.com/#bestiary/Doomsday%20Cultist"
+    },
+    {
+      "name": "Dragolisk",
+      "lookupKey": "dragolisk",
+      "url": "https://tibiavault.com/#bestiary/Dragolisk"
+    },
+    {
+      "name": "Dragon",
+      "lookupKey": "dragon",
+      "url": "https://tibiavault.com/#bestiary/Dragon"
+    },
+    {
+      "name": "Dragon Hatchling",
+      "lookupKey": "dragon hatchling",
+      "url": "https://tibiavault.com/#bestiary/Dragon%20Hatchling"
+    },
+    {
+      "name": "Dragon Lord",
+      "lookupKey": "dragon lord",
+      "url": "https://tibiavault.com/#bestiary/Dragon%20Lord"
+    },
+    {
+      "name": "Dragon Lord Hatchling",
+      "lookupKey": "dragon lord hatchling",
+      "url": "https://tibiavault.com/#bestiary/Dragon%20Lord%20Hatchling"
+    },
+    {
+      "name": "Dragonling",
+      "lookupKey": "dragonling",
+      "url": "https://tibiavault.com/#bestiary/Dragonling"
+    },
+    {
+      "name": "Draken Abomination",
+      "lookupKey": "draken abomination",
+      "url": "https://tibiavault.com/#bestiary/Draken%20Abomination"
+    },
+    {
+      "name": "Draken Elite",
+      "lookupKey": "draken elite",
+      "url": "https://tibiavault.com/#bestiary/Draken%20Elite"
+    },
+    {
+      "name": "Draken Spellweaver",
+      "lookupKey": "draken spellweaver",
+      "url": "https://tibiavault.com/#bestiary/Draken%20Spellweaver"
+    },
+    {
+      "name": "Draken Warmaster",
+      "lookupKey": "draken warmaster",
+      "url": "https://tibiavault.com/#bestiary/Draken%20Warmaster"
+    },
+    {
+      "name": "Draptor",
+      "lookupKey": "draptor",
+      "url": "https://tibiavault.com/#bestiary/Draptor"
+    },
+    {
+      "name": "Dread Intruder",
+      "lookupKey": "dread intruder",
+      "url": "https://tibiavault.com/#bestiary/Dread%20Intruder"
+    },
+    {
+      "name": "Drillworm",
+      "lookupKey": "drillworm",
+      "url": "https://tibiavault.com/#bestiary/Drillworm"
+    },
+    {
+      "name": "Dromedary",
+      "lookupKey": "dromedary",
+      "url": "https://tibiavault.com/#bestiary/Dromedary"
+    },
+    {
+      "name": "Druid's Apparition",
+      "lookupKey": "druids apparition",
+      "url": "https://tibiavault.com/#bestiary/Druid"
+    },
+    {
+      "name": "Dryad",
+      "lookupKey": "dryad",
+      "url": "https://tibiavault.com/#bestiary/Dryad"
+    },
+    {
+      "name": "Duskbringer",
+      "lookupKey": "duskbringer",
+      "url": "https://tibiavault.com/#bestiary/Duskbringer"
+    },
+    {
+      "name": "Dwarf",
+      "lookupKey": "dwarf",
+      "url": "https://tibiavault.com/#bestiary/Dwarf"
+    },
+    {
+      "name": "Dwarf Geomancer",
+      "lookupKey": "dwarf geomancer",
+      "url": "https://tibiavault.com/#bestiary/Dwarf%20Geomancer"
+    },
+    {
+      "name": "Dwarf Guard",
+      "lookupKey": "dwarf guard",
+      "url": "https://tibiavault.com/#bestiary/Dwarf%20Guard"
+    },
+    {
+      "name": "Dwarf Henchman",
+      "lookupKey": "dwarf henchman",
+      "url": "https://tibiavault.com/#bestiary/Dwarf%20Henchman"
+    },
+    {
+      "name": "Dwarf Soldier",
+      "lookupKey": "dwarf soldier",
+      "url": "https://tibiavault.com/#bestiary/Dwarf%20Soldier"
+    },
+    {
+      "name": "Dworc Fleshhunter",
+      "lookupKey": "dworc fleshhunter",
+      "url": "https://tibiavault.com/#bestiary/Dworc%20Fleshhunter"
+    },
+    {
+      "name": "Dworc Shadowstalker",
+      "lookupKey": "dworc shadowstalker",
+      "url": "https://tibiavault.com/#bestiary/Dworc%20Shadowstalker"
+    },
+    {
+      "name": "Dworc Venomsniper",
+      "lookupKey": "dworc venomsniper",
+      "url": "https://tibiavault.com/#bestiary/Dworc%20Venomsniper"
+    },
+    {
+      "name": "Dworc Voodoomaster",
+      "lookupKey": "dworc voodoomaster",
+      "url": "https://tibiavault.com/#bestiary/Dworc%20Voodoomaster"
+    },
+    {
+      "name": "Earth Elemental",
+      "lookupKey": "earth elemental",
+      "url": "https://tibiavault.com/#bestiary/Earth%20Elemental"
+    },
+    {
+      "name": "Efreet",
+      "lookupKey": "efreet",
+      "url": "https://tibiavault.com/#bestiary/Efreet"
+    },
+    {
+      "name": "Elder Bonelord",
+      "lookupKey": "elder bonelord",
+      "url": "https://tibiavault.com/#bestiary/Elder%20Bonelord"
+    },
+    {
+      "name": "Elder Forest Fury",
+      "lookupKey": "elder forest fury",
+      "url": "https://tibiavault.com/#bestiary/Elder%20Forest%20Fury"
+    },
+    {
+      "name": "Elder Mummy",
+      "lookupKey": "elder mummy",
+      "url": "https://tibiavault.com/#bestiary/Elder%20Mummy"
+    },
+    {
+      "name": "Elder Wyrm",
+      "lookupKey": "elder wyrm",
+      "url": "https://tibiavault.com/#bestiary/Elder%20Wyrm"
+    },
+    {
+      "name": "Elephant",
+      "lookupKey": "elephant",
+      "url": "https://tibiavault.com/#bestiary/Elephant"
+    },
+    {
+      "name": "Elf",
+      "lookupKey": "elf",
+      "url": "https://tibiavault.com/#bestiary/Elf"
+    },
+    {
+      "name": "Elf Arcanist",
+      "lookupKey": "elf arcanist",
+      "url": "https://tibiavault.com/#bestiary/Elf%20Arcanist"
+    },
+    {
+      "name": "Elf Overseer",
+      "lookupKey": "elf overseer",
+      "url": "https://tibiavault.com/#bestiary/Elf%20Overseer"
+    },
+    {
+      "name": "Elf Scout",
+      "lookupKey": "elf scout",
+      "url": "https://tibiavault.com/#bestiary/Elf%20Scout"
+    },
+    {
+      "name": "Emerald Damselfly",
+      "lookupKey": "emerald damselfly",
+      "url": "https://tibiavault.com/#bestiary/Emerald%20Damselfly"
+    },
+    {
+      "name": "Emerald Tortoise",
+      "lookupKey": "emerald tortoise",
+      "url": "https://tibiavault.com/#bestiary/Emerald%20Tortoise"
+    },
+    {
+      "name": "Energetic Book",
+      "lookupKey": "energetic book",
+      "url": "https://tibiavault.com/#bestiary/Energetic%20Book"
+    },
+    {
+      "name": "Energuardian of Tales",
+      "lookupKey": "energuardian of tales",
+      "url": "https://tibiavault.com/#bestiary/Energuardian%20of%20Tales"
+    },
+    {
+      "name": "Energy Elemental",
+      "lookupKey": "energy elemental",
+      "url": "https://tibiavault.com/#bestiary/Energy%20Elemental"
+    },
+    {
+      "name": "Enfeebled Silencer",
+      "lookupKey": "enfeebled silencer",
+      "url": "https://tibiavault.com/#bestiary/Enfeebled%20Silencer"
+    },
+    {
+      "name": "Enlightened of the Cult",
+      "lookupKey": "enlightened of the cult",
+      "url": "https://tibiavault.com/#bestiary/Enlightened%20of%20the%20Cult"
+    },
+    {
+      "name": "Enraged Crystal Golem",
+      "lookupKey": "enraged crystal golem",
+      "url": "https://tibiavault.com/#bestiary/Enraged%20Crystal%20Golem"
+    },
+    {
+      "name": "Enslaved Dwarf",
+      "lookupKey": "enslaved dwarf",
+      "url": "https://tibiavault.com/#bestiary/Enslaved%20Dwarf"
+    },
+    {
+      "name": "Eternal Guardian",
+      "lookupKey": "eternal guardian",
+      "url": "https://tibiavault.com/#bestiary/Eternal%20Guardian"
+    },
+    {
+      "name": "Evil Prospector",
+      "lookupKey": "evil prospector",
+      "url": "https://tibiavault.com/#bestiary/Evil%20Prospector"
+    },
+    {
+      "name": "Evil Sheep",
+      "lookupKey": "evil sheep",
+      "url": "https://tibiavault.com/#bestiary/Evil%20Sheep"
+    },
+    {
+      "name": "Evil Sheep Lord",
+      "lookupKey": "evil sheep lord",
+      "url": "https://tibiavault.com/#bestiary/Evil%20Sheep%20Lord"
+    },
+    {
+      "name": "Execowtioner",
+      "lookupKey": "execowtioner",
+      "url": "https://tibiavault.com/#bestiary/Execowtioner"
+    },
+    {
+      "name": "Exotic Bat",
+      "lookupKey": "exotic bat",
+      "url": "https://tibiavault.com/#bestiary/Exotic%20Bat"
+    },
+    {
+      "name": "Exotic Cave Spider",
+      "lookupKey": "exotic cave spider",
+      "url": "https://tibiavault.com/#bestiary/Exotic%20Cave%20Spider"
+    },
+    {
+      "name": "Eyeless Devourer",
+      "lookupKey": "eyeless devourer",
+      "url": "https://tibiavault.com/#bestiary/Eyeless%20Devourer"
+    },
+    {
+      "name": "Falcon Knight",
+      "lookupKey": "falcon knight",
+      "url": "https://tibiavault.com/#bestiary/Falcon%20Knight"
+    },
+    {
+      "name": "Falcon Paladin",
+      "lookupKey": "falcon paladin",
+      "url": "https://tibiavault.com/#bestiary/Falcon%20Paladin"
+    },
+    {
+      "name": "Faun",
+      "lookupKey": "faun",
+      "url": "https://tibiavault.com/#bestiary/Faun"
+    },
+    {
+      "name": "Feral Sphinx",
+      "lookupKey": "feral sphinx",
+      "url": "https://tibiavault.com/#bestiary/Feral%20Sphinx"
+    },
+    {
+      "name": "Feral Werecrocodile",
+      "lookupKey": "feral werecrocodile",
+      "url": "https://tibiavault.com/#bestiary/Feral%20Werecrocodile"
+    },
+    {
+      "name": "Feverish Citizen",
+      "lookupKey": "feverish citizen",
+      "url": "https://tibiavault.com/#bestiary/Feverish%20Citizen"
+    },
+    {
+      "name": "Feversleep",
+      "lookupKey": "feversleep",
+      "url": "https://tibiavault.com/#bestiary/Feversleep"
+    },
+    {
+      "name": "Filth Toad",
+      "lookupKey": "filth toad",
+      "url": "https://tibiavault.com/#bestiary/Filth%20Toad"
+    },
+    {
+      "name": "Fire Devil",
+      "lookupKey": "fire devil",
+      "url": "https://tibiavault.com/#bestiary/Fire%20Devil"
+    },
+    {
+      "name": "Fire Elemental",
+      "lookupKey": "fire elemental",
+      "url": "https://tibiavault.com/#bestiary/Fire%20Elemental"
+    },
+    {
+      "name": "Firestarter",
+      "lookupKey": "firestarter",
+      "url": "https://tibiavault.com/#bestiary/Firestarter"
+    },
+    {
+      "name": "Fish (Creature)",
+      "lookupKey": "fish creature",
+      "url": "https://tibiavault.com/#bestiary/Fish%20(Creature)"
+    },
+    {
+      "name": "Flamingo",
+      "lookupKey": "flamingo",
+      "url": "https://tibiavault.com/#bestiary/Flamingo"
+    },
+    {
+      "name": "Flimsy Lost Soul",
+      "lookupKey": "flimsy lost soul",
+      "url": "https://tibiavault.com/#bestiary/Flimsy%20Lost%20Soul"
+    },
+    {
+      "name": "Floating Savant",
+      "lookupKey": "floating savant",
+      "url": "https://tibiavault.com/#bestiary/Floating%20Savant"
+    },
+    {
+      "name": "Flying Book",
+      "lookupKey": "flying book",
+      "url": "https://tibiavault.com/#bestiary/Flying%20Book"
+    },
+    {
+      "name": "Foam Stalker",
+      "lookupKey": "foam stalker",
+      "url": "https://tibiavault.com/#bestiary/Foam%20Stalker"
+    },
+    {
+      "name": "Forest Fury",
+      "lookupKey": "forest fury",
+      "url": "https://tibiavault.com/#bestiary/Forest%20Fury"
+    },
+    {
+      "name": "Fox",
+      "lookupKey": "fox",
+      "url": "https://tibiavault.com/#bestiary/Fox"
+    },
+    {
+      "name": "Frazzlemaw",
+      "lookupKey": "frazzlemaw",
+      "url": "https://tibiavault.com/#bestiary/Frazzlemaw"
+    },
+    {
+      "name": "Freakish Lost Soul",
+      "lookupKey": "freakish lost soul",
+      "url": "https://tibiavault.com/#bestiary/Freakish%20Lost%20Soul"
+    },
+    {
+      "name": "Frost Dragon",
+      "lookupKey": "frost dragon",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Dragon"
+    },
+    {
+      "name": "Frost Dragon Hatchling",
+      "lookupKey": "frost dragon hatchling",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Dragon%20Hatchling"
+    },
+    {
+      "name": "Frost Flower Asura",
+      "lookupKey": "frost flower asura",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Flower%20Asura"
+    },
+    {
+      "name": "Frost Giant",
+      "lookupKey": "frost giant",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Giant"
+    },
+    {
+      "name": "Frost Giantess",
+      "lookupKey": "frost giantess",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Giantess"
+    },
+    {
+      "name": "Frost Troll",
+      "lookupKey": "frost troll",
+      "url": "https://tibiavault.com/#bestiary/Frost%20Troll"
+    },
+    {
+      "name": "Fruit Drop",
+      "lookupKey": "fruit drop",
+      "url": "https://tibiavault.com/#bestiary/Fruit%20Drop"
+    },
+    {
+      "name": "Furious Fire Elemental",
+      "lookupKey": "furious fire elemental",
+      "url": "https://tibiavault.com/#bestiary/Furious%20Fire%20Elemental"
+    },
+    {
+      "name": "Furious Troll",
+      "lookupKey": "furious troll",
+      "url": "https://tibiavault.com/#bestiary/Furious%20Troll"
+    },
+    {
+      "name": "Fury",
+      "lookupKey": "fury",
+      "url": "https://tibiavault.com/#bestiary/Fury"
+    },
+    {
+      "name": "Gang Member",
+      "lookupKey": "gang member",
+      "url": "https://tibiavault.com/#bestiary/Gang%20Member"
+    },
+    {
+      "name": "Gargoyle",
+      "lookupKey": "gargoyle",
+      "url": "https://tibiavault.com/#bestiary/Gargoyle"
+    },
+    {
+      "name": "Gazer",
+      "lookupKey": "gazer",
+      "url": "https://tibiavault.com/#bestiary/Gazer"
+    },
+    {
+      "name": "Gazer Spectre",
+      "lookupKey": "gazer spectre",
+      "url": "https://tibiavault.com/#bestiary/Gazer%20Spectre"
+    },
+    {
+      "name": "Ghastly Dragon",
+      "lookupKey": "ghastly dragon",
+      "url": "https://tibiavault.com/#bestiary/Ghastly%20Dragon"
+    },
+    {
+      "name": "Ghost",
+      "lookupKey": "ghost",
+      "url": "https://tibiavault.com/#bestiary/Ghost"
+    },
+    {
+      "name": "Ghost Wolf",
+      "lookupKey": "ghost wolf",
+      "url": "https://tibiavault.com/#bestiary/Ghost%20Wolf"
+    },
+    {
+      "name": "Ghoul",
+      "lookupKey": "ghoul",
+      "url": "https://tibiavault.com/#bestiary/Ghoul"
+    },
+    {
+      "name": "Ghoulish Hyaena",
+      "lookupKey": "ghoulish hyaena",
+      "url": "https://tibiavault.com/#bestiary/Ghoulish%20Hyaena"
+    },
+    {
+      "name": "Giant Spider",
+      "lookupKey": "giant spider",
+      "url": "https://tibiavault.com/#bestiary/Giant%20Spider"
+    },
+    {
+      "name": "Gingerbread Man",
+      "lookupKey": "gingerbread man",
+      "url": "https://tibiavault.com/#bestiary/Gingerbread%20Man"
+    },
+    {
+      "name": "Girtablilu Warrior",
+      "lookupKey": "girtablilu warrior",
+      "url": "https://tibiavault.com/#bestiary/Girtablilu%20Warrior"
+    },
+    {
+      "name": "Gladiator",
+      "lookupKey": "gladiator",
+      "url": "https://tibiavault.com/#bestiary/Gladiator"
+    },
+    {
+      "name": "Gloom Maw",
+      "lookupKey": "gloom maw",
+      "url": "https://tibiavault.com/#bestiary/Gloom%20Maw"
+    },
+    {
+      "name": "Gloom Wolf",
+      "lookupKey": "gloom wolf",
+      "url": "https://tibiavault.com/#bestiary/Gloom%20Wolf"
+    },
+    {
+      "name": "Glooth Anemone",
+      "lookupKey": "glooth anemone",
+      "url": "https://tibiavault.com/#bestiary/Glooth%20Anemone"
+    },
+    {
+      "name": "Glooth Bandit",
+      "lookupKey": "glooth bandit",
+      "url": "https://tibiavault.com/#bestiary/Glooth%20Bandit"
+    },
+    {
+      "name": "Glooth Blob",
+      "lookupKey": "glooth blob",
+      "url": "https://tibiavault.com/#bestiary/Glooth%20Blob"
+    },
+    {
+      "name": "Glooth Brigand",
+      "lookupKey": "glooth brigand",
+      "url": "https://tibiavault.com/#bestiary/Glooth%20Brigand"
+    },
+    {
+      "name": "Glooth Golem",
+      "lookupKey": "glooth golem",
+      "url": "https://tibiavault.com/#bestiary/Glooth%20Golem"
+    },
+    {
+      "name": "Gnarlhound",
+      "lookupKey": "gnarlhound",
+      "url": "https://tibiavault.com/#bestiary/Gnarlhound"
+    },
+    {
+      "name": "Goblin",
+      "lookupKey": "goblin",
+      "url": "https://tibiavault.com/#bestiary/Goblin"
+    },
+    {
+      "name": "Goblin Assassin",
+      "lookupKey": "goblin assassin",
+      "url": "https://tibiavault.com/#bestiary/Goblin%20Assassin"
+    },
+    {
+      "name": "Goblin Leader",
+      "lookupKey": "goblin leader",
+      "url": "https://tibiavault.com/#bestiary/Goblin%20Leader"
+    },
+    {
+      "name": "Goblin Scavenger",
+      "lookupKey": "goblin scavenger",
+      "url": "https://tibiavault.com/#bestiary/Goblin%20Scavenger"
+    },
+    {
+      "name": "Goggle Cake",
+      "lookupKey": "goggle cake",
+      "url": "https://tibiavault.com/#bestiary/Goggle%20Cake"
+    },
+    {
+      "name": "Golden Servant",
+      "lookupKey": "golden servant",
+      "url": "https://tibiavault.com/#bestiary/Golden%20Servant"
+    },
+    {
+      "name": "Golden Servant Replica",
+      "lookupKey": "golden servant replica",
+      "url": "https://tibiavault.com/#bestiary/Golden%20Servant%20Replica"
+    },
+    {
+      "name": "Goldhanded Cultist",
+      "lookupKey": "goldhanded cultist",
+      "url": "https://tibiavault.com/#bestiary/Goldhanded%20Cultist"
+    },
+    {
+      "name": "Goldhanded Cultist Bride",
+      "lookupKey": "goldhanded cultist bride",
+      "url": "https://tibiavault.com/#bestiary/Goldhanded%20Cultist%20Bride"
+    },
+    {
+      "name": "Gore Horn",
+      "lookupKey": "gore horn",
+      "url": "https://tibiavault.com/#bestiary/Gore%20Horn"
+    },
+    {
+      "name": "Gorerilla",
+      "lookupKey": "gorerilla",
+      "url": "https://tibiavault.com/#bestiary/Gorerilla"
+    },
+    {
+      "name": "Gorger Inferniarch",
+      "lookupKey": "gorger inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Gorger%20Inferniarch"
+    },
+    {
+      "name": "Gozzler",
+      "lookupKey": "gozzler",
+      "url": "https://tibiavault.com/#bestiary/Gozzler"
+    },
+    {
+      "name": "Grave Guard",
+      "lookupKey": "grave guard",
+      "url": "https://tibiavault.com/#bestiary/Grave%20Guard"
+    },
+    {
+      "name": "Grave Robber",
+      "lookupKey": "grave robber",
+      "url": "https://tibiavault.com/#bestiary/Grave%20Robber"
+    },
+    {
+      "name": "Gravedigger",
+      "lookupKey": "gravedigger",
+      "url": "https://tibiavault.com/#bestiary/Gravedigger"
+    },
+    {
+      "name": "Green Djinn",
+      "lookupKey": "green djinn",
+      "url": "https://tibiavault.com/#bestiary/Green%20Djinn"
+    },
+    {
+      "name": "Green Frog",
+      "lookupKey": "green frog",
+      "url": "https://tibiavault.com/#bestiary/Green%20Frog"
+    },
+    {
+      "name": "Grim Reaper",
+      "lookupKey": "grim reaper",
+      "url": "https://tibiavault.com/#bestiary/Grim%20Reaper"
+    },
+    {
+      "name": "Grimeleech",
+      "lookupKey": "grimeleech",
+      "url": "https://tibiavault.com/#bestiary/Grimeleech"
+    },
+    {
+      "name": "Grynch Clan Goblin",
+      "lookupKey": "grynch clan goblin",
+      "url": "https://tibiavault.com/#bestiary/Grynch%20Clan%20Goblin"
+    },
+    {
+      "name": "Gryphon",
+      "lookupKey": "gryphon",
+      "url": "https://tibiavault.com/#bestiary/Gryphon"
+    },
+    {
+      "name": "Guardian of Tales",
+      "lookupKey": "guardian of tales",
+      "url": "https://tibiavault.com/#bestiary/Guardian%20of%20Tales"
+    },
+    {
+      "name": "Guzzlemaw",
+      "lookupKey": "guzzlemaw",
+      "url": "https://tibiavault.com/#bestiary/Guzzlemaw"
+    },
+    {
+      "name": "Hand of Cursed Fate",
+      "lookupKey": "hand of cursed fate",
+      "url": "https://tibiavault.com/#bestiary/Hand%20of%20Cursed%20Fate"
+    },
+    {
+      "name": "Harpy",
+      "lookupKey": "harpy",
+      "url": "https://tibiavault.com/#bestiary/Harpy"
+    },
+    {
+      "name": "Haunted Dragon",
+      "lookupKey": "haunted dragon",
+      "url": "https://tibiavault.com/#bestiary/Haunted%20Dragon"
+    },
+    {
+      "name": "Haunted Hunter",
+      "lookupKey": "haunted hunter",
+      "url": "https://tibiavault.com/#bestiary/Haunted%20Hunter"
+    },
+    {
+      "name": "Haunted Treeling",
+      "lookupKey": "haunted treeling",
+      "url": "https://tibiavault.com/#bestiary/Haunted%20Treeling"
+    },
+    {
+      "name": "Hawk Hopper",
+      "lookupKey": "hawk hopper",
+      "url": "https://tibiavault.com/#bestiary/Hawk%20Hopper"
+    },
+    {
+      "name": "Headpecker",
+      "lookupKey": "headpecker",
+      "url": "https://tibiavault.com/#bestiary/Headpecker"
+    },
+    {
+      "name": "Headwalker",
+      "lookupKey": "headwalker",
+      "url": "https://tibiavault.com/#bestiary/Headwalker"
+    },
+    {
+      "name": "Hellfire Fighter",
+      "lookupKey": "hellfire fighter",
+      "url": "https://tibiavault.com/#bestiary/Hellfire%20Fighter"
+    },
+    {
+      "name": "Hellflayer",
+      "lookupKey": "hellflayer",
+      "url": "https://tibiavault.com/#bestiary/Hellflayer"
+    },
+    {
+      "name": "Hellhound",
+      "lookupKey": "hellhound",
+      "url": "https://tibiavault.com/#bestiary/Hellhound"
+    },
+    {
+      "name": "Hellhunter Inferniarch",
+      "lookupKey": "hellhunter inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Hellhunter%20Inferniarch"
+    },
+    {
+      "name": "Hellspawn",
+      "lookupKey": "hellspawn",
+      "url": "https://tibiavault.com/#bestiary/Hellspawn"
+    },
+    {
+      "name": "Herald of Gloom",
+      "lookupKey": "herald of gloom",
+      "url": "https://tibiavault.com/#bestiary/Herald%20of%20Gloom"
+    },
+    {
+      "name": "Hero",
+      "lookupKey": "hero",
+      "url": "https://tibiavault.com/#bestiary/Hero"
+    },
+    {
+      "name": "Hibernal Moth",
+      "lookupKey": "hibernal moth",
+      "url": "https://tibiavault.com/#bestiary/Hibernal%20Moth"
+    },
+    {
+      "name": "Hideous Fungus",
+      "lookupKey": "hideous fungus",
+      "url": "https://tibiavault.com/#bestiary/Hideous%20Fungus"
+    },
+    {
+      "name": "High Voltage Elemental",
+      "lookupKey": "high voltage elemental",
+      "url": "https://tibiavault.com/#bestiary/High%20Voltage%20Elemental"
+    },
+    {
+      "name": "Hive Overseer",
+      "lookupKey": "hive overseer",
+      "url": "https://tibiavault.com/#bestiary/Hive%20Overseer"
+    },
+    {
+      "name": "Honey Elemental",
+      "lookupKey": "honey elemental",
+      "url": "https://tibiavault.com/#bestiary/Honey%20Elemental"
+    },
+    {
+      "name": "Honour Guard",
+      "lookupKey": "honour guard",
+      "url": "https://tibiavault.com/#bestiary/Honour%20Guard"
+    },
+    {
+      "name": "Horse (Brown)",
+      "lookupKey": "horse brown",
+      "url": "https://tibiavault.com/#bestiary/Horse%20(Brown)"
+    },
+    {
+      "name": "Horse (Grey)",
+      "lookupKey": "horse grey",
+      "url": "https://tibiavault.com/#bestiary/Horse%20(Grey)"
+    },
+    {
+      "name": "Horse (Taupe)",
+      "lookupKey": "horse taupe",
+      "url": "https://tibiavault.com/#bestiary/Horse%20(Taupe)"
+    },
+    {
+      "name": "Hot Dog",
+      "lookupKey": "hot dog",
+      "url": "https://tibiavault.com/#bestiary/Hot%20Dog"
+    },
+    {
+      "name": "Hulking Carnisylvan",
+      "lookupKey": "hulking carnisylvan",
+      "url": "https://tibiavault.com/#bestiary/Hulking%20Carnisylvan"
+    },
+    {
+      "name": "Hulking Prehemoth",
+      "lookupKey": "hulking prehemoth",
+      "url": "https://tibiavault.com/#bestiary/Hulking%20Prehemoth"
+    },
+    {
+      "name": "Humongous Fungus",
+      "lookupKey": "humongous fungus",
+      "url": "https://tibiavault.com/#bestiary/Humongous%20Fungus"
+    },
+    {
+      "name": "Hunter",
+      "lookupKey": "hunter",
+      "url": "https://tibiavault.com/#bestiary/Hunter"
+    },
+    {
+      "name": "Husky",
+      "lookupKey": "husky",
+      "url": "https://tibiavault.com/#bestiary/Husky"
+    },
+    {
+      "name": "Hyaena",
+      "lookupKey": "hyaena",
+      "url": "https://tibiavault.com/#bestiary/Hyaena"
+    },
+    {
+      "name": "Hydra",
+      "lookupKey": "hydra",
+      "url": "https://tibiavault.com/#bestiary/Hydra"
+    },
+    {
+      "name": "Ice Dragon",
+      "lookupKey": "ice dragon",
+      "url": "https://tibiavault.com/#bestiary/Ice%20Dragon"
+    },
+    {
+      "name": "Ice Golem",
+      "lookupKey": "ice golem",
+      "url": "https://tibiavault.com/#bestiary/Ice%20Golem"
+    },
+    {
+      "name": "Ice Witch",
+      "lookupKey": "ice witch",
+      "url": "https://tibiavault.com/#bestiary/Ice%20Witch"
+    },
+    {
+      "name": "Icecold Book",
+      "lookupKey": "icecold book",
+      "url": "https://tibiavault.com/#bestiary/Icecold%20Book"
+    },
+    {
+      "name": "Iks Ahpututu",
+      "lookupKey": "iks ahpututu",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Ahpututu"
+    },
+    {
+      "name": "Iks Aucar",
+      "lookupKey": "iks aucar",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Aucar"
+    },
+    {
+      "name": "Iks Chuka",
+      "lookupKey": "iks chuka",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Chuka"
+    },
+    {
+      "name": "Iks Churrascan",
+      "lookupKey": "iks churrascan",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Churrascan"
+    },
+    {
+      "name": "Iks Pututu",
+      "lookupKey": "iks pututu",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Pututu"
+    },
+    {
+      "name": "Iks Yapunac",
+      "lookupKey": "iks yapunac",
+      "url": "https://tibiavault.com/#bestiary/Iks%20Yapunac"
+    },
+    {
+      "name": "Imperial",
+      "lookupKey": "imperial",
+      "url": "https://tibiavault.com/#bestiary/Imperial"
+    },
+    {
+      "name": "Infected Weeper",
+      "lookupKey": "infected weeper",
+      "url": "https://tibiavault.com/#bestiary/Infected%20Weeper"
+    },
+    {
+      "name": "Infernal Demon",
+      "lookupKey": "infernal demon",
+      "url": "https://tibiavault.com/#bestiary/Infernal%20Demon"
+    },
+    {
+      "name": "Infernal Frog",
+      "lookupKey": "infernal frog",
+      "url": "https://tibiavault.com/#bestiary/Infernal%20Frog"
+    },
+    {
+      "name": "Infernal Phantom",
+      "lookupKey": "infernal phantom",
+      "url": "https://tibiavault.com/#bestiary/Infernal%20Phantom"
+    },
+    {
+      "name": "Infernalist",
+      "lookupKey": "infernalist",
+      "url": "https://tibiavault.com/#bestiary/Infernalist"
+    },
+    {
+      "name": "Ink Blob",
+      "lookupKey": "ink blob",
+      "url": "https://tibiavault.com/#bestiary/Ink%20Blob"
+    },
+    {
+      "name": "Ink Splash",
+      "lookupKey": "ink splash",
+      "url": "https://tibiavault.com/#bestiary/Ink%20Splash"
+    },
+    {
+      "name": "Insane Siren",
+      "lookupKey": "insane siren",
+      "url": "https://tibiavault.com/#bestiary/Insane%20Siren"
+    },
+    {
+      "name": "Insect Swarm",
+      "lookupKey": "insect swarm",
+      "url": "https://tibiavault.com/#bestiary/Insect%20Swarm"
+    },
+    {
+      "name": "Insectoid Scout",
+      "lookupKey": "insectoid scout",
+      "url": "https://tibiavault.com/#bestiary/Insectoid%20Scout"
+    },
+    {
+      "name": "Insectoid Worker",
+      "lookupKey": "insectoid worker",
+      "url": "https://tibiavault.com/#bestiary/Insectoid%20Worker"
+    },
+    {
+      "name": "Instable Breach Brood",
+      "lookupKey": "instable breach brood",
+      "url": "https://tibiavault.com/#bestiary/Instable%20Breach%20Brood"
+    },
+    {
+      "name": "Instable Sparkion",
+      "lookupKey": "instable sparkion",
+      "url": "https://tibiavault.com/#bestiary/Instable%20Sparkion"
+    },
+    {
+      "name": "Iron Servant",
+      "lookupKey": "iron servant",
+      "url": "https://tibiavault.com/#bestiary/Iron%20Servant"
+    },
+    {
+      "name": "Iron Servant Replica",
+      "lookupKey": "iron servant replica",
+      "url": "https://tibiavault.com/#bestiary/Iron%20Servant%20Replica"
+    },
+    {
+      "name": "Ironblight",
+      "lookupKey": "ironblight",
+      "url": "https://tibiavault.com/#bestiary/Ironblight"
+    },
+    {
+      "name": "Island Troll",
+      "lookupKey": "island troll",
+      "url": "https://tibiavault.com/#bestiary/Island%20Troll"
+    },
+    {
+      "name": "Jellyfish",
+      "lookupKey": "jellyfish",
+      "url": "https://tibiavault.com/#bestiary/Jellyfish"
+    },
+    {
+      "name": "Juggernaut",
+      "lookupKey": "juggernaut",
+      "url": "https://tibiavault.com/#bestiary/Juggernaut"
+    },
+    {
+      "name": "Jungle Moa",
+      "lookupKey": "jungle moa",
+      "url": "https://tibiavault.com/#bestiary/Jungle%20Moa"
+    },
+    {
+      "name": "Juvenile Bashmu",
+      "lookupKey": "juvenile bashmu",
+      "url": "https://tibiavault.com/#bestiary/Juvenile%20Bashmu"
+    },
+    {
+      "name": "Killer Caiman",
+      "lookupKey": "killer caiman",
+      "url": "https://tibiavault.com/#bestiary/Killer%20Caiman"
+    },
+    {
+      "name": "Killer Rabbit",
+      "lookupKey": "killer rabbit",
+      "url": "https://tibiavault.com/#bestiary/Killer%20Rabbit"
+    },
+    {
+      "name": "Knight's Apparition",
+      "lookupKey": "knights apparition",
+      "url": "https://tibiavault.com/#bestiary/Knight"
+    },
+    {
+      "name": "Knowledge Elemental",
+      "lookupKey": "knowledge elemental",
+      "url": "https://tibiavault.com/#bestiary/Knowledge%20Elemental"
+    },
+    {
+      "name": "Kollos",
+      "lookupKey": "kollos",
+      "url": "https://tibiavault.com/#bestiary/Kollos"
+    },
+    {
+      "name": "Kongra",
+      "lookupKey": "kongra",
+      "url": "https://tibiavault.com/#bestiary/Kongra"
+    },
+    {
+      "name": "Lacewing Moth",
+      "lookupKey": "lacewing moth",
+      "url": "https://tibiavault.com/#bestiary/Lacewing%20Moth"
+    },
+    {
+      "name": "Ladybug",
+      "lookupKey": "ladybug",
+      "url": "https://tibiavault.com/#bestiary/Ladybug"
+    },
+    {
+      "name": "Lamassu",
+      "lookupKey": "lamassu",
+      "url": "https://tibiavault.com/#bestiary/Lamassu"
+    },
+    {
+      "name": "Lancer Beetle",
+      "lookupKey": "lancer beetle",
+      "url": "https://tibiavault.com/#bestiary/Lancer%20Beetle"
+    },
+    {
+      "name": "Larva",
+      "lookupKey": "larva",
+      "url": "https://tibiavault.com/#bestiary/Larva"
+    },
+    {
+      "name": "Lava Golem",
+      "lookupKey": "lava golem",
+      "url": "https://tibiavault.com/#bestiary/Lava%20Golem"
+    },
+    {
+      "name": "Lava Lurker",
+      "lookupKey": "lava lurker",
+      "url": "https://tibiavault.com/#bestiary/Lava%20Lurker"
+    },
+    {
+      "name": "Lavafungus",
+      "lookupKey": "lavafungus",
+      "url": "https://tibiavault.com/#bestiary/Lavafungus"
+    },
+    {
+      "name": "Lavaworm",
+      "lookupKey": "lavaworm",
+      "url": "https://tibiavault.com/#bestiary/Lavaworm"
+    },
+    {
+      "name": "Leaf Golem",
+      "lookupKey": "leaf golem",
+      "url": "https://tibiavault.com/#bestiary/Leaf%20Golem"
+    },
+    {
+      "name": "Lich",
+      "lookupKey": "lich",
+      "url": "https://tibiavault.com/#bestiary/Lich"
+    },
+    {
+      "name": "Liodile",
+      "lookupKey": "liodile",
+      "url": "https://tibiavault.com/#bestiary/Liodile"
+    },
+    {
+      "name": "Lion",
+      "lookupKey": "lion",
+      "url": "https://tibiavault.com/#bestiary/Lion"
+    },
+    {
+      "name": "Lion Hydra",
+      "lookupKey": "lion hydra",
+      "url": "https://tibiavault.com/#bestiary/Lion%20Hydra"
+    },
+    {
+      "name": "Little Corym Charlatan",
+      "lookupKey": "little corym charlatan",
+      "url": "https://tibiavault.com/#bestiary/Little%20Corym%20Charlatan"
+    },
+    {
+      "name": "Lizard Chosen",
+      "lookupKey": "lizard chosen",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Chosen"
+    },
+    {
+      "name": "Lizard Dragon Priest",
+      "lookupKey": "lizard dragon priest",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Dragon%20Priest"
+    },
+    {
+      "name": "Lizard High Guard",
+      "lookupKey": "lizard high guard",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20High%20Guard"
+    },
+    {
+      "name": "Lizard Legionnaire",
+      "lookupKey": "lizard legionnaire",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Legionnaire"
+    },
+    {
+      "name": "Lizard Magistratus",
+      "lookupKey": "lizard magistratus",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Magistratus"
+    },
+    {
+      "name": "Lizard Noble",
+      "lookupKey": "lizard noble",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Noble"
+    },
+    {
+      "name": "Lizard Sentinel",
+      "lookupKey": "lizard sentinel",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Sentinel"
+    },
+    {
+      "name": "Lizard Snakecharmer",
+      "lookupKey": "lizard snakecharmer",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Snakecharmer"
+    },
+    {
+      "name": "Lizard Templar",
+      "lookupKey": "lizard templar",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Templar"
+    },
+    {
+      "name": "Lizard Zaogun",
+      "lookupKey": "lizard zaogun",
+      "url": "https://tibiavault.com/#bestiary/Lizard%20Zaogun"
+    },
+    {
+      "name": "Loricate Orger",
+      "lookupKey": "loricate orger",
+      "url": "https://tibiavault.com/#bestiary/Loricate%20Orger"
+    },
+    {
+      "name": "Lost Basher",
+      "lookupKey": "lost basher",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Basher"
+    },
+    {
+      "name": "Lost Berserker",
+      "lookupKey": "lost berserker",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Berserker"
+    },
+    {
+      "name": "Lost Exile",
+      "lookupKey": "lost exile",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Exile"
+    },
+    {
+      "name": "Lost Husher",
+      "lookupKey": "lost husher",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Husher"
+    },
+    {
+      "name": "Lost Soul",
+      "lookupKey": "lost soul",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Soul"
+    },
+    {
+      "name": "Lost Thrower",
+      "lookupKey": "lost thrower",
+      "url": "https://tibiavault.com/#bestiary/Lost%20Thrower"
+    },
+    {
+      "name": "Lumbering Carnivor",
+      "lookupKey": "lumbering carnivor",
+      "url": "https://tibiavault.com/#bestiary/Lumbering%20Carnivor"
+    },
+    {
+      "name": "Mad Scientist",
+      "lookupKey": "mad scientist",
+      "url": "https://tibiavault.com/#bestiary/Mad%20Scientist"
+    },
+    {
+      "name": "Magma Crawler",
+      "lookupKey": "magma crawler",
+      "url": "https://tibiavault.com/#bestiary/Magma%20Crawler"
+    },
+    {
+      "name": "Makara",
+      "lookupKey": "makara",
+      "url": "https://tibiavault.com/#bestiary/Makara"
+    },
+    {
+      "name": "Mammoth",
+      "lookupKey": "mammoth",
+      "url": "https://tibiavault.com/#bestiary/Mammoth"
+    },
+    {
+      "name": "Manta Ray",
+      "lookupKey": "manta ray",
+      "url": "https://tibiavault.com/#bestiary/Manta%20Ray"
+    },
+    {
+      "name": "Manticore",
+      "lookupKey": "manticore",
+      "url": "https://tibiavault.com/#bestiary/Manticore"
+    },
+    {
+      "name": "Mantosaurus",
+      "lookupKey": "mantosaurus",
+      "url": "https://tibiavault.com/#bestiary/Mantosaurus"
+    },
+    {
+      "name": "Many Faces",
+      "lookupKey": "many faces",
+      "url": "https://tibiavault.com/#bestiary/Many%20Faces"
+    },
+    {
+      "name": "Marid",
+      "lookupKey": "marid",
+      "url": "https://tibiavault.com/#bestiary/Marid"
+    },
+    {
+      "name": "Marsh Stalker",
+      "lookupKey": "marsh stalker",
+      "url": "https://tibiavault.com/#bestiary/Marsh%20Stalker"
+    },
+    {
+      "name": "Massive Earth Elemental",
+      "lookupKey": "massive earth elemental",
+      "url": "https://tibiavault.com/#bestiary/Massive%20Earth%20Elemental"
+    },
+    {
+      "name": "Massive Energy Elemental",
+      "lookupKey": "massive energy elemental",
+      "url": "https://tibiavault.com/#bestiary/Massive%20Energy%20Elemental"
+    },
+    {
+      "name": "Massive Fire Elemental",
+      "lookupKey": "massive fire elemental",
+      "url": "https://tibiavault.com/#bestiary/Massive%20Fire%20Elemental"
+    },
+    {
+      "name": "Massive Water Elemental",
+      "lookupKey": "massive water elemental",
+      "url": "https://tibiavault.com/#bestiary/Massive%20Water%20Elemental"
+    },
+    {
+      "name": "Mean Lost Soul",
+      "lookupKey": "mean lost soul",
+      "url": "https://tibiavault.com/#bestiary/Mean%20Lost%20Soul"
+    },
+    {
+      "name": "Meandering Mushroom",
+      "lookupKey": "meandering mushroom",
+      "url": "https://tibiavault.com/#bestiary/Meandering%20Mushroom"
+    },
+    {
+      "name": "Medusa",
+      "lookupKey": "medusa",
+      "url": "https://tibiavault.com/#bestiary/Medusa"
+    },
+    {
+      "name": "Mega Dragon",
+      "lookupKey": "mega dragon",
+      "url": "https://tibiavault.com/#bestiary/Mega%20Dragon"
+    },
+    {
+      "name": "Menacing Carnivor",
+      "lookupKey": "menacing carnivor",
+      "url": "https://tibiavault.com/#bestiary/Menacing%20Carnivor"
+    },
+    {
+      "name": "Mercurial Menace",
+      "lookupKey": "mercurial menace",
+      "url": "https://tibiavault.com/#bestiary/Mercurial%20Menace"
+    },
+    {
+      "name": "Mercury Blob",
+      "lookupKey": "mercury blob",
+      "url": "https://tibiavault.com/#bestiary/Mercury%20Blob"
+    },
+    {
+      "name": "Merlkin",
+      "lookupKey": "merlkin",
+      "url": "https://tibiavault.com/#bestiary/Merlkin"
+    },
+    {
+      "name": "Metal Gargoyle",
+      "lookupKey": "metal gargoyle",
+      "url": "https://tibiavault.com/#bestiary/Metal%20Gargoyle"
+    },
+    {
+      "name": "Midnight Asura",
+      "lookupKey": "midnight asura",
+      "url": "https://tibiavault.com/#bestiary/Midnight%20Asura"
+    },
+    {
+      "name": "Midnight Panther",
+      "lookupKey": "midnight panther",
+      "url": "https://tibiavault.com/#bestiary/Midnight%20Panther"
+    },
+    {
+      "name": "Midnight Spawn",
+      "lookupKey": "midnight spawn",
+      "url": "https://tibiavault.com/#bestiary/Midnight%20Spawn"
+    },
+    {
+      "name": "Midnight Warrior",
+      "lookupKey": "midnight warrior",
+      "url": "https://tibiavault.com/#bestiary/Midnight%20Warrior"
+    },
+    {
+      "name": "Minotaur",
+      "lookupKey": "minotaur",
+      "url": "https://tibiavault.com/#bestiary/Minotaur"
+    },
+    {
+      "name": "Minotaur Amazon",
+      "lookupKey": "minotaur amazon",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Amazon"
+    },
+    {
+      "name": "Minotaur Archer",
+      "lookupKey": "minotaur archer",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Archer"
+    },
+    {
+      "name": "Minotaur Cult Follower",
+      "lookupKey": "minotaur cult follower",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Follower"
+    },
+    {
+      "name": "Minotaur Cult Prophet",
+      "lookupKey": "minotaur cult prophet",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Prophet"
+    },
+    {
+      "name": "Minotaur Cult Zealot",
+      "lookupKey": "minotaur cult zealot",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Zealot"
+    },
+    {
+      "name": "Minotaur Guard",
+      "lookupKey": "minotaur guard",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Guard"
+    },
+    {
+      "name": "Minotaur Hunter",
+      "lookupKey": "minotaur hunter",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Hunter"
+    },
+    {
+      "name": "Minotaur Invader",
+      "lookupKey": "minotaur invader",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Invader"
+    },
+    {
+      "name": "Minotaur Mage",
+      "lookupKey": "minotaur mage",
+      "url": "https://tibiavault.com/#bestiary/Minotaur%20Mage"
+    },
+    {
+      "name": "Misguided Bully",
+      "lookupKey": "misguided bully",
+      "url": "https://tibiavault.com/#bestiary/Misguided%20Bully"
+    },
+    {
+      "name": "Misguided Thief",
+      "lookupKey": "misguided thief",
+      "url": "https://tibiavault.com/#bestiary/Misguided%20Thief"
+    },
+    {
+      "name": "Mitmah Scout",
+      "lookupKey": "mitmah scout",
+      "url": "https://tibiavault.com/#bestiary/Mitmah%20Scout"
+    },
+    {
+      "name": "Mitmah Seer",
+      "lookupKey": "mitmah seer",
+      "url": "https://tibiavault.com/#bestiary/Mitmah%20Seer"
+    },
+    {
+      "name": "Modified Gnarlhound",
+      "lookupKey": "modified gnarlhound",
+      "url": "https://tibiavault.com/#bestiary/Modified%20Gnarlhound"
+    },
+    {
+      "name": "Mole",
+      "lookupKey": "mole",
+      "url": "https://tibiavault.com/#bestiary/Mole"
+    },
+    {
+      "name": "Monk (Creature)",
+      "lookupKey": "monk creature",
+      "url": "https://tibiavault.com/#bestiary/Monk%20(Creature)"
+    },
+    {
+      "name": "Monk's Apparition",
+      "lookupKey": "monks apparition",
+      "url": "https://tibiavault.com/#bestiary/Monk"
+    },
+    {
+      "name": "Mooh'Tah Warrior",
+      "lookupKey": "moohtah warrior",
+      "url": "https://tibiavault.com/#bestiary/Mooh"
+    },
+    {
+      "name": "Moohtant",
+      "lookupKey": "moohtant",
+      "url": "https://tibiavault.com/#bestiary/Moohtant"
+    },
+    {
+      "name": "Mould Phantom",
+      "lookupKey": "mould phantom",
+      "url": "https://tibiavault.com/#bestiary/Mould%20Phantom"
+    },
+    {
+      "name": "Muglex Clan Assassin",
+      "lookupKey": "muglex clan assassin",
+      "url": "https://tibiavault.com/#bestiary/Muglex%20Clan%20Assassin"
+    },
+    {
+      "name": "Muglex Clan Footman",
+      "lookupKey": "muglex clan footman",
+      "url": "https://tibiavault.com/#bestiary/Muglex%20Clan%20Footman"
+    },
+    {
+      "name": "Mummy",
+      "lookupKey": "mummy",
+      "url": "https://tibiavault.com/#bestiary/Mummy"
+    },
+    {
+      "name": "Mushroom Sniffer",
+      "lookupKey": "mushroom sniffer",
+      "url": "https://tibiavault.com/#bestiary/Mushroom%20Sniffer"
+    },
+    {
+      "name": "Mutated Bat",
+      "lookupKey": "mutated bat",
+      "url": "https://tibiavault.com/#bestiary/Mutated%20Bat"
+    },
+    {
+      "name": "Mutated Human",
+      "lookupKey": "mutated human",
+      "url": "https://tibiavault.com/#bestiary/Mutated%20Human"
+    },
+    {
+      "name": "Mutated Rat",
+      "lookupKey": "mutated rat",
+      "url": "https://tibiavault.com/#bestiary/Mutated%20Rat"
+    },
+    {
+      "name": "Mutated Tiger",
+      "lookupKey": "mutated tiger",
+      "url": "https://tibiavault.com/#bestiary/Mutated%20Tiger"
+    },
+    {
+      "name": "Mycobiontic Beetle",
+      "lookupKey": "mycobiontic beetle",
+      "url": "https://tibiavault.com/#bestiary/Mycobiontic%20Beetle"
+    },
+    {
+      "name": "Naga Archer",
+      "lookupKey": "naga archer",
+      "url": "https://tibiavault.com/#bestiary/Naga%20Archer"
+    },
+    {
+      "name": "Naga Warrior",
+      "lookupKey": "naga warrior",
+      "url": "https://tibiavault.com/#bestiary/Naga%20Warrior"
+    },
+    {
+      "name": "Necromancer",
+      "lookupKey": "necromancer",
+      "url": "https://tibiavault.com/#bestiary/Necromancer"
+    },
+    {
+      "name": "Nibblemaw",
+      "lookupKey": "nibblemaw",
+      "url": "https://tibiavault.com/#bestiary/Nibblemaw"
+    },
+    {
+      "name": "Night Harpy",
+      "lookupKey": "night harpy",
+      "url": "https://tibiavault.com/#bestiary/Night%20Harpy"
+    },
+    {
+      "name": "Nightfiend",
+      "lookupKey": "nightfiend",
+      "url": "https://tibiavault.com/#bestiary/Nightfiend"
+    },
+    {
+      "name": "Nighthunter",
+      "lookupKey": "nighthunter",
+      "url": "https://tibiavault.com/#bestiary/Nighthunter"
+    },
+    {
+      "name": "Nightmare",
+      "lookupKey": "nightmare",
+      "url": "https://tibiavault.com/#bestiary/Nightmare"
+    },
+    {
+      "name": "Nightmare Scion",
+      "lookupKey": "nightmare scion",
+      "url": "https://tibiavault.com/#bestiary/Nightmare%20Scion"
+    },
+    {
+      "name": "Nightslayer",
+      "lookupKey": "nightslayer",
+      "url": "https://tibiavault.com/#bestiary/Nightslayer"
+    },
+    {
+      "name": "Nightstalker",
+      "lookupKey": "nightstalker",
+      "url": "https://tibiavault.com/#bestiary/Nightstalker"
+    },
+    {
+      "name": "Noble Lion",
+      "lookupKey": "noble lion",
+      "url": "https://tibiavault.com/#bestiary/Noble%20Lion"
+    },
+    {
+      "name": "Nomad (Basic)",
+      "lookupKey": "nomad basic",
+      "url": "https://tibiavault.com/#bestiary/Nomad%20(Basic)"
+    },
+    {
+      "name": "Nomad (Blue)",
+      "lookupKey": "nomad blue",
+      "url": "https://tibiavault.com/#bestiary/Nomad%20(Blue)"
+    },
+    {
+      "name": "Nomad (Female)",
+      "lookupKey": "nomad female",
+      "url": "https://tibiavault.com/#bestiary/Nomad%20(Female)"
+    },
+    {
+      "name": "Norcferatu Heartless",
+      "lookupKey": "norcferatu heartless",
+      "url": "https://tibiavault.com/#bestiary/Norcferatu%20Heartless"
+    },
+    {
+      "name": "Norcferatu Nightweaver",
+      "lookupKey": "norcferatu nightweaver",
+      "url": "https://tibiavault.com/#bestiary/Norcferatu%20Nightweaver"
+    },
+    {
+      "name": "Northern Pike (Creature)",
+      "lookupKey": "northern pike creature",
+      "url": "https://tibiavault.com/#bestiary/Northern%20Pike%20(Creature)"
+    },
+    {
+      "name": "Novice of the Cult",
+      "lookupKey": "novice of the cult",
+      "url": "https://tibiavault.com/#bestiary/Novice%20of%20the%20Cult"
+    },
+    {
+      "name": "Noxious Ripptor",
+      "lookupKey": "noxious ripptor",
+      "url": "https://tibiavault.com/#bestiary/Noxious%20Ripptor"
+    },
+    {
+      "name": "Nymph",
+      "lookupKey": "nymph",
+      "url": "https://tibiavault.com/#bestiary/Nymph"
+    },
+    {
+      "name": "Ogre Brute",
+      "lookupKey": "ogre brute",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Brute"
+    },
+    {
+      "name": "Ogre Rowdy",
+      "lookupKey": "ogre rowdy",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Rowdy"
+    },
+    {
+      "name": "Ogre Ruffian",
+      "lookupKey": "ogre ruffian",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Ruffian"
+    },
+    {
+      "name": "Ogre Sage",
+      "lookupKey": "ogre sage",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Sage"
+    },
+    {
+      "name": "Ogre Savage",
+      "lookupKey": "ogre savage",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Savage"
+    },
+    {
+      "name": "Ogre Shaman",
+      "lookupKey": "ogre shaman",
+      "url": "https://tibiavault.com/#bestiary/Ogre%20Shaman"
+    },
+    {
+      "name": "Omnivora",
+      "lookupKey": "omnivora",
+      "url": "https://tibiavault.com/#bestiary/Omnivora"
+    },
+    {
+      "name": "Oozing Carcass",
+      "lookupKey": "oozing carcass",
+      "url": "https://tibiavault.com/#bestiary/Oozing%20Carcass"
+    },
+    {
+      "name": "Oozing Corpus",
+      "lookupKey": "oozing corpus",
+      "url": "https://tibiavault.com/#bestiary/Oozing%20Corpus"
+    },
+    {
+      "name": "Orc",
+      "lookupKey": "orc",
+      "url": "https://tibiavault.com/#bestiary/Orc"
+    },
+    {
+      "name": "Orc Berserker",
+      "lookupKey": "orc berserker",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Berserker"
+    },
+    {
+      "name": "Orc Cult Fanatic",
+      "lookupKey": "orc cult fanatic",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Cult%20Fanatic"
+    },
+    {
+      "name": "Orc Cult Inquisitor",
+      "lookupKey": "orc cult inquisitor",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Cult%20Inquisitor"
+    },
+    {
+      "name": "Orc Cult Minion",
+      "lookupKey": "orc cult minion",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Cult%20Minion"
+    },
+    {
+      "name": "Orc Cult Priest",
+      "lookupKey": "orc cult priest",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Cult%20Priest"
+    },
+    {
+      "name": "Orc Cultist",
+      "lookupKey": "orc cultist",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Cultist"
+    },
+    {
+      "name": "Orc Leader",
+      "lookupKey": "orc leader",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Leader"
+    },
+    {
+      "name": "Orc Marauder",
+      "lookupKey": "orc marauder",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Marauder"
+    },
+    {
+      "name": "Orc Rider",
+      "lookupKey": "orc rider",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Rider"
+    },
+    {
+      "name": "Orc Shaman",
+      "lookupKey": "orc shaman",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Shaman"
+    },
+    {
+      "name": "Orc Spearman",
+      "lookupKey": "orc spearman",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Spearman"
+    },
+    {
+      "name": "Orc Warlord",
+      "lookupKey": "orc warlord",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Warlord"
+    },
+    {
+      "name": "Orc Warrior",
+      "lookupKey": "orc warrior",
+      "url": "https://tibiavault.com/#bestiary/Orc%20Warrior"
+    },
+    {
+      "name": "Orchid Frog",
+      "lookupKey": "orchid frog",
+      "url": "https://tibiavault.com/#bestiary/Orchid%20Frog"
+    },
+    {
+      "name": "Orclops Bloodbreaker",
+      "lookupKey": "orclops bloodbreaker",
+      "url": "https://tibiavault.com/#bestiary/Orclops%20Bloodbreaker"
+    },
+    {
+      "name": "Orclops Doomhauler",
+      "lookupKey": "orclops doomhauler",
+      "url": "https://tibiavault.com/#bestiary/Orclops%20Doomhauler"
+    },
+    {
+      "name": "Orclops Ravager",
+      "lookupKey": "orclops ravager",
+      "url": "https://tibiavault.com/#bestiary/Orclops%20Ravager"
+    },
+    {
+      "name": "Orewalker",
+      "lookupKey": "orewalker",
+      "url": "https://tibiavault.com/#bestiary/Orewalker"
+    },
+    {
+      "name": "Orger",
+      "lookupKey": "orger",
+      "url": "https://tibiavault.com/#bestiary/Orger"
+    },
+    {
+      "name": "Overseer Osverger",
+      "lookupKey": "overseer osverger",
+      "url": "https://tibiavault.com/#bestiary/Overseer%20Osverger"
+    },
+    {
+      "name": "Paladin's Apparition",
+      "lookupKey": "paladins apparition",
+      "url": "https://tibiavault.com/#bestiary/Paladin"
+    },
+    {
+      "name": "Panda",
+      "lookupKey": "panda",
+      "url": "https://tibiavault.com/#bestiary/Panda"
+    },
+    {
+      "name": "Parder",
+      "lookupKey": "parder",
+      "url": "https://tibiavault.com/#bestiary/Parder"
+    },
+    {
+      "name": "Parrot",
+      "lookupKey": "parrot",
+      "url": "https://tibiavault.com/#bestiary/Parrot"
+    },
+    {
+      "name": "Penguin",
+      "lookupKey": "penguin",
+      "url": "https://tibiavault.com/#bestiary/Penguin"
+    },
+    {
+      "name": "Percht",
+      "lookupKey": "percht",
+      "url": "https://tibiavault.com/#bestiary/Percht"
+    },
+    {
+      "name": "Phantasm",
+      "lookupKey": "phantasm",
+      "url": "https://tibiavault.com/#bestiary/Phantasm"
+    },
+    {
+      "name": "Pig",
+      "lookupKey": "pig",
+      "url": "https://tibiavault.com/#bestiary/Pig"
+    },
+    {
+      "name": "Pigeon",
+      "lookupKey": "pigeon",
+      "url": "https://tibiavault.com/#bestiary/Pigeon"
+    },
+    {
+      "name": "Pirat Bombardier",
+      "lookupKey": "pirat bombardier",
+      "url": "https://tibiavault.com/#bestiary/Pirat%20Bombardier"
+    },
+    {
+      "name": "Pirat Cutthroat",
+      "lookupKey": "pirat cutthroat",
+      "url": "https://tibiavault.com/#bestiary/Pirat%20Cutthroat"
+    },
+    {
+      "name": "Pirat Mate",
+      "lookupKey": "pirat mate",
+      "url": "https://tibiavault.com/#bestiary/Pirat%20Mate"
+    },
+    {
+      "name": "Pirat Scoundrel",
+      "lookupKey": "pirat scoundrel",
+      "url": "https://tibiavault.com/#bestiary/Pirat%20Scoundrel"
+    },
+    {
+      "name": "Pirate Buccaneer",
+      "lookupKey": "pirate buccaneer",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Buccaneer"
+    },
+    {
+      "name": "Pirate Corsair",
+      "lookupKey": "pirate corsair",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Corsair"
+    },
+    {
+      "name": "Pirate Cutthroat",
+      "lookupKey": "pirate cutthroat",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Cutthroat"
+    },
+    {
+      "name": "Pirate Ghost",
+      "lookupKey": "pirate ghost",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Ghost"
+    },
+    {
+      "name": "Pirate Marauder",
+      "lookupKey": "pirate marauder",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Marauder"
+    },
+    {
+      "name": "Pirate Skeleton",
+      "lookupKey": "pirate skeleton",
+      "url": "https://tibiavault.com/#bestiary/Pirate%20Skeleton"
+    },
+    {
+      "name": "Pixie",
+      "lookupKey": "pixie",
+      "url": "https://tibiavault.com/#bestiary/Pixie"
+    },
+    {
+      "name": "Plaguesmith",
+      "lookupKey": "plaguesmith",
+      "url": "https://tibiavault.com/#bestiary/Plaguesmith"
+    },
+    {
+      "name": "Poacher",
+      "lookupKey": "poacher",
+      "url": "https://tibiavault.com/#bestiary/Poacher"
+    },
+    {
+      "name": "Poison Spider",
+      "lookupKey": "poison spider",
+      "url": "https://tibiavault.com/#bestiary/Poison%20Spider"
+    },
+    {
+      "name": "Poisonous Carnisylvan",
+      "lookupKey": "poisonous carnisylvan",
+      "url": "https://tibiavault.com/#bestiary/Poisonous%20Carnisylvan"
+    },
+    {
+      "name": "Polar Bear",
+      "lookupKey": "polar bear",
+      "url": "https://tibiavault.com/#bestiary/Polar%20Bear"
+    },
+    {
+      "name": "Pooka",
+      "lookupKey": "pooka",
+      "url": "https://tibiavault.com/#bestiary/Pooka"
+    },
+    {
+      "name": "Priestess",
+      "lookupKey": "priestess",
+      "url": "https://tibiavault.com/#bestiary/Priestess"
+    },
+    {
+      "name": "Priestess of the Wild Sun",
+      "lookupKey": "priestess of the wild sun",
+      "url": "https://tibiavault.com/#bestiary/Priestess%20of%20the%20Wild%20Sun"
+    },
+    {
+      "name": "Putrid Mummy",
+      "lookupKey": "putrid mummy",
+      "url": "https://tibiavault.com/#bestiary/Putrid%20Mummy"
+    },
+    {
+      "name": "Quara Constrictor",
+      "lookupKey": "quara constrictor",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Constrictor"
+    },
+    {
+      "name": "Quara Constrictor Scout",
+      "lookupKey": "quara constrictor scout",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Constrictor%20Scout"
+    },
+    {
+      "name": "Quara Hydromancer",
+      "lookupKey": "quara hydromancer",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Hydromancer"
+    },
+    {
+      "name": "Quara Hydromancer Scout",
+      "lookupKey": "quara hydromancer scout",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Hydromancer%20Scout"
+    },
+    {
+      "name": "Quara Looter",
+      "lookupKey": "quara looter",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Looter"
+    },
+    {
+      "name": "Quara Mantassin",
+      "lookupKey": "quara mantassin",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Mantassin"
+    },
+    {
+      "name": "Quara Mantassin Scout",
+      "lookupKey": "quara mantassin scout",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Mantassin%20Scout"
+    },
+    {
+      "name": "Quara Pincher",
+      "lookupKey": "quara pincher",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Pincher"
+    },
+    {
+      "name": "Quara Pincher Scout",
+      "lookupKey": "quara pincher scout",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Pincher%20Scout"
+    },
+    {
+      "name": "Quara Plunderer",
+      "lookupKey": "quara plunderer",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Plunderer"
+    },
+    {
+      "name": "Quara Predator",
+      "lookupKey": "quara predator",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Predator"
+    },
+    {
+      "name": "Quara Predator Scout",
+      "lookupKey": "quara predator scout",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Predator%20Scout"
+    },
+    {
+      "name": "Quara Raider",
+      "lookupKey": "quara raider",
+      "url": "https://tibiavault.com/#bestiary/Quara%20Raider"
+    },
+    {
+      "name": "Rabbit",
+      "lookupKey": "rabbit",
+      "url": "https://tibiavault.com/#bestiary/Rabbit"
+    },
+    {
+      "name": "Rabid Wolf",
+      "lookupKey": "rabid wolf",
+      "url": "https://tibiavault.com/#bestiary/Rabid%20Wolf"
+    },
+    {
+      "name": "Rage Squid",
+      "lookupKey": "rage squid",
+      "url": "https://tibiavault.com/#bestiary/Rage%20Squid"
+    },
+    {
+      "name": "Ragged Rabid Wolf",
+      "lookupKey": "ragged rabid wolf",
+      "url": "https://tibiavault.com/#bestiary/Ragged%20Rabid%20Wolf"
+    },
+    {
+      "name": "Raging Fire",
+      "lookupKey": "raging fire",
+      "url": "https://tibiavault.com/#bestiary/Raging%20Fire"
+    },
+    {
+      "name": "Rat",
+      "lookupKey": "rat",
+      "url": "https://tibiavault.com/#bestiary/Rat"
+    },
+    {
+      "name": "Raubritter Chastener",
+      "lookupKey": "raubritter chastener",
+      "url": "https://tibiavault.com/#bestiary/Raubritter%20Chastener"
+    },
+    {
+      "name": "Raubritter Marksman",
+      "lookupKey": "raubritter marksman",
+      "url": "https://tibiavault.com/#bestiary/Raubritter%20Marksman"
+    },
+    {
+      "name": "Raubritter Skirmisher",
+      "lookupKey": "raubritter skirmisher",
+      "url": "https://tibiavault.com/#bestiary/Raubritter%20Skirmisher"
+    },
+    {
+      "name": "Ravenous Lava Lurker",
+      "lookupKey": "ravenous lava lurker",
+      "url": "https://tibiavault.com/#bestiary/Ravenous%20Lava%20Lurker"
+    },
+    {
+      "name": "Reality Reaver",
+      "lookupKey": "reality reaver",
+      "url": "https://tibiavault.com/#bestiary/Reality%20Reaver"
+    },
+    {
+      "name": "Redeemed Soul",
+      "lookupKey": "redeemed soul",
+      "url": "https://tibiavault.com/#bestiary/Redeemed%20Soul"
+    },
+    {
+      "name": "Renegade Knight",
+      "lookupKey": "renegade knight",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Knight"
+    },
+    {
+      "name": "Renegade Quara Constrictor",
+      "lookupKey": "renegade quara constrictor",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Constrictor"
+    },
+    {
+      "name": "Renegade Quara Hydromancer",
+      "lookupKey": "renegade quara hydromancer",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Hydromancer"
+    },
+    {
+      "name": "Renegade Quara Mantassin",
+      "lookupKey": "renegade quara mantassin",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Mantassin"
+    },
+    {
+      "name": "Renegade Quara Pincher",
+      "lookupKey": "renegade quara pincher",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Pincher"
+    },
+    {
+      "name": "Renegade Quara Predator",
+      "lookupKey": "renegade quara predator",
+      "url": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Predator"
+    },
+    {
+      "name": "Retching Horror",
+      "lookupKey": "retching horror",
+      "url": "https://tibiavault.com/#bestiary/Retching%20Horror"
+    },
+    {
+      "name": "Rhindeer",
+      "lookupKey": "rhindeer",
+      "url": "https://tibiavault.com/#bestiary/Rhindeer"
+    },
+    {
+      "name": "Ripper Spectre",
+      "lookupKey": "ripper spectre",
+      "url": "https://tibiavault.com/#bestiary/Ripper%20Spectre"
+    },
+    {
+      "name": "Roaming Dread",
+      "lookupKey": "roaming dread",
+      "url": "https://tibiavault.com/#bestiary/Roaming%20Dread"
+    },
+    {
+      "name": "Roaring Lion",
+      "lookupKey": "roaring lion",
+      "url": "https://tibiavault.com/#bestiary/Roaring%20Lion"
+    },
+    {
+      "name": "Roast Pork",
+      "lookupKey": "roast pork",
+      "url": "https://tibiavault.com/#bestiary/Roast%20Pork"
+    },
+    {
+      "name": "Rootthing Amber Shaper",
+      "lookupKey": "rootthing amber shaper",
+      "url": "https://tibiavault.com/#bestiary/Rootthing%20Amber%20Shaper"
+    },
+    {
+      "name": "Rootthing Bug Tracker",
+      "lookupKey": "rootthing bug tracker",
+      "url": "https://tibiavault.com/#bestiary/Rootthing%20Bug%20Tracker"
+    },
+    {
+      "name": "Rootthing Nutshell",
+      "lookupKey": "rootthing nutshell",
+      "url": "https://tibiavault.com/#bestiary/Rootthing%20Nutshell"
+    },
+    {
+      "name": "Rorc",
+      "lookupKey": "rorc",
+      "url": "https://tibiavault.com/#bestiary/Rorc"
+    },
+    {
+      "name": "Rot Elemental",
+      "lookupKey": "rot elemental",
+      "url": "https://tibiavault.com/#bestiary/Rot%20Elemental"
+    },
+    {
+      "name": "Rotten Golem",
+      "lookupKey": "rotten golem",
+      "url": "https://tibiavault.com/#bestiary/Rotten%20Golem"
+    },
+    {
+      "name": "Rotten Man-Maggot",
+      "lookupKey": "rotten man maggot",
+      "url": "https://tibiavault.com/#bestiary/Rotten%20Man-Maggot"
+    },
+    {
+      "name": "Rotworm",
+      "lookupKey": "rotworm",
+      "url": "https://tibiavault.com/#bestiary/Rotworm"
+    },
+    {
+      "name": "Rustheap Golem",
+      "lookupKey": "rustheap golem",
+      "url": "https://tibiavault.com/#bestiary/Rustheap%20Golem"
+    },
+    {
+      "name": "Sabretooth (Creature)",
+      "lookupKey": "sabretooth creature",
+      "url": "https://tibiavault.com/#bestiary/Sabretooth%20(Creature)"
+    },
+    {
+      "name": "Sacred Spider",
+      "lookupKey": "sacred spider",
+      "url": "https://tibiavault.com/#bestiary/Sacred%20Spider"
+    },
+    {
+      "name": "Salamander",
+      "lookupKey": "salamander",
+      "url": "https://tibiavault.com/#bestiary/Salamander"
+    },
+    {
+      "name": "Sandcrawler",
+      "lookupKey": "sandcrawler",
+      "url": "https://tibiavault.com/#bestiary/Sandcrawler"
+    },
+    {
+      "name": "Sandstone Scorpion",
+      "lookupKey": "sandstone scorpion",
+      "url": "https://tibiavault.com/#bestiary/Sandstone%20Scorpion"
+    },
+    {
+      "name": "Scarab",
+      "lookupKey": "scarab",
+      "url": "https://tibiavault.com/#bestiary/Scarab"
+    },
+    {
+      "name": "Schiach",
+      "lookupKey": "schiach",
+      "url": "https://tibiavault.com/#bestiary/Schiach"
+    },
+    {
+      "name": "Scorpion",
+      "lookupKey": "scorpion",
+      "url": "https://tibiavault.com/#bestiary/Scorpion"
+    },
+    {
+      "name": "Sea Serpent",
+      "lookupKey": "sea serpent",
+      "url": "https://tibiavault.com/#bestiary/Sea%20Serpent"
+    },
+    {
+      "name": "Seacrest Serpent",
+      "lookupKey": "seacrest serpent",
+      "url": "https://tibiavault.com/#bestiary/Seacrest%20Serpent"
+    },
+    {
+      "name": "Seagull",
+      "lookupKey": "seagull",
+      "url": "https://tibiavault.com/#bestiary/Seagull"
+    },
+    {
+      "name": "Serpent Spawn",
+      "lookupKey": "serpent spawn",
+      "url": "https://tibiavault.com/#bestiary/Serpent%20Spawn"
+    },
+    {
+      "name": "Shaburak Demon",
+      "lookupKey": "shaburak demon",
+      "url": "https://tibiavault.com/#bestiary/Shaburak%20Demon"
+    },
+    {
+      "name": "Shaburak Lord",
+      "lookupKey": "shaburak lord",
+      "url": "https://tibiavault.com/#bestiary/Shaburak%20Lord"
+    },
+    {
+      "name": "Shaburak Prince",
+      "lookupKey": "shaburak prince",
+      "url": "https://tibiavault.com/#bestiary/Shaburak%20Prince"
+    },
+    {
+      "name": "Shadow Hound",
+      "lookupKey": "shadow hound",
+      "url": "https://tibiavault.com/#bestiary/Shadow%20Hound"
+    },
+    {
+      "name": "Shadow Pupil",
+      "lookupKey": "shadow pupil",
+      "url": "https://tibiavault.com/#bestiary/Shadow%20Pupil"
+    },
+    {
+      "name": "Shaper Matriarch",
+      "lookupKey": "shaper matriarch",
+      "url": "https://tibiavault.com/#bestiary/Shaper%20Matriarch"
+    },
+    {
+      "name": "Shark",
+      "lookupKey": "shark",
+      "url": "https://tibiavault.com/#bestiary/Shark"
+    },
+    {
+      "name": "Sheep",
+      "lookupKey": "sheep",
+      "url": "https://tibiavault.com/#bestiary/Sheep"
+    },
+    {
+      "name": "Shell Drake",
+      "lookupKey": "shell drake",
+      "url": "https://tibiavault.com/#bestiary/Shell%20Drake"
+    },
+    {
+      "name": "Shock Head",
+      "lookupKey": "shock head",
+      "url": "https://tibiavault.com/#bestiary/Shock%20Head"
+    },
+    {
+      "name": "Shrieking Cry-Stal",
+      "lookupKey": "shrieking cry stal",
+      "url": "https://tibiavault.com/#bestiary/Shrieking%20Cry-Stal"
+    },
+    {
+      "name": "Sibang",
+      "lookupKey": "sibang",
+      "url": "https://tibiavault.com/#bestiary/Sibang"
+    },
+    {
+      "name": "Sight of Surrender",
+      "lookupKey": "sight of surrender",
+      "url": "https://tibiavault.com/#bestiary/Sight%20of%20Surrender"
+    },
+    {
+      "name": "Silencer",
+      "lookupKey": "silencer",
+      "url": "https://tibiavault.com/#bestiary/Silencer"
+    },
+    {
+      "name": "Silver Rabbit",
+      "lookupKey": "silver rabbit",
+      "url": "https://tibiavault.com/#bestiary/Silver%20Rabbit"
+    },
+    {
+      "name": "Sineater Inferniarch",
+      "lookupKey": "sineater inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Sineater%20Inferniarch"
+    },
+    {
+      "name": "Skeleton",
+      "lookupKey": "skeleton",
+      "url": "https://tibiavault.com/#bestiary/Skeleton"
+    },
+    {
+      "name": "Skeleton Elite Warrior",
+      "lookupKey": "skeleton elite warrior",
+      "url": "https://tibiavault.com/#bestiary/Skeleton%20Elite%20Warrior"
+    },
+    {
+      "name": "Skeleton Warrior",
+      "lookupKey": "skeleton warrior",
+      "url": "https://tibiavault.com/#bestiary/Skeleton%20Warrior"
+    },
+    {
+      "name": "Skunk",
+      "lookupKey": "skunk",
+      "url": "https://tibiavault.com/#bestiary/Skunk"
+    },
+    {
+      "name": "Slime",
+      "lookupKey": "slime",
+      "url": "https://tibiavault.com/#bestiary/Slime"
+    },
+    {
+      "name": "Slug",
+      "lookupKey": "slug",
+      "url": "https://tibiavault.com/#bestiary/Slug"
+    },
+    {
+      "name": "Smuggler",
+      "lookupKey": "smuggler",
+      "url": "https://tibiavault.com/#bestiary/Smuggler"
+    },
+    {
+      "name": "Snake",
+      "lookupKey": "snake",
+      "url": "https://tibiavault.com/#bestiary/Snake"
+    },
+    {
+      "name": "Son of Verminor",
+      "lookupKey": "son of verminor",
+      "url": "https://tibiavault.com/#bestiary/Son%20of%20Verminor"
+    },
+    {
+      "name": "Sopping Carcass",
+      "lookupKey": "sopping carcass",
+      "url": "https://tibiavault.com/#bestiary/Sopping%20Carcass"
+    },
+    {
+      "name": "Sopping Corpus",
+      "lookupKey": "sopping corpus",
+      "url": "https://tibiavault.com/#bestiary/Sopping%20Corpus"
+    },
+    {
+      "name": "Sorcerer's Apparition",
+      "lookupKey": "sorcerers apparition",
+      "url": "https://tibiavault.com/#bestiary/Sorcerer"
+    },
+    {
+      "name": "Soul-Broken Harbinger",
+      "lookupKey": "soul broken harbinger",
+      "url": "https://tibiavault.com/#bestiary/Soul-Broken%20Harbinger"
+    },
+    {
+      "name": "Souleater",
+      "lookupKey": "souleater",
+      "url": "https://tibiavault.com/#bestiary/Souleater"
+    },
+    {
+      "name": "Sparkion",
+      "lookupKey": "sparkion",
+      "url": "https://tibiavault.com/#bestiary/Sparkion"
+    },
+    {
+      "name": "Spectre",
+      "lookupKey": "spectre",
+      "url": "https://tibiavault.com/#bestiary/Spectre"
+    },
+    {
+      "name": "Spellreaper Inferniarch",
+      "lookupKey": "spellreaper inferniarch",
+      "url": "https://tibiavault.com/#bestiary/Spellreaper%20Inferniarch"
+    },
+    {
+      "name": "Sphinx",
+      "lookupKey": "sphinx",
+      "url": "https://tibiavault.com/#bestiary/Sphinx"
+    },
+    {
+      "name": "Spider",
+      "lookupKey": "spider",
+      "url": "https://tibiavault.com/#bestiary/Spider"
+    },
+    {
+      "name": "Spidris",
+      "lookupKey": "spidris",
+      "url": "https://tibiavault.com/#bestiary/Spidris"
+    },
+    {
+      "name": "Spidris Elite",
+      "lookupKey": "spidris elite",
+      "url": "https://tibiavault.com/#bestiary/Spidris%20Elite"
+    },
+    {
+      "name": "Spiky Carnivor",
+      "lookupKey": "spiky carnivor",
+      "url": "https://tibiavault.com/#bestiary/Spiky%20Carnivor"
+    },
+    {
+      "name": "Spit Nettle",
+      "lookupKey": "spit nettle",
+      "url": "https://tibiavault.com/#bestiary/Spit%20Nettle"
+    },
+    {
+      "name": "Spitter",
+      "lookupKey": "spitter",
+      "url": "https://tibiavault.com/#bestiary/Spitter"
+    },
+    {
+      "name": "Squid Warden",
+      "lookupKey": "squid warden",
+      "url": "https://tibiavault.com/#bestiary/Squid%20Warden"
+    },
+    {
+      "name": "Squidgy Slime",
+      "lookupKey": "squidgy slime",
+      "url": "https://tibiavault.com/#bestiary/Squidgy%20Slime"
+    },
+    {
+      "name": "Squirrel",
+      "lookupKey": "squirrel",
+      "url": "https://tibiavault.com/#bestiary/Squirrel"
+    },
+    {
+      "name": "Stabilizing Dread Intruder",
+      "lookupKey": "stabilizing dread intruder",
+      "url": "https://tibiavault.com/#bestiary/Stabilizing%20Dread%20Intruder"
+    },
+    {
+      "name": "Stabilizing Reality Reaver",
+      "lookupKey": "stabilizing reality reaver",
+      "url": "https://tibiavault.com/#bestiary/Stabilizing%20Reality%20Reaver"
+    },
+    {
+      "name": "Stag",
+      "lookupKey": "stag",
+      "url": "https://tibiavault.com/#bestiary/Stag"
+    },
+    {
+      "name": "Stalker",
+      "lookupKey": "stalker",
+      "url": "https://tibiavault.com/#bestiary/Stalker"
+    },
+    {
+      "name": "Stalking Stalk",
+      "lookupKey": "stalking stalk",
+      "url": "https://tibiavault.com/#bestiary/Stalking%20Stalk"
+    },
+    {
+      "name": "Stampor",
+      "lookupKey": "stampor",
+      "url": "https://tibiavault.com/#bestiary/Stampor"
+    },
+    {
+      "name": "Starving Wolf",
+      "lookupKey": "starving wolf",
+      "url": "https://tibiavault.com/#bestiary/Starving%20Wolf"
+    },
+    {
+      "name": "Stone Devourer",
+      "lookupKey": "stone devourer",
+      "url": "https://tibiavault.com/#bestiary/Stone%20Devourer"
+    },
+    {
+      "name": "Stone Golem",
+      "lookupKey": "stone golem",
+      "url": "https://tibiavault.com/#bestiary/Stone%20Golem"
+    },
+    {
+      "name": "Stone Rhino",
+      "lookupKey": "stone rhino",
+      "url": "https://tibiavault.com/#bestiary/Stone%20Rhino"
+    },
+    {
+      "name": "Stonerefiner",
+      "lookupKey": "stonerefiner",
+      "url": "https://tibiavault.com/#bestiary/Stonerefiner"
+    },
+    {
+      "name": "Streaked Devourer",
+      "lookupKey": "streaked devourer",
+      "url": "https://tibiavault.com/#bestiary/Streaked%20Devourer"
+    },
+    {
+      "name": "Sugar Cube",
+      "lookupKey": "sugar cube",
+      "url": "https://tibiavault.com/#bestiary/Sugar%20Cube"
+    },
+    {
+      "name": "Sugar Cube Worker",
+      "lookupKey": "sugar cube worker",
+      "url": "https://tibiavault.com/#bestiary/Sugar%20Cube%20Worker"
+    },
+    {
+      "name": "Sulphider",
+      "lookupKey": "sulphider",
+      "url": "https://tibiavault.com/#bestiary/Sulphider"
+    },
+    {
+      "name": "Sulphur Spouter",
+      "lookupKey": "sulphur spouter",
+      "url": "https://tibiavault.com/#bestiary/Sulphur%20Spouter"
+    },
+    {
+      "name": "Swamp Troll",
+      "lookupKey": "swamp troll",
+      "url": "https://tibiavault.com/#bestiary/Swamp%20Troll"
+    },
+    {
+      "name": "Swampling",
+      "lookupKey": "swampling",
+      "url": "https://tibiavault.com/#bestiary/Swampling"
+    },
+    {
+      "name": "Swan Maiden",
+      "lookupKey": "swan maiden",
+      "url": "https://tibiavault.com/#bestiary/Swan%20Maiden"
+    },
+    {
+      "name": "Swarmer",
+      "lookupKey": "swarmer",
+      "url": "https://tibiavault.com/#bestiary/Swarmer"
+    },
+    {
+      "name": "Tainted Soul",
+      "lookupKey": "tainted soul",
+      "url": "https://tibiavault.com/#bestiary/Tainted%20Soul"
+    },
+    {
+      "name": "Tarantula",
+      "lookupKey": "tarantula",
+      "url": "https://tibiavault.com/#bestiary/Tarantula"
+    },
+    {
+      "name": "Tarnished Spirit",
+      "lookupKey": "tarnished spirit",
+      "url": "https://tibiavault.com/#bestiary/Tarnished%20Spirit"
+    },
+    {
+      "name": "Terramite",
+      "lookupKey": "terramite",
+      "url": "https://tibiavault.com/#bestiary/Terramite"
+    },
+    {
+      "name": "Terrified Elephant",
+      "lookupKey": "terrified elephant",
+      "url": "https://tibiavault.com/#bestiary/Terrified%20Elephant"
+    },
+    {
+      "name": "Terror Bird",
+      "lookupKey": "terror bird",
+      "url": "https://tibiavault.com/#bestiary/Terror%20Bird"
+    },
+    {
+      "name": "Terrorsleep",
+      "lookupKey": "terrorsleep",
+      "url": "https://tibiavault.com/#bestiary/Terrorsleep"
+    },
+    {
+      "name": "Thanatursus",
+      "lookupKey": "thanatursus",
+      "url": "https://tibiavault.com/#bestiary/Thanatursus"
+    },
+    {
+      "name": "Thornback Tortoise",
+      "lookupKey": "thornback tortoise",
+      "url": "https://tibiavault.com/#bestiary/Thornback%20Tortoise"
+    },
+    {
+      "name": "Thornfire Wolf",
+      "lookupKey": "thornfire wolf",
+      "url": "https://tibiavault.com/#bestiary/Thornfire%20Wolf"
+    },
+    {
+      "name": "Tiger",
+      "lookupKey": "tiger",
+      "url": "https://tibiavault.com/#bestiary/Tiger"
+    },
+    {
+      "name": "Toad",
+      "lookupKey": "toad",
+      "url": "https://tibiavault.com/#bestiary/Toad"
+    },
+    {
+      "name": "Tomb Servant",
+      "lookupKey": "tomb servant",
+      "url": "https://tibiavault.com/#bestiary/Tomb%20Servant"
+    },
+    {
+      "name": "Tortoise",
+      "lookupKey": "tortoise",
+      "url": "https://tibiavault.com/#bestiary/Tortoise"
+    },
+    {
+      "name": "Tremendous Tyrant",
+      "lookupKey": "tremendous tyrant",
+      "url": "https://tibiavault.com/#bestiary/Tremendous%20Tyrant"
+    },
+    {
+      "name": "Troll",
+      "lookupKey": "troll",
+      "url": "https://tibiavault.com/#bestiary/Troll"
+    },
+    {
+      "name": "Troll Champion",
+      "lookupKey": "troll champion",
+      "url": "https://tibiavault.com/#bestiary/Troll%20Champion"
+    },
+    {
+      "name": "Troll Guard",
+      "lookupKey": "troll guard",
+      "url": "https://tibiavault.com/#bestiary/Troll%20Guard"
+    },
+    {
+      "name": "Troll Legionnaire",
+      "lookupKey": "troll legionnaire",
+      "url": "https://tibiavault.com/#bestiary/Troll%20Legionnaire"
+    },
+    {
+      "name": "True Dawnfire Asura",
+      "lookupKey": "true dawnfire asura",
+      "url": "https://tibiavault.com/#bestiary/True%20Dawnfire%20Asura"
+    },
+    {
+      "name": "True Frost Flower Asura",
+      "lookupKey": "true frost flower asura",
+      "url": "https://tibiavault.com/#bestiary/True%20Frost%20Flower%20Asura"
+    },
+    {
+      "name": "True Midnight Asura",
+      "lookupKey": "true midnight asura",
+      "url": "https://tibiavault.com/#bestiary/True%20Midnight%20Asura"
+    },
+    {
+      "name": "Truffle",
+      "lookupKey": "truffle",
+      "url": "https://tibiavault.com/#bestiary/Truffle"
+    },
+    {
+      "name": "Truffle Cook",
+      "lookupKey": "truffle cook",
+      "url": "https://tibiavault.com/#bestiary/Truffle%20Cook"
+    },
+    {
+      "name": "Tunnel Tyrant",
+      "lookupKey": "tunnel tyrant",
+      "url": "https://tibiavault.com/#bestiary/Tunnel%20Tyrant"
+    },
+    {
+      "name": "Turbulent Elemental",
+      "lookupKey": "turbulent elemental",
+      "url": "https://tibiavault.com/#bestiary/Turbulent%20Elemental"
+    },
+    {
+      "name": "Twisted Pooka",
+      "lookupKey": "twisted pooka",
+      "url": "https://tibiavault.com/#bestiary/Twisted%20Pooka"
+    },
+    {
+      "name": "Twisted Shaper",
+      "lookupKey": "twisted shaper",
+      "url": "https://tibiavault.com/#bestiary/Twisted%20Shaper"
+    },
+    {
+      "name": "Two-Headed Turtle",
+      "lookupKey": "two headed turtle",
+      "url": "https://tibiavault.com/#bestiary/Two-Headed%20Turtle"
+    },
+    {
+      "name": "Undead Cavebear",
+      "lookupKey": "undead cavebear",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Cavebear"
+    },
+    {
+      "name": "Undead Dragon",
+      "lookupKey": "undead dragon",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Dragon"
+    },
+    {
+      "name": "Undead Elite Gladiator",
+      "lookupKey": "undead elite gladiator",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Elite%20Gladiator"
+    },
+    {
+      "name": "Undead Gladiator",
+      "lookupKey": "undead gladiator",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Gladiator"
+    },
+    {
+      "name": "Undead Jester",
+      "lookupKey": "undead jester",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Jester"
+    },
+    {
+      "name": "Undead Mine Worker",
+      "lookupKey": "undead mine worker",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Mine%20Worker"
+    },
+    {
+      "name": "Undead Prospector",
+      "lookupKey": "undead prospector",
+      "url": "https://tibiavault.com/#bestiary/Undead%20Prospector"
+    },
+    {
+      "name": "Undertaker",
+      "lookupKey": "undertaker",
+      "url": "https://tibiavault.com/#bestiary/Undertaker"
+    },
+    {
+      "name": "Usurper Archer",
+      "lookupKey": "usurper archer",
+      "url": "https://tibiavault.com/#bestiary/Usurper%20Archer"
+    },
+    {
+      "name": "Usurper Knight",
+      "lookupKey": "usurper knight",
+      "url": "https://tibiavault.com/#bestiary/Usurper%20Knight"
+    },
+    {
+      "name": "Usurper Warlock",
+      "lookupKey": "usurper warlock",
+      "url": "https://tibiavault.com/#bestiary/Usurper%20Warlock"
+    },
+    {
+      "name": "Valkyrie",
+      "lookupKey": "valkyrie",
+      "url": "https://tibiavault.com/#bestiary/Valkyrie"
+    },
+    {
+      "name": "Vampire",
+      "lookupKey": "vampire",
+      "url": "https://tibiavault.com/#bestiary/Vampire"
+    },
+    {
+      "name": "Vampire Bride",
+      "lookupKey": "vampire bride",
+      "url": "https://tibiavault.com/#bestiary/Vampire%20Bride"
+    },
+    {
+      "name": "Vampire Pig",
+      "lookupKey": "vampire pig",
+      "url": "https://tibiavault.com/#bestiary/Vampire%20Pig"
+    },
+    {
+      "name": "Vampire Viscount",
+      "lookupKey": "vampire viscount",
+      "url": "https://tibiavault.com/#bestiary/Vampire%20Viscount"
+    },
+    {
+      "name": "Varg",
+      "lookupKey": "varg",
+      "url": "https://tibiavault.com/#bestiary/Varg"
+    },
+    {
+      "name": "Varnished Diremaw",
+      "lookupKey": "varnished diremaw",
+      "url": "https://tibiavault.com/#bestiary/Varnished%20Diremaw"
+    },
+    {
+      "name": "Venerable Girtablilu",
+      "lookupKey": "venerable girtablilu",
+      "url": "https://tibiavault.com/#bestiary/Venerable%20Girtablilu"
+    },
+    {
+      "name": "Vexclaw",
+      "lookupKey": "vexclaw",
+      "url": "https://tibiavault.com/#bestiary/Vexclaw"
+    },
+    {
+      "name": "Vibrant Phantom",
+      "lookupKey": "vibrant phantom",
+      "url": "https://tibiavault.com/#bestiary/Vibrant%20Phantom"
+    },
+    {
+      "name": "Vicious Manbat",
+      "lookupKey": "vicious manbat",
+      "url": "https://tibiavault.com/#bestiary/Vicious%20Manbat"
+    },
+    {
+      "name": "Vicious Squire",
+      "lookupKey": "vicious squire",
+      "url": "https://tibiavault.com/#bestiary/Vicious%20Squire"
+    },
+    {
+      "name": "Vile Grandmaster",
+      "lookupKey": "vile grandmaster",
+      "url": "https://tibiavault.com/#bestiary/Vile%20Grandmaster"
+    },
+    {
+      "name": "Vulcongra",
+      "lookupKey": "vulcongra",
+      "url": "https://tibiavault.com/#bestiary/Vulcongra"
+    },
+    {
+      "name": "Wafer Paper Butterfly",
+      "lookupKey": "wafer paper butterfly",
+      "url": "https://tibiavault.com/#bestiary/Wafer%20Paper%20Butterfly"
+    },
+    {
+      "name": "Wailing Widow",
+      "lookupKey": "wailing widow",
+      "url": "https://tibiavault.com/#bestiary/Wailing%20Widow"
+    },
+    {
+      "name": "Walker",
+      "lookupKey": "walker",
+      "url": "https://tibiavault.com/#bestiary/Walker"
+    },
+    {
+      "name": "Walking Dread",
+      "lookupKey": "walking dread",
+      "url": "https://tibiavault.com/#bestiary/Walking%20Dread"
+    },
+    {
+      "name": "Walking Pillar",
+      "lookupKey": "walking pillar",
+      "url": "https://tibiavault.com/#bestiary/Walking%20Pillar"
+    },
+    {
+      "name": "Wandering Pillar",
+      "lookupKey": "wandering pillar",
+      "url": "https://tibiavault.com/#bestiary/Wandering%20Pillar"
+    },
+    {
+      "name": "War Golem",
+      "lookupKey": "war golem",
+      "url": "https://tibiavault.com/#bestiary/War%20Golem"
+    },
+    {
+      "name": "War Wolf",
+      "lookupKey": "war wolf",
+      "url": "https://tibiavault.com/#bestiary/War%20Wolf"
+    },
+    {
+      "name": "Wardragon",
+      "lookupKey": "wardragon",
+      "url": "https://tibiavault.com/#bestiary/Wardragon"
+    },
+    {
+      "name": "Warlock",
+      "lookupKey": "warlock",
+      "url": "https://tibiavault.com/#bestiary/Warlock"
+    },
+    {
+      "name": "Wasp",
+      "lookupKey": "wasp",
+      "url": "https://tibiavault.com/#bestiary/Wasp"
+    },
+    {
+      "name": "Waspoid",
+      "lookupKey": "waspoid",
+      "url": "https://tibiavault.com/#bestiary/Waspoid"
+    },
+    {
+      "name": "Water Buffalo",
+      "lookupKey": "water buffalo",
+      "url": "https://tibiavault.com/#bestiary/Water%20Buffalo"
+    },
+    {
+      "name": "Water Elemental",
+      "lookupKey": "water elemental",
+      "url": "https://tibiavault.com/#bestiary/Water%20Elemental"
+    },
+    {
+      "name": "Weakened Frazzlemaw",
+      "lookupKey": "weakened frazzlemaw",
+      "url": "https://tibiavault.com/#bestiary/Weakened%20Frazzlemaw"
+    },
+    {
+      "name": "Weeper",
+      "lookupKey": "weeper",
+      "url": "https://tibiavault.com/#bestiary/Weeper"
+    },
+    {
+      "name": "Werebadger",
+      "lookupKey": "werebadger",
+      "url": "https://tibiavault.com/#bestiary/Werebadger"
+    },
+    {
+      "name": "Werebear",
+      "lookupKey": "werebear",
+      "url": "https://tibiavault.com/#bestiary/Werebear"
+    },
+    {
+      "name": "Wereboar",
+      "lookupKey": "wereboar",
+      "url": "https://tibiavault.com/#bestiary/Wereboar"
+    },
+    {
+      "name": "Werecrocodile",
+      "lookupKey": "werecrocodile",
+      "url": "https://tibiavault.com/#bestiary/Werecrocodile"
+    },
+    {
+      "name": "Werefox",
+      "lookupKey": "werefox",
+      "url": "https://tibiavault.com/#bestiary/Werefox"
+    },
+    {
+      "name": "Werehyaena",
+      "lookupKey": "werehyaena",
+      "url": "https://tibiavault.com/#bestiary/Werehyaena"
+    },
+    {
+      "name": "Werehyaena Shaman",
+      "lookupKey": "werehyaena shaman",
+      "url": "https://tibiavault.com/#bestiary/Werehyaena%20Shaman"
+    },
+    {
+      "name": "Werelion",
+      "lookupKey": "werelion",
+      "url": "https://tibiavault.com/#bestiary/Werelion"
+    },
+    {
+      "name": "Werelioness",
+      "lookupKey": "werelioness",
+      "url": "https://tibiavault.com/#bestiary/Werelioness"
+    },
+    {
+      "name": "Werepanther",
+      "lookupKey": "werepanther",
+      "url": "https://tibiavault.com/#bestiary/Werepanther"
+    },
+    {
+      "name": "Weretiger",
+      "lookupKey": "weretiger",
+      "url": "https://tibiavault.com/#bestiary/Weretiger"
+    },
+    {
+      "name": "Werewolf",
+      "lookupKey": "werewolf",
+      "url": "https://tibiavault.com/#bestiary/Werewolf"
+    },
+    {
+      "name": "White Deer",
+      "lookupKey": "white deer",
+      "url": "https://tibiavault.com/#bestiary/White%20Deer"
+    },
+    {
+      "name": "White Lion",
+      "lookupKey": "white lion",
+      "url": "https://tibiavault.com/#bestiary/White%20Lion"
+    },
+    {
+      "name": "White Shade",
+      "lookupKey": "white shade",
+      "url": "https://tibiavault.com/#bestiary/White%20Shade"
+    },
+    {
+      "name": "White Tiger",
+      "lookupKey": "white tiger",
+      "url": "https://tibiavault.com/#bestiary/White%20Tiger"
+    },
+    {
+      "name": "White Weretiger",
+      "lookupKey": "white weretiger",
+      "url": "https://tibiavault.com/#bestiary/White%20Weretiger"
+    },
+    {
+      "name": "Wiggler",
+      "lookupKey": "wiggler",
+      "url": "https://tibiavault.com/#bestiary/Wiggler"
+    },
+    {
+      "name": "Wild Horse",
+      "lookupKey": "wild horse",
+      "url": "https://tibiavault.com/#bestiary/Wild%20Horse"
+    },
+    {
+      "name": "Wild Warrior",
+      "lookupKey": "wild warrior",
+      "url": "https://tibiavault.com/#bestiary/Wild%20Warrior"
+    },
+    {
+      "name": "Wilting Leaf Golem",
+      "lookupKey": "wilting leaf golem",
+      "url": "https://tibiavault.com/#bestiary/Wilting%20Leaf%20Golem"
+    },
+    {
+      "name": "Winter Wolf",
+      "lookupKey": "winter wolf",
+      "url": "https://tibiavault.com/#bestiary/Winter%20Wolf"
+    },
+    {
+      "name": "Wisp",
+      "lookupKey": "wisp",
+      "url": "https://tibiavault.com/#bestiary/Wisp"
+    },
+    {
+      "name": "Witch",
+      "lookupKey": "witch",
+      "url": "https://tibiavault.com/#bestiary/Witch"
+    },
+    {
+      "name": "Wolf",
+      "lookupKey": "wolf",
+      "url": "https://tibiavault.com/#bestiary/Wolf"
+    },
+    {
+      "name": "Worker Golem",
+      "lookupKey": "worker golem",
+      "url": "https://tibiavault.com/#bestiary/Worker%20Golem"
+    },
+    {
+      "name": "Worm Priestess",
+      "lookupKey": "worm priestess",
+      "url": "https://tibiavault.com/#bestiary/Worm%20Priestess"
+    },
+    {
+      "name": "Wyrm",
+      "lookupKey": "wyrm",
+      "url": "https://tibiavault.com/#bestiary/Wyrm"
+    },
+    {
+      "name": "Wyvern",
+      "lookupKey": "wyvern",
+      "url": "https://tibiavault.com/#bestiary/Wyvern"
+    },
+    {
+      "name": "Yeti",
+      "lookupKey": "yeti",
+      "url": "https://tibiavault.com/#bestiary/Yeti"
+    },
+    {
+      "name": "Yielothax",
+      "lookupKey": "yielothax",
+      "url": "https://tibiavault.com/#bestiary/Yielothax"
+    },
+    {
+      "name": "Young Goanna",
+      "lookupKey": "young goanna",
+      "url": "https://tibiavault.com/#bestiary/Young%20Goanna"
+    },
+    {
+      "name": "Young Sea Serpent",
+      "lookupKey": "young sea serpent",
+      "url": "https://tibiavault.com/#bestiary/Young%20Sea%20Serpent"
+    },
+    {
+      "name": "Zombie",
+      "lookupKey": "zombie",
+      "url": "https://tibiavault.com/#bestiary/Zombie"
+    }
+  ]
+}

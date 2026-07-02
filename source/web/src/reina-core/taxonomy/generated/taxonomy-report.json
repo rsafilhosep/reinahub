@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-07-01T23:44:23.863Z",
+  "taxonomy": {
+    "creatureClasses": 22,
+    "itemCategories": 21,
+    "equipmentSlots": 9,
+    "weaponTypes": 8
+  },
+  "items": {
+    "total": 38078,
+    "classified": 4289,
+    "unclassified": 33789,
+    "byCategory": {
+      "misc": 33789,
+      "creature-product": 1345,
+      "potion": 134,
+      "container": 291,
+      "food": 440,
+      "helmet": 190,
+      "book": 357,
+      "ring": 70,
+      "legs": 57,
+      "shield": 141,
+      "weapon": 749,
+      "boots": 61,
+      "amulet": 83,
+      "armor": 139,
+      "backpack": 47,
+      "currency": 44,
+      "rune": 141
+    },
+    "byConfidence": {
+      "unclassified": 33789,
+      "low": 1993,
+      "medium": 2292,
+      "high": 4
+    }
+  },
+  "monsters": {
+    "total": 1765,
+    "classified": 640,
+    "unclassified": 1125,
+    "byCreatureClass": {
+      "vermin": 95,
+      "extra-dimensional": 21,
+      "aquatic": 40,
+      "slime": 12,
+      "bird": 12,
+      "human": 30,
+      "mammal": 53,
+      "demon": 24,
+      "humanoid": 85,
+      "plant": 12,
+      "magical": 11,
+      "giant": 9,
+      "undead": 37,
+      "construct": 20,
+      "elemental": 64,
+      "fey": 7,
+      "amphibic": 13,
+      "dragon": 38,
+      "bane": 3,
+      "reptile": 32,
+      "lycanthrope": 17,
+      "inkborn": 5
+    },
+    "byConfidence": {
+      "medium": 434,
+      "unclassified": 1125,
+      "low": 206
+    }
+  },
+  "notes": [
+    "Generated taxonomy is a review layer. It does not modify ReinaDataService canonical JSONs.",
+    "Low and medium confidence rows should be reviewed before becoming trusted canonical data.",
+    "Manual fixes belong in manual-classifications.json."
+  ]
+}

@@ -1,0 +1,774 @@
+[
+  {
+    "source": "monster-loot",
+    "itemName": "warrior",
+    "occurrences": 23,
+    "sampleMonsterNames": [
+      "Amenef the Burning",
+      "Crape Man",
+      "Deathling Scout",
+      "Deathling Spellsinger",
+      "Deepling Elite",
+      "Deepling Warrior",
+      "Eyeless Devourer",
+      "Infernal Phantom"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "spellweaver",
+    "occurrences": 9,
+    "sampleMonsterNames": [
+      "Burning Gladiator",
+      "Draken Spellweaver",
+      "Energetic Book",
+      "Ghastly Dragon",
+      "Haunted Dragon",
+      "Juvenile Bashmu",
+      "Lloyd",
+      "Undead Dragon"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "butcher",
+    "occurrences": 7,
+    "sampleMonsterNames": [
+      "Bibby Bloodbath",
+      "Bloated Man-Maggot",
+      "Brachiodemon",
+      "Courage Leech",
+      "Dark Torturer",
+      "Ghulosh",
+      "Shaburak Prince"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "gold-brocaded cloth",
+    "occurrences": 7,
+    "sampleMonsterNames": [
+      "Iks Ahpututu",
+      "Iks Aucar",
+      "Iks Chuka",
+      "Iks Pututu",
+      "Iks Yapunac",
+      "Mitmah Scout",
+      "Mitmah Seer"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "organic acid",
+    "occurrences": 5,
+    "sampleMonsterNames": [
+      "Bloated Man-Maggot",
+      "Mycobiontic Beetle",
+      "Oozing Corpus",
+      "Sopping Carcass",
+      "Sopping Corpus"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "rotten feather",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Ahau",
+      "Iks Ahpututu",
+      "Iks Aucar",
+      "Iks Chuka"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "ritual tooth",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Ahau",
+      "Iks Ahpututu",
+      "Iks Aucar",
+      "Iks Chuka"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "darklight obsidian axe",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Converter",
+      "Darklight Construct",
+      "Darklight Emitter",
+      "Wandering Pillar"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "Izcandar",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Izcandar Champion of Summer",
+      "Izcandar Champion of Winter",
+      "Izcandar the Banished"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "lion",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Lion",
+      "Werelion",
+      "Werelioness",
+      "White Lion"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "pirat",
+    "occurrences": 4,
+    "sampleMonsterNames": [
+      "Pirat Bombardier",
+      "Pirat Cutthroat",
+      "Pirat Mate",
+      "Pirat Scoundrel"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44736,
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Bulltaur Alchemist",
+      "Bulltaur Brute",
+      "Bulltaur Forgepriest"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44737,
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Bulltaur Alchemist",
+      "Bulltaur Brute",
+      "Bulltaur Forgepriest"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44738,
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Bulltaur Alchemist",
+      "Bulltaur Brute",
+      "Bulltaur Forgepriest"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "Nimmersatt",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Dragolisk",
+      "Mega Dragon",
+      "Wardragon"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "spirited soil",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Flickering Spirit Elemental",
+      "Psychic Spirit Elemental",
+      "Spirit Overlord"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "charmer",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Lizard Magician",
+      "Lizard Snakecharmer",
+      "Serpent Spawn"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "lichen gobbler",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Meandering Mushroom",
+      "Oozing Carcass",
+      "Rotten Man-Maggot"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "abomination",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "The Abomination"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "brainstealer",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "The Brainstealer"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "flask of warrior",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Undead Elite Gladiator",
+      "Undead Gladiator",
+      "Ushuriel"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "urmahlullu",
+    "occurrences": 3,
+    "sampleMonsterNames": [
+      "Urmahlullu the Weakened"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "hunter",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Arthom the Hunter",
+      "Hunter"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "spiritual horseshoe",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Bakragore",
+      "Murcion"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "encrypted notes",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Bulltaur Alchemist",
+      "Bulltaur Forgepriest"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "kongra",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Cursed Ape",
+      "Kongra"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "cat",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Dark Torturer",
+      "The Scourge of Oblivion"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "basalt crumbs",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Darklight Emitter",
+      "Wandering Pillar"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "unstable darklight matter",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Darklight Matter",
+      "Darklight Striker"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "yellow darklight matter",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Darklight Source",
+      "Walking Pillar"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "spellsinger",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Deepling Master Librarian",
+      "Deepling Spellsinger"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "snake god",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Draken Abomination",
+      "Draken Elite"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "geomancer",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Dwarf Geomancer"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "lost basher",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Lost Basher"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "worm sponge",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Meandering Mushroom",
+      "Oozing Corpus"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "broken mitmah necklace",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Mitmah Scout",
+      "Mitmah Vanguard"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "crystal of the mitmah",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "Mitmah Seer",
+      "Mitmah Vanguard"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "alchemist",
+    "occurrences": 2,
+    "sampleMonsterNames": [
+      "The Monster"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "alptramun",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Alptramun"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 43738,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Ayana the Crimson Curse"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "figurine of bakragore",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bakragore"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "bakragore",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bakragore"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 43946,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bakragore"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 43947,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bakragore"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 43950,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bakragore"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "brutetamer",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Barbarian Brutetamer"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "bloated maggot",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bloated Man-Maggot"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "crawler",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Branchy Crawler"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "mooh",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Bullwark"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "darklight figurine",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Chagorz"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "weaver",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Draken Spellweaver"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "warmaster",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Draken Warmaster"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "valentine",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Grynch Clan Goblin"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "pressed flower",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Hawk Hopper"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 48253,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Honey Elemental"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "putrefactive figurine",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Ichgahal"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "ichgahal",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Ichgahal"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "daedal chisel",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Iks Ahpututu"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "leviathan",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Liodile"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "lisa",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Lisa"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "dragon priest",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Lizard Dragon Priest"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "lost husher",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Lost Exile"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 49949,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Malvaroth"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "broken mitmah chestplate",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Mitmah Vanguard"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "splintered mitmah gem",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Mitmah Vanguard"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "dark lord",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Morgaroth"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "Morgaroth",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Morgaroth"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "ravager",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Morguthis"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44773,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Muglex Clan Chief"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44775,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Muglex Clan Chief"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemId": 44772,
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Muglex Clan Chief"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "rotten vermin ichor",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Mycobiontic Beetle"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "Orshabaal",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Orshabaal"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "blooded worm",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Rotten Man-Maggot"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "sailor",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Sea Captain"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "sight of surrender",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Sight of Surrender"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "helmet of sir leonard",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Sir Leonard"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "stonerefiner",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Stonerefiner"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "beast",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "The Nightmare Beast"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "pale worm",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "The Pale Worm"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "piece of timira",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Timira the Many-Headed"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "one of timira",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Timira the Many-Headed"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "vampire",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Vampire Viscount"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "vemiath",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Vemiath"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "widow",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Wailing Widow"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "wailing widow",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Wailing Widow"
+    ]
+  },
+  {
+    "source": "monster-loot",
+    "itemName": "basalt core",
+    "occurrences": 1,
+    "sampleMonsterNames": [
+      "Wandering Pillar"
+    ]
+  }
+]

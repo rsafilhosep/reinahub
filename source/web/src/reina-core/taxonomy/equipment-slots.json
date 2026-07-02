@@ -1,0 +1,11 @@
+[
+  { "id": "helmet", "label": "Helmet" },
+  { "id": "armor", "label": "Armor" },
+  { "id": "legs", "label": "Legs" },
+  { "id": "boots", "label": "Boots" },
+  { "id": "shield", "label": "Shield" },
+  { "id": "spellbook", "label": "Spellbook" },
+  { "id": "ring", "label": "Ring" },
+  { "id": "amulet", "label": "Amulet" },
+  { "id": "backpack", "label": "Backpack" }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "itemId": 3031,
+    "name": "gold coin",
+    "lootOccurrenceCount": 904,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 11040
+  },
+  {
+    "itemId": 3035,
+    "name": "platinum coin",
+    "lootOccurrenceCount": 488,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 6880
+  },
+  {
+    "itemId": 3043,
+    "name": "crystal coin",
+    "lootOccurrenceCount": 123,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 3230
+  },
+  {
+    "itemId": 238,
+    "name": "great mana potion",
+    "lootOccurrenceCount": 210,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2900
+  },
+  {
+    "itemId": 7643,
+    "name": "ultimate health potion",
+    "lootOccurrenceCount": 151,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2310
+  },
+  {
+    "itemId": 239,
+    "name": "great health potion",
+    "lootOccurrenceCount": 145,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2250
+  },
+  {
+    "itemId": 236,
+    "name": "strong health potion",
+    "lootOccurrenceCount": 116,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1960
+  },
+  {
+    "itemId": 7642,
+    "name": "great spirit potion",
+    "lootOccurrenceCount": 113,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1930
+  },
+  {
+    "itemId": 237,
+    "name": "strong mana potion",
+    "lootOccurrenceCount": 105,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1850
+  },
+  {
+    "itemId": 3039,
+    "name": "red gem",
+    "lootOccurrenceCount": 149,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1490
+  },
+  {
+    "itemId": 3032,
+    "name": "small emerald",
+    "lootOccurrenceCount": 148,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1480
+  },
+  {
+    "itemId": 23373,
+    "name": "ultimate mana potion",
+    "lootOccurrenceCount": 66,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1460
+  },
+  {
+    "itemId": 5884,
+    "name": "spirit container",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 1460
+  },
+  {
+    "itemId": 3041,
+    "name": "blue gem",
+    "lootOccurrenceCount": 145,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1450
+  },
+  {
+    "itemId": 266,
+    "name": "health potion",
+    "lootOccurrenceCount": 65,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1450
+  },
+  {
+    "itemId": 3037,
+    "name": "yellow gem",
+    "lootOccurrenceCount": 142,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1420
+  },
+  {
+    "itemId": 7440,
+    "name": "mastermind potion",
+    "lootOccurrenceCount": 62,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1420
+  },
+  {
+    "itemId": 3577,
+    "name": "meat",
+    "lootOccurrenceCount": 141,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1410
+  },
+  {
+    "itemId": 28570,
+    "name": "glowing rune",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 1400
+  },
+  {
+    "itemId": 7439,
+    "name": "berserk potion",
+    "lootOccurrenceCount": 58,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1380
+  },
+  {
+    "itemId": 8042,
+    "name": "spirit cloak",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 1370
+  },
+  {
+    "itemId": 3038,
+    "name": "green gem",
+    "lootOccurrenceCount": 136,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1360
+  },
+  {
+    "itemId": 268,
+    "name": "mana potion",
+    "lootOccurrenceCount": 47,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1270
+  },
+  {
+    "itemId": 7443,
+    "name": "bullseye potion",
+    "lootOccurrenceCount": 46,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "itemId": 23374,
+    "name": "ultimate spirit potion",
+    "lootOccurrenceCount": 46,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "itemId": 3030,
+    "name": "small ruby",
+    "lootOccurrenceCount": 125,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1250
+  },
+  {
+    "itemId": 23375,
+    "name": "supreme health potion",
+    "lootOccurrenceCount": 45,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1250
+  },
+  {
+    "itemId": 3033,
+    "name": "small amethyst",
+    "lootOccurrenceCount": 120,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1200
+  },
+  {
+    "itemId": 3029,
+    "name": "small sapphire",
+    "lootOccurrenceCount": 119,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1190
+  },
+  {
+    "itemId": 3028,
+    "name": "small diamond",
+    "lootOccurrenceCount": 118,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1180
+  },
+  {
+    "itemId": 3448,
+    "name": "poison arrow",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1180
+  },
+  {
+    "itemId": 9058,
+    "name": "gold ingot",
+    "lootOccurrenceCount": 116,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1160
+  },
+  {
+    "itemId": 3036,
+    "name": "violet gem",
+    "lootOccurrenceCount": 108,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1080
+  },
+  {
+    "itemId": 9057,
+    "name": "small topaz",
+    "lootOccurrenceCount": 103,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1030
+  },
+  {
+    "itemId": 3147,
+    "name": "blank rune",
+    "lootOccurrenceCount": 22,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1020
+  },
+  {
+    "itemId": 3277,
+    "name": "spear",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1000
+  },
+  {
+    "itemId": 3447,
+    "name": "arrow",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 980
+  },
+  {
+    "itemId": 3347,
+    "name": "hunting spear",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 970
+  },
+  {
+    "itemId": 3079,
+    "name": "boots of haste",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 826,
+    "name": "magma coat",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 11479,
+    "name": "orc leather",
+    "lootOccurrenceCount": 21,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 5881,
+    "name": "lizard scale",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 5878,
+    "name": "minotaur leather",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 3450,
+    "name": "power bolt",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 3386,
+    "name": "dragon scale mail",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 6499,
+    "name": "demonic essence",
+    "lootOccurrenceCount": 69,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 22085,
+    "name": "fur armor",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 10196,
+    "name": "orc tooth",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 7378,
+    "name": "royal spear",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 5954,
+    "name": "demon horn",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 930
+  }
+]

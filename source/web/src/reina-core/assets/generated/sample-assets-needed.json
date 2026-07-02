@@ -1,0 +1,252 @@
+[
+  {
+    "itemId": 3031,
+    "name": "gold coin",
+    "expectedPath": "/assets/items/3031.gif"
+  },
+  {
+    "itemId": 3035,
+    "name": "platinum coin",
+    "expectedPath": "/assets/items/3035.gif"
+  },
+  {
+    "itemId": 3043,
+    "name": "crystal coin",
+    "expectedPath": "/assets/items/3043.gif"
+  },
+  {
+    "itemId": 238,
+    "name": "great mana potion",
+    "expectedPath": "/assets/items/238.gif"
+  },
+  {
+    "itemId": 7643,
+    "name": "ultimate health potion",
+    "expectedPath": "/assets/items/7643.gif"
+  },
+  {
+    "itemId": 3039,
+    "name": "red gem",
+    "expectedPath": "/assets/items/3039.gif"
+  },
+  {
+    "itemId": 3032,
+    "name": "small emerald",
+    "expectedPath": "/assets/items/3032.gif"
+  },
+  {
+    "itemId": 239,
+    "name": "great health potion",
+    "expectedPath": "/assets/items/239.gif"
+  },
+  {
+    "itemId": 3041,
+    "name": "blue gem",
+    "expectedPath": "/assets/items/3041.gif"
+  },
+  {
+    "itemId": 3037,
+    "name": "yellow gem",
+    "expectedPath": "/assets/items/3037.gif"
+  },
+  {
+    "itemId": 3577,
+    "name": "meat",
+    "expectedPath": "/assets/items/3577.gif"
+  },
+  {
+    "itemId": 3038,
+    "name": "green gem",
+    "expectedPath": "/assets/items/3038.gif"
+  },
+  {
+    "itemId": 3030,
+    "name": "small ruby",
+    "expectedPath": "/assets/items/3030.gif"
+  },
+  {
+    "itemId": 3033,
+    "name": "small amethyst",
+    "expectedPath": "/assets/items/3033.gif"
+  },
+  {
+    "itemId": 3029,
+    "name": "small sapphire",
+    "expectedPath": "/assets/items/3029.gif"
+  },
+  {
+    "itemId": 3028,
+    "name": "small diamond",
+    "expectedPath": "/assets/items/3028.gif"
+  },
+  {
+    "itemId": 9058,
+    "name": "gold ingot",
+    "expectedPath": "/assets/items/9058.gif"
+  },
+  {
+    "itemId": 236,
+    "name": "strong health potion",
+    "expectedPath": "/assets/items/236.gif"
+  },
+  {
+    "itemId": 7642,
+    "name": "great spirit potion",
+    "expectedPath": "/assets/items/7642.gif"
+  },
+  {
+    "itemId": 3036,
+    "name": "violet gem",
+    "expectedPath": "/assets/items/3036.gif"
+  },
+  {
+    "itemId": 237,
+    "name": "strong mana potion",
+    "expectedPath": "/assets/items/237.gif"
+  },
+  {
+    "itemId": 9057,
+    "name": "small topaz",
+    "expectedPath": "/assets/items/9057.gif"
+  },
+  {
+    "itemId": 3027,
+    "name": "black pearl",
+    "expectedPath": "/assets/items/3027.gif"
+  },
+  {
+    "itemId": 16120,
+    "name": "violet crystal shard",
+    "expectedPath": "/assets/items/16120.gif"
+  },
+  {
+    "itemId": 281,
+    "name": "giant shimmering pearl",
+    "expectedPath": "/assets/items/281.gif"
+  },
+  {
+    "itemId": 3582,
+    "name": "ham",
+    "expectedPath": "/assets/items/3582.gif"
+  },
+  {
+    "itemId": 6499,
+    "name": "demonic essence",
+    "expectedPath": "/assets/items/6499.gif"
+  },
+  {
+    "itemId": 16121,
+    "name": "green crystal shard",
+    "expectedPath": "/assets/items/16121.gif"
+  },
+  {
+    "itemId": 23373,
+    "name": "ultimate mana potion",
+    "expectedPath": "/assets/items/23373.gif"
+  },
+  {
+    "itemId": 16119,
+    "name": "blue crystal shard",
+    "expectedPath": "/assets/items/16119.gif"
+  },
+  {
+    "itemId": 266,
+    "name": "health potion",
+    "expectedPath": "/assets/items/266.gif"
+  },
+  {
+    "itemId": 7440,
+    "name": "mastermind potion",
+    "expectedPath": "/assets/items/7440.gif"
+  },
+  {
+    "itemId": 7439,
+    "name": "berserk potion",
+    "expectedPath": "/assets/items/7439.gif"
+  },
+  {
+    "itemId": 3098,
+    "name": "ring of healing",
+    "expectedPath": "/assets/items/3098.gif"
+  },
+  {
+    "itemId": 22516,
+    "name": "silver token",
+    "expectedPath": "/assets/items/22516.gif"
+  },
+  {
+    "itemId": 3026,
+    "name": "white pearl",
+    "expectedPath": "/assets/items/3026.gif"
+  },
+  {
+    "itemId": 3081,
+    "name": "stone skin amulet",
+    "expectedPath": "/assets/items/3081.gif"
+  },
+  {
+    "itemId": 3049,
+    "name": "stealth ring",
+    "expectedPath": "/assets/items/3049.gif"
+  },
+  {
+    "itemId": 3578,
+    "name": "fish",
+    "expectedPath": "/assets/items/3578.gif"
+  },
+  {
+    "itemId": 6299,
+    "name": "death ring",
+    "expectedPath": "/assets/items/6299.gif"
+  },
+  {
+    "itemId": 7368,
+    "name": "assassin star",
+    "expectedPath": "/assets/items/7368.gif"
+  },
+  {
+    "itemId": 3324,
+    "name": "skull staff",
+    "expectedPath": "/assets/items/3324.gif"
+  },
+  {
+    "itemId": 5944,
+    "name": "soul orb",
+    "expectedPath": "/assets/items/5944.gif"
+  },
+  {
+    "itemId": 268,
+    "name": "mana potion",
+    "expectedPath": "/assets/items/268.gif"
+  },
+  {
+    "itemId": 23374,
+    "name": "ultimate spirit potion",
+    "expectedPath": "/assets/items/23374.gif"
+  },
+  {
+    "itemId": 7443,
+    "name": "bullseye potion",
+    "expectedPath": "/assets/items/7443.gif"
+  },
+  {
+    "itemId": 23375,
+    "name": "supreme health potion",
+    "expectedPath": "/assets/items/23375.gif"
+  },
+  {
+    "itemId": 16125,
+    "name": "cyan crystal fragment",
+    "expectedPath": "/assets/items/16125.gif"
+  },
+  {
+    "itemId": 22721,
+    "name": "gold token",
+    "expectedPath": "/assets/items/22721.gif"
+  },
+  {
+    "itemId": 22193,
+    "name": "onyx chip",
+    "expectedPath": "/assets/items/22193.gif"
+  }
+]

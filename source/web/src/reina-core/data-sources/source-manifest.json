@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "policy": "DATA_SOURCE_POLICY.md",
+  "sources": [
+    {
+      "id": "tibiavault",
+      "name": "TibiaVault",
+      "type": "external-site",
+      "status": "active",
+      "runtimeDependency": false,
+      "allowedUse": [
+        "reference",
+        "controlled-scan",
+        "local-normalized-data",
+        "local-assets-after-review"
+      ],
+      "notes": "Use as reference for bestiary/entity enrichment. Do not depend on the site at runtime."
+    },
+    {
+      "id": "tibiawiki",
+      "name": "TibiaWiki",
+      "type": "external-site",
+      "status": "planned",
+      "runtimeDependency": false,
+      "allowedUse": [
+        "reference",
+        "controlled-scan",
+        "local-assets-after-review"
+      ],
+      "notes": "Potential source for images and entity metadata when allowed and reviewed."
+    },
+    {
+      "id": "otserver",
+      "name": "Local OTServer files",
+      "type": "local-package",
+      "status": "active",
+      "runtimeDependency": false,
+      "allowedUse": [
+        "text-scan",
+        "xml-import",
+        "lua-report",
+        "validated-local-data"
+      ],
+      "notes": "Read only. Never execute files from files_repository."
+    },
+    {
+      "id": "manual",
+      "name": "Manual review",
+      "type": "manual",
+      "status": "active",
+      "runtimeDependency": false,
+      "allowedUse": [
+        "manual-mapping",
+        "manual-prices",
+        "conflict-resolution",
+        "asset-review"
+      ],
+      "notes": "Human-reviewed corrections and allowlists."
+    }
+  ]
+}

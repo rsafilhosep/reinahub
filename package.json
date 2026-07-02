@@ -1,0 +1,42 @@
+{
+  "name": "reinahub-vault-tools",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "assets:sync": "node scripts/sync-game-assets.mjs",
+    "assets:sample": "node source/web/src/reina-core/assets/scripts/generate-sample-assets.mjs",
+    "assets:priority": "node source/web/src/reina-core/assets/scripts/generate-assets-priority.mjs",
+    "assets:import-inbox": "node source/web/src/reina-core/assets/scripts/import-inbox-assets.mjs",
+    "assets:monster-priority": "node source/web/src/reina-core/assets/scripts/generate-monster-assets-priority.mjs",
+    "assets:verify": "node source/web/src/reina-core/assets/scripts/verify-assets.mjs",
+    "database:import": "node source/web/src/reina-core/database/importers/import-database.mjs",
+    "database:verify": "node source/web/src/reina-core/database/scripts/verify-data-service.mjs",
+    "datasource:scan-tibiavault-bestiary": "node source/web/src/reina-core/data-sources/scripts/scan-tibiavault-bestiary.mjs",
+    "datasource:verify": "node source/web/src/reina-core/data-sources/scripts/verify-data-sources.mjs",
+    "repository:scan-lua": "node source/web/src/reina-core/repository/scripts/scan-lua-repository.mjs",
+    "taxonomy:classify": "node source/web/src/reina-core/taxonomy/scripts/classify-taxonomy.mjs",
+    "dev": "next dev",
+    "prebuild": "npm run assets:sync",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "chart.js": "^4.4.3",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "lucide-react": "^0.468.0",
+    "next": "^14.2.4",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.4"
+  }
+}

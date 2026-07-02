@@ -1,0 +1,5385 @@
+{
+  "generatedAt": "2026-07-01T23:15:18.977Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/bestiary/",
+  "safety": "Coverage report only. No app data is modified.",
+  "totals": {
+    "sourceCreatures": 799,
+    "localMonsters": 1765,
+    "matched": 767,
+    "sourceOnly": 32,
+    "localOnly": 998,
+    "coveragePct": 95.99
+  },
+  "matched": [
+    {
+      "name": "Abyssal Calamary",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Abyssal%20Calamary",
+      "localName": "Abyssal Calamary",
+      "experience": 200,
+      "health": 300
+    },
+    {
+      "name": "Acid Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Acid%20Blob",
+      "localName": "Acid Blob",
+      "experience": 250,
+      "health": 250
+    },
+    {
+      "name": "Acolyte of Darkness",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Acolyte%20of%20Darkness",
+      "localName": "Acolyte of Darkness",
+      "experience": 200,
+      "health": 325
+    },
+    {
+      "name": "Acolyte of the Cult",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Acolyte%20of%20the%20Cult",
+      "localName": "Acolyte of the Cult",
+      "experience": 300,
+      "health": 390
+    },
+    {
+      "name": "Adept of the Cult",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Adept%20of%20the%20Cult",
+      "localName": "Adept of the Cult",
+      "experience": 400,
+      "health": 430
+    },
+    {
+      "name": "Adult Goanna",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Adult%20Goanna",
+      "localName": "Adult Goanna",
+      "experience": 6650,
+      "health": 8300
+    },
+    {
+      "name": "Adventurer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Adventurer",
+      "localName": "Adventurer",
+      "experience": 0,
+      "health": 65
+    },
+    {
+      "name": "Afflicted Strider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Afflicted%20Strider",
+      "localName": "Afflicted Strider",
+      "experience": 5700,
+      "health": 10000
+    },
+    {
+      "name": "Agrestic Chicken",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Agrestic%20Chicken",
+      "localName": "Agrestic Chicken",
+      "experience": 0,
+      "health": 15
+    },
+    {
+      "name": "Amazon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Amazon",
+      "localName": "Amazon",
+      "experience": 60,
+      "health": 110
+    },
+    {
+      "name": "Ancient Scarab",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ancient%20Scarab",
+      "localName": "Ancient Scarab",
+      "experience": 720,
+      "health": 1000
+    },
+    {
+      "name": "Angry Sugar Fairy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Angry%20Sugar%20Fairy",
+      "localName": "Angry Sugar Fairy",
+      "experience": 3100,
+      "health": 3000
+    },
+    {
+      "name": "Animated Feather",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Animated%20Feather",
+      "localName": "Animated Feather",
+      "experience": 9860,
+      "health": 13000
+    },
+    {
+      "name": "Animated Snowman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Animated%20Snowman",
+      "localName": "Animated Snowman",
+      "experience": 400,
+      "health": 450
+    },
+    {
+      "name": "Arachnophobica",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Arachnophobica",
+      "localName": "Arachnophobica",
+      "experience": 4700,
+      "health": 5000
+    },
+    {
+      "name": "Arctic Faun",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Arctic%20Faun",
+      "localName": "Arctic Faun",
+      "experience": 300,
+      "health": 300
+    },
+    {
+      "name": "Armadile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Armadile",
+      "localName": "Armadile",
+      "experience": 3200,
+      "health": 3800
+    },
+    {
+      "name": "Askarak Demon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Askarak%20Demon",
+      "localName": "Askarak Demon",
+      "experience": 900,
+      "health": 1500
+    },
+    {
+      "name": "Askarak Lord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Askarak%20Lord",
+      "localName": "Askarak Lord",
+      "experience": 1200,
+      "health": 2100
+    },
+    {
+      "name": "Askarak Prince",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Askarak%20Prince",
+      "localName": "Askarak Prince",
+      "experience": 1700,
+      "health": 2600
+    },
+    {
+      "name": "Assassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Assassin",
+      "localName": "Assassin",
+      "experience": 105,
+      "health": 175
+    },
+    {
+      "name": "Azure Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Azure%20Frog",
+      "localName": "Azure Frog",
+      "experience": 20,
+      "health": 60
+    },
+    {
+      "name": "Badger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Badger",
+      "localName": "Badger",
+      "experience": 5,
+      "health": 23
+    },
+    {
+      "name": "Baleful Bunny",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Baleful%20Bunny",
+      "localName": "Baleful Bunny",
+      "experience": 450,
+      "health": 500
+    },
+    {
+      "name": "Bandit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bandit",
+      "localName": "Bandit",
+      "experience": 65,
+      "health": 245
+    },
+    {
+      "name": "Bane Bringer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bane%20Bringer",
+      "localName": "Bane Bringer",
+      "experience": 400,
+      "health": 2500
+    },
+    {
+      "name": "Bane of Light",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bane%20of%20Light",
+      "localName": "Bane of Light",
+      "experience": 750,
+      "health": 1100
+    },
+    {
+      "name": "Banshee",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Banshee",
+      "localName": "Banshee",
+      "experience": 900,
+      "health": 1000
+    },
+    {
+      "name": "Barbarian Bloodwalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barbarian%20Bloodwalker",
+      "localName": "Barbarian Bloodwalker",
+      "experience": 195,
+      "health": 305
+    },
+    {
+      "name": "Barbarian Brutetamer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barbarian%20Brutetamer",
+      "localName": "Barbarian Brutetamer",
+      "experience": 90,
+      "health": 145
+    },
+    {
+      "name": "Barbarian Headsplitter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barbarian%20Headsplitter",
+      "localName": "Barbarian Headsplitter",
+      "experience": 85,
+      "health": 100
+    },
+    {
+      "name": "Barbarian Skullhunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barbarian%20Skullhunter",
+      "localName": "Barbarian Skullhunter",
+      "experience": 85,
+      "health": 135
+    },
+    {
+      "name": "Barkless Devotee",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barkless%20Devotee",
+      "localName": "Barkless Devotee",
+      "experience": 2200,
+      "health": 2800
+    },
+    {
+      "name": "Barkless Fanatic",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Barkless%20Fanatic",
+      "localName": "Barkless Fanatic",
+      "experience": 2500,
+      "health": 3200
+    },
+    {
+      "name": "Bashmu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bashmu",
+      "localName": "Bashmu",
+      "experience": 5000,
+      "health": 8200
+    },
+    {
+      "name": "Bat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bat",
+      "localName": "Bat",
+      "experience": 10,
+      "health": 30
+    },
+    {
+      "name": "Bear",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bear",
+      "localName": "Bear",
+      "experience": 23,
+      "health": 80
+    },
+    {
+      "name": "Behemoth",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Behemoth",
+      "localName": "Behemoth",
+      "experience": 2500,
+      "health": 4000
+    },
+    {
+      "name": "Berserker Chicken",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Berserker%20Chicken",
+      "localName": "Berserker Chicken",
+      "experience": 220,
+      "health": 465
+    },
+    {
+      "name": "Betrayed Wraith",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Betrayed%20Wraith",
+      "localName": "Betrayed Wraith",
+      "experience": 3500,
+      "health": 4200
+    },
+    {
+      "name": "Biting Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Biting%20Book",
+      "localName": "Biting Book",
+      "experience": 9350,
+      "health": 6500
+    },
+    {
+      "name": "Black Sheep",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Black%20Sheep",
+      "localName": "Black Sheep",
+      "experience": 0,
+      "health": 20
+    },
+    {
+      "name": "Black Sphinx Acolyte",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Black%20Sphinx%20Acolyte",
+      "localName": "Black Sphinx Acolyte",
+      "experience": 7200,
+      "health": 8100
+    },
+    {
+      "name": "Blemished Spawn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blemished%20Spawn",
+      "localName": "Blemished Spawn",
+      "experience": 5300,
+      "health": 9000
+    },
+    {
+      "name": "Blightwalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blightwalker",
+      "localName": "Blightwalker",
+      "experience": 6400,
+      "health": 8100
+    },
+    {
+      "name": "Bloated Man-Maggot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bloated%20Man-Maggot",
+      "localName": "Bloated Man-Maggot",
+      "experience": 21570,
+      "health": 31700
+    },
+    {
+      "name": "Blood Beast",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blood%20Beast",
+      "localName": "Blood Beast",
+      "experience": 1000,
+      "health": 1600
+    },
+    {
+      "name": "Blood Crab",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blood%20Crab",
+      "localName": "Blood Crab",
+      "experience": 160,
+      "health": 290
+    },
+    {
+      "name": "Blood Hand",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blood%20Hand",
+      "localName": "Blood Hand",
+      "experience": 750,
+      "health": 700
+    },
+    {
+      "name": "Blood Priest",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blood%20Priest",
+      "localName": "Blood Priest",
+      "experience": 900,
+      "health": 820
+    },
+    {
+      "name": "Blue Djinn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Blue%20Djinn",
+      "localName": "Blue Djinn",
+      "experience": 215,
+      "health": 330
+    },
+    {
+      "name": "Bluebeak",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bluebeak",
+      "localName": "Bluebeak",
+      "experience": 2070,
+      "health": 2430
+    },
+    {
+      "name": "Boar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Boar",
+      "localName": "Boar",
+      "experience": 60,
+      "health": 198
+    },
+    {
+      "name": "Boar Man",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Boar%20Man",
+      "localName": "Boar Man",
+      "experience": 7720,
+      "health": 9200
+    },
+    {
+      "name": "Bog Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bog%20Frog",
+      "localName": "Bog Frog",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Bog Raider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bog%20Raider",
+      "localName": "Bog Raider",
+      "experience": 800,
+      "health": 1300
+    },
+    {
+      "name": "Bonebeast",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bonebeast",
+      "localName": "Bonebeast",
+      "experience": 580,
+      "health": 515
+    },
+    {
+      "name": "Bonelord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bonelord",
+      "localName": "Bonelord",
+      "experience": 170,
+      "health": 260
+    },
+    {
+      "name": "Bony Sea Devil",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bony%20Sea%20Devil",
+      "localName": "Bony Sea Devil",
+      "experience": 19470,
+      "health": 24000
+    },
+    {
+      "name": "Boogy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Boogy",
+      "localName": "Boogy",
+      "experience": 950,
+      "health": 1300
+    },
+    {
+      "name": "Brachiodemon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Brachiodemon",
+      "localName": "Brachiodemon",
+      "experience": 15770,
+      "health": 25000
+    },
+    {
+      "name": "Brain Squid",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Brain%20Squid",
+      "localName": "Brain Squid",
+      "experience": 17672,
+      "health": 18000
+    },
+    {
+      "name": "Braindeath",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Braindeath",
+      "localName": "Braindeath",
+      "experience": 985,
+      "health": 1225
+    },
+    {
+      "name": "Bramble Wyrmling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bramble%20Wyrmling",
+      "localName": "Bramble Wyrmling",
+      "experience": 1950,
+      "health": 2350
+    },
+    {
+      "name": "Branchy Crawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Branchy%20Crawler",
+      "localName": "Branchy Crawler",
+      "experience": 17860,
+      "health": 27000
+    },
+    {
+      "name": "Breach Brood",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Breach%20Brood",
+      "localName": "Breach Brood",
+      "experience": 1760,
+      "health": 3500
+    },
+    {
+      "name": "Bride of Night",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bride%20of%20Night",
+      "localName": "Bride of Night",
+      "experience": 450,
+      "health": 275
+    },
+    {
+      "name": "Brimstone Bug",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Brimstone%20Bug",
+      "localName": "Brimstone Bug",
+      "experience": 900,
+      "health": 1300
+    },
+    {
+      "name": "Brinebrute Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Brinebrute%20Inferniarch",
+      "localName": "Brinebrute Inferniarch",
+      "experience": 20300,
+      "health": 32000
+    },
+    {
+      "name": "Broken Shaper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Broken%20Shaper",
+      "localName": "Broken Shaper",
+      "experience": 1600,
+      "health": 2200
+    },
+    {
+      "name": "Broodrider Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Broodrider%20Inferniarch",
+      "localName": "Broodrider Inferniarch",
+      "experience": 7850,
+      "health": 9600
+    },
+    {
+      "name": "Bug",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bug",
+      "localName": "Bug",
+      "experience": 18,
+      "health": 29
+    },
+    {
+      "name": "Bulltaur Alchemist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bulltaur%20Alchemist",
+      "localName": "Bulltaur Alchemist",
+      "experience": 4350,
+      "health": 5690
+    },
+    {
+      "name": "Bulltaur Brute",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bulltaur%20Brute",
+      "localName": "Bulltaur Brute",
+      "experience": 4700,
+      "health": 6560
+    },
+    {
+      "name": "Bulltaur Forgepriest",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Bulltaur%20Forgepriest",
+      "localName": "Bulltaur Forgepriest",
+      "experience": 5180,
+      "health": 6840
+    },
+    {
+      "name": "Burning Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Burning%20Book",
+      "localName": "Burning Book",
+      "experience": 11934,
+      "health": 18000
+    },
+    {
+      "name": "Burning Gladiator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Burning%20Gladiator",
+      "localName": "Burning Gladiator",
+      "experience": 7350,
+      "health": 10000
+    },
+    {
+      "name": "Burster Spectre",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Burster%20Spectre",
+      "localName": "Burster Spectre",
+      "experience": 6000,
+      "health": 6500
+    },
+    {
+      "name": "Calamary",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Calamary",
+      "localName": "Calamary",
+      "experience": 0,
+      "health": 75
+    },
+    {
+      "name": "Candy Floss Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Candy%20Floss%20Elemental",
+      "localName": "Candy Floss Elemental",
+      "experience": 3850,
+      "health": 3700
+    },
+    {
+      "name": "Candy Horror",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Candy%20Horror",
+      "localName": "Candy Horror",
+      "experience": 3000,
+      "health": 3100
+    },
+    {
+      "name": "Capricious Phantom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Capricious%20Phantom",
+      "localName": "Capricious Phantom",
+      "experience": 19360,
+      "health": 30000
+    },
+    {
+      "name": "Carniphila",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Carniphila",
+      "localName": "Carniphila",
+      "experience": 150,
+      "health": 255
+    },
+    {
+      "name": "Carnivostrich",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Carnivostrich",
+      "localName": "Carnivostrich",
+      "experience": 7290,
+      "health": 8250
+    },
+    {
+      "name": "Carrion Worm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Carrion%20Worm",
+      "localName": "Carrion Worm",
+      "experience": 70,
+      "health": 145
+    },
+    {
+      "name": "Cat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cat",
+      "localName": "Cat",
+      "experience": 0,
+      "health": 20
+    },
+    {
+      "name": "Cave Chimera",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cave%20Chimera",
+      "localName": "Cave Chimera",
+      "experience": 6800,
+      "health": 8000
+    },
+    {
+      "name": "Cave Devourer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cave%20Devourer",
+      "localName": "Cave Devourer",
+      "experience": 3380,
+      "health": 4500
+    },
+    {
+      "name": "Cave Parrot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cave%20Parrot",
+      "localName": "Cave Parrot",
+      "experience": 0,
+      "health": 30
+    },
+    {
+      "name": "Cave Rat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cave%20Rat",
+      "localName": "Cave Rat",
+      "experience": 10,
+      "health": 30
+    },
+    {
+      "name": "Centipede",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Centipede",
+      "localName": "Centipede",
+      "experience": 34,
+      "health": 70
+    },
+    {
+      "name": "Chakoya Toolshaper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chakoya%20Toolshaper",
+      "localName": "Chakoya Toolshaper",
+      "experience": 40,
+      "health": 80
+    },
+    {
+      "name": "Chakoya Tribewarden",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chakoya%20Tribewarden",
+      "localName": "Chakoya Tribewarden",
+      "experience": 40,
+      "health": 68
+    },
+    {
+      "name": "Chakoya Windcaller",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chakoya%20Windcaller",
+      "localName": "Chakoya Windcaller",
+      "experience": 48,
+      "health": 84
+    },
+    {
+      "name": "Chasm Spawn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chasm%20Spawn",
+      "localName": "Chasm Spawn",
+      "experience": 3600,
+      "health": 4500
+    },
+    {
+      "name": "Chicken",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chicken",
+      "localName": "Chicken",
+      "experience": 0,
+      "health": 15
+    },
+    {
+      "name": "Chocolate Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Chocolate%20Blob",
+      "localName": "Chocolate Blob",
+      "experience": 17,
+      "health": 70
+    },
+    {
+      "name": "Choking Fear",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Choking%20Fear",
+      "localName": "Choking Fear",
+      "experience": 4700,
+      "health": 5800
+    },
+    {
+      "name": "Cinder Wyrmling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cinder%20Wyrmling",
+      "localName": "Cinder Wyrmling",
+      "experience": 1950,
+      "health": 2350
+    },
+    {
+      "name": "Clay Guardian",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Clay%20Guardian",
+      "localName": "Clay Guardian",
+      "experience": 400,
+      "health": 625
+    },
+    {
+      "name": "Cliff Strider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cliff%20Strider",
+      "localName": "Cliff Strider",
+      "experience": 7100,
+      "health": 9400
+    },
+    {
+      "name": "Cloak of Terror",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cloak%20of%20Terror",
+      "localName": "Cloak of Terror",
+      "experience": 19700,
+      "health": 28000
+    },
+    {
+      "name": "Clomp",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Clomp",
+      "localName": "Clomp",
+      "experience": 475,
+      "health": 900
+    },
+    {
+      "name": "Cobra",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cobra",
+      "localName": "Cobra",
+      "experience": 30,
+      "health": 65
+    },
+    {
+      "name": "Cobra Assassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cobra%20Assassin",
+      "localName": "Cobra Assassin",
+      "experience": 6980,
+      "health": 8200
+    },
+    {
+      "name": "Cobra Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cobra%20Scout",
+      "localName": "Cobra Scout",
+      "experience": 7310,
+      "health": 8500
+    },
+    {
+      "name": "Cobra Vizier",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cobra%20Vizier",
+      "localName": "Cobra Vizier",
+      "experience": 7650,
+      "health": 8500
+    },
+    {
+      "name": "Converter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Converter",
+      "localName": "Converter",
+      "experience": 21425,
+      "health": 29600
+    },
+    {
+      "name": "Coral Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Coral%20Frog",
+      "localName": "Coral Frog",
+      "experience": 20,
+      "health": 60
+    },
+    {
+      "name": "Corrupted Ghost",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Corrupted%20Ghost",
+      "localName": "Corrupted Ghost",
+      "experience": 29,
+      "health": 30
+    },
+    {
+      "name": "Corrupted Skeleton",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Corrupted%20Skeleton",
+      "localName": "Corrupted Skeleton",
+      "experience": 34,
+      "health": 45
+    },
+    {
+      "name": "Corym Charlatan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Corym%20Charlatan",
+      "localName": "Corym Charlatan",
+      "experience": 150,
+      "health": 250
+    },
+    {
+      "name": "Corym Skirmisher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Corym%20Skirmisher",
+      "localName": "Corym Skirmisher",
+      "experience": 260,
+      "health": 450
+    },
+    {
+      "name": "Corym Vanguard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Corym%20Vanguard",
+      "localName": "Corym Vanguard",
+      "experience": 490,
+      "health": 700
+    },
+    {
+      "name": "Courage Leech",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Courage%20Leech",
+      "localName": "Courage Leech",
+      "experience": 18900,
+      "health": 27000
+    },
+    {
+      "name": "Crab",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crab",
+      "localName": "Crab",
+      "experience": 30,
+      "health": 55
+    },
+    {
+      "name": "Crape Man",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crape%20Man",
+      "localName": "Crape Man",
+      "experience": 5040,
+      "health": 9150
+    },
+    {
+      "name": "Crawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crawler",
+      "localName": "Crawler",
+      "experience": 1000,
+      "health": 1450
+    },
+    {
+      "name": "Crazed Beggar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crazed%20Beggar",
+      "localName": "Crazed Beggar",
+      "experience": 35,
+      "health": 100
+    },
+    {
+      "name": "Crazed Summer Rearguard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crazed%20Summer%20Rearguard",
+      "localName": "Crazed Summer Rearguard",
+      "experience": 4700,
+      "health": 5300
+    },
+    {
+      "name": "Crazed Summer Vanguard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crazed%20Summer%20Vanguard",
+      "localName": "Crazed Summer Vanguard",
+      "experience": 5000,
+      "health": 5500
+    },
+    {
+      "name": "Crazed Winter Rearguard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crazed%20Winter%20Rearguard",
+      "localName": "Crazed Winter Rearguard",
+      "experience": 4700,
+      "health": 5200
+    },
+    {
+      "name": "Crazed Winter Vanguard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crazed%20Winter%20Vanguard",
+      "localName": "Crazed Winter Vanguard",
+      "experience": 5400,
+      "health": 5800
+    },
+    {
+      "name": "Cream Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cream%20Blob",
+      "localName": "Cream Blob",
+      "experience": 21,
+      "health": 76
+    },
+    {
+      "name": "Creepy Crawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Creepy%20Crawler",
+      "localName": "Creepy Crawler",
+      "experience": 23000,
+      "health": 27000
+    },
+    {
+      "name": "Crimson Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crimson%20Frog",
+      "localName": "Crimson Frog",
+      "experience": 20,
+      "health": 60
+    },
+    {
+      "name": "Crocodile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crocodile",
+      "localName": "Crocodile",
+      "experience": 40,
+      "health": 105
+    },
+    {
+      "name": "Crusader",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crusader",
+      "localName": "Crusader",
+      "experience": 3050,
+      "health": 3400
+    },
+    {
+      "name": "Crustacea Gigantica",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crustacea%20Gigantica",
+      "localName": "Crustacea Gigantica",
+      "experience": 1800,
+      "health": 1600
+    },
+    {
+      "name": "Crypt Construct",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Construct",
+      "localName": "Crypt Construct",
+      "experience": 20500,
+      "health": 25000
+    },
+    {
+      "name": "Crypt Defiler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Defiler",
+      "localName": "Crypt Defiler",
+      "experience": 70,
+      "health": 185
+    },
+    {
+      "name": "Crypt Fiend",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Fiend",
+      "localName": "Crypt Fiend",
+      "experience": 22500,
+      "health": 30000
+    },
+    {
+      "name": "Crypt Mage",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Mage",
+      "localName": "Crypt Mage",
+      "experience": 14700,
+      "health": 14000
+    },
+    {
+      "name": "Crypt Shambler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Shambler",
+      "localName": "Crypt Shambler",
+      "experience": 195,
+      "health": 330
+    },
+    {
+      "name": "Crypt Warden",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Warden",
+      "localName": "Crypt Warden",
+      "experience": 8400,
+      "health": 8300
+    },
+    {
+      "name": "Crypt Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crypt%20Warrior",
+      "localName": "Crypt Warrior",
+      "experience": 6050,
+      "health": 7800
+    },
+    {
+      "name": "Crystal Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crystal%20Spider",
+      "localName": "Crystal Spider",
+      "experience": 900,
+      "health": 1250
+    },
+    {
+      "name": "Crystal Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crystal%20Wolf",
+      "localName": "Crystal Wolf",
+      "experience": 275,
+      "health": 750
+    },
+    {
+      "name": "Crystalcrusher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Crystalcrusher",
+      "localName": "Crystalcrusher",
+      "experience": 500,
+      "health": 570
+    },
+    {
+      "name": "Cult Believer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cult%20Believer",
+      "localName": "Cult Believer",
+      "experience": 850,
+      "health": 975
+    },
+    {
+      "name": "Cult Enforcer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cult%20Enforcer",
+      "localName": "Cult Enforcer",
+      "experience": 1000,
+      "health": 1150
+    },
+    {
+      "name": "Cult Scholar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cult%20Scholar",
+      "localName": "Cult Scholar",
+      "experience": 1100,
+      "health": 1650
+    },
+    {
+      "name": "Cunning Werepanther",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cunning%20Werepanther",
+      "localName": "Cunning Werepanther",
+      "experience": 3620,
+      "health": 4300
+    },
+    {
+      "name": "Cursed Ape",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cursed%20Ape",
+      "localName": "Cursed Ape",
+      "experience": 1860,
+      "health": 1700
+    },
+    {
+      "name": "Cursed Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cursed%20Book",
+      "localName": "Cursed Book",
+      "experience": 13345,
+      "health": 20000
+    },
+    {
+      "name": "Cursed Prospector",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cursed%20Prospector",
+      "localName": "Cursed Prospector",
+      "experience": 5250,
+      "health": 3900
+    },
+    {
+      "name": "Cyclops",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cyclops",
+      "localName": "Cyclops",
+      "experience": 150,
+      "health": 260
+    },
+    {
+      "name": "Cyclops Drone",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cyclops%20Drone",
+      "localName": "Cyclops Drone",
+      "experience": 200,
+      "health": 325
+    },
+    {
+      "name": "Cyclops Smith",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cyclops%20Smith",
+      "localName": "Cyclops Smith",
+      "experience": 255,
+      "health": 435
+    },
+    {
+      "name": "Cyclursus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Cyclursus",
+      "localName": "Cyclursus",
+      "experience": 13375,
+      "health": 13500
+    },
+    {
+      "name": "Damaged Crystal Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Damaged%20Crystal%20Golem",
+      "localName": "Damaged Crystal Golem",
+      "experience": 0,
+      "health": 500
+    },
+    {
+      "name": "Damaged Worker Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Damaged%20Worker%20Golem",
+      "localName": "Damaged Worker Golem",
+      "experience": 95,
+      "health": 260
+    },
+    {
+      "name": "Dark Apprentice",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Apprentice",
+      "localName": "Dark Apprentice",
+      "experience": 100,
+      "health": 225
+    },
+    {
+      "name": "Dark Carnisylvan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Carnisylvan",
+      "localName": "Dark Carnisylvan",
+      "experience": 4400,
+      "health": 7500
+    },
+    {
+      "name": "Dark Faun",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Faun",
+      "localName": "Dark Faun",
+      "experience": 900,
+      "health": 1100
+    },
+    {
+      "name": "Dark Magician",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Magician",
+      "localName": "Dark Magician",
+      "experience": 185,
+      "health": 325
+    },
+    {
+      "name": "Dark Monk",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Monk",
+      "localName": "Dark Monk",
+      "experience": 145,
+      "health": 190
+    },
+    {
+      "name": "Dark Torturer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dark%20Torturer",
+      "localName": "Dark Torturer",
+      "experience": 4650,
+      "health": 7350
+    },
+    {
+      "name": "Darklight Construct",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Darklight%20Construct",
+      "localName": "Darklight Construct",
+      "experience": 22050,
+      "health": 32200
+    },
+    {
+      "name": "Darklight Emitter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Darklight%20Emitter",
+      "localName": "Darklight Emitter",
+      "experience": 20600,
+      "health": 27500
+    },
+    {
+      "name": "Darklight Matter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Darklight%20Matter",
+      "localName": "Darklight Matter",
+      "experience": 22250,
+      "health": 30150
+    },
+    {
+      "name": "Darklight Source",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Darklight%20Source",
+      "localName": "Darklight Source",
+      "experience": 22465,
+      "health": 31550
+    },
+    {
+      "name": "Darklight Striker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Darklight%20Striker",
+      "localName": "Darklight Striker",
+      "experience": 22200,
+      "health": 29700
+    },
+    {
+      "name": "Dawnfire Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dawnfire%20Asura",
+      "localName": "Dawnfire Asura",
+      "experience": 4100,
+      "health": 2900
+    },
+    {
+      "name": "Death Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Death%20Blob",
+      "localName": "Death Blob",
+      "experience": 300,
+      "health": 320
+    },
+    {
+      "name": "Death Priest",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Death%20Priest",
+      "localName": "Death Priest",
+      "experience": 750,
+      "health": 800
+    },
+    {
+      "name": "Deathling Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deathling%20Scout",
+      "localName": "Deathling Scout",
+      "experience": 6300,
+      "health": 7200
+    },
+    {
+      "name": "Deathling Spellsinger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deathling%20Spellsinger",
+      "localName": "Deathling Spellsinger",
+      "experience": 6400,
+      "health": 7200
+    },
+    {
+      "name": "Deepling Brawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Brawler",
+      "localName": "Deepling Brawler",
+      "experience": 260,
+      "health": 380
+    },
+    {
+      "name": "Deepling Elite",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Elite",
+      "localName": "Deepling Elite",
+      "experience": 3000,
+      "health": 3200
+    },
+    {
+      "name": "Deepling Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Guard",
+      "localName": "Deepling Guard",
+      "experience": 2100,
+      "health": 1900
+    },
+    {
+      "name": "Deepling Master Librarian",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Master%20Librarian",
+      "localName": "Deepling Master Librarian",
+      "experience": 1900,
+      "health": 1700
+    },
+    {
+      "name": "Deepling Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Scout",
+      "localName": "Deepling Scout",
+      "experience": 160,
+      "health": 240
+    },
+    {
+      "name": "Deepling Spellsinger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Spellsinger",
+      "localName": "Deepling Spellsinger",
+      "experience": 1000,
+      "health": 850
+    },
+    {
+      "name": "Deepling Tyrant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Tyrant",
+      "localName": "Deepling Tyrant",
+      "experience": 4200,
+      "health": 4500
+    },
+    {
+      "name": "Deepling Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Warrior",
+      "localName": "Deepling Warrior",
+      "experience": 1500,
+      "health": 1600
+    },
+    {
+      "name": "Deepling Worker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepling%20Worker",
+      "localName": "Deepling Worker",
+      "experience": 130,
+      "health": 190
+    },
+    {
+      "name": "Deepsea Blood Crab",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepsea%20Blood%20Crab",
+      "localName": "Deepsea Blood Crab",
+      "experience": 180,
+      "health": 320
+    },
+    {
+      "name": "Deepworm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deepworm",
+      "localName": "Deepworm",
+      "experience": 2520,
+      "health": 3500
+    },
+    {
+      "name": "Deer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Deer",
+      "localName": "Deer",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Defiler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Defiler",
+      "localName": "Defiler",
+      "experience": 3700,
+      "health": 3650
+    },
+    {
+      "name": "Demon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Demon",
+      "localName": "Demon",
+      "experience": 6000,
+      "health": 8200
+    },
+    {
+      "name": "Demon Outcast",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Demon%20Outcast",
+      "localName": "Demon Outcast",
+      "experience": 6200,
+      "health": 6900
+    },
+    {
+      "name": "Demon Parrot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Demon%20Parrot",
+      "localName": "Demon Parrot",
+      "experience": 225,
+      "health": 360
+    },
+    {
+      "name": "Demon Skeleton",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Demon%20Skeleton",
+      "localName": "Demon Skeleton",
+      "experience": 240,
+      "health": 400
+    },
+    {
+      "name": "Destroyer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Destroyer",
+      "localName": "Destroyer",
+      "experience": 2500,
+      "health": 3700
+    },
+    {
+      "name": "Devourer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Devourer",
+      "localName": "Devourer",
+      "experience": 1755,
+      "health": 1900
+    },
+    {
+      "name": "Diabolic Imp",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Diabolic%20Imp",
+      "localName": "Diabolic Imp",
+      "experience": 2900,
+      "health": 1950
+    },
+    {
+      "name": "Diamond Servant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Diamond%20Servant",
+      "localName": "Diamond Servant",
+      "experience": 700,
+      "health": 1000
+    },
+    {
+      "name": "Diamond Servant Replica",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Diamond%20Servant%20Replica",
+      "localName": "Diamond Servant Replica",
+      "experience": 700,
+      "health": 2000
+    },
+    {
+      "name": "Dire Penguin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dire%20Penguin",
+      "localName": "Dire Penguin",
+      "experience": 119,
+      "health": 173
+    },
+    {
+      "name": "Diremaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Diremaw",
+      "localName": "Diremaw",
+      "experience": 2770,
+      "health": 3600
+    },
+    {
+      "name": "Distorted Phantom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Distorted%20Phantom",
+      "localName": "Distorted Phantom",
+      "experience": 18870,
+      "health": 26000
+    },
+    {
+      "name": "Dog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dog",
+      "localName": "Dog",
+      "experience": 0,
+      "health": 20
+    },
+    {
+      "name": "Doom Deer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Doom%20Deer",
+      "localName": "Doom Deer",
+      "experience": 200,
+      "health": 405
+    },
+    {
+      "name": "Doomsday Cultist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Doomsday%20Cultist",
+      "localName": "Doomsday Cultist",
+      "experience": 100,
+      "health": 125
+    },
+    {
+      "name": "Dragolisk",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragolisk",
+      "localName": "Dragolisk",
+      "experience": 5050,
+      "health": 6180
+    },
+    {
+      "name": "Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragon",
+      "localName": "Dragon",
+      "experience": 700,
+      "health": 1000
+    },
+    {
+      "name": "Dragon Hatchling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragon%20Hatchling",
+      "localName": "Dragon Hatchling",
+      "experience": 185,
+      "health": 380
+    },
+    {
+      "name": "Dragon Lord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragon%20Lord",
+      "localName": "Dragon Lord",
+      "experience": 2100,
+      "health": 1900
+    },
+    {
+      "name": "Dragon Lord Hatchling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragon%20Lord%20Hatchling",
+      "localName": "Dragon Lord Hatchling",
+      "experience": 645,
+      "health": 750
+    },
+    {
+      "name": "Dragonling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dragonling",
+      "localName": "Dragonling",
+      "experience": 2200,
+      "health": 2600
+    },
+    {
+      "name": "Draken Abomination",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Draken%20Abomination",
+      "localName": "Draken Abomination",
+      "experience": 3800,
+      "health": 6250
+    },
+    {
+      "name": "Draken Elite",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Draken%20Elite",
+      "localName": "Draken Elite",
+      "experience": 4200,
+      "health": 5550
+    },
+    {
+      "name": "Draken Spellweaver",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Draken%20Spellweaver",
+      "localName": "Draken Spellweaver",
+      "experience": 3100,
+      "health": 5000
+    },
+    {
+      "name": "Draken Warmaster",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Draken%20Warmaster",
+      "localName": "Draken Warmaster",
+      "experience": 2400,
+      "health": 4150
+    },
+    {
+      "name": "Draptor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Draptor",
+      "localName": "Draptor",
+      "experience": 2400,
+      "health": 3000
+    },
+    {
+      "name": "Dread Intruder",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dread%20Intruder",
+      "localName": "Dread Intruder",
+      "experience": 2400,
+      "health": 4500
+    },
+    {
+      "name": "Drillworm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Drillworm",
+      "localName": "Drillworm",
+      "experience": 1200,
+      "health": 1500
+    },
+    {
+      "name": "Dromedary",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dromedary",
+      "localName": "Dromedary",
+      "experience": 0,
+      "health": 45
+    },
+    {
+      "name": "Dryad",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dryad",
+      "localName": "Dryad",
+      "experience": 190,
+      "health": 310
+    },
+    {
+      "name": "Duskbringer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Duskbringer",
+      "localName": "Duskbringer",
+      "experience": 2600,
+      "health": 3550
+    },
+    {
+      "name": "Dwarf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dwarf",
+      "localName": "Dwarf",
+      "experience": 45,
+      "health": 90
+    },
+    {
+      "name": "Dwarf Geomancer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dwarf%20Geomancer",
+      "localName": "Dwarf Geomancer",
+      "experience": 265,
+      "health": 380
+    },
+    {
+      "name": "Dwarf Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dwarf%20Guard",
+      "localName": "Dwarf Guard",
+      "experience": 165,
+      "health": 245
+    },
+    {
+      "name": "Dwarf Henchman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dwarf%20Henchman",
+      "localName": "Dwarf Henchman",
+      "experience": 15,
+      "health": 350
+    },
+    {
+      "name": "Dwarf Soldier",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dwarf%20Soldier",
+      "localName": "Dwarf Soldier",
+      "experience": 70,
+      "health": 135
+    },
+    {
+      "name": "Dworc Fleshhunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dworc%20Fleshhunter",
+      "localName": "Dworc Fleshhunter",
+      "experience": 40,
+      "health": 85
+    },
+    {
+      "name": "Dworc Shadowstalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dworc%20Shadowstalker",
+      "localName": "Dworc Shadowstalker",
+      "experience": 7150,
+      "health": 8900
+    },
+    {
+      "name": "Dworc Venomsniper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dworc%20Venomsniper",
+      "localName": "Dworc Venomsniper",
+      "experience": 35,
+      "health": 80
+    },
+    {
+      "name": "Dworc Voodoomaster",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Dworc%20Voodoomaster",
+      "localName": "Dworc Voodoomaster",
+      "experience": 55,
+      "health": 80
+    },
+    {
+      "name": "Earth Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Earth%20Elemental",
+      "localName": "Earth Elemental",
+      "experience": 550,
+      "health": 650
+    },
+    {
+      "name": "Efreet",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Efreet",
+      "localName": "Efreet",
+      "experience": 410,
+      "health": 550
+    },
+    {
+      "name": "Elder Bonelord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elder%20Bonelord",
+      "localName": "Elder Bonelord",
+      "experience": 280,
+      "health": 500
+    },
+    {
+      "name": "Elder Mummy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elder%20Mummy",
+      "localName": "Elder Mummy",
+      "experience": 560,
+      "health": 850
+    },
+    {
+      "name": "Elder Wyrm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elder%20Wyrm",
+      "localName": "Elder Wyrm",
+      "experience": 2500,
+      "health": 2700
+    },
+    {
+      "name": "Elephant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elephant",
+      "localName": "Elephant",
+      "experience": 160,
+      "health": 320
+    },
+    {
+      "name": "Elf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elf",
+      "localName": "Elf",
+      "experience": 42,
+      "health": 100
+    },
+    {
+      "name": "Elf Arcanist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elf%20Arcanist",
+      "localName": "Elf Arcanist",
+      "experience": 175,
+      "health": 220
+    },
+    {
+      "name": "Elf Overseer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elf%20Overseer",
+      "localName": "Elf Overseer",
+      "experience": 200,
+      "health": 220
+    },
+    {
+      "name": "Elf Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Elf%20Scout",
+      "localName": "Elf Scout",
+      "experience": 75,
+      "health": 160
+    },
+    {
+      "name": "Emerald Damselfly",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Emerald%20Damselfly",
+      "localName": "Emerald Damselfly",
+      "experience": 35,
+      "health": 90
+    },
+    {
+      "name": "Emerald Tortoise",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Emerald%20Tortoise",
+      "localName": "Emerald Tortoise",
+      "experience": 12129,
+      "health": 22300
+    },
+    {
+      "name": "Energetic Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Energetic%20Book",
+      "localName": "Energetic Book",
+      "experience": 12034,
+      "health": 18500
+    },
+    {
+      "name": "Energuardian of Tales",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Energuardian%20of%20Tales",
+      "localName": "Energuardian of Tales",
+      "experience": 11361,
+      "health": 14000
+    },
+    {
+      "name": "Energy Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Energy%20Elemental",
+      "localName": "Energy Elemental",
+      "experience": 550,
+      "health": 500
+    },
+    {
+      "name": "Enfeebled Silencer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Enfeebled%20Silencer",
+      "localName": "Enfeebled Silencer",
+      "experience": 1100,
+      "health": 1100
+    },
+    {
+      "name": "Enlightened of the Cult",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Enlightened%20of%20the%20Cult",
+      "localName": "Enlightened of the Cult",
+      "experience": 500,
+      "health": 700
+    },
+    {
+      "name": "Enraged Crystal Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Enraged%20Crystal%20Golem",
+      "localName": "Enraged Crystal Golem",
+      "experience": 550,
+      "health": 700
+    },
+    {
+      "name": "Enslaved Dwarf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Enslaved%20Dwarf",
+      "localName": "Enslaved Dwarf",
+      "experience": 2700,
+      "health": 3800
+    },
+    {
+      "name": "Eternal Guardian",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Eternal%20Guardian",
+      "localName": "Eternal Guardian",
+      "experience": 1800,
+      "health": 2500
+    },
+    {
+      "name": "Evil Prospector",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Evil%20Prospector",
+      "localName": "Evil Prospector",
+      "experience": 9800,
+      "health": 8500
+    },
+    {
+      "name": "Evil Sheep",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Evil%20Sheep",
+      "localName": "Evil Sheep",
+      "experience": 240,
+      "health": 350
+    },
+    {
+      "name": "Evil Sheep Lord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Evil%20Sheep%20Lord",
+      "localName": "Evil Sheep Lord",
+      "experience": 340,
+      "health": 400
+    },
+    {
+      "name": "Execowtioner",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Execowtioner",
+      "localName": "Execowtioner",
+      "experience": 2400,
+      "health": 3500
+    },
+    {
+      "name": "Exotic Bat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Exotic%20Bat",
+      "localName": "Exotic Bat",
+      "experience": 1200,
+      "health": 1500
+    },
+    {
+      "name": "Exotic Cave Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Exotic%20Cave%20Spider",
+      "localName": "Exotic Cave Spider",
+      "experience": 1400,
+      "health": 1900
+    },
+    {
+      "name": "Eyeless Devourer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Eyeless%20Devourer",
+      "localName": "Eyeless Devourer",
+      "experience": 6000,
+      "health": 10000
+    },
+    {
+      "name": "Falcon Knight",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Falcon%20Knight",
+      "localName": "Falcon Knight",
+      "experience": 6300,
+      "health": 9000
+    },
+    {
+      "name": "Falcon Paladin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Falcon%20Paladin",
+      "localName": "Falcon Paladin",
+      "experience": 6900,
+      "health": 8500
+    },
+    {
+      "name": "Faun",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Faun",
+      "localName": "Faun",
+      "experience": 800,
+      "health": 900
+    },
+    {
+      "name": "Feral Sphinx",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Feral%20Sphinx",
+      "localName": "Feral Sphinx",
+      "experience": 8800,
+      "health": 9800
+    },
+    {
+      "name": "Feral Werecrocodile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Feral%20Werecrocodile",
+      "localName": "Feral Werecrocodile",
+      "experience": 5430,
+      "health": 6400
+    },
+    {
+      "name": "Feverish Citizen",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Feverish%20Citizen",
+      "localName": "Feverish Citizen",
+      "experience": 30,
+      "health": 125
+    },
+    {
+      "name": "Feversleep",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Feversleep",
+      "localName": "Feversleep",
+      "experience": 5060,
+      "health": 5900
+    },
+    {
+      "name": "Filth Toad",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Filth%20Toad",
+      "localName": "Filth Toad",
+      "experience": 90,
+      "health": 185
+    },
+    {
+      "name": "Fire Devil",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Fire%20Devil",
+      "localName": "Fire Devil",
+      "experience": 145,
+      "health": 200
+    },
+    {
+      "name": "Fire Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Fire%20Elemental",
+      "localName": "Fire Elemental",
+      "experience": 220,
+      "health": 280
+    },
+    {
+      "name": "Firestarter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Firestarter",
+      "localName": "Firestarter",
+      "experience": 80,
+      "health": 180
+    },
+    {
+      "name": "Flamingo",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Flamingo",
+      "localName": "Flamingo",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Flimsy Lost Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Flimsy%20Lost%20Soul",
+      "localName": "Flimsy Lost Soul",
+      "experience": 4500,
+      "health": 4000
+    },
+    {
+      "name": "Floating Savant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Floating%20Savant",
+      "localName": "Floating Savant",
+      "experience": 8000,
+      "health": 8000
+    },
+    {
+      "name": "Flying Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Flying%20Book",
+      "localName": "Flying Book",
+      "experience": 200,
+      "health": 500
+    },
+    {
+      "name": "Foam Stalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Foam%20Stalker",
+      "localName": "Foam Stalker",
+      "experience": 3120,
+      "health": 4500
+    },
+    {
+      "name": "Forest Fury",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Forest%20Fury",
+      "localName": "Forest Fury",
+      "experience": 235,
+      "health": 480
+    },
+    {
+      "name": "Fox",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Fox",
+      "localName": "Fox",
+      "experience": 15,
+      "health": 22
+    },
+    {
+      "name": "Frazzlemaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frazzlemaw",
+      "localName": "Frazzlemaw",
+      "experience": 3740,
+      "health": 4100
+    },
+    {
+      "name": "Freakish Lost Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Freakish%20Lost%20Soul",
+      "localName": "Freakish Lost Soul",
+      "experience": 7020,
+      "health": 7000
+    },
+    {
+      "name": "Frost Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Dragon",
+      "localName": "Frost Dragon",
+      "experience": 2100,
+      "health": 1800
+    },
+    {
+      "name": "Frost Dragon Hatchling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Dragon%20Hatchling",
+      "localName": "Frost Dragon Hatchling",
+      "experience": 745,
+      "health": 800
+    },
+    {
+      "name": "Frost Flower Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Flower%20Asura",
+      "localName": "Frost Flower Asura",
+      "experience": 4200,
+      "health": 3500
+    },
+    {
+      "name": "Frost Giant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Giant",
+      "localName": "Frost Giant",
+      "experience": 150,
+      "health": 270
+    },
+    {
+      "name": "Frost Giantess",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Giantess",
+      "localName": "Frost Giantess",
+      "experience": 150,
+      "health": 275
+    },
+    {
+      "name": "Frost Troll",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Frost%20Troll",
+      "localName": "Frost Troll",
+      "experience": 23,
+      "health": 55
+    },
+    {
+      "name": "Fruit Drop",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Fruit%20Drop",
+      "localName": "Fruit Drop",
+      "experience": 18,
+      "health": 63
+    },
+    {
+      "name": "Furious Troll",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Furious%20Troll",
+      "localName": "Furious Troll",
+      "experience": 185,
+      "health": 245
+    },
+    {
+      "name": "Fury",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Fury",
+      "localName": "Fury",
+      "experience": 3600,
+      "health": 4100
+    },
+    {
+      "name": "Gang Member",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gang%20Member",
+      "localName": "Gang Member",
+      "experience": 70,
+      "health": 295
+    },
+    {
+      "name": "Gargoyle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gargoyle",
+      "localName": "Gargoyle",
+      "experience": 150,
+      "health": 250
+    },
+    {
+      "name": "Gazer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gazer",
+      "localName": "Gazer",
+      "experience": 90,
+      "health": 120
+    },
+    {
+      "name": "Gazer Spectre",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gazer%20Spectre",
+      "localName": "Gazer Spectre",
+      "experience": 4200,
+      "health": 4500
+    },
+    {
+      "name": "Ghastly Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ghastly%20Dragon",
+      "localName": "Ghastly Dragon",
+      "experience": 4600,
+      "health": 7800
+    },
+    {
+      "name": "Ghost",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ghost",
+      "localName": "Ghost",
+      "experience": 120,
+      "health": 150
+    },
+    {
+      "name": "Ghost Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ghost%20Wolf",
+      "localName": "Ghost Wolf",
+      "experience": 65,
+      "health": 160
+    },
+    {
+      "name": "Ghoul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ghoul",
+      "localName": "Ghoul",
+      "experience": 85,
+      "health": 100
+    },
+    {
+      "name": "Ghoulish Hyaena",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ghoulish%20Hyaena",
+      "localName": "Ghoulish Hyaena",
+      "experience": 195,
+      "health": 400
+    },
+    {
+      "name": "Giant Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Giant%20Spider",
+      "localName": "Giant Spider",
+      "experience": 900,
+      "health": 1300
+    },
+    {
+      "name": "Gingerbread Man",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gingerbread%20Man",
+      "localName": "Gingerbread Man",
+      "experience": 22,
+      "health": 85
+    },
+    {
+      "name": "Girtablilu Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Girtablilu%20Warrior",
+      "localName": "Girtablilu Warrior",
+      "experience": 5800,
+      "health": 8500
+    },
+    {
+      "name": "Gladiator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gladiator",
+      "localName": "Gladiator",
+      "experience": 90,
+      "health": 185
+    },
+    {
+      "name": "Gloom Maw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gloom%20Maw",
+      "localName": "Gloom Maw",
+      "experience": 6900,
+      "health": 8700
+    },
+    {
+      "name": "Gloom Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gloom%20Wolf",
+      "localName": "Gloom Wolf",
+      "experience": 70,
+      "health": 200
+    },
+    {
+      "name": "Glooth Anemone",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Glooth%20Anemone",
+      "localName": "Glooth Anemone",
+      "experience": 1755,
+      "health": 2400
+    },
+    {
+      "name": "Glooth Bandit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Glooth%20Bandit",
+      "localName": "Glooth Bandit",
+      "experience": 2000,
+      "health": 2600
+    },
+    {
+      "name": "Glooth Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Glooth%20Blob",
+      "localName": "Glooth Blob",
+      "experience": 700,
+      "health": 750
+    },
+    {
+      "name": "Glooth Brigand",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Glooth%20Brigand",
+      "localName": "Glooth Brigand",
+      "experience": 1900,
+      "health": 2400
+    },
+    {
+      "name": "Glooth Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Glooth%20Golem",
+      "localName": "Glooth Golem",
+      "experience": 1606,
+      "health": 2700
+    },
+    {
+      "name": "Gnarlhound",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gnarlhound",
+      "localName": "Gnarlhound",
+      "experience": 60,
+      "health": 198
+    },
+    {
+      "name": "Goblin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goblin",
+      "localName": "Goblin",
+      "experience": 25,
+      "health": 50
+    },
+    {
+      "name": "Goblin Assassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goblin%20Assassin",
+      "localName": "Goblin Assassin",
+      "experience": 52,
+      "health": 75
+    },
+    {
+      "name": "Goblin Leader",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goblin%20Leader",
+      "localName": "Goblin Leader",
+      "experience": 75,
+      "health": 50
+    },
+    {
+      "name": "Goblin Scavenger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goblin%20Scavenger",
+      "localName": "Goblin Scavenger",
+      "experience": 37,
+      "health": 60
+    },
+    {
+      "name": "Goggle Cake",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goggle%20Cake",
+      "localName": "Goggle Cake",
+      "experience": 2700,
+      "health": 2700
+    },
+    {
+      "name": "Golden Servant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Golden%20Servant",
+      "localName": "Golden Servant",
+      "experience": 450,
+      "health": 550
+    },
+    {
+      "name": "Golden Servant Replica",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Golden%20Servant%20Replica",
+      "localName": "Golden Servant Replica",
+      "experience": 450,
+      "health": 2000
+    },
+    {
+      "name": "Goldhanded Cultist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goldhanded%20Cultist",
+      "localName": "Goldhanded Cultist",
+      "experience": 2000,
+      "health": 3000
+    },
+    {
+      "name": "Goldhanded Cultist Bride",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Goldhanded%20Cultist%20Bride",
+      "localName": "Goldhanded Cultist Bride",
+      "experience": 2000,
+      "health": 3000
+    },
+    {
+      "name": "Gore Horn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gore%20Horn",
+      "localName": "Gore Horn",
+      "experience": 12595,
+      "health": 20620
+    },
+    {
+      "name": "Gorerilla",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gorerilla",
+      "localName": "Gorerilla",
+      "experience": 13172,
+      "health": 16850
+    },
+    {
+      "name": "Gorger Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gorger%20Inferniarch",
+      "localName": "Gorger Inferniarch",
+      "experience": 7680,
+      "health": 9450
+    },
+    {
+      "name": "Gozzler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gozzler",
+      "localName": "Gozzler",
+      "experience": 180,
+      "health": 240
+    },
+    {
+      "name": "Grave Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Grave%20Guard",
+      "localName": "Grave Guard",
+      "experience": 485,
+      "health": 720
+    },
+    {
+      "name": "Grave Robber",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Grave%20Robber",
+      "localName": "Grave Robber",
+      "experience": 65,
+      "health": 165
+    },
+    {
+      "name": "Gravedigger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gravedigger",
+      "localName": "Gravedigger",
+      "experience": 950,
+      "health": 1500
+    },
+    {
+      "name": "Green Djinn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Green%20Djinn",
+      "localName": "Green Djinn",
+      "experience": 215,
+      "health": 330
+    },
+    {
+      "name": "Green Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Green%20Frog",
+      "localName": "Green Frog",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Grim Reaper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Grim%20Reaper",
+      "localName": "Grim Reaper",
+      "experience": 5500,
+      "health": 3900
+    },
+    {
+      "name": "Grimeleech",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Grimeleech",
+      "localName": "Grimeleech",
+      "experience": 7216,
+      "health": 9500
+    },
+    {
+      "name": "Grynch Clan Goblin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Grynch%20Clan%20Goblin",
+      "localName": "Grynch Clan Goblin",
+      "experience": 4,
+      "health": 80
+    },
+    {
+      "name": "Gryphon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Gryphon",
+      "localName": "Gryphon",
+      "experience": 1000,
+      "health": 3200
+    },
+    {
+      "name": "Guardian of Tales",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Guardian%20of%20Tales",
+      "localName": "Guardian of Tales",
+      "experience": 9204,
+      "health": 15000
+    },
+    {
+      "name": "Guzzlemaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Guzzlemaw",
+      "localName": "Guzzlemaw",
+      "experience": 6050,
+      "health": 6400
+    },
+    {
+      "name": "Hand of Cursed Fate",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hand%20of%20Cursed%20Fate",
+      "localName": "Hand of Cursed Fate",
+      "experience": 5000,
+      "health": 6600
+    },
+    {
+      "name": "Harpy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Harpy",
+      "localName": "Harpy",
+      "experience": 5720,
+      "health": 7700
+    },
+    {
+      "name": "Haunted Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Haunted%20Dragon",
+      "localName": "Haunted Dragon",
+      "experience": 6500,
+      "health": 6500
+    },
+    {
+      "name": "Haunted Hunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Haunted%20Hunter",
+      "localName": "Haunted Hunter",
+      "experience": 19500,
+      "health": 23000
+    },
+    {
+      "name": "Haunted Treeling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Haunted%20Treeling",
+      "localName": "Haunted Treeling",
+      "experience": 310,
+      "health": 450
+    },
+    {
+      "name": "Hawk Hopper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hawk%20Hopper",
+      "localName": "Hawk Hopper",
+      "experience": 1770,
+      "health": 2180
+    },
+    {
+      "name": "Headpecker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Headpecker",
+      "localName": "Headpecker",
+      "experience": 12026,
+      "health": 16300
+    },
+    {
+      "name": "Headwalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Headwalker",
+      "localName": "Headwalker",
+      "experience": 2050,
+      "health": 2460
+    },
+    {
+      "name": "Hellfire Fighter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hellfire%20Fighter",
+      "localName": "Hellfire Fighter",
+      "experience": 3800,
+      "health": 3800
+    },
+    {
+      "name": "Hellflayer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hellflayer",
+      "localName": "Hellflayer",
+      "experience": 11720,
+      "health": 14000
+    },
+    {
+      "name": "Hellhound",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hellhound",
+      "localName": "Hellhound",
+      "experience": 5440,
+      "health": 7500
+    },
+    {
+      "name": "Hellhunter Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hellhunter%20Inferniarch",
+      "localName": "Hellhunter Inferniarch",
+      "experience": 9400,
+      "health": 11300
+    },
+    {
+      "name": "Hellspawn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hellspawn",
+      "localName": "Hellspawn",
+      "experience": 2550,
+      "health": 3500
+    },
+    {
+      "name": "Herald of Gloom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Herald%20of%20Gloom",
+      "localName": "Herald of Gloom",
+      "experience": 450,
+      "health": 340
+    },
+    {
+      "name": "Hero",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hero",
+      "localName": "Hero",
+      "experience": 1200,
+      "health": 1400
+    },
+    {
+      "name": "Hibernal Moth",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hibernal%20Moth",
+      "localName": "Hibernal Moth",
+      "experience": 700,
+      "health": 850
+    },
+    {
+      "name": "Hideous Fungus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hideous%20Fungus",
+      "localName": "Hideous Fungus",
+      "experience": 3700,
+      "health": 4600
+    },
+    {
+      "name": "High Voltage Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/High%20Voltage%20Elemental",
+      "localName": "High Voltage Elemental",
+      "experience": 1500,
+      "health": 1500
+    },
+    {
+      "name": "Hive Overseer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hive%20Overseer",
+      "localName": "Hive Overseer",
+      "experience": 5500,
+      "health": 7500
+    },
+    {
+      "name": "Honey Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Honey%20Elemental",
+      "localName": "Honey Elemental",
+      "experience": 2400,
+      "health": 2560
+    },
+    {
+      "name": "Honour Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Honour%20Guard",
+      "localName": "Honour Guard",
+      "experience": 55,
+      "health": 85
+    },
+    {
+      "name": "Hot Dog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hot%20Dog",
+      "localName": "Hot Dog",
+      "experience": 190,
+      "health": 505
+    },
+    {
+      "name": "Hulking Carnisylvan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hulking%20Carnisylvan",
+      "localName": "Hulking Carnisylvan",
+      "experience": 4700,
+      "health": 8600
+    },
+    {
+      "name": "Hulking Prehemoth",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hulking%20Prehemoth",
+      "localName": "Hulking Prehemoth",
+      "experience": 12690,
+      "health": 20700
+    },
+    {
+      "name": "Humongous Fungus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Humongous%20Fungus",
+      "localName": "Humongous Fungus",
+      "experience": 2900,
+      "health": 3400
+    },
+    {
+      "name": "Hunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hunter",
+      "localName": "Hunter",
+      "experience": 150,
+      "health": 150
+    },
+    {
+      "name": "Husky",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Husky",
+      "localName": "Husky",
+      "experience": 0,
+      "health": 140
+    },
+    {
+      "name": "Hyaena",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hyaena",
+      "localName": "Hyaena",
+      "experience": 20,
+      "health": 60
+    },
+    {
+      "name": "Hydra",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Hydra",
+      "localName": "Hydra",
+      "experience": 2100,
+      "health": 2350
+    },
+    {
+      "name": "Ice Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ice%20Dragon",
+      "localName": "Ice Dragon",
+      "experience": 2300,
+      "health": 2500
+    },
+    {
+      "name": "Ice Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ice%20Golem",
+      "localName": "Ice Golem",
+      "experience": 295,
+      "health": 385
+    },
+    {
+      "name": "Ice Witch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ice%20Witch",
+      "localName": "Ice Witch",
+      "experience": 580,
+      "health": 650
+    },
+    {
+      "name": "Icecold Book",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Icecold%20Book",
+      "localName": "Icecold Book",
+      "experience": 12750,
+      "health": 21000
+    },
+    {
+      "name": "Iks Ahpututu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Ahpututu",
+      "localName": "Iks Ahpututu",
+      "experience": 1700,
+      "health": 1630
+    },
+    {
+      "name": "Iks Aucar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Aucar",
+      "localName": "Iks Aucar",
+      "experience": 1150,
+      "health": 1520
+    },
+    {
+      "name": "Iks Chuka",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Chuka",
+      "localName": "Iks Chuka",
+      "experience": 1050,
+      "health": 1240
+    },
+    {
+      "name": "Iks Churrascan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Churrascan",
+      "localName": "Iks Churrascan",
+      "experience": 0,
+      "health": 1520
+    },
+    {
+      "name": "Iks Pututu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Pututu",
+      "localName": "Iks Pututu",
+      "experience": 980,
+      "health": 1310
+    },
+    {
+      "name": "Iks Yapunac",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iks%20Yapunac",
+      "localName": "Iks Yapunac",
+      "experience": 2340,
+      "health": 3125
+    },
+    {
+      "name": "Imperial",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Imperial",
+      "localName": "Imperial",
+      "experience": 0,
+      "health": 100
+    },
+    {
+      "name": "Infected Weeper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Infected%20Weeper",
+      "localName": "Infected Weeper",
+      "experience": 1200,
+      "health": 3000
+    },
+    {
+      "name": "Infernal Demon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Infernal%20Demon",
+      "localName": "Infernal Demon",
+      "experience": 17430,
+      "health": 32000
+    },
+    {
+      "name": "Infernal Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Infernal%20Frog",
+      "localName": "Infernal Frog",
+      "experience": 190,
+      "health": 655
+    },
+    {
+      "name": "Infernal Phantom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Infernal%20Phantom",
+      "localName": "Infernal Phantom",
+      "experience": 15770,
+      "health": 26000
+    },
+    {
+      "name": "Infernalist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Infernalist",
+      "localName": "Infernalist",
+      "experience": 4000,
+      "health": 3650
+    },
+    {
+      "name": "Ink Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ink%20Blob",
+      "localName": "Ink Blob",
+      "experience": 14450,
+      "health": 9500
+    },
+    {
+      "name": "Ink Splash",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ink%20Splash",
+      "localName": "Ink Splash",
+      "experience": 1450,
+      "health": 1950
+    },
+    {
+      "name": "Insane Siren",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Insane%20Siren",
+      "localName": "Insane Siren",
+      "experience": 6000,
+      "health": 6500
+    },
+    {
+      "name": "Insect Swarm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Insect%20Swarm",
+      "localName": "Insect Swarm",
+      "experience": 40,
+      "health": 50
+    },
+    {
+      "name": "Insectoid Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Insectoid%20Scout",
+      "localName": "Insectoid Scout",
+      "experience": 150,
+      "health": 230
+    },
+    {
+      "name": "Insectoid Worker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Insectoid%20Worker",
+      "localName": "Insectoid Worker",
+      "experience": 650,
+      "health": 950
+    },
+    {
+      "name": "Instable Breach Brood",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Instable%20Breach%20Brood",
+      "localName": "Instable Breach Brood",
+      "experience": 1100,
+      "health": 2200
+    },
+    {
+      "name": "Instable Sparkion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Instable%20Sparkion",
+      "localName": "Instable Sparkion",
+      "experience": 1350,
+      "health": 1900
+    },
+    {
+      "name": "Iron Servant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iron%20Servant",
+      "localName": "Iron Servant",
+      "experience": 210,
+      "health": 350
+    },
+    {
+      "name": "Iron Servant Replica",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Iron%20Servant%20Replica",
+      "localName": "Iron Servant Replica",
+      "experience": 210,
+      "health": 1000
+    },
+    {
+      "name": "Ironblight",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ironblight",
+      "localName": "Ironblight",
+      "experience": 5400,
+      "health": 6600
+    },
+    {
+      "name": "Island Troll",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Island%20Troll",
+      "localName": "Island Troll",
+      "experience": 20,
+      "health": 50
+    },
+    {
+      "name": "Jellyfish",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Jellyfish",
+      "localName": "Jellyfish",
+      "experience": 0,
+      "health": 55
+    },
+    {
+      "name": "Juggernaut",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Juggernaut",
+      "localName": "Juggernaut",
+      "experience": 11200,
+      "health": 18000
+    },
+    {
+      "name": "Jungle Moa",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Jungle%20Moa",
+      "localName": "Jungle Moa",
+      "experience": 1200,
+      "health": 1300
+    },
+    {
+      "name": "Juvenile Bashmu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Juvenile%20Bashmu",
+      "localName": "Juvenile Bashmu",
+      "experience": 4500,
+      "health": 7500
+    },
+    {
+      "name": "Killer Caiman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Killer%20Caiman",
+      "localName": "Killer Caiman",
+      "experience": 900,
+      "health": 1500
+    },
+    {
+      "name": "Killer Rabbit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Killer%20Rabbit",
+      "localName": "Killer Rabbit",
+      "experience": 160,
+      "health": 205
+    },
+    {
+      "name": "Knowledge Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Knowledge%20Elemental",
+      "localName": "Knowledge Elemental",
+      "experience": 10603,
+      "health": 10500
+    },
+    {
+      "name": "Kollos",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Kollos",
+      "localName": "Kollos",
+      "experience": 2400,
+      "health": 3800
+    },
+    {
+      "name": "Kongra",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Kongra",
+      "localName": "Kongra",
+      "experience": 115,
+      "health": 340
+    },
+    {
+      "name": "Lacewing Moth",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lacewing%20Moth",
+      "localName": "Lacewing Moth",
+      "experience": 800,
+      "health": 900
+    },
+    {
+      "name": "Ladybug",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ladybug",
+      "localName": "Ladybug",
+      "experience": 70,
+      "health": 255
+    },
+    {
+      "name": "Lamassu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lamassu",
+      "localName": "Lamassu",
+      "experience": 9000,
+      "health": 8700
+    },
+    {
+      "name": "Lancer Beetle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lancer%20Beetle",
+      "localName": "Lancer Beetle",
+      "experience": 275,
+      "health": 400
+    },
+    {
+      "name": "Larva",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Larva",
+      "localName": "Larva",
+      "experience": 44,
+      "health": 70
+    },
+    {
+      "name": "Lava Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lava%20Golem",
+      "localName": "Lava Golem",
+      "experience": 7900,
+      "health": 9000
+    },
+    {
+      "name": "Lava Lurker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lava%20Lurker",
+      "localName": "Lava Lurker",
+      "experience": 4000,
+      "health": 5900
+    },
+    {
+      "name": "Lavafungus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lavafungus",
+      "localName": "Lavafungus",
+      "experience": 6200,
+      "health": 7200
+    },
+    {
+      "name": "Lavaworm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lavaworm",
+      "localName": "Lavaworm",
+      "experience": 6500,
+      "health": 7500
+    },
+    {
+      "name": "Leaf Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Leaf%20Golem",
+      "localName": "Leaf Golem",
+      "experience": 45,
+      "health": 90
+    },
+    {
+      "name": "Lich",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lich",
+      "localName": "Lich",
+      "experience": 900,
+      "health": 880
+    },
+    {
+      "name": "Liodile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Liodile",
+      "localName": "Liodile",
+      "experience": 6860,
+      "health": 8600
+    },
+    {
+      "name": "Lion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lion",
+      "localName": "Lion",
+      "experience": 30,
+      "health": 80
+    },
+    {
+      "name": "Lion Hydra",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lion%20Hydra",
+      "localName": "Lion Hydra",
+      "experience": 2450,
+      "health": 2760
+    },
+    {
+      "name": "Little Corym Charlatan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Little%20Corym%20Charlatan",
+      "localName": "Little Corym Charlatan",
+      "experience": 40,
+      "health": 90
+    },
+    {
+      "name": "Lizard Chosen",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Chosen",
+      "localName": "Lizard Chosen",
+      "experience": 2200,
+      "health": 3050
+    },
+    {
+      "name": "Lizard Dragon Priest",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Dragon%20Priest",
+      "localName": "Lizard Dragon Priest",
+      "experience": 1320,
+      "health": 1450
+    },
+    {
+      "name": "Lizard High Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20High%20Guard",
+      "localName": "Lizard High Guard",
+      "experience": 1450,
+      "health": 1800
+    },
+    {
+      "name": "Lizard Legionnaire",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Legionnaire",
+      "localName": "Lizard Legionnaire",
+      "experience": 1100,
+      "health": 1400
+    },
+    {
+      "name": "Lizard Magistratus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Magistratus",
+      "localName": "Lizard Magistratus",
+      "experience": 2000,
+      "health": 6250
+    },
+    {
+      "name": "Lizard Noble",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Noble",
+      "localName": "Lizard Noble",
+      "experience": 2000,
+      "health": 7000
+    },
+    {
+      "name": "Lizard Sentinel",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Sentinel",
+      "localName": "Lizard Sentinel",
+      "experience": 110,
+      "health": 265
+    },
+    {
+      "name": "Lizard Snakecharmer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Snakecharmer",
+      "localName": "Lizard Snakecharmer",
+      "experience": 210,
+      "health": 325
+    },
+    {
+      "name": "Lizard Templar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Templar",
+      "localName": "Lizard Templar",
+      "experience": 155,
+      "health": 410
+    },
+    {
+      "name": "Lizard Zaogun",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lizard%20Zaogun",
+      "localName": "Lizard Zaogun",
+      "experience": 1700,
+      "health": 2955
+    },
+    {
+      "name": "Lost Basher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Basher",
+      "localName": "Lost Basher",
+      "experience": 2300,
+      "health": 2600
+    },
+    {
+      "name": "Lost Berserker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Berserker",
+      "localName": "Lost Berserker",
+      "experience": 4800,
+      "health": 5900
+    },
+    {
+      "name": "Lost Exile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Exile",
+      "localName": "Lost Exile",
+      "experience": 1800,
+      "health": 1600
+    },
+    {
+      "name": "Lost Husher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Husher",
+      "localName": "Lost Husher",
+      "experience": 1100,
+      "health": 1600
+    },
+    {
+      "name": "Lost Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Soul",
+      "localName": "Lost Soul",
+      "experience": 4000,
+      "health": 5800
+    },
+    {
+      "name": "Lost Thrower",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lost%20Thrower",
+      "localName": "Lost Thrower",
+      "experience": 1500,
+      "health": 1700
+    },
+    {
+      "name": "Lumbering Carnivor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Lumbering%20Carnivor",
+      "localName": "Lumbering Carnivor",
+      "experience": 1452,
+      "health": 2600
+    },
+    {
+      "name": "Mad Scientist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mad%20Scientist",
+      "localName": "Mad Scientist",
+      "experience": 205,
+      "health": 325
+    },
+    {
+      "name": "Magma Crawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Magma%20Crawler",
+      "localName": "Magma Crawler",
+      "experience": 3900,
+      "health": 4800
+    },
+    {
+      "name": "Makara",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Makara",
+      "localName": "Makara",
+      "experience": 5720,
+      "health": 5050
+    },
+    {
+      "name": "Mammoth",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mammoth",
+      "localName": "Mammoth",
+      "experience": 160,
+      "health": 320
+    },
+    {
+      "name": "Manta Ray",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Manta%20Ray",
+      "localName": "Manta Ray",
+      "experience": 125,
+      "health": 680
+    },
+    {
+      "name": "Manticore",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Manticore",
+      "localName": "Manticore",
+      "experience": 5100,
+      "health": 6700
+    },
+    {
+      "name": "Mantosaurus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mantosaurus",
+      "localName": "Mantosaurus",
+      "experience": 11569,
+      "health": 19400
+    },
+    {
+      "name": "Many Faces",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Many%20Faces",
+      "localName": "Many Faces",
+      "experience": 18870,
+      "health": 30000
+    },
+    {
+      "name": "Marid",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Marid",
+      "localName": "Marid",
+      "experience": 410,
+      "health": 550
+    },
+    {
+      "name": "Marsh Stalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Marsh%20Stalker",
+      "localName": "Marsh Stalker",
+      "experience": 50,
+      "health": 100
+    },
+    {
+      "name": "Massive Earth Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Massive%20Earth%20Elemental",
+      "localName": "Massive Earth Elemental",
+      "experience": 1100,
+      "health": 1330
+    },
+    {
+      "name": "Massive Energy Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Massive%20Energy%20Elemental",
+      "localName": "Massive Energy Elemental",
+      "experience": 950,
+      "health": 1100
+    },
+    {
+      "name": "Massive Fire Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Massive%20Fire%20Elemental",
+      "localName": "Massive Fire Elemental",
+      "experience": 1400,
+      "health": 1800
+    },
+    {
+      "name": "Massive Water Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Massive%20Water%20Elemental",
+      "localName": "Massive Water Elemental",
+      "experience": 1100,
+      "health": 1250
+    },
+    {
+      "name": "Mean Lost Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mean%20Lost%20Soul",
+      "localName": "Mean Lost Soul",
+      "experience": 5580,
+      "health": 5000
+    },
+    {
+      "name": "Meandering Mushroom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Meandering%20Mushroom",
+      "localName": "Meandering Mushroom",
+      "experience": 21980,
+      "health": 29100
+    },
+    {
+      "name": "Medusa",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Medusa",
+      "localName": "Medusa",
+      "experience": 4050,
+      "health": 4500
+    },
+    {
+      "name": "Mega Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mega%20Dragon",
+      "localName": "Mega Dragon",
+      "experience": 7810,
+      "health": 7920
+    },
+    {
+      "name": "Menacing Carnivor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Menacing%20Carnivor",
+      "localName": "Menacing Carnivor",
+      "experience": 2112,
+      "health": 3500
+    },
+    {
+      "name": "Mercurial Menace",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mercurial%20Menace",
+      "localName": "Mercurial Menace",
+      "experience": 12095,
+      "health": 18500
+    },
+    {
+      "name": "Mercury Blob",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mercury%20Blob",
+      "localName": "Mercury Blob",
+      "experience": 180,
+      "health": 150
+    },
+    {
+      "name": "Merlkin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Merlkin",
+      "localName": "Merlkin",
+      "experience": 145,
+      "health": 235
+    },
+    {
+      "name": "Metal Gargoyle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Metal%20Gargoyle",
+      "localName": "Metal Gargoyle",
+      "experience": 1278,
+      "health": 2100
+    },
+    {
+      "name": "Midnight Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Midnight%20Asura",
+      "localName": "Midnight Asura",
+      "experience": 4100,
+      "health": 3100
+    },
+    {
+      "name": "Midnight Panther",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Midnight%20Panther",
+      "localName": "Midnight Panther",
+      "experience": 900,
+      "health": 1200
+    },
+    {
+      "name": "Midnight Spawn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Midnight%20Spawn",
+      "localName": "Midnight Spawn",
+      "experience": 900,
+      "health": 2000
+    },
+    {
+      "name": "Midnight Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Midnight%20Warrior",
+      "localName": "Midnight Warrior",
+      "experience": 750,
+      "health": 1000
+    },
+    {
+      "name": "Minotaur",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur",
+      "localName": "Minotaur",
+      "experience": 50,
+      "health": 100
+    },
+    {
+      "name": "Minotaur Amazon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Amazon",
+      "localName": "Minotaur Amazon",
+      "experience": 2200,
+      "health": 2600
+    },
+    {
+      "name": "Minotaur Archer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Archer",
+      "localName": "Minotaur Archer",
+      "experience": 65,
+      "health": 100
+    },
+    {
+      "name": "Minotaur Cult Follower",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Follower",
+      "localName": "Minotaur Cult Follower",
+      "experience": 950,
+      "health": 1600
+    },
+    {
+      "name": "Minotaur Cult Prophet",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Prophet",
+      "localName": "Minotaur Cult Prophet",
+      "experience": 1100,
+      "health": 1700
+    },
+    {
+      "name": "Minotaur Cult Zealot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Cult%20Zealot",
+      "localName": "Minotaur Cult Zealot",
+      "experience": 1350,
+      "health": 1800
+    },
+    {
+      "name": "Minotaur Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Guard",
+      "localName": "Minotaur Guard",
+      "experience": 160,
+      "health": 185
+    },
+    {
+      "name": "Minotaur Hunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Hunter",
+      "localName": "Minotaur Hunter",
+      "experience": 1700,
+      "health": 1400
+    },
+    {
+      "name": "Minotaur Invader",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Invader",
+      "localName": "Minotaur Invader",
+      "experience": 1600,
+      "health": 1850
+    },
+    {
+      "name": "Minotaur Mage",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Minotaur%20Mage",
+      "localName": "Minotaur Mage",
+      "experience": 150,
+      "health": 155
+    },
+    {
+      "name": "Misguided Bully",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Misguided%20Bully",
+      "localName": "Misguided Bully",
+      "experience": 1800,
+      "health": 2000
+    },
+    {
+      "name": "Misguided Thief",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Misguided%20Thief",
+      "localName": "Misguided Thief",
+      "experience": 1600,
+      "health": 1800
+    },
+    {
+      "name": "Mitmah Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mitmah%20Scout",
+      "localName": "Mitmah Scout",
+      "experience": 3230,
+      "health": 3940
+    },
+    {
+      "name": "Mitmah Seer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mitmah%20Seer",
+      "localName": "Mitmah Seer",
+      "experience": 4900,
+      "health": 4620
+    },
+    {
+      "name": "Modified Gnarlhound",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Modified%20Gnarlhound",
+      "localName": "Modified Gnarlhound",
+      "experience": 0,
+      "health": 1500
+    },
+    {
+      "name": "Mole",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mole",
+      "localName": "Mole",
+      "experience": 100,
+      "health": 200
+    },
+    {
+      "name": "Moohtant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Moohtant",
+      "localName": "Moohtant",
+      "experience": 2600,
+      "health": 3200
+    },
+    {
+      "name": "Mould Phantom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mould%20Phantom",
+      "localName": "Mould Phantom",
+      "experience": 18330,
+      "health": 28000
+    },
+    {
+      "name": "Muglex Clan Assassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Muglex%20Clan%20Assassin",
+      "localName": "Muglex Clan Assassin",
+      "experience": 48,
+      "health": 75
+    },
+    {
+      "name": "Muglex Clan Footman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Muglex%20Clan%20Footman",
+      "localName": "Muglex Clan Footman",
+      "experience": 25,
+      "health": 50
+    },
+    {
+      "name": "Mummy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mummy",
+      "localName": "Mummy",
+      "experience": 150,
+      "health": 240
+    },
+    {
+      "name": "Mushroom Sniffer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mushroom%20Sniffer",
+      "localName": "Mushroom Sniffer",
+      "experience": 0,
+      "health": 250
+    },
+    {
+      "name": "Mutated Bat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mutated%20Bat",
+      "localName": "Mutated Bat",
+      "experience": 750,
+      "health": 900
+    },
+    {
+      "name": "Mutated Human",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mutated%20Human",
+      "localName": "Mutated Human",
+      "experience": 150,
+      "health": 240
+    },
+    {
+      "name": "Mutated Rat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mutated%20Rat",
+      "localName": "Mutated Rat",
+      "experience": 450,
+      "health": 550
+    },
+    {
+      "name": "Mutated Tiger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mutated%20Tiger",
+      "localName": "Mutated Tiger",
+      "experience": 750,
+      "health": 1100
+    },
+    {
+      "name": "Mycobiontic Beetle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Mycobiontic%20Beetle",
+      "localName": "Mycobiontic Beetle",
+      "experience": 21175,
+      "health": 30200
+    },
+    {
+      "name": "Naga Archer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Naga%20Archer",
+      "localName": "Naga Archer",
+      "experience": 5150,
+      "health": 4640
+    },
+    {
+      "name": "Naga Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Naga%20Warrior",
+      "localName": "Naga Warrior",
+      "experience": 5890,
+      "health": 5530
+    },
+    {
+      "name": "Necromancer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Necromancer",
+      "localName": "Necromancer",
+      "experience": 580,
+      "health": 580
+    },
+    {
+      "name": "Nibblemaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nibblemaw",
+      "localName": "Nibblemaw",
+      "experience": 2700,
+      "health": 2900
+    },
+    {
+      "name": "Night Harpy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Night%20Harpy",
+      "localName": "Night Harpy",
+      "experience": 21000,
+      "health": 14000
+    },
+    {
+      "name": "Nightfiend",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nightfiend",
+      "localName": "Nightfiend",
+      "experience": 2100,
+      "health": 2700
+    },
+    {
+      "name": "Nighthunter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nighthunter",
+      "localName": "Nighthunter",
+      "experience": 12647,
+      "health": 19200
+    },
+    {
+      "name": "Nightmare",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nightmare",
+      "localName": "Nightmare",
+      "experience": 1800,
+      "health": 2700
+    },
+    {
+      "name": "Nightmare Scion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nightmare%20Scion",
+      "localName": "Nightmare Scion",
+      "experience": 1350,
+      "health": 1400
+    },
+    {
+      "name": "Nightstalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nightstalker",
+      "localName": "Nightstalker",
+      "experience": 500,
+      "health": 700
+    },
+    {
+      "name": "Noble Lion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Noble%20Lion",
+      "localName": "Noble Lion",
+      "experience": 400,
+      "health": 1000
+    },
+    {
+      "name": "Nomad (Blue)",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nomad%20(Blue)",
+      "localName": "Nomad Blue",
+      "experience": 60,
+      "health": 160
+    },
+    {
+      "name": "Nomad (Female)",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nomad%20(Female)",
+      "localName": "Nomad Female",
+      "experience": 60,
+      "health": 160
+    },
+    {
+      "name": "Norcferatu Heartless",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Norcferatu%20Heartless",
+      "localName": "Norcferatu Heartless",
+      "experience": 4450,
+      "health": 5700
+    },
+    {
+      "name": "Norcferatu Nightweaver",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Norcferatu%20Nightweaver",
+      "localName": "Norcferatu Nightweaver",
+      "experience": 4900,
+      "health": 6100
+    },
+    {
+      "name": "Novice of the Cult",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Novice%20of%20the%20Cult",
+      "localName": "Novice of the Cult",
+      "experience": 100,
+      "health": 285
+    },
+    {
+      "name": "Noxious Ripptor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Noxious%20Ripptor",
+      "localName": "Noxious Ripptor",
+      "experience": 13190,
+      "health": 22700
+    },
+    {
+      "name": "Nymph",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Nymph",
+      "localName": "Nymph",
+      "experience": 850,
+      "health": 900
+    },
+    {
+      "name": "Ogre Brute",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Brute",
+      "localName": "Ogre Brute",
+      "experience": 800,
+      "health": 1000
+    },
+    {
+      "name": "Ogre Rowdy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Rowdy",
+      "localName": "Ogre Rowdy",
+      "experience": 4200,
+      "health": 4500
+    },
+    {
+      "name": "Ogre Ruffian",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Ruffian",
+      "localName": "Ogre Ruffian",
+      "experience": 5000,
+      "health": 5500
+    },
+    {
+      "name": "Ogre Sage",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Sage",
+      "localName": "Ogre Sage",
+      "experience": 5500,
+      "health": 4800
+    },
+    {
+      "name": "Ogre Savage",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Savage",
+      "localName": "Ogre Savage",
+      "experience": 950,
+      "health": 1400
+    },
+    {
+      "name": "Ogre Shaman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ogre%20Shaman",
+      "localName": "Ogre Shaman",
+      "experience": 625,
+      "health": 800
+    },
+    {
+      "name": "Omnivora",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Omnivora",
+      "localName": "Omnivora",
+      "experience": 750,
+      "health": 1200
+    },
+    {
+      "name": "Oozing Carcass",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Oozing%20Carcass",
+      "localName": "Oozing Carcass",
+      "experience": 20980,
+      "health": 27500
+    },
+    {
+      "name": "Oozing Corpus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Oozing%20Corpus",
+      "localName": "Oozing Corpus",
+      "experience": 20600,
+      "health": 28700
+    },
+    {
+      "name": "Orc",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc",
+      "localName": "Orc",
+      "experience": 25,
+      "health": 70
+    },
+    {
+      "name": "Orc Berserker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Berserker",
+      "localName": "Orc Berserker",
+      "experience": 195,
+      "health": 210
+    },
+    {
+      "name": "Orc Cult Fanatic",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Cult%20Fanatic",
+      "localName": "Orc Cult Fanatic",
+      "experience": 1100,
+      "health": 1300
+    },
+    {
+      "name": "Orc Cult Inquisitor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Cult%20Inquisitor",
+      "localName": "Orc Cult Inquisitor",
+      "experience": 1150,
+      "health": 1500
+    },
+    {
+      "name": "Orc Cult Minion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Cult%20Minion",
+      "localName": "Orc Cult Minion",
+      "experience": 850,
+      "health": 1000
+    },
+    {
+      "name": "Orc Cult Priest",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Cult%20Priest",
+      "localName": "Orc Cult Priest",
+      "experience": 1000,
+      "health": 1300
+    },
+    {
+      "name": "Orc Cultist",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Cultist",
+      "localName": "Orc Cultist",
+      "experience": 950,
+      "health": 1350
+    },
+    {
+      "name": "Orc Leader",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Leader",
+      "localName": "Orc Leader",
+      "experience": 270,
+      "health": 450
+    },
+    {
+      "name": "Orc Marauder",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Marauder",
+      "localName": "Orc Marauder",
+      "experience": 205,
+      "health": 235
+    },
+    {
+      "name": "Orc Rider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Rider",
+      "localName": "Orc Rider",
+      "experience": 110,
+      "health": 180
+    },
+    {
+      "name": "Orc Shaman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Shaman",
+      "localName": "Orc Shaman",
+      "experience": 110,
+      "health": 115
+    },
+    {
+      "name": "Orc Spearman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Spearman",
+      "localName": "Orc Spearman",
+      "experience": 38,
+      "health": 105
+    },
+    {
+      "name": "Orc Warlord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Warlord",
+      "localName": "Orc Warlord",
+      "experience": 670,
+      "health": 950
+    },
+    {
+      "name": "Orc Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orc%20Warrior",
+      "localName": "Orc Warrior",
+      "experience": 50,
+      "health": 125
+    },
+    {
+      "name": "Orchid Frog",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orchid%20Frog",
+      "localName": "Orchid Frog",
+      "experience": 20,
+      "health": 60
+    },
+    {
+      "name": "Orclops Bloodbreaker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orclops%20Bloodbreaker",
+      "localName": "Orclops Bloodbreaker",
+      "experience": 7800,
+      "health": 10300
+    },
+    {
+      "name": "Orclops Doomhauler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orclops%20Doomhauler",
+      "localName": "Orclops Doomhauler",
+      "experience": 1200,
+      "health": 1700
+    },
+    {
+      "name": "Orclops Ravager",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orclops%20Ravager",
+      "localName": "Orclops Ravager",
+      "experience": 1100,
+      "health": 1200
+    },
+    {
+      "name": "Orewalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Orewalker",
+      "localName": "Orewalker",
+      "experience": 5900,
+      "health": 7200
+    },
+    {
+      "name": "Overseer Osverger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Overseer%20Osverger",
+      "localName": "Overseer Osverger",
+      "experience": 75000,
+      "health": 75000
+    },
+    {
+      "name": "Panda",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Panda",
+      "localName": "Panda",
+      "experience": 23,
+      "health": 80
+    },
+    {
+      "name": "Parder",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Parder",
+      "localName": "Parder",
+      "experience": 1100,
+      "health": 1200
+    },
+    {
+      "name": "Parrot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Parrot",
+      "localName": "Parrot",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Penguin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Penguin",
+      "localName": "Penguin",
+      "experience": 1,
+      "health": 33
+    },
+    {
+      "name": "Percht",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Percht",
+      "localName": "Percht",
+      "experience": 600,
+      "health": 620
+    },
+    {
+      "name": "Phantasm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Phantasm",
+      "localName": "Phantasm",
+      "experience": 4400,
+      "health": 3950
+    },
+    {
+      "name": "Pig",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pig",
+      "localName": "Pig",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Pigeon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pigeon",
+      "localName": "Pigeon",
+      "experience": 0,
+      "health": 30
+    },
+    {
+      "name": "Pirat Bombardier",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirat%20Bombardier",
+      "localName": "Pirat Bombardier",
+      "experience": 1700,
+      "health": 2300
+    },
+    {
+      "name": "Pirat Cutthroat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirat%20Cutthroat",
+      "localName": "Pirat Cutthroat",
+      "experience": 1800,
+      "health": 2600
+    },
+    {
+      "name": "Pirat Mate",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirat%20Mate",
+      "localName": "Pirat Mate",
+      "experience": 2400,
+      "health": 3200
+    },
+    {
+      "name": "Pirat Scoundrel",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirat%20Scoundrel",
+      "localName": "Pirat Scoundrel",
+      "experience": 1600,
+      "health": 2200
+    },
+    {
+      "name": "Pirate Buccaneer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Buccaneer",
+      "localName": "Pirate Buccaneer",
+      "experience": 250,
+      "health": 425
+    },
+    {
+      "name": "Pirate Corsair",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Corsair",
+      "localName": "Pirate Corsair",
+      "experience": 350,
+      "health": 675
+    },
+    {
+      "name": "Pirate Cutthroat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Cutthroat",
+      "localName": "Pirate Cutthroat",
+      "experience": 175,
+      "health": 325
+    },
+    {
+      "name": "Pirate Ghost",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Ghost",
+      "localName": "Pirate Ghost",
+      "experience": 250,
+      "health": 275
+    },
+    {
+      "name": "Pirate Marauder",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Marauder",
+      "localName": "Pirate Marauder",
+      "experience": 125,
+      "health": 210
+    },
+    {
+      "name": "Pirate Skeleton",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pirate%20Skeleton",
+      "localName": "Pirate Skeleton",
+      "experience": 85,
+      "health": 190
+    },
+    {
+      "name": "Pixie",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pixie",
+      "localName": "Pixie",
+      "experience": 700,
+      "health": 770
+    },
+    {
+      "name": "Plaguesmith",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Plaguesmith",
+      "localName": "Plaguesmith",
+      "experience": 3800,
+      "health": 8250
+    },
+    {
+      "name": "Poacher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Poacher",
+      "localName": "Poacher",
+      "experience": 70,
+      "health": 90
+    },
+    {
+      "name": "Poison Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Poison%20Spider",
+      "localName": "Poison Spider",
+      "experience": 22,
+      "health": 26
+    },
+    {
+      "name": "Poisonous Carnisylvan",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Poisonous%20Carnisylvan",
+      "localName": "Poisonous Carnisylvan",
+      "experience": 4400,
+      "health": 8000
+    },
+    {
+      "name": "Polar Bear",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Polar%20Bear",
+      "localName": "Polar Bear",
+      "experience": 28,
+      "health": 85
+    },
+    {
+      "name": "Pooka",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Pooka",
+      "localName": "Pooka",
+      "experience": 500,
+      "health": 500
+    },
+    {
+      "name": "Priestess",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Priestess",
+      "localName": "Priestess",
+      "experience": 420,
+      "health": 390
+    },
+    {
+      "name": "Priestess of the Wild Sun",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Priestess%20of%20the%20Wild%20Sun",
+      "localName": "Priestess of the Wild Sun",
+      "experience": 6400,
+      "health": 8500
+    },
+    {
+      "name": "Putrid Mummy",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Putrid%20Mummy",
+      "localName": "Putrid Mummy",
+      "experience": 900,
+      "health": 1500
+    },
+    {
+      "name": "Quara Constrictor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Constrictor",
+      "localName": "Quara Constrictor",
+      "experience": 380,
+      "health": 450
+    },
+    {
+      "name": "Quara Constrictor Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Constrictor%20Scout",
+      "localName": "Quara Constrictor Scout",
+      "experience": 200,
+      "health": 450
+    },
+    {
+      "name": "Quara Hydromancer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Hydromancer",
+      "localName": "Quara Hydromancer",
+      "experience": 950,
+      "health": 1100
+    },
+    {
+      "name": "Quara Hydromancer Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Hydromancer%20Scout",
+      "localName": "Quara Hydromancer Scout",
+      "experience": 800,
+      "health": 1100
+    },
+    {
+      "name": "Quara Looter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Looter",
+      "localName": "Quara Looter",
+      "experience": 8650,
+      "health": 11500
+    },
+    {
+      "name": "Quara Mantassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Mantassin",
+      "localName": "Quara Mantassin",
+      "experience": 600,
+      "health": 800
+    },
+    {
+      "name": "Quara Mantassin Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Mantassin%20Scout",
+      "localName": "Quara Mantassin Scout",
+      "experience": 100,
+      "health": 220
+    },
+    {
+      "name": "Quara Pincher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Pincher",
+      "localName": "Quara Pincher",
+      "experience": 1500,
+      "health": 1800
+    },
+    {
+      "name": "Quara Pincher Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Pincher%20Scout",
+      "localName": "Quara Pincher Scout",
+      "experience": 600,
+      "health": 775
+    },
+    {
+      "name": "Quara Plunderer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Plunderer",
+      "localName": "Quara Plunderer",
+      "experience": 10800,
+      "health": 13500
+    },
+    {
+      "name": "Quara Predator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Predator",
+      "localName": "Quara Predator",
+      "experience": 1850,
+      "health": 2200
+    },
+    {
+      "name": "Quara Predator Scout",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Predator%20Scout",
+      "localName": "Quara Predator Scout",
+      "experience": 400,
+      "health": 890
+    },
+    {
+      "name": "Quara Raider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Quara%20Raider",
+      "localName": "Quara Raider",
+      "experience": 8150,
+      "health": 12500
+    },
+    {
+      "name": "Rabbit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rabbit",
+      "localName": "Rabbit",
+      "experience": 0,
+      "health": 15
+    },
+    {
+      "name": "Rage Squid",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rage%20Squid",
+      "localName": "Rage Squid",
+      "experience": 14820,
+      "health": 17000
+    },
+    {
+      "name": "Raging Fire",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Raging%20Fire",
+      "localName": "Raging Fire",
+      "experience": 1500,
+      "health": 1800
+    },
+    {
+      "name": "Rat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rat",
+      "localName": "Rat",
+      "experience": 5,
+      "health": 20
+    },
+    {
+      "name": "Raubritter Chastener",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Raubritter%20Chastener",
+      "localName": "Raubritter Chastener",
+      "experience": 9500,
+      "health": 10000
+    },
+    {
+      "name": "Raubritter Marksman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Raubritter%20Marksman",
+      "localName": "Raubritter Marksman",
+      "experience": 9025,
+      "health": 10500
+    },
+    {
+      "name": "Raubritter Skirmisher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Raubritter%20Skirmisher",
+      "localName": "Raubritter Skirmisher",
+      "experience": 8550,
+      "health": 11000
+    },
+    {
+      "name": "Ravenous Lava Lurker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ravenous%20Lava%20Lurker",
+      "localName": "Ravenous Lava Lurker",
+      "experience": 4000,
+      "health": 5000
+    },
+    {
+      "name": "Reality Reaver",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Reality%20Reaver",
+      "localName": "Reality Reaver",
+      "experience": 2480,
+      "health": 3900
+    },
+    {
+      "name": "Redeemed Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Redeemed%20Soul",
+      "localName": "Redeemed Soul",
+      "experience": 0,
+      "health": 250
+    },
+    {
+      "name": "Renegade Knight",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Knight",
+      "localName": "Renegade Knight",
+      "experience": 1200,
+      "health": 1450
+    },
+    {
+      "name": "Renegade Quara Constrictor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Constrictor",
+      "localName": "Renegade Quara Constrictor",
+      "experience": 1250,
+      "health": 1500
+    },
+    {
+      "name": "Renegade Quara Hydromancer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Hydromancer",
+      "localName": "Renegade Quara Hydromancer",
+      "experience": 1800,
+      "health": 2000
+    },
+    {
+      "name": "Renegade Quara Mantassin",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Mantassin",
+      "localName": "Renegade Quara Mantassin",
+      "experience": 1000,
+      "health": 1200
+    },
+    {
+      "name": "Renegade Quara Pincher",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Pincher",
+      "localName": "Renegade Quara Pincher",
+      "experience": 2200,
+      "health": 2800
+    },
+    {
+      "name": "Renegade Quara Predator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Renegade%20Quara%20Predator",
+      "localName": "Renegade Quara Predator",
+      "experience": 2700,
+      "health": 3250
+    },
+    {
+      "name": "Retching Horror",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Retching%20Horror",
+      "localName": "Retching Horror",
+      "experience": 4100,
+      "health": 5300
+    },
+    {
+      "name": "Rhindeer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rhindeer",
+      "localName": "Rhindeer",
+      "experience": 5600,
+      "health": 8650
+    },
+    {
+      "name": "Ripper Spectre",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Ripper%20Spectre",
+      "localName": "Ripper Spectre",
+      "experience": 3500,
+      "health": 3800
+    },
+    {
+      "name": "Roaming Dread",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Roaming%20Dread",
+      "localName": "Roaming Dread",
+      "experience": 12040,
+      "health": 14500
+    },
+    {
+      "name": "Roaring Lion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Roaring%20Lion",
+      "localName": "Roaring Lion",
+      "experience": 800,
+      "health": 1000
+    },
+    {
+      "name": "Rootthing Amber Shaper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rootthing%20Amber%20Shaper",
+      "localName": "Rootthing Amber Shaper",
+      "experience": 12400,
+      "health": 15000
+    },
+    {
+      "name": "Rootthing Bug Tracker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rootthing%20Bug%20Tracker",
+      "localName": "Rootthing Bug Tracker",
+      "experience": 9650,
+      "health": 12500
+    },
+    {
+      "name": "Rootthing Nutshell",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rootthing%20Nutshell",
+      "localName": "Rootthing Nutshell",
+      "experience": 9200,
+      "health": 13500
+    },
+    {
+      "name": "Rorc",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rorc",
+      "localName": "Rorc",
+      "experience": 105,
+      "health": 260
+    },
+    {
+      "name": "Rot Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rot%20Elemental",
+      "localName": "Rot Elemental",
+      "experience": 750,
+      "health": 850
+    },
+    {
+      "name": "Rotten Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rotten%20Golem",
+      "localName": "Rotten Golem",
+      "experience": 17860,
+      "health": 28000
+    },
+    {
+      "name": "Rotten Man-Maggot",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rotten%20Man-Maggot",
+      "localName": "Rotten Man-Maggot",
+      "experience": 22625,
+      "health": 31100
+    },
+    {
+      "name": "Rotworm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rotworm",
+      "localName": "Rotworm",
+      "experience": 40,
+      "health": 65
+    },
+    {
+      "name": "Rustheap Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Rustheap%20Golem",
+      "localName": "Rustheap Golem",
+      "experience": 2100,
+      "health": 2800
+    },
+    {
+      "name": "Sacred Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sacred%20Spider",
+      "localName": "Sacred Spider",
+      "experience": 330,
+      "health": 550
+    },
+    {
+      "name": "Salamander",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Salamander",
+      "localName": "Salamander",
+      "experience": 25,
+      "health": 70
+    },
+    {
+      "name": "Sandcrawler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sandcrawler",
+      "localName": "Sandcrawler",
+      "experience": 20,
+      "health": 30
+    },
+    {
+      "name": "Sandstone Scorpion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sandstone%20Scorpion",
+      "localName": "Sandstone Scorpion",
+      "experience": 680,
+      "health": 900
+    },
+    {
+      "name": "Scarab",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Scarab",
+      "localName": "Scarab",
+      "experience": 120,
+      "health": 320
+    },
+    {
+      "name": "Schiach",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Schiach",
+      "localName": "Schiach",
+      "experience": 580,
+      "health": 600
+    },
+    {
+      "name": "Scorpion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Scorpion",
+      "localName": "Scorpion",
+      "experience": 45,
+      "health": 45
+    },
+    {
+      "name": "Sea Serpent",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sea%20Serpent",
+      "localName": "Sea Serpent",
+      "experience": 2300,
+      "health": 1950
+    },
+    {
+      "name": "Seacrest Serpent",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Seacrest%20Serpent",
+      "localName": "Seacrest Serpent",
+      "experience": 2900,
+      "health": 3000
+    },
+    {
+      "name": "Seagull",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Seagull",
+      "localName": "Seagull",
+      "experience": 0,
+      "health": 25
+    },
+    {
+      "name": "Serpent Spawn",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Serpent%20Spawn",
+      "localName": "Serpent Spawn",
+      "experience": 3050,
+      "health": 3000
+    },
+    {
+      "name": "Shaburak Demon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shaburak%20Demon",
+      "localName": "Shaburak Demon",
+      "experience": 900,
+      "health": 1500
+    },
+    {
+      "name": "Shaburak Lord",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shaburak%20Lord",
+      "localName": "Shaburak Lord",
+      "experience": 1200,
+      "health": 2100
+    },
+    {
+      "name": "Shaburak Prince",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shaburak%20Prince",
+      "localName": "Shaburak Prince",
+      "experience": 1700,
+      "health": 2600
+    },
+    {
+      "name": "Shadow Hound",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shadow%20Hound",
+      "localName": "Shadow Hound",
+      "experience": 600,
+      "health": 555
+    },
+    {
+      "name": "Shadow Pupil",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shadow%20Pupil",
+      "localName": "Shadow Pupil",
+      "experience": 410,
+      "health": 450
+    },
+    {
+      "name": "Shaper Matriarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shaper%20Matriarch",
+      "localName": "Shaper Matriarch",
+      "experience": 1650,
+      "health": 2000
+    },
+    {
+      "name": "Shark",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shark",
+      "localName": "Shark",
+      "experience": 700,
+      "health": 1200
+    },
+    {
+      "name": "Sheep",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sheep",
+      "localName": "Sheep",
+      "experience": 0,
+      "health": 20
+    },
+    {
+      "name": "Shell Drake",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shell%20Drake",
+      "localName": "Shell Drake",
+      "experience": 2370,
+      "health": 2800
+    },
+    {
+      "name": "Shock Head",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shock%20Head",
+      "localName": "Shock Head",
+      "experience": 2300,
+      "health": 4200
+    },
+    {
+      "name": "Shrieking Cry-Stal",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Shrieking%20Cry-Stal",
+      "localName": "Shrieking Cry-Stal",
+      "experience": 13560,
+      "health": 20650
+    },
+    {
+      "name": "Sibang",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sibang",
+      "localName": "Sibang",
+      "experience": 105,
+      "health": 225
+    },
+    {
+      "name": "Sight of Surrender",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sight%20of%20Surrender",
+      "localName": "Sight of Surrender",
+      "experience": 17000,
+      "health": 28000
+    },
+    {
+      "name": "Silencer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Silencer",
+      "localName": "Silencer",
+      "experience": 5100,
+      "health": 5400
+    },
+    {
+      "name": "Silver Rabbit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Silver%20Rabbit",
+      "localName": "Silver Rabbit",
+      "experience": 0,
+      "health": 15
+    },
+    {
+      "name": "Sineater Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sineater%20Inferniarch",
+      "localName": "Sineater Inferniarch",
+      "experience": 7250,
+      "health": 9150
+    },
+    {
+      "name": "Skeleton",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Skeleton",
+      "localName": "Skeleton",
+      "experience": 35,
+      "health": 50
+    },
+    {
+      "name": "Skeleton Elite Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Skeleton%20Elite%20Warrior",
+      "localName": "Skeleton Elite Warrior",
+      "experience": 4800,
+      "health": 7800
+    },
+    {
+      "name": "Skeleton Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Skeleton%20Warrior",
+      "localName": "Skeleton Warrior",
+      "experience": 45,
+      "health": 65
+    },
+    {
+      "name": "Skunk",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Skunk",
+      "localName": "Skunk",
+      "experience": 3,
+      "health": 20
+    },
+    {
+      "name": "Slime",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Slime",
+      "localName": "Slime",
+      "experience": 160,
+      "health": 150
+    },
+    {
+      "name": "Slug",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Slug",
+      "localName": "Slug",
+      "experience": 70,
+      "health": 255
+    },
+    {
+      "name": "Smuggler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Smuggler",
+      "localName": "Smuggler",
+      "experience": 48,
+      "health": 130
+    },
+    {
+      "name": "Snake",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Snake",
+      "localName": "Snake",
+      "experience": 10,
+      "health": 15
+    },
+    {
+      "name": "Son of Verminor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Son%20of%20Verminor",
+      "localName": "Son of Verminor",
+      "experience": 5900,
+      "health": 8500
+    },
+    {
+      "name": "Sopping Carcass",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sopping%20Carcass",
+      "localName": "Sopping Carcass",
+      "experience": 23425,
+      "health": 32700
+    },
+    {
+      "name": "Sopping Corpus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sopping%20Corpus",
+      "localName": "Sopping Corpus",
+      "experience": 22465,
+      "health": 33400
+    },
+    {
+      "name": "Soul-Broken Harbinger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Soul-Broken%20Harbinger",
+      "localName": "Soul-Broken Harbinger",
+      "experience": 5800,
+      "health": 6300
+    },
+    {
+      "name": "Souleater",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Souleater",
+      "localName": "Souleater",
+      "experience": 1300,
+      "health": 1100
+    },
+    {
+      "name": "Sparkion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sparkion",
+      "localName": "Sparkion",
+      "experience": 1520,
+      "health": 2700
+    },
+    {
+      "name": "Spectre",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spectre",
+      "localName": "Spectre",
+      "experience": 2100,
+      "health": 1350
+    },
+    {
+      "name": "Spellreaper Inferniarch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spellreaper%20Inferniarch",
+      "localName": "Spellreaper Inferniarch",
+      "experience": 9750,
+      "health": 11800
+    },
+    {
+      "name": "Sphinx",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sphinx",
+      "localName": "Sphinx",
+      "experience": 7500,
+      "health": 8500
+    },
+    {
+      "name": "Spider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spider",
+      "localName": "Spider",
+      "experience": 12,
+      "health": 20
+    },
+    {
+      "name": "Spidris",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spidris",
+      "localName": "Spidris",
+      "experience": 2600,
+      "health": 3700
+    },
+    {
+      "name": "Spidris Elite",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spidris%20Elite",
+      "localName": "Spidris Elite",
+      "experience": 4000,
+      "health": 5000
+    },
+    {
+      "name": "Spiky Carnivor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spiky%20Carnivor",
+      "localName": "Spiky Carnivor",
+      "experience": 1650,
+      "health": 2800
+    },
+    {
+      "name": "Spit Nettle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spit%20Nettle",
+      "localName": "Spit Nettle",
+      "experience": 20,
+      "health": 150
+    },
+    {
+      "name": "Spitter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Spitter",
+      "localName": "Spitter",
+      "experience": 1100,
+      "health": 1500
+    },
+    {
+      "name": "Squid Warden",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Squid%20Warden",
+      "localName": "Squid Warden",
+      "experience": 15300,
+      "health": 16500
+    },
+    {
+      "name": "Squidgy Slime",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Squidgy%20Slime",
+      "localName": "Squidgy Slime",
+      "experience": 55,
+      "health": 150
+    },
+    {
+      "name": "Squirrel",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Squirrel",
+      "localName": "Squirrel",
+      "experience": 0,
+      "health": 20
+    },
+    {
+      "name": "Stabilizing Dread Intruder",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stabilizing%20Dread%20Intruder",
+      "localName": "Stabilizing Dread Intruder",
+      "experience": 1900,
+      "health": 2800
+    },
+    {
+      "name": "Stabilizing Reality Reaver",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stabilizing%20Reality%20Reaver",
+      "localName": "Stabilizing Reality Reaver",
+      "experience": 1950,
+      "health": 2500
+    },
+    {
+      "name": "Stag",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stag",
+      "localName": "Stag",
+      "experience": 0,
+      "health": 50
+    },
+    {
+      "name": "Stalker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stalker",
+      "localName": "Stalker",
+      "experience": 90,
+      "health": 120
+    },
+    {
+      "name": "Stalking Stalk",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stalking%20Stalk",
+      "localName": "Stalking Stalk",
+      "experience": 11569,
+      "health": 17100
+    },
+    {
+      "name": "Stampor",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stampor",
+      "localName": "Stampor",
+      "experience": 780,
+      "health": 1200
+    },
+    {
+      "name": "Starving Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Starving%20Wolf",
+      "localName": "Starving Wolf",
+      "experience": 65,
+      "health": 85
+    },
+    {
+      "name": "Stone Devourer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stone%20Devourer",
+      "localName": "Stone Devourer",
+      "experience": 2900,
+      "health": 4200
+    },
+    {
+      "name": "Stone Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stone%20Golem",
+      "localName": "Stone Golem",
+      "experience": 160,
+      "health": 270
+    },
+    {
+      "name": "Stone Rhino",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stone%20Rhino",
+      "localName": "Stone Rhino",
+      "experience": 1800,
+      "health": 3000
+    },
+    {
+      "name": "Stonerefiner",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Stonerefiner",
+      "localName": "Stonerefiner",
+      "experience": 500,
+      "health": 800
+    },
+    {
+      "name": "Streaked Devourer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Streaked%20Devourer",
+      "localName": "Streaked Devourer",
+      "experience": 6300,
+      "health": 7000
+    },
+    {
+      "name": "Sugar Cube",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sugar%20Cube",
+      "localName": "Sugar Cube",
+      "experience": 19,
+      "health": 28
+    },
+    {
+      "name": "Sugar Cube Worker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sugar%20Cube%20Worker",
+      "localName": "Sugar Cube Worker",
+      "experience": 20,
+      "health": 65
+    },
+    {
+      "name": "Sulphider",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sulphider",
+      "localName": "Sulphider",
+      "experience": 13328,
+      "health": 21000
+    },
+    {
+      "name": "Sulphur Spouter",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Sulphur%20Spouter",
+      "localName": "Sulphur Spouter",
+      "experience": 11517,
+      "health": 19000
+    },
+    {
+      "name": "Swamp Troll",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Swamp%20Troll",
+      "localName": "Swamp Troll",
+      "experience": 25,
+      "health": 55
+    },
+    {
+      "name": "Swampling",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Swampling",
+      "localName": "Swampling",
+      "experience": 45,
+      "health": 80
+    },
+    {
+      "name": "Swan Maiden",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Swan%20Maiden",
+      "localName": "Swan Maiden",
+      "experience": 700,
+      "health": 800
+    },
+    {
+      "name": "Swarmer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Swarmer",
+      "localName": "Swarmer",
+      "experience": 350,
+      "health": 460
+    },
+    {
+      "name": "Tainted Soul",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tainted%20Soul",
+      "localName": "Tainted Soul",
+      "experience": 0,
+      "health": 250
+    },
+    {
+      "name": "Tarantula",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tarantula",
+      "localName": "Tarantula",
+      "experience": 120,
+      "health": 225
+    },
+    {
+      "name": "Tarnished Spirit",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tarnished%20Spirit",
+      "localName": "Tarnished Spirit",
+      "experience": 120,
+      "health": 150
+    },
+    {
+      "name": "Terramite",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Terramite",
+      "localName": "Terramite",
+      "experience": 160,
+      "health": 365
+    },
+    {
+      "name": "Terrified Elephant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Terrified%20Elephant",
+      "localName": "Terrified Elephant",
+      "experience": 160,
+      "health": 320
+    },
+    {
+      "name": "Terror Bird",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Terror%20Bird",
+      "localName": "Terror Bird",
+      "experience": 150,
+      "health": 300
+    },
+    {
+      "name": "Terrorsleep",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Terrorsleep",
+      "localName": "Terrorsleep",
+      "experience": 6900,
+      "health": 7200
+    },
+    {
+      "name": "Thanatursus",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Thanatursus",
+      "localName": "Thanatursus",
+      "experience": 6300,
+      "health": 7200
+    },
+    {
+      "name": "Thornback Tortoise",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Thornback%20Tortoise",
+      "localName": "Thornback Tortoise",
+      "experience": 150,
+      "health": 300
+    },
+    {
+      "name": "Thornfire Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Thornfire%20Wolf",
+      "localName": "Thornfire Wolf",
+      "experience": 200,
+      "health": 600
+    },
+    {
+      "name": "Tiger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tiger",
+      "localName": "Tiger",
+      "experience": 40,
+      "health": 75
+    },
+    {
+      "name": "Toad",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Toad",
+      "localName": "Toad",
+      "experience": 60,
+      "health": 135
+    },
+    {
+      "name": "Tomb Servant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tomb%20Servant",
+      "localName": "Tomb Servant",
+      "experience": 215,
+      "health": 475
+    },
+    {
+      "name": "Tortoise",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tortoise",
+      "localName": "Tortoise",
+      "experience": 90,
+      "health": 185
+    },
+    {
+      "name": "Tremendous Tyrant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tremendous%20Tyrant",
+      "localName": "Tremendous Tyrant",
+      "experience": 6100,
+      "health": 11500
+    },
+    {
+      "name": "Troll",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Troll",
+      "localName": "Troll",
+      "experience": 20,
+      "health": 50
+    },
+    {
+      "name": "Troll Champion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Troll%20Champion",
+      "localName": "Troll Champion",
+      "experience": 40,
+      "health": 75
+    },
+    {
+      "name": "Troll Guard",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Troll%20Guard",
+      "localName": "Troll Guard",
+      "experience": 25,
+      "health": 60
+    },
+    {
+      "name": "Troll Legionnaire",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Troll%20Legionnaire",
+      "localName": "Troll Legionnaire",
+      "experience": 140,
+      "health": 210
+    },
+    {
+      "name": "True Dawnfire Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/True%20Dawnfire%20Asura",
+      "localName": "True Dawnfire Asura",
+      "experience": 7475,
+      "health": 8500
+    },
+    {
+      "name": "True Frost Flower Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/True%20Frost%20Flower%20Asura",
+      "localName": "True Frost Flower Asura",
+      "experience": 7069,
+      "health": 4000
+    },
+    {
+      "name": "True Midnight Asura",
+      "sourceUrl": "https://tibiavault.com/#bestiary/True%20Midnight%20Asura",
+      "localName": "True Midnight Asura",
+      "experience": 7313,
+      "health": 9000
+    },
+    {
+      "name": "Truffle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Truffle",
+      "localName": "Truffle",
+      "experience": 15,
+      "health": 70
+    },
+    {
+      "name": "Truffle Cook",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Truffle%20Cook",
+      "localName": "Truffle Cook",
+      "experience": 13,
+      "health": 54
+    },
+    {
+      "name": "Tunnel Tyrant",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Tunnel%20Tyrant",
+      "localName": "Tunnel Tyrant",
+      "experience": 4420,
+      "health": 5200
+    },
+    {
+      "name": "Turbulent Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Turbulent%20Elemental",
+      "localName": "Turbulent Elemental",
+      "experience": 19360,
+      "health": 28000
+    },
+    {
+      "name": "Twisted Pooka",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Twisted%20Pooka",
+      "localName": "Twisted Pooka",
+      "experience": 600,
+      "health": 700
+    },
+    {
+      "name": "Twisted Shaper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Twisted%20Shaper",
+      "localName": "Twisted Shaper",
+      "experience": 1750,
+      "health": 2500
+    },
+    {
+      "name": "Two-Headed Turtle",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Two-Headed%20Turtle",
+      "localName": "Two-Headed Turtle",
+      "experience": 2930,
+      "health": 5010
+    },
+    {
+      "name": "Undead Cavebear",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Cavebear",
+      "localName": "Undead Cavebear",
+      "experience": 600,
+      "health": 450
+    },
+    {
+      "name": "Undead Dragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Dragon",
+      "localName": "Undead Dragon",
+      "experience": 7500,
+      "health": 8350
+    },
+    {
+      "name": "Undead Elite Gladiator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Elite%20Gladiator",
+      "localName": "Undead Elite Gladiator",
+      "experience": 5090,
+      "health": 8000
+    },
+    {
+      "name": "Undead Gladiator",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Gladiator",
+      "localName": "Undead Gladiator",
+      "experience": 800,
+      "health": 1000
+    },
+    {
+      "name": "Undead Mine Worker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Mine%20Worker",
+      "localName": "Undead Mine Worker",
+      "experience": 45,
+      "health": 65
+    },
+    {
+      "name": "Undead Prospector",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undead%20Prospector",
+      "localName": "Undead Prospector",
+      "experience": 85,
+      "health": 100
+    },
+    {
+      "name": "Undertaker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Undertaker",
+      "localName": "Undertaker",
+      "experience": 13543,
+      "health": 20100
+    },
+    {
+      "name": "Usurper Archer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Usurper%20Archer",
+      "localName": "Usurper Archer",
+      "experience": 6800,
+      "health": 7300
+    },
+    {
+      "name": "Usurper Knight",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Usurper%20Knight",
+      "localName": "Usurper Knight",
+      "experience": 6900,
+      "health": 8200
+    },
+    {
+      "name": "Usurper Warlock",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Usurper%20Warlock",
+      "localName": "Usurper Warlock",
+      "experience": 7000,
+      "health": 7500
+    },
+    {
+      "name": "Valkyrie",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Valkyrie",
+      "localName": "Valkyrie",
+      "experience": 85,
+      "health": 190
+    },
+    {
+      "name": "Vampire",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vampire",
+      "localName": "Vampire",
+      "experience": 305,
+      "health": 475
+    },
+    {
+      "name": "Vampire Bride",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vampire%20Bride",
+      "localName": "Vampire Bride",
+      "experience": 1050,
+      "health": 1200
+    },
+    {
+      "name": "Vampire Pig",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vampire%20Pig",
+      "localName": "Vampire Pig",
+      "experience": 165,
+      "health": 305
+    },
+    {
+      "name": "Vampire Viscount",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vampire%20Viscount",
+      "localName": "Vampire Viscount",
+      "experience": 800,
+      "health": 1200
+    },
+    {
+      "name": "Varg",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Varg",
+      "localName": "Varg",
+      "experience": 4100,
+      "health": 5400
+    },
+    {
+      "name": "Varnished Diremaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Varnished%20Diremaw",
+      "localName": "Varnished Diremaw",
+      "experience": 5900,
+      "health": 9000
+    },
+    {
+      "name": "Venerable Girtablilu",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Venerable%20Girtablilu",
+      "localName": "Venerable Girtablilu",
+      "experience": 5300,
+      "health": 8500
+    },
+    {
+      "name": "Vexclaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vexclaw",
+      "localName": "Vexclaw",
+      "experience": 6248,
+      "health": 8500
+    },
+    {
+      "name": "Vibrant Phantom",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vibrant%20Phantom",
+      "localName": "Vibrant Phantom",
+      "experience": 19700,
+      "health": 27000
+    },
+    {
+      "name": "Vicious Manbat",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vicious%20Manbat",
+      "localName": "Vicious Manbat",
+      "experience": 1200,
+      "health": 1700
+    },
+    {
+      "name": "Vicious Squire",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vicious%20Squire",
+      "localName": "Vicious Squire",
+      "experience": 900,
+      "health": 1000
+    },
+    {
+      "name": "Vile Grandmaster",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vile%20Grandmaster",
+      "localName": "Vile Grandmaster",
+      "experience": 1500,
+      "health": 1700
+    },
+    {
+      "name": "Vulcongra",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Vulcongra",
+      "localName": "Vulcongra",
+      "experience": 1100,
+      "health": 1600
+    },
+    {
+      "name": "Wailing Widow",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wailing%20Widow",
+      "localName": "Wailing Widow",
+      "experience": 450,
+      "health": 850
+    },
+    {
+      "name": "Walker",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Walker",
+      "localName": "Walker",
+      "experience": 2200,
+      "health": 3000
+    },
+    {
+      "name": "Walking Dread",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Walking%20Dread",
+      "localName": "Walking Dread",
+      "experience": 18000,
+      "health": 25000
+    },
+    {
+      "name": "Walking Pillar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Walking%20Pillar",
+      "localName": "Walking Pillar",
+      "experience": 24300,
+      "health": 38000
+    },
+    {
+      "name": "Wandering Pillar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wandering%20Pillar",
+      "localName": "Wandering Pillar",
+      "experience": 23200,
+      "health": 37000
+    },
+    {
+      "name": "War Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/War%20Golem",
+      "localName": "War Golem",
+      "experience": 2310,
+      "health": 4300
+    },
+    {
+      "name": "War Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/War%20Wolf",
+      "localName": "War Wolf",
+      "experience": 55,
+      "health": 140
+    },
+    {
+      "name": "Wardragon",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wardragon",
+      "localName": "Wardragon",
+      "experience": 5810,
+      "health": 6960
+    },
+    {
+      "name": "Warlock",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Warlock",
+      "localName": "Warlock",
+      "experience": 4000,
+      "health": 3500
+    },
+    {
+      "name": "Wasp",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wasp",
+      "localName": "Wasp",
+      "experience": 24,
+      "health": 35
+    },
+    {
+      "name": "Waspoid",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Waspoid",
+      "localName": "Waspoid",
+      "experience": 830,
+      "health": 1100
+    },
+    {
+      "name": "Water Buffalo",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Water%20Buffalo",
+      "localName": "Water Buffalo",
+      "experience": 20,
+      "health": 390
+    },
+    {
+      "name": "Water Elemental",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Water%20Elemental",
+      "localName": "Water Elemental",
+      "experience": 650,
+      "health": 550
+    },
+    {
+      "name": "Weakened Frazzlemaw",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Weakened%20Frazzlemaw",
+      "localName": "Weakened Frazzlemaw",
+      "experience": 1000,
+      "health": 1200
+    },
+    {
+      "name": "Weeper",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Weeper",
+      "localName": "Weeper",
+      "experience": 5800,
+      "health": 6800
+    },
+    {
+      "name": "Werebadger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werebadger",
+      "localName": "Werebadger",
+      "experience": 1600,
+      "health": 1700
+    },
+    {
+      "name": "Werebear",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werebear",
+      "localName": "Werebear",
+      "experience": 2100,
+      "health": 2400
+    },
+    {
+      "name": "Wereboar",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wereboar",
+      "localName": "Wereboar",
+      "experience": 2000,
+      "health": 2200
+    },
+    {
+      "name": "Werecrocodile",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werecrocodile",
+      "localName": "Werecrocodile",
+      "experience": 4140,
+      "health": 5280
+    },
+    {
+      "name": "Werefox",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werefox",
+      "localName": "Werefox",
+      "experience": 1600,
+      "health": 1500
+    },
+    {
+      "name": "Werehyaena",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werehyaena",
+      "localName": "Werehyaena",
+      "experience": 2200,
+      "health": 2700
+    },
+    {
+      "name": "Werehyaena Shaman",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werehyaena%20Shaman",
+      "localName": "Werehyaena Shaman",
+      "experience": 2200,
+      "health": 2500
+    },
+    {
+      "name": "Werelion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werelion",
+      "localName": "Werelion",
+      "experience": 2200,
+      "health": 2800
+    },
+    {
+      "name": "Werelioness",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werelioness",
+      "localName": "Werelioness",
+      "experience": 2300,
+      "health": 3000
+    },
+    {
+      "name": "Werepanther",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werepanther",
+      "localName": "Werepanther",
+      "experience": 3550,
+      "health": 4200
+    },
+    {
+      "name": "Weretiger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Weretiger",
+      "localName": "Weretiger",
+      "experience": 3920,
+      "health": 5000
+    },
+    {
+      "name": "Werewolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Werewolf",
+      "localName": "Werewolf",
+      "experience": 1900,
+      "health": 1955
+    },
+    {
+      "name": "White Deer",
+      "sourceUrl": "https://tibiavault.com/#bestiary/White%20Deer",
+      "localName": "White Deer",
+      "experience": 0,
+      "health": 195
+    },
+    {
+      "name": "White Lion",
+      "sourceUrl": "https://tibiavault.com/#bestiary/White%20Lion",
+      "localName": "White Lion",
+      "experience": 2300,
+      "health": 2700
+    },
+    {
+      "name": "White Shade",
+      "sourceUrl": "https://tibiavault.com/#bestiary/White%20Shade",
+      "localName": "White Shade",
+      "experience": 120,
+      "health": 260
+    },
+    {
+      "name": "White Tiger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/White%20Tiger",
+      "localName": "White Tiger",
+      "experience": 40,
+      "health": 75
+    },
+    {
+      "name": "White Weretiger",
+      "sourceUrl": "https://tibiavault.com/#bestiary/White%20Weretiger",
+      "localName": "White Weretiger",
+      "experience": 5200,
+      "health": 6100
+    },
+    {
+      "name": "Wiggler",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wiggler",
+      "localName": "Wiggler",
+      "experience": 900,
+      "health": 1200
+    },
+    {
+      "name": "Wild Horse",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wild%20Horse",
+      "localName": "Wild Horse",
+      "experience": 0,
+      "health": 75
+    },
+    {
+      "name": "Wild Warrior",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wild%20Warrior",
+      "localName": "Wild Warrior",
+      "experience": 60,
+      "health": 135
+    },
+    {
+      "name": "Wilting Leaf Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wilting%20Leaf%20Golem",
+      "localName": "Wilting Leaf Golem",
+      "experience": 145,
+      "health": 380
+    },
+    {
+      "name": "Winter Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Winter%20Wolf",
+      "localName": "Winter Wolf",
+      "experience": 20,
+      "health": 30
+    },
+    {
+      "name": "Wisp",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wisp",
+      "localName": "Wisp",
+      "experience": 0,
+      "health": 115
+    },
+    {
+      "name": "Witch",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Witch",
+      "localName": "Witch",
+      "experience": 120,
+      "health": 300
+    },
+    {
+      "name": "Wolf",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wolf",
+      "localName": "Wolf",
+      "experience": 18,
+      "health": 25
+    },
+    {
+      "name": "Worker Golem",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Worker%20Golem",
+      "localName": "Worker Golem",
+      "experience": 1250,
+      "health": 1470
+    },
+    {
+      "name": "Worm Priestess",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Worm%20Priestess",
+      "localName": "Worm Priestess",
+      "experience": 1500,
+      "health": 1100
+    },
+    {
+      "name": "Wyrm",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wyrm",
+      "localName": "Wyrm",
+      "experience": 1550,
+      "health": 1825
+    },
+    {
+      "name": "Wyvern",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Wyvern",
+      "localName": "Wyvern",
+      "experience": 515,
+      "health": 795
+    },
+    {
+      "name": "Yeti",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Yeti",
+      "localName": "Yeti",
+      "experience": 460,
+      "health": 950
+    },
+    {
+      "name": "Yielothax",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Yielothax",
+      "localName": "Yielothax",
+      "experience": 1250,
+      "health": 1500
+    },
+    {
+      "name": "Young Goanna",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Young%20Goanna",
+      "localName": "Young Goanna",
+      "experience": 6100,
+      "health": 6200
+    },
+    {
+      "name": "Young Sea Serpent",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Young%20Sea%20Serpent",
+      "localName": "Young Sea Serpent",
+      "experience": 1000,
+      "health": 1050
+    },
+    {
+      "name": "Zombie",
+      "sourceUrl": "https://tibiavault.com/#bestiary/Zombie",
+      "localName": "Zombie",
+      "experience": 280,
+      "health": 500
+    }
+  ]
+}

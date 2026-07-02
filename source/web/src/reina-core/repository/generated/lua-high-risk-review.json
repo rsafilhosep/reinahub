@@ -1,0 +1,585 @@
+{
+  "generatedAt": "2026-07-01T08:48:30.249Z",
+  "repository": "files_repository",
+  "safety": "High risk review is generated from text scanning only. No Lua files are executed.",
+  "summary": {
+    "totalHighOccurrences": 81,
+    "totalHighFiles": 34,
+    "termsCount": {
+      "http": 5,
+      "socket": 8,
+      "webhook": 33,
+      "os.execute": 1,
+      "loadstring": 34
+    }
+  },
+  "occurrences": [
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-crystal\\scripts\\actions\\objects\\world_board.lua",
+      "term": "http",
+      "lineNumber": 2,
+      "linePreview": "\"Welcome to Crystal Server! Visit the organization to see all our work: https://crystalsever.vercel.app\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-crystal\\scripts\\actions\\objects\\world_board.lua",
+      "term": "http",
+      "lineNumber": 3,
+      "linePreview": "\"Did you like it? Help support what we do here with a donation by visiting the link: https://crystalsever.vercel.app/donate\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-crystal\\scripts\\actions\\objects\\world_board.lua",
+      "term": "http",
+      "lineNumber": 4,
+      "linePreview": "\"Visit our discord to ask questions or report issues: https://discord.gg/7AYJEHTghQ\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\a_sleeping_dragon.lua",
+      "term": "socket",
+      "lineNumber": 90,
+      "linePreview": "npcHandler:say(\"You carefully lift the onyx attachment from its socket. It is lighter than you expected.\", npc, creature)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\a_sleeping_dragon.lua",
+      "term": "socket",
+      "lineNumber": 99,
+      "linePreview": "npcHandler:say(\"As you rip the solid stand out of its socket and take it with you, the large gate opens with a deafening rumble. \", npc, creature)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\a_sleeping_dragon.lua",
+      "term": "socket",
+      "lineNumber": 126,
+      "linePreview": "npcHandler:say(\"Avoiding the bright light, you carefully put the attachment on top of the strange socket. ...\", npc, creature)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\the_silent_oarsman.lua",
+      "term": "socket",
+      "lineNumber": 67,
+      "linePreview": "npcHandler:setMessage(MESSAGE_GREET, \"<he glares at you from empty eye sockets. Yet perhaps he might offer you a passage.>\")",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\actions\\other\\gems.lua",
+      "term": "socket",
+      "lineNumber": 43,
+      "linePreview": "message = \"You place the ruby on the small socket. A red flame begins to burn.\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\actions\\other\\gems.lua",
+      "term": "socket",
+      "lineNumber": 53,
+      "linePreview": "message = \"You place the sapphire on the small socket. A blue flame begins to burn.\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\actions\\other\\gems.lua",
+      "term": "socket",
+      "lineNumber": 63,
+      "linePreview": "message = \"You place the amethyst on the small socket. A violet flame begins to burn.\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\actions\\other\\gems.lua",
+      "term": "socket",
+      "lineNumber": 73,
+      "linePreview": "message = \"You place the topaz on the small socket. A yellow flame begins to burn.\",",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\globalevents\\spawn\\rashid.lua",
+      "term": "webhook",
+      "lineNumber": 11,
+      "linePreview": "local function rashidwebhook(message) -- New local function that runs on delay to send webhook message.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\globalevents\\spawn\\rashid.lua",
+      "term": "webhook",
+      "lineNumber": 12,
+      "linePreview": "Webhook.sendMessage(\":man_wearing_turban: \" .. message, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\globalevents\\spawn\\rashid.lua",
+      "term": "webhook",
+      "lineNumber": 28,
+      "linePreview": "local message = string.format(\"Rashid arrived at %s today.\", config.city) -- Declaring the message to send to webhook.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\globalevents\\spawn\\rashid.lua",
+      "term": "webhook",
+      "lineNumber": 29,
+      "linePreview": "addEvent(rashidwebhook, 60000, message) -- Event with 1 minute delay to send webhook message after server starts.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\globalevents\\spawn\\rashid.lua",
+      "term": "webhook",
+      "lineNumber": 53,
+      "linePreview": "addEvent(rashidwebhook, 60000, message) -- Event with 1 minute delay to send webhook message after server starts.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\fury_gates.lua",
+      "term": "webhook",
+      "lineNumber": 1,
+      "linePreview": "local function furyWebhook(message)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\fury_gates.lua",
+      "term": "webhook",
+      "lineNumber": 2,
+      "linePreview": "Webhook.sendMessage(\":fire: \" .. message, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\fury_gates.lua",
+      "term": "webhook",
+      "lineNumber": 32,
+      "linePreview": "addEvent(furyWebhook, 60000, (string.format(\"Fury Gate will be active in %s today\", selectedGate.city)))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\nightmare_isles.lua",
+      "term": "webhook",
+      "lineNumber": 1,
+      "linePreview": "local function Nightmarewebhook(message) -- New local function that runs on delay to send webhook message.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\nightmare_isles.lua",
+      "term": "webhook",
+      "lineNumber": 2,
+      "linePreview": "Webhook.sendMessage(\":thought_balloon: \" .. message, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\nightmare_isles.lua",
+      "term": "webhook",
+      "lineNumber": 24,
+      "linePreview": "addEvent(Nightmarewebhook, 60000, string.format(\"Nightmare Isle will be active %s today\", randomMap.displayName))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\oriental_trader.lua",
+      "term": "webhook",
+      "lineNumber": 27,
+      "linePreview": "local function yasirwebhook(message)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\oriental_trader.lua",
+      "term": "webhook",
+      "lineNumber": 28,
+      "linePreview": "Webhook.sendMessage(\":man_wearing_turban_tone4: \" .. message, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\scripts\\world_changes\\oriental_trader.lua",
+      "term": "webhook",
+      "lineNumber": 73,
+      "linePreview": "addEvent(yasirwebhook, 60000, message)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\libs\\functions\\fs.lua",
+      "term": "os.execute",
+      "lineNumber": 16,
+      "linePreview": "local success, err = os.execute('mkdir \"' .. path .. '\"')",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\libs\\functions\\tables.lua",
+      "term": "loadstring",
+      "lineNumber": 102,
+      "linePreview": "return loadstring(\"return \" .. str)()",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\libs\\systems\\raids.lua",
+      "term": "webhook",
+      "lineNumber": 164,
+      "linePreview": "Webhook.sendMessage(\":space_invader: \" .. message, announcementChannels[\"raids\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\actions\\items\\reward_bags.lua",
+      "term": "webhook",
+      "lineNumber": 87,
+      "linePreview": "Webhook.sendMessage(\":game_die: \" .. player:getMarkdownLink() .. \" received a **\" .. rewardItem.name .. \"** from a _\" .. item:getName() .. \"_.\")",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\creaturescripts\\player\\death.lua",
+      "term": "webhook",
+      "lineNumber": 76,
+      "linePreview": "Webhook.sendMessage(\":skull_crossbones: \" .. player:getMarkdownLink() .. \" has died. Killed at level _\" .. player:getLevel() .. \"_ by **\" .. killerName .. \"**.\", announcementChanne",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\globalevents\\global_server_save.lua",
+      "term": "webhook",
+      "lineNumber": 22,
+      "linePreview": "Webhook.sendMessage(\"Server save\", message, WEBHOOK_COLOR_WARNING)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\globalevents\\global_server_save.lua",
+      "term": "webhook",
+      "lineNumber": 41,
+      "linePreview": "Webhook.sendMessage(\"Server save\", message, WEBHOOK_COLOR_WARNING)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\globalevents\\save_interval.lua",
+      "term": "webhook",
+      "lineNumber": 10,
+      "linePreview": "Webhook.sendMessage(\"Server save\", message, WEBHOOK_COLOR_WARNING)",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\lib\\task_board_delivery_items.lua",
+      "term": "http",
+      "lineNumber": 8,
+      "linePreview": "Source: https://tibiopedia.pl/items/others/delivery",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\devastating_knockout.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\devastating_knockout.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\devastating_knockout.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\double_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\double_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\double_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 34,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 35,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 36,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\forceful_uppercut.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\forceful_uppercut.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\forceful_uppercut.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 34,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 35,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_flurry_of_blows.lua",
+      "term": "loadstring",
+      "lineNumber": 36,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\greater_tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\mystic_repulse.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\mystic_repulse.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\mystic_repulse.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 55,
+      "linePreview": "onGetFormulaValuesPhysical1 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 56,
+      "linePreview": "onGetFormulaValuesEnergy1 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 57,
+      "linePreview": "onGetFormulaValuesEarth1 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 58,
+      "linePreview": "onGetFormulaValuesPhysical2 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 59,
+      "linePreview": "onGetFormulaValuesEnergy2 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\sweeping_takedown.lua",
+      "term": "loadstring",
+      "lineNumber": 60,
+      "linePreview": "onGetFormulaValuesEarth2 = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\swift_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\swift_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\swift_jab.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 23,
+      "linePreview": "onGetFormulaValuesEnergy = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 24,
+      "linePreview": "onGetFormulaValuesEarth = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\spells\\attack\\tiger_clash.lua",
+      "term": "loadstring",
+      "lineNumber": 25,
+      "linePreview": "onGetFormulaValuesPhysical = loadstring(string.dump(onGetFormulaValues))",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "webhook",
+      "lineNumber": 1,
+      "linePreview": "-- Sends Discord webhook notifications.",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "http",
+      "lineNumber": 2,
+      "linePreview": "-- The URL layout is https://discord.com/api/webhooks/:id/:token",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "webhook",
+      "lineNumber": 2,
+      "linePreview": "-- The URL layout is https://discord.com/api/webhooks/:id/:token",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "webhook",
+      "lineNumber": 21,
+      "linePreview": "Webhook.sendMessage(title, message, WEBHOOK_COLOR_YELLOW,",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "webhook",
+      "lineNumber": 24,
+      "linePreview": "Dev Comment: This lib can be used to add special webhook channels",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\discord_webhook.lua",
+      "term": "webhook",
+      "lineNumber": 25,
+      "linePreview": "where you are going to send your messages. Webhook.specialSend was designed",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\gm\\ban.lua",
+      "term": "webhook",
+      "lineNumber": 41,
+      "linePreview": "Webhook.sendMessage(\"Player Banned\", string.format(\"%s has been banned for %d days. Reason: %s (by: %s)\", target:getName(), banDuration, banReason, player:getName()), WEBHOOK_COLOR",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\gm\\kick.lua",
+      "term": "webhook",
+      "lineNumber": 18,
+      "linePreview": "Webhook.sendMessage(\"Player Kicked\", target:getName() .. \" has been kicked by \" .. player:getName(), WEBHOOK_COLOR_YELLOW, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\gm\\namelock.lua",
+      "term": "webhook",
+      "lineNumber": 37,
+      "linePreview": "Webhook.sendMessage(\"Player Namelocked\", text .. \" reason: \" .. reason .. \".\", WEBHOOK_COLOR_YELLOW, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\gm\\push_town.lua",
+      "term": "webhook",
+      "lineNumber": 21,
+      "linePreview": "Webhook.sendMessage(\"Player Teleported\", text, WEBHOOK_COLOR_YELLOW, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\gm\\unban.lua",
+      "term": "webhook",
+      "lineNumber": 22,
+      "linePreview": "Webhook.sendMessage(\"Player Unbanned\", text .. \" (by: \" .. player:getName() .. \")\", WEBHOOK_COLOR_YELLOW, announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\god\\close_server.lua",
+      "term": "webhook",
+      "lineNumber": 9,
+      "linePreview": "Webhook.sendMessage(\":red_circle: Server was shutdown by: **\" .. player:getName() .. \"**\", announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\god\\close_server.lua",
+      "term": "webhook",
+      "lineNumber": 26,
+      "linePreview": "Webhook.sendMessage(\":yellow_square: Server was closed by: **\" .. player:getName() .. \"**\", announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\god\\open_server.lua",
+      "term": "webhook",
+      "lineNumber": 9,
+      "linePreview": "Webhook.sendMessage(\":green_circle: Server was opened by: **\" .. player:getName() .. \"**\", announcementChannels[\"serverAnnouncements\"])",
+      "suggestedClassification": "review-required"
+    }
+  ]
+}

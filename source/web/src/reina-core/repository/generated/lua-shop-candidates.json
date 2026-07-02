@@ -1,0 +1,1596 @@
+{
+  "generatedAt": "2026-07-01T08:48:30.249Z",
+  "repository": "files_repository",
+  "safety": "Candidates only. Nothing is imported into ReinaHub automatically.",
+  "total": 71,
+  "candidates": [
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-crystal\\lib\\quests\\arena.lua",
+      "bytes": 12308,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1000",
+        "price = 5000",
+        "price = 10000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\lib\\quests\\svargrond_arena.lua",
+      "bytes": 12335,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1000",
+        "price = 5000",
+        "price = 10000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ambassador_manop.lua",
+      "bytes": 12901,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(50257",
+        "addItem(50195",
+        "addItem(50171"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 0",
+        "price = 80",
+        "price = 200",
+        "price = 150",
+        "price = 500",
+        "price = 0",
+        "price = 1000",
+        "price = 600",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\andrew_lyze.lua",
+      "bytes": 11913,
+      "signals": [
+        "sell} them for a low price"
+      ],
+      "sampleItemIds": [
+        "id = 29346",
+        "id = 29345",
+        "id = 29347",
+        "id = 25746",
+        "id = 29287",
+        "id = 29288",
+        "id = 29289",
+        "id = 29348",
+        "id = 29291"
+      ],
+      "samplePrices": [
+        "buy = 10000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\aruda.lua",
+      "bytes": 11228,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asrak.lua",
+      "bytes": 15767,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 0",
+        "price = 1000",
+        "price = 450",
+        "price = 150",
+        "price = 700",
+        "price = 3000",
+        "price = 1000",
+        "price = 80",
+        "price = 500",
+        "price = 350",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\azalea.lua",
+      "bytes": 43804,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(16277",
+        "addItem(16277"
+      ],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\barnabas_dee.lua",
+      "bytes": 38999,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\charles.lua",
+      "bytes": 7068,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 100",
+        "price = 90",
+        "price = 20",
+        "price = 200"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\charlotta.lua",
+      "bytes": 37863,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chatterbone.lua",
+      "bytes": 21170,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 500",
+        "price = 0",
+        "price = 500",
+        "price = 0",
+        "price = 1800",
+        "price = 1000",
+        "price = 1200",
+        "price = 1500",
+        "price = 500",
+        "price = 2000",
+        "price = 850",
+        "price = 1600",
+        "price = 300",
+        "price = 2500",
+        "price = 700"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dario.lua",
+      "bytes": 21048,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\duria.lua",
+      "bytes": 5682,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 500",
+        "price = 0",
+        "price = 80",
+        "price = 150",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elane.lua",
+      "bytes": 23342,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1000",
+        "price = 450",
+        "price = 700",
+        "price = 3000",
+        "price = 500",
+        "price = 350",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 150",
+        "price = 1000",
+        "price = 80",
+        "price = 0",
+        "sell = 2000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eliza.lua",
+      "bytes": 3765,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 4000",
+        "price = 4000",
+        "price = 4000",
+        "price = 4000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\enpa_rudra.lua",
+      "bytes": 19826,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 6000",
+        "price = 11000",
+        "price = 8000",
+        "price = 8000",
+        "price = 20000",
+        "price = 1500",
+        "price = 20000",
+        "price = 9000",
+        "price = 125000",
+        "price = 175000",
+        "price = 250000",
+        "price = 50000",
+        "price = 800",
+        "price = 4000",
+        "price = 1000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eremo.lua",
+      "bytes": 11976,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 5000",
+        "price = 250000",
+        "price = 2000",
+        "price = 2000",
+        "buy = 50000",
+        "buy = 700",
+        "sell = 45000",
+        "sell = 50000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eroth.lua",
+      "bytes": 15603,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(3082",
+        "addItem(3035",
+        "addItem(3463"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 1300",
+        "price = 800",
+        "price = 1000",
+        "price = 700",
+        "price = 2500",
+        "price = 700",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 1600",
+        "price = 300",
+        "price = 2000",
+        "price = 2000",
+        "price = 450"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ethan.lua",
+      "bytes": 19365,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\etzel.lua",
+      "bytes": 19884,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 1000",
+        "price = 700",
+        "price = 1800",
+        "price = 2500",
+        "price = 700",
+        "price = 2500",
+        "price = 1000",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 850",
+        "price = 1200",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\faluae.lua",
+      "bytes": 5521,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 500",
+        "price = 1000",
+        "price = 80",
+        "price = 300",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\garamond.lua",
+      "bytes": 15881,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 500",
+        "price = 0",
+        "price = 800",
+        "price = 800",
+        "price = 800",
+        "price = 800",
+        "price = 800",
+        "price = 800",
+        "price = 300",
+        "price = 500",
+        "price = 700",
+        "price = 850",
+        "price = 150",
+        "price = 200",
+        "price = 80"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\graham.lua",
+      "bytes": 16912,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gregor.lua",
+      "bytes": 17833,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 500",
+        "price = 0",
+        "price = 0",
+        "price = 150",
+        "price = 1000",
+        "price = 80",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\guard_saros.lua",
+      "bytes": 11434,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gundralph.lua",
+      "bytes": 46989,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 7500",
+        "price = 6000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hawkyr.lua",
+      "bytes": 19131,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\helor.lua",
+      "bytes": 19129,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\irea.lua",
+      "bytes": 6179,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1000",
+        "price = 450",
+        "price = 3000",
+        "price = 0",
+        "price = 0",
+        "buy = 3",
+        "buy = 400",
+        "buy = 4",
+        "buy = 400",
+        "buy = 500",
+        "buy = 400",
+        "buy = 400",
+        "buy = 10"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\isolde.lua",
+      "bytes": 19131,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\kjesse.lua",
+      "bytes": 43809,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(16277",
+        "addItem(16277"
+      ],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lea.lua",
+      "bytes": 20911,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 1000",
+        "price = 700",
+        "price = 1800",
+        "price = 2500",
+        "price = 700",
+        "price = 2500",
+        "price = 1000",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 850",
+        "price = 1200",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\legola.lua",
+      "bytes": 13002,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1000",
+        "price = 450",
+        "price = 700",
+        "price = 3000",
+        "price = 500",
+        "price = 350",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 0",
+        "price = 150",
+        "price = 1000",
+        "price = 80",
+        "sell = 30"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maealil.lua",
+      "bytes": 16260,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(16277",
+        "addItem(16277"
+      ],
+      "samplePrices": [
+        "price = 1500",
+        "price = 600",
+        "price = 600",
+        "price = 1000",
+        "price = 350",
+        "price = 150",
+        "price = 0",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\malunga.lua",
+      "bytes": 40180,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\marvik.lua",
+      "bytes": 21194,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 1200",
+        "price = 1300",
+        "price = 800",
+        "price = 1000",
+        "price = 600",
+        "price = 150",
+        "price = 700",
+        "price = 2500",
+        "price = 700",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\muriel.lua",
+      "bytes": 26454,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(6299",
+        "addItem(4852"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 1000",
+        "price = 700",
+        "price = 1800",
+        "price = 2500",
+        "price = 700",
+        "price = 2500",
+        "price = 1000",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 850",
+        "price = 1200",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\myra.lua",
+      "bytes": 49645,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\one_eyed_joe.lua",
+      "bytes": 8799,
+      "signals": [
+        "sell the crystals at a high price"
+      ],
+      "sampleItemIds": [
+        "addItem(16119",
+        "addItem(16120",
+        "addItem(16121"
+      ],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ormuhn.lua",
+      "bytes": 16831,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\padreia.lua",
+      "bytes": 26138,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(4828",
+        "addItem(135"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 1200",
+        "price = 1300",
+        "price = 800",
+        "price = 1000",
+        "price = 600",
+        "price = 150",
+        "price = 700",
+        "price = 2500",
+        "price = 700",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\puffels.lua",
+      "bytes": 19246,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 20000",
+        "price = 0",
+        "price = 1000",
+        "price = 1300",
+        "price = 250000",
+        "price = 2500",
+        "price = 150",
+        "price = 500000",
+        "price = 7500",
+        "price = 2500",
+        "price = 1000",
+        "price = 80",
+        "price = 0",
+        "price = 4000",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rahkem.lua",
+      "bytes": 45520,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(16277",
+        "addItem(16277"
+      ],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\razan.lua",
+      "bytes": 32558,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "itemId = 5883",
+        "itemId = 5895",
+        "itemId = 5891",
+        "itemId = 5912",
+        "itemId = 5883",
+        "itemId = 5895",
+        "itemId = 5891",
+        "itemId = 5912"
+      ],
+      "samplePrices": [
+        "price = 50000",
+        "price = 50000",
+        "price = 10000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 4000",
+        "price = 1500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\romir.lua",
+      "bytes": 39318,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ser_tybald.lua",
+      "bytes": 10697,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 1000",
+        "price = 150",
+        "price = 500",
+        "price = 80",
+        "price = 200",
+        "price = 0",
+        "price = 450",
+        "price = 500",
+        "price = 600",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shalmar.lua",
+      "bytes": 46725,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\silas.lua",
+      "bytes": 20214,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 10000",
+        "price = 1000",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 1100",
+        "price = 7500",
+        "price = 10000",
+        "price = 8000",
+        "price = 6000",
+        "price = 1600",
+        "price = 450",
+        "price = 6000",
+        "price = 150"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\smiley.lua",
+      "bytes": 21188,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 0",
+        "price = 1200",
+        "price = 1300",
+        "price = 800",
+        "price = 1000",
+        "price = 600",
+        "price = 150",
+        "price = 700",
+        "price = 2500",
+        "price = 700",
+        "price = 1800",
+        "price = 1500",
+        "price = 2000",
+        "price = 500",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tamara.lua",
+      "bytes": 36562,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tamoril.lua",
+      "bytes": 40833,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\thorwulf.lua",
+      "bytes": 17082,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tothdral.lua",
+      "bytes": 36081,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 400000",
+        "price = 200000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1800",
+        "price = 25000",
+        "price = 1200",
+        "price = 500",
+        "price = 1600",
+        "price = 1000",
+        "price = 350",
+        "price = 500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\trisha.lua",
+      "bytes": 12291,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "itemId = 5925",
+        "itemId = 5899",
+        "itemId = 5884",
+        "itemId = 5919",
+        "itemId = 5925",
+        "itemId = 5899",
+        "itemId = 5884",
+        "itemId = 5919"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 500",
+        "price = 0",
+        "price = 0",
+        "price = 150",
+        "price = 1000",
+        "price = 80",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tristan.lua",
+      "bytes": 16914,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ursula.lua",
+      "bytes": 19205,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 10000",
+        "price = 0",
+        "price = 1100",
+        "price = 1000",
+        "price = 450",
+        "price = 0",
+        "price = 1600",
+        "price = 6000",
+        "price = 150",
+        "price = 700",
+        "price = 900",
+        "price = 3000",
+        "price = 3000",
+        "price = 1800",
+        "price = 2000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uso.lua",
+      "bytes": 16910,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ustan.lua",
+      "bytes": 38894,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 500000",
+        "price = 500000",
+        "price = 6000",
+        "price = 7500",
+        "price = 6000",
+        "price = 1300",
+        "price = 1500",
+        "price = 1000",
+        "price = 1600",
+        "price = 600",
+        "price = 350",
+        "price = 500",
+        "price = 1500",
+        "price = 600"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\viola.lua",
+      "bytes": 13431,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "addItem(3031"
+      ],
+      "samplePrices": [
+        "price = 0",
+        "price = 150",
+        "price = 200",
+        "price = 0"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zarak.lua",
+      "bytes": 17076,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 50000",
+        "price = 250000",
+        "price = 500000",
+        "price = 7500",
+        "price = 10000",
+        "price = 6000",
+        "price = 4000",
+        "price = 1500",
+        "price = 2500",
+        "price = 1500",
+        "price = 20000",
+        "price = 2500",
+        "price = 1000",
+        "price = 1300",
+        "price = 2500"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zoltan.lua",
+      "bytes": 11518,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 8000",
+        "price = 8000",
+        "price = 8000",
+        "price = 6000",
+        "price = 6000",
+        "price = 8000",
+        "price = 6000",
+        "price = 15000",
+        "price = 15000",
+        "price = 15000",
+        "price = 15000",
+        "price = 6000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\modules\\scripts\\gamestore\\gamestore.lua",
+      "bytes": 310863,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "id = 3030",
+        "id = 3090",
+        "id = 3180",
+        "id = 3360",
+        "id = 23",
+        "id = 114",
+        "id = 77",
+        "id = 147",
+        "id = 73",
+        "id = 58",
+        "id = 113",
+        "id = 92",
+        "id = 189",
+        "id = 129",
+        "id = 208"
+      ],
+      "samplePrices": [
+        "price = 250",
+        "price = 750",
+        "price = 1500",
+        "price = 3000",
+        "price = 130",
+        "price = 650",
+        "price = 25",
+        "price = 260",
+        "price = 25",
+        "price = 15",
+        "price = 15",
+        "price = 20",
+        "price = 15",
+        "price = 15",
+        "price = 8"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\modules\\scripts\\gamestore\\init.lua",
+      "bytes": 79862,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\npclib\\npc_system\\custom_modules.lua",
+      "bytes": 10083,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 10"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\lib\\register_npc_type.lua",
+      "bytes": 6556,
+      "signals": [
+        "addShopItem"
+      ],
+      "sampleItemIds": [],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\lib\\shops.lua",
+      "bytes": 99454,
+      "signals": [
+        "sell = price",
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 1",
+        "buy = 10",
+        "buy = 300",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 1250000",
+        "buy = 347222",
+        "buy = 347222",
+        "buy = 347222",
+        "buy = 347222",
+        "buy = 347222"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\lib\\task_board_shop.lua",
+      "bytes": 7872,
+      "signals": [
+        "BUY button, clickable when HTP >= price",
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 100000",
+        "price = 35000",
+        "price = 35000",
+        "price = 100000",
+        "price = 35000",
+        "price = 35000",
+        "price = 145000",
+        "price = 145000",
+        "price = 145000",
+        "price = 145000",
+        "price = 135000",
+        "price = 75000",
+        "price = 80000",
+        "price = 80000",
+        "price = 80000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\systems\\item_tiers.lua",
+      "bytes": 2795,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": [
+        "price = 55000000",
+        "price = 65000000",
+        "price = 110000000",
+        "price = 165000000",
+        "price = 170000000",
+        "price = 375000000",
+        "price = 300000000",
+        "price = 800000000",
+        "price = 875000000",
+        "price = 2000000000",
+        "price = 2350000000",
+        "price = 5250000000",
+        "price = 6950000000",
+        "price = 14500000000",
+        "price = 21250000000"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\player\\buy_backpack.lua",
+      "bytes": 819,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "itemId = 2854",
+        "itemId = 2854"
+      ],
+      "samplePrices": [
+        "price = 20"
+      ]
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\player\\buy_house.lua",
+      "bytes": 3423,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [],
+      "samplePrices": []
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data\\scripts\\talkactions\\player\\food.lua",
+      "bytes": 639,
+      "signals": [
+        "price ="
+      ],
+      "sampleItemIds": [
+        "itemId = 3725",
+        "itemId = 3725"
+      ],
+      "samplePrices": [
+        "price = 1000"
+      ]
+    }
+  ]
+}

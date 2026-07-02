@@ -1,0 +1,1 @@
+export { useMonsterDatabase } from "./useMonsterDatabase";

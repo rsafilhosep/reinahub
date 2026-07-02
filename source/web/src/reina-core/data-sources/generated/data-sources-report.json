@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-07-01T23:15:48.047Z",
+  "policy": "DATA_SOURCE_POLICY.md",
+  "totalSources": 4,
+  "activeSources": 3,
+  "plannedSources": 1,
+  "runtimeDependencyCount": 0,
+  "runtimeDependencies": [],
+  "missingSourceFolders": [],
+  "status": "ok",
+  "note": "Data sources are references for controlled import. They must not be required by app pages at runtime."
+}

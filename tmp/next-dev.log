@@ -1,0 +1,58 @@
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 1767ms
+ ○ Compiling /cotacao ...
+ ✓ Compiled /cotacao in 3.4s (539 modules)
+ GET /cotacao 200 in 3683ms
+ GET /cotacao 200 in 52ms
+ GET /cotacao 200 in 77ms
+ ✓ Compiled /monsters in 432ms (544 modules)
+ ✓ Compiled /api/monsters in 265ms (321 modules)
+ GET /api/monsters?query=rat 200 in 386ms
+ ✓ Compiled /_not-found in 147ms (593 modules)
+ GET /assets/monsters/1st-mate-ratticus.gif 404 in 258ms
+ GET /assets/monsters/desperate-soul.gif 404 in 248ms
+ GET /assets/monsters/concentrated-death.gif 404 in 251ms
+ GET /assets/monsters/cave-rat.gif 404 in 251ms
+ GET /assets/monsters/dragon-wrath.gif 404 in 250ms
+ GET /assets/monsters/desperate-white-deer.gif 404 in 251ms
+ GET /assets/monsters/elite-pirat.gif 404 in 38ms
+ GET /assets/monsters/generator.gif 404 in 39ms
+ GET /assets/monsters/glooth-generator.gif 404 in 40ms
+ GET /assets/monsters/lizard-magistratus.gif 404 in 40ms
+ GET /assets/monsters/mutated-rat.gif 404 in 38ms
+ GET /assets/monsters/memory-of-a-pirate.gif 404 in 41ms
+ GET /assets/monsters/norcferatu-abomination.gif 404 in 54ms
+ GET /assets/monsters/norcferatu-heartless.gif 404 in 57ms
+ GET /assets/monsters/norcferatu-minion.gif 404 in 56ms
+ GET /assets/monsters/norcferatu-nightweaver.gif 404 in 57ms
+ GET /assets/monsters/pirat-bombardier.gif 404 in 58ms
+ GET /assets/monsters/pirat-artillerist.gif 404 in 59ms
+ GET /assets/monsters/pirat-cutthroat.gif 404 in 47ms
+ GET /assets/monsters/pirate-buccaneer.gif 404 in 45ms
+ GET /assets/monsters/pirat-mate.gif 404 in 46ms
+ GET /assets/monsters/pirat-scoundrel.gif 404 in 47ms
+ GET /assets/monsters/pirate-cook.gif 404 in 47ms
+ GET /assets/monsters/pirate-corsair.gif 404 in 49ms
+ GET /assets/monsters/pirate-cutthroat.gif 404 in 44ms
+ GET /assets/monsters/pirate-marauder.gif 404 in 43ms
+ GET /assets/monsters/pirate-gunner.gif 404 in 44ms
+ GET /assets/monsters/pirate-ghost.gif 404 in 46ms
+ GET /assets/monsters/pirate-quartermaster.gif 404 in 43ms
+ GET /assets/monsters/pirate-navigator.gif 404 in 44ms
+ GET /assets/monsters/pirate-skeleton.gif 404 in 25ms
+ GET /assets/monsters/plagirath.gif 404 in 23ms
+ GET /assets/monsters/rat.gif 404 in 20ms
+ GET /assets/monsters/rateye-ric.gif 404 in 18ms
+ GET /assets/monsters/ratmiral-blackwhiskers.gif 404 in 21ms
+ GET /assets/monsters/sphere-of-wrath.gif 404 in 55ms
+ GET /assets/monsters/spyrat-east.gif 404 in 27ms
+ GET /assets/monsters/spyrat-north.gif 404 in 17ms
+ GET /assets/monsters/spyrat-south.gif 404 in 24ms
+ GET /assets/monsters/spyrat-west.gif 404 in 18ms
+ GET /assets/monsters/the-obliverator.gif 404 in 19ms
+ GET /assets/monsters/wrath-of-the-emperor.gif 404 in 32ms
+ GET /assets/monsters/wrathful-archivist.gif 404 in 26ms
+[?25h

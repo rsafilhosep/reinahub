@@ -1,0 +1,4416 @@
+[
+  {
+    "itemId": 3031,
+    "name": "gold coin",
+    "lootOccurrenceCount": 904,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 11040
+  },
+  {
+    "itemId": 3035,
+    "name": "platinum coin",
+    "lootOccurrenceCount": 488,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 6880
+  },
+  {
+    "itemId": 3043,
+    "name": "crystal coin",
+    "lootOccurrenceCount": 123,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 3230
+  },
+  {
+    "itemId": 238,
+    "name": "great mana potion",
+    "lootOccurrenceCount": 210,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2900
+  },
+  {
+    "itemId": 7643,
+    "name": "ultimate health potion",
+    "lootOccurrenceCount": 151,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2310
+  },
+  {
+    "itemId": 239,
+    "name": "great health potion",
+    "lootOccurrenceCount": 145,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 2250
+  },
+  {
+    "itemId": 236,
+    "name": "strong health potion",
+    "lootOccurrenceCount": 116,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1960
+  },
+  {
+    "itemId": 7642,
+    "name": "great spirit potion",
+    "lootOccurrenceCount": 113,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1930
+  },
+  {
+    "itemId": 237,
+    "name": "strong mana potion",
+    "lootOccurrenceCount": 105,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1850
+  },
+  {
+    "itemId": 3039,
+    "name": "red gem",
+    "lootOccurrenceCount": 149,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1490
+  },
+  {
+    "itemId": 3032,
+    "name": "small emerald",
+    "lootOccurrenceCount": 148,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1480
+  },
+  {
+    "itemId": 23373,
+    "name": "ultimate mana potion",
+    "lootOccurrenceCount": 66,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1460
+  },
+  {
+    "itemId": 5884,
+    "name": "spirit container",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 1460
+  },
+  {
+    "itemId": 3041,
+    "name": "blue gem",
+    "lootOccurrenceCount": 145,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1450
+  },
+  {
+    "itemId": 266,
+    "name": "health potion",
+    "lootOccurrenceCount": 65,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1450
+  },
+  {
+    "itemId": 3037,
+    "name": "yellow gem",
+    "lootOccurrenceCount": 142,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1420
+  },
+  {
+    "itemId": 7440,
+    "name": "mastermind potion",
+    "lootOccurrenceCount": 62,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1420
+  },
+  {
+    "itemId": 3577,
+    "name": "meat",
+    "lootOccurrenceCount": 141,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1410
+  },
+  {
+    "itemId": 28570,
+    "name": "glowing rune",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 1400
+  },
+  {
+    "itemId": 7439,
+    "name": "berserk potion",
+    "lootOccurrenceCount": 58,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1380
+  },
+  {
+    "itemId": 8042,
+    "name": "spirit cloak",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 1370
+  },
+  {
+    "itemId": 3038,
+    "name": "green gem",
+    "lootOccurrenceCount": 136,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1360
+  },
+  {
+    "itemId": 268,
+    "name": "mana potion",
+    "lootOccurrenceCount": 47,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1270
+  },
+  {
+    "itemId": 7443,
+    "name": "bullseye potion",
+    "lootOccurrenceCount": 46,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "itemId": 23374,
+    "name": "ultimate spirit potion",
+    "lootOccurrenceCount": 46,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "itemId": 3030,
+    "name": "small ruby",
+    "lootOccurrenceCount": 125,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1250
+  },
+  {
+    "itemId": 23375,
+    "name": "supreme health potion",
+    "lootOccurrenceCount": 45,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1250
+  },
+  {
+    "itemId": 3033,
+    "name": "small amethyst",
+    "lootOccurrenceCount": 120,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1200
+  },
+  {
+    "itemId": 3029,
+    "name": "small sapphire",
+    "lootOccurrenceCount": 119,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1190
+  },
+  {
+    "itemId": 3028,
+    "name": "small diamond",
+    "lootOccurrenceCount": 118,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1180
+  },
+  {
+    "itemId": 3448,
+    "name": "poison arrow",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1180
+  },
+  {
+    "itemId": 9058,
+    "name": "gold ingot",
+    "lootOccurrenceCount": 116,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1160
+  },
+  {
+    "itemId": 3036,
+    "name": "violet gem",
+    "lootOccurrenceCount": 108,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1080
+  },
+  {
+    "itemId": 9057,
+    "name": "small topaz",
+    "lootOccurrenceCount": 103,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1030
+  },
+  {
+    "itemId": 3147,
+    "name": "blank rune",
+    "lootOccurrenceCount": 22,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1020
+  },
+  {
+    "itemId": 3277,
+    "name": "spear",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 1000
+  },
+  {
+    "itemId": 3447,
+    "name": "arrow",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 980
+  },
+  {
+    "itemId": 3347,
+    "name": "hunting spear",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 970
+  },
+  {
+    "itemId": 3079,
+    "name": "boots of haste",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 826,
+    "name": "magma coat",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 11479,
+    "name": "orc leather",
+    "lootOccurrenceCount": 21,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "itemId": 5881,
+    "name": "lizard scale",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 5878,
+    "name": "minotaur leather",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 3450,
+    "name": "power bolt",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 3386,
+    "name": "dragon scale mail",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "itemId": 6499,
+    "name": "demonic essence",
+    "lootOccurrenceCount": 69,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 22085,
+    "name": "fur armor",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 10196,
+    "name": "orc tooth",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 7378,
+    "name": "royal spear",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 940
+  },
+  {
+    "itemId": 5954,
+    "name": "demon horn",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 930
+  },
+  {
+    "itemId": 5925,
+    "name": "hardened bone",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 70,
+    "hasImage": false,
+    "priorityScore": 930
+  },
+  {
+    "itemId": 11472,
+    "name": "minotaur horn",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 75,
+    "hasImage": false,
+    "priorityScore": 930
+  },
+  {
+    "itemId": 5876,
+    "name": "lizard leather",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 920
+  },
+  {
+    "itemId": 7365,
+    "name": "onyx arrow",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 920
+  },
+  {
+    "itemId": 3355,
+    "name": "leather helmet",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": true,
+    "sellPrice": 4,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 3377,
+    "name": "scale armor",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": true,
+    "sellPrice": 75,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 7364,
+    "name": "sniper arrow",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 5891,
+    "name": "enchanted chicken wing",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20000,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 3370,
+    "name": "knight armor",
+    "lootOccurrenceCount": 39,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 811,
+    "name": "terra mantle",
+    "lootOccurrenceCount": 27,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 3449,
+    "name": "burst arrow",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 15793,
+    "name": "crystalline arrow",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 31589,
+    "name": "rotten heart",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 74000,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 812,
+    "name": "terra legs",
+    "lootOccurrenceCount": 26,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 3446,
+    "name": "bolt",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 16142,
+    "name": "drill bolt",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 763,
+    "name": "flaming arrow",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 31588,
+    "name": "ancient liche bone",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 28000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 24942,
+    "name": "bones of Zorvorax",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 6546,
+    "name": "Dracola's eye",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 24941,
+    "name": "horn of Kalyassa",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 27621,
+    "name": "huge shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 24939,
+    "name": "scale of Gelidrazah",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 24940,
+    "name": "tooth of Tazhadur",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 12730,
+    "name": "eye of a deepling",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 870
+  },
+  {
+    "itemId": 16143,
+    "name": "envenomed arrow",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 870
+  },
+  {
+    "itemId": 761,
+    "name": "flash arrow",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 870
+  },
+  {
+    "itemId": 21158,
+    "name": "glooth spear",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 870
+  },
+  {
+    "itemId": 14252,
+    "name": "vortex bolt",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 870
+  },
+  {
+    "itemId": 23535,
+    "name": "energy bar",
+    "lootOccurrenceCount": 36,
+    "hasNpcSellPrice": true,
+    "sellPrice": 7000,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 5904,
+    "name": "magic sulphur",
+    "lootOccurrenceCount": 36,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 3554,
+    "name": "steel boots",
+    "lootOccurrenceCount": 24,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 9640,
+    "name": "poisonous slime",
+    "lootOccurrenceCount": 11,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 774,
+    "name": "earth arrow",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 7363,
+    "name": "piercing bolt",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "itemId": 5741,
+    "name": "skull helmet",
+    "lootOccurrenceCount": 23,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "itemId": 16141,
+    "name": "prismatic bolt",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "itemId": 762,
+    "name": "shiver arrow",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "itemId": 5880,
+    "name": "iron ore",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 5911,
+    "name": "red piece of cloth",
+    "lootOccurrenceCount": 34,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 11449,
+    "name": "blood preservation",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 320,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 14083,
+    "name": "compound eye",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 9636,
+    "name": "fiery heart",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 375,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 5879,
+    "name": "spider silk",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 10316,
+    "name": "unholy bone",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 480,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 9685,
+    "name": "vampire teeth",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 275,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 21470,
+    "name": "simple arrow",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 840
+  },
+  {
+    "itemId": 5895,
+    "name": "fish fin",
+    "lootOccurrenceCount": 33,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 3357,
+    "name": "plate armor",
+    "lootOccurrenceCount": 33,
+    "hasNpcSellPrice": true,
+    "sellPrice": 400,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 813,
+    "name": "terra boots",
+    "lootOccurrenceCount": 33,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 822,
+    "name": "lightning legs",
+    "lootOccurrenceCount": 21,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 821,
+    "name": "magma legs",
+    "lootOccurrenceCount": 21,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 5894,
+    "name": "bat wing",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 32593,
+    "name": "grimace",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120000,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 3155,
+    "name": "sudden death rune",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "itemId": 12600,
+    "name": "coal",
+    "lootOccurrenceCount": 32,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 3567,
+    "name": "blue robe",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 824,
+    "name": "glacier robe",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 16131,
+    "name": "blazing bone",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 610,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 32774,
+    "name": "cursed bone",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 6000,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 9661,
+    "name": "frosty heart",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 280,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 21975,
+    "name": "peacock feather fan",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 11481,
+    "name": "pelvis bone",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 52660,
+    "name": "ancient crypt rune",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 24954,
+    "name": "part of a rune",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 30087,
+    "name": "Plagueroot offshoot",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 280000,
+    "hasImage": false,
+    "priorityScore": 820
+  },
+  {
+    "itemId": 3366,
+    "name": "magic plate armor",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 5898,
+    "name": "bonelord eye",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 30005,
+    "name": "dream essence egg",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 205,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 25694,
+    "name": "fairy wings",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 20199,
+    "name": "frazzle skin",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 400,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 3235,
+    "name": "ancient rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 40535,
+    "name": "broken Iks spear",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 3239,
+    "name": "crystal arrow",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 52659,
+    "name": "deathly crypt rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 52657,
+    "name": "fiery crypt rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 52658,
+    "name": "icy crypt rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 6528,
+    "name": "infernal bolt",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 32595,
+    "name": "jagged sickle",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 29942,
+    "name": "Maxxenius head",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 31591,
+    "name": "medal of valiance",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 410000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 52661,
+    "name": "necromantic crypt rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 31595,
+    "name": "noble amulet",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 430000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 31593,
+    "name": "noble cape",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 425000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 24957,
+    "name": "part of a rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 24959,
+    "name": "part of a rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 24958,
+    "name": "part of a rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 24956,
+    "name": "part of a rune",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 31592,
+    "name": "signet ring",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 480000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 29431,
+    "name": "spirit guide",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 14251,
+    "name": "tarsal arrow",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 31594,
+    "name": "token of love",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 440000,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 49271,
+    "name": "transcendence potion",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 19356,
+    "name": "triple bolt crossbow",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 810
+  },
+  {
+    "itemId": 3371,
+    "name": "knight legs",
+    "lootOccurrenceCount": 30,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 3381,
+    "name": "crown armor",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 8050,
+    "name": "crystalline armor",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 16000,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 3364,
+    "name": "golden legs",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 5883,
+    "name": "ape fur",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 10306,
+    "name": "essence of a bad dream",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 360,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 7457,
+    "name": "fur boots",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2000,
+    "hasImage": false,
+    "priorityScore": 800
+  },
+  {
+    "itemId": 3360,
+    "name": "golden armor",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20000,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 17831,
+    "name": "bone fetish",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 24937,
+    "name": "dragon blood",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 700,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 9054,
+    "name": "glob of acid slime",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 5877,
+    "name": "green dragon leather",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 11489,
+    "name": "mantassin tail",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 280,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 11488,
+    "name": "quara eye",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 10407,
+    "name": "shaggy tail",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 10307,
+    "name": "thick fur",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "itemId": 3081,
+    "name": "stone skin amulet",
+    "lootOccurrenceCount": 53,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 823,
+    "name": "glacier kilt",
+    "lootOccurrenceCount": 16,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 3392,
+    "name": "royal helmet",
+    "lootOccurrenceCount": 16,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 5896,
+    "name": "bear paw",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 24380,
+    "name": "bone toothpick",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 5890,
+    "name": "chicken feather",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 25696,
+    "name": "colourful snail shell",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 14017,
+    "name": "deepling scales",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 32698,
+    "name": "ensouled essence",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 820,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 27462,
+    "name": "fox paw",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 5920,
+    "name": "green dragon scale",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 17846,
+    "name": "leather harness",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 750,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 31340,
+    "name": "lizard heart",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 530,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 10321,
+    "name": "mammoth tusk",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 9668,
+    "name": "mutated rat tail",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 10279,
+    "name": "piece of crocodile leather",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 11491,
+    "name": "quara bone",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 11487,
+    "name": "quara tentacle",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 140,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 5948,
+    "name": "red dragon leather",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 10293,
+    "name": "striped fur",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 3044,
+    "name": "tusk",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 780
+  },
+  {
+    "itemId": 830,
+    "name": "terra hood",
+    "lootOccurrenceCount": 27,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 5930,
+    "name": "behemoth claw",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2000,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 18928,
+    "name": "blood tincture in a vial",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 360,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 31559,
+    "name": "blue goanna scale",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 230,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10277,
+    "name": "bony tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 11703,
+    "name": "brimstone shell",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10275,
+    "name": "carrion worm fang",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10410,
+    "name": "cursed shoulder spikes",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 320,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 17463,
+    "name": "damselfly eye",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 17458,
+    "name": "damselfly wing",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 14044,
+    "name": "deepling claw",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 430,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 9658,
+    "name": "frost giant pelt",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 160,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 31561,
+    "name": "goanna claw",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 260,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10304,
+    "name": "hellspawn tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 475,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 14077,
+    "name": "kollos shell",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 420,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 31442,
+    "name": "lamassu horn",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 220,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10455,
+    "name": "lancer beetle shell",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 11680,
+    "name": "lizard essence",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 7463,
+    "name": "mammoth fur cape",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 6000,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 17462,
+    "name": "marsh stalker feather",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 5893,
+    "name": "perfect behemoth fang",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 9650,
+    "name": "polar bear paw",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 24389,
+    "name": "rhino horn",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 265,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 24386,
+    "name": "rhino horn carving",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 11673,
+    "name": "scale of corruption",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 680,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 9651,
+    "name": "scorpion tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 9666,
+    "name": "sea serpent scale",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 520,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10274,
+    "name": "skunk tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 21197,
+    "name": "slimy leaf tentacle",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 320,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 9694,
+    "name": "snake skin",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 400,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 23502,
+    "name": "sparkion claw",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 290,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 23503,
+    "name": "sparkion tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 31437,
+    "name": "sphinx feather",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 470,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 18924,
+    "name": "tooth file",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 60,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 5899,
+    "name": "turtle shell",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10318,
+    "name": "warwolf fur",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 22057,
+    "name": "werebear fur",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 185,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 27463,
+    "name": "werefox tail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 10317,
+    "name": "werewolf fur",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 380,
+    "hasImage": false,
+    "priorityScore": 770
+  },
+  {
+    "itemId": 3369,
+    "name": "warrior helmet",
+    "lootOccurrenceCount": 26,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 16163,
+    "name": "crystal crossbow",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10299,
+    "name": "badger fur",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10404,
+    "name": "bone shoulderplate",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34138,
+    "name": "capricious heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27599,
+    "name": "cave devourer eyes",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 550,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27604,
+    "name": "chasm spawn tail",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 16134,
+    "name": "cliff strider claw",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 800,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11514,
+    "name": "colourful feather",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 110,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 23521,
+    "name": "crystal bone",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27593,
+    "name": "deepworm spike roots",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 650,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27592,
+    "name": "deepworm spikes",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 800,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34142,
+    "name": "distorted heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11684,
+    "name": "downy feather",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 5919,
+    "name": "dragon claw",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10276,
+    "name": "elder bonelord tentacle",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 16132,
+    "name": "eye of a weeper",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 650,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11671,
+    "name": "eye of corruption",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 390,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 3406,
+    "name": "feather headdress",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 850,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10280,
+    "name": "giant eye",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 380,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 8143,
+    "name": "gland",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 23522,
+    "name": "glistening bone",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 22007,
+    "name": "gloom wolf fur",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 70,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 19372,
+    "name": "goo shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 4000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 20205,
+    "name": "goosebump leather",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 650,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34140,
+    "name": "hazardous heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27627,
+    "name": "huge spiky snail shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34139,
+    "name": "infernal heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27624,
+    "name": "longing eyes",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 7464,
+    "name": "mammoth fur shorts",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 850,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 31439,
+    "name": "manticore tail",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 220,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34141,
+    "name": "mould heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 9641,
+    "name": "piece of scarab shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 45,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 29348,
+    "name": "poison gland",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11485,
+    "name": "poison spider shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 5882,
+    "name": "red dragon scale",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 31558,
+    "name": "red goanna scale",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 18993,
+    "name": "rorc feather",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 70,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27874,
+    "name": "sample of monster blood",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10456,
+    "name": "sandcrawler shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 21800,
+    "name": "seacrest scale",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10292,
+    "name": "silky fur",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 25701,
+    "name": "single human eye",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 22730,
+    "name": "some grimeleech wings",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1200,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 9642,
+    "name": "spooky blue eye",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 95,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10278,
+    "name": "stone wing",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11672,
+    "name": "tail of corruption",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 240,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 33934,
+    "name": "telescope eye",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1600,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 11666,
+    "name": "tentacle piece",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10452,
+    "name": "terramite shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 170,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 27596,
+    "name": "tunnel tyrant shell",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 700,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 10450,
+    "name": "undead heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 34143,
+    "name": "vibrant heart",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2100,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 14080,
+    "name": "waspoid claw",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 320,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 14081,
+    "name": "waspoid wing",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 190,
+    "hasImage": false,
+    "priorityScore": 760
+  },
+  {
+    "itemId": 3027,
+    "name": "black pearl",
+    "lootOccurrenceCount": 75,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 750
+  },
+  {
+    "itemId": 3063,
+    "name": "gold ring",
+    "lootOccurrenceCount": 25,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 750
+  },
+  {
+    "itemId": 818,
+    "name": "magma boots",
+    "lootOccurrenceCount": 24,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 740
+  },
+  {
+    "itemId": 8061,
+    "name": "skullcracker armor",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 18000,
+    "hasImage": false,
+    "priorityScore": 740
+  },
+  {
+    "itemId": 10384,
+    "name": "Zaoan armor",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 14000,
+    "hasImage": false,
+    "priorityScore": 740
+  },
+  {
+    "itemId": 825,
+    "name": "lightning robe",
+    "lootOccurrenceCount": 11,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 730
+  },
+  {
+    "itemId": 10387,
+    "name": "Zaoan legs",
+    "lootOccurrenceCount": 11,
+    "hasNpcSellPrice": true,
+    "sellPrice": 14000,
+    "hasImage": false,
+    "priorityScore": 730
+  },
+  {
+    "itemId": 827,
+    "name": "magma monocle",
+    "lootOccurrenceCount": 22,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 720
+  },
+  {
+    "itemId": 281,
+    "name": "giant shimmering pearl",
+    "lootOccurrenceCount": 71,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 710
+  },
+  {
+    "itemId": 16120,
+    "name": "violet crystal shard",
+    "lootOccurrenceCount": 71,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 710
+  },
+  {
+    "itemId": 3358,
+    "name": "chain armor",
+    "lootOccurrenceCount": 21,
+    "hasNpcSellPrice": true,
+    "sellPrice": 70,
+    "hasImage": false,
+    "priorityScore": 710
+  },
+  {
+    "itemId": 32772,
+    "name": "silver hand mirror",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 710
+  },
+  {
+    "itemId": 3359,
+    "name": "brass armor",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 700
+  },
+  {
+    "itemId": 3373,
+    "name": "strange helmet",
+    "lootOccurrenceCount": 20,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 700
+  },
+  {
+    "itemId": 3382,
+    "name": "crown legs",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 700
+  },
+  {
+    "itemId": 21981,
+    "name": "oriental shoes",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 700
+  },
+  {
+    "itemId": 31323,
+    "name": "sea horse figurine",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 42000,
+    "hasImage": false,
+    "priorityScore": 700
+  },
+  {
+    "itemId": 3582,
+    "name": "ham",
+    "lootOccurrenceCount": 69,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 8043,
+    "name": "focus cape",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 6000,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 828,
+    "name": "lightning headband",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 3557,
+    "name": "plate legs",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 115,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 3297,
+    "name": "serpent sword",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 900,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 3351,
+    "name": "steel helmet",
+    "lootOccurrenceCount": 19,
+    "hasNpcSellPrice": true,
+    "sellPrice": 293,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 8063,
+    "name": "paladin armor",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 8052,
+    "name": "swamplair armor",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 16000,
+    "hasImage": false,
+    "priorityScore": 690
+  },
+  {
+    "itemId": 3383,
+    "name": "dark armor",
+    "lootOccurrenceCount": 18,
+    "hasNpcSellPrice": true,
+    "sellPrice": 400,
+    "hasImage": false,
+    "priorityScore": 680
+  },
+  {
+    "itemId": 14086,
+    "name": "calopteryx cape",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 680
+  },
+  {
+    "itemId": 21165,
+    "name": "rubber cap",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 680
+  },
+  {
+    "itemId": 16121,
+    "name": "green crystal shard",
+    "lootOccurrenceCount": 67,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 3384,
+    "name": "dark helmet",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 829,
+    "name": "glacier mask",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 5909,
+    "name": "white piece of cloth",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 3575,
+    "name": "wood cape",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 21168,
+    "name": "alloy legs",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 32589,
+    "name": "angel figurine",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 36000,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 10385,
+    "name": "Zaoan helmet",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 45000,
+    "hasImage": false,
+    "priorityScore": 670
+  },
+  {
+    "itemId": 16119,
+    "name": "blue crystal shard",
+    "lootOccurrenceCount": 66,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 660
+  },
+  {
+    "itemId": 6558,
+    "name": "flask of demonic blood",
+    "lootOccurrenceCount": 41,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 660
+  },
+  {
+    "itemId": 3356,
+    "name": "devil helmet",
+    "lootOccurrenceCount": 16,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 660
+  },
+  {
+    "itemId": 14087,
+    "name": "grasshopper legs",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 660
+  },
+  {
+    "itemId": 32594,
+    "name": "bloody tears",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 70000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 11674,
+    "name": "cobra crown",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 8057,
+    "name": "divine plate",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 55000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 31324,
+    "name": "golden mask",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 38000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 34024,
+    "name": "gruesome fan",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 10323,
+    "name": "guardian boots",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 21167,
+    "name": "heat core",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 8049,
+    "name": "lavos armor",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 16000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 13999,
+    "name": "ornate legs",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 650
+  },
+  {
+    "itemId": 3391,
+    "name": "crusader helmet",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": true,
+    "sellPrice": 6000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 3574,
+    "name": "mystic turban",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 647,
+    "name": "seeds",
+    "lootOccurrenceCount": 14,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 34023,
+    "name": "brooch of embracement",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 14000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 8039,
+    "name": "dragon robe",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 4033,
+    "name": "draken boots",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 11651,
+    "name": "elite draken mail",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 34022,
+    "name": "goblet of gloom",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 34219,
+    "name": "werehyaena trophy",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 10439,
+    "name": "Zaoan robe",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 640
+  },
+  {
+    "itemId": 819,
+    "name": "glacier shoes",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 5910,
+    "name": "green piece of cloth",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 820,
+    "name": "lightning boots",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 3378,
+    "name": "studded armor",
+    "lootOccurrenceCount": 13,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 27622,
+    "name": "chitinous mouth",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 27626,
+    "name": "chitinous mouth",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 21892,
+    "name": "crest of the deep seas",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 3387,
+    "name": "demon helmet",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 13997,
+    "name": "depth calcei",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 13995,
+    "name": "depth galea",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 13994,
+    "name": "depth lorica",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 13996,
+    "name": "depth ocrea",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 16000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 34025,
+    "name": "diabolic skull",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 19000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 27625,
+    "name": "harpoon of a giant snail",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 13993,
+    "name": "ornate chestplate",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 60000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 7884,
+    "name": "rope",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 10438,
+    "name": "spellweaver's robe",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 12000,
+    "hasImage": false,
+    "priorityScore": 630
+  },
+  {
+    "itemId": 9639,
+    "name": "cultish robe",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 620
+  },
+  {
+    "itemId": 3353,
+    "name": "iron helmet",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 620
+  },
+  {
+    "itemId": 11454,
+    "name": "luminous orb",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 620
+  },
+  {
+    "itemId": 3058,
+    "name": "strange symbol",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 620
+  },
+  {
+    "itemId": 10386,
+    "name": "Zaoan shoes",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": true,
+    "sellPrice": 5000,
+    "hasImage": false,
+    "priorityScore": 620
+  },
+  {
+    "itemId": 11492,
+    "name": "rope belt",
+    "lootOccurrenceCount": 11,
+    "hasNpcSellPrice": true,
+    "sellPrice": 66,
+    "hasImage": false,
+    "priorityScore": 610
+  },
+  {
+    "itemId": 5912,
+    "name": "blue piece of cloth",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 600
+  },
+  {
+    "itemId": 3354,
+    "name": "brass helmet",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 600
+  },
+  {
+    "itemId": 23510,
+    "name": "odd organ",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 410,
+    "hasImage": false,
+    "priorityScore": 600
+  },
+  {
+    "itemId": 22191,
+    "name": "skull fetish",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 600
+  },
+  {
+    "itemId": 5809,
+    "name": "soul stone",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": true,
+    "sellPrice": 6000,
+    "hasImage": false,
+    "priorityScore": 600
+  },
+  {
+    "itemId": 3372,
+    "name": "brass legs",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 49,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 5913,
+    "name": "brown piece of cloth",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 3385,
+    "name": "crown helmet",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2500,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 5902,
+    "name": "honeycomb",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 23516,
+    "name": "instable proto matter",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 22188,
+    "name": "ogre ear stud",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 180,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 22189,
+    "name": "ogre nose ring",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 11480,
+    "name": "skull belt",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 80,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 3403,
+    "name": "tribal mask",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 590
+  },
+  {
+    "itemId": 3115,
+    "name": "bone",
+    "lootOccurrenceCount": 33,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 28569,
+    "name": "book page",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 640,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 9635,
+    "name": "elvish talisman",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 45,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 9692,
+    "name": "lump of dirt",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 21169,
+    "name": "metal spats",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2000,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 3367,
+    "name": "viking helmet",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": true,
+    "sellPrice": 66,
+    "hasImage": false,
+    "priorityScore": 580
+  },
+  {
+    "itemId": 3098,
+    "name": "ring of healing",
+    "lootOccurrenceCount": 57,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 8044,
+    "name": "belted cape",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 11453,
+    "name": "broken helmet",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 17829,
+    "name": "buckle",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 7000,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 9689,
+    "name": "bunch of troll hair",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 11456,
+    "name": "dirty turban",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 20198,
+    "name": "frazzle tongue",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 700,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 21974,
+    "name": "golden lotus brooch",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 32773,
+    "name": "ivory comb",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 10305,
+    "name": "lump of earth",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 130,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 23506,
+    "name": "plasma pearls",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 3736,
+    "name": "star herb",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 15,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 3741,
+    "name": "troll green",
+    "lootOccurrenceCount": 7,
+    "hasNpcSellPrice": true,
+    "sellPrice": 25,
+    "hasImage": false,
+    "priorityScore": 570
+  },
+  {
+    "itemId": 22516,
+    "name": "silver token",
+    "lootOccurrenceCount": 56,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 10320,
+    "name": "book of necromantic rituals",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 180,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 11452,
+    "name": "broken shamanic staff",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 3352,
+    "name": "chain helmet",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 17,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 31678,
+    "name": "cobra crest",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 650,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 24938,
+    "name": "dragon tongue",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 550,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 8045,
+    "name": "hibiscus dress",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 3000,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 22192,
+    "name": "shamanic mask",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2000,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 25693,
+    "name": "shimmering beetles",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 28566,
+    "name": "silken bookmark",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1300,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 23518,
+    "name": "spark sphere",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 350,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 8031,
+    "name": "spider fangs",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 3376,
+    "name": "studded helmet",
+    "lootOccurrenceCount": 6,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 560
+  },
+  {
+    "itemId": 3026,
+    "name": "white pearl",
+    "lootOccurrenceCount": 55,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 10302,
+    "name": "compass",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 45,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 23507,
+    "name": "crystallized anger",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 400,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 23511,
+    "name": "curious matter",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 430,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 9657,
+    "name": "cyclops toe",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 55,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 11465,
+    "name": "elven astral observer",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 5922,
+    "name": "holy orchid",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 3509,
+    "name": "inkwell",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 720,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 9014,
+    "name": "leaf legs",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 23520,
+    "name": "plasmatic lightning",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 2933,
+    "name": "small oil lamp",
+    "lootOccurrenceCount": 5,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 550
+  },
+  {
+    "itemId": 10297,
+    "name": "antlers",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 22086,
+    "name": "badger boots",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 7500,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 17857,
+    "name": "basalt figurine",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 160,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11652,
+    "name": "broken key ring",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 17818,
+    "name": "cheesy figurine",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 3556,
+    "name": "crocodile boots",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1000,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 28822,
+    "name": "damaged armor plates",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 280,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 25695,
+    "name": "dandelion seeds",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 14041,
+    "name": "deepling ridge",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 360,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 14012,
+    "name": "deepling warts",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 180,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 14013,
+    "name": "deeptags",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 290,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 23508,
+    "name": "energy vein",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 23519,
+    "name": "frozen lightning",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 21164,
+    "name": "glooth cape",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 7000,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 5921,
+    "name": "heaven blossom",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 17850,
+    "name": "holy ash",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 160,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 28568,
+    "name": "inkwell",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 720,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 10451,
+    "name": "jade hat",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 9000,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11470,
+    "name": "jewelled belt",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 180,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11486,
+    "name": "noble turban",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 430,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 28821,
+    "name": "patch of fine cloth",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1350,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 9663,
+    "name": "piece of dead brain",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 420,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 35572,
+    "name": "pirate coin",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 110,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11473,
+    "name": "purple robe",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 110,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11490,
+    "name": "quara pincers",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 410,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11493,
+    "name": "safety pin",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 6525,
+    "name": "skeleton decoration",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 3000,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 11512,
+    "name": "small flask of eyedrops",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 95,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 10408,
+    "name": "spiked iron ball",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 25691,
+    "name": "wild flowers",
+    "lootOccurrenceCount": 4,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 540
+  },
+  {
+    "itemId": 3049,
+    "name": "stealth ring",
+    "lootOccurrenceCount": 53,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 17856,
+    "name": "basalt fetish",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9103,
+    "name": "batwing hat",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 8000,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 25743,
+    "name": "bed of nails",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9633,
+    "name": "bloody pincers",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 100,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 17809,
+    "name": "bola",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 35,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 17830,
+    "name": "bonecarving knife",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 190,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 3408,
+    "name": "bonelord helmet",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 7500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9646,
+    "name": "book of prayers",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11451,
+    "name": "broken crossbow",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 17817,
+    "name": "cheese cutter",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 24385,
+    "name": "cracked alabaster vase",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 180,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11455,
+    "name": "cultish symbol",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11658,
+    "name": "draken sulphur",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 550,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 17819,
+    "name": "earflap",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 31331,
+    "name": "empty honey glass",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 23523,
+    "name": "energy ball",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 300,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 28823,
+    "name": "falcon crest",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 650,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 25742,
+    "name": "fig leaf",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11466,
+    "name": "flask of embalming fluid",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9013,
+    "name": "flower wreath",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9649,
+    "name": "gauze bandage",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9690,
+    "name": "ghostly tissue",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 9055,
+    "name": "glob of tar",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 30,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11539,
+    "name": "goblin ear",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 18926,
+    "name": "horoscope",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 40,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 30058,
+    "name": "ice flower",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 370,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 18929,
+    "name": "incantation notes",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 90,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 34162,
+    "name": "lion cloak patch",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 190,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 34160,
+    "name": "lion crest",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 270,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 32227,
+    "name": "lost soul",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 120,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11474,
+    "name": "miraculum",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 60,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11475,
+    "name": "necromantic robe",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 250,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 7459,
+    "name": "pair of earmuffs",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11482,
+    "name": "piece of warrior armor",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 50,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 18930,
+    "name": "pieces of magic chalk",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 210,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 5918,
+    "name": "pirate knee breeches",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 6095,
+    "name": "pirate shirt",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 500,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 28567,
+    "name": "quill",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1100,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11510,
+    "name": "scroll of heroic deeds",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 230,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 10312,
+    "name": "scythe leg",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 450,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11478,
+    "name": "shamanic hood",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 45,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 22184,
+    "name": "shamanic talisman",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 11450,
+    "name": "small notebook",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 480,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 5875,
+    "name": "sniper gloves",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 2000,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 23517,
+    "name": "solid rage",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 310,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 10309,
+    "name": "strand of medusa hair",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 600,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 20203,
+    "name": "trapped bad dream monster",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 900,
+    "hasImage": false,
+    "priorityScore": 530
+  },
+  {
+    "itemId": 10296,
+    "name": "acorn",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 10,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 24384,
+    "name": "ancient belt buckle",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 260,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 33933,
+    "name": "apron",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 1300,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 11511,
+    "name": "banana sash",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 55,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 5917,
+    "name": "bandana",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 3560,
+    "name": "bast skirt",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 750,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 24381,
+    "name": "beetle carapace",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 520
+  },
+  {
+    "itemId": 9667,
+    "name": "boggy dreads",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 200,
+    "hasImage": false,
+    "priorityScore": 520
+  }
+]

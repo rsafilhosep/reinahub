@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-07-02T00:00:52.366Z",
+  "directories": {
+    "items": "public/assets/items",
+    "monsters": "public/assets/monsters",
+    "npcs": "public/assets/npcs",
+    "bosses": "public/assets/bosses"
+  },
+  "totals": {
+    "items": 38078,
+    "itemImagesFound": 61,
+    "itemImagesMissing": 38017,
+    "monsters": 1765,
+    "monsterImagesFound": 32,
+    "monsterImagesMissing": 1733
+  }
+}

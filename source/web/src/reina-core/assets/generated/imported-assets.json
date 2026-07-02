@@ -1,0 +1,843 @@
+{
+  "generatedAt": "2026-07-01T23:59:27.061Z",
+  "importedCount": 93,
+  "imported": [
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\ancient-amulet.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3025,
+      "name": "ancient amulet",
+      "targetPath": "/assets/items/3025.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Azure Frog.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Azure Frog",
+      "normalizedName": "azure-frog",
+      "targetPath": "/assets/monsters/azure-frog.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\bandana.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 5917,
+      "name": "bandana",
+      "targetPath": "/assets/items/5917.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\bat.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Bat",
+      "normalizedName": "bat",
+      "targetPath": "/assets/monsters/bat.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\battle-axe.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3266,
+      "name": "battle axe",
+      "targetPath": "/assets/items/3266.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\battle-hammer.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3305,
+      "name": "battle hammer",
+      "targetPath": "/assets/items/3305.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\blood-beast.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Blood Beast",
+      "normalizedName": "blood-beast",
+      "targetPath": "/assets/monsters/blood-beast.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\blue-djinn.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Blue Djinn",
+      "normalizedName": "blue-djinn",
+      "targetPath": "/assets/monsters/blue-djinn.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\bolt.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3446,
+      "name": "bolt",
+      "targetPath": "/assets/items/3446.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\brass-armor.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3359,
+      "name": "brass armor",
+      "targetPath": "/assets/items/3359.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\brass-legs.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3372,
+      "name": "brass legs",
+      "targetPath": "/assets/items/3372.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\broken-shamanic-staff.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11452,
+      "name": "broken shamanic staff",
+      "targetPath": "/assets/items/11452.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\carniphila.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Carniphila",
+      "normalizedName": "carniphila",
+      "targetPath": "/assets/monsters/carniphila.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\carrot.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3595,
+      "name": "carrot",
+      "targetPath": "/assets/items/3595.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\cheese-cutter.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 17817,
+      "name": "cheese cutter",
+      "targetPath": "/assets/items/17817.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\coal.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 12600,
+      "name": "coal",
+      "targetPath": "/assets/items/12600.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\corym-charlatan.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Corym Charlatan",
+      "normalizedName": "corym-charlatan",
+      "targetPath": "/assets/monsters/corym-charlatan.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\crab-pincers.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 10272,
+      "name": "crab pincers",
+      "targetPath": "/assets/items/10272.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\crab.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Crab",
+      "normalizedName": "crab",
+      "targetPath": "/assets/monsters/crab.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\crystal-necklace.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3008,
+      "name": "crystal necklace",
+      "targetPath": "/assets/items/3008.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\crystalline-arrow.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 15793,
+      "name": "crystalline arrow",
+      "targetPath": "/assets/items/15793.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\cultish-mask.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 9638,
+      "name": "cultish mask",
+      "targetPath": "/assets/items/9638.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\cyclops.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Cyclops",
+      "normalizedName": "cyclops",
+      "targetPath": "/assets/monsters/cyclops.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dark-armor.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3383,
+      "name": "dark armor",
+      "targetPath": "/assets/items/3383.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dark-mushroom.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3728,
+      "name": "dark mushroom",
+      "targetPath": "/assets/items/3728.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dragon-hatchling.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Dragon Hatchling",
+      "normalizedName": "dragon-hatchling",
+      "targetPath": "/assets/monsters/dragon-hatchling.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dragon-shield.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3416,
+      "name": "dragon shield",
+      "targetPath": "/assets/items/3416.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dragon.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Dragon",
+      "normalizedName": "dragon",
+      "targetPath": "/assets/monsters/dragon.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dragons-tail.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11457,
+      "name": "dragon's tail",
+      "targetPath": "/assets/items/11457.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\dwarven-shield.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3425,
+      "name": "dwarven shield",
+      "targetPath": "/assets/items/3425.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\empty-honey-glass.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 31331,
+      "name": "empty honey glass",
+      "targetPath": "/assets/items/31331.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 283,
+      "name": "empty potion flask",
+      "targetPath": "/assets/items/283.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\exotic-bat.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Exotic Bat",
+      "normalizedName": "exotic-bat",
+      "targetPath": "/assets/monsters/exotic-bat.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\exotic-cave-spider.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Exotic Cave Spider",
+      "normalizedName": "exotic-cave-spider",
+      "targetPath": "/assets/monsters/exotic-cave-spider.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\firestarter.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Firestarter",
+      "normalizedName": "firestarter",
+      "targetPath": "/assets/monsters/firestarter.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\flaming-arrow.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 763,
+      "name": "flaming arrow",
+      "targetPath": "/assets/items/763.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\focus-cape.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 8043,
+      "name": "focus cape",
+      "targetPath": "/assets/items/8043.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\fur-boots.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 7457,
+      "name": "fur boots",
+      "targetPath": "/assets/items/7457.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\gold-coin.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3031,
+      "name": "gold coin",
+      "targetPath": "/assets/items/3031.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\great-mana-potion.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 238,
+      "name": "great mana potion",
+      "targetPath": "/assets/items/238.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\green-dragon-leather.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 5877,
+      "name": "green dragon leather",
+      "targetPath": "/assets/items/5877.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\green-dragon-scale.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 5920,
+      "name": "green dragon scale",
+      "targetPath": "/assets/items/5920.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\green-mushroom.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3732,
+      "name": "green mushroom",
+      "targetPath": "/assets/items/3732.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\half-digested-stones.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 27369,
+      "name": "half-digested stones",
+      "targetPath": "/assets/items/27369.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\health-potion.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 266,
+      "name": "health potion",
+      "targetPath": "/assets/items/266.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\iron-helmet.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3353,
+      "name": "iron helmet",
+      "targetPath": "/assets/items/3353.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\knight-armor.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3370,
+      "name": "knight armor",
+      "targetPath": "/assets/items/3370.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\knight-legs.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3371,
+      "name": "knight legs",
+      "targetPath": "/assets/items/3371.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\mantassin-tail.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11489,
+      "name": "mantassin tail",
+      "targetPath": "/assets/items/11489.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\meat.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3577,
+      "name": "meat",
+      "targetPath": "/assets/items/3577.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-archer.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Minotaur Archer",
+      "normalizedName": "minotaur-archer",
+      "targetPath": "/assets/monsters/minotaur-archer.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-guard.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Minotaur Guard",
+      "normalizedName": "minotaur-guard",
+      "targetPath": "/assets/monsters/minotaur-guard.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-horn.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11472,
+      "name": "minotaur horn",
+      "targetPath": "/assets/items/11472.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-hunter.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Minotaur Hunter",
+      "normalizedName": "minotaur-hunter",
+      "targetPath": "/assets/monsters/minotaur-hunter.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-leather.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 5878,
+      "name": "minotaur leather",
+      "targetPath": "/assets/items/5878.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur-mage.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Minotaur Mage",
+      "normalizedName": "minotaur-mage",
+      "targetPath": "/assets/monsters/minotaur-mage.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\minotaur.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Minotaur",
+      "normalizedName": "minotaur",
+      "targetPath": "/assets/monsters/minotaur.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\mooh-tah-shell.gif",
+      "entityType": "item",
+      "matchedBy": "compactNormalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 21202,
+      "name": "mooh'tah shell",
+      "targetPath": "/assets/items/21202.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\plate-armor.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3357,
+      "name": "plate armor",
+      "targetPath": "/assets/items/3357.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\platinum-coin.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3035,
+      "name": "platinum coin",
+      "targetPath": "/assets/items/3035.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\poisonous-slime.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 9640,
+      "name": "poisonous slime",
+      "targetPath": "/assets/items/9640.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-bone.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11491,
+      "name": "quara bone",
+      "targetPath": "/assets/items/11491.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-constrictor-scout.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Constrictor Scout",
+      "normalizedName": "quara-constrictor-scout",
+      "targetPath": "/assets/monsters/quara-constrictor-scout.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-eye.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11488,
+      "name": "quara eye",
+      "targetPath": "/assets/items/11488.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-hydromancer-scout.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Hydromancer Scout",
+      "normalizedName": "quara-hydromancer-scout",
+      "targetPath": "/assets/monsters/quara-hydromancer-scout.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-mantassin-scout.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Mantassin Scout",
+      "normalizedName": "quara-mantassin-scout",
+      "targetPath": "/assets/monsters/quara-mantassin-scout.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-mantassin.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Mantassin",
+      "normalizedName": "quara-mantassin",
+      "targetPath": "/assets/monsters/quara-mantassin.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-pincher-scout.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Pincher Scout",
+      "normalizedName": "quara-pincher-scout",
+      "targetPath": "/assets/monsters/quara-pincher-scout.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-predator-scout.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Quara Predator Scout",
+      "normalizedName": "quara-predator-scout",
+      "targetPath": "/assets/monsters/quara-predator-scout.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\quara-tentacle.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11487,
+      "name": "quara tentacle",
+      "targetPath": "/assets/items/11487.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\rare-earth.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 27301,
+      "name": "rare earth",
+      "targetPath": "/assets/items/27301.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\rat.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Rat",
+      "normalizedName": "rat",
+      "targetPath": "/assets/monsters/rat.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\rope-belt.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 11492,
+      "name": "rope belt",
+      "targetPath": "/assets/items/11492.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\shaburak-demon.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Shaburak Demon",
+      "normalizedName": "shaburak-demon",
+      "targetPath": "/assets/monsters/shaburak-demon.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\shrimp.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3581,
+      "name": "shrimp",
+      "targetPath": "/assets/items/3581.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\sibang.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Sibang",
+      "normalizedName": "sibang",
+      "targetPath": "/assets/monsters/sibang.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\small-diamond.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3028,
+      "name": "small diamond",
+      "targetPath": "/assets/items/3028.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\small-oil-lamp.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 2933,
+      "name": "small oil lamp",
+      "targetPath": "/assets/items/2933.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\small-ruby.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3030,
+      "name": "small ruby",
+      "targetPath": "/assets/items/3030.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\soft-cheese.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 17820,
+      "name": "soft cheese",
+      "targetPath": "/assets/items/17820.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\steel-boots.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3554,
+      "name": "steel boots",
+      "targetPath": "/assets/items/3554.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\steel-helmet.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 3351,
+      "name": "steel helmet",
+      "targetPath": "/assets/items/3351.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\stonerefiner.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Stonerefiner",
+      "normalizedName": "stonerefiner",
+      "targetPath": "/assets/monsters/stonerefiner.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\strong-health-potion.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 236,
+      "name": "strong health potion",
+      "targetPath": "/assets/items/236.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\strong-mana-potion.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 237,
+      "name": "strong mana potion",
+      "targetPath": "/assets/items/237.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\swampling-club.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 17824,
+      "name": "swampling club",
+      "targetPath": "/assets/items/17824.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\tarantula.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Tarantula",
+      "normalizedName": "tarantula",
+      "targetPath": "/assets/monsters/tarantula.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\taurus-mace.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 7425,
+      "name": "taurus mace",
+      "targetPath": "/assets/items/7425.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\terra-boots.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 813,
+      "name": "terra boots",
+      "targetPath": "/assets/items/813.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\vial.gif",
+      "entityType": "item",
+      "matchedBy": "normalizedItemName",
+      "sourceExtension": ".gif",
+      "itemId": 2874,
+      "name": "vial",
+      "targetPath": "/assets/items/2874.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Wiggler.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Wiggler",
+      "normalizedName": "wiggler",
+      "targetPath": "/assets/monsters/wiggler.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\wild-warrior.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Wild Warrior",
+      "normalizedName": "wild-warrior",
+      "targetPath": "/assets/monsters/wild-warrior.gif"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\worm-priestess.gif",
+      "entityType": "monster",
+      "matchedBy": "normalizedMonsterName",
+      "sourceExtension": ".gif",
+      "name": "Worm Priestess",
+      "normalizedName": "worm-priestess",
+      "targetPath": "/assets/monsters/worm-priestess.gif"
+    }
+  ]
+}

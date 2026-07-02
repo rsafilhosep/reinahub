@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Bakragore",
+    "normalizedName": "bakragore",
+    "expectedPath": "/assets/monsters/bakragore.gif",
+    "experience": 15000000,
+    "health": 660000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 150890
+  },
+  {
+    "name": "Zarcorix Of Yalahar",
+    "normalizedName": "zarcorix-of-yalahar",
+    "expectedPath": "/assets/monsters/zarcorix-of-yalahar.gif",
+    "experience": 0,
+    "health": 99999999,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 100000
+  },
+  {
+    "name": "Chagorz",
+    "normalizedName": "chagorz",
+    "expectedPath": "/assets/monsters/chagorz.gif",
+    "experience": 3250000,
+    "health": 350000,
+    "lootEntryCount": 20,
+    "hasImage": false,
+    "priorityScore": 33050
+  },
+  {
+    "name": "Vemiath",
+    "normalizedName": "vemiath",
+    "expectedPath": "/assets/monsters/vemiath.gif",
+    "experience": 3250000,
+    "health": 350000,
+    "lootEntryCount": 20,
+    "hasImage": false,
+    "priorityScore": 33050
+  },
+  {
+    "name": "Ichgahal",
+    "normalizedName": "ichgahal",
+    "expectedPath": "/assets/monsters/ichgahal.gif",
+    "experience": 3250000,
+    "health": 350000,
+    "lootEntryCount": 19,
+    "hasImage": false,
+    "priorityScore": 33040
+  },
+  {
+    "name": "Murcion",
+    "normalizedName": "murcion",
+    "expectedPath": "/assets/monsters/murcion.gif",
+    "experience": 3250000,
+    "health": 350000,
+    "lootEntryCount": 15,
+    "hasImage": false,
+    "priorityScore": 33000
+  },
+  {
+    "name": "Morshabaal",
+    "normalizedName": "morshabaal",
+    "expectedPath": "/assets/monsters/morshabaal.gif",
+    "experience": 3000000,
+    "health": 1000000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 31000
+  },
+  {
+    "name": "Ferumbras Mortal Shell",
+    "normalizedName": "ferumbras-mortal-shell",
+    "expectedPath": "/assets/monsters/ferumbras-mortal-shell.gif",
+    "experience": 2000000,
+    "health": 300000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 20300
+  },
+  {
+    "name": "The Abomination",
+    "normalizedName": "the-abomination",
+    "expectedPath": "/assets/monsters/the-abomination.gif",
+    "experience": 1500000,
+    "health": 750000,
+    "lootEntryCount": 20,
+    "hasImage": false,
+    "priorityScore": 15950
+  },
+  {
+    "name": "The Distorted Astral Source",
+    "normalizedName": "the-distorted-astral-source",
+    "expectedPath": "/assets/monsters/the-distorted-astral-source.gif",
+    "experience": 3000,
+    "health": 10000000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 10030
+  },
+  {
+    "name": "Eldritch Dragon Lord",
+    "normalizedName": "eldritch-dragon-lord",
+    "expectedPath": "/assets/monsters/eldritch-dragon-lord.gif",
+    "experience": 750000,
+    "health": 350000,
+    "lootEntryCount": 35,
+    "hasImage": false,
+    "priorityScore": 8200
+  },
+  {
+    "name": "The Gravedigger",
+    "normalizedName": "the-gravedigger",
+    "expectedPath": "/assets/monsters/the-gravedigger.gif",
+    "experience": 750000,
+    "health": 65000,
+    "lootEntryCount": 31,
+    "hasImage": false,
+    "priorityScore": 7875
+  },
+  {
+    "name": "The Rootkraken",
+    "normalizedName": "the-rootkraken",
+    "expectedPath": "/assets/monsters/the-rootkraken.gif",
+    "experience": 700000,
+    "health": 350000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 7590
+  },
+  {
+    "name": "Fatal Bug",
+    "normalizedName": "fatal-bug",
+    "expectedPath": "/assets/monsters/fatal-bug.gif",
+    "experience": 668000,
+    "health": 250000,
+    "lootEntryCount": 33,
+    "hasImage": false,
+    "priorityScore": 7260
+  },
+  {
+    "name": "Razzagorn",
+    "normalizedName": "razzagorn",
+    "expectedPath": "/assets/monsters/razzagorn.gif",
+    "experience": 500000,
+    "health": 290000,
+    "lootEntryCount": 34,
+    "hasImage": false,
+    "priorityScore": 5630
+  },
+  {
+    "name": "Tarbaz",
+    "normalizedName": "tarbaz",
+    "expectedPath": "/assets/monsters/tarbaz.gif",
+    "experience": 500000,
+    "health": 290000,
+    "lootEntryCount": 31,
+    "hasImage": false,
+    "priorityScore": 5600
+  },
+  {
+    "name": "Mazoran",
+    "normalizedName": "mazoran",
+    "expectedPath": "/assets/monsters/mazoran.gif",
+    "experience": 500000,
+    "health": 290000,
+    "lootEntryCount": 29,
+    "hasImage": false,
+    "priorityScore": 5580
+  },
+  {
+    "name": "Zamulosh",
+    "normalizedName": "zamulosh",
+    "expectedPath": "/assets/monsters/zamulosh.gif",
+    "experience": 500000,
+    "health": 300000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 5540
+  },
+  {
+    "name": "Plagirath",
+    "normalizedName": "plagirath",
+    "expectedPath": "/assets/monsters/plagirath.gif",
+    "experience": 500000,
+    "health": 290000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 5520
+  },
+  {
+    "name": "Shulgrax",
+    "normalizedName": "shulgrax",
+    "expectedPath": "/assets/monsters/shulgrax.gif",
+    "experience": 500000,
+    "health": 40000,
+    "lootEntryCount": 38,
+    "hasImage": false,
+    "priorityScore": 5420
+  },
+  {
+    "name": "Arbaziloth",
+    "normalizedName": "arbaziloth",
+    "expectedPath": "/assets/monsters/arbaziloth.gif",
+    "experience": 500000,
+    "health": 360000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 5360
+  },
+  {
+    "name": "Weakened Arbaziloth",
+    "normalizedName": "weakened-arbaziloth",
+    "expectedPath": "/assets/monsters/weakened-arbaziloth.gif",
+    "experience": 500000,
+    "health": 360000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 5360
+  },
+  {
+    "name": "Ragiaz",
+    "normalizedName": "ragiaz",
+    "expectedPath": "/assets/monsters/ragiaz.gif",
+    "experience": 500000,
+    "health": 280000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 5280
+  },
+  {
+    "name": "Vladrukh",
+    "normalizedName": "vladrukh",
+    "expectedPath": "/assets/monsters/vladrukh.gif",
+    "experience": 450000,
+    "health": 250000,
+    "lootEntryCount": 15,
+    "hasImage": false,
+    "priorityScore": 4900
+  },
+  {
+    "name": "Abyssador",
+    "normalizedName": "abyssador",
+    "expectedPath": "/assets/monsters/abyssador.gif",
+    "experience": 400000,
+    "health": 340000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 4340
+  },
+  {
+    "name": "Gnomevil",
+    "normalizedName": "gnomevil",
+    "expectedPath": "/assets/monsters/gnomevil.gif",
+    "experience": 400000,
+    "health": 250000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 4250
+  },
+  {
+    "name": "Freegoiz",
+    "normalizedName": "freegoiz",
+    "expectedPath": "/assets/monsters/freegoiz.gif",
+    "experience": 350000,
+    "health": 80000,
+    "lootEntryCount": 57,
+    "hasImage": false,
+    "priorityScore": 4150
+  },
+  {
+    "name": "The Count of the Core",
+    "normalizedName": "the-count-of-the-core",
+    "expectedPath": "/assets/monsters/the-count-of-the-core.gif",
+    "experience": 300000,
+    "health": 350000,
+    "lootEntryCount": 43,
+    "hasImage": false,
+    "priorityScore": 3780
+  },
+  {
+    "name": "The Duke of the Depths",
+    "normalizedName": "the-duke-of-the-depths",
+    "expectedPath": "/assets/monsters/the-duke-of-the-depths.gif",
+    "experience": 300000,
+    "health": 350000,
+    "lootEntryCount": 39,
+    "hasImage": false,
+    "priorityScore": 3740
+  },
+  {
+    "name": "Mitmah Vanguard",
+    "normalizedName": "mitmah-vanguard",
+    "expectedPath": "/assets/monsters/mitmah-vanguard.gif",
+    "experience": 300000,
+    "health": 250000,
+    "lootEntryCount": 32,
+    "hasImage": false,
+    "priorityScore": 3570
+  },
+  {
+    "name": "Ice Horror",
+    "normalizedName": "ice-horror",
+    "expectedPath": "/assets/monsters/ice-horror.gif",
+    "experience": 259000,
+    "health": 550000,
+    "lootEntryCount": 40,
+    "hasImage": false,
+    "priorityScore": 3540
+  },
+  {
+    "name": "Prince Drazzak",
+    "normalizedName": "prince-drazzak",
+    "expectedPath": "/assets/monsters/prince-drazzak.gif",
+    "experience": 210000,
+    "health": 330000,
+    "lootEntryCount": 20,
+    "hasImage": false,
+    "priorityScore": 2630
+  },
+  {
+    "name": "The Nightmare Beast",
+    "normalizedName": "the-nightmare-beast",
+    "expectedPath": "/assets/monsters/the-nightmare-beast.gif",
+    "experience": 75000,
+    "health": 850000,
+    "lootEntryCount": 47,
+    "hasImage": false,
+    "priorityScore": 2070
+  },
+  {
+    "name": "Court Warlock",
+    "normalizedName": "court-warlock",
+    "expectedPath": "/assets/monsters/court-warlock.gif",
+    "experience": 147000,
+    "health": 120000,
+    "lootEntryCount": 43,
+    "hasImage": false,
+    "priorityScore": 2020
+  },
+  {
+    "name": "The Scourge of Oblivion",
+    "normalizedName": "the-scourge-of-oblivion",
+    "expectedPath": "/assets/monsters/the-scourge-of-oblivion.gif",
+    "experience": 75000,
+    "health": 800000,
+    "lootEntryCount": 40,
+    "hasImage": false,
+    "priorityScore": 1950
+  },
+  {
+    "name": "Essence of Malice",
+    "normalizedName": "essence-of-malice",
+    "expectedPath": "/assets/monsters/essence-of-malice.gif",
+    "experience": 150000,
+    "health": 250000,
+    "lootEntryCount": 17,
+    "hasImage": false,
+    "priorityScore": 1920
+  },
+  {
+    "name": "Gorzindel",
+    "normalizedName": "gorzindel",
+    "expectedPath": "/assets/monsters/gorzindel.gif",
+    "experience": 100000,
+    "health": 300000,
+    "lootEntryCount": 37,
+    "hasImage": false,
+    "priorityScore": 1670
+  },
+  {
+    "name": "The Last Lore Keeper",
+    "normalizedName": "the-last-lore-keeper",
+    "expectedPath": "/assets/monsters/the-last-lore-keeper.gif",
+    "experience": 45000,
+    "health": 750000,
+    "lootEntryCount": 47,
+    "hasImage": false,
+    "priorityScore": 1670
+  },
+  {
+    "name": "Ancient Spawn of Morgathla",
+    "normalizedName": "ancient-spawn-of-morgathla",
+    "expectedPath": "/assets/monsters/ancient-spawn-of-morgathla.gif",
+    "experience": 70000,
+    "health": 900000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 1600
+  },
+  {
+    "name": "Rupture",
+    "normalizedName": "rupture",
+    "expectedPath": "/assets/monsters/rupture.gif",
+    "experience": 112000,
+    "health": 290000,
+    "lootEntryCount": 19,
+    "hasImage": false,
+    "priorityScore": 1600
+  },
+  {
+    "name": "Lokathmor",
+    "normalizedName": "lokathmor",
+    "expectedPath": "/assets/monsters/lokathmor.gif",
+    "experience": 100000,
+    "health": 300000,
+    "lootEntryCount": 26,
+    "hasImage": false,
+    "priorityScore": 1560
+  },
+  {
+    "name": "Magma Bubble",
+    "normalizedName": "magma-bubble",
+    "expectedPath": "/assets/monsters/magma-bubble.gif",
+    "experience": 80000,
+    "health": 450000,
+    "lootEntryCount": 28,
+    "hasImage": false,
+    "priorityScore": 1530
+  },
+  {
+    "name": "Mazzinor",
+    "normalizedName": "mazzinor",
+    "expectedPath": "/assets/monsters/mazzinor.gif",
+    "experience": 100000,
+    "health": 300000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 1530
+  },
+  {
+    "name": "King Zelos",
+    "normalizedName": "king-zelos",
+    "expectedPath": "/assets/monsters/king-zelos.gif",
+    "experience": 75000,
+    "health": 480000,
+    "lootEntryCount": 27,
+    "hasImage": false,
+    "priorityScore": 1500
+  },
+  {
+    "name": "Urmahlullu the Weakened",
+    "normalizedName": "urmahlullu-the-weakened",
+    "expectedPath": "/assets/monsters/urmahlullu-the-weakened.gif",
+    "experience": 55000,
+    "health": 512000,
+    "lootEntryCount": 43,
+    "hasImage": false,
+    "priorityScore": 1492
+  },
+  {
+    "name": "Plagueroot",
+    "normalizedName": "plagueroot",
+    "expectedPath": "/assets/monsters/plagueroot.gif",
+    "experience": 55000,
+    "health": 320000,
+    "lootEntryCount": 62,
+    "hasImage": false,
+    "priorityScore": 1490
+  },
+  {
+    "name": "The Corruptor of Souls",
+    "normalizedName": "the-corruptor-of-souls",
+    "expectedPath": "/assets/monsters/the-corruptor-of-souls.gif",
+    "experience": 112000,
+    "health": 290000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 1410
+  },
+  {
+    "name": "Dragon Hoard",
+    "normalizedName": "dragon-hoard",
+    "expectedPath": "/assets/monsters/dragon-hoard.gif",
+    "experience": 0,
+    "health": 999999,
+    "lootEntryCount": 35,
+    "hasImage": false,
+    "priorityScore": 1350
+  },
+  {
+    "name": "The Brainstealer",
+    "normalizedName": "the-brainstealer",
+    "expectedPath": "/assets/monsters/the-brainstealer.gif",
+    "experience": 72000,
+    "health": 300000,
+    "lootEntryCount": 33,
+    "hasImage": false,
+    "priorityScore": 1350
+  },
+  {
+    "name": "Adventurer Group",
+    "normalizedName": "adventurer-group",
+    "expectedPath": "/assets/monsters/adventurer-group.gif",
+    "experience": 100000,
+    "health": 80000,
+    "lootEntryCount": 21,
+    "hasImage": false,
+    "priorityScore": 1290
+  },
+  {
+    "name": "Izcandar the Banished",
+    "normalizedName": "izcandar-the-banished",
+    "expectedPath": "/assets/monsters/izcandar-the-banished.gif",
+    "experience": 55000,
+    "health": 320000,
+    "lootEntryCount": 42,
+    "hasImage": false,
+    "priorityScore": 1290
+  },
+  {
+    "name": "Maxxenius",
+    "normalizedName": "maxxenius",
+    "expectedPath": "/assets/monsters/maxxenius.gif",
+    "experience": 55000,
+    "health": 320000,
+    "lootEntryCount": 42,
+    "hasImage": false,
+    "priorityScore": 1290
+  },
+  {
+    "name": "Alptramun",
+    "normalizedName": "alptramun",
+    "expectedPath": "/assets/monsters/alptramun.gif",
+    "experience": 55000,
+    "health": 320000,
+    "lootEntryCount": 41,
+    "hasImage": false,
+    "priorityScore": 1280
+  },
+  {
+    "name": "The Baron from Below",
+    "normalizedName": "the-baron-from-below",
+    "expectedPath": "/assets/monsters/the-baron-from-below.gif",
+    "experience": 50000,
+    "health": 350000,
+    "lootEntryCount": 41,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "name": "The Dread Maiden",
+    "normalizedName": "the-dread-maiden",
+    "expectedPath": "/assets/monsters/the-dread-maiden.gif",
+    "experience": 72000,
+    "health": 300000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 1260
+  },
+  {
+    "name": "Malofur Mangrinder",
+    "normalizedName": "malofur-mangrinder",
+    "expectedPath": "/assets/monsters/malofur-mangrinder.gif",
+    "experience": 55000,
+    "health": 320000,
+    "lootEntryCount": 35,
+    "hasImage": false,
+    "priorityScore": 1220
+  },
+  {
+    "name": "The Souldespoiler",
+    "normalizedName": "the-souldespoiler",
+    "expectedPath": "/assets/monsters/the-souldespoiler.gif",
+    "experience": 50000,
+    "health": 290000,
+    "lootEntryCount": 37,
+    "hasImage": false,
+    "priorityScore": 1160
+  },
+  {
+    "name": "Clavius",
+    "normalizedName": "clavius",
+    "expectedPath": "/assets/monsters/clavius.gif",
+    "experience": 75000,
+    "health": 40000,
+    "lootEntryCount": 36,
+    "hasImage": false,
+    "priorityScore": 1150
+  },
+  {
+    "name": "Overseer Osverger",
+    "normalizedName": "overseer-osverger",
+    "expectedPath": "/assets/monsters/overseer-osverger.gif",
+    "experience": 75000,
+    "health": 75000,
+    "lootEntryCount": 32,
+    "hasImage": false,
+    "priorityScore": 1145
+  },
+  {
+    "name": "Anomaly",
+    "normalizedName": "anomaly",
+    "expectedPath": "/assets/monsters/anomaly.gif",
+    "experience": 50000,
+    "health": 290000,
+    "lootEntryCount": 34,
+    "hasImage": false,
+    "priorityScore": 1130
+  },
+  {
+    "name": "Lord Azaram",
+    "normalizedName": "lord-azaram",
+    "expectedPath": "/assets/monsters/lord-azaram.gif",
+    "experience": 55000,
+    "health": 300000,
+    "lootEntryCount": 28,
+    "hasImage": false,
+    "priorityScore": 1130
+  },
+  {
+    "name": "Omrafir",
+    "normalizedName": "omrafir",
+    "expectedPath": "/assets/monsters/omrafir.gif",
+    "experience": 50000,
+    "health": 322000,
+    "lootEntryCount": 30,
+    "hasImage": false,
+    "priorityScore": 1122
+  },
+  {
+    "name": "Michael the Stalwart",
+    "normalizedName": "michael-the-stalwart",
+    "expectedPath": "/assets/monsters/michael-the-stalwart.gif",
+    "experience": 75000,
+    "health": 60000,
+    "lootEntryCount": 31,
+    "hasImage": false,
+    "priorityScore": 1120
+  },
+  {
+    "name": "The False God",
+    "normalizedName": "the-false-god",
+    "expectedPath": "/assets/monsters/the-false-god.gif",
+    "experience": 50000,
+    "health": 300000,
+    "lootEntryCount": 32,
+    "hasImage": false,
+    "priorityScore": 1120
+  },
+  {
+    "name": "Adlerauge",
+    "normalizedName": "adlerauge",
+    "expectedPath": "/assets/monsters/adlerauge.gif",
+    "experience": 75000,
+    "health": 45000,
+    "lootEntryCount": 32,
+    "hasImage": false,
+    "priorityScore": 1115
+  },
+  {
+    "name": "Soul Cage",
+    "normalizedName": "soul-cage",
+    "expectedPath": "/assets/monsters/soul-cage.gif",
+    "experience": 100000,
+    "health": 100000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 1100
+  },
+  {
+    "name": "Ghulosh",
+    "normalizedName": "ghulosh",
+    "expectedPath": "/assets/monsters/ghulosh.gif",
+    "experience": 45000,
+    "health": 300000,
+    "lootEntryCount": 31,
+    "hasImage": false,
+    "priorityScore": 1060
+  },
+  {
+    "name": "Eradicator",
+    "normalizedName": "eradicator",
+    "expectedPath": "/assets/monsters/eradicator.gif",
+    "experience": 50000,
+    "health": 290000,
+    "lootEntryCount": 26,
+    "hasImage": false,
+    "priorityScore": 1050
+  },
+  {
+    "name": "World Devourer",
+    "normalizedName": "world-devourer",
+    "expectedPath": "/assets/monsters/world-devourer.gif",
+    "experience": 77700,
+    "health": 25000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 1042
+  },
+  {
+    "name": "Eradicator2",
+    "normalizedName": "eradicator2",
+    "expectedPath": "/assets/monsters/eradicator2.gif",
+    "experience": 50000,
+    "health": 290000,
+    "lootEntryCount": 25,
+    "hasImage": false,
+    "priorityScore": 1040
+  },
+  {
+    "name": "The Pale Worm",
+    "normalizedName": "the-pale-worm",
+    "expectedPath": "/assets/monsters/the-pale-worm.gif",
+    "experience": 30000,
+    "health": 420000,
+    "lootEntryCount": 31,
+    "hasImage": false,
+    "priorityScore": 1030
+  },
+  {
+    "name": "Morbol",
+    "normalizedName": "morbol",
+    "expectedPath": "/assets/monsters/morbol.gif",
+    "experience": 75000,
+    "health": 75000,
+    "lootEntryCount": 20,
+    "hasImage": false,
+    "priorityScore": 1025
+  },
+  {
+    "name": "The Time Guardian",
+    "normalizedName": "the-time-guardian",
+    "expectedPath": "/assets/monsters/the-time-guardian.gif",
+    "experience": 50000,
+    "health": 150000,
+    "lootEntryCount": 36,
+    "hasImage": false,
+    "priorityScore": 1010
+  },
+  {
+    "name": "Lady Tenebris",
+    "normalizedName": "lady-tenebris",
+    "expectedPath": "/assets/monsters/lady-tenebris.gif",
+    "experience": 50000,
+    "health": 150000,
+    "lootEntryCount": 35,
+    "hasImage": false,
+    "priorityScore": 1000
+  },
+  {
+    "name": "Target Dummy",
+    "normalizedName": "target-dummy",
+    "expectedPath": "/assets/monsters/target-dummy.gif",
+    "experience": 0,
+    "health": 1000000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 1000
+  },
+  {
+    "name": "Verminor",
+    "normalizedName": "verminor",
+    "expectedPath": "/assets/monsters/verminor.gif",
+    "experience": 35000,
+    "health": 80000,
+    "lootEntryCount": 57,
+    "hasImage": false,
+    "priorityScore": 1000
+  },
+  {
+    "name": "Bazir",
+    "normalizedName": "bazir",
+    "expectedPath": "/assets/monsters/bazir.gif",
+    "experience": 30000,
+    "health": 110000,
+    "lootEntryCount": 57,
+    "hasImage": false,
+    "priorityScore": 980
+  },
+  {
+    "name": "Infernatil",
+    "normalizedName": "infernatil",
+    "expectedPath": "/assets/monsters/infernatil.gif",
+    "experience": 30000,
+    "health": 110000,
+    "lootEntryCount": 57,
+    "hasImage": false,
+    "priorityScore": 980
+  },
+  {
+    "name": "The Source of Corruption",
+    "normalizedName": "the-source-of-corruption",
+    "expectedPath": "/assets/monsters/the-source-of-corruption.gif",
+    "experience": 0,
+    "health": 500000,
+    "lootEntryCount": 47,
+    "hasImage": false,
+    "priorityScore": 970
+  },
+  {
+    "name": "Outburst",
+    "normalizedName": "outburst",
+    "expectedPath": "/assets/monsters/outburst.gif",
+    "experience": 50000,
+    "health": 290000,
+    "lootEntryCount": 17,
+    "hasImage": false,
+    "priorityScore": 960
+  },
+  {
+    "name": "Tremor Worm",
+    "normalizedName": "tremor-worm",
+    "expectedPath": "/assets/monsters/tremor-worm.gif",
+    "experience": 80000,
+    "health": 125000,
+    "lootEntryCount": 3,
+    "hasImage": false,
+    "priorityScore": 955
+  },
+  {
+    "name": "Melting Frozen Horror",
+    "normalizedName": "melting-frozen-horror",
+    "expectedPath": "/assets/monsters/melting-frozen-horror.gif",
+    "experience": 65000,
+    "health": 70000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 950
+  },
+  {
+    "name": "Count Vlarkorth",
+    "normalizedName": "count-vlarkorth",
+    "expectedPath": "/assets/monsters/count-vlarkorth.gif",
+    "experience": 55000,
+    "health": 75000,
+    "lootEntryCount": 30,
+    "hasImage": false,
+    "priorityScore": 925
+  },
+  {
+    "name": "Lloyd",
+    "normalizedName": "lloyd",
+    "expectedPath": "/assets/monsters/lloyd.gif",
+    "experience": 50000,
+    "health": 64000,
+    "lootEntryCount": 36,
+    "hasImage": false,
+    "priorityScore": 924
+  },
+  {
+    "name": "The Mutated Pumpkin",
+    "normalizedName": "the-mutated-pumpkin",
+    "expectedPath": "/assets/monsters/the-mutated-pumpkin.gif",
+    "experience": 30000,
+    "health": 500000,
+    "lootEntryCount": 12,
+    "hasImage": false,
+    "priorityScore": 920
+  },
+  {
+    "name": "Hazardous Phantom",
+    "normalizedName": "hazardous-phantom",
+    "expectedPath": "/assets/monsters/hazardous-phantom.gif",
+    "experience": 66000,
+    "health": 70000,
+    "lootEntryCount": 16,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "name": "Earl Osam",
+    "normalizedName": "earl-osam",
+    "expectedPath": "/assets/monsters/earl-osam.gif",
+    "experience": 55000,
+    "health": 75000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 865
+  },
+  {
+    "name": "Sir Baeloc",
+    "normalizedName": "sir-baeloc",
+    "expectedPath": "/assets/monsters/sir-baeloc.gif",
+    "experience": 55000,
+    "health": 75000,
+    "lootEntryCount": 24,
+    "hasImage": false,
+    "priorityScore": 865
+  },
+  {
+    "name": "The Freezing Time Guardian",
+    "normalizedName": "the-freezing-time-guardian",
+    "expectedPath": "/assets/monsters/the-freezing-time-guardian.gif",
+    "experience": 50000,
+    "health": 150000,
+    "lootEntryCount": 21,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "name": "The Shatterer",
+    "normalizedName": "the-shatterer",
+    "expectedPath": "/assets/monsters/the-shatterer.gif",
+    "experience": 58000,
+    "health": 220000,
+    "lootEntryCount": 6,
+    "hasImage": false,
+    "priorityScore": 860
+  },
+  {
+    "name": "Duke Krule",
+    "normalizedName": "duke-krule",
+    "expectedPath": "/assets/monsters/duke-krule.gif",
+    "experience": 55000,
+    "health": 75000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 855
+  },
+  {
+    "name": "Soul of Dragonking Zyrtarch",
+    "normalizedName": "soul-of-dragonking-zyrtarch",
+    "expectedPath": "/assets/monsters/soul-of-dragonking-zyrtarch.gif",
+    "experience": 70000,
+    "health": 150000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "name": "The Unwelcome",
+    "normalizedName": "the-unwelcome",
+    "expectedPath": "/assets/monsters/the-unwelcome.gif",
+    "experience": 30000,
+    "health": 300000,
+    "lootEntryCount": 25,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "name": "Timira the Many-Headed",
+    "normalizedName": "timira-the-many-headed",
+    "expectedPath": "/assets/monsters/timira-the-many-headed.gif",
+    "experience": 45500,
+    "health": 75000,
+    "lootEntryCount": 32,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "name": "Zamulosh2",
+    "normalizedName": "zamulosh2",
+    "expectedPath": "/assets/monsters/zamulosh2.gif",
+    "experience": 55000,
+    "health": 300000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 850
+  },
+  {
+    "name": "The Fear Feaster",
+    "normalizedName": "the-fear-feaster",
+    "expectedPath": "/assets/monsters/the-fear-feaster.gif",
+    "experience": 30000,
+    "health": 300000,
+    "lootEntryCount": 23,
+    "hasImage": false,
+    "priorityScore": 830
+  },
+  {
+    "name": "The Blazing Time Guardian",
+    "normalizedName": "the-blazing-time-guardian",
+    "expectedPath": "/assets/monsters/the-blazing-time-guardian.gif",
+    "experience": 50000,
+    "health": 150000,
+    "lootEntryCount": 14,
+    "hasImage": false,
+    "priorityScore": 790
+  },
+  {
+    "name": "Apocalypse",
+    "normalizedName": "apocalypse",
+    "expectedPath": "/assets/monsters/apocalypse.gif",
+    "experience": 30000,
+    "health": 125000,
+    "lootEntryCount": 34,
+    "hasImage": false,
+    "priorityScore": 765
+  },
+  {
+    "name": "The Fire Empowered Duke",
+    "normalizedName": "the-fire-empowered-duke",
+    "expectedPath": "/assets/monsters/the-fire-empowered-duke.gif",
+    "experience": 40000,
+    "health": 350000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 750
+  },
+  {
+    "name": "The Hungry Baron from Below",
+    "normalizedName": "the-hungry-baron-from-below",
+    "expectedPath": "/assets/monsters/the-hungry-baron-from-below.gif",
+    "experience": 40000,
+    "health": 350000,
+    "lootEntryCount": 0,
+    "hasImage": false,
+    "priorityScore": 750
+  }
+]

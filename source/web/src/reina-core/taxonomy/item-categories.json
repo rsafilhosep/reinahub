@@ -1,0 +1,23 @@
+[
+  { "id": "currency", "label": "Currency" },
+  { "id": "creature-product", "label": "Creature Product" },
+  { "id": "equipment", "label": "Equipment" },
+  { "id": "weapon", "label": "Weapon" },
+  { "id": "armor", "label": "Armor" },
+  { "id": "shield", "label": "Shield" },
+  { "id": "legs", "label": "Legs" },
+  { "id": "helmet", "label": "Helmet" },
+  { "id": "boots", "label": "Boots" },
+  { "id": "amulet", "label": "Amulet" },
+  { "id": "ring", "label": "Ring" },
+  { "id": "backpack", "label": "Backpack" },
+  { "id": "tool", "label": "Tool" },
+  { "id": "rune", "label": "Rune" },
+  { "id": "potion", "label": "Potion" },
+  { "id": "food", "label": "Food" },
+  { "id": "quest-item", "label": "Quest Item" },
+  { "id": "decoration", "label": "Decoration" },
+  { "id": "book", "label": "Book" },
+  { "id": "container", "label": "Container" },
+  { "id": "misc", "label": "Misc" }
+]

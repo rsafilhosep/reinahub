@@ -1,0 +1,10 @@
+[
+  { "id": "club", "label": "Club" },
+  { "id": "sword", "label": "Sword" },
+  { "id": "axe", "label": "Axe" },
+  { "id": "fist", "label": "Fist" },
+  { "id": "distance", "label": "Distance" },
+  { "id": "wand", "label": "Wand" },
+  { "id": "rod", "label": "Rod" },
+  { "id": "ammunition", "label": "Ammunition" }
+]

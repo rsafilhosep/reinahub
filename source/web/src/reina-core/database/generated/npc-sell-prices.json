@@ -1,0 +1,3432 @@
+[
+  {
+    "itemId": 2006,
+    "itemName": "vial",
+    "sellPrice": 5
+  },
+  {
+    "itemId": 2063,
+    "itemName": "small oil lamp",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 2174,
+    "itemName": "strange symbol",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 2179,
+    "itemName": "gold ring",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 2195,
+    "itemName": "boots of haste",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 2409,
+    "itemName": "serpent sword",
+    "sellPrice": 900
+  },
+  {
+    "itemId": 2457,
+    "itemName": "steel helmet",
+    "sellPrice": 293
+  },
+  {
+    "itemId": 2458,
+    "itemName": "chain helmet",
+    "sellPrice": 17
+  },
+  {
+    "itemId": 2459,
+    "itemName": "iron helmet",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 2460,
+    "itemName": "brass helmet",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 2461,
+    "itemName": "leather helmet",
+    "sellPrice": 4
+  },
+  {
+    "itemId": 2462,
+    "itemName": "devil helmet",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 2463,
+    "itemName": "plate armor",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 2464,
+    "itemName": "chain armor",
+    "sellPrice": 70
+  },
+  {
+    "itemId": 2465,
+    "itemName": "brass armor",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 2466,
+    "itemName": "golden armor",
+    "sellPrice": 20000
+  },
+  {
+    "itemId": 2470,
+    "itemName": "golden legs",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 2472,
+    "itemName": "magic plate armor",
+    "sellPrice": 90000
+  },
+  {
+    "itemId": 2473,
+    "itemName": "viking helmet",
+    "sellPrice": 66
+  },
+  {
+    "itemId": 2475,
+    "itemName": "warrior helmet",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 2476,
+    "itemName": "knight armor",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 2477,
+    "itemName": "knight legs",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 2478,
+    "itemName": "brass legs",
+    "sellPrice": 49
+  },
+  {
+    "itemId": 2479,
+    "itemName": "strange helmet",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 2480,
+    "itemName": "Legion Helmet",
+    "sellPrice": 22
+  },
+  {
+    "itemId": 2481,
+    "itemName": "soldier helmet",
+    "sellPrice": 16
+  },
+  {
+    "itemId": 2482,
+    "itemName": "studded helmet",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 2483,
+    "itemName": "scale armor",
+    "sellPrice": 75
+  },
+  {
+    "itemId": 2484,
+    "itemName": "studded armor",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 2487,
+    "itemName": "crown armor",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 2488,
+    "itemName": "crown legs",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 2489,
+    "itemName": "dark armor",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 2490,
+    "itemName": "dark helmet",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 2491,
+    "itemName": "crown helmet",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 2492,
+    "itemName": "dragon scale mail",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 2493,
+    "itemName": "demon helmet",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 2497,
+    "itemName": "crusader helmet",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 2498,
+    "itemName": "royal helmet",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 2503,
+    "itemName": "dwarven armor",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 2504,
+    "itemName": "dwarven legs",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 2641,
+    "itemName": "patched boots",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 2645,
+    "itemName": "steel boots",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 2647,
+    "itemName": "plate legs",
+    "sellPrice": 115
+  },
+  {
+    "itemId": 2648,
+    "itemName": "chain legs",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 2656,
+    "itemName": "blue robe",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 2657,
+    "itemName": "simple dress",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 2663,
+    "itemName": "mystic turban",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 2664,
+    "itemName": "wood cape",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 2743,
+    "itemName": "heaven blossom",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 2799,
+    "itemName": "stone herb",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 2800,
+    "itemName": "star herb",
+    "sellPrice": 15
+  },
+  {
+    "itemId": 2801,
+    "itemName": "fern",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 2803,
+    "itemName": "powder herb",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 2805,
+    "itemName": "troll green",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 3956,
+    "itemName": "tusk",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 3967,
+    "itemName": "tribal mask",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 3968,
+    "itemName": "leopard armor",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 3969,
+    "itemName": "horseman helmet",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 3970,
+    "itemName": "feather headdress",
+    "sellPrice": 850
+  },
+  {
+    "itemId": 3971,
+    "itemName": "charmers tiara",
+    "sellPrice": 900
+  },
+  {
+    "itemId": 3972,
+    "itemName": "bonelord helmet",
+    "sellPrice": 7500
+  },
+  {
+    "itemId": 3982,
+    "itemName": "crocodile boots",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 3983,
+    "itemName": "bast skirt",
+    "sellPrice": 750
+  },
+  {
+    "itemId": 5461,
+    "itemName": "helmet of the deep",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 5462,
+    "itemName": "pirate boots",
+    "sellPrice": 3000
+  },
+  {
+    "itemId": 5480,
+    "itemName": "cats paw",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 5527,
+    "itemName": "demon dust",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 5741,
+    "itemName": "skull helmet",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 5800,
+    "itemName": "grappling hook",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 5804,
+    "itemName": "nose ring",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 5809,
+    "itemName": "soul stone",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 5875,
+    "itemName": "sniper gloves",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 5876,
+    "itemName": "lizard leather",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 5877,
+    "itemName": "green dragon leather",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5878,
+    "itemName": "minotaur leather",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 5879,
+    "itemName": "spider silk",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5880,
+    "itemName": "iron ore",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 5881,
+    "itemName": "lizard scale",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 5882,
+    "itemName": "red dragon scale",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 5883,
+    "itemName": "ape fur",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 5884,
+    "itemName": "spirit container",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 5885,
+    "itemName": "flask of warriors sweat",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 5890,
+    "itemName": "chicken feather",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 5891,
+    "itemName": "enchanted chicken wing",
+    "sellPrice": 20000
+  },
+  {
+    "itemId": 5893,
+    "itemName": "perfect behemoth fang",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 5894,
+    "itemName": "bat wing",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 5895,
+    "itemName": "fish fin",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 5896,
+    "itemName": "bear paw",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5898,
+    "itemName": "bonelord eye",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 5899,
+    "itemName": "turtle shell",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 5902,
+    "itemName": "honeycomb",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 5904,
+    "itemName": "magic sulphur",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 5905,
+    "itemName": "vampire dust",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5909,
+    "itemName": "white piece of cloth",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5910,
+    "itemName": "green piece of cloth",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 5911,
+    "itemName": "red piece of cloth",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 5912,
+    "itemName": "blue piece of cloth",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 5913,
+    "itemName": "brown piece of cloth",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5917,
+    "itemName": "bandana",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 5918,
+    "itemName": "pirate knee breeches",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 5919,
+    "itemName": "dragon claw",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 5920,
+    "itemName": "green dragon scale",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 5922,
+    "itemName": "holy orchid",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 5925,
+    "itemName": "hardened bone",
+    "sellPrice": 70
+  },
+  {
+    "itemId": 5930,
+    "itemName": "behemoth claw",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 5948,
+    "itemName": "red dragon leather",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 5954,
+    "itemName": "demon horn",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 6095,
+    "itemName": "pirate shirt",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 6096,
+    "itemName": "pirate hat",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 6492,
+    "itemName": "bat decoration",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 6526,
+    "itemName": "skeleton decoration",
+    "sellPrice": 3000
+  },
+  {
+    "itemId": 6534,
+    "itemName": "the imperors trident",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6535,
+    "itemName": "the plasmothers remains",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6536,
+    "itemName": "countess sorrows frozen tear",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6537,
+    "itemName": "mr. punishs handcuffs",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6539,
+    "itemName": "the handmaidens protector",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6540,
+    "itemName": "piece of massacres shell",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 6546,
+    "itemName": "dracolas eye",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 7457,
+    "itemName": "fur boots",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 7459,
+    "itemName": "pair of earmuffs",
+    "sellPrice": 1500
+  },
+  {
+    "itemId": 7461,
+    "itemName": "krimhorn helmet",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 7462,
+    "itemName": "ragnir helmet",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 7463,
+    "itemName": "mammoth fur cape",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 7464,
+    "itemName": "mammoth fur shorts",
+    "sellPrice": 850
+  },
+  {
+    "itemId": 7730,
+    "itemName": "blue legs",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 7732,
+    "itemName": "seeds",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 7884,
+    "itemName": "terra mantle",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7885,
+    "itemName": "terra legs",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7886,
+    "itemName": "terra boots",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7891,
+    "itemName": "magma boots",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7892,
+    "itemName": "glacier shoes",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7893,
+    "itemName": "lightning boots",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7894,
+    "itemName": "magma legs",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7895,
+    "itemName": "lightning legs",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7896,
+    "itemName": "glacier kilt",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7897,
+    "itemName": "glacier robe",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7898,
+    "itemName": "lightning robe",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7899,
+    "itemName": "magma coat",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 7900,
+    "itemName": "magma monocle",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7901,
+    "itemName": "lightning headband",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7902,
+    "itemName": "glacier mask",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7903,
+    "itemName": "terra hood",
+    "sellPrice": 2500
+  },
+  {
+    "itemId": 7965,
+    "itemName": "badger fur",
+    "sellPrice": 15
+  },
+  {
+    "itemId": 8859,
+    "itemName": "spider fangs",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 8867,
+    "itemName": "dragon robe",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 8869,
+    "itemName": "greenwood coat",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 8870,
+    "itemName": "spirit cloak",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 8871,
+    "itemName": "focus cape",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 8872,
+    "itemName": "belted cape",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 8873,
+    "itemName": "hibiscus dress",
+    "sellPrice": 3000
+  },
+  {
+    "itemId": 8874,
+    "itemName": "summer dress",
+    "sellPrice": 1500
+  },
+  {
+    "itemId": 8877,
+    "itemName": "lavos armor",
+    "sellPrice": 16000
+  },
+  {
+    "itemId": 8878,
+    "itemName": "crystalline armor",
+    "sellPrice": 16000
+  },
+  {
+    "itemId": 8880,
+    "itemName": "swamplair armor",
+    "sellPrice": 16000
+  },
+  {
+    "itemId": 8883,
+    "itemName": "windborn colossus armor",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 8885,
+    "itemName": "divine plate",
+    "sellPrice": 55000
+  },
+  {
+    "itemId": 8889,
+    "itemName": "skullcracker armor",
+    "sellPrice": 18000
+  },
+  {
+    "itemId": 8891,
+    "itemName": "paladin armor",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 8971,
+    "itemName": "gland",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 9927,
+    "itemName": "flower wreath",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 9928,
+    "itemName": "leaf legs",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 9929,
+    "itemName": "flower dress",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 9931,
+    "itemName": "coconut shoes",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 9948,
+    "itemName": "dracoyle statue",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 9966,
+    "itemName": "glob of mercury",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 9967,
+    "itemName": "glob of acid slime",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 9968,
+    "itemName": "glob of tar",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 10016,
+    "itemName": "batwing hat",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 10548,
+    "itemName": "scarab pincers",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 10550,
+    "itemName": "bloody pincers",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 10551,
+    "itemName": "cobra tongue",
+    "sellPrice": 15
+  },
+  {
+    "itemId": 10552,
+    "itemName": "elvish talisman",
+    "sellPrice": 45
+  },
+  {
+    "itemId": 10553,
+    "itemName": "fiery heart",
+    "sellPrice": 375
+  },
+  {
+    "itemId": 10554,
+    "itemName": "hellhound slobber",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 10555,
+    "itemName": "cultish mask",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 10556,
+    "itemName": "cultish robe",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 10557,
+    "itemName": "poisonous slime",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 10558,
+    "itemName": "piece of scarab shell",
+    "sellPrice": 45
+  },
+  {
+    "itemId": 10559,
+    "itemName": "spooky blue eye",
+    "sellPrice": 95
+  },
+  {
+    "itemId": 10560,
+    "itemName": "thorn",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 10562,
+    "itemName": "black hood",
+    "sellPrice": 190
+  },
+  {
+    "itemId": 10563,
+    "itemName": "book of prayers",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 10564,
+    "itemName": "demonic skeletal hand",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 10565,
+    "itemName": "frosty ear of a troll",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 10566,
+    "itemName": "gauze bandage",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 10567,
+    "itemName": "polar bear paw",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 10568,
+    "itemName": "scorpion tail",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 10570,
+    "itemName": "witch hat",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 10574,
+    "itemName": "cyclops toe",
+    "sellPrice": 55
+  },
+  {
+    "itemId": 10575,
+    "itemName": "frost giant pelt",
+    "sellPrice": 160
+  },
+  {
+    "itemId": 10576,
+    "itemName": "half-eaten brain",
+    "sellPrice": 85
+  },
+  {
+    "itemId": 10577,
+    "itemName": "mystical hourglass",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 10578,
+    "itemName": "frosty heart",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 10579,
+    "itemName": "mutated bat ear",
+    "sellPrice": 420
+  },
+  {
+    "itemId": 10580,
+    "itemName": "piece of dead brain",
+    "sellPrice": 420
+  },
+  {
+    "itemId": 10583,
+    "itemName": "sea serpent scale",
+    "sellPrice": 520
+  },
+  {
+    "itemId": 10584,
+    "itemName": "boggy dreads",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 10585,
+    "itemName": "mutated rat tail",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 10600,
+    "itemName": "haunted piece of wood",
+    "sellPrice": 115
+  },
+  {
+    "itemId": 10601,
+    "itemName": "tattered piece of robe",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 10602,
+    "itemName": "vampire teeth",
+    "sellPrice": 275
+  },
+  {
+    "itemId": 10603,
+    "itemName": "swamp grass",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 10605,
+    "itemName": "bundle of cursed straw",
+    "sellPrice": 800
+  },
+  {
+    "itemId": 10606,
+    "itemName": "bunch of troll hair",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 10607,
+    "itemName": "ghostly tissue",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 10608,
+    "itemName": "lions mane",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 10609,
+    "itemName": "lump of dirt",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 10610,
+    "itemName": "pig foot",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 10611,
+    "itemName": "snake skin",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 11113,
+    "itemName": "orc tooth",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 11189,
+    "itemName": "crab pincers",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 11190,
+    "itemName": "terrorbird beak",
+    "sellPrice": 95
+  },
+  {
+    "itemId": 11191,
+    "itemName": "skunk tail",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11192,
+    "itemName": "carrion worm fang",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 11193,
+    "itemName": "elder bonelord tentacle",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 11194,
+    "itemName": "bony tail",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 11195,
+    "itemName": "stone wing",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 11196,
+    "itemName": "piece of crocodile leather",
+    "sellPrice": 15
+  },
+  {
+    "itemId": 11197,
+    "itemName": "giant eye",
+    "sellPrice": 380
+  },
+  {
+    "itemId": 11198,
+    "itemName": "tarantula egg",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 11199,
+    "itemName": "hydra head",
+    "sellPrice": 600
+  },
+  {
+    "itemId": 11200,
+    "itemName": "half-digested piece of meat",
+    "sellPrice": 55
+  },
+  {
+    "itemId": 11208,
+    "itemName": "rotten piece of cloth",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 11209,
+    "itemName": "silky fur",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 11210,
+    "itemName": "striped fur",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11213,
+    "itemName": "acorn",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 11214,
+    "itemName": "antlers",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11217,
+    "itemName": "carniphila seeds",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11218,
+    "itemName": "centipede leg",
+    "sellPrice": 28
+  },
+  {
+    "itemId": 11219,
+    "itemName": "compass",
+    "sellPrice": 45
+  },
+  {
+    "itemId": 11220,
+    "itemName": "dark rosary",
+    "sellPrice": 48
+  },
+  {
+    "itemId": 11221,
+    "itemName": "hellspawn tail",
+    "sellPrice": 475
+  },
+  {
+    "itemId": 11222,
+    "itemName": "lump of earth",
+    "sellPrice": 130
+  },
+  {
+    "itemId": 11223,
+    "itemName": "essence of a bad dream",
+    "sellPrice": 360
+  },
+  {
+    "itemId": 11224,
+    "itemName": "thick fur",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 11225,
+    "itemName": "mutated flesh",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11226,
+    "itemName": "strand of medusa hair",
+    "sellPrice": 600
+  },
+  {
+    "itemId": 11228,
+    "itemName": "sabretooth",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 11229,
+    "itemName": "scythe leg",
+    "sellPrice": 450
+  },
+  {
+    "itemId": 11231,
+    "itemName": "nettle blossom",
+    "sellPrice": 75
+  },
+  {
+    "itemId": 11233,
+    "itemName": "unholy bone",
+    "sellPrice": 480
+  },
+  {
+    "itemId": 11234,
+    "itemName": "werewolf fur",
+    "sellPrice": 380
+  },
+  {
+    "itemId": 11235,
+    "itemName": "warwolf fur",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 11237,
+    "itemName": "book of necromantic rituals",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 11238,
+    "itemName": "mammoth tusk",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 11240,
+    "itemName": "guardian boots",
+    "sellPrice": 35000
+  },
+  {
+    "itemId": 11301,
+    "itemName": "Zaoan armor",
+    "sellPrice": 14000
+  },
+  {
+    "itemId": 11302,
+    "itemName": "Zaoan helmet",
+    "sellPrice": 45000
+  },
+  {
+    "itemId": 11303,
+    "itemName": "Zaoan shoes",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 11304,
+    "itemName": "Zaoan legs",
+    "sellPrice": 14000
+  },
+  {
+    "itemId": 11314,
+    "itemName": "weavers wandtip",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 11321,
+    "itemName": "bone shoulderplate",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 11322,
+    "itemName": "warmasters wristguards",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 11324,
+    "itemName": "shaggy tail",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 11325,
+    "itemName": "spiked iron ball",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 11326,
+    "itemName": "corrupted flag",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 11327,
+    "itemName": "cursed shoulder spikes",
+    "sellPrice": 320
+  },
+  {
+    "itemId": 11328,
+    "itemName": "widows mandibles",
+    "sellPrice": 110
+  },
+  {
+    "itemId": 11332,
+    "itemName": "high guard flag",
+    "sellPrice": 550
+  },
+  {
+    "itemId": 11333,
+    "itemName": "high guard shoulderplates",
+    "sellPrice": 130
+  },
+  {
+    "itemId": 11334,
+    "itemName": "legionnaire flags",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 11335,
+    "itemName": "broken halberd",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 11337,
+    "itemName": "petrified scream",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 11355,
+    "itemName": "spellweavers robe",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 11356,
+    "itemName": "Zaoan robe",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 11361,
+    "itemName": "dragon priests wandtip",
+    "sellPrice": 175
+  },
+  {
+    "itemId": 11366,
+    "itemName": "ghastly dragon head",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 11367,
+    "itemName": "undead heart",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 11368,
+    "itemName": "jade hat",
+    "sellPrice": 9000
+  },
+  {
+    "itemId": 11369,
+    "itemName": "terramite shell",
+    "sellPrice": 170
+  },
+  {
+    "itemId": 11370,
+    "itemName": "terramite eggs",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 11371,
+    "itemName": "terramite legs",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 11372,
+    "itemName": "lancer beetle shell",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 11373,
+    "itemName": "sandcrawler shell",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 12399,
+    "itemName": "girlish hair decoration",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12400,
+    "itemName": "protective charm",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 12401,
+    "itemName": "bamboo stick",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12402,
+    "itemName": "hair of a banshee",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 12404,
+    "itemName": "black wool",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 12405,
+    "itemName": "blood preservation",
+    "sellPrice": 320
+  },
+  {
+    "itemId": 12406,
+    "itemName": "small notebook",
+    "sellPrice": 480
+  },
+  {
+    "itemId": 12407,
+    "itemName": "broken crossbow",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12408,
+    "itemName": "broken shamanic staff",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 12409,
+    "itemName": "broken helmet",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 12410,
+    "itemName": "luminous orb",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 12411,
+    "itemName": "cultish symbol",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 12412,
+    "itemName": "dirty turban",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 12413,
+    "itemName": "dragons tail",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 12414,
+    "itemName": "geomancers robe",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 12419,
+    "itemName": "geomancers staff",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 12420,
+    "itemName": "elven scouting glass",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 12421,
+    "itemName": "elven astral observer",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 12422,
+    "itemName": "flask of embalming fluid",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12423,
+    "itemName": "ghoul snack",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 12425,
+    "itemName": "hunters quiver",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 12426,
+    "itemName": "jewelled belt",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 12427,
+    "itemName": "kongras shoulderpad",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 12428,
+    "itemName": "minotaur horn",
+    "sellPrice": 75
+  },
+  {
+    "itemId": 12429,
+    "itemName": "purple robe",
+    "sellPrice": 110
+  },
+  {
+    "itemId": 12430,
+    "itemName": "miraculum",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 12431,
+    "itemName": "necromantic robe",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 12432,
+    "itemName": "nettle spit",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 12433,
+    "itemName": "orcish gear",
+    "sellPrice": 85
+  },
+  {
+    "itemId": 12434,
+    "itemName": "shamanic hood",
+    "sellPrice": 45
+  },
+  {
+    "itemId": 12435,
+    "itemName": "orc leather",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12436,
+    "itemName": "skull belt",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 12437,
+    "itemName": "pelvis bone",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 12438,
+    "itemName": "piece of warrior armor",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 12439,
+    "itemName": "piece of archer armor",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 12440,
+    "itemName": "pile of grave earth",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 12441,
+    "itemName": "poison spider shell",
+    "sellPrice": 10
+  },
+  {
+    "itemId": 12442,
+    "itemName": "noble turban",
+    "sellPrice": 430
+  },
+  {
+    "itemId": 12443,
+    "itemName": "quara tentacle",
+    "sellPrice": 140
+  },
+  {
+    "itemId": 12444,
+    "itemName": "quara eye",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 12445,
+    "itemName": "mantassin tail",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 12446,
+    "itemName": "quara pincers",
+    "sellPrice": 410
+  },
+  {
+    "itemId": 12447,
+    "itemName": "quara bone",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 12448,
+    "itemName": "rope belt",
+    "sellPrice": 66
+  },
+  {
+    "itemId": 12449,
+    "itemName": "safety pin",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 12466,
+    "itemName": "scroll of heroic deeds",
+    "sellPrice": 230
+  },
+  {
+    "itemId": 12467,
+    "itemName": "banana sash",
+    "sellPrice": 55
+  },
+  {
+    "itemId": 12468,
+    "itemName": "small flask of eyedrops",
+    "sellPrice": 95
+  },
+  {
+    "itemId": 12469,
+    "itemName": "small pitchfork",
+    "sellPrice": 70
+  },
+  {
+    "itemId": 12470,
+    "itemName": "colourful feather",
+    "sellPrice": 110
+  },
+  {
+    "itemId": 12471,
+    "itemName": "trollroot",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 12495,
+    "itemName": "goblin ear",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 12607,
+    "itemName": "elite draken mail",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 12608,
+    "itemName": "broken key ring",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 12614,
+    "itemName": "draken sulphur",
+    "sellPrice": 550
+  },
+  {
+    "itemId": 12615,
+    "itemName": "draken wristbands",
+    "sellPrice": 430
+  },
+  {
+    "itemId": 12616,
+    "itemName": "broken draken mail",
+    "sellPrice": 340
+  },
+  {
+    "itemId": 12617,
+    "itemName": "broken slicer",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 12622,
+    "itemName": "tentacle piece",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 12627,
+    "itemName": "eye of corruption",
+    "sellPrice": 390
+  },
+  {
+    "itemId": 12628,
+    "itemName": "tail of corruption",
+    "sellPrice": 240
+  },
+  {
+    "itemId": 12629,
+    "itemName": "scale of corruption",
+    "sellPrice": 680
+  },
+  {
+    "itemId": 12630,
+    "itemName": "cobra crown",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 12636,
+    "itemName": "lizard essence",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 12640,
+    "itemName": "downy feather",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 12646,
+    "itemName": "draken boots",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 12658,
+    "itemName": "brimstone fangs",
+    "sellPrice": 380
+  },
+  {
+    "itemId": 12659,
+    "itemName": "brimstone shell",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 13530,
+    "itemName": "demonic finger",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 13757,
+    "itemName": "coal",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 13870,
+    "itemName": "eye of a deepling",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 15406,
+    "itemName": "ornate chestplate",
+    "sellPrice": 60000
+  },
+  {
+    "itemId": 15407,
+    "itemName": "depth lorica",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 15408,
+    "itemName": "Depth Galea",
+    "sellPrice": 35000
+  },
+  {
+    "itemId": 15409,
+    "itemName": "depth ocrea",
+    "sellPrice": 16000
+  },
+  {
+    "itemId": 15410,
+    "itemName": "depth calcei",
+    "sellPrice": 25000
+  },
+  {
+    "itemId": 15412,
+    "itemName": "ornate legs",
+    "sellPrice": 40000
+  },
+  {
+    "itemId": 15421,
+    "itemName": "spellsingers seal",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 15422,
+    "itemName": "key to the drowned library",
+    "sellPrice": 330
+  },
+  {
+    "itemId": 15423,
+    "itemName": "deepling guard belt buckle",
+    "sellPrice": 230
+  },
+  {
+    "itemId": 15424,
+    "itemName": "deepling breaktime snack",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 15425,
+    "itemName": "deepling warts",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 15426,
+    "itemName": "deeptags",
+    "sellPrice": 290
+  },
+  {
+    "itemId": 15430,
+    "itemName": "deepling scales",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 15452,
+    "itemName": "deepling ridge",
+    "sellPrice": 360
+  },
+  {
+    "itemId": 15455,
+    "itemName": "deepling claw",
+    "sellPrice": 430
+  },
+  {
+    "itemId": 15479,
+    "itemName": "swarmer antenna",
+    "sellPrice": 130
+  },
+  {
+    "itemId": 15480,
+    "itemName": "kollos shell",
+    "sellPrice": 420
+  },
+  {
+    "itemId": 15481,
+    "itemName": "spitter nose",
+    "sellPrice": 340
+  },
+  {
+    "itemId": 15482,
+    "itemName": "crawler head plating",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 15483,
+    "itemName": "waspoid claw",
+    "sellPrice": 320
+  },
+  {
+    "itemId": 15484,
+    "itemName": "waspoid wing",
+    "sellPrice": 190
+  },
+  {
+    "itemId": 15485,
+    "itemName": "spidris mandible",
+    "sellPrice": 450
+  },
+  {
+    "itemId": 15486,
+    "itemName": "compound eye",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 15489,
+    "itemName": "calopteryx cape",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 15490,
+    "itemName": "grasshopper legs",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 15622,
+    "itemName": "dung ball",
+    "sellPrice": 130
+  },
+  {
+    "itemId": 18425,
+    "itemName": "blazing bone",
+    "sellPrice": 610
+  },
+  {
+    "itemId": 18426,
+    "itemName": "eye of a weeper",
+    "sellPrice": 650
+  },
+  {
+    "itemId": 18428,
+    "itemName": "cliff strider claw",
+    "sellPrice": 800
+  },
+  {
+    "itemId": 18433,
+    "itemName": "humongous chunk",
+    "sellPrice": 540
+  },
+  {
+    "itemId": 18434,
+    "itemName": "hideous chunk",
+    "sellPrice": 510
+  },
+  {
+    "itemId": 18453,
+    "itemName": "crystal crossbow",
+    "sellPrice": 35000
+  },
+  {
+    "itemId": 19738,
+    "itemName": "damselfly wing",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 19741,
+    "itemName": "marsh stalker beak",
+    "sellPrice": 65
+  },
+  {
+    "itemId": 19742,
+    "itemName": "marsh stalker feather",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 19743,
+    "itemName": "damselfly eye",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 20089,
+    "itemName": "bola",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 20097,
+    "itemName": "cheese cutter",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 20098,
+    "itemName": "cheesy figurine",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 20099,
+    "itemName": "earflap",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 20102,
+    "itemName": "swampling moss",
+    "sellPrice": 20
+  },
+  {
+    "itemId": 20103,
+    "itemName": "piece of swampling wood",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 20106,
+    "itemName": "lost bashers spike",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 20107,
+    "itemName": "bloody dwarven beard",
+    "sellPrice": 110
+  },
+  {
+    "itemId": 20109,
+    "itemName": "buckle",
+    "sellPrice": 7000
+  },
+  {
+    "itemId": 20110,
+    "itemName": "bonecarving knife",
+    "sellPrice": 190
+  },
+  {
+    "itemId": 20111,
+    "itemName": "bone fetish",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 20126,
+    "itemName": "leather harness",
+    "sellPrice": 750
+  },
+  {
+    "itemId": 20128,
+    "itemName": "lost hushers staff",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 20129,
+    "itemName": "skull shatterer",
+    "sellPrice": 170
+  },
+  {
+    "itemId": 20130,
+    "itemName": "holy ash",
+    "sellPrice": 160
+  },
+  {
+    "itemId": 20131,
+    "itemName": "broken throwing axe",
+    "sellPrice": 230
+  },
+  {
+    "itemId": 20132,
+    "itemName": "helmet of the lost",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 20133,
+    "itemName": "lost bracers",
+    "sellPrice": 140
+  },
+  {
+    "itemId": 20134,
+    "itemName": "mad froth",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 20135,
+    "itemName": "red hair dye",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 20136,
+    "itemName": "basalt fetish",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 20137,
+    "itemName": "basalt figurine",
+    "sellPrice": 160
+  },
+  {
+    "itemId": 21241,
+    "itemName": "tooth file",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 21242,
+    "itemName": "lancet",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 21243,
+    "itemName": "horoscope",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 21244,
+    "itemName": "vampires cape chain",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 21245,
+    "itemName": "blood tincture in a vial",
+    "sellPrice": 360
+  },
+  {
+    "itemId": 21246,
+    "itemName": "incantation notes",
+    "sellPrice": 90
+  },
+  {
+    "itemId": 21247,
+    "itemName": "pieces of magic chalk",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 21310,
+    "itemName": "rorc feather",
+    "sellPrice": 70
+  },
+  {
+    "itemId": 21311,
+    "itemName": "elven hoof",
+    "sellPrice": 115
+  },
+  {
+    "itemId": 21312,
+    "itemName": "venison",
+    "sellPrice": 55
+  },
+  {
+    "itemId": 21313,
+    "itemName": "rorc egg",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 21314,
+    "itemName": "hatched rorc egg",
+    "sellPrice": 30
+  },
+  {
+    "itemId": 21427,
+    "itemName": "dowser",
+    "sellPrice": 35
+  },
+  {
+    "itemId": 21428,
+    "itemName": "fir cone",
+    "sellPrice": 25
+  },
+  {
+    "itemId": 21692,
+    "itemName": "albino plate",
+    "sellPrice": 1500
+  },
+  {
+    "itemId": 21706,
+    "itemName": "goo shell",
+    "sellPrice": 4000
+  },
+  {
+    "itemId": 22517,
+    "itemName": "sight of surrenders eye",
+    "sellPrice": 3000
+  },
+  {
+    "itemId": 22518,
+    "itemName": "broken visor",
+    "sellPrice": 1900
+  },
+  {
+    "itemId": 22532,
+    "itemName": "frazzle tongue",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 22533,
+    "itemName": "frazzle skin",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 22534,
+    "itemName": "silencer claws",
+    "sellPrice": 390
+  },
+  {
+    "itemId": 22535,
+    "itemName": "silencer resonating chamber",
+    "sellPrice": 600
+  },
+  {
+    "itemId": 22536,
+    "itemName": "dead weight",
+    "sellPrice": 450
+  },
+  {
+    "itemId": 22537,
+    "itemName": "trapped bad dream monster",
+    "sellPrice": 900
+  },
+  {
+    "itemId": 22538,
+    "itemName": "bowl of terror sweat",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 22539,
+    "itemName": "goosebump leather",
+    "sellPrice": 650
+  },
+  {
+    "itemId": 22540,
+    "itemName": "hemp rope",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 22541,
+    "itemName": "pool of chitinous glue",
+    "sellPrice": 480
+  },
+  {
+    "itemId": 23535,
+    "itemName": "glooth cape",
+    "sellPrice": 7000
+  },
+  {
+    "itemId": 23536,
+    "itemName": "rubber cap",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 23537,
+    "itemName": "moohtah plate",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 23538,
+    "itemName": "heat core",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 23539,
+    "itemName": "alloy legs",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 23540,
+    "itemName": "metal spats",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 23568,
+    "itemName": "Slimy Leaf Tentacle",
+    "sellPrice": 320
+  },
+  {
+    "itemId": 24169,
+    "itemName": "Seacrest Scale",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 24170,
+    "itemName": "Seacrest Hair",
+    "sellPrice": 260
+  },
+  {
+    "itemId": 24261,
+    "itemName": "crest of the deep seas",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 24630,
+    "itemName": "golden lotus brooch",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 24631,
+    "itemName": "peacock feather fan",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 24637,
+    "itemName": "oriental shoes",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 24663,
+    "itemName": "gloom wolf fur",
+    "sellPrice": 70
+  },
+  {
+    "itemId": 24707,
+    "itemName": "werebadger claws",
+    "sellPrice": 160
+  },
+  {
+    "itemId": 24708,
+    "itemName": "werewolf fang",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 24709,
+    "itemName": "wereboar hooves",
+    "sellPrice": 175
+  },
+  {
+    "itemId": 24710,
+    "itemName": "wereboar tusk",
+    "sellPrice": 165
+  },
+  {
+    "itemId": 24711,
+    "itemName": "werebadger skull",
+    "sellPrice": 185
+  },
+  {
+    "itemId": 24712,
+    "itemName": "werebear skull",
+    "sellPrice": 195
+  },
+  {
+    "itemId": 24713,
+    "itemName": "werebear fur",
+    "sellPrice": 185
+  },
+  {
+    "itemId": 24741,
+    "itemName": "fur armor",
+    "sellPrice": 5000
+  },
+  {
+    "itemId": 24742,
+    "itemName": "badger boots",
+    "sellPrice": 7500
+  },
+  {
+    "itemId": 24743,
+    "itemName": "wereboar loincloth",
+    "sellPrice": 1500
+  },
+  {
+    "itemId": 24840,
+    "itemName": "shamanic talisman",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 24844,
+    "itemName": "ogre ear stud",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 24845,
+    "itemName": "ogre nose ring",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 24847,
+    "itemName": "skull fetish",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 24848,
+    "itemName": "shamanic mask",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 25384,
+    "itemName": "vexclaw talon",
+    "sellPrice": 1100
+  },
+  {
+    "itemId": 25385,
+    "itemName": "pair of hellflayer horns",
+    "sellPrice": 1300
+  },
+  {
+    "itemId": 25386,
+    "itemName": "some grimeleech wings",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 26157,
+    "itemName": "condensed energy",
+    "sellPrice": 260
+  },
+  {
+    "itemId": 26158,
+    "itemName": "sparkion claw",
+    "sellPrice": 290
+  },
+  {
+    "itemId": 26159,
+    "itemName": "sparkion tail",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 26160,
+    "itemName": "sparkion legs",
+    "sellPrice": 310
+  },
+  {
+    "itemId": 26161,
+    "itemName": "sparkion stings",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 26162,
+    "itemName": "plasma pearls",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 26163,
+    "itemName": "crystallized anger",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 26164,
+    "itemName": "energy vein",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 26166,
+    "itemName": "odd organ",
+    "sellPrice": 410
+  },
+  {
+    "itemId": 26167,
+    "itemName": "curious matter",
+    "sellPrice": 430
+  },
+  {
+    "itemId": 26170,
+    "itemName": "volatile proto matter",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 26171,
+    "itemName": "dangerous proto matter",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 26172,
+    "itemName": "instable proto matter",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 26173,
+    "itemName": "solid rage",
+    "sellPrice": 310
+  },
+  {
+    "itemId": 26174,
+    "itemName": "spark sphere",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 26175,
+    "itemName": "frozen lightning",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 26176,
+    "itemName": "plasmatic lightning",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 26177,
+    "itemName": "crystal bone",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 26178,
+    "itemName": "glistening bone",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 26179,
+    "itemName": "energy ball",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 26180,
+    "itemName": "small energy ball",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 27048,
+    "itemName": "bone toothpick",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 27049,
+    "itemName": "beetle carapace",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 27052,
+    "itemName": "ancient belt buckle",
+    "sellPrice": 260
+  },
+  {
+    "itemId": 27053,
+    "itemName": "cracked alabaster vase",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 27054,
+    "itemName": "rhino horn carving",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 27055,
+    "itemName": "tarnished rhino figurine",
+    "sellPrice": 320
+  },
+  {
+    "itemId": 27056,
+    "itemName": "rhino hide",
+    "sellPrice": 175
+  },
+  {
+    "itemId": 27057,
+    "itemName": "rhino horn",
+    "sellPrice": 265
+  },
+  {
+    "itemId": 27605,
+    "itemName": "dragon blood",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 27606,
+    "itemName": "dragon tongue",
+    "sellPrice": 550
+  },
+  {
+    "itemId": 27607,
+    "itemName": "scale of gelidrazah",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 27608,
+    "itemName": "tooth of tazhadur",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 27609,
+    "itemName": "horn of kalyassa",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 27610,
+    "itemName": "Bones of Zorvorax",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 27756,
+    "itemName": "porcelain mask",
+    "sellPrice": 2000
+  },
+  {
+    "itemId": 27757,
+    "itemName": "colourful feathers",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 28995,
+    "itemName": "golden brush",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 28996,
+    "itemName": "wild flowers",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 28997,
+    "itemName": "shimmering beetles",
+    "sellPrice": 150
+  },
+  {
+    "itemId": 28998,
+    "itemName": "fairy wings",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 28999,
+    "itemName": "dandelion seeds",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 29000,
+    "itemName": "colourful snail shell",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 29001,
+    "itemName": "green bandage",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 29006,
+    "itemName": "single human eye",
+    "sellPrice": 1000
+  },
+  {
+    "itemId": 29007,
+    "itemName": "little bowl of myrrh",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 29042,
+    "itemName": "fig leaf",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 29043,
+    "itemName": "bed of nails",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 29044,
+    "itemName": "torn shirt",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 29045,
+    "itemName": "guidebook",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 30536,
+    "itemName": "rare earth",
+    "sellPrice": 80
+  },
+  {
+    "itemId": 30604,
+    "itemName": "half-digested stones",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 30697,
+    "itemName": "fox paw",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 30698,
+    "itemName": "werefox tail",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 30827,
+    "itemName": "deepworm spikes",
+    "sellPrice": 800
+  },
+  {
+    "itemId": 30828,
+    "itemName": "deepworm spike roots",
+    "sellPrice": 650
+  },
+  {
+    "itemId": 30829,
+    "itemName": "deepworm jaws",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 30830,
+    "itemName": "tunnel tyrant head",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 30831,
+    "itemName": "tunnel tyrant shell",
+    "sellPrice": 700
+  },
+  {
+    "itemId": 30832,
+    "itemName": "diremaw brainpan",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 30833,
+    "itemName": "diremaw legs",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 30834,
+    "itemName": "cave devourer eyes",
+    "sellPrice": 550
+  },
+  {
+    "itemId": 30835,
+    "itemName": "cave devourer maw",
+    "sellPrice": 600
+  },
+  {
+    "itemId": 30836,
+    "itemName": "cave devourer legs",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 30837,
+    "itemName": "chasm spawn head",
+    "sellPrice": 850
+  },
+  {
+    "itemId": 30838,
+    "itemName": "chasm spawn abdomen",
+    "sellPrice": 240
+  },
+  {
+    "itemId": 30839,
+    "itemName": "chasm spawn tail",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 30841,
+    "itemName": "stonerefiners skull",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 30853,
+    "itemName": "pristine worm head",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 30854,
+    "itemName": "giant tentacle scalp",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 30855,
+    "itemName": "damaged worm head",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 30856,
+    "itemName": "huge shell",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 30857,
+    "itemName": "chitinous mouth",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 30858,
+    "itemName": "slimy leg",
+    "sellPrice": 4500
+  },
+  {
+    "itemId": 30859,
+    "itemName": "longing eyes",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 30860,
+    "itemName": "harpoon of a giant snail",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 30861,
+    "itemName": "chitinous mouth",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 30862,
+    "itemName": "huge spiky snail shell",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 32462,
+    "itemName": "sample of monster blood",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 33088,
+    "itemName": "silken bookmark",
+    "sellPrice": 1300
+  },
+  {
+    "itemId": 33089,
+    "itemName": "quill",
+    "sellPrice": 1100
+  },
+  {
+    "itemId": 33090,
+    "itemName": "inkwell",
+    "sellPrice": 720
+  },
+  {
+    "itemId": 33091,
+    "itemName": "Book Page",
+    "sellPrice": 640
+  },
+  {
+    "itemId": 33092,
+    "itemName": "glowing rune",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 33300,
+    "itemName": "patch of fine cloth",
+    "sellPrice": 1350
+  },
+  {
+    "itemId": 33301,
+    "itemName": "damaged armor plates",
+    "sellPrice": 280
+  },
+  {
+    "itemId": 33302,
+    "itemName": "falcon crest",
+    "sellPrice": 650
+  },
+  {
+    "itemId": 33303,
+    "itemName": "grant of arms",
+    "sellPrice": 950
+  },
+  {
+    "itemId": 33838,
+    "itemName": "blue glass plate",
+    "sellPrice": 60
+  },
+  {
+    "itemId": 33839,
+    "itemName": "green glass plate",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 33840,
+    "itemName": "violet glass plate",
+    "sellPrice": 2150
+  },
+  {
+    "itemId": 33841,
+    "itemName": "poison gland",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 34435,
+    "itemName": "maxxenius head",
+    "sellPrice": 500000
+  },
+  {
+    "itemId": 34436,
+    "itemName": "alptramuns toothbrush",
+    "sellPrice": 270000
+  },
+  {
+    "itemId": 34437,
+    "itemName": "izcandars snow globe",
+    "sellPrice": 180000
+  },
+  {
+    "itemId": 34438,
+    "itemName": "izcandars sundial",
+    "sellPrice": 225000
+  },
+  {
+    "itemId": 34439,
+    "itemName": "beasts nightmare-cushion",
+    "sellPrice": 630000
+  },
+  {
+    "itemId": 34498,
+    "itemName": "dream essence egg",
+    "sellPrice": 205
+  },
+  {
+    "itemId": 34551,
+    "itemName": "ice flower",
+    "sellPrice": 370
+  },
+  {
+    "itemId": 34580,
+    "itemName": "Plagueroot offshoot",
+    "sellPrice": 280000
+  },
+  {
+    "itemId": 34581,
+    "itemName": "Malofurs lunchbox",
+    "sellPrice": 240000
+  },
+  {
+    "itemId": 35038,
+    "itemName": "bright bell",
+    "sellPrice": 220
+  },
+  {
+    "itemId": 35039,
+    "itemName": "dark bell",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 36037,
+    "itemName": "sea horse figurine",
+    "sellPrice": 42000
+  },
+  {
+    "itemId": 36038,
+    "itemName": "golden mask",
+    "sellPrice": 38000
+  },
+  {
+    "itemId": 36045,
+    "itemName": "empty honey glass",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 36054,
+    "itemName": "lizard heart",
+    "sellPrice": 530
+  },
+  {
+    "itemId": 36151,
+    "itemName": "sphinx feather",
+    "sellPrice": 470
+  },
+  {
+    "itemId": 36152,
+    "itemName": "sphinx tiara",
+    "sellPrice": 360
+  },
+  {
+    "itemId": 36153,
+    "itemName": "manticore tail",
+    "sellPrice": 220
+  },
+  {
+    "itemId": 36154,
+    "itemName": "manticore ear",
+    "sellPrice": 310
+  },
+  {
+    "itemId": 36155,
+    "itemName": "lamassu hoof",
+    "sellPrice": 330
+  },
+  {
+    "itemId": 36156,
+    "itemName": "lamassu horn",
+    "sellPrice": 220
+  },
+  {
+    "itemId": 36157,
+    "itemName": "fafnar symbol",
+    "sellPrice": 950
+  },
+  {
+    "itemId": 36272,
+    "itemName": "red goanna scale",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 36273,
+    "itemName": "blue goanna scale",
+    "sellPrice": 230
+  },
+  {
+    "itemId": 36274,
+    "itemName": "goanna meat",
+    "sellPrice": 190
+  },
+  {
+    "itemId": 36275,
+    "itemName": "goanna claw",
+    "sellPrice": 260
+  },
+  {
+    "itemId": 36302,
+    "itemName": "ancient liche bone",
+    "sellPrice": 28000
+  },
+  {
+    "itemId": 36303,
+    "itemName": "rotten heart",
+    "sellPrice": 74000
+  },
+  {
+    "itemId": 36305,
+    "itemName": "medal of valiance",
+    "sellPrice": 410000
+  },
+  {
+    "itemId": 36306,
+    "itemName": "signet ring",
+    "sellPrice": 480000
+  },
+  {
+    "itemId": 36307,
+    "itemName": "noble cape",
+    "sellPrice": 425000
+  },
+  {
+    "itemId": 36308,
+    "itemName": "token of love",
+    "sellPrice": 440000
+  },
+  {
+    "itemId": 36309,
+    "itemName": "noble amulet",
+    "sellPrice": 430000
+  },
+  {
+    "itemId": 36336,
+    "itemName": "urmahlullus tail",
+    "sellPrice": 210000
+  },
+  {
+    "itemId": 36337,
+    "itemName": "urmahlullus mane",
+    "sellPrice": 490000
+  },
+  {
+    "itemId": 36338,
+    "itemName": "urmahlullus paw",
+    "sellPrice": 245000
+  },
+  {
+    "itemId": 36392,
+    "itemName": "cobra crest",
+    "sellPrice": 650
+  },
+  {
+    "itemId": 36736,
+    "itemName": "veal",
+    "sellPrice": 40
+  },
+  {
+    "itemId": 36737,
+    "itemName": "meat hammer",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 36738,
+    "itemName": "milk churn",
+    "sellPrice": 100
+  },
+  {
+    "itemId": 36739,
+    "itemName": "cow bell",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 36840,
+    "itemName": "Beer Tap",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 36953,
+    "itemName": "lost soul",
+    "sellPrice": 120
+  },
+  {
+    "itemId": 36954,
+    "itemName": "purified soul",
+    "sellPrice": 260
+  },
+  {
+    "itemId": 37304,
+    "itemName": "brain heads giant neuron",
+    "sellPrice": 100000
+  },
+  {
+    "itemId": 37305,
+    "itemName": "brain heads left hemisphere",
+    "sellPrice": 90000
+  },
+  {
+    "itemId": 37306,
+    "itemName": "brain heads right hemisphere",
+    "sellPrice": 50000
+  },
+  {
+    "itemId": 37315,
+    "itemName": "angel figurine",
+    "sellPrice": 36000
+  },
+  {
+    "itemId": 37319,
+    "itemName": "grimace",
+    "sellPrice": 120000
+  },
+  {
+    "itemId": 37320,
+    "itemName": "bloody tears",
+    "sellPrice": 70000
+  },
+  {
+    "itemId": 37321,
+    "itemName": "jagged sickle",
+    "sellPrice": 150000
+  },
+  {
+    "itemId": 37322,
+    "itemName": "dark bell",
+    "sellPrice": 310000
+  },
+  {
+    "itemId": 37323,
+    "itemName": "ravenous circlet",
+    "sellPrice": 220000
+  },
+  {
+    "itemId": 37324,
+    "itemName": "Pale Worms scalp",
+    "sellPrice": 489000
+  },
+  {
+    "itemId": 37424,
+    "itemName": "ensouled essence",
+    "sellPrice": 820
+  },
+  {
+    "itemId": 37430,
+    "itemName": "phantasmal hair",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 37431,
+    "itemName": "pair of old bracers",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 37437,
+    "itemName": "luminescent crystal pickaxe",
+    "sellPrice": 50
+  },
+  {
+    "itemId": 37450,
+    "itemName": "spectral gold nugget",
+    "sellPrice": 500
+  },
+  {
+    "itemId": 37451,
+    "itemName": "spectral silver nugget",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 37498,
+    "itemName": "silver hand mirror",
+    "sellPrice": 10000
+  },
+  {
+    "itemId": 37499,
+    "itemName": "ivory comb",
+    "sellPrice": 8000
+  },
+  {
+    "itemId": 37500,
+    "itemName": "cursed bone",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 38788,
+    "itemName": "figurine of Megalomania",
+    "sellPrice": 5000000
+  },
+  {
+    "itemId": 39666,
+    "itemName": "Malices horn",
+    "sellPrice": 620000
+  },
+  {
+    "itemId": 39667,
+    "itemName": "Malices spine",
+    "sellPrice": 850000
+  },
+  {
+    "itemId": 39668,
+    "itemName": "Crueltys claw",
+    "sellPrice": 640000
+  },
+  {
+    "itemId": 39669,
+    "itemName": "Crueltys chest",
+    "sellPrice": 720000
+  },
+  {
+    "itemId": 39670,
+    "itemName": "Greeds arm",
+    "sellPrice": 950000
+  },
+  {
+    "itemId": 39671,
+    "itemName": "Megalomanias skull",
+    "sellPrice": 1500000
+  },
+  {
+    "itemId": 39672,
+    "itemName": "Spites spirit",
+    "sellPrice": 840000
+  },
+  {
+    "itemId": 39673,
+    "itemName": "vial of Hatred",
+    "sellPrice": 737000
+  },
+  {
+    "itemId": 39674,
+    "itemName": "Megalomanias essence",
+    "sellPrice": 1900000
+  },
+  {
+    "itemId": 39675,
+    "itemName": "rod",
+    "sellPrice": 2200
+  },
+  {
+    "itemId": 39678,
+    "itemName": "head",
+    "sellPrice": 3200
+  },
+  {
+    "itemId": 39679,
+    "itemName": "apron",
+    "sellPrice": 1300
+  },
+  {
+    "itemId": 39680,
+    "itemName": "telescope eye",
+    "sellPrice": 1600
+  },
+  {
+    "itemId": 39681,
+    "itemName": "crown",
+    "sellPrice": 2700
+  },
+  {
+    "itemId": 39682,
+    "itemName": "hand",
+    "sellPrice": 1450
+  },
+  {
+    "itemId": 39683,
+    "itemName": "head",
+    "sellPrice": 3500
+  },
+  {
+    "itemId": 39684,
+    "itemName": "roots",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39689,
+    "itemName": "werehyaena nose",
+    "sellPrice": 220
+  },
+  {
+    "itemId": 39690,
+    "itemName": "werehyaena talisman",
+    "sellPrice": 350
+  },
+  {
+    "itemId": 39691,
+    "itemName": "ivory carving",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 39698,
+    "itemName": "figurine of Spite",
+    "sellPrice": 3000000
+  },
+  {
+    "itemId": 39728,
+    "itemName": "crawlers essence",
+    "sellPrice": 3700
+  },
+  {
+    "itemId": 39758,
+    "itemName": "jaws",
+    "sellPrice": 3900
+  },
+  {
+    "itemId": 39762,
+    "itemName": "figurine of Malice",
+    "sellPrice": 2800000
+  },
+  {
+    "itemId": 39763,
+    "itemName": "figurine of Cruelty",
+    "sellPrice": 3100000
+  },
+  {
+    "itemId": 39764,
+    "itemName": "figurine of Hatred",
+    "sellPrice": 2700000
+  },
+  {
+    "itemId": 39765,
+    "itemName": "figurine of Greed",
+    "sellPrice": 2900000
+  },
+  {
+    "itemId": 39766,
+    "itemName": "goblet of gloom",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 39767,
+    "itemName": "brooch of embracement",
+    "sellPrice": 14000
+  },
+  {
+    "itemId": 39768,
+    "itemName": "gruesome fan",
+    "sellPrice": 15000
+  },
+  {
+    "itemId": 39769,
+    "itemName": "diabolic skull",
+    "sellPrice": 19000
+  },
+  {
+    "itemId": 39798,
+    "itemName": "Katex blood",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 39799,
+    "itemName": "Utuas poison",
+    "sellPrice": 230
+  },
+  {
+    "itemId": 39801,
+    "itemName": "Srezz eye",
+    "sellPrice": 300
+  },
+  {
+    "itemId": 39830,
+    "itemName": "capricious heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39831,
+    "itemName": "infernal heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39832,
+    "itemName": "hazardous heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39833,
+    "itemName": "mould heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39834,
+    "itemName": "distorted heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39835,
+    "itemName": "vibrant heart",
+    "sellPrice": 2100
+  },
+  {
+    "itemId": 39836,
+    "itemName": "vibrant robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39837,
+    "itemName": "capricious robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39838,
+    "itemName": "infernal robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39839,
+    "itemName": "hazardous robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39840,
+    "itemName": "mould robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39841,
+    "itemName": "distorted robe",
+    "sellPrice": 1200
+  },
+  {
+    "itemId": 39851,
+    "itemName": "lion crest",
+    "sellPrice": 270
+  },
+  {
+    "itemId": 39852,
+    "itemName": "broken longbow",
+    "sellPrice": 130
+  },
+  {
+    "itemId": 39853,
+    "itemName": "lion cloak patch",
+    "sellPrice": 190
+  },
+  {
+    "itemId": 39854,
+    "itemName": "lion seal",
+    "sellPrice": 210
+  },
+  {
+    "itemId": 39855,
+    "itemName": "fur shred",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 39856,
+    "itemName": "morbid tapestry",
+    "sellPrice": 30000
+  },
+  {
+    "itemId": 39909,
+    "itemName": "werehyaena trophy",
+    "sellPrice": 12000
+  },
+  {
+    "itemId": 40406,
+    "itemName": "small treasure chest",
+    "sellPrice": 400
+  },
+  {
+    "itemId": 40407,
+    "itemName": "pirate coin",
+    "sellPrice": 110
+  },
+  {
+    "itemId": 40408,
+    "itemName": "pirat's tail",
+    "sellPrice": 180
+  },
+  {
+    "itemId": 40409,
+    "itemName": "shark fins",
+    "sellPrice": 250
+  },
+  {
+    "itemId": 40413,
+    "itemName": "tiara",
+    "sellPrice": 11000
+  },
+  {
+    "itemId": 40414,
+    "itemName": "golden dustbin",
+    "sellPrice": 7000
+  },
+  {
+    "itemId": 40415,
+    "itemName": "golden skull",
+    "sellPrice": 9000
+  },
+  {
+    "itemId": 40416,
+    "itemName": "golden cheese wedge",
+    "sellPrice": 6000
+  },
+  {
+    "itemId": 40431,
+    "itemName": "mouldy powder",
+    "sellPrice": 200
+  },
+  {
+    "itemId": 40445,
+    "itemName": "Tentugly's eye",
+    "sellPrice": 52000
+  },
+  {
+    "itemId": 40446,
+    "itemName": "tentacle of Tentugly",
+    "sellPrice": 27000
+  },
+  {
+    "itemId": 40447,
+    "itemName": "Tentugly's jaws",
+    "sellPrice": 80000
+  },
+  {
+    "itemId": 40448,
+    "itemName": "Ratmiral's hat",
+    "sellPrice": 150000
+  },
+  {
+    "itemId": 40449,
+    "itemName": "cheesy membership card",
+    "sellPrice": 120000
+  }
+]

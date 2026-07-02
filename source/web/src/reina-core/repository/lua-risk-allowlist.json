@@ -1,0 +1,4 @@
+{
+  "description": "Manual allowlist for reviewed Lua high-risk false positives. The scanner still keeps the full lua-high-risk-review.json report.",
+  "entries": []
+}

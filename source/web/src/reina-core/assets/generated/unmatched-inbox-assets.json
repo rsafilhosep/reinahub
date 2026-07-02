@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-07-01T23:59:27.062Z",
+  "unmatchedCount": 5,
+  "unmatched": [
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-large.gif",
+      "fileName": "empty-potion-flask-large.gif",
+      "normalizedName": "empty potion flask large",
+      "reason": "No item or monster match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-medium.gif",
+      "fileName": "empty-potion-flask-medium.gif",
+      "normalizedName": "empty potion flask medium",
+      "reason": "No item or monster match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-small.gif",
+      "fileName": "empty-potion-flask-small.gif",
+      "normalizedName": "empty potion flask small",
+      "reason": "No item or monster match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\equation.gif",
+      "fileName": "equation.gif",
+      "normalizedName": "equation",
+      "reason": "No item or monster match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\mooh-tah-warrior.gif",
+      "fileName": "mooh-tah-warrior.gif",
+      "normalizedName": "mooh tah warrior",
+      "reason": "No item or monster match found"
+    }
+  ]
+}
