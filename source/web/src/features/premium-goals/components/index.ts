@@ -1,0 +1,1 @@
+export { PremiumGoalsPage } from "./PremiumGoalsPage";

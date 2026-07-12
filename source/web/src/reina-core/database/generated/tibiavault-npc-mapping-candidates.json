@@ -1,0 +1,10 @@
+[
+  {
+    "sourceItemName": "Behemoth Fang",
+    "normalizedSourceItemName": "behemoth fang",
+    "suggestedAlias": "perfect behemoth fang",
+    "confidence": "low",
+    "reason": "word-overlap-with-local-item",
+    "reviewStatus": "manual-review-required"
+  }
+]

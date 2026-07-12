@@ -5,6 +5,14 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const name = searchParams.get("name")?.trim();
   const query = searchParams.get("query")?.trim();
+  const creatureClass = searchParams.get("class")?.trim() ?? "";
+  const classes = searchParams.get("classes") === "1";
+
+  if (classes) {
+    return NextResponse.json({
+      classes: MonsterDatabaseService.getClassSummary()
+    });
+  }
 
   if (name) {
     const monster = MonsterDatabaseService.getMonster(name);
@@ -15,6 +23,6 @@ export async function GET(request: Request) {
   }
 
   return NextResponse.json({
-    results: query ? MonsterDatabaseService.searchMonsters(query) : []
+    results: query || creatureClass ? MonsterDatabaseService.searchMonsters(query ?? "", creatureClass) : []
   });
 }

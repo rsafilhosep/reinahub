@@ -6,3 +6,9 @@ export {
   MISSING_CREATURE_IMAGE,
   MISSING_ITEM_IMAGE
 } from "./asset-resolver";
+
+export {
+  clearAssetNormalizerCache,
+  normalizeAssetLookupKey,
+  normalizeAssetName
+} from "./asset-normalizer";

@@ -1,5 +1,7 @@
 export type {
   MonsterAssetInfo,
+  MonsterClassInfo,
+  MonsterClassSummary,
   MonsterDatabaseRecord,
   MonsterFutureData,
   MonsterLootEntry,

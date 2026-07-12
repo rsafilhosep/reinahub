@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-07-05T12:29:46.346Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/#npcs",
+  "scriptUrl": "https://tibiavault.com/js/npc-data.js?v=2.159.0",
+  "safety": "Review candidates only. This script does not overwrite npcs.json or npc-trades.json.",
+  "input": {
+    "normalizedReport": "source\\web\\src\\reina-core\\data-sources\\generated\\tibiavault-npcs-normalized.json",
+    "coverageReport": "source\\web\\src\\reina-core\\data-sources\\generated\\tibiavault-npcs-coverage.json"
+  },
+  "totals": {
+    "sourceNpcs": 78,
+    "npcCandidates": 78,
+    "newNpcCandidates": 44,
+    "mergeNpcCandidates": 34,
+    "tradeCandidates": 447,
+    "unresolvedTrades": 1,
+    "conflicts": 20,
+    "sourceCoverageTotals": {
+      "sourceNpcs": 78,
+      "localNpcs": 281,
+      "matchedNpcs": 34,
+      "sourceOnlyNpcs": 44,
+      "localOnlyNpcs": 247,
+      "sourceNpcTrades": 467,
+      "matchedItemsInTrades": 463,
+      "unresolvedItemsInTrades": 4,
+      "itemMatchPct": 99.14
+    }
+  },
+  "nextSteps": [
+    "Review tibiavault-npc-promotion-conflicts.json.",
+    "Review tibiavault-npc-promotion-unresolved-trades.json.",
+    "Add aliases or supplemental items for unresolved trades when needed.",
+    "Only after review, merge candidates into canonical NPC import flow."
+  ]
+}

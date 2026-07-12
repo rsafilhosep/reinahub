@@ -1,13 +1,12 @@
 import "server-only";
-import fs from "node:fs";
-import path from "node:path";
 import { getItemImagePath, getNpcImagePath } from "@/source/web/src/reina-core/assets";
-import { getReinaDatabaseSnapshot, itemLookupKey, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { ServerAssetService } from "@/source/web/src/reina-core/assets/server-asset-service";
+import { getReinaDatabaseSnapshot, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { itemLookupKey } from "@/source/web/src/reina-core/database/normalize";
+import { rankSearchResults } from "@/source/web/src/reina-core/search";
+import type { ReinaNpc, ReinaNpcTrade } from "@/source/web/src/reina-core/database";
 import { createEmptyNpcFutureData } from "../utils";
 import type { NpcAssetInfo, NpcHubRecord, NpcLocationInfo, NpcRelatedItem, NpcSearchResult } from "../types";
-
-const publicDir = path.join(process.cwd(), "public");
-const assetExistsCache = new Map<string, boolean>();
 
 const npcSeeds = [
   {
@@ -19,17 +18,17 @@ const npcSeeds = [
 
 export const NpcHubService = {
   getNpc(name: string): NpcHubRecord | null {
-    const seed = findNpcSeed(name);
-    if (!seed) return null;
+    const npc = findNpc(name);
+    if (!npc) return null;
 
-    const itemsBought = this.getItemsBought(seed.name);
-    const itemsSold = this.getItemsSold(seed.name);
+    const itemsBought = this.getItemsBought(npc.name);
+    const itemsSold = this.getItemsSold(npc.name);
 
     return {
-      name: seed.name,
-      normalizedName: itemLookupKey(seed.name),
-      image: this.getNpcImage(seed.name),
-      location: this.getNpcLocation(seed.name),
+      name: npc.name,
+      normalizedName: itemLookupKey(npc.name),
+      image: this.getNpcImage(npc.name),
+      location: this.getNpcLocation(npc.name),
       itemsBought,
       itemsSold,
       itemsBoughtCount: itemsBought.length,
@@ -42,8 +41,16 @@ export const NpcHubService = {
     const normalizedQuery = itemLookupKey(query);
     if (!normalizedQuery) return [];
 
-    return npcSeeds
-      .filter((npc) => itemLookupKey(npc.name).includes(normalizedQuery))
+    const realNpcs = ReinaDataService.searchNpcs(query);
+    const seedMatches = rankSearchResults(npcSeeds, query, (npc) => npc.name);
+    const merged = rankSearchResults(
+      [...realNpcs, ...seedMatches].filter((npc, index, list) => list.findIndex((candidate) => itemLookupKey(candidate.name) === itemLookupKey(npc.name)) === index),
+      query,
+      (npc) => npc.name,
+      50
+    );
+
+    return merged
       .map((npc) => {
         const itemsBought = this.getItemsBought(npc.name);
         const itemsSold = this.getItemsSold(npc.name);
@@ -59,6 +66,13 @@ export const NpcHubService = {
   },
 
   getItemsBought(npc: string): NpcRelatedItem[] {
+    const realNpc = ReinaDataService.getNpcByName(npc);
+    if (realNpc) {
+      return ReinaDataService.getNpcTrades(realNpc.name)
+        .filter((trade) => trade.tradeType === "npcBuys")
+        .map((trade) => tradeToRelatedItem(trade));
+    }
+
     const seed = findNpcSeed(npc);
     if (!seed) return [];
 
@@ -73,47 +87,62 @@ export const NpcHubService = {
         itemId,
         itemName,
         price: price.sellPrice,
+        tradeType: "reference",
         imagePath,
-        hasImage: publicAssetExists(imagePath),
+        hasImage: ServerAssetService.publicAssetExists(imagePath),
         itemHref: itemId ? `/items?itemId=${itemId}` : null
       };
     });
   },
 
   getItemsSold(npc: string): NpcRelatedItem[] {
-    const seed = findNpcSeed(npc);
-    return seed ? [] : [];
+    const realNpc = ReinaDataService.getNpcByName(npc);
+    if (!realNpc) return [];
+
+    return ReinaDataService.getNpcTrades(realNpc.name)
+      .filter((trade) => trade.tradeType === "npcSells")
+      .map((trade) => tradeToRelatedItem(trade));
   },
 
   getNpcImage(name: string): NpcAssetInfo {
     const imagePath = getNpcImagePath(name);
     return {
       path: imagePath,
-      exists: publicAssetExists(imagePath)
+      exists: ServerAssetService.publicAssetExists(imagePath)
     };
   },
 
   getNpcLocation(name: string): NpcLocationInfo {
-    const seed = findNpcSeed(name);
+    const npc = findNpc(name);
     return {
-      city: seed?.city ?? null,
+      city: npc?.city ?? null,
       coordinates: null
     };
   }
 };
+
+function findNpc(name: string): ReinaNpc | { name: string; city: string | null } | null {
+  return ReinaDataService.getNpcByName(name) ?? findNpcSeed(name);
+}
 
 function findNpcSeed(name: string) {
   const normalizedName = itemLookupKey(name);
   return npcSeeds.find((npc) => itemLookupKey(npc.name) === normalizedName) ?? null;
 }
 
-function publicAssetExists(assetPath: string) {
-  const cached = assetExistsCache.get(assetPath);
-  if (cached !== undefined) return cached;
+function tradeToRelatedItem(trade: ReinaNpcTrade): NpcRelatedItem {
+  const item = trade.itemId ? ReinaDataService.findItemById(trade.itemId) : ReinaDataService.findItemByName(trade.itemName);
+  const itemId = item?.id ?? trade.itemId ?? null;
+  const itemName = item?.name ?? trade.itemName;
+  const imagePath = itemId ? getItemImagePath(itemId) : getItemImagePath(null);
 
-  const normalizedPath = assetPath.startsWith("/") ? assetPath.slice(1) : assetPath;
-  const absolutePath = path.join(publicDir, normalizedPath);
-  const exists = fs.existsSync(absolutePath);
-  assetExistsCache.set(assetPath, exists);
-  return exists;
+  return {
+    itemId,
+    itemName,
+    price: trade.price,
+    tradeType: trade.tradeType,
+    imagePath,
+    hasImage: ServerAssetService.publicAssetExists(imagePath),
+    itemHref: itemId ? `/items?itemId=${itemId}` : null
+  };
 }

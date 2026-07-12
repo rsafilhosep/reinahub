@@ -1,4 +1,4 @@
-import { itemLookupKey } from "@/source/web/src/reina-core/database";
+import { normalizeAssetName } from "./asset-normalizer";
 
 export const MISSING_ITEM_IMAGE = "/assets/icons/missing-item.svg";
 export const MISSING_CREATURE_IMAGE = "/assets/icons/missing-creature.svg";
@@ -23,8 +23,3 @@ export function getBossImagePath(bossName?: string | null) {
   const slug = normalizeAssetName(bossName);
   return slug ? `/assets/bosses/${slug}.gif` : MISSING_CREATURE_IMAGE;
 }
-
-function normalizeAssetName(name?: string | null) {
-  return itemLookupKey(name ?? "").replace(/\s+/g, "-");
-}
-

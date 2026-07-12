@@ -8,9 +8,11 @@ const publicAssetsRoot = path.join(root, "public", "assets");
 const reportRoot = path.join(root, "source", "web", "src", "reina-core", "assets", "generated");
 
 const items = readJson(path.join(generatedRoot, "items.json"));
+const supplementalItems = readJson(path.join(generatedRoot, "supplemental-items.json"), []);
 const monsters = readJson(path.join(generatedRoot, "monsters.json"));
+const allItems = mergeItems(items, supplementalItems);
 
-const itemAssets = items.map((item) => {
+const itemAssets = allItems.map((item) => {
   const expectedPath = `/assets/items/${item.id}.gif`;
   const filePath = path.join(publicAssetsRoot, "items", `${item.id}.gif`);
   return {
@@ -47,7 +49,9 @@ const report = {
     bosses: "public/assets/bosses"
   },
   totals: {
-    items: items.length,
+    items: allItems.length,
+    sourceItems: items.length,
+    supplementalItems: supplementalItems.length,
     itemImagesFound: foundItems,
     itemImagesMissing: missingItems.length,
     monsters: monsters.length,
@@ -69,8 +73,13 @@ writeJson(path.join(reportRoot, "missing-assets.json"), missingAssets);
 console.log("Assets verification complete");
 console.log(report.totals);
 
-function readJson(filePath) {
-  return JSON.parse(readFileSync(filePath, "utf8"));
+function readJson(filePath, fallback = null) {
+  try {
+    return JSON.parse(readFileSync(filePath, "utf8"));
+  } catch {
+    if (fallback !== null) return fallback;
+    throw new Error(`Unable to read JSON file: ${filePath}`);
+  }
 }
 
 function writeJson(filePath, data) {
@@ -94,3 +103,22 @@ function normalizeAssetName(name = "") {
     .replace(/\s+/g, "-");
 }
 
+function itemLookupKey(name = "") {
+  return normalizeAssetName(name).replace(/-/g, " ");
+}
+
+function mergeItems(primaryItems, extraItems) {
+  const byId = new Set(primaryItems.flatMap((item) => [item.id, item.clientId].filter(Boolean)));
+  const byName = new Set(primaryItems.map((item) => itemLookupKey(item.name)));
+  const merged = [...primaryItems];
+
+  for (const item of extraItems) {
+    if (byId.has(item.id) || (item.clientId && byId.has(item.clientId)) || byName.has(itemLookupKey(item.name))) continue;
+    merged.push(item);
+    byId.add(item.id);
+    if (item.clientId) byId.add(item.clientId);
+    byName.add(itemLookupKey(item.name));
+  }
+
+  return merged;
+}

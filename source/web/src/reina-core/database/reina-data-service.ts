@@ -2,14 +2,22 @@ import "server-only";
 import itemsJson from "./generated/items.json";
 import monsterLootJson from "./generated/monster-loot.json";
 import monstersJson from "./generated/monsters.json";
+import npcsJson from "./generated/npcs.json";
 import npcSellPricesJson from "./generated/npc-sell-prices.json";
+import npcTradesJson from "./generated/npc-trades.json";
+import supplementalItemsJson from "./generated/supplemental-items.json";
+import { rankSearchResults } from "@/source/web/src/reina-core/search";
 import { itemLookupKey } from "./normalize";
-import type { ReinaItem, ReinaMonster, ReinaMonsterLoot, ReinaNpcSellPrice } from "./types";
+import type { ReinaItem, ReinaMonster, ReinaMonsterLoot, ReinaNpc, ReinaNpcSellPrice, ReinaNpcTrade } from "./types";
 
-const items = itemsJson as ReinaItem[];
+const sourceItems = itemsJson as ReinaItem[];
+const supplementalItems = supplementalItemsJson as ReinaItem[];
+const items = mergeItems(sourceItems, supplementalItems);
 const monsters = monstersJson as ReinaMonster[];
 const monsterLoot = monsterLootJson as ReinaMonsterLoot[];
+const npcs = npcsJson as ReinaNpc[];
 const npcSellPrices = npcSellPricesJson as ReinaNpcSellPrice[];
+const npcTrades = npcTradesJson as ReinaNpcTrade[];
 
 type ReinaDataIndex = {
   itemsById: Map<number, ReinaItem>;
@@ -19,6 +27,10 @@ type ReinaDataIndex = {
   npcPricesByItemName: Map<string, ReinaNpcSellPrice>;
   monstersByName: Map<string, ReinaMonster>;
   monsterLootByName: Map<string, ReinaMonsterLoot[]>;
+  npcsByName: Map<string, ReinaNpc>;
+  npcTradesByNpcName: Map<string, ReinaNpcTrade[]>;
+  npcTradesByItemId: Map<number, ReinaNpcTrade[]>;
+  npcTradesByItemName: Map<string, ReinaNpcTrade[]>;
 };
 
 let cachedIndex: ReinaDataIndex | null = null;
@@ -54,26 +66,76 @@ export const ReinaDataService = {
     return getIndex().monsterLootByName.get(itemLookupKey(monsterName)) ?? [];
   },
 
+  getNpcByName(name: string) {
+    return getIndex().npcsByName.get(itemLookupKey(name)) ?? null;
+  },
+
+  searchNpcs(query: string) {
+    return rankSearchResults(npcs, query, (npc) => npc.name, 50);
+  },
+
+  getNpcTrades(npcName: string) {
+    return getIndex().npcTradesByNpcName.get(itemLookupKey(npcName)) ?? [];
+  },
+
+  getNpcTradesForItem(itemId: number | string) {
+    const item = this.findItemById(itemId);
+    const numericId = Number(itemId);
+    const index = getIndex();
+    const trades = new Map<string, ReinaNpcTrade>();
+    const add = (trade: ReinaNpcTrade) => trades.set(`${trade.npcName}:${trade.tradeType}:${trade.price}:${trade.itemName}`, trade);
+
+    if (Number.isFinite(numericId)) {
+      for (const trade of index.npcTradesByItemId.get(numericId) ?? []) add(trade);
+    }
+
+    if (item) {
+      for (const trade of index.npcTradesByItemId.get(item.id) ?? []) add(trade);
+      if (item.clientId) {
+        for (const trade of index.npcTradesByItemId.get(item.clientId) ?? []) add(trade);
+      }
+      for (const trade of index.npcTradesByItemName.get(itemLookupKey(item.name)) ?? []) add(trade);
+    }
+
+    return Array.from(trades.values()).sort((a, b) => a.npcName.localeCompare(b.npcName) || a.price - b.price);
+  },
+
   searchItems(query: string) {
-    const normalizedQuery = itemLookupKey(query);
-    if (!normalizedQuery) return [];
-    return rankSearchResults(items, normalizedQuery, (item) => item.name).slice(0, 50);
+    return rankSearchResults(items, query, (item) => item.name, 50);
   },
 
   searchMonsters(query: string) {
-    const normalizedQuery = itemLookupKey(query);
-    if (!normalizedQuery) return [];
-    return rankSearchResults(monsters, normalizedQuery, (monster) => monster.name).slice(0, 50);
+    return rankSearchResults(monsters, query, (monster) => monster.name, 50);
   }
 };
 
 export function getReinaDatabaseSnapshot() {
   return {
     items,
+    sourceItems,
+    supplementalItems,
     monsters,
     monsterLoot,
+    npcs,
+    npcTrades,
     npcSellPrices
   };
+}
+
+function mergeItems(primaryItems: ReinaItem[], extraItems: ReinaItem[]) {
+  const byId = new Set(primaryItems.flatMap((item) => [item.id, item.clientId].filter(Boolean) as number[]));
+  const byName = new Set(primaryItems.map((item) => itemLookupKey(item.name)));
+  const merged: ReinaItem[] = primaryItems.map((item) => ({ ...item, dataSource: item.dataSource ?? "items.xml" }));
+
+  for (const item of extraItems) {
+    if (byId.has(item.id) || (item.clientId && byId.has(item.clientId)) || byName.has(itemLookupKey(item.name))) continue;
+    merged.push({ ...item, dataSource: item.dataSource ?? "supplemental" });
+    byId.add(item.id);
+    if (item.clientId) byId.add(item.clientId);
+    byName.add(itemLookupKey(item.name));
+  }
+
+  return merged.sort((a, b) => a.id - b.id);
 }
 
 function getIndex() {
@@ -86,6 +148,10 @@ function getIndex() {
   const npcPricesByItemName = new Map<string, ReinaNpcSellPrice>();
   const monstersByName = new Map<string, ReinaMonster>();
   const monsterLootByName = new Map<string, ReinaMonsterLoot[]>();
+  const npcsByName = new Map<string, ReinaNpc>();
+  const npcTradesByNpcName = new Map<string, ReinaNpcTrade[]>();
+  const npcTradesByItemId = new Map<number, ReinaNpcTrade[]>();
+  const npcTradesByItemName = new Map<string, ReinaNpcTrade[]>();
 
   for (const item of items) {
     if (!itemsById.has(item.id)) itemsById.set(item.id, item);
@@ -108,6 +174,17 @@ function getIndex() {
     pushMap(monsterLootByName, itemLookupKey(loot.monsterName), loot);
   }
 
+  for (const npc of npcs) {
+    npcsByName.set(itemLookupKey(npc.name), npc);
+  }
+
+  for (const trade of npcTrades) {
+    pushMap(npcTradesByNpcName, itemLookupKey(trade.npcName), trade);
+    if (trade.itemId) pushMap(npcTradesByItemId, trade.itemId, trade);
+    if (trade.clientId) pushMap(npcTradesByItemId, trade.clientId, trade);
+    pushMap(npcTradesByItemName, itemLookupKey(trade.itemName), trade);
+  }
+
   cachedIndex = {
     itemsById,
     itemsByClientId,
@@ -115,7 +192,11 @@ function getIndex() {
     npcPricesByItemId,
     npcPricesByItemName,
     monstersByName,
-    monsterLootByName
+    monsterLootByName,
+    npcsByName,
+    npcTradesByNpcName,
+    npcTradesByItemId,
+    npcTradesByItemName
   };
   return cachedIndex;
 }
@@ -124,32 +205,4 @@ function pushMap<K, V>(map: Map<K, V[]>, key: K, value: V) {
   const list = map.get(key) ?? [];
   list.push(value);
   map.set(key, list);
-}
-
-function rankSearchResults<T>(rows: T[], normalizedQuery: string, getName: (row: T) => string) {
-  return rows
-    .map((row) => {
-      const name = getName(row);
-      const normalizedName = itemLookupKey(name);
-      const score = getSearchScore(normalizedName, normalizedQuery);
-      return { row, name, score };
-    })
-    .filter((entry) => entry.score < Number.POSITIVE_INFINITY)
-    .sort((a, b) => a.score - b.score || a.name.length - b.name.length || a.name.localeCompare(b.name))
-    .map((entry) => entry.row);
-}
-
-function getSearchScore(normalizedName: string, normalizedQuery: string) {
-  if (normalizedName === normalizedQuery) return 0;
-  if (normalizedName.startsWith(`${normalizedQuery} `)) return 5;
-
-  const words = normalizedName.split(" ").filter(Boolean);
-  if (words.includes(normalizedQuery)) return 10;
-  if (normalizedName.startsWith(normalizedQuery)) return 20;
-  if (words.some((word) => word.startsWith(normalizedQuery))) return 30;
-
-  const index = normalizedName.indexOf(normalizedQuery);
-  if (index >= 0) return 100 + index;
-
-  return Number.POSITIVE_INFINITY;
 }

@@ -7,11 +7,13 @@ const generatedDatabaseRoot = path.join(root, "source", "web", "src", "reina-cor
 const generatedAssetsRoot = path.join(root, "source", "web", "src", "reina-core", "assets", "generated");
 
 const items = readJson(path.join(generatedDatabaseRoot, "items.json"));
+const supplementalItems = readJson(path.join(generatedDatabaseRoot, "supplemental-items.json"), []);
 const monsterLoot = readJson(path.join(generatedDatabaseRoot, "monster-loot.json"));
+const allItems = mergeItems(items, supplementalItems);
 
-const itemById = new Map(items.map((item) => [item.id, item]));
+const itemById = new Map(allItems.map((item) => [item.id, item]));
 const itemByName = new Map();
-items.forEach((item) => {
+allItems.forEach((item) => {
   const key = itemLookupKey(item.name);
   if (!itemByName.has(key)) itemByName.set(key, item);
 });
@@ -65,8 +67,13 @@ function toEntry(item) {
   };
 }
 
-function readJson(filePath) {
-  return JSON.parse(readFileSync(filePath, "utf8"));
+function readJson(filePath, fallback = null) {
+  try {
+    return JSON.parse(readFileSync(filePath, "utf8"));
+  } catch {
+    if (fallback !== null) return fallback;
+    throw new Error(`Unable to read JSON file: ${filePath}`);
+  }
 }
 
 function itemLookupKey(name = "") {
@@ -85,3 +92,18 @@ function itemLookupKey(name = "") {
     .trim();
 }
 
+function mergeItems(primaryItems, extraItems) {
+  const byId = new Set(primaryItems.flatMap((item) => [item.id, item.clientId].filter(Boolean)));
+  const byName = new Set(primaryItems.map((item) => itemLookupKey(item.name)));
+  const merged = [...primaryItems];
+
+  for (const item of extraItems) {
+    if (byId.has(item.id) || (item.clientId && byId.has(item.clientId)) || byName.has(itemLookupKey(item.name))) continue;
+    merged.push(item);
+    byId.add(item.id);
+    if (item.clientId) byId.add(item.clientId);
+    byName.add(itemLookupKey(item.name));
+  }
+
+  return merged;
+}

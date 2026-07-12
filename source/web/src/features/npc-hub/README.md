@@ -12,9 +12,15 @@ Ele segue o mesmo padrao arquitetural de Item Database e Monster Database:
 
 ## Fonte dos dados
 
-Nesta fase inicial, o `NpcHubService` usa o `ReinaDataService` e a base `npc-sell-prices.json` para representar uma lista agregada de precos de NPC comprador.
+O `NpcHubService` usa o `ReinaDataService` e consome:
 
-Os dados atuais ainda nao possuem nomes reais de NPC por item. Por isso, o hub cria o registro inicial `NPC Price Reference`, que serve como ponte ate os importadores de NPC reais ficarem prontos.
+- `npcs.json`
+- `npc-trades.json`
+- `npc-sell-prices.json`
+
+`npcs.json` e `npc-trades.json` sao gerados a partir dos shops Lua do OTServer, sempre por leitura de texto e sem executar scripts.
+
+`NPC Price Reference` continua existindo apenas como fallback agregado para itens que possuem preco em `npc-sell-prices.json`, mas ainda nao possuem relacao real com um NPC importado.
 
 ## Servico
 
@@ -68,9 +74,9 @@ O NPC HUB ja retorna itens relacionados com `itemHref`, preparado para abrir o I
 
 O Item Database tambem ja aponta de volta para o NPC HUB por meio de `boughtByNpcs` e `soldByNpcs`.
 
-Nesta fase, os itens com preco NPC apontam para `NPC Price Reference`, porque a base atual ainda nao possui nomes reais de NPC por item.
+Nesta fase, os itens com trades reais ja apontam para NPCs reais. Quando nao houver relacao real, o Item Database ainda pode usar `NPC Price Reference` como fallback seguro.
 
-Quando a base passar a guardar NPCs reais por item, o Item Database podera mostrar:
+Com essa base, o Item Database pode mostrar:
 
 - comprado por;
 - vendido por;

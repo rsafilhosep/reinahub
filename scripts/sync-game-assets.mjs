@@ -50,6 +50,10 @@ for (const category of categories) {
   }
 }
 
+manifest.icons["item-placeholder"] = "/assets/icons/missing-item.svg";
+manifest.icons["monster-placeholder"] = "/assets/icons/missing-creature.svg";
+manifest.icons["npc-placeholder"] = "/assets/icons/missing-creature.svg";
+
 const content = `export type AssetCategory =
   | "monsters"
   | "items"
@@ -67,4 +71,3 @@ export const assetManifest: AssetManifest = ${JSON.stringify(manifest, null, 2)}
 
 writeFileSync(manifestPath, content);
 console.log(`Synced game assets and wrote ${path.relative(root, manifestPath)}`);
-

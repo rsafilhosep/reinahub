@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-07-05T15:52:52.702Z",
+  "safety": "NPC trade price source layer only. Canonical npc-trades.json remains unchanged.",
+  "sources": [
+    {
+      "id": "otserver-local",
+      "label": "OTServer Local",
+      "type": "local",
+      "priority": 10,
+      "activeByDefault": true,
+      "description": "Precos extraidos dos arquivos locais do OTServer em files_repository."
+    },
+    {
+      "id": "tibiavault-reference",
+      "label": "TibiaVault Reference",
+      "type": "external-reference",
+      "priority": 20,
+      "activeByDefault": false,
+      "description": "Precos de referencia capturados do TibiaVault para revisao e comparacao."
+    }
+  ],
+  "totals": {
+    "localRows": 12108,
+    "tibiavaultRows": 447,
+    "totalRows": 12555,
+    "groupedTradeKeys": 12369,
+    "conflicts": 20,
+    "activeByDefaultRows": 12108
+  },
+  "policy": {
+    "defaultLocalPriceSource": "otserver-local",
+    "externalPriceSource": "tibiavault-reference",
+    "note": "Keep local OTServer prices as active source for current tools. Use TibiaVault conflicts as review/reference data until a per-source price selector exists."
+  }
+}

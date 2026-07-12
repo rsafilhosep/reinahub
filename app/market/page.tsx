@@ -3,48 +3,54 @@
 import { useEffect, useMemo, useState } from "react";
 import { Bar } from "react-chartjs-2";
 import { BarElement, CategoryScale, Chart as ChartJS, LinearScale, Tooltip } from "chart.js";
-import { ActiveServerBanner } from "@/components/ActiveServerBanner";
 import { AppShell } from "@/components/AppShell";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
 import { Tabs } from "@/components/Tabs";
 import { integer, money } from "@/services/format";
-import { getActiveServer, goldToPremium, premiumToBrl } from "@/services/quote-service";
-import { StorageService } from "@/services/storage-service";
+import { MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
+import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { ItemSearchClientService } from "@/source/web/src/features/item-database/services/item-search-client-service";
+import type { ItemSearchResult } from "@/source/web/src/features/item-database/types";
+import { MarketEconomyService } from "@/source/web/src/features/market-analyzer/services/market-economy-service";
 import type { MarketAnalysis, VaultServer } from "@/types/vault";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
-type MarketItemSearchResult = {
-  id: number;
-  name: string;
-  npcPrice: number | null;
-  image: {
-    path: string;
-    exists: boolean;
-  };
-};
-
-const MISSING_ITEM_IMAGE = "/assets/icons/missing-item.svg";
+const ITEM_CATEGORY_FILTERS = [
+  { key: "", label: "Todos" },
+  { key: "weapon", label: "Weapons" },
+  { key: "potion", label: "Potions" },
+  { key: "tool", label: "Tools" },
+  { key: "helmet", label: "Helmets" },
+  { key: "armor", label: "Armors" },
+  { key: "legs", label: "Legs" },
+  { key: "shield", label: "Shields" },
+  { key: "creature-product", label: "Creature Products" },
+  { key: "currency", label: "Currency" },
+  { key: "rune", label: "Runes" }
+];
 
 export default function MarketPage() {
   const [tab, setTab] = useState("analise");
   const [server, setServer] = useState<VaultServer | null>(null);
   const [nome, setNome] = useState("Green Dragon Leather");
-  const [selectedItem, setSelectedItem] = useState<MarketItemSearchResult | null>(null);
-  const [itemResults, setItemResults] = useState<MarketItemSearchResult[]>([]);
+  const [itemCategory, setItemCategory] = useState("");
+  const [selectedItem, setSelectedItem] = useState<ItemSearchResult | null>(null);
+  const [itemResults, setItemResults] = useState<ItemSearchResult[]>([]);
   const [itemSearchLoading, setItemSearchLoading] = useState(false);
   const [qtd, setQtd] = useState(100);
   const [npcUnit, setNpcUnit] = useState(100);
   const [marketUnit, setMarketUnit] = useState(130);
   const [taxa, setTaxa] = useState(5);
+  const [marketMinProfitPct, setMarketMinProfitPct] = useState(5);
+  const [marketMinProfitGp, setMarketMinProfitGp] = useState(0);
   const [history, setHistory] = useState<MarketAnalysis[]>([]);
 
   useEffect(() => {
-    const sync = () => setServer(getActiveServer());
+    const sync = () => setServer(ReinaEconomyService.getActiveContext().server);
     sync();
-    setHistory(StorageService.get<MarketAnalysis[]>("ma_history", []));
-    window.addEventListener("reinahub:quote-change", sync);
-    return () => window.removeEventListener("reinahub:quote-change", sync);
+    setHistory(MarketEconomyService.loadHistory());
+    return ReinaEconomyService.subscribe(sync);
   }, []);
 
   useEffect(() => {
@@ -59,9 +65,8 @@ export default function MarketPage() {
     setItemSearchLoading(true);
     const timeout = window.setTimeout(async () => {
       try {
-        const response = await fetch(`/api/items?query=${encodeURIComponent(query)}`);
-        const data = (await response.json()) as { results?: MarketItemSearchResult[] };
-        if (!cancelled) setItemResults(data.results ?? []);
+        const results = await ItemSearchClientService.searchItems({ query, category: itemCategory });
+        if (!cancelled) setItemResults(results);
       } catch {
         if (!cancelled) setItemResults([]);
       } finally {
@@ -73,16 +78,10 @@ export default function MarketPage() {
       cancelled = true;
       window.clearTimeout(timeout);
     };
-  }, [nome]);
+  }, [nome, itemCategory]);
 
-  const analysis = useMemo<MarketAnalysis>(() => {
-    const npcTotal = qtd * npcUnit;
-    const marketBruto = qtd * marketUnit;
-    const taxaValor = marketBruto * (taxa / 100);
-    const marketLiquido = marketBruto - taxaValor;
-    const diffAbs = marketLiquido - npcTotal;
-    const diffPct = npcTotal > 0 ? (diffAbs / npcTotal) * 100 : 0;
-    return {
+  const economy = useMemo(() => (
+    MarketEconomyService.summarize({
       itemId: selectedItem?.id ?? null,
       itemImagePath: selectedItem?.image.path ?? null,
       nome,
@@ -90,24 +89,17 @@ export default function MarketPage() {
       npcUnit,
       marketUnit,
       taxaPct: taxa,
-      npcTotal,
-      marketBruto,
-      taxaValor,
-      marketLiquido,
-      diffAbs,
-      diffPct,
-      ts: Date.now()
-    };
-  }, [nome, qtd, npcUnit, marketUnit, taxa, selectedItem]);
-
-  const bestGp = Math.max(analysis.npcTotal, analysis.marketLiquido);
-  const premium = server ? goldToPremium(server, bestGp) : 0;
-  const brl = server ? premiumToBrl(server, premium, "venda") : 0;
+      marketMinProfitPct,
+      marketMinProfitGp
+    }, server)
+  ), [nome, qtd, npcUnit, marketUnit, taxa, marketMinProfitPct, marketMinProfitGp, selectedItem, server]);
+  const analysis = economy.analysis;
+  const premium = economy.premium;
+  const brl = economy.brl;
 
   function saveAnalysis() {
-    const next = [...history, { ...analysis, ts: Date.now() }].slice(-50);
+    const next = MarketEconomyService.saveAnalysis(history, analysis);
     setHistory(next);
-    StorageService.set("ma_history", next);
   }
 
   function updateItemName(value: string) {
@@ -117,16 +109,23 @@ export default function MarketPage() {
     }
   }
 
-  function selectMarketItem(item: MarketItemSearchResult) {
+  function selectMarketItem(item: ItemSearchResult) {
     setSelectedItem(item);
     setNome(item.name);
     if (item.npcPrice !== null) setNpcUnit(item.npcPrice);
     setItemResults([]);
   }
 
+  function updateItemCategory(category: string) {
+    setItemCategory(category);
+    setItemResults([]);
+    if (selectedItem && category && !itemMatchesCategory(selectedItem, category)) {
+      setSelectedItem(null);
+    }
+  }
+
   return (
     <AppShell current="market" mark="MA" subtitle="Market Analyzer - NPC vs Market">
-      <ActiveServerBanner />
       <Tabs active={tab} onChange={setTab} tabs={[
         { key: "analise", label: "I - Analise" },
         { key: "historico", label: "II - Historico" },
@@ -136,6 +135,18 @@ export default function MarketPage() {
       {tab === "analise" ? (
         <>
           <Panel title="Parametros do item" eyebrow="npc vs market">
+            <div className="quick-row" style={{ marginTop: 0, marginBottom: 14 }}>
+              {ITEM_CATEGORY_FILTERS.map((filter) => (
+                <button
+                  className={`quick-btn ${itemCategory === filter.key ? "primary" : ""}`}
+                  key={filter.key || "all"}
+                  type="button"
+                  onClick={() => updateItemCategory(filter.key)}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
             <div className="inputs-grid">
               <Field label="Nome do item">
                 <input value={nome} onChange={(e) => updateItemName(e.target.value)} />
@@ -144,6 +155,18 @@ export default function MarketPage() {
               <Field label="Valor unitario NPC"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={npcUnit} onChange={(e) => setNpcUnit(Number(e.target.value))} /></div></Field>
               <Field label="Valor unitario Market"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={marketUnit} onChange={(e) => setMarketUnit(Number(e.target.value))} /></div></Field>
               <Field label="Taxa do Market"><div className="field-wrap"><span className="field-suffix">%</span><input className="with-suffix" type="number" step="0.1" value={taxa} onChange={(e) => setTaxa(Number(e.target.value))} /></div></Field>
+              <Field label="Vantagem minima Market">
+                <div className="field-wrap">
+                  <span className="field-suffix">%</span>
+                  <input className="with-suffix" type="number" min="0" step="0.1" value={marketMinProfitPct} onChange={(e) => setMarketMinProfitPct(Number(e.target.value))} />
+                </div>
+              </Field>
+              <Field label="Ganho minimo Market">
+                <div className="field-wrap">
+                  <span className="field-suffix">gp</span>
+                  <input className="with-suffix" type="number" min="0" value={marketMinProfitGp} onChange={(e) => setMarketMinProfitGp(Number(e.target.value))} />
+                </div>
+              </Field>
             </div>
             {selectedItem ? (
               <div className="history-item" style={{ marginTop: 14 }}>
@@ -161,7 +184,7 @@ export default function MarketPage() {
                   {selectedItem.name}
                 </span>
                 <span style={{ color: "var(--gold)" }}>
-                  #{selectedItem.id}{selectedItem.npcPrice !== null ? ` - NPC ${integer(selectedItem.npcPrice)} gp` : " - sem preco NPC"}
+                  {formatItemMeta(selectedItem)}
                 </span>
               </div>
             ) : null}
@@ -189,7 +212,7 @@ export default function MarketPage() {
                       />
                       {item.name}
                     </span>
-                    <span style={{ color: "var(--gold)" }}>{item.npcPrice !== null ? `${integer(item.npcPrice)} gp NPC` : `#${item.id}`}</span>
+                    <span style={{ color: "var(--gold)" }}>{formatItemMeta(item)}</span>
                   </button>
                 ))}
               </div>
@@ -202,8 +225,10 @@ export default function MarketPage() {
 
           <div className="verdict">
             <div className="label">Melhor opcao</div>
-            <div className={`value ${analysis.diffAbs >= 0 ? "" : "red"}`}>{analysis.diffAbs >= 0 ? "Vender no Market" : "Vender para NPC"}</div>
-            <div className="note">{analysis.diffAbs >= 0 ? "+" : ""}{integer(analysis.diffAbs)} gp ({money(analysis.diffPct, 2)}%)</div>
+            <div className={`value ${economy.bestOption === "market" ? "" : "red"}`}>{economy.bestOption === "market" ? "Vender no Market" : "Vender para NPC"}</div>
+            <div className="note">
+              {analysis.diffAbs >= 0 ? "+" : ""}{integer(analysis.diffAbs)} gp ({money(analysis.diffPct, 2)}%) - {analysis.recommendationReason}
+            </div>
           </div>
 
           <div className="slots">
@@ -231,7 +256,7 @@ export default function MarketPage() {
 
       {tab === "historico" ? (
         <Panel title="Historico de analises" eyebrow="salvo localmente">
-          <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); StorageService.remove("ma_history"); }}>Limpar historico</button>
+          <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); MarketEconomyService.clearHistory(); }}>Limpar historico</button>
           <div className="history-list" style={{ marginTop: 16 }}>
             {history.length ? history.slice().reverse().map((entry) => (
               <div className="history-item" key={entry.ts}>
@@ -250,7 +275,7 @@ export default function MarketPage() {
                   ) : null}
                   {new Date(entry.ts).toLocaleString("pt-BR")} - {entry.nome} ({entry.qtd}x)
                 </span>
-                <span style={{ color: "var(--gold)" }}>{integer(entry.diffAbs)} gp</span>
+                <span style={{ color: "var(--gold)" }}>{formatMarketRecommendation(entry)} - {integer(entry.diffAbs)} gp</span>
               </div>
             )) : <div className="empty-msg">Nenhuma analise salva ainda.</div>}
           </div>
@@ -261,11 +286,29 @@ export default function MarketPage() {
         <Panel title="Ranking de economia" eyebrow="maiores diferencas">
           <div className="rank-list">
             {history.length ? history.slice().sort((a, b) => Math.abs(b.diffAbs) - Math.abs(a.diffAbs)).slice(0, 10).map((entry, index) => (
-              <div className="rank-item" key={`${entry.ts}-${index}`}><strong style={{ color: "var(--gold)" }}>{index + 1}</strong><span>{entry.nome}</span><span>{integer(entry.diffAbs)} gp</span></div>
+              <div className="rank-item" key={`${entry.ts}-${index}`}><strong style={{ color: "var(--gold)" }}>{index + 1}</strong><span>{entry.nome}</span><span>{formatMarketRecommendation(entry)} - {integer(entry.diffAbs)} gp</span></div>
             )) : <div className="empty-msg">Salve analises para ver o ranking.</div>}
           </div>
         </Panel>
       ) : null}
     </AppShell>
   );
+}
+
+function itemMatchesCategory(item: ItemSearchResult, category: string) {
+  return item.category === category || item.slot === category || item.weaponType === category;
+}
+
+function formatItemCategory(item: ItemSearchResult) {
+  return item.slot ?? item.weaponType ?? item.category;
+}
+
+function formatItemMeta(item: ItemSearchResult) {
+  const price = item.npcPrice !== null ? `${integer(item.npcPrice)} gp NPC` : `#${item.id}`;
+  return `${price} - ${formatItemCategory(item)}`;
+}
+
+function formatMarketRecommendation(entry: MarketAnalysis) {
+  if (entry.recommendedOption) return entry.recommendedOption === "market" ? "Market" : "NPC";
+  return entry.diffAbs > 0 ? "Market" : "NPC";
 }

@@ -8,12 +8,14 @@ const assetsRoot = path.join(root, "public", "assets");
 const outputRoot = path.join(root, "source", "web", "src", "reina-core", "assets", "generated");
 
 const items = readJson(path.join(databaseRoot, "items.json"));
+const supplementalItems = readJson(path.join(databaseRoot, "supplemental-items.json"), []);
 const monsterLoot = readJson(path.join(databaseRoot, "monster-loot.json"));
 const npcSellPrices = readJson(path.join(databaseRoot, "npc-sell-prices.json"));
+const allItems = mergeItems(items, supplementalItems);
 
-const itemById = new Map(items.map((item) => [item.id, item]));
+const itemById = new Map(allItems.map((item) => [item.id, item]));
 const itemByName = new Map();
-items.forEach((item) => {
+allItems.forEach((item) => {
   const key = itemLookupKey(item.name);
   if (!itemByName.has(key)) itemByName.set(key, item);
 });
@@ -112,8 +114,13 @@ function isCreatureProduct(name) {
   return /\b(fang|claw|tooth|teeth|scale|scales|skin|leather|fur|tail|wing|wings|eye|eyes|bone|bones|shell|feather|plume|pelt|paw|horn|tusk|tentacle|slime|venom|poison|gland|heart|blood|essence|silk|web|spike|spikes)\b/.test(name);
 }
 
-function readJson(filePath) {
-  return JSON.parse(readFileSync(filePath, "utf8"));
+function readJson(filePath, fallback = null) {
+  try {
+    return JSON.parse(readFileSync(filePath, "utf8"));
+  } catch {
+    if (fallback !== null) return fallback;
+    throw new Error(`Unable to read JSON file: ${filePath}`);
+  }
 }
 
 function writeJson(fileName, data) {
@@ -136,3 +143,18 @@ function itemLookupKey(name = "") {
     .trim();
 }
 
+function mergeItems(primaryItems, extraItems) {
+  const byId = new Set(primaryItems.flatMap((item) => [item.id, item.clientId].filter(Boolean)));
+  const byName = new Set(primaryItems.map((item) => itemLookupKey(item.name)));
+  const merged = [...primaryItems];
+
+  for (const item of extraItems) {
+    if (byId.has(item.id) || (item.clientId && byId.has(item.clientId)) || byName.has(itemLookupKey(item.name))) continue;
+    merged.push(item);
+    byId.add(item.id);
+    if (item.clientId) byId.add(item.clientId);
+    byName.add(itemLookupKey(item.name));
+  }
+
+  return merged;
+}

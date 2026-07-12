@@ -1,0 +1,493 @@
+[
+  {
+    "id": 40515,
+    "clientId": 40515,
+    "name": "copied research notes",
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 40527,
+    "clientId": 40527,
+    "name": "rotten feather",
+    "sellPrice": 120,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 40528,
+    "clientId": 40528,
+    "name": "ritual tooth",
+    "sellPrice": 135,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 40529,
+    "clientId": 40529,
+    "name": "gold-brocaded cloth",
+    "sellPrice": 175,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43739,
+    "clientId": 43739,
+    "name": "moon compass",
+    "sellPrice": 5000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43847,
+    "clientId": 43847,
+    "name": "rotten vermin ichor",
+    "sellPrice": 4500,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43848,
+    "clientId": 43848,
+    "name": "worm sponge",
+    "sellPrice": 4200,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43856,
+    "clientId": 43856,
+    "name": "bloated maggot",
+    "sellPrice": 5200,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43857,
+    "clientId": 43857,
+    "name": "blooded worm",
+    "sellPrice": 4700,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43858,
+    "clientId": 43858,
+    "name": "basalt crumbs",
+    "sellPrice": 3000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43859,
+    "clientId": 43859,
+    "name": "basalt core",
+    "sellPrice": 5800,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43861,
+    "clientId": 43861,
+    "name": "conch shell",
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43888,
+    "clientId": 43888,
+    "name": "closed pocket sundial",
+    "sellPrice": 5000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43961,
+    "clientId": 43961,
+    "name": "darklight figurine",
+    "sellPrice": 3400000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43962,
+    "clientId": 43962,
+    "name": "putrefactive figurine",
+    "sellPrice": 3200000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43963,
+    "clientId": 43963,
+    "name": "figurine of bakragore",
+    "sellPrice": 5400000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43964,
+    "clientId": 43964,
+    "name": "ichgahal's fungal infestation",
+    "sellPrice": 900000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43965,
+    "clientId": 43965,
+    "name": "murcion's mycelium",
+    "sellPrice": 950000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43966,
+    "clientId": 43966,
+    "name": "chagorz igneous obsidian",
+    "sellPrice": 1100000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43967,
+    "clientId": 43967,
+    "name": "vemiath's infused basalt",
+    "sellPrice": 1000000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43968,
+    "clientId": 43968,
+    "name": "bakragore's amalgamation",
+    "sellPrice": 2000000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 43969,
+    "clientId": 43969,
+    "name": "heliodor's scrolls",
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44438,
+    "clientId": 44438,
+    "name": "broken mitmah necklace",
+    "sellPrice": 210,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44439,
+    "clientId": 44439,
+    "name": "crystal of the mitmah",
+    "sellPrice": 280,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44440,
+    "clientId": 44440,
+    "name": "yapunac dagger",
+    "sellPrice": 240,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44727,
+    "clientId": 44727,
+    "name": "broken mitmah chestplate",
+    "sellPrice": 85000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44728,
+    "clientId": 44728,
+    "name": "splintered mitmah gem",
+    "sellPrice": 225000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44729,
+    "clientId": 44729,
+    "name": "atab's mitmah helmet",
+    "sellPrice": 580,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44736,
+    "clientId": 44736,
+    "name": "bulltaur horn",
+    "sellPrice": 385,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44737,
+    "clientId": 44737,
+    "name": "bulltaur hoof",
+    "sellPrice": 540,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44738,
+    "clientId": 44738,
+    "name": "bulltaur armor scrap",
+    "sellPrice": 480,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44739,
+    "clientId": 44739,
+    "name": "encrypted notes",
+    "sellPrice": 620,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44740,
+    "clientId": 44740,
+    "name": "strange substance",
+    "sellPrice": 810,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44741,
+    "clientId": 44741,
+    "name": "staff piece",
+    "sellPrice": 560,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 44742,
+    "clientId": 44742,
+    "name": "idol of the forge",
+    "sellPrice": 950,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 48253,
+    "clientId": 48253,
+    "name": "beijinho",
+    "sellPrice": 2780,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 50065,
+    "clientId": 50065,
+    "name": "rotrender scalp",
+    "sellPrice": 2500000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  },
+  {
+    "id": 50066,
+    "clientId": 50066,
+    "name": "rotrender claw",
+    "sellPrice": 1800000,
+    "dataSource": "supplemental",
+    "provenance": {
+      "source": "npc-trades",
+      "sourceType": "lua-shop-reference",
+      "confidence": "medium",
+      "note": "Created from NPC shop trade with clientId because the item was missing from items.xml."
+    }
+  }
+]

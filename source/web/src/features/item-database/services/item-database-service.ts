@@ -1,8 +1,8 @@
 import "server-only";
-import fs from "node:fs";
-import path from "node:path";
 import { getItemImagePath, getMonsterImagePath } from "@/source/web/src/reina-core/assets";
-import { getReinaDatabaseSnapshot, itemLookupKey, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { ServerAssetService } from "@/source/web/src/reina-core/assets/server-asset-service";
+import { getReinaDatabaseSnapshot, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { itemLookupKey } from "@/source/web/src/reina-core/database/normalize";
 import type { ReinaItem, ReinaMonsterLoot } from "@/source/web/src/reina-core/database";
 import { TaxonomyService } from "@/source/web/src/reina-core/taxonomy";
 import { createEmptyItemFutureData } from "../utils";
@@ -14,8 +14,6 @@ import type {
   ItemSearchResult
 } from "../types";
 
-const publicDir = path.join(process.cwd(), "public");
-const assetExistsCache = new Map<string, boolean>();
 const NPC_PRICE_REFERENCE_NAME = "NPC Price Reference";
 
 export const ItemDatabaseService = {
@@ -41,6 +39,9 @@ export const ItemDatabaseService = {
   },
 
   getBoughtBy(itemId: number | string): ItemNpcTradeReference[] {
+    const trades = ReinaDataService.getNpcTradesForItem(itemId).filter((trade) => trade.tradeType === "npcBuys");
+    if (trades.length) return trades.map((trade) => npcTradeToItemReference(trade, "buy"));
+
     const price = this.getNpcPrice(itemId);
     if (price === null) return [];
 
@@ -57,7 +58,9 @@ export const ItemDatabaseService = {
   },
 
   getSoldBy(itemId: number | string): ItemNpcTradeReference[] {
-    return [];
+    return ReinaDataService.getNpcTradesForItem(itemId)
+      .filter((trade) => trade.tradeType === "npcSells")
+      .map((trade) => npcTradeToItemReference(trade, "sell"));
   },
 
   getDroppedBy(itemId: number | string): ItemDroppedByMonster[] {
@@ -81,7 +84,7 @@ export const ItemDatabaseService = {
         experience: monster?.experience ?? null,
         health: monster?.health ?? null,
         imagePath,
-        hasImage: publicAssetExists(imagePath),
+        hasImage: ServerAssetService.publicAssetExists(imagePath),
         chance: loot.chance ?? null,
         maxCount: loot.maxCount ?? null
       });
@@ -94,7 +97,7 @@ export const ItemDatabaseService = {
     const imagePath = getItemImagePath(itemId);
     return {
       path: imagePath,
-      exists: publicAssetExists(imagePath)
+      exists: ServerAssetService.publicAssetExists(imagePath)
     };
   }
 };
@@ -140,19 +143,23 @@ function buildItemSearchResult(item: ReinaItem): ItemSearchResult {
   };
 }
 
+function npcTradeToItemReference(
+  trade: ReturnType<typeof ReinaDataService.getNpcTradesForItem>[number],
+  tradeType: "buy" | "sell"
+): ItemNpcTradeReference {
+  const npc = ReinaDataService.getNpcByName(trade.npcName);
+  return {
+    npcName: trade.npcName,
+    normalizedName: trade.normalizedNpcName,
+    city: npc?.city ?? null,
+    price: trade.price,
+    tradeType,
+    npcHref: `/npcs?npc=${encodeURIComponent(trade.npcName)}`
+  };
+}
+
 function lootMatchesItem(loot: ReinaMonsterLoot, item: ReinaItem, lookupKeys: Set<string>) {
   if (loot.itemId && (loot.itemId === item.id || loot.itemId === item.clientId)) return true;
   if (loot.itemName && lookupKeys.has(itemLookupKey(loot.itemName))) return true;
   return false;
-}
-
-function publicAssetExists(assetPath: string) {
-  const cached = assetExistsCache.get(assetPath);
-  if (cached !== undefined) return cached;
-
-  const normalizedPath = assetPath.startsWith("/") ? assetPath.slice(1) : assetPath;
-  const absolutePath = path.join(publicDir, normalizedPath);
-  const exists = fs.existsSync(absolutePath);
-  assetExistsCache.set(assetPath, exists);
-  return exists;
 }

@@ -23,8 +23,8 @@ export function ResultSlot({
   value,
   tone = "default"
 }: {
-  label: string;
-  value: string;
+  label: React.ReactNode;
+  value: React.ReactNode;
   tone?: "default" | "gold" | "red" | "small";
 }) {
   return (
@@ -39,7 +39,7 @@ export function Field({
   label,
   children
 }: {
-  label: string;
+  label: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (

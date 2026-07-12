@@ -1,20 +1,20 @@
 import "server-only";
-import fs from "node:fs";
-import path from "node:path";
 import { getItemImagePath, getMonsterImagePath } from "@/source/web/src/reina-core/assets";
-import { itemLookupKey, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { ServerAssetService } from "@/source/web/src/reina-core/assets/server-asset-service";
+import { getReinaDatabaseSnapshot, ReinaDataService } from "@/source/web/src/reina-core/database";
+import { itemLookupKey } from "@/source/web/src/reina-core/database/normalize";
 import type { ReinaItem, ReinaMonsterLoot } from "@/source/web/src/reina-core/database";
+import { TaxonomyService } from "@/source/web/src/reina-core/taxonomy";
 import { createEmptyMonsterFutureData } from "../utils";
 import type {
   MonsterAssetInfo,
+  MonsterClassInfo,
+  MonsterClassSummary,
   MonsterDatabaseRecord,
   MonsterLootEntry,
   MonsterRelatedItem,
   MonsterSearchResult
 } from "../types";
-
-const publicDir = path.join(process.cwd(), "public");
-const assetExistsCache = new Map<string, boolean>();
 
 export const MonsterDatabaseService = {
   getMonster(name: string): MonsterDatabaseRecord | null {
@@ -31,6 +31,7 @@ export const MonsterDatabaseService = {
       experience: monster.experience,
       health: monster.health,
       speed: monster.speed,
+      classInfo: getMonsterClassInfo(monster.name),
       image,
       loot,
       relatedItems,
@@ -40,13 +41,63 @@ export const MonsterDatabaseService = {
     };
   },
 
-  searchMonsters(query: string): MonsterSearchResult[] {
-    return ReinaDataService.searchMonsters(query).map((monster) => ({
-      name: monster.name,
-      experience: monster.experience,
-      health: monster.health,
-      image: this.getMonsterImage(monster.name)
-    }));
+  searchMonsters(query: string, creatureClass = ""): MonsterSearchResult[] {
+    const normalizedClass = creatureClass.trim();
+    const monsters = query.trim()
+      ? ReinaDataService.searchMonsters(query)
+      : getReinaDatabaseSnapshot().monsters.slice().sort((a, b) => a.name.localeCompare(b.name));
+
+    return monsters
+      .map((monster) => ({
+        name: monster.name,
+        experience: monster.experience,
+        health: monster.health,
+        classInfo: getMonsterClassInfo(monster.name),
+        image: this.getMonsterImage(monster.name)
+      }))
+      .filter((monster) => !normalizedClass || monster.classInfo.id === normalizedClass)
+      .slice(0, 80);
+  },
+
+  getClassSummary(): MonsterClassSummary[] {
+    const snapshot = TaxonomyService.getSnapshot();
+    const classes = new Map<string, MonsterClassSummary>();
+
+    classes.set("", {
+      id: "",
+      label: "Todas",
+      count: 0,
+      expectedCount: null,
+      isBestiaryClass: true
+    });
+
+    for (const creatureClass of snapshot.creatureClasses) {
+      classes.set(creatureClass.id, {
+        id: creatureClass.id,
+        label: creatureClass.label,
+        count: 0,
+        expectedCount: creatureClass.expectedCount ?? null,
+        isBestiaryClass: true
+      });
+    }
+
+    classes.set("unclassified", {
+      id: "unclassified",
+      label: "Sem classe",
+      count: 0,
+      expectedCount: null,
+      isBestiaryClass: false
+    });
+
+    for (const monster of getReinaDatabaseSnapshot().monsters) {
+      const classInfo = getMonsterClassInfo(monster.name);
+      const row = classes.get(classInfo.id) ?? classes.get("unclassified");
+      if (row) row.count += 1;
+      const all = classes.get("");
+      if (all) all.count += 1;
+    }
+
+    return Array.from(classes.values());
   },
 
   getLoot(monsterName: string): MonsterLootEntry[] {
@@ -75,10 +126,36 @@ export const MonsterDatabaseService = {
     const imagePath = getMonsterImagePath(monsterName);
     return {
       path: imagePath,
-      exists: publicAssetExists(imagePath)
+      exists: ServerAssetService.publicAssetExists(imagePath)
     };
   }
 };
+
+function getMonsterClassInfo(monsterName: string): MonsterClassInfo {
+  const classification = TaxonomyService.classifyMonster({ name: monsterName });
+  const snapshot = TaxonomyService.getSnapshot();
+  const bestiaryClass = classification.creatureClass
+    ? snapshot.creatureClasses.find((creatureClass) => creatureClass.id === classification.creatureClass)
+    : undefined;
+
+  if (!bestiaryClass) {
+    return {
+      id: "unclassified",
+      label: "Sem classe",
+      confidence: "unclassified",
+      matchedBy: classification.matchedBy,
+      isBestiaryClass: false
+    };
+  }
+
+  return {
+    id: bestiaryClass.id,
+    label: bestiaryClass.label,
+    confidence: classification.confidence,
+    matchedBy: classification.matchedBy,
+    isBestiaryClass: true
+  };
+}
 
 function enrichMonsterLoot(loot: ReinaMonsterLoot): MonsterLootEntry {
   const item = findLootItem(loot);
@@ -95,7 +172,7 @@ function enrichMonsterLoot(loot: ReinaMonsterLoot): MonsterLootEntry {
     maxCount: loot.maxCount ?? null,
     sellPrice,
     imagePath,
-    hasImage: publicAssetExists(imagePath),
+    hasImage: ServerAssetService.publicAssetExists(imagePath),
     dataStatus: item ? "matched" : "unmatched"
   };
 }
@@ -111,15 +188,4 @@ function findLootItem(loot: ReinaMonsterLoot): ReinaItem | null {
   }
 
   return null;
-}
-
-function publicAssetExists(assetPath: string) {
-  const cached = assetExistsCache.get(assetPath);
-  if (cached !== undefined) return cached;
-
-  const normalizedPath = assetPath.startsWith("/") ? assetPath.slice(1) : assetPath;
-  const absolutePath = path.join(publicDir, normalizedPath);
-  const exists = fs.existsSync(absolutePath);
-  assetExistsCache.set(assetPath, exists);
-  return exists;
 }

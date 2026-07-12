@@ -1,0 +1,4109 @@
+{
+  "generatedAt": "2026-07-05T12:15:50.585Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/#npcs",
+  "scriptUrl": "https://tibiavault.com/js/npc-data.js?v=2.159.0",
+  "safety": "Normalized reference data only. Not imported into ReinaDataService.",
+  "totalNpcs": 78,
+  "npcs": [
+    {
+      "name": "Rashid",
+      "normalizedName": "rashid",
+      "city": "Varies",
+      "location": "Travels daily: Mon=Svargrond, Tue=Liberty Bay, Wed=Port Hope, Thu=Ankrahmun, Fri=Darashia, Sat=Edron, Sun=Carlin",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Amazon Shield",
+          "normalizedItemName": "amazon shield",
+          "price": 400
+        },
+        {
+          "itemName": "Blue Robe",
+          "normalizedItemName": "blue robe",
+          "price": 10000
+        },
+        {
+          "itemName": "Boots of Haste",
+          "normalizedItemName": "boots of haste",
+          "price": 30000
+        },
+        {
+          "itemName": "Cobra Axe",
+          "normalizedItemName": "cobra axe",
+          "price": 45000
+        },
+        {
+          "itemName": "Cobra Club",
+          "normalizedItemName": "cobra club",
+          "price": 45000
+        },
+        {
+          "itemName": "Cobra Sword",
+          "normalizedItemName": "cobra sword",
+          "price": 45000
+        },
+        {
+          "itemName": "Crown Armor",
+          "normalizedItemName": "crown armor",
+          "price": 12000
+        },
+        {
+          "itemName": "Crown Legs",
+          "normalizedItemName": "crown legs",
+          "price": 12000
+        },
+        {
+          "itemName": "Crystalline Armor",
+          "normalizedItemName": "crystalline armor",
+          "price": 16000
+        },
+        {
+          "itemName": "Crystalline Sword",
+          "normalizedItemName": "crystalline sword",
+          "price": 8000
+        },
+        {
+          "itemName": "Demon Armor",
+          "normalizedItemName": "demon armor",
+          "price": 32000
+        },
+        {
+          "itemName": "Demon Helmet",
+          "normalizedItemName": "demon helmet",
+          "price": 45000
+        },
+        {
+          "itemName": "Demonbone",
+          "normalizedItemName": "demonbone",
+          "price": 12000
+        },
+        {
+          "itemName": "Drakinata",
+          "normalizedItemName": "drakinata",
+          "price": 10000
+        },
+        {
+          "itemName": "Emerald Sword",
+          "normalizedItemName": "emerald sword",
+          "price": 20000
+        },
+        {
+          "itemName": "Fireborn Giant Armor",
+          "normalizedItemName": "fireborn giant armor",
+          "price": 50000
+        },
+        {
+          "itemName": "Glacier Robe",
+          "normalizedItemName": "glacier robe",
+          "price": 11000
+        },
+        {
+          "itemName": "Golden Armor",
+          "normalizedItemName": "golden armor",
+          "price": 20000
+        },
+        {
+          "itemName": "Golden Boots",
+          "normalizedItemName": "golden boots",
+          "price": 40000
+        },
+        {
+          "itemName": "Golden Legs",
+          "normalizedItemName": "golden legs",
+          "price": 30000
+        },
+        {
+          "itemName": "Havoc Blade",
+          "normalizedItemName": "havoc blade",
+          "price": 8000
+        },
+        {
+          "itemName": "Hive Bow",
+          "normalizedItemName": "hive bow",
+          "price": 14000
+        },
+        {
+          "itemName": "Horned Helmet",
+          "normalizedItemName": "horned helmet",
+          "price": 6000
+        },
+        {
+          "itemName": "Jade Hammer",
+          "normalizedItemName": "jade hammer",
+          "price": 2000
+        },
+        {
+          "itemName": "Lightning Headband",
+          "normalizedItemName": "lightning headband",
+          "price": 8000
+        },
+        {
+          "itemName": "Lion Plate",
+          "normalizedItemName": "lion plate",
+          "price": 10000
+        },
+        {
+          "itemName": "Lion Spangenhelm",
+          "normalizedItemName": "lion spangenhelm",
+          "price": 10000
+        },
+        {
+          "itemName": "Magic Plate Armor",
+          "normalizedItemName": "magic plate armor",
+          "price": 6400
+        },
+        {
+          "itemName": "Mastermind Shield",
+          "normalizedItemName": "mastermind shield",
+          "price": 50000
+        },
+        {
+          "itemName": "Medusa Shield",
+          "normalizedItemName": "medusa shield",
+          "price": 9000
+        },
+        {
+          "itemName": "Mycological Bow",
+          "normalizedItemName": "mycological bow",
+          "price": 18000
+        },
+        {
+          "itemName": "Mystic Blade",
+          "normalizedItemName": "mystic blade",
+          "price": 30000
+        },
+        {
+          "itemName": "Nightmare Blade",
+          "normalizedItemName": "nightmare blade",
+          "price": 35000
+        },
+        {
+          "itemName": "Noble Axe",
+          "normalizedItemName": "noble axe",
+          "price": 10000
+        },
+        {
+          "itemName": "Ravager's Axe",
+          "normalizedItemName": "ravagers axe",
+          "price": 7000
+        },
+        {
+          "itemName": "Rift Bow",
+          "normalizedItemName": "rift bow",
+          "price": 22000
+        },
+        {
+          "itemName": "Rift Crossbow",
+          "normalizedItemName": "rift crossbow",
+          "price": 22000
+        },
+        {
+          "itemName": "Royal Helmet",
+          "normalizedItemName": "royal helmet",
+          "price": 30000
+        },
+        {
+          "itemName": "Skullcrusher",
+          "normalizedItemName": "skullcrusher",
+          "price": 15000
+        },
+        {
+          "itemName": "Solar Axe",
+          "normalizedItemName": "solar axe",
+          "price": 30000
+        },
+        {
+          "itemName": "Spellbook of Mind Control",
+          "normalizedItemName": "spellbook of mind control",
+          "price": 4000
+        },
+        {
+          "itemName": "Steel Boots",
+          "normalizedItemName": "steel boots",
+          "price": 30000
+        },
+        {
+          "itemName": "Wand of Cosmic Energy",
+          "normalizedItemName": "wand of cosmic energy",
+          "price": 2000
+        },
+        {
+          "itemName": "Wand of Inferno",
+          "normalizedItemName": "wand of inferno",
+          "price": 3000
+        },
+        {
+          "itemName": "Wand of Starstorm",
+          "normalizedItemName": "wand of starstorm",
+          "price": 3600
+        },
+        {
+          "itemName": "Yalahari Mask",
+          "normalizedItemName": "yalahari mask",
+          "price": 7000
+        },
+        {
+          "itemName": "Zaoan Legs",
+          "normalizedItemName": "zaoan legs",
+          "price": 14000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Traveling Trader Quest",
+      "notes": "Requires completing The Traveling Trader Quest to access. Travels to a different city each day of the week.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Yasir",
+      "normalizedName": "yasir",
+      "city": "Varies",
+      "location": "Appears randomly in: Ankrahmun, Carlin, Edron, Liberty Bay, Svargrond, Yalahar (check trade channels)",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Behemoth Fang",
+          "normalizedItemName": "behemoth fang",
+          "price": 500
+        },
+        {
+          "itemName": "Bloody Pincers",
+          "normalizedItemName": "bloody pincers",
+          "price": 100
+        },
+        {
+          "itemName": "Cyclops Toe",
+          "normalizedItemName": "cyclops toe",
+          "price": 55
+        },
+        {
+          "itemName": "Deepling Claw",
+          "normalizedItemName": "deepling claw",
+          "price": 400
+        },
+        {
+          "itemName": "Deepling Ridge",
+          "normalizedItemName": "deepling ridge",
+          "price": 360
+        },
+        {
+          "itemName": "Deepling Warts",
+          "normalizedItemName": "deepling warts",
+          "price": 180
+        },
+        {
+          "itemName": "Dragon Claw",
+          "normalizedItemName": "dragon claw",
+          "price": 40
+        },
+        {
+          "itemName": "Draken Sulphur",
+          "normalizedItemName": "draken sulphur",
+          "price": 550
+        },
+        {
+          "itemName": "Draken Wristbands",
+          "normalizedItemName": "draken wristbands",
+          "price": 430
+        },
+        {
+          "itemName": "Elder Wyrm Scale",
+          "normalizedItemName": "elder wyrm scale",
+          "price": 500
+        },
+        {
+          "itemName": "Ghastly Dragon Head",
+          "normalizedItemName": "ghastly dragon head",
+          "price": 700
+        },
+        {
+          "itemName": "Giant Spider Silk",
+          "normalizedItemName": "giant spider silk",
+          "price": 100
+        },
+        {
+          "itemName": "Hydra Head",
+          "normalizedItemName": "hydra head",
+          "price": 600
+        },
+        {
+          "itemName": "Minotaur Horn",
+          "normalizedItemName": "minotaur horn",
+          "price": 75
+        },
+        {
+          "itemName": "Perfect Behemoth Fang",
+          "normalizedItemName": "perfect behemoth fang",
+          "price": 600
+        },
+        {
+          "itemName": "Sabretooth",
+          "normalizedItemName": "sabretooth",
+          "price": 400
+        },
+        {
+          "itemName": "Sea Serpent Scale",
+          "normalizedItemName": "sea serpent scale",
+          "price": 520
+        },
+        {
+          "itemName": "Stampor Talons",
+          "normalizedItemName": "stampor talons",
+          "price": 780
+        },
+        {
+          "itemName": "Wyrm Scale",
+          "normalizedItemName": "wyrm scale",
+          "price": 400
+        },
+        {
+          "itemName": "Young Sea Serpent Scale",
+          "normalizedItemName": "young sea serpent scale",
+          "price": 380
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Buys creature products at high prices. Appears randomly — check Tibia trade channels for sightings.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Haroun",
+      "normalizedName": "haroun",
+      "city": "Ankrahmun",
+      "location": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Hammer",
+          "normalizedItemName": "battle hammer",
+          "price": 350
+        },
+        {
+          "itemName": "Bonebreaker",
+          "normalizedItemName": "bonebreaker",
+          "price": 10000
+        },
+        {
+          "itemName": "Broadsword",
+          "normalizedItemName": "broadsword",
+          "price": 500
+        },
+        {
+          "itemName": "Dragon Lance",
+          "normalizedItemName": "dragon lance",
+          "price": 9000
+        },
+        {
+          "itemName": "Dragon Shield",
+          "normalizedItemName": "dragon shield",
+          "price": 4000
+        },
+        {
+          "itemName": "Giant Sword",
+          "normalizedItemName": "giant sword",
+          "price": 17000
+        },
+        {
+          "itemName": "Great Shield",
+          "normalizedItemName": "great shield",
+          "price": 38000
+        },
+        {
+          "itemName": "Guardian Shield",
+          "normalizedItemName": "guardian shield",
+          "price": 2000
+        },
+        {
+          "itemName": "Knight Armor",
+          "normalizedItemName": "knight armor",
+          "price": 5000
+        },
+        {
+          "itemName": "Knight Axe",
+          "normalizedItemName": "knight axe",
+          "price": 2000
+        },
+        {
+          "itemName": "Knight Legs",
+          "normalizedItemName": "knight legs",
+          "price": 5000
+        },
+        {
+          "itemName": "Obsidian Truncheon",
+          "normalizedItemName": "obsidian truncheon",
+          "price": 12000
+        },
+        {
+          "itemName": "Stonecutter Axe",
+          "normalizedItemName": "stonecutter axe",
+          "price": 6000
+        },
+        {
+          "itemName": "Tower Shield",
+          "normalizedItemName": "tower shield",
+          "price": 8000
+        },
+        {
+          "itemName": "Warrior Helmet",
+          "normalizedItemName": "warrior helmet",
+          "price": 5000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Djinn War - Marid Faction",
+      "notes": "Requires completing The Djinn War quest (Marid/Blue faction). Cannot access if you chose Efreet/Green faction.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/haroun",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Nah'Bob",
+      "normalizedName": "nahbob",
+      "city": "Ankrahmun",
+      "location": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Boots of Haste",
+          "normalizedItemName": "boots of haste",
+          "price": 30000
+        },
+        {
+          "itemName": "Hailstorm Rod",
+          "normalizedItemName": "hailstorm rod",
+          "price": 3000
+        },
+        {
+          "itemName": "Life Ring",
+          "normalizedItemName": "life ring",
+          "price": 50
+        },
+        {
+          "itemName": "Moonlight Rod",
+          "normalizedItemName": "moonlight rod",
+          "price": 200
+        },
+        {
+          "itemName": "Necrotic Rod",
+          "normalizedItemName": "necrotic rod",
+          "price": 2000
+        },
+        {
+          "itemName": "Orb",
+          "normalizedItemName": "orb",
+          "price": 750
+        },
+        {
+          "itemName": "Ring of Healing",
+          "normalizedItemName": "ring of healing",
+          "price": 100
+        },
+        {
+          "itemName": "Skull Staff",
+          "normalizedItemName": "skull staff",
+          "price": 6000
+        },
+        {
+          "itemName": "Stealth Ring",
+          "normalizedItemName": "stealth ring",
+          "price": 200
+        },
+        {
+          "itemName": "Strange Symbol",
+          "normalizedItemName": "strange symbol",
+          "price": 200
+        },
+        {
+          "itemName": "Wand of Cosmic Energy",
+          "normalizedItemName": "wand of cosmic energy",
+          "price": 2000
+        },
+        {
+          "itemName": "Wand of Inferno",
+          "normalizedItemName": "wand of inferno",
+          "price": 3000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Djinn War - Marid Faction",
+      "notes": "Buys magic items and rods/wands. Requires Marid faction quest.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/nahbob",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Yaman",
+      "normalizedName": "yaman",
+      "city": "Ankrahmun",
+      "location": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Blue Robe",
+          "normalizedItemName": "blue robe",
+          "price": 10000
+        },
+        {
+          "itemName": "Crown Armor",
+          "normalizedItemName": "crown armor",
+          "price": 12000
+        },
+        {
+          "itemName": "Crown Helmet",
+          "normalizedItemName": "crown helmet",
+          "price": 2500
+        },
+        {
+          "itemName": "Crown Legs",
+          "normalizedItemName": "crown legs",
+          "price": 12000
+        },
+        {
+          "itemName": "Crown Shield",
+          "normalizedItemName": "crown shield",
+          "price": 6000
+        },
+        {
+          "itemName": "Demon Shield",
+          "normalizedItemName": "demon shield",
+          "price": 30000
+        },
+        {
+          "itemName": "Glacier Mask",
+          "normalizedItemName": "glacier mask",
+          "price": 2500
+        },
+        {
+          "itemName": "Golden Armor",
+          "normalizedItemName": "golden armor",
+          "price": 20000
+        },
+        {
+          "itemName": "Magic Plate Armor",
+          "normalizedItemName": "magic plate armor",
+          "price": 6400
+        },
+        {
+          "itemName": "Royal Helmet",
+          "normalizedItemName": "royal helmet",
+          "price": 30000
+        },
+        {
+          "itemName": "Spellbook of Mind Control",
+          "normalizedItemName": "spellbook of mind control",
+          "price": 4000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Djinn War - Efreet Faction",
+      "notes": "Requires completing The Djinn War quest (Efreet/Green faction). Cannot access if you chose Marid/Blue faction.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/yaman",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Alesar",
+      "normalizedName": "alesar",
+      "city": "Ankrahmun",
+      "location": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Dragon Scale Mail",
+          "normalizedItemName": "dragon scale mail",
+          "price": 10000
+        },
+        {
+          "itemName": "Lightning Boots",
+          "normalizedItemName": "lightning boots",
+          "price": 3000
+        },
+        {
+          "itemName": "Lightning Headband",
+          "normalizedItemName": "lightning headband",
+          "price": 2500
+        },
+        {
+          "itemName": "Lightning Legs",
+          "normalizedItemName": "lightning legs",
+          "price": 5000
+        },
+        {
+          "itemName": "Lightning Pendant",
+          "normalizedItemName": "lightning pendant",
+          "price": 1500
+        },
+        {
+          "itemName": "Lightning Robe",
+          "normalizedItemName": "lightning robe",
+          "price": 5000
+        },
+        {
+          "itemName": "Magma Amulet",
+          "normalizedItemName": "magma amulet",
+          "price": 1500
+        },
+        {
+          "itemName": "Magma Boots",
+          "normalizedItemName": "magma boots",
+          "price": 3000
+        },
+        {
+          "itemName": "Magma Coat",
+          "normalizedItemName": "magma coat",
+          "price": 5000
+        },
+        {
+          "itemName": "Magma Legs",
+          "normalizedItemName": "magma legs",
+          "price": 5000
+        },
+        {
+          "itemName": "Magma Monocle",
+          "normalizedItemName": "magma monocle",
+          "price": 2500
+        },
+        {
+          "itemName": "Shockwave Amulet",
+          "normalizedItemName": "shockwave amulet",
+          "price": 3000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Djinn War - Efreet Faction",
+      "notes": "Buys elemental equipment. Requires Efreet faction quest.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/alesar",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Brengus",
+      "normalizedName": "brengus",
+      "city": "Thais",
+      "location": "Thais bank, north of depot",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC. Deposit, withdraw, transfer gold, check balance.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/brengus",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Ebenizer",
+      "normalizedName": "ebenizer",
+      "city": "Carlin",
+      "location": "Carlin bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/ebenizer",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Yaman (Banker)",
+      "normalizedName": "yaman banker",
+      "city": "Ankrahmun",
+      "location": "Ankrahmun bank near depot",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/yaman-banker",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Finarfin",
+      "normalizedName": "finarfin",
+      "city": "Ab'Dendriel",
+      "location": "Ab'Dendriel bank, near depot",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/finarfin",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Gnomally",
+      "normalizedName": "gnomally",
+      "city": "Kazordoon",
+      "location": "Kazordoon bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/gnomally",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Hanna",
+      "normalizedName": "hanna",
+      "city": "Venore",
+      "location": "Venore bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/hanna",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Tesha",
+      "normalizedName": "tesha",
+      "city": "Darashia",
+      "location": "Darashia bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/tesha",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Naji",
+      "normalizedName": "naji",
+      "city": "Liberty Bay",
+      "location": "Liberty Bay bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/naji",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Chondur",
+      "normalizedName": "chondur",
+      "city": "Port Hope",
+      "location": "Port Hope bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/chondur",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Ormuhn",
+      "normalizedName": "ormuhn",
+      "city": "Edron",
+      "location": "Edron bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/ormuhn",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Sven",
+      "normalizedName": "sven",
+      "city": "Svargrond",
+      "location": "Svargrond bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/sven",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Zoltan",
+      "normalizedName": "zoltan",
+      "city": "Rathleton",
+      "location": "Rathleton bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/zoltan",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Asnarus",
+      "normalizedName": "asnarus",
+      "city": "Yalahar",
+      "location": "Yalahar bank",
+      "roles": [
+        "bank"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/asnarus",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Captain Bluebear",
+      "normalizedName": "captain bluebear",
+      "city": "Thais",
+      "location": "Thais harbour, south-east of the city",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Carlin",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 130
+        },
+        {
+          "dest": "Venore",
+          "price": 170
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 160
+        },
+        {
+          "dest": "Darashia",
+          "price": 210
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 180
+        },
+        {
+          "dest": "Port Hope",
+          "price": 160
+        },
+        {
+          "dest": "Svargrond",
+          "price": 180
+        },
+        {
+          "dest": "Yalahar",
+          "price": 200
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Issavi",
+          "price": 220
+        },
+        {
+          "dest": "Marapur",
+          "price": 220
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Thais.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/captain-bluebear",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Cora",
+      "normalizedName": "cora",
+      "city": "Carlin",
+      "location": "Carlin harbour, south of the city",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 80
+        },
+        {
+          "dest": "Venore",
+          "price": 130
+        },
+        {
+          "dest": "Svargrond",
+          "price": 110
+        },
+        {
+          "dest": "Yalahar",
+          "price": 185
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 180
+        },
+        {
+          "dest": "Port Hope",
+          "price": 160
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 170
+        },
+        {
+          "dest": "Darashia",
+          "price": 200
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Carlin.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/cora",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Pemaret",
+      "normalizedName": "pemaret",
+      "city": "Venore",
+      "location": "Venore harbour, south of depot",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 170
+        },
+        {
+          "dest": "Carlin",
+          "price": 130
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 150
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 160
+        },
+        {
+          "dest": "Port Hope",
+          "price": 150
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 80
+        },
+        {
+          "dest": "Darashia",
+          "price": 60
+        },
+        {
+          "dest": "Edron",
+          "price": 110
+        },
+        {
+          "dest": "Svargrond",
+          "price": 190
+        },
+        {
+          "dest": "Yalahar",
+          "price": 200
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Venore.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/pemaret",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Abubakar",
+      "normalizedName": "abubakar",
+      "city": "Ankrahmun",
+      "location": "Ankrahmun harbour",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 170
+        },
+        {
+          "dest": "Venore",
+          "price": 80
+        },
+        {
+          "dest": "Darashia",
+          "price": 40
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 90
+        },
+        {
+          "dest": "Port Hope",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 100
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Ankrahmun.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/abubakar",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Oriosa",
+      "normalizedName": "oriosa",
+      "city": "Edron",
+      "location": "Edron harbour, south of the island",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 160
+        },
+        {
+          "dest": "Venore",
+          "price": 110
+        },
+        {
+          "dest": "Darashia",
+          "price": 110
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 150
+        },
+        {
+          "dest": "Svargrond",
+          "price": 170
+        },
+        {
+          "dest": "Yalahar",
+          "price": 175
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 130
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Edron.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/oriosa",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Hanna (Captain)",
+      "normalizedName": "hanna captain",
+      "city": "Liberty Bay",
+      "location": "Liberty Bay harbour",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 180
+        },
+        {
+          "dest": "Carlin",
+          "price": 180
+        },
+        {
+          "dest": "Venore",
+          "price": 160
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 90
+        },
+        {
+          "dest": "Darashia",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 50
+        },
+        {
+          "dest": "Edron",
+          "price": 150
+        },
+        {
+          "dest": "Svargrond",
+          "price": 200
+        },
+        {
+          "dest": "Yalahar",
+          "price": 210
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Liberty Bay.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/hanna-captain",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Uzon",
+      "normalizedName": "uzon",
+      "city": "Port Hope",
+      "location": "Port Hope harbour",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 160
+        },
+        {
+          "dest": "Venore",
+          "price": 150
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 100
+        },
+        {
+          "dest": "Darashia",
+          "price": 100
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 50
+        },
+        {
+          "dest": "Edron",
+          "price": 130
+        },
+        {
+          "dest": "Svargrond",
+          "price": 190
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Port Hope.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/uzon",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Buddel",
+      "normalizedName": "buddel",
+      "city": "Svargrond",
+      "location": "Svargrond harbour",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 180
+        },
+        {
+          "dest": "Carlin",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 150
+        },
+        {
+          "dest": "Venore",
+          "price": 190
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 200
+        },
+        {
+          "dest": "Yalahar",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 170
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Svargrond.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/buddel",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Wyrdin",
+      "normalizedName": "wyrdin",
+      "city": "Ab'Dendriel",
+      "location": "Ab'Dendriel harbour, west side",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 130
+        },
+        {
+          "dest": "Carlin",
+          "price": 80
+        },
+        {
+          "dest": "Venore",
+          "price": 150
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Svargrond",
+          "price": 150
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Ab'Dendriel.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/wyrdin",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Dalbrect",
+      "normalizedName": "dalbrect",
+      "city": "Darashia",
+      "location": "Darashia harbour, south",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 210
+        },
+        {
+          "dest": "Venore",
+          "price": 60
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 40
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 110
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Darashia.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/dalbrect",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Karith",
+      "normalizedName": "karith",
+      "city": "Yalahar",
+      "location": "Yalahar harbour, south docks",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 200
+        },
+        {
+          "dest": "Carlin",
+          "price": 185
+        },
+        {
+          "dest": "Svargrond",
+          "price": 100
+        },
+        {
+          "dest": "Venore",
+          "price": 200
+        },
+        {
+          "dest": "Edron",
+          "price": 175
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 210
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Yalahar.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/karith",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Gnomus",
+      "normalizedName": "gnomus",
+      "city": "Kazordoon",
+      "location": "Kazordoon steamship, underground harbour",
+      "roles": [
+        "transport"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [
+        {
+          "dest": "Cormaya",
+          "price": 20
+        },
+        {
+          "dest": "Farmine",
+          "price": 100
+        }
+      ],
+      "quest": null,
+      "notes": "Steamship operator from Kazordoon.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/gnomus",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Sam",
+      "normalizedName": "sam",
+      "city": "Thais",
+      "location": "Sam's Armory, south-east Thais",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Battle Hammer",
+          "normalizedItemName": "battle hammer",
+          "price": 120
+        },
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 150
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 16
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 400
+        },
+        {
+          "itemName": "Plate Shield",
+          "normalizedItemName": "plate shield",
+          "price": 45
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 195
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 450
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 65
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Helmet",
+          "normalizedItemName": "chain helmet",
+          "price": 52
+        },
+        {
+          "itemName": "Chain Legs",
+          "normalizedItemName": "chain legs",
+          "price": 200
+        },
+        {
+          "itemName": "Dagger",
+          "normalizedItemName": "dagger",
+          "price": 5
+        },
+        {
+          "itemName": "Hand Axe",
+          "normalizedItemName": "hand axe",
+          "price": 8
+        },
+        {
+          "itemName": "Hatchet",
+          "normalizedItemName": "hatchet",
+          "price": 25
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Plate Shield",
+          "normalizedItemName": "plate shield",
+          "price": 125
+        },
+        {
+          "itemName": "Rapier",
+          "normalizedItemName": "rapier",
+          "price": 15
+        },
+        {
+          "itemName": "Sabre",
+          "normalizedItemName": "sabre",
+          "price": 25
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Thais armory. Buys/sells basic weapons and armor.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/sam",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Xodet",
+      "normalizedName": "xodet",
+      "city": "Thais",
+      "location": "Xodet's Magic Shopee, centre of Thais",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Wand of Cosmic Energy",
+          "normalizedItemName": "wand of cosmic energy",
+          "price": 2000
+        },
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 200
+        },
+        {
+          "itemName": "Wand of Everblazing",
+          "normalizedItemName": "wand of everblazing",
+          "price": 6000
+        },
+        {
+          "itemName": "Wand of Inferno",
+          "normalizedItemName": "wand of inferno",
+          "price": 3000
+        },
+        {
+          "itemName": "Wand of Starstorm",
+          "normalizedItemName": "wand of starstorm",
+          "price": 3600
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 100
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Hailstorm Rod",
+          "normalizedItemName": "hailstorm rod",
+          "price": 15000
+        },
+        {
+          "itemName": "Moonlight Rod",
+          "normalizedItemName": "moonlight rod",
+          "price": 400
+        },
+        {
+          "itemName": "Necrotic Rod",
+          "normalizedItemName": "necrotic rod",
+          "price": 5000
+        },
+        {
+          "itemName": "Springsprout Rod",
+          "normalizedItemName": "springsprout rod",
+          "price": 18000
+        },
+        {
+          "itemName": "Wand of Cosmic Energy",
+          "normalizedItemName": "wand of cosmic energy",
+          "price": 10000
+        },
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 5000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Inferno",
+          "normalizedItemName": "wand of inferno",
+          "price": 15000
+        },
+        {
+          "itemName": "Wand of Starstorm",
+          "normalizedItemName": "wand of starstorm",
+          "price": 18000
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 500
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells wands and rods. Main magic shop in Thais.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/xodet",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Nah'Bob (Thais)",
+      "normalizedName": "nahbob thais",
+      "city": "Thais",
+      "location": "Thais food shop, near depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Brown Mushroom",
+          "normalizedItemName": "brown mushroom",
+          "price": 10
+        },
+        {
+          "itemName": "Fish",
+          "normalizedItemName": "fish",
+          "price": 4
+        },
+        {
+          "itemName": "Ham",
+          "normalizedItemName": "ham",
+          "price": 8
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Meat",
+          "normalizedItemName": "meat",
+          "price": 5
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Food and potion shop.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/nahbob-thais",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Al Dee",
+      "normalizedName": "al dee",
+      "city": "Thais",
+      "location": "General store, north-west Thais",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Backpack",
+          "normalizedItemName": "backpack",
+          "price": 20
+        },
+        {
+          "itemName": "Bag",
+          "normalizedItemName": "bag",
+          "price": 5
+        },
+        {
+          "itemName": "Fishing Rod",
+          "normalizedItemName": "fishing rod",
+          "price": 150
+        },
+        {
+          "itemName": "Machete",
+          "normalizedItemName": "machete",
+          "price": 35
+        },
+        {
+          "itemName": "Pick",
+          "normalizedItemName": "pick",
+          "price": 50
+        },
+        {
+          "itemName": "Rope",
+          "normalizedItemName": "rope",
+          "price": 50
+        },
+        {
+          "itemName": "Scythe",
+          "normalizedItemName": "scythe",
+          "price": 12
+        },
+        {
+          "itemName": "Shovel",
+          "normalizedItemName": "shovel",
+          "price": 50
+        },
+        {
+          "itemName": "Torch",
+          "normalizedItemName": "torch",
+          "price": 2
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Thais. Sells essential adventuring equipment.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/al-dee",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Nelliem",
+      "normalizedName": "nelliem",
+      "city": "Thais",
+      "location": "Nelliem's shop, near Thais depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Great Spirit Potion",
+          "normalizedItemName": "great spirit potion",
+          "price": 228
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Supreme Health Potion",
+          "normalizedItemName": "supreme health potion",
+          "price": 625
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        },
+        {
+          "itemName": "Ultimate Spirit Potion",
+          "normalizedItemName": "ultimate spirit potion",
+          "price": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells potions in Thais.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/nelliem",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Bashira",
+      "normalizedName": "bashira",
+      "city": "Carlin",
+      "location": "Equipment shop, north-east Carlin",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 150
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 16
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 400
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 450
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 65
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Legs",
+          "normalizedItemName": "chain legs",
+          "price": 200
+        },
+        {
+          "itemName": "Dagger",
+          "normalizedItemName": "dagger",
+          "price": 5
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Plate Shield",
+          "normalizedItemName": "plate shield",
+          "price": 125
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Carlin.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/bashira",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Edvard",
+      "normalizedName": "edvard",
+      "city": "Venore",
+      "location": "Venore weapon shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 195
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 400
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 450
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Venore.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/edvard",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Esrik",
+      "normalizedName": "esrik",
+      "city": "Venore",
+      "location": "Venore magic shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 200
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 100
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Moonlight Rod",
+          "normalizedItemName": "moonlight rod",
+          "price": 400
+        },
+        {
+          "itemName": "Necrotic Rod",
+          "normalizedItemName": "necrotic rod",
+          "price": 5000
+        },
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 5000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 500
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop in Venore.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/esrik",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Willard",
+      "normalizedName": "willard",
+      "city": "Edron",
+      "location": "Edron weapon/armor shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 400
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Helmet",
+          "normalizedItemName": "chain helmet",
+          "price": 52
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Plate Shield",
+          "normalizedItemName": "plate shield",
+          "price": 125
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon and armor shop in Edron.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/willard",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Grizzly Adams",
+      "normalizedName": "grizzly adams",
+      "city": "Port Hope",
+      "location": "Port Hope, north of depot, big building",
+      "roles": [
+        "task"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Killing in the Name of...",
+      "notes": "Head of the Adventurers' Guild. Gives creature tasks (kill X monsters). Completing tasks awards Paw and Fur points for Charm unlocks.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/grizzly-adams",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Lugri",
+      "normalizedName": "lugri",
+      "city": "Edron",
+      "location": "Edron Hero Cave entrance",
+      "roles": [
+        "task",
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Hero Cave Quest",
+      "notes": "Quest NPC for Hero Cave access.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/lugri",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "A Wrinkled Bonelord",
+      "normalizedName": "a wrinkled bonelord",
+      "city": "Darashia",
+      "location": "Drefia, underground",
+      "roles": [
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Explorer Society",
+      "notes": "Key NPC for The Explorer Society quest. Gives access to various explored areas.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/a-wrinkled-bonelord",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Emperor Kruzak",
+      "normalizedName": "emperor kruzak",
+      "city": "Kazordoon",
+      "location": "Kazordoon throne room",
+      "roles": [
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The New Frontier",
+      "notes": "Part of The New Frontier quest chain.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/emperor-kruzak",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Jack Fate",
+      "normalizedName": "jack fate",
+      "city": "Liberty Bay",
+      "location": "Liberty Bay, north-west",
+      "roles": [
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Pirate Outfits Quest",
+      "notes": "Gives pirate outfit addons and pirate-related quests.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/jack-fate",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Hugo",
+      "normalizedName": "hugo",
+      "city": "Thais",
+      "location": "Thais Adventurer's Guild (north of the temple)",
+      "roles": [
+        "quest",
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Outfit quests",
+      "notes": "Gives various addon quests. Important outfit NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/hugo",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Alexander",
+      "normalizedName": "alexander",
+      "city": "Edron",
+      "location": "Edron, near magic academy",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Great Spirit Potion",
+          "normalizedItemName": "great spirit potion",
+          "price": 228
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Supreme Health Potion",
+          "normalizedItemName": "supreme health potion",
+          "price": 625
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        },
+        {
+          "itemName": "Ultimate Spirit Potion",
+          "normalizedItemName": "ultimate spirit potion",
+          "price": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Edron.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/alexander",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Aneus",
+      "normalizedName": "aneus",
+      "city": "Venore",
+      "location": "Venore potion shop, near depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Venore.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/aneus",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Sigurd",
+      "normalizedName": "sigurd",
+      "city": "Carlin",
+      "location": "Carlin potion shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Supreme Health Potion",
+          "normalizedItemName": "supreme health potion",
+          "price": 625
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Carlin.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/sigurd",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Asima",
+      "normalizedName": "asima",
+      "city": "Darashia",
+      "location": "Darashia magic shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 200
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 100
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Moonlight Rod",
+          "normalizedItemName": "moonlight rod",
+          "price": 400
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 500
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop and potions in Darashia.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/asima",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Obi",
+      "normalizedName": "obi",
+      "city": "Thais",
+      "location": "Obi's Weaponry, near Thais depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Axe",
+          "normalizedItemName": "axe",
+          "price": 7
+        },
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Battle Hammer",
+          "normalizedItemName": "battle hammer",
+          "price": 120
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Morning Star",
+          "normalizedItemName": "morning star",
+          "price": 100
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 195
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Axe",
+          "normalizedItemName": "axe",
+          "price": 20
+        },
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Battle Hammer",
+          "normalizedItemName": "battle hammer",
+          "price": 350
+        },
+        {
+          "itemName": "Club",
+          "normalizedItemName": "club",
+          "price": 5
+        },
+        {
+          "itemName": "Dagger",
+          "normalizedItemName": "dagger",
+          "price": 5
+        },
+        {
+          "itemName": "Hatchet",
+          "normalizedItemName": "hatchet",
+          "price": 25
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Morning Star",
+          "normalizedItemName": "morning star",
+          "price": 430
+        },
+        {
+          "itemName": "Rapier",
+          "normalizedItemName": "rapier",
+          "price": 15
+        },
+        {
+          "itemName": "Sabre",
+          "normalizedItemName": "sabre",
+          "price": 25
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 450
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Thais.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/obi",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Uzgod",
+      "normalizedName": "uzgod",
+      "city": "Kazordoon",
+      "location": "Kazordoon weapon shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Double Axe",
+          "normalizedItemName": "double axe",
+          "price": 260
+        },
+        {
+          "itemName": "Fire Sword",
+          "normalizedItemName": "fire sword",
+          "price": 1000
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 195
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Battle Hammer",
+          "normalizedItemName": "battle hammer",
+          "price": 350
+        },
+        {
+          "itemName": "Double Axe",
+          "normalizedItemName": "double axe",
+          "price": 580
+        },
+        {
+          "itemName": "Dragon Lance",
+          "normalizedItemName": "dragon lance",
+          "price": 9000
+        },
+        {
+          "itemName": "Fire Sword",
+          "normalizedItemName": "fire sword",
+          "price": 4000
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 400
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 450
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon and armor shop in Kazordoon. Good selection of mid-tier weapons.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/uzgod",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Brengus (Armor)",
+      "normalizedName": "brengus armor",
+      "city": "Thais",
+      "location": "Thais armor shop, near temple",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 150
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Leather Armor",
+          "normalizedItemName": "leather armor",
+          "price": 12
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 400
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 450
+        },
+        {
+          "itemName": "Brass Legs",
+          "normalizedItemName": "brass legs",
+          "price": 195
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Legs",
+          "normalizedItemName": "chain legs",
+          "price": 200
+        },
+        {
+          "itemName": "Leather Armor",
+          "normalizedItemName": "leather armor",
+          "price": 25
+        },
+        {
+          "itemName": "Leather Boots",
+          "normalizedItemName": "leather boots",
+          "price": 2
+        },
+        {
+          "itemName": "Leather Legs",
+          "normalizedItemName": "leather legs",
+          "price": 10
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Scale Armor",
+          "normalizedItemName": "scale armor",
+          "price": 260
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Armor shop in Thais.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/brengus-armor",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Telas",
+      "normalizedName": "telas",
+      "city": "Ankrahmun",
+      "location": "Ankrahmun magic shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 200
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 100
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Hailstorm Rod",
+          "normalizedItemName": "hailstorm rod",
+          "price": 15000
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Moonlight Rod",
+          "normalizedItemName": "moonlight rod",
+          "price": 400
+        },
+        {
+          "itemName": "Necrotic Rod",
+          "normalizedItemName": "necrotic rod",
+          "price": 5000
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Wand of Cosmic Energy",
+          "normalizedItemName": "wand of cosmic energy",
+          "price": 10000
+        },
+        {
+          "itemName": "Wand of Decay",
+          "normalizedItemName": "wand of decay",
+          "price": 5000
+        },
+        {
+          "itemName": "Wand of Dragonbreath",
+          "normalizedItemName": "wand of dragonbreath",
+          "price": 1000
+        },
+        {
+          "itemName": "Wand of Inferno",
+          "normalizedItemName": "wand of inferno",
+          "price": 15000
+        },
+        {
+          "itemName": "Wand of Vortex",
+          "normalizedItemName": "wand of vortex",
+          "price": 500
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop in Ankrahmun. Sells wands, rods, and potions.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/telas",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Rachel",
+      "normalizedName": "rachel",
+      "city": "Svargrond",
+      "location": "Svargrond equipment shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 65
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Legs",
+          "normalizedItemName": "chain legs",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Svargrond.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/rachel",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Xodet (Runes)",
+      "normalizedName": "xodet runes",
+      "city": "Thais",
+      "location": "Xodet's Magic Shopee",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Avalanche Rune",
+          "normalizedItemName": "avalanche rune",
+          "price": 57
+        },
+        {
+          "itemName": "Convince Creature Rune",
+          "normalizedItemName": "convince creature rune",
+          "price": 80
+        },
+        {
+          "itemName": "Destroy Field Rune",
+          "normalizedItemName": "destroy field rune",
+          "price": 15
+        },
+        {
+          "itemName": "Explosion Rune",
+          "normalizedItemName": "explosion rune",
+          "price": 31
+        },
+        {
+          "itemName": "Great Fireball Rune",
+          "normalizedItemName": "great fireball rune",
+          "price": 57
+        },
+        {
+          "itemName": "Heavy Magic Missile Rune",
+          "normalizedItemName": "heavy magic missile rune",
+          "price": 12
+        },
+        {
+          "itemName": "Intense Healing Rune",
+          "normalizedItemName": "intense healing rune",
+          "price": 95
+        },
+        {
+          "itemName": "Magic Wall Rune",
+          "normalizedItemName": "magic wall rune",
+          "price": 116
+        },
+        {
+          "itemName": "Sudden Death Rune",
+          "normalizedItemName": "sudden death rune",
+          "price": 135
+        },
+        {
+          "itemName": "Thunderstorm Rune",
+          "normalizedItemName": "thunderstorm rune",
+          "price": 47
+        },
+        {
+          "itemName": "Ultimate Healing Rune",
+          "normalizedItemName": "ultimate healing rune",
+          "price": 175
+        },
+        {
+          "itemName": "Wild Growth Rune",
+          "normalizedItemName": "wild growth rune",
+          "price": 160
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Rune shop. Sells all commonly used runes.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/xodet-runes",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Flint",
+      "normalizedName": "flint",
+      "city": "Liberty Bay",
+      "location": "Liberty Bay weapon shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 65
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 450
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Liberty Bay.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/flint",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Briasol",
+      "normalizedName": "briasol",
+      "city": "Yalahar",
+      "location": "Yalahar Trade Quarter, near depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 195
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        },
+        {
+          "itemName": "Two Handed Sword",
+          "normalizedItemName": "two handed sword",
+          "price": 450
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Yalahar Trade Quarter.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/briasol",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Frederik",
+      "normalizedName": "frederik",
+      "city": "Liberty Bay",
+      "location": "Liberty Bay potion shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Liberty Bay.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/frederik",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Shanar",
+      "normalizedName": "shanar",
+      "city": "Ab'Dendriel",
+      "location": "Ab'Dendriel weapon shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 80
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 200
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Battle Axe",
+          "normalizedItemName": "battle axe",
+          "price": 235
+        },
+        {
+          "itemName": "Brass Shield",
+          "normalizedItemName": "brass shield",
+          "price": 65
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Halberd",
+          "normalizedItemName": "halberd",
+          "price": 400
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Ab'Dendriel.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/shanar",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Henricus",
+      "normalizedName": "henricus",
+      "city": "Thais",
+      "location": "Thais, southeast, near the Tibia temple",
+      "roles": [
+        "quest",
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Inquisition Quest",
+      "notes": "Main NPC for The Inquisition quest. Also gives access to Demon Forge.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/henricus",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Tamoril",
+      "normalizedName": "tamoril",
+      "city": "Edron",
+      "location": "Edron tower, ivory towers area",
+      "roles": [
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "The Explorer Society",
+      "notes": "Explorer Society quest NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/tamoril",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Percybald",
+      "normalizedName": "percybald",
+      "city": "Edron",
+      "location": "Edron castle",
+      "roles": [
+        "quest"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Postman Quest",
+      "notes": "Postman quest NPC.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/percybald",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Yaman (Task)",
+      "normalizedName": "yaman task",
+      "city": "Ankrahmun",
+      "location": "Ankrahmun palace",
+      "roles": [
+        "task"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Killing in the Name of...",
+      "notes": "Gives high-level creature tasks (e.g., Demons, Hydras).",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/yaman-task",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Kroox",
+      "normalizedName": "kroox",
+      "city": "Kazordoon",
+      "location": "Kazordoon armor shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 150
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 70
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 400
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Brass Armor",
+          "normalizedItemName": "brass armor",
+          "price": 450
+        },
+        {
+          "itemName": "Brass Legs",
+          "normalizedItemName": "brass legs",
+          "price": 195
+        },
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Chain Legs",
+          "normalizedItemName": "chain legs",
+          "price": 200
+        },
+        {
+          "itemName": "Knight Armor",
+          "normalizedItemName": "knight armor",
+          "price": 5000
+        },
+        {
+          "itemName": "Plate Armor",
+          "normalizedItemName": "plate armor",
+          "price": 1200
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Armor shop in Kazordoon.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/kroox",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Amaro",
+      "normalizedName": "amaro",
+      "city": "Port Hope",
+      "location": "Port Hope shop, near depot",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Supreme Health Potion",
+          "normalizedItemName": "supreme health potion",
+          "price": 625
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Port Hope.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/amaro",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Hanna (Svargrond)",
+      "normalizedName": "hanna svargrond",
+      "city": "Svargrond",
+      "location": "Svargrond potion shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Svargrond.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/hanna-svargrond",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Dove",
+      "normalizedName": "dove",
+      "city": "Thais",
+      "location": "Thais temple",
+      "roles": [
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Amulet of Loss",
+          "normalizedItemName": "amulet of loss",
+          "price": 50000
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells Amulet of Loss. Also serves as temple healer.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/dove",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Iwan",
+      "normalizedName": "iwan",
+      "city": "Rathleton",
+      "location": "Rathleton, glooth factory area",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Glooth Amulet",
+          "normalizedItemName": "glooth amulet",
+          "price": 2000
+        },
+        {
+          "itemName": "Glooth Axe",
+          "normalizedItemName": "glooth axe",
+          "price": 15000
+        },
+        {
+          "itemName": "Glooth Blade",
+          "normalizedItemName": "glooth blade",
+          "price": 15000
+        },
+        {
+          "itemName": "Glooth Cape",
+          "normalizedItemName": "glooth cape",
+          "price": 5000
+        },
+        {
+          "itemName": "Glooth Club",
+          "normalizedItemName": "glooth club",
+          "price": 15000
+        }
+      ],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Glooth equipment trader in Rathleton. Buys glooth drops.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/iwan",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Percybald (Postman)",
+      "normalizedName": "percybald postman",
+      "city": "Carlin",
+      "location": "Carlin post office",
+      "roles": [
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Label",
+          "normalizedItemName": "label",
+          "price": 1
+        },
+        {
+          "itemName": "Letter",
+          "normalizedItemName": "letter",
+          "price": 8
+        },
+        {
+          "itemName": "Parcel",
+          "normalizedItemName": "parcel",
+          "price": 15
+        }
+      ],
+      "transport": [],
+      "quest": "Postman Quest",
+      "notes": "Post office NPC. Can send letters and parcels after Postman quest.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/percybald-postman",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Isimov",
+      "normalizedName": "isimov",
+      "city": "Yalahar",
+      "location": "Yalahar, Alchemist Quarter",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Great Spirit Potion",
+          "normalizedItemName": "great spirit potion",
+          "price": 228
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        },
+        {
+          "itemName": "Supreme Health Potion",
+          "normalizedItemName": "supreme health potion",
+          "price": 625
+        },
+        {
+          "itemName": "Ultimate Health Potion",
+          "normalizedItemName": "ultimate health potion",
+          "price": 379
+        },
+        {
+          "itemName": "Ultimate Spirit Potion",
+          "normalizedItemName": "ultimate spirit potion",
+          "price": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Yalahar.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/isimov",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Gewen",
+      "normalizedName": "gewen",
+      "city": "Ab'Dendriel",
+      "location": "Ab'Dendriel potion shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Great Health Potion",
+          "normalizedItemName": "great health potion",
+          "price": 225
+        },
+        {
+          "itemName": "Great Mana Potion",
+          "normalizedItemName": "great mana potion",
+          "price": 144
+        },
+        {
+          "itemName": "Health Potion",
+          "normalizedItemName": "health potion",
+          "price": 50
+        },
+        {
+          "itemName": "Mana Potion",
+          "normalizedItemName": "mana potion",
+          "price": 56
+        },
+        {
+          "itemName": "Strong Health Potion",
+          "normalizedItemName": "strong health potion",
+          "price": 115
+        },
+        {
+          "itemName": "Strong Mana Potion",
+          "normalizedItemName": "strong mana potion",
+          "price": 93
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Ab'Dendriel.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/gewen",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Asnarus (Runes)",
+      "normalizedName": "asnarus runes",
+      "city": "Ankrahmun",
+      "location": "Ankrahmun magic shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Avalanche Rune",
+          "normalizedItemName": "avalanche rune",
+          "price": 57
+        },
+        {
+          "itemName": "Explosion Rune",
+          "normalizedItemName": "explosion rune",
+          "price": 31
+        },
+        {
+          "itemName": "Great Fireball Rune",
+          "normalizedItemName": "great fireball rune",
+          "price": 57
+        },
+        {
+          "itemName": "Heavy Magic Missile Rune",
+          "normalizedItemName": "heavy magic missile rune",
+          "price": 12
+        },
+        {
+          "itemName": "Magic Wall Rune",
+          "normalizedItemName": "magic wall rune",
+          "price": 116
+        },
+        {
+          "itemName": "Sudden Death Rune",
+          "normalizedItemName": "sudden death rune",
+          "price": 135
+        },
+        {
+          "itemName": "Thunderstorm Rune",
+          "normalizedItemName": "thunderstorm rune",
+          "price": 47
+        },
+        {
+          "itemName": "Ultimate Healing Rune",
+          "normalizedItemName": "ultimate healing rune",
+          "price": 175
+        },
+        {
+          "itemName": "Wild Growth Rune",
+          "normalizedItemName": "wild growth rune",
+          "price": 160
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Rune shop in Ankrahmun.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/asnarus-runes",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Cipfried",
+      "normalizedName": "cipfried",
+      "city": "Rookgaard",
+      "location": "Rookgaard temple",
+      "roles": [
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Temple NPC in Rookgaard. Heals players.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/cipfried",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Obi (Rookgaard)",
+      "normalizedName": "obi rookgaard",
+      "city": "Rookgaard",
+      "location": "Rookgaard weapon shop",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 30
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 25
+        }
+      ],
+      "itemsSold": [
+        {
+          "itemName": "Chain Armor",
+          "normalizedItemName": "chain armor",
+          "price": 200
+        },
+        {
+          "itemName": "Club",
+          "normalizedItemName": "club",
+          "price": 5
+        },
+        {
+          "itemName": "Dagger",
+          "normalizedItemName": "dagger",
+          "price": 5
+        },
+        {
+          "itemName": "Leather Armor",
+          "normalizedItemName": "leather armor",
+          "price": 25
+        },
+        {
+          "itemName": "Mace",
+          "normalizedItemName": "mace",
+          "price": 90
+        },
+        {
+          "itemName": "Rapier",
+          "normalizedItemName": "rapier",
+          "price": 15
+        },
+        {
+          "itemName": "Sabre",
+          "normalizedItemName": "sabre",
+          "price": 25
+        },
+        {
+          "itemName": "Sword",
+          "normalizedItemName": "sword",
+          "price": 85
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Rookgaard for new players.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/obi-rookgaard",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Seymour",
+      "normalizedName": "seymour",
+      "city": "Rookgaard",
+      "location": "Rookgaard Academy",
+      "roles": [
+        "quest",
+        "other"
+      ],
+      "itemsBought": [],
+      "itemsSold": [],
+      "transport": [],
+      "quest": "Rookgaard Tutorial",
+      "notes": "Tutorial NPC in Rookgaard Academy. New players start here.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/seymour",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Sharonka",
+      "normalizedName": "sharonka",
+      "city": "Carlin",
+      "location": "Carlin general store",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Backpack",
+          "normalizedItemName": "backpack",
+          "price": 20
+        },
+        {
+          "itemName": "Bag",
+          "normalizedItemName": "bag",
+          "price": 5
+        },
+        {
+          "itemName": "Fishing Rod",
+          "normalizedItemName": "fishing rod",
+          "price": 150
+        },
+        {
+          "itemName": "Machete",
+          "normalizedItemName": "machete",
+          "price": 35
+        },
+        {
+          "itemName": "Pick",
+          "normalizedItemName": "pick",
+          "price": 50
+        },
+        {
+          "itemName": "Rope",
+          "normalizedItemName": "rope",
+          "price": 50
+        },
+        {
+          "itemName": "Shovel",
+          "normalizedItemName": "shovel",
+          "price": 50
+        },
+        {
+          "itemName": "Torch",
+          "normalizedItemName": "torch",
+          "price": 2
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Carlin.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/sharonka",
+      "reviewStatus": "external-reference"
+    },
+    {
+      "name": "Bezil",
+      "normalizedName": "bezil",
+      "city": "Edron",
+      "location": "Edron general store",
+      "roles": [
+        "trader"
+      ],
+      "itemsBought": [],
+      "itemsSold": [
+        {
+          "itemName": "Backpack",
+          "normalizedItemName": "backpack",
+          "price": 20
+        },
+        {
+          "itemName": "Bag",
+          "normalizedItemName": "bag",
+          "price": 5
+        },
+        {
+          "itemName": "Fishing Rod",
+          "normalizedItemName": "fishing rod",
+          "price": 150
+        },
+        {
+          "itemName": "Pick",
+          "normalizedItemName": "pick",
+          "price": 50
+        },
+        {
+          "itemName": "Rope",
+          "normalizedItemName": "rope",
+          "price": 50
+        },
+        {
+          "itemName": "Shovel",
+          "normalizedItemName": "shovel",
+          "price": 50
+        },
+        {
+          "itemName": "Torch",
+          "normalizedItemName": "torch",
+          "price": 2
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Edron.",
+      "source": "tibiavault",
+      "sourceUrl": "https://tibiavault.com/#npcs/bezil",
+      "reviewStatus": "external-reference"
+    }
+  ]
+}

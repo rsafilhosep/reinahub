@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { ItemSearchClientService } from "../services/item-search-client-service";
 import type { ItemDatabaseRecord, ItemSearchResult } from "../types";
 
 export function useItemDatabase(initialItemId?: string) {
@@ -31,14 +32,8 @@ export function useItemDatabase(initialItemId?: string) {
       setLoading(true);
       setError(null);
       try {
-        const params = new URLSearchParams({ query: trimmedQuery });
-        if (category) params.set("category", category);
-        const response = await fetch(`/api/items?${params.toString()}`, {
-          signal: controller.signal
-        });
-        if (!response.ok) throw new Error("Nao foi possivel buscar itens.");
-        const data = (await response.json()) as { results: ItemSearchResult[] };
-        setResults(data.results);
+        const items = await ItemSearchClientService.searchItems({ query: trimmedQuery, category, signal: controller.signal });
+        setResults(items);
       } catch (requestError) {
         if (!controller.signal.aborted) {
           setError(requestError instanceof Error ? requestError.message : "Erro ao buscar itens.");
@@ -58,10 +53,7 @@ export function useItemDatabase(initialItemId?: string) {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`/api/items?id=${encodeURIComponent(itemId)}`);
-      if (!response.ok) throw new Error("Item nao encontrado.");
-      const data = (await response.json()) as { item: ItemDatabaseRecord };
-      setSelectedItem(data.item);
+      setSelectedItem(await ItemSearchClientService.getItemById(itemId));
     } catch (requestError) {
       setError(requestError instanceof Error ? requestError.message : "Erro ao carregar item.");
     } finally {

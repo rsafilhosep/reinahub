@@ -1,0 +1,1407 @@
+[
+  {
+    "name": "A Fluffy Squirrel",
+    "normalizedName": "a fluffy squirrel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\a_fluffy_squirrel.lua"
+  },
+  {
+    "name": "Ahmet",
+    "normalizedName": "ahmet",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ahmet.lua"
+  },
+  {
+    "name": "Al Dee",
+    "normalizedName": "al dee",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\al_dee.lua"
+  },
+  {
+    "name": "Albinius",
+    "normalizedName": "albinius",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\albinius.lua"
+  },
+  {
+    "name": "Aldo",
+    "normalizedName": "aldo",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\aldo.lua"
+  },
+  {
+    "name": "Alesar",
+    "normalizedName": "alesar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\alesar.lua"
+  },
+  {
+    "name": "Alissa",
+    "normalizedName": "alissa",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\alissa.lua"
+  },
+  {
+    "name": "Allen",
+    "normalizedName": "allen",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\allen.lua"
+  },
+  {
+    "name": "Amra",
+    "normalizedName": "amra",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\amra.lua"
+  },
+  {
+    "name": "Andrew Lyze",
+    "normalizedName": "andrew lyze",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\andrew_lyze.lua"
+  },
+  {
+    "name": "Anerui",
+    "normalizedName": "anerui",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\anerui.lua"
+  },
+  {
+    "name": "Angus",
+    "normalizedName": "angus",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\angus.lua"
+  },
+  {
+    "name": "Archery",
+    "normalizedName": "archery",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\archery.lua"
+  },
+  {
+    "name": "Archery Rook",
+    "normalizedName": "archery rook",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\archery_rook.lua"
+  },
+  {
+    "name": "Ariella",
+    "normalizedName": "ariella",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ariella.lua"
+  },
+  {
+    "name": "Arito",
+    "normalizedName": "arito",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\arito.lua"
+  },
+  {
+    "name": "Arkulius",
+    "normalizedName": "arkulius",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\arkulius.lua"
+  },
+  {
+    "name": "Armenius",
+    "normalizedName": "armenius",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\armenius.lua"
+  },
+  {
+    "name": "Asnarus",
+    "normalizedName": "asnarus",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asnarus.lua"
+  },
+  {
+    "name": "Asphota",
+    "normalizedName": "asphota",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asphota.lua"
+  },
+  {
+    "name": "Atrad",
+    "normalizedName": "atrad",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\atrad.lua"
+  },
+  {
+    "name": "Augustin",
+    "normalizedName": "augustin",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\augustin.lua"
+  },
+  {
+    "name": "Aurelia",
+    "normalizedName": "aurelia",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\aurelia.lua"
+  },
+  {
+    "name": "Auron",
+    "normalizedName": "auron",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\auron.lua"
+  },
+  {
+    "name": "Avriel",
+    "normalizedName": "avriel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\avriel.lua"
+  },
+  {
+    "name": "Azil",
+    "normalizedName": "azil",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\azil.lua"
+  },
+  {
+    "name": "Baltim",
+    "normalizedName": "baltim",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\baltim.lua"
+  },
+  {
+    "name": "Bashira",
+    "normalizedName": "bashira",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bashira.lua"
+  },
+  {
+    "name": "Baxter",
+    "normalizedName": "baxter",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\baxter.lua"
+  },
+  {
+    "name": "Beatrice",
+    "normalizedName": "beatrice",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\beatrice.lua"
+  },
+  {
+    "name": "Benjamin",
+    "normalizedName": "benjamin",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\benjamin.lua"
+  },
+  {
+    "name": "Berenice",
+    "normalizedName": "berenice",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\berenice.lua"
+  },
+  {
+    "name": "Bertha",
+    "normalizedName": "bertha",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bertha.lua"
+  },
+  {
+    "name": "Bezil",
+    "normalizedName": "bezil",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bezil.lua"
+  },
+  {
+    "name": "Billy",
+    "normalizedName": "billy",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\billy.lua"
+  },
+  {
+    "name": "Black Bert",
+    "normalizedName": "black bert",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\black_bert.lua"
+  },
+  {
+    "name": "Bolfona",
+    "normalizedName": "bolfona",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bolfona.lua"
+  },
+  {
+    "name": "Bonifacius",
+    "normalizedName": "bonifacius",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bonifacius.lua"
+  },
+  {
+    "name": "Boozer",
+    "normalizedName": "boozer",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\boozer.lua"
+  },
+  {
+    "name": "Borkas",
+    "normalizedName": "borkas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\borkas.lua"
+  },
+  {
+    "name": "Brasith",
+    "normalizedName": "brasith",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\brasith.lua"
+  },
+  {
+    "name": "Brengus",
+    "normalizedName": "brengus",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\brengus.lua"
+  },
+  {
+    "name": "Briasol",
+    "normalizedName": "briasol",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\briasol.lua"
+  },
+  {
+    "name": "Buddel",
+    "normalizedName": "buddel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_tyrsung.lua"
+  },
+  {
+    "name": "Cael",
+    "normalizedName": "cael",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cael.lua"
+  },
+  {
+    "name": "Captain Haba",
+    "normalizedName": "captain haba",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\captain_haba_open_sea.lua"
+  },
+  {
+    "name": "Captain Max",
+    "normalizedName": "captain max",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\captain_max_calassa.lua"
+  },
+  {
+    "name": "Carina",
+    "normalizedName": "carina",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\carina.lua"
+  },
+  {
+    "name": "Carlos",
+    "normalizedName": "carlos",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\carlos.lua"
+  },
+  {
+    "name": "Cedrik",
+    "normalizedName": "cedrik",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cedrik.lua"
+  },
+  {
+    "name": "Chantalle",
+    "normalizedName": "chantalle",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chantalle.lua"
+  },
+  {
+    "name": "Chartan",
+    "normalizedName": "chartan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chartan.lua"
+  },
+  {
+    "name": "Chemar",
+    "normalizedName": "chemar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chemar.lua"
+  },
+  {
+    "name": "Chephan",
+    "normalizedName": "chephan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chephan.lua"
+  },
+  {
+    "name": "Chondur",
+    "normalizedName": "chondur",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chondur.lua"
+  },
+  {
+    "name": "Christine",
+    "normalizedName": "christine",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\christine.lua"
+  },
+  {
+    "name": "Chrystal",
+    "normalizedName": "chrystal",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chrystal.lua"
+  },
+  {
+    "name": "Cledwyn",
+    "normalizedName": "cledwyn",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cledwyn.lua"
+  },
+  {
+    "name": "Clyde",
+    "normalizedName": "clyde",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\clyde.lua"
+  },
+  {
+    "name": "Coltrayne",
+    "normalizedName": "coltrayne",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\coltrayne.lua"
+  },
+  {
+    "name": "Cornelia",
+    "normalizedName": "cornelia",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cornelia.lua"
+  },
+  {
+    "name": "Cruleo",
+    "normalizedName": "cruleo",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cruleo.lua"
+  },
+  {
+    "name": "Dal the Huntress",
+    "normalizedName": "dal the huntress",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dal_the_huntress_night.lua"
+  },
+  {
+    "name": "Dane",
+    "normalizedName": "dane",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dane.lua"
+  },
+  {
+    "name": "Dankwart",
+    "normalizedName": "dankwart",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dankwart.lua"
+  },
+  {
+    "name": "Dario",
+    "normalizedName": "dario",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dario.lua"
+  },
+  {
+    "name": "Digger",
+    "normalizedName": "digger",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\digger.lua"
+  },
+  {
+    "name": "Dixi",
+    "normalizedName": "dixi",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dixi.lua"
+  },
+  {
+    "name": "Donald McRonald",
+    "normalizedName": "donald mcronald",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\donald_mcronald.lua"
+  },
+  {
+    "name": "Dorbin",
+    "normalizedName": "dorbin",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dorbin.lua"
+  },
+  {
+    "name": "Dorian",
+    "normalizedName": "dorian",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dorian.lua"
+  },
+  {
+    "name": "Dove",
+    "normalizedName": "dove",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dove.lua"
+  },
+  {
+    "name": "Duncan",
+    "normalizedName": "duncan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\duncan.lua"
+  },
+  {
+    "name": "Eddy",
+    "normalizedName": "eddy",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eddy.lua"
+  },
+  {
+    "name": "Edmund",
+    "normalizedName": "edmund",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edmund.lua"
+  },
+  {
+    "name": "Edoch",
+    "normalizedName": "edoch",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edoch.lua"
+  },
+  {
+    "name": "Edvard",
+    "normalizedName": "edvard",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edvard.lua"
+  },
+  {
+    "name": "Elane",
+    "normalizedName": "elane",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elane.lua"
+  },
+  {
+    "name": "Elgar",
+    "normalizedName": "elgar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elgar.lua"
+  },
+  {
+    "name": "Eliyas",
+    "normalizedName": "eliyas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eliyas.lua"
+  },
+  {
+    "name": "Elvith",
+    "normalizedName": "elvith",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elvith.lua"
+  },
+  {
+    "name": "Enpa-Deia Pema",
+    "normalizedName": "enpa deia pema",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\enpa_deia_pema.lua"
+  },
+  {
+    "name": "Eremo",
+    "normalizedName": "eremo",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eremo.lua"
+  },
+  {
+    "name": "Esrik",
+    "normalizedName": "esrik",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\esrik.lua"
+  },
+  {
+    "name": "Evan",
+    "normalizedName": "evan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\evan.lua"
+  },
+  {
+    "name": "Ezean",
+    "normalizedName": "ezean",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ezean.lua"
+  },
+  {
+    "name": "Fadil",
+    "normalizedName": "fadil",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fadil.lua"
+  },
+  {
+    "name": "Faloriel",
+    "normalizedName": "faloriel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\faloriel.lua"
+  },
+  {
+    "name": "Fayla",
+    "normalizedName": "fayla",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fayla.lua"
+  },
+  {
+    "name": "Feizuhl",
+    "normalizedName": "feizuhl",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\feizuhl.lua"
+  },
+  {
+    "name": "Fiona",
+    "normalizedName": "fiona",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fiona.lua"
+  },
+  {
+    "name": "Flint",
+    "normalizedName": "flint",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\flint.lua"
+  },
+  {
+    "name": "Florentine",
+    "normalizedName": "florentine",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\florentine.lua"
+  },
+  {
+    "name": "Fral the Butcher",
+    "normalizedName": "fral the butcher",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fral_the_butcher_night.lua"
+  },
+  {
+    "name": "Frodo",
+    "normalizedName": "frodo",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\frodo.lua"
+  },
+  {
+    "name": "Fyodor",
+    "normalizedName": "fyodor",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fyodor.lua"
+  },
+  {
+    "name": "Gail",
+    "normalizedName": "gail",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gail.lua"
+  },
+  {
+    "name": "Galuna",
+    "normalizedName": "galuna",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\galuna.lua"
+  },
+  {
+    "name": "Gamel",
+    "normalizedName": "gamel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gamel.lua"
+  },
+  {
+    "name": "Gamon",
+    "normalizedName": "gamon",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gamon.lua"
+  },
+  {
+    "name": "Giri",
+    "normalizedName": "giri",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\giri.lua"
+  },
+  {
+    "name": "Gladys",
+    "normalizedName": "gladys",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gladys.lua"
+  },
+  {
+    "name": "Gnomailion",
+    "normalizedName": "gnomailion",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomailion.lua"
+  },
+  {
+    "name": "Gnomally",
+    "normalizedName": "gnomally",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomally.lua"
+  },
+  {
+    "name": "Gnomejam",
+    "normalizedName": "gnomejam",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomejam.lua"
+  },
+  {
+    "name": "Gnomerrow",
+    "normalizedName": "gnomerrow",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomerrow.lua"
+  },
+  {
+    "name": "Gnomette",
+    "normalizedName": "gnomette",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomette.lua"
+  },
+  {
+    "name": "Gnomfurry",
+    "normalizedName": "gnomfurry",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomfurry.lua"
+  },
+  {
+    "name": "Gnomincia",
+    "normalizedName": "gnomincia",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomincia.lua"
+  },
+  {
+    "name": "Gnomission",
+    "normalizedName": "gnomission",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomission.lua"
+  },
+  {
+    "name": "Gnomux",
+    "normalizedName": "gnomux",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomux.lua"
+  },
+  {
+    "name": "Gorn",
+    "normalizedName": "gorn",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gorn.lua"
+  },
+  {
+    "name": "Gree Dee",
+    "normalizedName": "gree dee",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gree_dee.lua"
+  },
+  {
+    "name": "Grizzly Adams",
+    "normalizedName": "grizzly adams",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\grizzly_adams.lua"
+  },
+  {
+    "name": "H.L.",
+    "normalizedName": "h l",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\h.l..lua"
+  },
+  {
+    "name": "Haani",
+    "normalizedName": "haani",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\haani.lua"
+  },
+  {
+    "name": "Habdel",
+    "normalizedName": "habdel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\habdel.lua"
+  },
+  {
+    "name": "Hairycles",
+    "normalizedName": "hairycles",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hairycles.lua"
+  },
+  {
+    "name": "Halif",
+    "normalizedName": "halif",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\halif.lua"
+  },
+  {
+    "name": "Hanna",
+    "normalizedName": "hanna",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hanna.lua"
+  },
+  {
+    "name": "Hardek",
+    "normalizedName": "hardek",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hardek.lua"
+  },
+  {
+    "name": "Harog",
+    "normalizedName": "harog",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\harog.lua"
+  },
+  {
+    "name": "Haroun",
+    "normalizedName": "haroun",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\haroun.lua"
+  },
+  {
+    "name": "Hector The Mentor",
+    "normalizedName": "hector the mentor",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hector_the_mentor.lua"
+  },
+  {
+    "name": "Henricus",
+    "normalizedName": "henricus",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\henricus.lua"
+  },
+  {
+    "name": "Herbert",
+    "normalizedName": "herbert",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\herbert.lua"
+  },
+  {
+    "name": "Hofech",
+    "normalizedName": "hofech",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hofech.lua"
+  },
+  {
+    "name": "Hyacinth",
+    "normalizedName": "hyacinth",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hyacinth.lua"
+  },
+  {
+    "name": "Imalas",
+    "normalizedName": "imalas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\imalas.lua"
+  },
+  {
+    "name": "Imbuement Assistant",
+    "normalizedName": "imbuement assistant",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\imbuement_assistant.lua"
+  },
+  {
+    "name": "Inkaef",
+    "normalizedName": "inkaef",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\inkaef.lua"
+  },
+  {
+    "name": "Innkeeper Alphonse",
+    "normalizedName": "innkeeper alphonse",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\innkeeper_alphonse.lua"
+  },
+  {
+    "name": "Irea",
+    "normalizedName": "irea",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\irea.lua"
+  },
+  {
+    "name": "Iriana",
+    "normalizedName": "iriana",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iriana.lua"
+  },
+  {
+    "name": "Irmana",
+    "normalizedName": "irmana",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\irmana.lua"
+  },
+  {
+    "name": "Ishina",
+    "normalizedName": "ishina",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ishina.lua"
+  },
+  {
+    "name": "Isika",
+    "normalizedName": "isika",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\isika.lua"
+  },
+  {
+    "name": "Iwan",
+    "normalizedName": "iwan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iwan.lua"
+  },
+  {
+    "name": "Iwar",
+    "normalizedName": "iwar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iwar.lua"
+  },
+  {
+    "name": "Jack Springer",
+    "normalizedName": "jack springer",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jack_springer.lua"
+  },
+  {
+    "name": "Jakahr",
+    "normalizedName": "jakahr",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jakahr.lua"
+  },
+  {
+    "name": "James",
+    "normalizedName": "james",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\james.lua"
+  },
+  {
+    "name": "Janz",
+    "normalizedName": "janz",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\janz.lua"
+  },
+  {
+    "name": "Jehan The Baker",
+    "normalizedName": "jehan the baker",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jehan_the_baker_night.lua"
+  },
+  {
+    "name": "Jessica",
+    "normalizedName": "jessica",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jessica.lua"
+  },
+  {
+    "name": "Jezzara",
+    "normalizedName": "jezzara",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jezzara.lua"
+  },
+  {
+    "name": "John",
+    "normalizedName": "john",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\john.lua"
+  },
+  {
+    "name": "John Bounac",
+    "normalizedName": "john bounac",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\john_bounac.lua"
+  },
+  {
+    "name": "Julian",
+    "normalizedName": "julian",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\julian.lua"
+  },
+  {
+    "name": "Julius",
+    "normalizedName": "julius",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\julius.lua"
+  },
+  {
+    "name": "Karl",
+    "normalizedName": "karl",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\karl.lua"
+  },
+  {
+    "name": "Kroox",
+    "normalizedName": "kroox",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\kroox.lua"
+  },
+  {
+    "name": "Lailene",
+    "normalizedName": "lailene",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lailene.lua"
+  },
+  {
+    "name": "Larek",
+    "normalizedName": "larek",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\larek.lua"
+  },
+  {
+    "name": "Lector",
+    "normalizedName": "lector",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lector.lua"
+  },
+  {
+    "name": "Lee'Delle",
+    "normalizedName": "leedelle",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lee_delle.lua"
+  },
+  {
+    "name": "Legola",
+    "normalizedName": "legola",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\legola.lua"
+  },
+  {
+    "name": "Leonora",
+    "normalizedName": "leonora",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\leonora.lua"
+  },
+  {
+    "name": "Liane",
+    "normalizedName": "liane",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\liane.lua"
+  },
+  {
+    "name": "Lily",
+    "normalizedName": "lily",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lily.lua"
+  },
+  {
+    "name": "Livielle",
+    "normalizedName": "livielle",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\livielle.lua"
+  },
+  {
+    "name": "Loot Buyer",
+    "normalizedName": "loot buyer",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\loot_buyer.lua"
+  },
+  {
+    "name": "Lubo",
+    "normalizedName": "lubo",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lubo.lua"
+  },
+  {
+    "name": "Luna",
+    "normalizedName": "luna",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\luna.lua"
+  },
+  {
+    "name": "Lurik",
+    "normalizedName": "lurik",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lurik.lua"
+  },
+  {
+    "name": "Lyonel",
+    "normalizedName": "lyonel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lyonel.lua"
+  },
+  {
+    "name": "Malunga",
+    "normalizedName": "malunga",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\malunga.lua"
+  },
+  {
+    "name": "Maria",
+    "normalizedName": "maria",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maria.lua"
+  },
+  {
+    "name": "Maro",
+    "normalizedName": "maro",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maro.lua"
+  },
+  {
+    "name": "Maryza",
+    "normalizedName": "maryza",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maryza.lua"
+  },
+  {
+    "name": "Maun",
+    "normalizedName": "maun",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maun.lua"
+  },
+  {
+    "name": "Mehkesh",
+    "normalizedName": "mehkesh",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mehkesh.lua"
+  },
+  {
+    "name": "Melfar",
+    "normalizedName": "melfar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\melfar.lua"
+  },
+  {
+    "name": "Memech",
+    "normalizedName": "memech",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\memech.lua"
+  },
+  {
+    "name": "Messenger of Santa",
+    "normalizedName": "messenger of santa",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\messenger_of_santa.lua"
+  },
+  {
+    "name": "Mirabell",
+    "normalizedName": "mirabell",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mirabell.lua"
+  },
+  {
+    "name": "Miraia",
+    "normalizedName": "miraia",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\miraia.lua"
+  },
+  {
+    "name": "Morpel",
+    "normalizedName": "morpel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\morpel.lua"
+  },
+  {
+    "name": "Mortimer",
+    "normalizedName": "mortimer",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mortimer.lua"
+  },
+  {
+    "name": "Mugluf",
+    "normalizedName": "mugluf",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mugluf.lua"
+  },
+  {
+    "name": "Mugruu",
+    "normalizedName": "mugruu",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mugruu.lua"
+  },
+  {
+    "name": "Murim",
+    "normalizedName": "murim",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\murim.lua"
+  },
+  {
+    "name": "Nah'Bob",
+    "normalizedName": "nahbob",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nah_bob.lua"
+  },
+  {
+    "name": "Nelliem",
+    "normalizedName": "nelliem",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nelliem.lua"
+  },
+  {
+    "name": "Nezil",
+    "normalizedName": "nezil",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nezil.lua"
+  },
+  {
+    "name": "Nicholas",
+    "normalizedName": "nicholas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nicholas.lua"
+  },
+  {
+    "name": "Nienna",
+    "normalizedName": "nienna",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nienna.lua"
+  },
+  {
+    "name": "Ninos",
+    "normalizedName": "ninos",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ninos.lua"
+  },
+  {
+    "name": "Norbert",
+    "normalizedName": "norbert",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\norbert.lua"
+  },
+  {
+    "name": "Norma",
+    "normalizedName": "norma",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\norma.lua"
+  },
+  {
+    "name": "Nydala",
+    "normalizedName": "nydala",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nydala.lua"
+  },
+  {
+    "name": "Obi",
+    "normalizedName": "obi",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\obi.lua"
+  },
+  {
+    "name": "Odemara",
+    "normalizedName": "odemara",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\odemara.lua"
+  },
+  {
+    "name": "Oiriz",
+    "normalizedName": "oiriz",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\oiriz.lua"
+  },
+  {
+    "name": "Olrik",
+    "normalizedName": "olrik",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\olrik.lua"
+  },
+  {
+    "name": "Omur",
+    "normalizedName": "omur",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\omur.lua"
+  },
+  {
+    "name": "Orockle",
+    "normalizedName": "orockle",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\orockle.lua"
+  },
+  {
+    "name": "Peggy",
+    "normalizedName": "peggy",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\peggy.lua"
+  },
+  {
+    "name": "Pemaret",
+    "normalizedName": "pemaret",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pemaret.lua"
+  },
+  {
+    "name": "Penny",
+    "normalizedName": "penny",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\penny.lua"
+  },
+  {
+    "name": "Perac",
+    "normalizedName": "perac",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\perac.lua"
+  },
+  {
+    "name": "Perod",
+    "normalizedName": "perod",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\perod.lua"
+  },
+  {
+    "name": "Pompan",
+    "normalizedName": "pompan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pompan.lua"
+  },
+  {
+    "name": "Pugwah",
+    "normalizedName": "pugwah",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pugwah.lua"
+  },
+  {
+    "name": "Quero",
+    "normalizedName": "quero",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\quero.lua"
+  },
+  {
+    "name": "Rafzan",
+    "normalizedName": "rafzan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rafzan.lua"
+  },
+  {
+    "name": "Ramina",
+    "normalizedName": "ramina",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ramina.lua"
+  },
+  {
+    "name": "Rashid",
+    "normalizedName": "rashid",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua"
+  },
+  {
+    "name": "Rashid of Island",
+    "normalizedName": "rashid of island",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid_custom.lua"
+  },
+  {
+    "name": "Ray",
+    "normalizedName": "ray",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ray.lua"
+  },
+  {
+    "name": "Red Lilly",
+    "normalizedName": "red lilly",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\red_lilly.lua"
+  },
+  {
+    "name": "Redward",
+    "normalizedName": "redward",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\redward.lua"
+  },
+  {
+    "name": "Robert",
+    "normalizedName": "robert",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\robert.lua"
+  },
+  {
+    "name": "Rodney",
+    "normalizedName": "rodney",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rodney.lua"
+  },
+  {
+    "name": "Romella",
+    "normalizedName": "romella",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\romella.lua"
+  },
+  {
+    "name": "Rose",
+    "normalizedName": "rose",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rose.lua"
+  },
+  {
+    "name": "Rowenna",
+    "normalizedName": "rowenna",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rowenna.lua"
+  },
+  {
+    "name": "Rudolph",
+    "normalizedName": "rudolph",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rudolph.lua"
+  },
+  {
+    "name": "Runtel Blackspark",
+    "normalizedName": "runtel blackspark",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\runtel_blackspark.lua"
+  },
+  {
+    "name": "Sam",
+    "normalizedName": "sam",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua"
+  },
+  {
+    "name": "Sandra",
+    "normalizedName": "sandra",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sandra.lua"
+  },
+  {
+    "name": "Sarina",
+    "normalizedName": "sarina",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sarina.lua"
+  },
+  {
+    "name": "Satsu",
+    "normalizedName": "satsu",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\satsu.lua"
+  },
+  {
+    "name": "Scott",
+    "normalizedName": "scott",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\scott.lua"
+  },
+  {
+    "name": "Serafin",
+    "normalizedName": "serafin",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\serafin.lua"
+  },
+  {
+    "name": "Sessek",
+    "normalizedName": "sessek",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sessek.lua"
+  },
+  {
+    "name": "Shanar",
+    "normalizedName": "shanar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shanar.lua"
+  },
+  {
+    "name": "Sherry McRonald",
+    "normalizedName": "sherry mcronald",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sherry_mcronald.lua"
+  },
+  {
+    "name": "Shiantis",
+    "normalizedName": "shiantis",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shiantis.lua"
+  },
+  {
+    "name": "Siflind",
+    "normalizedName": "siflind",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\siflind.lua"
+  },
+  {
+    "name": "Silas",
+    "normalizedName": "silas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\silas.lua"
+  },
+  {
+    "name": "Snake Eye",
+    "normalizedName": "snake eye",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\snake_eye.lua"
+  },
+  {
+    "name": "Soilance",
+    "normalizedName": "soilance",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\soilance.lua"
+  },
+  {
+    "name": "Stan",
+    "normalizedName": "stan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\stan.lua"
+  },
+  {
+    "name": "Swolt",
+    "normalizedName": "swolt",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\swolt.lua"
+  },
+  {
+    "name": "Taegen",
+    "normalizedName": "taegen",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\taegen.lua"
+  },
+  {
+    "name": "Talila",
+    "normalizedName": "talila",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\talila.lua"
+  },
+  {
+    "name": "Talphion",
+    "normalizedName": "talphion",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\talphion.lua"
+  },
+  {
+    "name": "Tamoril",
+    "normalizedName": "tamoril",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tamoril.lua"
+  },
+  {
+    "name": "Tanaro",
+    "normalizedName": "tanaro",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tanaro.lua"
+  },
+  {
+    "name": "Tarun",
+    "normalizedName": "tarun",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tarun.lua"
+  },
+  {
+    "name": "Telas",
+    "normalizedName": "telas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\telas.lua"
+  },
+  {
+    "name": "Tesha",
+    "normalizedName": "tesha",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tesha.lua"
+  },
+  {
+    "name": "Testserver Assistant",
+    "normalizedName": "testserver assistant",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\testserver_assistant.lua"
+  },
+  {
+    "name": "Tezila",
+    "normalizedName": "tezila",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tezila.lua"
+  },
+  {
+    "name": "The Librarian",
+    "normalizedName": "the librarian",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\the_librarian.lua"
+  },
+  {
+    "name": "Thomas",
+    "normalizedName": "thomas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\thomas.lua"
+  },
+  {
+    "name": "Timur",
+    "normalizedName": "timur",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\timur.lua"
+  },
+  {
+    "name": "Todd",
+    "normalizedName": "todd",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\todd.lua"
+  },
+  {
+    "name": "Tokel",
+    "normalizedName": "tokel",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tokel.lua"
+  },
+  {
+    "name": "Tom",
+    "normalizedName": "tom",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tom.lua"
+  },
+  {
+    "name": "Tothdral",
+    "normalizedName": "tothdral",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tothdral.lua"
+  },
+  {
+    "name": "Turvy",
+    "normalizedName": "turvy",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\turvy.lua"
+  },
+  {
+    "name": "Ukea",
+    "normalizedName": "ukea",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ukea.lua"
+  },
+  {
+    "name": "Ulrik",
+    "normalizedName": "ulrik",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ulrik.lua"
+  },
+  {
+    "name": "Urkalio",
+    "normalizedName": "urkalio",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\urkalio.lua"
+  },
+  {
+    "name": "Ustan",
+    "normalizedName": "ustan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ustan.lua"
+  },
+  {
+    "name": "Uzgod",
+    "normalizedName": "uzgod",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uzgod.lua"
+  },
+  {
+    "name": "Valentina",
+    "normalizedName": "valentina",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\valentina.lua"
+  },
+  {
+    "name": "Valindara",
+    "normalizedName": "valindara",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\valindara.lua"
+  },
+  {
+    "name": "Velvet",
+    "normalizedName": "velvet",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\velvet.lua"
+  },
+  {
+    "name": "Vera",
+    "normalizedName": "vera",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\vera.lua"
+  },
+  {
+    "name": "Victor",
+    "normalizedName": "victor",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\victor.lua"
+  },
+  {
+    "name": "Vincent",
+    "normalizedName": "vincent",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\vincent.lua"
+  },
+  {
+    "name": "Wally",
+    "normalizedName": "wally",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\wally.lua"
+  },
+  {
+    "name": "Wes the Blacksmith",
+    "normalizedName": "wes the blacksmith",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\wes_the_blacksmith_night.lua"
+  },
+  {
+    "name": "Willard",
+    "normalizedName": "willard",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\willard.lua"
+  },
+  {
+    "name": "Willie",
+    "normalizedName": "willie",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\willie.lua"
+  },
+  {
+    "name": "Xed",
+    "normalizedName": "xed",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\xed.lua"
+  },
+  {
+    "name": "Xelvar",
+    "normalizedName": "xelvar",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\xelvar.lua"
+  },
+  {
+    "name": "Yaman",
+    "normalizedName": "yaman",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yaman.lua"
+  },
+  {
+    "name": "Yana",
+    "normalizedName": "yana",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yana.lua"
+  },
+  {
+    "name": "Yanni",
+    "normalizedName": "yanni",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yanni.lua"
+  },
+  {
+    "name": "Yasir",
+    "normalizedName": "yasir",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yasir.lua"
+  },
+  {
+    "name": "Yoem",
+    "normalizedName": "yoem",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yoem.lua"
+  },
+  {
+    "name": "Yonan",
+    "normalizedName": "yonan",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yonan.lua"
+  },
+  {
+    "name": "Yulas",
+    "normalizedName": "yulas",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yulas.lua"
+  },
+  {
+    "name": "Zaidal",
+    "normalizedName": "zaidal",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zaidal.lua"
+  },
+  {
+    "name": "Zethra",
+    "normalizedName": "zethra",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zethra.lua"
+  },
+  {
+    "name": "Zora",
+    "normalizedName": "zora",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zora.lua"
+  },
+  {
+    "name": "Zuma Magehide",
+    "normalizedName": "zuma magehide",
+    "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zuma_magehide.lua"
+  }
+]

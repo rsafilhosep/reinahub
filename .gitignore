@@ -1,6 +1,7 @@
 .next/
 node_modules/
+tmp/
+*.zip
 
 # Reference-only source dumps. Do not commit or execute.
 files_repository/
-

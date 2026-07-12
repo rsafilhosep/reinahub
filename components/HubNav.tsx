@@ -2,17 +2,21 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { getActiveServer, getServerWorldName } from "@/services/quote-service";
-import type { VaultServer } from "@/types/vault";
+import { ModuleIcon } from "./ModuleIcon";
+import { ReinaEconomyService, type ReinaEconomyContext } from "@/source/web/src/reina-core/economy";
 
 const modules = [
   { key: "cotacao", label: "Cotacao Central", href: "/cotacao" },
   { key: "rc", label: "Calculadora RC", href: "/calculadora-rc" },
   { key: "market", label: "Market Analyzer", href: "/market" },
   { key: "hunt", label: "Hunt Analyzer", href: "/hunt" },
+  { key: "stash", label: "Stash", href: "/stash" },
+  { key: "characters", label: "Characters", href: "/characters" },
+  { key: "premium-goals", label: "Premium Goals", href: "/premium-goals" },
+  { key: "live-goal", label: "Live Goal", href: "/live-goal" },
   { key: "assets", label: "Assets Manager", href: "/assets" },
   { key: "loot", label: "Loot Analyzer (em breve)", href: "" },
-  { key: "imbuement", label: "Imbuement Calculator (em breve)", href: "" }
+  { key: "imbuement", label: "Imbuement Database", href: "/imbuements" }
 ];
 
 const databaseModules = [
@@ -21,32 +25,29 @@ const databaseModules = [
 ];
 
 export function HubNav({ current }: { current: string }) {
-  const [server, setServer] = useState<VaultServer | null>(null);
+  const [economy, setEconomy] = useState<ReinaEconomyContext | null>(null);
 
   useEffect(() => {
-    const sync = () => setServer(getActiveServer());
+    const sync = () => setEconomy(ReinaEconomyService.getActiveContext());
     sync();
-    window.addEventListener("reinahub:quote-change", sync);
-    window.addEventListener("storage", sync);
-    return () => {
-      window.removeEventListener("reinahub:quote-change", sync);
-      window.removeEventListener("storage", sync);
-    };
+    return ReinaEconomyService.subscribe(sync);
   }, []);
 
   return (
     <nav className="hub-nav">
       {modules.map((mod) => {
-        const label = mod.key === "cotacao" && server ? `${mod.label} - ${getServerWorldName(server)}` : mod.label;
+        const label = mod.key === "cotacao" && economy?.worldName ? `${mod.label} - ${economy.worldName}` : mod.label;
         if (!mod.href) {
           return (
             <span className="hub-link disabled" key={mod.key}>
+              <ModuleIcon moduleKey={mod.key} size={22} showSprite={false} />
               {label}
             </span>
           );
         }
         return (
           <Link className={`hub-link${current === mod.key ? " active" : ""}`} href={mod.href} key={mod.key}>
+            <ModuleIcon moduleKey={mod.key} size={22} showSprite={false} />
             {label}
           </Link>
         );
@@ -56,6 +57,7 @@ export function HubNav({ current }: { current: string }) {
       </span>
       {databaseModules.map((mod) => (
         <Link className={`hub-link${current === mod.key ? " active" : ""}`} href={mod.href} key={mod.key}>
+          <ModuleIcon moduleKey={mod.key} size={22} showSprite={false} />
           {mod.label}
         </Link>
       ))}

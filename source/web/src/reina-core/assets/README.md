@@ -24,7 +24,7 @@ Criaturas, NPCs e bosses usam nome normalizado:
 
 ```text
 Demon -> public/assets/monsters/demon.gif
-Mooh'Tah Warrior -> public/assets/monsters/moohtah-warrior.gif
+Mooh'Tah Warrior -> public/assets/monsters/mooh-tah-warrior.gif
 ```
 
 ## Fallbacks
@@ -50,6 +50,7 @@ O importador tambem le, quando existir:
 
 ```text
 files_repository/Imgs Assets
+files_repository/Imgs Testes
 ```
 
 Depois rode:
@@ -65,7 +66,10 @@ Ele tenta identificar cada imagem por:
 - nome do arquivo igual ao `itemId`, exemplo `3031.gif`
 - nome do arquivo igual ou parecido com o nome do item, exemplo `gold coin.gif`
 - nome normalizado, exemplo `gold-coin.png`
+- itens da base principal `items.json` e da base complementar `supplemental-items.json`
 - nome do arquivo igual ou parecido com o nome do monstro, exemplo `dragon.gif`
+- nome do arquivo igual ou parecido com o nome do NPC, quando existir em `npcs.json`
+- aliases manuais em `asset-aliases.json`
 
 Quando encontra correspondencia de item, copia para:
 
@@ -85,6 +89,39 @@ Relatorios gerados:
 
 - `source/web/src/reina-core/assets/generated/imported-assets.json`
 - `source/web/src/reina-core/assets/generated/unmatched-inbox-assets.json`
+- `source/web/src/reina-core/assets/generated/unmatched-assets-review.json`
+
+`unmatched-assets-review.json` classifica arquivos nao reconhecidos por tipo provavel, como `item-name-review`, `creature-not-in-database`, `outfit`, `npc` ou `icon-or-ui`.
+
+## Aliases manuais de assets
+
+Use `source/web/src/reina-core/assets/asset-aliases.json` para corrigir nomes de arquivos que nao batem automaticamente com a base local.
+
+Formato:
+
+```json
+{
+  "items": {
+    "nome do arquivo": "nome canonico do item ou itemId"
+  },
+  "monsters": {
+    "nome do arquivo": "Nome Canonico do Monstro"
+  },
+  "npcs": {
+    "nome do arquivo": "Nome Canonico do NPC"
+  },
+  "bosses": {
+    "nome do arquivo": "Nome Canonico do Boss"
+  }
+}
+```
+
+Depois de editar aliases, rode:
+
+```bash
+npm run assets:import-inbox
+npm run assets:verify
+```
 
 ## Verificacao de assets
 

@@ -1,5 +1,6 @@
 "use client";
 
+import { MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { ItemSearchResult } from "../types";
 
 type ItemSearchProps = {
@@ -9,8 +10,6 @@ type ItemSearchProps = {
   onQueryChange: (query: string) => void;
   onSelectItem: (itemId: number) => void;
 };
-
-const MISSING_ITEM_IMAGE = "/assets/icons/missing-item.svg";
 
 export function ItemSearch({ query, results, loading, onQueryChange, onSelectItem }: ItemSearchProps) {
   return (

@@ -1,0 +1,14 @@
+[
+  {
+    "npcName": "Yasir",
+    "normalizedNpcName": "yasir",
+    "itemName": "Behemoth Fang",
+    "tradeType": "npcBuys",
+    "price": 500,
+    "sourcePath": "https://tibiavault.com/#npcs/yasir",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+    "dataStatus": "unmatched",
+    "reviewStatus": "manual-review-required"
+  }
+]

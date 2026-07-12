@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-07-05T12:15:50.585Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/#npcs",
+  "scriptUrl": "https://tibiavault.com/js/npc-data.js?v=2.159.0",
+  "safety": "Manual review list. Do not import unresolved rows automatically.",
+  "total": 4,
+  "items": [
+    {
+      "npcName": "Yasir",
+      "city": "Varies",
+      "tradeType": "itemsBought",
+      "itemName": "Behemoth Fang",
+      "price": 500,
+      "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+      "normalizedItemName": "behemoth fang",
+      "reviewStatus": "manual-review-required"
+    },
+    {
+      "npcName": "Yasir",
+      "city": "Varies",
+      "tradeType": "itemsBought",
+      "itemName": "Elder Wyrm Scale",
+      "price": 500,
+      "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+      "normalizedItemName": "elder wyrm scale",
+      "reviewStatus": "manual-review-required"
+    },
+    {
+      "npcName": "Yasir",
+      "city": "Varies",
+      "tradeType": "itemsBought",
+      "itemName": "Giant Spider Silk",
+      "price": 100,
+      "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+      "normalizedItemName": "giant spider silk",
+      "reviewStatus": "manual-review-required"
+    },
+    {
+      "npcName": "Yasir",
+      "city": "Varies",
+      "tradeType": "itemsBought",
+      "itemName": "Young Sea Serpent Scale",
+      "price": 380,
+      "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+      "normalizedItemName": "young sea serpent scale",
+      "reviewStatus": "manual-review-required"
+    }
+  ]
+}

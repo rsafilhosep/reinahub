@@ -14,8 +14,8 @@ export const defaultServer: VaultServer = {
   moeda: "Tibia Coin",
   lote: 25,
   gcPorMoeda: 80000,
-  loteVenda: 2.33,
-  loteCompra: 1.75
+  loteVenda: 1.75,
+  loteCompra: 2.33
 };
 
 export function loadServers() {
@@ -44,12 +44,20 @@ export function getActiveServer() {
   return servers.find((server) => server.id === getActiveServerId()) ?? servers[0] ?? null;
 }
 
+export function hasInvertedSpread(server: VaultServer | null | undefined) {
+  if (!server) return false;
+  const venda = Number(server.loteVenda) || 0;
+  const compra = Number(server.loteCompra) || 0;
+  return venda > 0 && compra > 0 && venda > compra;
+}
+
 export function saveQuoteSnapshot(server: VaultServer) {
   const history = StorageService.get<QuoteSnapshot[]>(QUOTE_HISTORY_KEY, []);
   const next = [
     ...history,
     {
       ts: Date.now(),
+      serverId: server.id,
       nome: server.nome,
       moeda: server.moeda,
       gcPorMoeda: server.gcPorMoeda,

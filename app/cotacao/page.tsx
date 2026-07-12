@@ -1,11 +1,16 @@
 "use client";
 
-import { Pencil, Trash2 } from "lucide-react";
+import { Calculator, DatabaseZap, Globe2, HandCoins, History, Pencil, ServerCog, Trash2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { AppShell } from "@/components/AppShell";
+import { CollapsiblePanel } from "@/components/CollapsiblePanel";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
+import { Modal } from "@/components/Modal";
 import { Tabs } from "@/components/Tabs";
 import { integer, money, moneySmart } from "@/services/format";
+import { ManualPriceSourceService, type ManualPriceSource, type ManualPriceSourceInput } from "@/services/manual-price-source-service";
+import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import worldCatalog from "@/source/web/src/reina-core/worlds/generated/world-catalog.json";
 import {
   QUOTE_HISTORY_KEY,
   getActiveServerId,
@@ -13,16 +18,29 @@ import {
   getServerPlatformName,
   getServerWorldName,
   goldToPremium,
+  hasInvertedSpread,
   loadServers,
   premiumToBrl,
   saveQuoteSnapshot,
-  saveServers,
-  setActiveServerId
+  saveServers
 } from "@/services/quote-service";
 import { StorageService } from "@/services/storage-service";
 import type { QuoteSnapshot, VaultServer } from "@/types/vault";
 
 type ServerForm = Omit<VaultServer, "id">;
+type ManualPriceSourceForm = Omit<ManualPriceSourceInput, "serverId">;
+type WorldCatalogEntry = {
+  platform: string;
+  world: string;
+  type: "global" | "ot";
+  premiumCurrency: string;
+  defaultLot: number;
+  pvpType?: string;
+  location?: string;
+  confidence?: string;
+};
+
+const worldCatalogEntries = worldCatalog.worlds as WorldCatalogEntry[];
 
 const emptyForm: ServerForm = {
   nome: "",
@@ -36,12 +54,24 @@ const emptyForm: ServerForm = {
   loteCompra: 0
 };
 
+const emptyPriceSourceForm: ManualPriceSourceForm = {
+  label: "",
+  kind: "manual",
+  loteVenda: 0,
+  loteCompra: 0,
+  note: ""
+};
+
 export default function CotacaoPage() {
   const [tab, setTab] = useState("servidores");
   const [servers, setServers] = useState<VaultServer[]>([]);
   const [activeId, setActiveId] = useState("");
   const [form, setForm] = useState(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
+  const [isServerModalOpen, setIsServerModalOpen] = useState(false);
+  const [priceSources, setPriceSources] = useState<ManualPriceSource[]>([]);
+  const [priceSourceForm, setPriceSourceForm] = useState<ManualPriceSourceForm>(emptyPriceSourceForm);
+  const [editingPriceSourceId, setEditingPriceSourceId] = useState<string | null>(null);
   const [gold, setGold] = useState(100000);
   const [history, setHistory] = useState<QuoteSnapshot[]>([]);
 
@@ -49,6 +79,7 @@ export default function CotacaoPage() {
     const loaded = loadServers();
     setServers(loaded);
     setActiveId(getActiveServerId() || loaded[0]?.id || "");
+    setPriceSources(ManualPriceSourceService.load());
     setHistory(StorageService.get<QuoteSnapshot[]>(QUOTE_HISTORY_KEY, []));
   }, []);
 
@@ -60,6 +91,7 @@ export default function CotacaoPage() {
   const premium = activeServer ? goldToPremium(activeServer, gold) : 0;
   const brlVenda = activeServer ? premiumToBrl(activeServer, premium, "venda") : 0;
   const brlCompra = activeServer ? premiumToBrl(activeServer, premium, "compra") : 0;
+  const activePriceSources = activeServer ? priceSources.filter((source) => source.serverId === activeServer.id) : [];
 
   function persist(next: VaultServer[]) {
     setServers(next);
@@ -87,6 +119,7 @@ export default function CotacaoPage() {
     persist(next);
     if (!activeId || editingId === activeId) activate(server.id);
     resetForm();
+    setIsServerModalOpen(false);
   }
 
   function editServer(server: VaultServer) {
@@ -103,6 +136,7 @@ export default function CotacaoPage() {
       loteCompra: server.loteCompra
     });
     setTab("servidores");
+    setIsServerModalOpen(true);
   }
 
   function resetForm() {
@@ -110,15 +144,76 @@ export default function CotacaoPage() {
     setForm(emptyForm);
   }
 
+  function openNewServerModal() {
+    resetForm();
+    setIsServerModalOpen(true);
+  }
+
+  function applyWorldCatalog(value: string) {
+    const entry = worldCatalogEntries.find((item) => `${item.platform}:::${item.world}` === value);
+    if (!entry) return;
+    setForm({
+      ...form,
+      plataforma: entry.platform,
+      nome: entry.world,
+      mundo: entry.world,
+      tipo: entry.type,
+      moeda: entry.premiumCurrency,
+      lote: entry.defaultLot
+    });
+  }
+
   function activate(id: string) {
     setActiveId(id);
-    setActiveServerId(id);
+    ReinaEconomyService.setActiveServer(id);
   }
 
   function removeServer(id: string) {
     const next = servers.filter((server) => server.id !== id);
     persist(next);
     if (activeId === id) activate(next[0]?.id ?? "");
+  }
+
+  function savePriceSource() {
+    if (!activeServer) return;
+    const next = ManualPriceSourceService.save({
+      ...priceSourceForm,
+      serverId: activeServer.id
+    }, editingPriceSourceId);
+    setPriceSources(next);
+    resetPriceSourceForm();
+  }
+
+  function editPriceSource(source: ManualPriceSource) {
+    setEditingPriceSourceId(source.id);
+    setPriceSourceForm({
+      label: source.label,
+      kind: source.kind,
+      loteVenda: source.loteVenda,
+      loteCompra: source.loteCompra,
+      note: source.note
+    });
+  }
+
+  function resetPriceSourceForm() {
+    setEditingPriceSourceId(null);
+    setPriceSourceForm(emptyPriceSourceForm);
+  }
+
+  function removePriceSource(id: string) {
+    setPriceSources(ManualPriceSourceService.remove(id));
+    if (editingPriceSourceId === id) resetPriceSourceForm();
+  }
+
+  function applyPriceSource(source: ManualPriceSource) {
+    if (!activeServer) return;
+    const nextServer = {
+      ...activeServer,
+      loteVenda: source.loteVenda || activeServer.loteVenda,
+      loteCompra: source.loteCompra || activeServer.loteCompra
+    };
+    const next = servers.map((server) => (server.id === activeServer.id ? nextServer : server));
+    persist(next);
   }
 
   function snapshot() {
@@ -141,7 +236,49 @@ export default function CotacaoPage() {
 
       {tab === "servidores" ? (
         <>
+          <Panel title="Cotacao ativa" eyebrow="fonte unica do hub">
+            {activeServer ? (
+              <>
+                <div className="character-hero">
+                  <div>
+                    <div className="eyebrow">{getServerPlatformName(activeServer)}</div>
+                    <h2 style={{ color: "var(--gold)", fontFamily: "var(--font-display)", fontSize: 30, margin: "4px 0", textTransform: "uppercase" }}>
+                      {getServerWorldName(activeServer)}
+                    </h2>
+                    <p className="note">
+                      Esta cotacao alimenta Calculadora RC, Market Analyzer, Hunt Analyzer, Stash, Premium Goals e Live Goal.
+                    </p>
+                  </div>
+                  <div className="character-actions">
+                    <button className="quick-btn" type="button" onClick={() => editServer(activeServer)}>
+                      <Pencil size={15} /> Editar ativa
+                    </button>
+                    <button className="quick-btn primary" type="button" onClick={openNewServerModal}>
+                      Adicionar servidor
+                    </button>
+                  </div>
+                </div>
+                <div className="hero-grid">
+                  <ResultSlot label="Moeda premium" value={activeServer.moeda} tone="gold" />
+                  <ResultSlot label={`Gold por ${activeServer.moeda}`} value={`${integer(activeServer.gcPorMoeda)} gc`} />
+                  <ResultSlot label="Preco venda" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
+                  <ResultSlot label="Preco compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
+                </div>
+                {hasInvertedSpread(activeServer) ? (
+                  <div className="empty-msg" style={{ borderColor: "var(--crimson)", color: "var(--crimson-glow)", marginTop: 16 }}>
+                    Atencao: nesta cotacao o valor de venda esta maior que o valor de compra. Confira se os campos nao foram invertidos.
+                  </div>
+                ) : null}
+              </>
+            ) : (
+              <div className="empty-msg">Cadastre um servidor/mundo para iniciar as conversoes do ReinaHub.</div>
+            )}
+          </Panel>
+
           <Panel title="Meus servidores / mundos" eyebrow="fonte unica do hub">
+            <div className="quick-row" style={{ marginBottom: 16 }}>
+              <button className="quick-btn primary" type="button" onClick={openNewServerModal}>Adicionar servidor / mundo</button>
+            </div>
             <div className="market-grid">
               {servers.map((server) => (
                 <div
@@ -199,7 +336,24 @@ export default function CotacaoPage() {
             </p>
           </Panel>
 
-          <Panel title={editingId ? "Editar servidor / mundo" : "Adicionar servidor / mundo"} eyebrow={editingId ? "alterar cadastro" : "novo cadastro"}>
+          <Modal
+            title={editingId ? "Editar servidor / mundo" : "Adicionar servidor / mundo"}
+            eyebrow={editingId ? "alterar cadastro" : "novo cadastro"}
+            open={isServerModalOpen}
+            onClose={() => setIsServerModalOpen(false)}
+          >
+            <div className="inputs-grid" style={{ marginBottom: 16 }}>
+              <Field label="Catalogo rapido">
+                <select defaultValue="" onChange={(event) => applyWorldCatalog(event.target.value)}>
+                  <option value="">Escolher mundo conhecido...</option>
+                  {worldCatalogEntries.map((entry) => (
+                    <option value={`${entry.platform}:::${entry.world}`} key={`${entry.platform}-${entry.world}`}>
+                      {entry.platform} - {entry.world}{entry.pvpType ? ` (${entry.pvpType})` : ""}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+            </div>
             <div className="inputs-grid">
               <Field label="Servidor / plataforma">
                 <input value={form.plataforma ?? ""} onChange={(e) => setForm({ ...form, plataforma: e.target.value })} placeholder="Tibia Global, RubiniOT..." />
@@ -236,13 +390,108 @@ export default function CotacaoPage() {
               </Field>
             </div>
             <p className="note">
-              Para Tibia Coin, use lote base 25. Os calculos consideram o preco do lote e derivam o valor unitario automaticamente.
+              Para Tibia Coin, use lote base 25. O catalogo rapido e apenas sugestao local; confirme moeda, gold por moeda e precos antes de salvar.
             </p>
             <div className="quick-row">
               <button className="quick-btn primary" type="button" onClick={saveServer}>{editingId ? "Salvar alteracoes" : "Salvar servidor"}</button>
               <button className="quick-btn" type="button" onClick={resetForm}>Limpar formulario</button>
+              <button className="quick-btn" type="button" onClick={() => setIsServerModalOpen(false)}>Cancelar</button>
             </div>
-          </Panel>
+          </Modal>
+
+          <CollapsiblePanel
+            title="Fontes manuais de preco"
+            eyebrow="usuario controla os nomes"
+            summary={
+              activeServer
+                ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use quando quiser acompanhar preco oficial ou externo manual.`
+                : "Cadastre ou selecione um servidor antes de adicionar fontes manuais."
+            }
+          >
+            <p className="note" style={{ marginTop: -4, marginBottom: 16 }}>
+              Cadastre aqui precos que voce acompanha manualmente. O ReinaHub nao traz nomes de revendedores, nao recomenda fontes externas e nao exibe propaganda. Use “Aplicar” para transformar uma fonte na cotacao ativa do servidor.
+            </p>
+            {activeServer ? (
+              <>
+                <div className="inputs-grid">
+                  <Field label="Nome da fonte">
+                    <input
+                      value={priceSourceForm.label}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, label: event.target.value })}
+                      placeholder="Ex: Oficial, Fonte 1, Cotacao manual..."
+                    />
+                  </Field>
+                  <Field label="Tipo">
+                    <select
+                      value={priceSourceForm.kind}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, kind: event.target.value as ManualPriceSourceForm["kind"] })}
+                    >
+                      <option value="manual">Manual / externo</option>
+                      <option value="official">Oficial</option>
+                    </select>
+                  </Field>
+                  <Field label="Preco do lote - venda">
+                    <div className="field-wrap">
+                      <span className="field-prefix">R$</span>
+                      <input
+                        className="with-prefix"
+                        type="number"
+                        step="0.000001"
+                        value={priceSourceForm.loteVenda}
+                        onChange={(event) => setPriceSourceForm({ ...priceSourceForm, loteVenda: Number(event.target.value) })}
+                      />
+                    </div>
+                  </Field>
+                  <Field label="Preco do lote - compra">
+                    <div className="field-wrap">
+                      <span className="field-prefix">R$</span>
+                      <input
+                        className="with-prefix"
+                        type="number"
+                        step="0.000001"
+                        value={priceSourceForm.loteCompra}
+                        onChange={(event) => setPriceSourceForm({ ...priceSourceForm, loteCompra: Number(event.target.value) })}
+                        placeholder={priceSourceForm.kind === "official" ? "opcional" : ""}
+                      />
+                    </div>
+                  </Field>
+                  <Field label="Observacao">
+                    <input
+                      value={priceSourceForm.note}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, note: event.target.value })}
+                      placeholder="Ex: atualizado hoje, conferir antes de negociar..."
+                    />
+                  </Field>
+                </div>
+                <div className="quick-row">
+                  <button className="quick-btn primary" type="button" onClick={savePriceSource}>{editingPriceSourceId ? "Salvar fonte" : "Adicionar fonte"}</button>
+                  <button className="quick-btn" type="button" onClick={resetPriceSourceForm}>Limpar fonte</button>
+                </div>
+                <div className="history-list" style={{ marginTop: 16 }}>
+                  {activePriceSources.map((source) => (
+                    <div className="history-item" key={source.id}>
+                      <span>
+                        {source.label}
+                        <span className="note" style={{ marginLeft: 10 }}>
+                          {source.kind === "official" ? "oficial" : "manual"} - {new Date(source.updatedAt).toLocaleString("pt-BR")}
+                        </span>
+                      </span>
+                      <span style={{ display: "inline-flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+                        <span style={{ color: "var(--gold)" }}>Venda R$ {moneySmart(source.loteVenda / activeServer.lote)}</span>
+                        <span>Compra {source.loteCompra ? `R$ ${moneySmart(source.loteCompra / activeServer.lote)}` : "-"}</span>
+                        <button className="quick-btn" type="button" onClick={() => applyPriceSource(source)}>Aplicar</button>
+                        <button className="quick-btn" type="button" onClick={() => editPriceSource(source)}>Editar</button>
+                        <button className="quick-btn danger" type="button" onClick={() => removePriceSource(source.id)}>Remover</button>
+                      </span>
+                    </div>
+                  ))}
+                  {!activePriceSources.length ? <div className="empty-msg">Nenhuma fonte manual cadastrada para o servidor ativo.</div> : null}
+                </div>
+              </>
+            ) : (
+              <div className="empty-msg">Cadastre ou selecione um servidor antes de adicionar fontes manuais.</div>
+            )}
+          </CollapsiblePanel>
         </>
       ) : null}
 
@@ -302,13 +551,29 @@ export default function CotacaoPage() {
       {tab === "sobre" ? (
         <Panel title="Como funciona" eyebrow="coracao do hub">
           <div className="market-grid">
-            <div className="market-card"><div className="label">Multi-servidor</div><p className="note">Cada mundo tem sua moeda, lote e taxas salvos localmente.</p></div>
-            <div className="market-card"><div className="label">Servidor ativo</div><p className="note">Os outros modulos leem sempre a cotacao ativa daqui.</p></div>
-            <div className="market-card"><div className="label">Historico</div><p className="note">Snapshots permitem acompanhar variacao de mercado.</p></div>
-            <div className="market-card"><div className="label">Calculo</div><p className="note">gc para moeda premium, e moeda premium para reais pelo preco unitario do lote.</p></div>
+            <InfoCard icon={Globe2} title="Multi-servidor" text="Cada mundo tem sua moeda, lote e taxas salvos localmente." />
+            <InfoCard icon={ServerCog} title="Servidor ativo" text="Os outros modulos leem sempre a cotacao ativa daqui." />
+            <InfoCard icon={History} title="Historico" text="Snapshots permitem acompanhar variacao de mercado." />
+            <InfoCard icon={Calculator} title="Calculo" text="GC vira moeda premium, e moeda premium vira reais pelo preco unitario do lote." />
+            <InfoCard icon={HandCoins} title="Fontes manuais" text="O usuario cadastra precos externos/oficiais manualmente, sem nomes de revendedores nem propaganda." />
+            <InfoCard icon={DatabaseZap} title="Fonte unica" text="Market, Hunt, Stash e metas premium usam a mesma cotacao ativa." />
           </div>
         </Panel>
       ) : null}
     </AppShell>
+  );
+}
+
+function InfoCard({ icon: Icon, title, text }: { icon: React.ElementType; title: string; text: string }) {
+  return (
+    <div className="market-card info-card">
+      <div className="info-card-head">
+        <span className="info-card-icon">
+          <Icon size={18} aria-hidden="true" />
+        </span>
+        <div className="label">{title}</div>
+      </div>
+      <p className="note">{text}</p>
+    </div>
   );
 }

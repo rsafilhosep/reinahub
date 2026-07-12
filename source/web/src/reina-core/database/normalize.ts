@@ -2,7 +2,7 @@ export function normalizeItemName(name = "") {
   return decodeXml(name)
     .normalize("NFKC")
     .replace(/[\u200B-\u200D\uFEFF\u00A0]/g, " ")
-    .replace(/[‘’´`]/g, "'")
+    .replace(/[\u2018\u2019\u00B4`]/g, "'")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
@@ -26,4 +26,3 @@ function decodeXml(value = "") {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">");
 }
-

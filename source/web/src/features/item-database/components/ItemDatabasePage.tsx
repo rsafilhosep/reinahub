@@ -1,5 +1,6 @@
 "use client";
 
+import { useRef } from "react";
 import { Panel } from "@/components/Panel";
 import { useItemDatabase } from "../hooks";
 import { ItemDetails } from "./ItemDetails";
@@ -21,6 +22,14 @@ const ITEM_CATEGORY_FILTERS = [
 
 export function ItemDatabasePage({ initialItemId }: { initialItemId?: string }) {
   const { query, setQuery, category, setCategory, results, selectedItem, selectItem, loading, error } = useItemDatabase(initialItemId);
+  const detailsRef = useRef<HTMLDivElement>(null);
+
+  async function handleSelectItem(itemId: number) {
+    await selectItem(itemId);
+    window.requestAnimationFrame(() => {
+      detailsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
 
   return (
     <>
@@ -42,14 +51,16 @@ export function ItemDatabasePage({ initialItemId }: { initialItemId?: string }) 
           results={results}
           loading={loading}
           onQueryChange={setQuery}
-          onSelectItem={selectItem}
+          onSelectItem={handleSelectItem}
         />
         {error ? <div className="note" style={{ color: "var(--crimson-glow)" }}>{error}</div> : null}
       </Panel>
 
-      <Panel title="Detalhes do item" eyebrow="preco - drops - assets">
-        <ItemDetails item={selectedItem} />
-      </Panel>
+      <div ref={detailsRef} className="scroll-anchor">
+        <Panel title="Detalhes do item" eyebrow="preco - drops - assets">
+          <ItemDetails item={selectedItem} />
+        </Panel>
+      </div>
     </>
   );
 }

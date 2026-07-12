@@ -1,21 +1,22 @@
 "use client";
 
+import { MISSING_CREATURE_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { MonsterSearchResult } from "../types";
 
 type MonsterSearchProps = {
   query: string;
   results: MonsterSearchResult[];
   loading: boolean;
+  hasActiveFilter: boolean;
   onQueryChange: (query: string) => void;
   onSelectMonster: (name: string) => void;
 };
-
-const MISSING_CREATURE_IMAGE = "/assets/icons/missing-creature.svg";
 
 export function MonsterSearch({
   query,
   results,
   loading,
+  hasActiveFilter,
   onQueryChange,
   onSelectMonster
 }: MonsterSearchProps) {
@@ -40,7 +41,7 @@ export function MonsterSearch({
             onClick={() => onSelectMonster(monster.name)}
             style={{ width: "100%", cursor: "pointer", textAlign: "left" }}
           >
-            <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: 10, minWidth: 0 }}>
               <img
                 src={monster.image.path}
                 alt=""
@@ -52,14 +53,19 @@ export function MonsterSearch({
                 }}
                 style={{ width: 32, height: 32, imageRendering: "pixelated", objectFit: "contain" }}
               />
-              {monster.name}
+              <span>
+                <span>{monster.name}</span>
+                <span className="note" style={{ display: "block", marginTop: 3 }}>
+                  {monster.classInfo.label}
+                </span>
+              </span>
             </span>
             <span style={{ color: "var(--gold)" }}>{monster.experience} XP</span>
           </button>
         ))}
       </div>
 
-      {!loading && query.trim() && results.length === 0 ? <div className="empty-msg">Nenhum monstro encontrado.</div> : null}
+      {!loading && (query.trim() || hasActiveFilter) && results.length === 0 ? <div className="empty-msg">Nenhum monstro encontrado.</div> : null}
     </div>
   );
 }

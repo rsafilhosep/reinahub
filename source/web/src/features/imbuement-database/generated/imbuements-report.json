@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-07-04T01:12:57.141Z",
+  "source": "data/imbuements.json",
+  "powerfulImbuements": 24,
+  "powerfulMaterialRows": 72,
+  "matchedMaterialRows": 69,
+  "unmatchedMaterialRows": 3,
+  "unmatched": [
+    {
+      "imbuementId": "powerful-epiphany",
+      "imbuementName": "Powerful Epiphany",
+      "materialName": "concentrated demonic blood",
+      "resolvedName": "concentrated demonic blood",
+      "count": 5,
+      "matched": false
+    },
+    {
+      "imbuementId": "powerful-demon-presence",
+      "imbuementName": "Powerful Demon Presence",
+      "materialName": "concentrated demonic blood",
+      "resolvedName": "concentrated demonic blood",
+      "count": 5,
+      "matched": false
+    },
+    {
+      "imbuementId": "powerful-vibrancy",
+      "imbuementName": "Powerful Vibrancy",
+      "materialName": "swamp plant",
+      "resolvedName": "swamp plant",
+      "count": 5,
+      "matched": false
+    }
+  ]
+}

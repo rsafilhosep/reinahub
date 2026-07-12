@@ -48,6 +48,7 @@ fonte
 ```bash
 npm run datasource:verify
 npm run datasource:scan-tibiavault-bestiary
+npm run datasource:scan-tibiavault-npcs
 ```
 
 O scanner do TibiaVault Bestiary gera apenas relatorios:
@@ -57,3 +58,17 @@ O scanner do TibiaVault Bestiary gera apenas relatorios:
 - `tibiavault-unmatched-monsters.json`
 
 Ele nao importa nada para `ReinaDataService`.
+
+O scanner do TibiaVault NPCs le a pagina publica, localiza o arquivo `npc-data.js`,
+extrai o literal `_NPC_DATA` como texto e converte para relatorios locais sem executar o
+JavaScript da fonte.
+
+Relatorios:
+
+- `source/web/src/reina-core/data-sources/generated/tibiavault-npcs-raw.json`
+- `source/web/src/reina-core/data-sources/generated/tibiavault-npcs-normalized.json`
+- `source/web/src/reina-core/data-sources/generated/tibiavault-npcs-coverage.json`
+- `source/web/src/reina-core/data-sources/generated/tibiavault-npc-unresolved-items.json`
+
+Esses arquivos servem para revisar NPCs, lojas e itens antes de qualquer promocao para
+`npcs.json`, `npc-trades.json` ou importadores da base local.

@@ -1,4 +1,9 @@
 import { assetManifest, type AssetCategory } from "@/source/assets/metadata/asset-manifest";
+import {
+  MISSING_CREATURE_IMAGE,
+  MISSING_ITEM_IMAGE,
+  normalizeAssetName as normalizeCoreAssetName
+} from "@/source/web/src/reina-core/assets";
 
 type ResolveOptions = {
   category: AssetCategory;
@@ -23,35 +28,21 @@ export type GameAssetMetadata = {
   wikiUrl?: string;
 };
 
-const normalizeCache = new Map<string, string>();
 const resolveCache = new Map<string, GameAssetMetadata>();
 
 const placeholders = {
-  monsters: "/images/icons/monster-placeholder.png",
-  bosses: "/images/icons/monster-placeholder.png",
-  items: "/images/icons/item-placeholder.png",
-  npcs: "/images/icons/npc-placeholder.png",
-  outfits: "/images/icons/npc-placeholder.png",
-  mounts: "/images/icons/npc-placeholder.png",
-  spells: "/images/icons/item-placeholder.png",
-  icons: "/images/icons/item-placeholder.png"
+  monsters: MISSING_CREATURE_IMAGE,
+  bosses: MISSING_CREATURE_IMAGE,
+  items: MISSING_ITEM_IMAGE,
+  npcs: MISSING_CREATURE_IMAGE,
+  outfits: MISSING_CREATURE_IMAGE,
+  mounts: MISSING_CREATURE_IMAGE,
+  spells: MISSING_ITEM_IMAGE,
+  icons: MISSING_ITEM_IMAGE
 } satisfies Record<AssetCategory, string>;
 
 export function normalizeAssetName(name: string) {
-  const cached = normalizeCache.get(name);
-  if (cached) return cached;
-
-  const normalized = name
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/['`´’]/g, "-")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .replace(/-{2,}/g, "-");
-
-  normalizeCache.set(name, normalized);
-  return normalized;
+  return normalizeCoreAssetName(name);
 }
 
 export function resolveGameAsset(options: ResolveOptions): GameAssetMetadata {
@@ -86,7 +77,5 @@ export function resolveNpcImage(name: string) {
 }
 
 export function clearImageResolverCache() {
-  normalizeCache.clear();
   resolveCache.clear();
 }
-

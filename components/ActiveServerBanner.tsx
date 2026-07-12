@@ -3,24 +3,27 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { integer, moneySmart } from "@/services/format";
-import { getActiveServer, getServerDisplayName } from "@/services/quote-service";
+import { ReinaActiveContextService, type ReinaActiveContext } from "@/source/web/src/reina-core/active-context";
+import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { loadServers } from "@/services/quote-service";
 import type { VaultServer } from "@/types/vault";
 
 export function ActiveServerBanner() {
-  const [server, setServer] = useState<VaultServer | null>(null);
+  const [activeContext, setActiveContext] = useState<ReinaActiveContext | null>(null);
+  const [servers, setServers] = useState<VaultServer[]>([]);
 
   useEffect(() => {
-    const sync = () => setServer(getActiveServer());
-    sync();
-    window.addEventListener("reinahub:quote-change", sync);
-    window.addEventListener("storage", sync);
-    return () => {
-      window.removeEventListener("reinahub:quote-change", sync);
-      window.removeEventListener("storage", sync);
+    const sync = () => {
+      setActiveContext(ReinaActiveContextService.getActiveContext());
+      setServers(loadServers());
     };
+    sync();
+    return ReinaActiveContextService.subscribe(sync);
   }, []);
 
-  if (!server) {
+  const economy = activeContext?.economy;
+
+  if (!economy?.server) {
     return (
       <div className="active-banner" style={{ borderColor: "var(--line)", color: "var(--ink-faint)" }}>
         Nenhum servidor ativo. Configure na <Link href="/cotacao" style={{ color: "var(--gold)" }}>Cotacao Central</Link>.
@@ -30,15 +33,28 @@ export function ActiveServerBanner() {
 
   return (
     <div className="active-banner">
-      <span>Servidor ativo:</span>
-      <strong style={{ color: "var(--gold)" }}>{getServerDisplayName(server)}</strong>
-      <span style={{ color: "var(--ink-dim)" }}>
-        1 {server.moeda} = {integer(server.gcPorMoeda)} gc - venda R$ {moneySmart(server.loteVenda / server.lote)} /
-        compra R$ {moneySmart(server.loteCompra / server.lote)}
-      </span>
-      <Link href="/cotacao" style={{ marginLeft: "auto", color: "var(--gold)", textDecoration: "none" }}>
-        Editar cotacao
-      </Link>
+      <div className="active-banner-main">
+        <span>Contexto ativo:</span>
+        <strong>{activeContext?.displayName ?? economy.serverName}</strong>
+        <span>
+          1 {economy.currencyName} = {integer(economy.goldPerPremium)} gc - venda R$ {moneySmart(economy.sellUnitPrice)} /
+          compra R$ {moneySmart(economy.buyUnitPrice)}
+        </span>
+      </div>
+      <div className="active-banner-controls">
+        <select
+          aria-label="Trocar servidor ativo"
+          value={economy.serverId ?? ""}
+          onChange={(event) => ReinaActiveContextService.setActiveServer(event.target.value)}
+        >
+          {servers.map((server) => (
+            <option value={server.id} key={server.id}>
+              {ReinaEconomyService.getDisplayName(server)}
+            </option>
+          ))}
+        </select>
+        <Link href="/cotacao">Gerenciar</Link>
+      </div>
     </div>
   );
 }

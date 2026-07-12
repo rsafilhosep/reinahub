@@ -1,0 +1,1234 @@
+[
+  {
+    "name": "A Wrinkled Bonelord",
+    "normalizedName": "a wrinkled bonelord",
+    "city": "Darashia",
+    "location": "Drefia, underground",
+    "roles": [
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/a-wrinkled-bonelord",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/a-wrinkled-bonelord",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Abubakar",
+    "normalizedName": "abubakar",
+    "city": "Ankrahmun",
+    "location": "Ankrahmun harbour",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/abubakar",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/abubakar",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Al Dee",
+    "normalizedName": "al dee",
+    "city": "Thais",
+    "location": "General store, north-west Thais",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/al-dee",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/al-dee",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Al Dee",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\al_dee.lua"
+    }
+  },
+  {
+    "name": "Alesar",
+    "normalizedName": "alesar",
+    "city": "Ankrahmun",
+    "location": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/alesar",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/alesar",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Alesar",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\alesar.lua"
+    }
+  },
+  {
+    "name": "Alexander",
+    "normalizedName": "alexander",
+    "city": "Edron",
+    "location": "Edron, near magic academy",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/alexander",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/alexander",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Amaro",
+    "normalizedName": "amaro",
+    "city": "Port Hope",
+    "location": "Port Hope shop, near depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/amaro",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/amaro",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Aneus",
+    "normalizedName": "aneus",
+    "city": "Venore",
+    "location": "Venore potion shop, near depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/aneus",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/aneus",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Asima",
+    "normalizedName": "asima",
+    "city": "Darashia",
+    "location": "Darashia magic shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/asima",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/asima",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Asnarus",
+    "normalizedName": "asnarus",
+    "city": "Yalahar",
+    "location": "Yalahar bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/asnarus",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/asnarus",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Asnarus",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asnarus.lua"
+    }
+  },
+  {
+    "name": "Asnarus (Runes)",
+    "normalizedName": "asnarus runes",
+    "city": "Ankrahmun",
+    "location": "Ankrahmun magic shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/asnarus-runes",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/asnarus-runes",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Bashira",
+    "normalizedName": "bashira",
+    "city": "Carlin",
+    "location": "Equipment shop, north-east Carlin",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/bashira",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/bashira",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Bashira",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bashira.lua"
+    }
+  },
+  {
+    "name": "Bezil",
+    "normalizedName": "bezil",
+    "city": "Edron",
+    "location": "Edron general store",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/bezil",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/bezil",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Bezil",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bezil.lua"
+    }
+  },
+  {
+    "name": "Brengus",
+    "normalizedName": "brengus",
+    "city": "Thais",
+    "location": "Thais bank, north of depot",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/brengus",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/brengus",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Brengus",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\brengus.lua"
+    }
+  },
+  {
+    "name": "Brengus (Armor)",
+    "normalizedName": "brengus armor",
+    "city": "Thais",
+    "location": "Thais armor shop, near temple",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/brengus-armor",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/brengus-armor",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Briasol",
+    "normalizedName": "briasol",
+    "city": "Yalahar",
+    "location": "Yalahar Trade Quarter, near depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/briasol",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/briasol",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Briasol",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\briasol.lua"
+    }
+  },
+  {
+    "name": "Buddel",
+    "normalizedName": "buddel",
+    "city": "Svargrond",
+    "location": "Svargrond harbour",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/buddel",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/buddel",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Buddel",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_tyrsung.lua"
+    }
+  },
+  {
+    "name": "Captain Bluebear",
+    "normalizedName": "captain bluebear",
+    "city": "Thais",
+    "location": "Thais harbour, south-east of the city",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/captain-bluebear",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/captain-bluebear",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Chondur",
+    "normalizedName": "chondur",
+    "city": "Port Hope",
+    "location": "Port Hope bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/chondur",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/chondur",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Chondur",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chondur.lua"
+    }
+  },
+  {
+    "name": "Cipfried",
+    "normalizedName": "cipfried",
+    "city": "Rookgaard",
+    "location": "Rookgaard temple",
+    "roles": [
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/cipfried",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/cipfried",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Cora",
+    "normalizedName": "cora",
+    "city": "Carlin",
+    "location": "Carlin harbour, south of the city",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/cora",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/cora",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Dalbrect",
+    "normalizedName": "dalbrect",
+    "city": "Darashia",
+    "location": "Darashia harbour, south",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/dalbrect",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/dalbrect",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Dove",
+    "normalizedName": "dove",
+    "city": "Thais",
+    "location": "Thais temple",
+    "roles": [
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/dove",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/dove",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Dove",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dove.lua"
+    }
+  },
+  {
+    "name": "Ebenizer",
+    "normalizedName": "ebenizer",
+    "city": "Carlin",
+    "location": "Carlin bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/ebenizer",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/ebenizer",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Edvard",
+    "normalizedName": "edvard",
+    "city": "Venore",
+    "location": "Venore weapon shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/edvard",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/edvard",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Edvard",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edvard.lua"
+    }
+  },
+  {
+    "name": "Emperor Kruzak",
+    "normalizedName": "emperor kruzak",
+    "city": "Kazordoon",
+    "location": "Kazordoon throne room",
+    "roles": [
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/emperor-kruzak",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/emperor-kruzak",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Esrik",
+    "normalizedName": "esrik",
+    "city": "Venore",
+    "location": "Venore magic shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/esrik",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/esrik",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Esrik",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\esrik.lua"
+    }
+  },
+  {
+    "name": "Finarfin",
+    "normalizedName": "finarfin",
+    "city": "Ab'Dendriel",
+    "location": "Ab'Dendriel bank, near depot",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/finarfin",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/finarfin",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Flint",
+    "normalizedName": "flint",
+    "city": "Liberty Bay",
+    "location": "Liberty Bay weapon shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/flint",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/flint",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Flint",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\flint.lua"
+    }
+  },
+  {
+    "name": "Frederik",
+    "normalizedName": "frederik",
+    "city": "Liberty Bay",
+    "location": "Liberty Bay potion shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/frederik",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/frederik",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Gewen",
+    "normalizedName": "gewen",
+    "city": "Ab'Dendriel",
+    "location": "Ab'Dendriel potion shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/gewen",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/gewen",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Gnomally",
+    "normalizedName": "gnomally",
+    "city": "Kazordoon",
+    "location": "Kazordoon bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/gnomally",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/gnomally",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Gnomally",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomally.lua"
+    }
+  },
+  {
+    "name": "Gnomus",
+    "normalizedName": "gnomus",
+    "city": "Kazordoon",
+    "location": "Kazordoon steamship, underground harbour",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/gnomus",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/gnomus",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Grizzly Adams",
+    "normalizedName": "grizzly adams",
+    "city": "Port Hope",
+    "location": "Port Hope, north of depot, big building",
+    "roles": [
+      "task"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/grizzly-adams",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/grizzly-adams",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Grizzly Adams",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\grizzly_adams.lua"
+    }
+  },
+  {
+    "name": "Hanna",
+    "normalizedName": "hanna",
+    "city": "Venore",
+    "location": "Venore bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/hanna",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/hanna",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Hanna",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hanna.lua"
+    }
+  },
+  {
+    "name": "Hanna (Captain)",
+    "normalizedName": "hanna captain",
+    "city": "Liberty Bay",
+    "location": "Liberty Bay harbour",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/hanna-captain",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/hanna-captain",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Hanna (Svargrond)",
+    "normalizedName": "hanna svargrond",
+    "city": "Svargrond",
+    "location": "Svargrond potion shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/hanna-svargrond",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/hanna-svargrond",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Haroun",
+    "normalizedName": "haroun",
+    "city": "Ankrahmun",
+    "location": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/haroun",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/haroun",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Haroun",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\haroun.lua"
+    }
+  },
+  {
+    "name": "Henricus",
+    "normalizedName": "henricus",
+    "city": "Thais",
+    "location": "Thais, southeast, near the Tibia temple",
+    "roles": [
+      "quest",
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/henricus",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/henricus",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Henricus",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\henricus.lua"
+    }
+  },
+  {
+    "name": "Hugo",
+    "normalizedName": "hugo",
+    "city": "Thais",
+    "location": "Thais Adventurer's Guild (north of the temple)",
+    "roles": [
+      "quest",
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/hugo",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/hugo",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Isimov",
+    "normalizedName": "isimov",
+    "city": "Yalahar",
+    "location": "Yalahar, Alchemist Quarter",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/isimov",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/isimov",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Iwan",
+    "normalizedName": "iwan",
+    "city": "Rathleton",
+    "location": "Rathleton, glooth factory area",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/iwan",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/iwan",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Iwan",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iwan.lua"
+    }
+  },
+  {
+    "name": "Jack Fate",
+    "normalizedName": "jack fate",
+    "city": "Liberty Bay",
+    "location": "Liberty Bay, north-west",
+    "roles": [
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/jack-fate",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/jack-fate",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Karith",
+    "normalizedName": "karith",
+    "city": "Yalahar",
+    "location": "Yalahar harbour, south docks",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/karith",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/karith",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Kroox",
+    "normalizedName": "kroox",
+    "city": "Kazordoon",
+    "location": "Kazordoon armor shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/kroox",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/kroox",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Kroox",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\kroox.lua"
+    }
+  },
+  {
+    "name": "Lugri",
+    "normalizedName": "lugri",
+    "city": "Edron",
+    "location": "Edron Hero Cave entrance",
+    "roles": [
+      "task",
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/lugri",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/lugri",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Nah'Bob",
+    "normalizedName": "nahbob",
+    "city": "Ankrahmun",
+    "location": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/nahbob",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/nahbob",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Nah'Bob",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nah_bob.lua"
+    }
+  },
+  {
+    "name": "Nah'Bob (Thais)",
+    "normalizedName": "nahbob thais",
+    "city": "Thais",
+    "location": "Thais food shop, near depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/nahbob-thais",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/nahbob-thais",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Naji",
+    "normalizedName": "naji",
+    "city": "Liberty Bay",
+    "location": "Liberty Bay bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/naji",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/naji",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Nelliem",
+    "normalizedName": "nelliem",
+    "city": "Thais",
+    "location": "Nelliem's shop, near Thais depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/nelliem",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/nelliem",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Nelliem",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nelliem.lua"
+    }
+  },
+  {
+    "name": "Obi",
+    "normalizedName": "obi",
+    "city": "Thais",
+    "location": "Obi's Weaponry, near Thais depot",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/obi",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/obi",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Obi",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\obi.lua"
+    }
+  },
+  {
+    "name": "Obi (Rookgaard)",
+    "normalizedName": "obi rookgaard",
+    "city": "Rookgaard",
+    "location": "Rookgaard weapon shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/obi-rookgaard",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/obi-rookgaard",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Oriosa",
+    "normalizedName": "oriosa",
+    "city": "Edron",
+    "location": "Edron harbour, south of the island",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/oriosa",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/oriosa",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Ormuhn",
+    "normalizedName": "ormuhn",
+    "city": "Edron",
+    "location": "Edron bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/ormuhn",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/ormuhn",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Pemaret",
+    "normalizedName": "pemaret",
+    "city": "Venore",
+    "location": "Venore harbour, south of depot",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/pemaret",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/pemaret",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Pemaret",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pemaret.lua"
+    }
+  },
+  {
+    "name": "Percybald",
+    "normalizedName": "percybald",
+    "city": "Edron",
+    "location": "Edron castle",
+    "roles": [
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/percybald",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/percybald",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Percybald (Postman)",
+    "normalizedName": "percybald postman",
+    "city": "Carlin",
+    "location": "Carlin post office",
+    "roles": [
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/percybald-postman",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/percybald-postman",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Rachel",
+    "normalizedName": "rachel",
+    "city": "Svargrond",
+    "location": "Svargrond equipment shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/rachel",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/rachel",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Rashid",
+    "normalizedName": "rashid",
+    "city": "Varies",
+    "location": "Travels daily: Mon=Svargrond, Tue=Liberty Bay, Wed=Port Hope, Thu=Ankrahmun, Fri=Darashia, Sat=Edron, Sun=Carlin",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/rashid",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Rashid",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua"
+    }
+  },
+  {
+    "name": "Sam",
+    "normalizedName": "sam",
+    "city": "Thais",
+    "location": "Sam's Armory, south-east Thais",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/sam",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Sam",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua"
+    }
+  },
+  {
+    "name": "Seymour",
+    "normalizedName": "seymour",
+    "city": "Rookgaard",
+    "location": "Rookgaard Academy",
+    "roles": [
+      "quest",
+      "other"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/seymour",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/seymour",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Shanar",
+    "normalizedName": "shanar",
+    "city": "Ab'Dendriel",
+    "location": "Ab'Dendriel weapon shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/shanar",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/shanar",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Shanar",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shanar.lua"
+    }
+  },
+  {
+    "name": "Sharonka",
+    "normalizedName": "sharonka",
+    "city": "Carlin",
+    "location": "Carlin general store",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/sharonka",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/sharonka",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Sigurd",
+    "normalizedName": "sigurd",
+    "city": "Carlin",
+    "location": "Carlin potion shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/sigurd",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/sigurd",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Sven",
+    "normalizedName": "sven",
+    "city": "Svargrond",
+    "location": "Svargrond bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/sven",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/sven",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Tamoril",
+    "normalizedName": "tamoril",
+    "city": "Edron",
+    "location": "Edron tower, ivory towers area",
+    "roles": [
+      "quest"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/tamoril",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/tamoril",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Tamoril",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tamoril.lua"
+    }
+  },
+  {
+    "name": "Telas",
+    "normalizedName": "telas",
+    "city": "Ankrahmun",
+    "location": "Ankrahmun magic shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/telas",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/telas",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Telas",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\telas.lua"
+    }
+  },
+  {
+    "name": "Tesha",
+    "normalizedName": "tesha",
+    "city": "Darashia",
+    "location": "Darashia bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/tesha",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/tesha",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Tesha",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tesha.lua"
+    }
+  },
+  {
+    "name": "Uzgod",
+    "normalizedName": "uzgod",
+    "city": "Kazordoon",
+    "location": "Kazordoon weapon shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/uzgod",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/uzgod",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Uzgod",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uzgod.lua"
+    }
+  },
+  {
+    "name": "Uzon",
+    "normalizedName": "uzon",
+    "city": "Port Hope",
+    "location": "Port Hope harbour",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/uzon",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/uzon",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Willard",
+    "normalizedName": "willard",
+    "city": "Edron",
+    "location": "Edron weapon/armor shop",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/willard",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/willard",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Willard",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\willard.lua"
+    }
+  },
+  {
+    "name": "Wyrdin",
+    "normalizedName": "wyrdin",
+    "city": "Ab'Dendriel",
+    "location": "Ab'Dendriel harbour, west side",
+    "roles": [
+      "transport"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/wyrdin",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/wyrdin",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Xodet",
+    "normalizedName": "xodet",
+    "city": "Thais",
+    "location": "Xodet's Magic Shopee, centre of Thais",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/xodet",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/xodet",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Xodet (Runes)",
+    "normalizedName": "xodet runes",
+    "city": "Thais",
+    "location": "Xodet's Magic Shopee",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/xodet-runes",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/xodet-runes",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Yaman",
+    "normalizedName": "yaman",
+    "city": "Ankrahmun",
+    "location": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/yaman",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/yaman",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Yaman",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yaman.lua"
+    }
+  },
+  {
+    "name": "Yaman (Banker)",
+    "normalizedName": "yaman banker",
+    "city": "Ankrahmun",
+    "location": "Ankrahmun bank near depot",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/yaman-banker",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/yaman-banker",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Yaman (Task)",
+    "normalizedName": "yaman task",
+    "city": "Ankrahmun",
+    "location": "Ankrahmun palace",
+    "roles": [
+      "task"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/yaman-task",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/yaman-task",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  },
+  {
+    "name": "Yasir",
+    "normalizedName": "yasir",
+    "city": "Varies",
+    "location": "Appears randomly in: Ankrahmun, Carlin, Edron, Liberty Bay, Svargrond, Yalahar (check trade channels)",
+    "roles": [
+      "trader"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/yasir",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/yasir",
+    "reviewStatus": "merge-candidate",
+    "localMatch": {
+      "name": "Yasir",
+      "city": null,
+      "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yasir.lua"
+    }
+  },
+  {
+    "name": "Zoltan",
+    "normalizedName": "zoltan",
+    "city": "Rathleton",
+    "location": "Rathleton bank",
+    "roles": [
+      "bank"
+    ],
+    "sourcePath": "https://tibiavault.com/#npcs/zoltan",
+    "source": "tibiavault",
+    "sourceUrl": "https://tibiavault.com/#npcs/zoltan",
+    "reviewStatus": "new-candidate",
+    "localMatch": null
+  }
+]

@@ -1,10 +1,17 @@
 import type { HuntSession } from "@/types/vault";
 import { parseGameNumber } from "./format";
-import { ReinaDataService, itemLookupKey } from "@/source/web/src/reina-core/database";
+import { ReinaDataService } from "@/source/web/src/reina-core/database";
+import { itemLookupKey } from "@/source/web/src/reina-core/database/normalize";
 import type { ReinaItem } from "@/source/web/src/reina-core/database";
 import { getItemImagePath } from "@/source/web/src/reina-core/assets";
+import { ImbuementDatabaseService } from "@/source/web/src/features/imbuement-database/services";
+import type { ItemImbuementUsage } from "@/source/web/src/features/imbuement-database/types";
 
 type HuntLootInput = NonNullable<HuntSession["LootedItems"]>[number];
+
+const LOOT_COVERAGE_THRESHOLD = 0.8;
+
+export type LootValueSource = "database" | "game" | "none";
 
 export type EnrichedLootItem = HuntLootInput & {
   itemId?: number;
@@ -13,7 +20,22 @@ export type EnrichedLootItem = HuntLootInput & {
   totalSellValue?: number;
   imageItemId?: number;
   imagePath: string;
+  imbuementUsages: ItemImbuementUsage[];
+  isImbuementMaterial: boolean;
   dataStatus: "matched" | "unmatched";
+};
+
+export type HuntImbuementSummary = {
+  totalMaterialTypes: number;
+  totalMaterialCount: number;
+  relatedImbuements: Array<{
+    imbuementId: string;
+    imbuementName: string;
+    group: string;
+    tier: string;
+    materialTypesInHunt: number;
+    totalLootedMaterialCount: number;
+  }>;
 };
 
 export type HuntSummary = ReturnType<typeof summarizeHunt>;
@@ -25,10 +47,29 @@ export function summarizeHunt(data: HuntSession) {
   const databaseLootValue = enrichedLoot.reduce((sum, item) => sum + (item.totalSellValue ?? 0), 0);
   const originalLootValue = parseGameNumber(data.Loot);
   const unmatchedLootItems = enrichedLoot.filter((item) => item.dataStatus === "unmatched");
+  const imbuementSummary = summarizeImbuementMaterials(enrichedLoot);
+  const totalLootTypes = enrichedLoot.length;
+  const pricedLootTypes = enrichedLoot.filter((item) => item.sellPrice !== undefined).length;
+  const lootCoverage = totalLootTypes > 0 ? pricedLootTypes / totalLootTypes : 0;
+  const hasGameValue = originalLootValue > 0;
+  const hasDatabaseValue = databaseLootValue > 0;
+  const preferDatabase = hasDatabaseValue && (!hasGameValue || lootCoverage >= LOOT_COVERAGE_THRESHOLD);
+  const lootValue = preferDatabase ? databaseLootValue : hasGameValue ? originalLootValue : databaseLootValue;
+  const lootValueSource: LootValueSource = preferDatabase
+    ? "database"
+    : hasGameValue
+      ? "game"
+      : hasDatabaseValue
+        ? "database"
+        : "none";
 
   return {
     balance: parseGameNumber(data.Balance),
-    lootValue: databaseLootValue > 0 ? databaseLootValue : originalLootValue,
+    lootValue,
+    lootValueSource,
+    lootCoverage,
+    pricedLootTypes,
+    totalLootTypes,
     originalLootValue,
     databaseLootValue,
     supplies: parseGameNumber(data.Supplies),
@@ -41,6 +82,8 @@ export function summarizeHunt(data: HuntSession) {
     kills: [...kills].sort((a, b) => (b.Count || 0) - (a.Count || 0)),
     loot: [...enrichedLoot].sort((a, b) => (b.Count || 0) - (a.Count || 0)),
     unmatchedLootItems,
+    imbuementSummary,
+    imbuementLootItems: enrichedLoot.filter((item) => item.isImbuementMaterial),
     sessionLength: data.SessionLength || "-",
     sessionStart: data.SessionStart || "",
     sessionEnd: data.SessionEnd || ""
@@ -55,6 +98,10 @@ export function enrichLootItem(item: HuntLootInput): EnrichedLootItem {
   const matchedItem = findLootDatabaseItem(item, hasItemId ? itemId : undefined);
   const sellPrice = matchedItem ? ReinaDataService.getNpcSellPrice(matchedItem.id) ?? undefined : undefined;
   const count = Number(item.Count) || 0;
+  const imbuementUsages = ImbuementDatabaseService.getImbuementsUsingItem({
+    itemId: matchedItem?.id ?? (hasItemId ? itemId : null),
+    name: matchedItem?.name ?? item.Name
+  });
 
   return {
     ...item,
@@ -63,6 +110,8 @@ export function enrichLootItem(item: HuntLootInput): EnrichedLootItem {
     ...(sellPrice !== undefined ? { sellPrice, totalSellValue: sellPrice * count } : {}),
     ...(matchedItem ? { imageItemId: matchedItem.id } : {}),
     imagePath: getItemImagePath(matchedItem?.id ?? (hasItemId ? itemId : undefined)),
+    imbuementUsages,
+    isImbuementMaterial: imbuementUsages.length > 0,
     dataStatus: matchedItem ? "matched" : "unmatched"
   };
 }
@@ -74,4 +123,33 @@ function findLootDatabaseItem(item: HuntLootInput, itemId?: number): ReinaItem |
   }
 
   return ReinaDataService.findItemByName(item.Name);
+}
+
+function summarizeImbuementMaterials(items: EnrichedLootItem[]): HuntImbuementSummary {
+  const imbuementMap = new Map<string, HuntImbuementSummary["relatedImbuements"][number]>();
+  const imbuementMaterialItems = items.filter((item) => item.isImbuementMaterial);
+
+  for (const item of imbuementMaterialItems) {
+    for (const usage of item.imbuementUsages) {
+      const current = imbuementMap.get(usage.imbuementId) ?? {
+        imbuementId: usage.imbuementId,
+        imbuementName: usage.imbuementName,
+        group: usage.group,
+        tier: usage.tier,
+        materialTypesInHunt: 0,
+        totalLootedMaterialCount: 0
+      };
+      current.materialTypesInHunt += 1;
+      current.totalLootedMaterialCount += Number(item.Count) || 0;
+      imbuementMap.set(usage.imbuementId, current);
+    }
+  }
+
+  return {
+    totalMaterialTypes: imbuementMaterialItems.length,
+    totalMaterialCount: imbuementMaterialItems.reduce((sum, item) => sum + (Number(item.Count) || 0), 0),
+    relatedImbuements: [...imbuementMap.values()].sort(
+      (a, b) => b.materialTypesInHunt - a.materialTypesInHunt || b.totalLootedMaterialCount - a.totalLootedMaterialCount
+    )
+  };
 }

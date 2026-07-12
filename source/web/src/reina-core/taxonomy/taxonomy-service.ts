@@ -1,4 +1,4 @@
-import { itemLookupKey } from "@/source/web/src/reina-core/database";
+import { itemLookupKey } from "@/source/web/src/reina-core/database/normalize";
 
 import creatureClasses from "./creature-classes.json";
 import equipmentSlots from "./equipment-slots.json";
@@ -139,7 +139,7 @@ function classifyMonsterByName(key: string): Omit<MonsterClassification, "name">
   ];
 
   for (const rule of rules) {
-    if (hasAny(key, rule.terms)) {
+    if (hasMonsterTerm(key, rule.terms)) {
       return {
         creatureClass: rule.creatureClass,
         confidence: rule.confidence,
@@ -232,4 +232,14 @@ function isAny(value: string, options: string[]) {
 
 function hasAny(value: string, terms: string[]) {
   return terms.some((term) => value.includes(term));
+}
+
+function hasMonsterTerm(value: string, terms: string[]) {
+  const words = value.split(" ").filter(Boolean);
+  return terms.some((term) => {
+    const normalizedTerm = term.trim();
+    if (!normalizedTerm) return false;
+    if (normalizedTerm.includes(" ")) return value.includes(normalizedTerm);
+    return words.includes(normalizedTerm);
+  });
 }

@@ -1,10 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { NpcHubRecord } from "../types";
-
-const MISSING_CREATURE_IMAGE = "/assets/icons/missing-creature.svg";
-const MISSING_ITEM_IMAGE = "/assets/icons/missing-item.svg";
 
 export function NpcDetails({ npc }: { npc: NpcHubRecord | null }) {
   if (!npc) {
@@ -38,9 +36,22 @@ export function NpcDetails({ npc }: { npc: NpcHubRecord | null }) {
         <Metric label="Asset" value={npc.image.exists ? "Encontrado" : "Pendente"} />
       </div>
 
-      <div className="history-list" style={{ marginTop: 18 }}>
-        {npc.itemsBought.slice(0, 50).map((item) => (
-          <div className="history-item" key={`${item.itemId ?? item.itemName}-${item.price ?? "price"}`}>
+      <TradeList title="Itens que o NPC compra" items={npc.itemsBought} />
+      <TradeList title="Itens que o NPC vende" items={npc.itemsSold} />
+      {npc.itemsBought.length > 50 ? <div className="note">Mostrando os primeiros 50 itens relacionados.</div> : null}
+    </div>
+  );
+}
+
+function TradeList({ title, items }: { title: string; items: NpcHubRecord["itemsBought"] }) {
+  if (!items.length) return null;
+
+  return (
+    <div style={{ marginTop: 18 }}>
+      <div className="label">{title}</div>
+      <div className="history-list">
+        {items.slice(0, 50).map((item) => (
+          <div className="history-item" key={`${item.tradeType}-${item.itemId ?? item.itemName}-${item.price ?? "price"}`}>
             <span style={{ display: "inline-flex", alignItems: "center", gap: 10 }}>
               <img
                 src={item.imagePath}
@@ -65,7 +76,6 @@ export function NpcDetails({ npc }: { npc: NpcHubRecord | null }) {
           </div>
         ))}
       </div>
-      {npc.itemsBought.length > 50 ? <div className="note">Mostrando os primeiros 50 itens relacionados.</div> : null}
     </div>
   );
 }

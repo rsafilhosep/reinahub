@@ -18,6 +18,22 @@ export type MonsterAssetInfo = {
   exists: boolean;
 };
 
+export type MonsterClassInfo = {
+  id: string;
+  label: string;
+  confidence: "high" | "medium" | "low" | "unclassified";
+  matchedBy: string;
+  isBestiaryClass: boolean;
+};
+
+export type MonsterClassSummary = {
+  id: string;
+  label: string;
+  count: number;
+  expectedCount: number | null;
+  isBestiaryClass: boolean;
+};
+
 export type MonsterRelatedItem = {
   id: number | null;
   name: string;
@@ -43,6 +59,7 @@ export type MonsterDatabaseRecord = {
   experience: number;
   health: number;
   speed: number;
+  classInfo: MonsterClassInfo;
   image: MonsterAssetInfo;
   loot: MonsterLootEntry[];
   relatedItems: MonsterRelatedItem[];
@@ -55,5 +72,6 @@ export type MonsterSearchResult = {
   name: string;
   experience: number;
   health: number;
+  classInfo: MonsterClassInfo;
   image: MonsterAssetInfo;
 };

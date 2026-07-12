@@ -1,35 +1,11 @@
 [
   {
-    "itemId": 3031,
-    "name": "gold coin",
-    "lootOccurrenceCount": 904,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 11040
-  },
-  {
-    "itemId": 3035,
-    "name": "platinum coin",
-    "lootOccurrenceCount": 488,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 6880
-  },
-  {
     "itemId": 3043,
     "name": "crystal coin",
     "lootOccurrenceCount": 123,
     "hasNpcSellPrice": false,
     "hasImage": false,
     "priorityScore": 3230
-  },
-  {
-    "itemId": 238,
-    "name": "great mana potion",
-    "lootOccurrenceCount": 210,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 2900
   },
   {
     "itemId": 7643,
@@ -48,28 +24,12 @@
     "priorityScore": 2250
   },
   {
-    "itemId": 236,
-    "name": "strong health potion",
-    "lootOccurrenceCount": 116,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1960
-  },
-  {
     "itemId": 7642,
     "name": "great spirit potion",
     "lootOccurrenceCount": 113,
     "hasNpcSellPrice": false,
     "hasImage": false,
     "priorityScore": 1930
-  },
-  {
-    "itemId": 237,
-    "name": "strong mana potion",
-    "lootOccurrenceCount": 105,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1850
   },
   {
     "itemId": 3039,
@@ -113,14 +73,6 @@
     "priorityScore": 1450
   },
   {
-    "itemId": 266,
-    "name": "health potion",
-    "lootOccurrenceCount": 65,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1450
-  },
-  {
     "itemId": 3037,
     "name": "yellow gem",
     "lootOccurrenceCount": 142,
@@ -135,14 +87,6 @@
     "hasNpcSellPrice": false,
     "hasImage": false,
     "priorityScore": 1420
-  },
-  {
-    "itemId": 3577,
-    "name": "meat",
-    "lootOccurrenceCount": 141,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1410
   },
   {
     "itemId": 28570,
@@ -203,14 +147,6 @@
     "priorityScore": 1260
   },
   {
-    "itemId": 3030,
-    "name": "small ruby",
-    "lootOccurrenceCount": 125,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1250
-  },
-  {
     "itemId": 23375,
     "name": "supreme health potion",
     "lootOccurrenceCount": 45,
@@ -235,14 +171,6 @@
     "priorityScore": 1190
   },
   {
-    "itemId": 3028,
-    "name": "small diamond",
-    "lootOccurrenceCount": 118,
-    "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 1180
-  },
-  {
     "itemId": 3448,
     "name": "poison arrow",
     "lootOccurrenceCount": 13,
@@ -265,6 +193,14 @@
     "hasNpcSellPrice": false,
     "hasImage": false,
     "priorityScore": 1080
+  },
+  {
+    "itemId": 3031,
+    "name": "gold coin",
+    "lootOccurrenceCount": 904,
+    "hasNpcSellPrice": false,
+    "hasImage": true,
+    "priorityScore": 1040
   },
   {
     "itemId": 9057,
@@ -307,15 +243,6 @@
     "priorityScore": 970
   },
   {
-    "itemId": 3079,
-    "name": "boots of haste",
-    "lootOccurrenceCount": 34,
-    "hasNpcSellPrice": true,
-    "sellPrice": 30000,
-    "hasImage": false,
-    "priorityScore": 960
-  },
-  {
     "itemId": 826,
     "name": "magma coat",
     "lootOccurrenceCount": 34,
@@ -343,28 +270,10 @@
     "priorityScore": 950
   },
   {
-    "itemId": 5878,
-    "name": "minotaur leather",
-    "lootOccurrenceCount": 20,
-    "hasNpcSellPrice": true,
-    "sellPrice": 80,
-    "hasImage": false,
-    "priorityScore": 950
-  },
-  {
     "itemId": 3450,
     "name": "power bolt",
     "lootOccurrenceCount": 15,
     "hasNpcSellPrice": false,
-    "hasImage": false,
-    "priorityScore": 950
-  },
-  {
-    "itemId": 3386,
-    "name": "dragon scale mail",
-    "lootOccurrenceCount": 8,
-    "hasNpcSellPrice": true,
-    "sellPrice": 40000,
     "hasImage": false,
     "priorityScore": 950
   },
@@ -386,15 +295,6 @@
     "priorityScore": 940
   },
   {
-    "itemId": 10196,
-    "name": "orc tooth",
-    "lootOccurrenceCount": 19,
-    "hasNpcSellPrice": true,
-    "sellPrice": 150,
-    "hasImage": false,
-    "priorityScore": 940
-  },
-  {
     "itemId": 7378,
     "name": "royal spear",
     "lootOccurrenceCount": 14,
@@ -403,12 +303,116 @@
     "priorityScore": 940
   },
   {
-    "itemId": 5954,
-    "name": "demon horn",
+    "itemId": 5925,
+    "name": "hardened bone",
     "lootOccurrenceCount": 18,
     "hasNpcSellPrice": true,
-    "sellPrice": 1000,
+    "sellPrice": 70,
     "hasImage": false,
     "priorityScore": 930
+  },
+  {
+    "itemId": 5876,
+    "name": "lizard leather",
+    "lootOccurrenceCount": 17,
+    "hasNpcSellPrice": true,
+    "sellPrice": 150,
+    "hasImage": false,
+    "priorityScore": 920
+  },
+  {
+    "itemId": 7365,
+    "name": "onyx arrow",
+    "lootOccurrenceCount": 12,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 920
+  },
+  {
+    "itemId": 3355,
+    "name": "leather helmet",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": true,
+    "sellPrice": 4,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 3377,
+    "name": "scale armor",
+    "lootOccurrenceCount": 15,
+    "hasNpcSellPrice": true,
+    "sellPrice": 75,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 7364,
+    "name": "sniper arrow",
+    "lootOccurrenceCount": 10,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 5891,
+    "name": "enchanted chicken wing",
+    "lootOccurrenceCount": 3,
+    "hasNpcSellPrice": true,
+    "sellPrice": 20000,
+    "hasImage": false,
+    "priorityScore": 900
+  },
+  {
+    "itemId": 811,
+    "name": "terra mantle",
+    "lootOccurrenceCount": 27,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 3449,
+    "name": "burst arrow",
+    "lootOccurrenceCount": 9,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 31589,
+    "name": "rotten heart",
+    "lootOccurrenceCount": 2,
+    "hasNpcSellPrice": true,
+    "sellPrice": 74000,
+    "hasImage": false,
+    "priorityScore": 890
+  },
+  {
+    "itemId": 812,
+    "name": "terra legs",
+    "lootOccurrenceCount": 26,
+    "hasNpcSellPrice": true,
+    "sellPrice": 11000,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 16142,
+    "name": "drill bolt",
+    "lootOccurrenceCount": 8,
+    "hasNpcSellPrice": false,
+    "hasImage": false,
+    "priorityScore": 880
+  },
+  {
+    "itemId": 31588,
+    "name": "ancient liche bone",
+    "lootOccurrenceCount": 1,
+    "hasNpcSellPrice": true,
+    "sellPrice": 28000,
+    "hasImage": false,
+    "priorityScore": 880
   }
 ]

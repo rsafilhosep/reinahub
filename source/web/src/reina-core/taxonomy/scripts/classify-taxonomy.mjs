@@ -173,7 +173,7 @@ function classifyMonsterByName(key) {
   ];
 
   for (const [creatureClass, terms, confidence] of rules) {
-    if (hasAny(key, terms)) {
+    if (hasMonsterTerm(key, terms)) {
       return { creatureClass, confidence, matchedBy: `name-rule:${creatureClass}` };
     }
   }
@@ -248,6 +248,16 @@ function isAny(value, options) {
 
 function hasAny(value, terms) {
   return terms.some((term) => value.includes(term));
+}
+
+function hasMonsterTerm(value, terms) {
+  const words = value.split(" ").filter(Boolean);
+  return terms.some((term) => {
+    const normalizedTerm = term.trim();
+    if (!normalizedTerm) return false;
+    if (normalizedTerm.includes(" ")) return value.includes(normalizedTerm);
+    return words.includes(normalizedTerm);
+  });
 }
 
 function readJson(filePath) {

@@ -1,0 +1,1761 @@
+{
+  "generatedAt": "2026-07-02T09:06:03.981Z",
+  "safety": "Lua files are read as text only. No Lua code is executed.",
+  "sourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc",
+  "scannedLuaFiles": 1112,
+  "parsedNpcFiles": 290,
+  "npcCount": 281,
+  "tradeCount": 12108,
+  "unresolvedTradeCount": 0,
+  "unresolvedReview": {
+    "uniqueItems": 0,
+    "totalOccurrences": 0,
+    "items": []
+  },
+  "tradeTypes": {
+    "npcBuys": 6156,
+    "npcSells": 5952
+  },
+  "parsedFiles": [
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ahmet.lua",
+      "npcName": "Ahmet",
+      "shopEntries": 32,
+      "trades": 41
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\albinius.lua",
+      "npcName": "Albinius",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\aldo.lua",
+      "npcName": "Aldo",
+      "shopEntries": 17,
+      "trades": 30
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\alesar.lua",
+      "npcName": "Alesar",
+      "shopEntries": 25,
+      "trades": 29
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\alissa.lua",
+      "npcName": "Alissa",
+      "shopEntries": 17,
+      "trades": 17
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\allen.lua",
+      "npcName": "Allen",
+      "shopEntries": 27,
+      "trades": 27
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\al_dee.lua",
+      "npcName": "Al Dee",
+      "shopEntries": 9,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\amra.lua",
+      "npcName": "Amra",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\andrew_lyze.lua",
+      "npcName": "Andrew Lyze",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\anerui.lua",
+      "npcName": "Anerui",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\angus.lua",
+      "npcName": "Angus",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\archery.lua",
+      "npcName": "Archery",
+      "shopEntries": 30,
+      "trades": 30
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\archery_rook.lua",
+      "npcName": "Archery Rook",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ariella.lua",
+      "npcName": "Ariella",
+      "shopEntries": 14,
+      "trades": 14
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\arito.lua",
+      "npcName": "Arito",
+      "shopEntries": 10,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\arkulius.lua",
+      "npcName": "Arkulius",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\armenius.lua",
+      "npcName": "Armenius",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asnarus.lua",
+      "npcName": "Asnarus",
+      "shopEntries": 66,
+      "trades": 69
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\asphota.lua",
+      "npcName": "Asphota",
+      "shopEntries": 22,
+      "trades": 31
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\atrad.lua",
+      "npcName": "Atrad",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\augustin.lua",
+      "npcName": "Augustin",
+      "shopEntries": 104,
+      "trades": 112
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\aurelia.lua",
+      "npcName": "Aurelia",
+      "shopEntries": 66,
+      "trades": 66
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\auron.lua",
+      "npcName": "Auron",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\avriel.lua",
+      "npcName": "Avriel",
+      "shopEntries": 45,
+      "trades": 45
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\azil.lua",
+      "npcName": "Azil",
+      "shopEntries": 34,
+      "trades": 63
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\a_fluffy_squirrel.lua",
+      "npcName": "A Fluffy Squirrel",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\baltim.lua",
+      "npcName": "Baltim",
+      "shopEntries": 87,
+      "trades": 131
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bashira.lua",
+      "npcName": "Bashira",
+      "shopEntries": 32,
+      "trades": 41
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\baxter.lua",
+      "npcName": "Baxter",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\beatrice.lua",
+      "npcName": "Beatrice",
+      "shopEntries": 28,
+      "trades": 37
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\benjamin.lua",
+      "npcName": "Benjamin",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\berenice.lua",
+      "npcName": "Berenice",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bertha.lua",
+      "npcName": "Bertha",
+      "shopEntries": 40,
+      "trades": 50
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bezil.lua",
+      "npcName": "Bezil",
+      "shopEntries": 30,
+      "trades": 39
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\billy.lua",
+      "npcName": "Billy",
+      "shopEntries": 9,
+      "trades": 13
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\black_bert.lua",
+      "npcName": "Black Bert",
+      "shopEntries": 129,
+      "trades": 129
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bolfona.lua",
+      "npcName": "Bolfona",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bonifacius.lua",
+      "npcName": "Bonifacius",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\boozer.lua",
+      "npcName": "Boozer",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\borkas.lua",
+      "npcName": "Borkas",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\brasith.lua",
+      "npcName": "Brasith",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\brengus.lua",
+      "npcName": "Brengus",
+      "shopEntries": 122,
+      "trades": 158
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\briasol.lua",
+      "npcName": "Briasol",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel.lua",
+      "npcName": "Buddel",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_helheim.lua",
+      "npcName": "Buddel",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_okolnir.lua",
+      "npcName": "Buddel",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_raider_camp.lua",
+      "npcName": "Buddel",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\buddel_tyrsung.lua",
+      "npcName": "Buddel",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cael.lua",
+      "npcName": "Cael",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\captain_haba_open_sea.lua",
+      "npcName": "Captain Haba",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\captain_max.lua",
+      "npcName": "Captain Max",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\captain_max_calassa.lua",
+      "npcName": "Captain Max",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\carina.lua",
+      "npcName": "Carina",
+      "shopEntries": 5,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\carlos.lua",
+      "npcName": "Carlos",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cedrik.lua",
+      "npcName": "Cedrik",
+      "shopEntries": 109,
+      "trades": 144
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chantalle.lua",
+      "npcName": "Chantalle",
+      "shopEntries": 74,
+      "trades": 81
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chartan.lua",
+      "npcName": "Chartan",
+      "shopEntries": 39,
+      "trades": 39
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chemar.lua",
+      "npcName": "Chemar",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chephan.lua",
+      "npcName": "Chephan",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chondur.lua",
+      "npcName": "Chondur",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\christine.lua",
+      "npcName": "Christine",
+      "shopEntries": 20,
+      "trades": 20
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\chrystal.lua",
+      "npcName": "Chrystal",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cledwyn.lua",
+      "npcName": "Cledwyn",
+      "shopEntries": 21,
+      "trades": 21
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\clyde.lua",
+      "npcName": "Clyde",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\coltrayne.lua",
+      "npcName": "Coltrayne",
+      "shopEntries": 38,
+      "trades": 52
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cornelia.lua",
+      "npcName": "Cornelia",
+      "shopEntries": 34,
+      "trades": 63
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\cruleo.lua",
+      "npcName": "Cruleo",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dal_the_huntress_day.lua",
+      "npcName": "Dal the Huntress",
+      "shopEntries": 32,
+      "trades": 32
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dal_the_huntress_night.lua",
+      "npcName": "Dal the Huntress",
+      "shopEntries": 32,
+      "trades": 32
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dane.lua",
+      "npcName": "Dane",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dankwart.lua",
+      "npcName": "Dankwart",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dario.lua",
+      "npcName": "Dario",
+      "shopEntries": 8,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\digger.lua",
+      "npcName": "Digger",
+      "shopEntries": 12,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dixi.lua",
+      "npcName": "Dixi",
+      "shopEntries": 20,
+      "trades": 27
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\donald_mcronald.lua",
+      "npcName": "Donald McRonald",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dorbin.lua",
+      "npcName": "Dorbin",
+      "shopEntries": 97,
+      "trades": 97
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dorian.lua",
+      "npcName": "Dorian",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\dove.lua",
+      "npcName": "Dove",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\duncan.lua",
+      "npcName": "Duncan",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eddy.lua",
+      "npcName": "Eddy",
+      "shopEntries": 93,
+      "trades": 93
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edmund.lua",
+      "npcName": "Edmund",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edoch.lua",
+      "npcName": "Edoch",
+      "shopEntries": 26,
+      "trades": 29
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\edvard.lua",
+      "npcName": "Edvard",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elane.lua",
+      "npcName": "Elane",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elgar.lua",
+      "npcName": "Elgar",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eliyas.lua",
+      "npcName": "Eliyas",
+      "shopEntries": 26,
+      "trades": 29
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\elvith.lua",
+      "npcName": "Elvith",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\enpa_deia_pema.lua",
+      "npcName": "Enpa-Deia Pema",
+      "shopEntries": 11,
+      "trades": 18
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\eremo.lua",
+      "npcName": "Eremo",
+      "shopEntries": 3,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\esrik.lua",
+      "npcName": "Esrik",
+      "shopEntries": 114,
+      "trades": 167
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\evan.lua",
+      "npcName": "Evan",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ezean.lua",
+      "npcName": "Ezean",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fadil.lua",
+      "npcName": "Fadil",
+      "shopEntries": 33,
+      "trades": 33
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\faloriel.lua",
+      "npcName": "Faloriel",
+      "shopEntries": 15,
+      "trades": 15
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fayla.lua",
+      "npcName": "Fayla",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\feizuhl.lua",
+      "npcName": "Feizuhl",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fiona.lua",
+      "npcName": "Fiona",
+      "shopEntries": 81,
+      "trades": 81
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\flint.lua",
+      "npcName": "Flint",
+      "shopEntries": 103,
+      "trades": 146
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\florentine.lua",
+      "npcName": "Florentine",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fral_the_butcher_day.lua",
+      "npcName": "Fral the Butcher",
+      "shopEntries": 1,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fral_the_butcher_night.lua",
+      "npcName": "Fral the Butcher",
+      "shopEntries": 1,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\frodo.lua",
+      "npcName": "Frodo",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\fyodor.lua",
+      "npcName": "Fyodor",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gail.lua",
+      "npcName": "Gail",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\galuna.lua",
+      "npcName": "Galuna",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gamel.lua",
+      "npcName": "Gamel",
+      "shopEntries": 58,
+      "trades": 81
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gamon.lua",
+      "npcName": "Gamon",
+      "shopEntries": 93,
+      "trades": 93
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\giri.lua",
+      "npcName": "Giri",
+      "shopEntries": 68,
+      "trades": 76
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gladys.lua",
+      "npcName": "Gladys",
+      "shopEntries": 35,
+      "trades": 44
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomailion.lua",
+      "npcName": "Gnomailion",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomally.lua",
+      "npcName": "Gnomally",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomejam.lua",
+      "npcName": "Gnomejam",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomerrow.lua",
+      "npcName": "Gnomerrow",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomette.lua",
+      "npcName": "Gnomette",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomfurry.lua",
+      "npcName": "Gnomfurry",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomincia.lua",
+      "npcName": "Gnomincia",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomission.lua",
+      "npcName": "Gnomission",
+      "shopEntries": 55,
+      "trades": 55
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gnomux.lua",
+      "npcName": "Gnomux",
+      "shopEntries": 7,
+      "trades": 0
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gorn.lua",
+      "npcName": "Gorn",
+      "shopEntries": 41,
+      "trades": 52
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\gree_dee.lua",
+      "npcName": "Gree Dee",
+      "shopEntries": 33,
+      "trades": 42
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\grizzly_adams.lua",
+      "npcName": "Grizzly Adams",
+      "shopEntries": 56,
+      "trades": 56
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\h.l..lua",
+      "npcName": "H.L.",
+      "shopEntries": 124,
+      "trades": 124
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\haani.lua",
+      "npcName": "Haani",
+      "shopEntries": 103,
+      "trades": 103
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\habdel.lua",
+      "npcName": "Habdel",
+      "shopEntries": 50,
+      "trades": 66
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hairycles.lua",
+      "npcName": "Hairycles",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\halif.lua",
+      "npcName": "Halif",
+      "shopEntries": 31,
+      "trades": 40
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hanna.lua",
+      "npcName": "Hanna",
+      "shopEntries": 67,
+      "trades": 75
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hardek.lua",
+      "npcName": "Hardek",
+      "shopEntries": 83,
+      "trades": 126
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\harog.lua",
+      "npcName": "Harog",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\haroun.lua",
+      "npcName": "Haroun",
+      "shopEntries": 23,
+      "trades": 33
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hector_the_mentor.lua",
+      "npcName": "Hector The Mentor",
+      "shopEntries": 61,
+      "trades": 67
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\henricus.lua",
+      "npcName": "Henricus",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\herbert.lua",
+      "npcName": "Herbert",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hofech.lua",
+      "npcName": "Hofech",
+      "shopEntries": 94,
+      "trades": 94
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\hyacinth.lua",
+      "npcName": "Hyacinth",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\imalas.lua",
+      "npcName": "Imalas",
+      "shopEntries": 12,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\imbuement_assistant.lua",
+      "npcName": "Imbuement Assistant",
+      "shopEntries": 72,
+      "trades": 72
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\inkaef.lua",
+      "npcName": "Inkaef",
+      "shopEntries": 73,
+      "trades": 73
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\innkeeper_alphonse.lua",
+      "npcName": "Innkeeper Alphonse",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\irea.lua",
+      "npcName": "Irea",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iriana.lua",
+      "npcName": "Iriana",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\irmana.lua",
+      "npcName": "Irmana",
+      "shopEntries": 44,
+      "trades": 44
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ishina.lua",
+      "npcName": "Ishina",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\isika.lua",
+      "npcName": "Isika",
+      "shopEntries": 28,
+      "trades": 31
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iwan.lua",
+      "npcName": "Iwan",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\iwar.lua",
+      "npcName": "Iwar",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jack_springer.lua",
+      "npcName": "Jack Springer",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jakahr.lua",
+      "npcName": "Jakahr",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\james.lua",
+      "npcName": "James",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\janz.lua",
+      "npcName": "Janz",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jehan_the_baker_day.lua",
+      "npcName": "Jehan The Baker",
+      "shopEntries": 6,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jehan_the_baker_night.lua",
+      "npcName": "Jehan The Baker",
+      "shopEntries": 6,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jessica.lua",
+      "npcName": "Jessica",
+      "shopEntries": 74,
+      "trades": 81
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\jezzara.lua",
+      "npcName": "Jezzara",
+      "shopEntries": 15,
+      "trades": 15
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\john.lua",
+      "npcName": "John",
+      "shopEntries": 10,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\john_bounac.lua",
+      "npcName": "John Bounac",
+      "shopEntries": 6,
+      "trades": 0
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\julian.lua",
+      "npcName": "Julian",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\julius.lua",
+      "npcName": "Julius",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\karl.lua",
+      "npcName": "Karl",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\kroox.lua",
+      "npcName": "Kroox",
+      "shopEntries": 38,
+      "trades": 68
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lailene.lua",
+      "npcName": "Lailene",
+      "shopEntries": 8,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\larek.lua",
+      "npcName": "Larek",
+      "shopEntries": 15,
+      "trades": 15
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lector.lua",
+      "npcName": "Lector",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lee_delle.lua",
+      "npcName": "Lee'Delle",
+      "shopEntries": 45,
+      "trades": 64
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\legola.lua",
+      "npcName": "Legola",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\leonora.lua",
+      "npcName": "Leonora",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\liane.lua",
+      "npcName": "Liane",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lily.lua",
+      "npcName": "Lily",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\livielle.lua",
+      "npcName": "Livielle",
+      "shopEntries": 17,
+      "trades": 17
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\loot_buyer.lua",
+      "npcName": "Loot Buyer",
+      "shopEntries": 1356,
+      "trades": 1356
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lubo.lua",
+      "npcName": "Lubo",
+      "shopEntries": 23,
+      "trades": 32
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\luna.lua",
+      "npcName": "Luna",
+      "shopEntries": 30,
+      "trades": 30
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lurik.lua",
+      "npcName": "Lurik",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\lyonel.lua",
+      "npcName": "Lyonel",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\malunga.lua",
+      "npcName": "Malunga",
+      "shopEntries": 73,
+      "trades": 73
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maria.lua",
+      "npcName": "Maria",
+      "shopEntries": 12,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maro.lua",
+      "npcName": "Maro",
+      "shopEntries": 36,
+      "trades": 45
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maryza.lua",
+      "npcName": "Maryza",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\maun.lua",
+      "npcName": "Maun",
+      "shopEntries": 75,
+      "trades": 87
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mehkesh.lua",
+      "npcName": "Mehkesh",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\melfar.lua",
+      "npcName": "Melfar",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\memech.lua",
+      "npcName": "Memech",
+      "shopEntries": 85,
+      "trades": 128
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\messenger_of_santa.lua",
+      "npcName": "Messenger of Santa",
+      "shopEntries": 12,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mirabell.lua",
+      "npcName": "Mirabell",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\miraia.lua",
+      "npcName": "Miraia",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\morpel.lua",
+      "npcName": "Morpel",
+      "shopEntries": 85,
+      "trades": 130
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mortimer.lua",
+      "npcName": "Mortimer",
+      "shopEntries": 11,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mugluf.lua",
+      "npcName": "Mugluf",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\mugruu.lua",
+      "npcName": "Mugruu",
+      "shopEntries": 34,
+      "trades": 37
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\murim.lua",
+      "npcName": "Murim",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nah_bob.lua",
+      "npcName": "Nah'Bob",
+      "shopEntries": 27,
+      "trades": 32
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nelliem.lua",
+      "npcName": "Nelliem",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nezil.lua",
+      "npcName": "Nezil",
+      "shopEntries": 30,
+      "trades": 39
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nicholas.lua",
+      "npcName": "Nicholas",
+      "shopEntries": 97,
+      "trades": 97
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nienna.lua",
+      "npcName": "Nienna",
+      "shopEntries": 22,
+      "trades": 22
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ninos.lua",
+      "npcName": "Ninos",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\norbert.lua",
+      "npcName": "Norbert",
+      "shopEntries": 6,
+      "trades": 11
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\norma.lua",
+      "npcName": "Norma",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\nydala.lua",
+      "npcName": "Nydala",
+      "shopEntries": 97,
+      "trades": 97
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\obi.lua",
+      "npcName": "Obi",
+      "shopEntries": 15,
+      "trades": 24
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\odemara.lua",
+      "npcName": "Odemara",
+      "shopEntries": 74,
+      "trades": 81
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\oiriz.lua",
+      "npcName": "Oiriz",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\olrik.lua",
+      "npcName": "Olrik",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\omur.lua",
+      "npcName": "Omur",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\orockle.lua",
+      "npcName": "Orockle",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\peggy.lua",
+      "npcName": "Peggy",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pemaret.lua",
+      "npcName": "Pemaret",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\penny.lua",
+      "npcName": "Penny",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\perac.lua",
+      "npcName": "Perac",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\perod.lua",
+      "npcName": "Perod",
+      "shopEntries": 64,
+      "trades": 75
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pompan.lua",
+      "npcName": "Pompan",
+      "shopEntries": 54,
+      "trades": 65
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\pugwah.lua",
+      "npcName": "Pugwah",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\quero.lua",
+      "npcName": "Quero",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rafzan.lua",
+      "npcName": "Rafzan",
+      "shopEntries": 19,
+      "trades": 22
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ramina.lua",
+      "npcName": "Ramina",
+      "shopEntries": 12,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+      "npcName": "Rashid",
+      "shopEntries": 157,
+      "trades": 157
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid_custom.lua",
+      "npcName": "Rashid of Island",
+      "shopEntries": 157,
+      "trades": 157
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ray.lua",
+      "npcName": "Ray",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\redward.lua",
+      "npcName": "Redward",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\red_lilly.lua",
+      "npcName": "Red Lilly",
+      "shopEntries": 32,
+      "trades": 41
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\robert.lua",
+      "npcName": "Robert",
+      "shopEntries": 110,
+      "trades": 144
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rodney.lua",
+      "npcName": "Rodney",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\romella.lua",
+      "npcName": "Romella",
+      "shopEntries": 52,
+      "trades": 76
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rose.lua",
+      "npcName": "Rose",
+      "shopEntries": 6,
+      "trades": 6
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rowenna.lua",
+      "npcName": "Rowenna",
+      "shopEntries": 49,
+      "trades": 66
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rudolph.lua",
+      "npcName": "Rudolph",
+      "shopEntries": 9,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\runtel_blackspark.lua",
+      "npcName": "Runtel Blackspark",
+      "shopEntries": 45,
+      "trades": 45
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+      "npcName": "Sam",
+      "shopEntries": 85,
+      "trades": 138
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sandra.lua",
+      "npcName": "Sandra",
+      "shopEntries": 20,
+      "trades": 20
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sarina.lua",
+      "npcName": "Sarina",
+      "shopEntries": 29,
+      "trades": 38
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\satsu.lua",
+      "npcName": "Satsu",
+      "shopEntries": 15,
+      "trades": 15
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\scott.lua",
+      "npcName": "Scott",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\serafin.lua",
+      "npcName": "Serafin",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sessek.lua",
+      "npcName": "Sessek",
+      "shopEntries": 16,
+      "trades": 16
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shanar.lua",
+      "npcName": "Shanar",
+      "shopEntries": 56,
+      "trades": 73
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sherry_mcronald.lua",
+      "npcName": "Sherry McRonald",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shiantis.lua",
+      "npcName": "Shiantis",
+      "shopEntries": 54,
+      "trades": 62
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\siflind.lua",
+      "npcName": "Siflind",
+      "shopEntries": 60,
+      "trades": 60
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\silas.lua",
+      "npcName": "Silas",
+      "shopEntries": 8,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\snake_eye.lua",
+      "npcName": "Snake Eye",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\soilance.lua",
+      "npcName": "Soilance",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\stan.lua",
+      "npcName": "Stan",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\swolt.lua",
+      "npcName": "Swolt",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\taegen.lua",
+      "npcName": "Taegen",
+      "shopEntries": 26,
+      "trades": 29
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\talila.lua",
+      "npcName": "Talila",
+      "shopEntries": 145,
+      "trades": 153
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\talphion.lua",
+      "npcName": "Talphion",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tamoril.lua",
+      "npcName": "Tamoril",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tanaro.lua",
+      "npcName": "Tanaro",
+      "shopEntries": 14,
+      "trades": 14
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tarun.lua",
+      "npcName": "Tarun",
+      "shopEntries": 24,
+      "trades": 24
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\telas.lua",
+      "npcName": "Telas",
+      "shopEntries": 25,
+      "trades": 25
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tesha.lua",
+      "npcName": "Tesha",
+      "shopEntries": 62,
+      "trades": 69
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\testserver_assistant.lua",
+      "npcName": "Testserver Assistant",
+      "shopEntries": 180,
+      "trades": 180
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tezila.lua",
+      "npcName": "Tezila",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\the_librarian.lua",
+      "npcName": "The Librarian",
+      "shopEntries": 21,
+      "trades": 23
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\thomas.lua",
+      "npcName": "Thomas",
+      "shopEntries": 15,
+      "trades": 17
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\timur.lua",
+      "npcName": "Timur",
+      "shopEntries": 31,
+      "trades": 41
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\todd.lua",
+      "npcName": "Todd",
+      "shopEntries": 2,
+      "trades": 2
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tokel.lua",
+      "npcName": "Tokel",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tom.lua",
+      "npcName": "Tom",
+      "shopEntries": 17,
+      "trades": 17
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\tothdral.lua",
+      "npcName": "Tothdral",
+      "shopEntries": 14,
+      "trades": 14
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\turvy.lua",
+      "npcName": "Turvy",
+      "shopEntries": 84,
+      "trades": 127
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ukea.lua",
+      "npcName": "Ukea",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ulrik.lua",
+      "npcName": "Ulrik",
+      "shopEntries": 77,
+      "trades": 116
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\urkalio.lua",
+      "npcName": "Urkalio",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\ustan.lua",
+      "npcName": "Ustan",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uzgod.lua",
+      "npcName": "Uzgod",
+      "shopEntries": 56,
+      "trades": 69
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\valentina.lua",
+      "npcName": "Valentina",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\valindara.lua",
+      "npcName": "Valindara",
+      "shopEntries": 146,
+      "trades": 154
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\velvet.lua",
+      "npcName": "Velvet",
+      "shopEntries": 23,
+      "trades": 23
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\vera.lua",
+      "npcName": "Vera",
+      "shopEntries": 94,
+      "trades": 94
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\victor.lua",
+      "npcName": "Victor",
+      "shopEntries": 4,
+      "trades": 4
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\vincent.lua",
+      "npcName": "Vincent",
+      "shopEntries": 26,
+      "trades": 29
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\wally.lua",
+      "npcName": "Wally",
+      "shopEntries": 3,
+      "trades": 3
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\wes_the_blacksmith_day.lua",
+      "npcName": "Wes the Blacksmith",
+      "shopEntries": 65,
+      "trades": 117
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\wes_the_blacksmith_night.lua",
+      "npcName": "Wes the Blacksmith",
+      "shopEntries": 65,
+      "trades": 117
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\willard.lua",
+      "npcName": "Willard",
+      "shopEntries": 114,
+      "trades": 172
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\willie.lua",
+      "npcName": "Willie",
+      "shopEntries": 7,
+      "trades": 7
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\xed.lua",
+      "npcName": "Xed",
+      "shopEntries": 8,
+      "trades": 8
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\xelvar.lua",
+      "npcName": "Xelvar",
+      "shopEntries": 1,
+      "trades": 1
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yaman.lua",
+      "npcName": "Yaman",
+      "shopEntries": 22,
+      "trades": 32
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yana.lua",
+      "npcName": "Yana",
+      "shopEntries": 10,
+      "trades": 10
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yanni.lua",
+      "npcName": "Yanni",
+      "shopEntries": 34,
+      "trades": 63
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yasir.lua",
+      "npcName": "Yasir",
+      "shopEntries": 738,
+      "trades": 738
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yoem.lua",
+      "npcName": "Yoem",
+      "shopEntries": 96,
+      "trades": 96
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yonan.lua",
+      "npcName": "Yonan",
+      "shopEntries": 67,
+      "trades": 74
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\yulas.lua",
+      "npcName": "Yulas",
+      "shopEntries": 5,
+      "trades": 5
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zaidal.lua",
+      "npcName": "Zaidal",
+      "shopEntries": 9,
+      "trades": 9
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zethra.lua",
+      "npcName": "Zethra",
+      "shopEntries": 9,
+      "trades": 12
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zora.lua",
+      "npcName": "Zora",
+      "shopEntries": 33,
+      "trades": 42
+    },
+    {
+      "path": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\zuma_magehide.lua",
+      "npcName": "Zuma Magehide",
+      "shopEntries": 19,
+      "trades": 19
+    }
+  ]
+}

@@ -76,7 +76,7 @@
     "experience": 2000000,
     "health": 300000,
     "lootEntryCount": 0,
-    "hasImage": false,
+    "hasImage": true,
     "priorityScore": 20300
   },
   {

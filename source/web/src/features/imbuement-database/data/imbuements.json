@@ -1,0 +1,290 @@
+[
+  {
+    "id": "powerful-vampirism",
+    "name": "Powerful Vampirism",
+    "group": "Life Leech",
+    "tier": "powerful",
+    "effect": "Converte parte do dano causado em vida.",
+    "materials": [
+      { "itemName": "vampire teeth", "count": 25 },
+      { "itemName": "bloody pincers", "count": 15 },
+      { "itemName": "piece of dead brain", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-void",
+    "name": "Powerful Void",
+    "group": "Mana Leech",
+    "tier": "powerful",
+    "effect": "Converte parte do dano causado em mana.",
+    "materials": [
+      { "itemName": "rope belt", "count": 25 },
+      { "itemName": "silencer claws", "count": 25 },
+      { "itemName": "some grimeleech wings", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-strike",
+    "name": "Powerful Strike",
+    "group": "Critical Hit",
+    "tier": "powerful",
+    "effect": "Aumenta chance e dano critico.",
+    "materials": [
+      { "itemName": "protective charm", "count": 20 },
+      { "itemName": "sabretooth", "count": 25 },
+      { "itemName": "vexclaw talon", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-scorch",
+    "name": "Powerful Scorch",
+    "group": "Fire Damage",
+    "tier": "powerful",
+    "effect": "Adiciona dano de fogo.",
+    "materials": [
+      { "itemName": "fiery heart", "count": 25 },
+      { "itemName": "green dragon scale", "count": 5 },
+      { "itemName": "piece of hellfire armor", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-frost",
+    "name": "Powerful Frost",
+    "group": "Ice Damage",
+    "tier": "powerful",
+    "effect": "Adiciona dano de gelo.",
+    "materials": [
+      { "itemName": "frosty heart", "count": 25 },
+      { "itemName": "seacrest hair", "count": 5 },
+      { "itemName": "polar bear paw", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-electrify",
+    "name": "Powerful Electrify",
+    "group": "Energy Damage",
+    "tier": "powerful",
+    "effect": "Adiciona dano de energia.",
+    "materials": [
+      { "itemName": "rorc feather", "count": 25 },
+      { "itemName": "peacock feather fan", "count": 5 },
+      { "itemName": "energy vein", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-venom",
+    "name": "Powerful Venom",
+    "group": "Earth Damage",
+    "tier": "powerful",
+    "effect": "Adiciona dano de terra.",
+    "materials": [
+      { "itemName": "swamp grass", "count": 25 },
+      { "itemName": "gruesome fan", "count": 5 },
+      { "itemName": "slime heart", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-reap",
+    "name": "Powerful Reap",
+    "group": "Death Damage",
+    "tier": "powerful",
+    "effect": "Adiciona dano de morte.",
+    "materials": [
+      { "itemName": "pile of grave earth", "count": 25 },
+      { "itemName": "unholy bone", "count": 25 },
+      { "itemName": "piece of dead brain", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-bash",
+    "name": "Powerful Bash",
+    "group": "Club Fighting",
+    "tier": "powerful",
+    "effect": "Aumenta club fighting.",
+    "materials": [
+      { "itemName": "cyclops toe", "count": 20 },
+      { "itemName": "ogre nose ring", "count": 15 },
+      { "itemName": "warmaster's wristguards", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-chop",
+    "name": "Powerful Chop",
+    "group": "Axe Fighting",
+    "tier": "powerful",
+    "effect": "Aumenta axe fighting.",
+    "materials": [
+      { "itemName": "piece of scarab shell", "count": 25 },
+      { "itemName": "brimstone fangs", "count": 25 },
+      { "itemName": "piece of royal steel", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-slash",
+    "name": "Powerful Slash",
+    "group": "Sword Fighting",
+    "tier": "powerful",
+    "effect": "Aumenta sword fighting.",
+    "materials": [
+      { "itemName": "lion's mane", "count": 25 },
+      { "itemName": "mooh'tar shell", "count": 25 },
+      { "itemName": "war crystal", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-precision",
+    "name": "Powerful Precision",
+    "group": "Distance Fighting",
+    "tier": "powerful",
+    "effect": "Aumenta distance fighting.",
+    "materials": [
+      { "itemName": "elven scouting glass", "count": 25 },
+      { "itemName": "compass", "count": 20 },
+      { "itemName": "soul orb", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-epiphany",
+    "name": "Powerful Epiphany",
+    "group": "Magic Level",
+    "tier": "powerful",
+    "effect": "Aumenta magic level.",
+    "materials": [
+      { "itemName": "strand of medusa hair", "count": 25 },
+      { "itemName": "gloom wolf fur", "count": 15 },
+      { "itemName": "concentrated demonic blood", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-blockade",
+    "name": "Powerful Blockade",
+    "group": "Shielding",
+    "tier": "powerful",
+    "effect": "Aumenta shielding.",
+    "materials": [
+      { "itemName": "piece of scarab shell", "count": 20 },
+      { "itemName": "brimstone shell", "count": 25 },
+      { "itemName": "piece of royal steel", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-punch",
+    "name": "Powerful Punch",
+    "group": "Fist Fighting",
+    "tier": "powerful",
+    "effect": "Aumenta fist fighting.",
+    "materials": [
+      { "itemName": "cyclops toe", "count": 20 },
+      { "itemName": "ogre nose ring", "count": 15 },
+      { "itemName": "warmaster's wristguards", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-lich-shroud",
+    "name": "Powerful Lich Shroud",
+    "group": "Death Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra morte.",
+    "materials": [
+      { "itemName": "flask of embalming fluid", "count": 25 },
+      { "itemName": "gloom wolf fur", "count": 20 },
+      { "itemName": "mystical hourglass", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-snake-skin",
+    "name": "Powerful Snake Skin",
+    "group": "Earth Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra terra.",
+    "materials": [
+      { "itemName": "piece of swampling wood", "count": 25 },
+      { "itemName": "snake skin", "count": 20 },
+      { "itemName": "brimstone shell", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-dragon-hide",
+    "name": "Powerful Dragon Hide",
+    "group": "Fire Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra fogo.",
+    "materials": [
+      { "itemName": "green dragon scale", "count": 10 },
+      { "itemName": "wyvern talisman", "count": 5 },
+      { "itemName": "warmaster's wristguards", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-quara-scale",
+    "name": "Powerful Quara Scale",
+    "group": "Ice Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra gelo.",
+    "materials": [
+      { "itemName": "quara bone", "count": 25 },
+      { "itemName": "quara eye", "count": 5 },
+      { "itemName": "frozen heart", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-cloud-fabric",
+    "name": "Powerful Cloud Fabric",
+    "group": "Energy Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra energia.",
+    "materials": [
+      { "itemName": "wyvern talisman", "count": 20 },
+      { "itemName": "peacock feather fan", "count": 10 },
+      { "itemName": "energy vein", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-demon-presence",
+    "name": "Powerful Demon Presence",
+    "group": "Holy Protection",
+    "tier": "powerful",
+    "effect": "Aumenta protecao contra holy.",
+    "materials": [
+      { "itemName": "flask of demonic blood", "count": 25 },
+      { "itemName": "cultish robe", "count": 15 },
+      { "itemName": "concentrated demonic blood", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-swiftness",
+    "name": "Powerful Swiftness",
+    "group": "Speed",
+    "tier": "powerful",
+    "effect": "Aumenta velocidade.",
+    "materials": [
+      { "itemName": "damselfly wing", "count": 15 },
+      { "itemName": "compass", "count": 25 },
+      { "itemName": "waspoid wing", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-vibrancy",
+    "name": "Powerful Vibrancy",
+    "group": "Paralysis Removal",
+    "tier": "powerful",
+    "effect": "Aumenta chance de remover paralisia.",
+    "materials": [
+      { "itemName": "wereboar hooves", "count": 20 },
+      { "itemName": "crystallized anger", "count": 15 },
+      { "itemName": "swamp plant", "count": 5 }
+    ]
+  },
+  {
+    "id": "powerful-featherweight",
+    "name": "Powerful Featherweight",
+    "group": "Capacity",
+    "tier": "powerful",
+    "effect": "Aumenta capacidade.",
+    "materials": [
+      { "itemName": "fairy wings", "count": 20 },
+      { "itemName": "little bowl of myrrh", "count": 10 },
+      { "itemName": "goanna claw", "count": 5 }
+    ]
+  }
+]

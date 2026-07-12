@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T00:00:52.366Z",
+  "generatedAt": "2026-07-11T09:40:42.317Z",
   "directories": {
     "items": "public/assets/items",
     "monsters": "public/assets/monsters",
@@ -7,11 +7,13 @@
     "bosses": "public/assets/bosses"
   },
   "totals": {
-    "items": 38078,
-    "itemImagesFound": 61,
-    "itemImagesMissing": 38017,
+    "items": 38116,
+    "sourceItems": 38078,
+    "supplementalItems": 38,
+    "itemImagesFound": 372,
+    "itemImagesMissing": 37744,
     "monsters": 1765,
-    "monsterImagesFound": 32,
-    "monsterImagesMissing": 1733
+    "monsterImagesFound": 806,
+    "monsterImagesMissing": 959
   }
 }

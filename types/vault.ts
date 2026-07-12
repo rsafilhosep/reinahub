@@ -15,6 +15,7 @@ export type VaultServer = {
 
 export type QuoteSnapshot = {
   ts: number;
+  serverId?: string;
   nome: string;
   moeda: string;
   gcPorMoeda: number;
@@ -36,6 +37,10 @@ export type MarketAnalysis = {
   marketLiquido: number;
   diffAbs: number;
   diffPct: number;
+  marketMinProfitPct?: number;
+  marketMinProfitGp?: number;
+  recommendedOption?: "market" | "npc";
+  recommendationReason?: string;
   ts: number;
 };
 
@@ -60,9 +65,11 @@ export type HuntSession = {
   XPGain?: string | number;
   XPGainHour?: string | number;
   RawXPGain?: string | number;
+  RawXPGainHour?: string | number;
   Damage?: string | number;
   DamageHour?: string | number;
   Healing?: string | number;
+  HealingHour?: string | number;
   SessionLength?: string;
   SessionStart?: string;
   SessionEnd?: string;

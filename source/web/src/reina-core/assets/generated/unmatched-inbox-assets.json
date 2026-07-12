@@ -1,36 +1,685 @@
 {
-  "generatedAt": "2026-07-01T23:59:27.062Z",
-  "unmatchedCount": 5,
+  "generatedAt": "2026-07-10T13:40:27.557Z",
+  "unmatchedCount": 97,
   "unmatched": [
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\45px-Tibian_Book.gif",
+      "fileName": "45px-Tibian_Book.gif",
+      "normalizedName": "45px tibian book",
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\50px-Phosphorus.gif",
+      "fileName": "50px-Phosphorus.gif",
+      "normalizedName": "50px phosphorus",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\50px-The_Moonsnow_Magnolia.gif",
+      "fileName": "50px-The_Moonsnow_Magnolia.gif",
+      "normalizedName": "50px the moonsnow magnolia",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Abominable_Cultist.gif",
+      "fileName": "Abominable_Cultist.gif",
+      "normalizedName": "abominable cultist",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Albino Dragon.gif",
+      "fileName": "Albino Dragon.gif",
+      "normalizedName": "albino dragon",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Bellicose Orger.gif",
+      "fileName": "Bellicose Orger.gif",
+      "normalizedName": "bellicose orger",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Berrypest.gif",
+      "fileName": "Berrypest.gif",
+      "normalizedName": "berrypest",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Bestiário_Desafiador.gif",
+      "fileName": "Bestiário_Desafiador.gif",
+      "normalizedName": "bestiario desafiador",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Bestiário_Difícil.gif",
+      "fileName": "Bestiário_Difícil.gif",
+      "normalizedName": "bestiario dificil",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Bestiário_Fácil.gif",
+      "fileName": "Bestiário_Fácil.gif",
+      "normalizedName": "bestiario facil",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Bestiário_Médio.gif",
+      "fileName": "Bestiário_Médio.gif",
+      "normalizedName": "bestiario medio",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Book (Gemmed).gif",
+      "fileName": "Book (Gemmed).gif",
+      "normalizedName": "book gemmed",
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Butterfly (Blue).gif",
+      "fileName": "Butterfly (Blue).gif",
+      "normalizedName": "butterfly blue",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Butterfly (Purple).gif",
+      "fileName": "Butterfly (Purple).gif",
+      "normalizedName": "butterfly purple",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Butterfly (Red).gif",
+      "fileName": "Butterfly (Red).gif",
+      "normalizedName": "butterfly red",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Butterfly_(Purple).gif",
+      "fileName": "Butterfly_(Purple).gif",
+      "normalizedName": "butterfly purple",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Cake Golem.gif",
+      "fileName": "Cake Golem.gif",
+      "normalizedName": "cake golem",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Charm.gif",
+      "fileName": "Charm.gif",
+      "normalizedName": "charm",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Community_Manager_(Criatura).gif",
+      "fileName": "Community_Manager_(Criatura).gif",
+      "normalizedName": "community manager criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Cow.gif",
+      "fileName": "Cow.gif",
+      "normalizedName": "cow",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Dark_Merudri.gif",
+      "fileName": "Dark_Merudri.gif",
+      "normalizedName": "dark merudri",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Devoted_Radiant_Acolyte.gif",
+      "fileName": "Devoted_Radiant_Acolyte.gif",
+      "normalizedName": "devoted radiant acolyte",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Devoted_Radiant_Inquisitor.gif",
+      "fileName": "Devoted_Radiant_Inquisitor.gif",
+      "normalizedName": "devoted radiant inquisitor",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Devoted_Radiant_Paragon.gif",
+      "fileName": "Devoted_Radiant_Paragon.gif",
+      "normalizedName": "devoted radiant paragon",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Devoted_Radiant_Templar.gif",
+      "fileName": "Devoted_Radiant_Templar.gif",
+      "normalizedName": "devoted radiant templar",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Devoted_Radiant_Warden.gif",
+      "fileName": "Devoted_Radiant_Warden.gif",
+      "normalizedName": "devoted radiant warden",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Domestikion.gif",
+      "fileName": "Domestikion.gif",
+      "normalizedName": "domestikion",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Druid's Apparition.gif",
+      "fileName": "Druid's Apparition.gif",
+      "normalizedName": "druid s apparition",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Duel Trophy.gif",
+      "fileName": "Duel Trophy.gif",
+      "normalizedName": "duel trophy",
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Elder Forest Fury.gif",
+      "fileName": "Elder Forest Fury.gif",
+      "normalizedName": "elder forest fury",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Elite_Fanatic.gif",
+      "fileName": "Elite_Fanatic.gif",
+      "normalizedName": "elite fanatic",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
     {
       "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-large.gif",
       "fileName": "empty-potion-flask-large.gif",
       "normalizedName": "empty potion flask large",
-      "reason": "No item or monster match found"
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
     },
     {
       "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-medium.gif",
       "fileName": "empty-potion-flask-medium.gif",
       "normalizedName": "empty potion flask medium",
-      "reason": "No item or monster match found"
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
     },
     {
       "sourcePath": "files_repository\\Imgs Assets\\empty-potion-flask-small.gif",
       "fileName": "empty-potion-flask-small.gif",
       "normalizedName": "empty potion flask small",
-      "reason": "No item or monster match found"
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
     },
     {
       "sourcePath": "files_repository\\Imgs Assets\\equation.gif",
       "fileName": "equation.gif",
       "normalizedName": "equation",
-      "reason": "No item or monster match found"
+      "probableType": "icon-or-ui",
+      "reason": "No item, monster or NPC match found"
     },
     {
-      "sourcePath": "files_repository\\Imgs Assets\\mooh-tah-warrior.gif",
-      "fileName": "mooh-tah-warrior.gif",
-      "normalizedName": "mooh tah warrior",
-      "reason": "No item or monster match found"
+      "sourcePath": "files_repository\\Imgs Assets\\Fish (Creature).gif",
+      "fileName": "Fish (Creature).gif",
+      "normalizedName": "fish creature",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Fugue.gif",
+      "fileName": "Fugue.gif",
+      "normalizedName": "fugue",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Furious Fire Elemental.gif",
+      "fileName": "Furious Fire Elemental.gif",
+      "normalizedName": "furious fire elemental",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Games Icon.gif",
+      "fileName": "Games Icon.gif",
+      "normalizedName": "games icon",
+      "probableType": "icon-or-ui",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Harsky_(Criatura).gif",
+      "fileName": "Harsky_(Criatura).gif",
+      "normalizedName": "harsky criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Hoodinion.gif",
+      "fileName": "Hoodinion.gif",
+      "normalizedName": "hoodinion",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Horse (Brown).gif",
+      "fileName": "Horse (Brown).gif",
+      "normalizedName": "horse brown",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Horse (Grey).gif",
+      "fileName": "Horse (Grey).gif",
+      "normalizedName": "horse grey",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Horse (Taupe).gif",
+      "fileName": "Horse (Taupe).gif",
+      "normalizedName": "horse taupe",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Kesar_(Criatura).gif",
+      "fileName": "Kesar_(Criatura).gif",
+      "normalizedName": "kesar criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\King_Tibianus_(Criatura).gif",
+      "fileName": "King_Tibianus_(Criatura).gif",
+      "normalizedName": "king tibianus criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Knight's Apparition.gif",
+      "fileName": "Knight's Apparition.gif",
+      "normalizedName": "knight s apparition",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Levitate.gif",
+      "fileName": "Levitate.gif",
+      "normalizedName": "levitate",
+      "probableType": "icon-or-ui",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Loricate Orger.gif",
+      "fileName": "Loricate Orger.gif",
+      "normalizedName": "loricate orger",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Major_Bug.gif",
+      "fileName": "Major_Bug.gif",
+      "normalizedName": "major bug",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Monk's Apparition.gif",
+      "fileName": "Monk's Apparition.gif",
+      "normalizedName": "monk s apparition",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Monk_(Criatura).gif",
+      "fileName": "Monk_(Criatura).gif",
+      "normalizedName": "monk criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Moonsilver_Custodian.gif",
+      "fileName": "Moonsilver_Custodian.gif",
+      "normalizedName": "moonsilver custodian",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Moonsilver_Guardian.gif",
+      "fileName": "Moonsilver_Guardian.gif",
+      "normalizedName": "moonsilver guardian",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Moonstone_Excavator.gif",
+      "fileName": "Moonstone_Excavator.gif",
+      "normalizedName": "moonstone excavator",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Moonstone_Miner.gif",
+      "fileName": "Moonstone_Miner.gif",
+      "normalizedName": "moonstone miner",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Moonstone_Overseer.gif",
+      "fileName": "Moonstone_Overseer.gif",
+      "normalizedName": "moonstone overseer",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Nightslayer.gif",
+      "fileName": "Nightslayer.gif",
+      "normalizedName": "nightslayer",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Northern Pike (Creature).gif",
+      "fileName": "Northern Pike (Creature).gif",
+      "normalizedName": "northern pike creature",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\NPC(1).gif",
+      "fileName": "NPC(1).gif",
+      "normalizedName": "npc 1",
+      "probableType": "npc",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\NPC.gif",
+      "fileName": "NPC.gif",
+      "normalizedName": "npc",
+      "probableType": "npc",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Orger.gif",
+      "fileName": "Orger.gif",
+      "normalizedName": "orger",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Citizen Male.gif",
+      "fileName": "Outfit Citizen Male.gif",
+      "normalizedName": "outfit citizen male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Hunter Male.gif",
+      "fileName": "Outfit Hunter Male.gif",
+      "normalizedName": "outfit hunter male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Knight Male(1).gif",
+      "fileName": "Outfit Knight Male(1).gif",
+      "normalizedName": "outfit knight male 1",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Knight Male.gif",
+      "fileName": "Outfit Knight Male.gif",
+      "normalizedName": "outfit knight male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Mage Male.gif",
+      "fileName": "Outfit Mage Male.gif",
+      "normalizedName": "outfit mage male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Monk Male.gif",
+      "fileName": "Outfit Monk Male.gif",
+      "normalizedName": "outfit monk male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Outfit Summoner Male.gif",
+      "fileName": "Outfit Summoner Male.gif",
+      "normalizedName": "outfit summoner male",
+      "probableType": "outfit",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Paladin's Apparition.gif",
+      "fileName": "Paladin's Apparition.gif",
+      "normalizedName": "paladin s apparition",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Planedweller.gif",
+      "fileName": "Planedweller.gif",
+      "normalizedName": "planedweller",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Princess_Lumelia_(Criatura).gif",
+      "fileName": "Princess_Lumelia_(Criatura).gif",
+      "normalizedName": "princess lumelia criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Rabid Wolf.gif",
+      "fileName": "Rabid Wolf.gif",
+      "normalizedName": "rabid wolf",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Acolyte.gif",
+      "fileName": "Radiant_Acolyte.gif",
+      "normalizedName": "radiant acolyte",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Inquisitor.gif",
+      "fileName": "Radiant_Inquisitor.gif",
+      "normalizedName": "radiant inquisitor",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Paragon.gif",
+      "fileName": "Radiant_Paragon.gif",
+      "normalizedName": "radiant paragon",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Templar.gif",
+      "fileName": "Radiant_Templar.gif",
+      "normalizedName": "radiant templar",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Warden.gif",
+      "fileName": "Radiant_Warden.gif",
+      "normalizedName": "radiant warden",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Radiant_Zealot.gif",
+      "fileName": "Radiant_Zealot.gif",
+      "normalizedName": "radiant zealot",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Ragged Rabid Wolf.gif",
+      "fileName": "Ragged Rabid Wolf.gif",
+      "normalizedName": "ragged rabid wolf",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Roast Pork.gif",
+      "fileName": "Roast Pork.gif",
+      "normalizedName": "roast pork",
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Sabretooth (Creature).gif",
+      "fileName": "Sabretooth (Creature).gif",
+      "normalizedName": "sabretooth creature",
+      "probableType": "creature-not-in-database",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\SemImagem.gif",
+      "fileName": "SemImagem.gif",
+      "normalizedName": "semimagem",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Sorcerer's Apparition.gif",
+      "fileName": "Sorcerer's Apparition.gif",
+      "normalizedName": "sorcerer s apparition",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Stairs (White).gif",
+      "fileName": "Stairs (White).gif",
+      "normalizedName": "stairs white",
+      "probableType": "icon-or-ui",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Stutch_(Criatura).gif",
+      "fileName": "Stutch_(Criatura).gif",
+      "normalizedName": "stutch criatura",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\The_Sinister_Hermit_(Imune).gif",
+      "fileName": "The_Sinister_Hermit_(Imune).gif",
+      "normalizedName": "the sinister hermit imune",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Thief.gif",
+      "fileName": "Thief.gif",
+      "normalizedName": "thief",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Tzumrah_the_Dazzler.gif",
+      "fileName": "Tzumrah_the_Dazzler.gif",
+      "normalizedName": "tzumrah the dazzler",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Undead Jester.gif",
+      "fileName": "Undead Jester.gif",
+      "normalizedName": "undead jester",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Wafer Paper Butterfly.gif",
+      "fileName": "Wafer Paper Butterfly.gif",
+      "normalizedName": "wafer paper butterfly",
+      "probableType": "item-name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Assets\\Zushuka_(Mortal).gif",
+      "fileName": "Zushuka_(Mortal).gif",
+      "normalizedName": "zushuka mortal",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Testes\\Moonsilver_Battle_Visor.gif",
+      "fileName": "Moonsilver_Battle_Visor.gif",
+      "normalizedName": "moonsilver battle visor",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Testes\\Moonsilver_Nimbus_Hat.gif",
+      "fileName": "Moonsilver_Nimbus_Hat.gif",
+      "normalizedName": "moonsilver nimbus hat",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Testes\\Moonsilver_Spirit_Mask.gif",
+      "fileName": "Moonsilver_Spirit_Mask.gif",
+      "normalizedName": "moonsilver spirit mask",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Testes\\Moonsilver_Strike_Helm.gif",
+      "fileName": "Moonsilver_Strike_Helm.gif",
+      "normalizedName": "moonsilver strike helm",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
+    },
+    {
+      "sourcePath": "files_repository\\Imgs Testes\\Moonsilver_Trail_Hood.gif",
+      "fileName": "Moonsilver_Trail_Hood.gif",
+      "normalizedName": "moonsilver trail hood",
+      "probableType": "name-review",
+      "reason": "No item, monster or NPC match found"
     }
   ]
 }

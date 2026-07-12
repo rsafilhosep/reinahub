@@ -19,8 +19,8 @@ export const assetManifest: AssetManifest = {
   "mounts": {},
   "spells": {},
   "icons": {
-    "item-placeholder": "/images/icons/item-placeholder.png",
-    "monster-placeholder": "/images/icons/monster-placeholder.png",
-    "npc-placeholder": "/images/icons/npc-placeholder.png"
+    "item-placeholder": "/assets/icons/missing-item.svg",
+    "monster-placeholder": "/assets/icons/missing-creature.svg",
+    "npc-placeholder": "/assets/icons/missing-creature.svg"
   }
 };

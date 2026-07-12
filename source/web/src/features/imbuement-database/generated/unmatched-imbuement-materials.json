@@ -1,0 +1,26 @@
+[
+  {
+    "imbuementId": "powerful-epiphany",
+    "imbuementName": "Powerful Epiphany",
+    "materialName": "concentrated demonic blood",
+    "resolvedName": "concentrated demonic blood",
+    "count": 5,
+    "matched": false
+  },
+  {
+    "imbuementId": "powerful-demon-presence",
+    "imbuementName": "Powerful Demon Presence",
+    "materialName": "concentrated demonic blood",
+    "resolvedName": "concentrated demonic blood",
+    "count": 5,
+    "matched": false
+  },
+  {
+    "imbuementId": "powerful-vibrancy",
+    "imbuementName": "Powerful Vibrancy",
+    "materialName": "swamp plant",
+    "resolvedName": "swamp plant",
+    "count": 5,
+    "matched": false
+  }
+]

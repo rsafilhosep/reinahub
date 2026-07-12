@@ -5,19 +5,23 @@ import { fileURLToPath } from "node:url";
 const databaseRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const items = readJson("generated/items.json");
+const supplementalItems = readJson("generated/supplemental-items.json", []);
 const monsters = readJson("generated/monsters.json");
 const monsterLoot = readJson("generated/monster-loot.json");
 const npcSellPrices = readJson("generated/npc-sell-prices.json");
 
-const service = createService({ items, monsters, monsterLoot, npcSellPrices });
+const mergedItems = mergeItems(items, supplementalItems);
+const service = createService({ items: mergedItems, monsters, monsterLoot, npcSellPrices });
 
 const goldCoin = service.findItemByName("gold coin");
+const supplementalSample = service.findItemByName("gold-brocaded cloth");
 const demon = service.getMonsterByName("demon");
 const demonLoot = service.getMonsterLoot("demon");
-const pricedItem = items.find((item) => item.sellPrice);
+const pricedItem = mergedItems.find((item) => item.sellPrice);
 const pricedItemPrice = pricedItem ? service.getNpcSellPrice(pricedItem.id) : null;
 
 assert(goldCoin, "gold coin should be found");
+assert(!supplementalItems.length || supplementalSample, "supplemental item should be found when supplemental-items.json has rows");
 assert(demon, "demon should be found");
 assert(demonLoot.length > 0, "demon loot should not be empty");
 assert(pricedItem && pricedItemPrice !== null, "an item with NPC price should be found");
@@ -25,6 +29,7 @@ assert(pricedItem && pricedItemPrice !== null, "an item with NPC price should be
 console.log("ReinaDataService verification passed");
 console.log({
   goldCoin,
+  supplementalSample: supplementalSample ? { id: supplementalSample.id, name: supplementalSample.name, sellPrice: supplementalSample.sellPrice } : null,
   demon: demon ? { name: demon.name, experience: demon.experience, health: demon.health, lootRows: demonLoot.length } : null,
   demonLootSample: demonLoot.slice(0, 8),
   npcPriceSample: pricedItem ? { item: pricedItem.name, id: pricedItem.id, sellPrice: pricedItemPrice } : null,
@@ -61,8 +66,29 @@ function createService(data) {
   };
 }
 
-function readJson(relativePath) {
-  return JSON.parse(readFileSync(path.join(databaseRoot, relativePath), "utf8"));
+function readJson(relativePath, fallback = null) {
+  try {
+    return JSON.parse(readFileSync(path.join(databaseRoot, relativePath), "utf8"));
+  } catch {
+    if (fallback !== null) return fallback;
+    throw new Error(`Unable to read JSON file: ${relativePath}`);
+  }
+}
+
+function mergeItems(primaryItems, extraItems) {
+  const byId = new Set(primaryItems.flatMap((item) => [item.id, item.clientId].filter(Boolean)));
+  const byName = new Set(primaryItems.map((item) => itemLookupKey(item.name)));
+  const merged = [...primaryItems];
+
+  for (const item of extraItems) {
+    if (byId.has(item.id) || (item.clientId && byId.has(item.clientId)) || byName.has(itemLookupKey(item.name))) continue;
+    merged.push(item);
+    byId.add(item.id);
+    if (item.clientId) byId.add(item.clientId);
+    byName.add(itemLookupKey(item.name));
+  }
+
+  return merged.sort((a, b) => a.id - b.id);
 }
 
 function itemLookupKey(name = "") {

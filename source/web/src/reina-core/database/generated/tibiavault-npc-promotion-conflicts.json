@@ -1,0 +1,222 @@
+[
+  {
+    "type": "price-conflict",
+    "npcName": "Al Dee",
+    "itemName": "backpack",
+    "tradeType": "npcSells",
+    "localPrice": 10,
+    "sourcePrice": 20,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\al_dee.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/al-dee",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Al Dee",
+    "itemName": "shovel",
+    "tradeType": "npcSells",
+    "localPrice": 10,
+    "sourcePrice": 50,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\al_dee.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/al-dee",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Bezil",
+    "itemName": "fishing rod",
+    "tradeType": "npcSells",
+    "localPrice": 40,
+    "sourcePrice": 150,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bezil.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/bezil",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Bezil",
+    "itemName": "shovel",
+    "tradeType": "npcSells",
+    "localPrice": 10,
+    "sourcePrice": 50,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\bezil.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/bezil",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Flint",
+    "itemName": "two handed sword",
+    "tradeType": "npcSells",
+    "localPrice": 950,
+    "sourcePrice": 450,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\flint.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/flint",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Kroox",
+    "itemName": "chain legs",
+    "tradeType": "npcSells",
+    "localPrice": 80,
+    "sourcePrice": 200,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\kroox.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/kroox",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "jade hammer",
+    "tradeType": "npcBuys",
+    "localPrice": 25000,
+    "sourcePrice": 2000,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "lightning headband",
+    "tradeType": "npcBuys",
+    "localPrice": 2500,
+    "sourcePrice": 8000,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "magic plate armor",
+    "tradeType": "npcBuys",
+    "localPrice": 90000,
+    "sourcePrice": 6400,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "mycological bow",
+    "tradeType": "npcBuys",
+    "localPrice": 35000,
+    "sourcePrice": 18000,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "rift bow",
+    "tradeType": "npcBuys",
+    "localPrice": 45000,
+    "sourcePrice": 22000,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Rashid",
+    "itemName": "rift crossbow",
+    "tradeType": "npcBuys",
+    "localPrice": 45000,
+    "sourcePrice": 22000,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\rashid.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/rashid",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Sam",
+    "itemName": "brass shield",
+    "tradeType": "npcBuys",
+    "localPrice": 25,
+    "sourcePrice": 16,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Sam",
+    "itemName": "chain legs",
+    "tradeType": "npcSells",
+    "localPrice": 80,
+    "sourcePrice": 200,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Sam",
+    "itemName": "halberd",
+    "tradeType": "npcBuys",
+    "localPrice": 400,
+    "sourcePrice": 200,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Sam",
+    "itemName": "sabre",
+    "tradeType": "npcSells",
+    "localPrice": 35,
+    "sourcePrice": 25,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Sam",
+    "itemName": "two handed sword",
+    "tradeType": "npcBuys",
+    "localPrice": 450,
+    "sourcePrice": 195,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\sam.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/sam",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Shanar",
+    "itemName": "mace",
+    "tradeType": "npcBuys",
+    "localPrice": 23,
+    "sourcePrice": 30,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\shanar.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/shanar",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Uzgod",
+    "itemName": "halberd",
+    "tradeType": "npcBuys",
+    "localPrice": 310,
+    "sourcePrice": 200,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uzgod.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/uzgod",
+    "suggestedClassification": "review-required"
+  },
+  {
+    "type": "price-conflict",
+    "npcName": "Uzgod",
+    "itemName": "two handed sword",
+    "tradeType": "npcSells",
+    "localPrice": 950,
+    "sourcePrice": 450,
+    "localSourcePath": "files_repository\\06_30_2026\\crystalserver-main\\data-global\\npc\\uzgod.lua",
+    "sourceUrl": "https://tibiavault.com/#npcs/uzgod",
+    "suggestedClassification": "review-required"
+  }
+]

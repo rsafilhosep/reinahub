@@ -1,5 +1,6 @@
 "use client";
 
+import { MISSING_CREATURE_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { NpcSearchResult } from "../types";
 
 type NpcSearchProps = {
@@ -9,8 +10,6 @@ type NpcSearchProps = {
   onQueryChange: (query: string) => void;
   onSelectNpc: (name: string) => void;
 };
-
-const MISSING_CREATURE_IMAGE = "/assets/icons/missing-creature.svg";
 
 export function NpcSearch({ query, results, loading, onQueryChange, onSelectNpc }: NpcSearchProps) {
   return (

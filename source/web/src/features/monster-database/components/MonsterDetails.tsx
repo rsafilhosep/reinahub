@@ -3,25 +3,18 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { integer, moneySmart } from "@/services/format";
-import { getActiveServer } from "@/services/quote-service";
+import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
+import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import type { VaultServer } from "@/types/vault";
 import type { MonsterDatabaseRecord } from "../types";
-
-const MISSING_CREATURE_IMAGE = "/assets/icons/missing-creature.svg";
-const MISSING_ITEM_IMAGE = "/assets/icons/missing-item.svg";
 
 export function MonsterDetails({ monster }: { monster: MonsterDatabaseRecord | null }) {
   const [server, setServer] = useState<VaultServer | null>(null);
 
   useEffect(() => {
-    const sync = () => setServer(getActiveServer());
+    const sync = () => setServer(ReinaEconomyService.getActiveContext().server);
     sync();
-    window.addEventListener("reinahub:quote-change", sync);
-    window.addEventListener("storage", sync);
-    return () => {
-      window.removeEventListener("reinahub:quote-change", sync);
-      window.removeEventListener("storage", sync);
-    };
+    return ReinaEconomyService.subscribe(sync);
   }, []);
 
   const pricedLootCount = useMemo(() => monster?.loot.filter((loot) => loot.sellPrice && loot.sellPrice > 0).length ?? 0, [monster]);
@@ -47,6 +40,10 @@ export function MonsterDetails({ monster }: { monster: MonsterDatabaseRecord | n
         <div>
           <div className="label">Monstro</div>
           <div className="value gold">{monster.name}</div>
+          <div className="note" style={{ marginTop: 6 }}>
+            Classe: {monster.classInfo.label}
+            {monster.classInfo.confidence !== "unclassified" ? ` (${monster.classInfo.confidence})` : ""}
+          </div>
         </div>
       </div>
 

@@ -11,26 +11,46 @@ export class StorageService {
 
   static set<T>(key: string, value: T) {
     if (typeof window === "undefined") return;
-    window.localStorage.setItem(key, JSON.stringify(value));
+    try {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    } catch {
+      // Local storage may be unavailable or full; callers keep their in-memory state.
+    }
   }
 
   static getString(key: string, fallback = "") {
     if (typeof window === "undefined") return fallback;
-    return window.localStorage.getItem(key) ?? fallback;
+    try {
+      return window.localStorage.getItem(key) ?? fallback;
+    } catch {
+      return fallback;
+    }
   }
 
   static setString(key: string, value: string) {
     if (typeof window === "undefined") return;
-    window.localStorage.setItem(key, value);
+    try {
+      window.localStorage.setItem(key, value);
+    } catch {
+      // Local storage may be unavailable or full; callers keep their in-memory state.
+    }
   }
 
   static remove(key: string) {
     if (typeof window === "undefined") return;
-    window.localStorage.removeItem(key);
+    try {
+      window.localStorage.removeItem(key);
+    } catch {
+      // Ignore storage removal failures.
+    }
   }
 
   static bytes(key: string) {
     if (typeof window === "undefined") return 0;
-    return new Blob([window.localStorage.getItem(key) ?? ""]).size;
+    try {
+      return new Blob([window.localStorage.getItem(key) ?? ""]).size;
+    } catch {
+      return 0;
+    }
   }
 }

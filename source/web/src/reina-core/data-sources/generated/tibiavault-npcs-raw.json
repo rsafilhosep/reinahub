@@ -1,0 +1,3344 @@
+{
+  "generatedAt": "2026-07-05T12:15:50.585Z",
+  "source": "tibiavault",
+  "sourceUrl": "https://tibiavault.com/#npcs",
+  "scriptUrl": "https://tibiavault.com/js/npc-data.js?v=2.159.0",
+  "safety": "Text scan only. JavaScript is parsed as data text and never executed.",
+  "fetch": {
+    "home": {
+      "statusCode": 200,
+      "tlsMode": "certificate-verification-disabled",
+      "tlsWarning": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca",
+      "contentLength": 200945
+    },
+    "script": {
+      "statusCode": 200,
+      "tlsMode": "certificate-verification-disabled",
+      "tlsWarning": "unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca",
+      "contentLength": 37919
+    }
+  },
+  "totalNpcs": 78,
+  "npcs": [
+    {
+      "name": "Rashid",
+      "city": "Varies",
+      "loc": "Travels daily: Mon=Svargrond, Tue=Liberty Bay, Wed=Port Hope, Thu=Ankrahmun, Fri=Darashia, Sat=Edron, Sun=Carlin",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Magic Plate Armor",
+          "p": 6400
+        },
+        {
+          "n": "Demon Armor",
+          "p": 32000
+        },
+        {
+          "n": "Golden Armor",
+          "p": 20000
+        },
+        {
+          "n": "Crown Armor",
+          "p": 12000
+        },
+        {
+          "n": "Royal Helmet",
+          "p": 30000
+        },
+        {
+          "n": "Yalahari Mask",
+          "p": 7000
+        },
+        {
+          "n": "Demon Helmet",
+          "p": 45000
+        },
+        {
+          "n": "Horned Helmet",
+          "p": 6000
+        },
+        {
+          "n": "Golden Legs",
+          "p": 30000
+        },
+        {
+          "n": "Crown Legs",
+          "p": 12000
+        },
+        {
+          "n": "Zaoan Legs",
+          "p": 14000
+        },
+        {
+          "n": "Steel Boots",
+          "p": 30000
+        },
+        {
+          "n": "Golden Boots",
+          "p": 40000
+        },
+        {
+          "n": "Boots of Haste",
+          "p": 30000
+        },
+        {
+          "n": "Mastermind Shield",
+          "p": 50000
+        },
+        {
+          "n": "Medusa Shield",
+          "p": 9000
+        },
+        {
+          "n": "Amazon Shield",
+          "p": 400
+        },
+        {
+          "n": "Jade Hammer",
+          "p": 2000
+        },
+        {
+          "n": "Crystalline Armor",
+          "p": 16000
+        },
+        {
+          "n": "Crystalline Sword",
+          "p": 8000
+        },
+        {
+          "n": "Drakinata",
+          "p": 10000
+        },
+        {
+          "n": "Blue Robe",
+          "p": 10000
+        },
+        {
+          "n": "Glacier Robe",
+          "p": 11000
+        },
+        {
+          "n": "Fireborn Giant Armor",
+          "p": 50000
+        },
+        {
+          "n": "Lightning Headband",
+          "p": 8000
+        },
+        {
+          "n": "Spellbook of Mind Control",
+          "p": 4000
+        },
+        {
+          "n": "Noble Axe",
+          "p": 10000
+        },
+        {
+          "n": "Ravager's Axe",
+          "p": 7000
+        },
+        {
+          "n": "Mystic Blade",
+          "p": 30000
+        },
+        {
+          "n": "Emerald Sword",
+          "p": 20000
+        },
+        {
+          "n": "Nightmare Blade",
+          "p": 35000
+        },
+        {
+          "n": "Skullcrusher",
+          "p": 15000
+        },
+        {
+          "n": "Havoc Blade",
+          "p": 8000
+        },
+        {
+          "n": "Solar Axe",
+          "p": 30000
+        },
+        {
+          "n": "Demonbone",
+          "p": 12000
+        },
+        {
+          "n": "Wand of Inferno",
+          "p": 3000
+        },
+        {
+          "n": "Wand of Cosmic Energy",
+          "p": 2000
+        },
+        {
+          "n": "Wand of Starstorm",
+          "p": 3600
+        },
+        {
+          "n": "Hive Bow",
+          "p": 14000
+        },
+        {
+          "n": "Mycological Bow",
+          "p": 18000
+        },
+        {
+          "n": "Rift Bow",
+          "p": 22000
+        },
+        {
+          "n": "Rift Crossbow",
+          "p": 22000
+        },
+        {
+          "n": "Cobra Sword",
+          "p": 45000
+        },
+        {
+          "n": "Cobra Axe",
+          "p": 45000
+        },
+        {
+          "n": "Cobra Club",
+          "p": 45000
+        },
+        {
+          "n": "Lion Spangenhelm",
+          "p": 10000
+        },
+        {
+          "n": "Lion Plate",
+          "p": 10000
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": "The Traveling Trader Quest",
+      "notes": "Requires completing The Traveling Trader Quest to access. Travels to a different city each day of the week."
+    },
+    {
+      "name": "Yasir",
+      "city": "Varies",
+      "loc": "Appears randomly in: Ankrahmun, Carlin, Edron, Liberty Bay, Svargrond, Yalahar (check trade channels)",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Behemoth Fang",
+          "p": 500
+        },
+        {
+          "n": "Bloody Pincers",
+          "p": 100
+        },
+        {
+          "n": "Cyclops Toe",
+          "p": 55
+        },
+        {
+          "n": "Dragon Claw",
+          "p": 40
+        },
+        {
+          "n": "Giant Spider Silk",
+          "p": 100
+        },
+        {
+          "n": "Hydra Head",
+          "p": 600
+        },
+        {
+          "n": "Minotaur Horn",
+          "p": 75
+        },
+        {
+          "n": "Perfect Behemoth Fang",
+          "p": 600
+        },
+        {
+          "n": "Sabretooth",
+          "p": 400
+        },
+        {
+          "n": "Deepling Claw",
+          "p": 400
+        },
+        {
+          "n": "Deepling Ridge",
+          "p": 360
+        },
+        {
+          "n": "Deepling Warts",
+          "p": 180
+        },
+        {
+          "n": "Wyrm Scale",
+          "p": 400
+        },
+        {
+          "n": "Elder Wyrm Scale",
+          "p": 500
+        },
+        {
+          "n": "Draken Sulphur",
+          "p": 550
+        },
+        {
+          "n": "Draken Wristbands",
+          "p": 430
+        },
+        {
+          "n": "Ghastly Dragon Head",
+          "p": 700
+        },
+        {
+          "n": "Stampor Talons",
+          "p": 780
+        },
+        {
+          "n": "Sea Serpent Scale",
+          "p": 520
+        },
+        {
+          "n": "Young Sea Serpent Scale",
+          "p": 380
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Buys creature products at high prices. Appears randomly — check Tibia trade channels for sightings."
+    },
+    {
+      "name": "Haroun",
+      "city": "Ankrahmun",
+      "loc": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Giant Sword",
+          "p": 17000
+        },
+        {
+          "n": "Tower Shield",
+          "p": 8000
+        },
+        {
+          "n": "Dragon Shield",
+          "p": 4000
+        },
+        {
+          "n": "Warrior Helmet",
+          "p": 5000
+        },
+        {
+          "n": "Guardian Shield",
+          "p": 2000
+        },
+        {
+          "n": "Knight Armor",
+          "p": 5000
+        },
+        {
+          "n": "Knight Legs",
+          "p": 5000
+        },
+        {
+          "n": "Knight Axe",
+          "p": 2000
+        },
+        {
+          "n": "Stonecutter Axe",
+          "p": 6000
+        },
+        {
+          "n": "Bonebreaker",
+          "p": 10000
+        },
+        {
+          "n": "Dragon Lance",
+          "p": 9000
+        },
+        {
+          "n": "Broadsword",
+          "p": 500
+        },
+        {
+          "n": "Battle Hammer",
+          "p": 350
+        },
+        {
+          "n": "Great Shield",
+          "p": 38000
+        },
+        {
+          "n": "Obsidian Truncheon",
+          "p": 12000
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": "The Djinn War - Marid Faction",
+      "notes": "Requires completing The Djinn War quest (Marid/Blue faction). Cannot access if you chose Efreet/Green faction."
+    },
+    {
+      "name": "Nah'Bob",
+      "city": "Ankrahmun",
+      "loc": "Marid fortress, south of Ankrahmun (Djinn Tower - Blue)",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Stealth Ring",
+          "p": 200
+        },
+        {
+          "n": "Ring of Healing",
+          "p": 100
+        },
+        {
+          "n": "Life Ring",
+          "p": 50
+        },
+        {
+          "n": "Orb",
+          "p": 750
+        },
+        {
+          "n": "Wand of Inferno",
+          "p": 3000
+        },
+        {
+          "n": "Wand of Cosmic Energy",
+          "p": 2000
+        },
+        {
+          "n": "Necrotic Rod",
+          "p": 2000
+        },
+        {
+          "n": "Hailstorm Rod",
+          "p": 3000
+        },
+        {
+          "n": "Boots of Haste",
+          "p": 30000
+        },
+        {
+          "n": "Skull Staff",
+          "p": 6000
+        },
+        {
+          "n": "Strange Symbol",
+          "p": 200
+        },
+        {
+          "n": "Moonlight Rod",
+          "p": 200
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": "The Djinn War - Marid Faction",
+      "notes": "Buys magic items and rods/wands. Requires Marid faction quest."
+    },
+    {
+      "name": "Yaman",
+      "city": "Ankrahmun",
+      "loc": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Magic Plate Armor",
+          "p": 6400
+        },
+        {
+          "n": "Golden Armor",
+          "p": 20000
+        },
+        {
+          "n": "Blue Robe",
+          "p": 10000
+        },
+        {
+          "n": "Glacier Mask",
+          "p": 2500
+        },
+        {
+          "n": "Spellbook of Mind Control",
+          "p": 4000
+        },
+        {
+          "n": "Crown Armor",
+          "p": 12000
+        },
+        {
+          "n": "Crown Helmet",
+          "p": 2500
+        },
+        {
+          "n": "Crown Shield",
+          "p": 6000
+        },
+        {
+          "n": "Crown Legs",
+          "p": 12000
+        },
+        {
+          "n": "Demon Shield",
+          "p": 30000
+        },
+        {
+          "n": "Royal Helmet",
+          "p": 30000
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": "The Djinn War - Efreet Faction",
+      "notes": "Requires completing The Djinn War quest (Efreet/Green faction). Cannot access if you chose Marid/Blue faction."
+    },
+    {
+      "name": "Alesar",
+      "city": "Ankrahmun",
+      "loc": "Efreet fortress, north of Ankrahmun (Djinn Tower - Green)",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Magma Boots",
+          "p": 3000
+        },
+        {
+          "n": "Magma Legs",
+          "p": 5000
+        },
+        {
+          "n": "Magma Coat",
+          "p": 5000
+        },
+        {
+          "n": "Magma Amulet",
+          "p": 1500
+        },
+        {
+          "n": "Magma Monocle",
+          "p": 2500
+        },
+        {
+          "n": "Dragon Scale Mail",
+          "p": 10000
+        },
+        {
+          "n": "Lightning Pendant",
+          "p": 1500
+        },
+        {
+          "n": "Shockwave Amulet",
+          "p": 3000
+        },
+        {
+          "n": "Lightning Boots",
+          "p": 3000
+        },
+        {
+          "n": "Lightning Legs",
+          "p": 5000
+        },
+        {
+          "n": "Lightning Robe",
+          "p": 5000
+        },
+        {
+          "n": "Lightning Headband",
+          "p": 2500
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": "The Djinn War - Efreet Faction",
+      "notes": "Buys elemental equipment. Requires Efreet faction quest."
+    },
+    {
+      "name": "Brengus",
+      "city": "Thais",
+      "loc": "Thais bank, north of depot",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC. Deposit, withdraw, transfer gold, check balance."
+    },
+    {
+      "name": "Ebenizer",
+      "city": "Carlin",
+      "loc": "Carlin bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Yaman (Banker)",
+      "city": "Ankrahmun",
+      "loc": "Ankrahmun bank near depot",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Finarfin",
+      "city": "Ab'Dendriel",
+      "loc": "Ab'Dendriel bank, near depot",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Gnomally",
+      "city": "Kazordoon",
+      "loc": "Kazordoon bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Hanna",
+      "city": "Venore",
+      "loc": "Venore bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Tesha",
+      "city": "Darashia",
+      "loc": "Darashia bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Naji",
+      "city": "Liberty Bay",
+      "loc": "Liberty Bay bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Chondur",
+      "city": "Port Hope",
+      "loc": "Port Hope bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Ormuhn",
+      "city": "Edron",
+      "loc": "Edron bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Sven",
+      "city": "Svargrond",
+      "loc": "Svargrond bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Zoltan",
+      "city": "Rathleton",
+      "loc": "Rathleton bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Asnarus",
+      "city": "Yalahar",
+      "loc": "Yalahar bank",
+      "role": [
+        "bank"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Standard bank NPC."
+    },
+    {
+      "name": "Captain Bluebear",
+      "city": "Thais",
+      "loc": "Thais harbour, south-east of the city",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Carlin",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 130
+        },
+        {
+          "dest": "Venore",
+          "price": 170
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 160
+        },
+        {
+          "dest": "Darashia",
+          "price": 210
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 180
+        },
+        {
+          "dest": "Port Hope",
+          "price": 160
+        },
+        {
+          "dest": "Svargrond",
+          "price": 180
+        },
+        {
+          "dest": "Yalahar",
+          "price": 200
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Issavi",
+          "price": 220
+        },
+        {
+          "dest": "Marapur",
+          "price": 220
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Thais."
+    },
+    {
+      "name": "Cora",
+      "city": "Carlin",
+      "loc": "Carlin harbour, south of the city",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 80
+        },
+        {
+          "dest": "Venore",
+          "price": 130
+        },
+        {
+          "dest": "Svargrond",
+          "price": 110
+        },
+        {
+          "dest": "Yalahar",
+          "price": 185
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 180
+        },
+        {
+          "dest": "Port Hope",
+          "price": 160
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 170
+        },
+        {
+          "dest": "Darashia",
+          "price": 200
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Carlin."
+    },
+    {
+      "name": "Pemaret",
+      "city": "Venore",
+      "loc": "Venore harbour, south of depot",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 170
+        },
+        {
+          "dest": "Carlin",
+          "price": 130
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 150
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 160
+        },
+        {
+          "dest": "Port Hope",
+          "price": 150
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 80
+        },
+        {
+          "dest": "Darashia",
+          "price": 60
+        },
+        {
+          "dest": "Edron",
+          "price": 110
+        },
+        {
+          "dest": "Svargrond",
+          "price": 190
+        },
+        {
+          "dest": "Yalahar",
+          "price": 200
+        }
+      ],
+      "quest": null,
+      "notes": "Main boat captain from Venore."
+    },
+    {
+      "name": "Abubakar",
+      "city": "Ankrahmun",
+      "loc": "Ankrahmun harbour",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 170
+        },
+        {
+          "dest": "Venore",
+          "price": 80
+        },
+        {
+          "dest": "Darashia",
+          "price": 40
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 90
+        },
+        {
+          "dest": "Port Hope",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 100
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Ankrahmun."
+    },
+    {
+      "name": "Oriosa",
+      "city": "Edron",
+      "loc": "Edron harbour, south of the island",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 160
+        },
+        {
+          "dest": "Venore",
+          "price": 110
+        },
+        {
+          "dest": "Darashia",
+          "price": 110
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 150
+        },
+        {
+          "dest": "Svargrond",
+          "price": 170
+        },
+        {
+          "dest": "Yalahar",
+          "price": 175
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 130
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Edron."
+    },
+    {
+      "name": "Hanna (Captain)",
+      "city": "Liberty Bay",
+      "loc": "Liberty Bay harbour",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 180
+        },
+        {
+          "dest": "Carlin",
+          "price": 180
+        },
+        {
+          "dest": "Venore",
+          "price": 160
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 90
+        },
+        {
+          "dest": "Darashia",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 50
+        },
+        {
+          "dest": "Edron",
+          "price": 150
+        },
+        {
+          "dest": "Svargrond",
+          "price": 200
+        },
+        {
+          "dest": "Yalahar",
+          "price": 210
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Liberty Bay."
+    },
+    {
+      "name": "Uzon",
+      "city": "Port Hope",
+      "loc": "Port Hope harbour",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 160
+        },
+        {
+          "dest": "Carlin",
+          "price": 160
+        },
+        {
+          "dest": "Venore",
+          "price": 150
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 100
+        },
+        {
+          "dest": "Darashia",
+          "price": 100
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 50
+        },
+        {
+          "dest": "Edron",
+          "price": 130
+        },
+        {
+          "dest": "Svargrond",
+          "price": 190
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Port Hope."
+    },
+    {
+      "name": "Buddel",
+      "city": "Svargrond",
+      "loc": "Svargrond harbour",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 180
+        },
+        {
+          "dest": "Carlin",
+          "price": 110
+        },
+        {
+          "dest": "Ab'Dendriel",
+          "price": 150
+        },
+        {
+          "dest": "Venore",
+          "price": 190
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 200
+        },
+        {
+          "dest": "Yalahar",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 170
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Svargrond."
+    },
+    {
+      "name": "Wyrdin",
+      "city": "Ab'Dendriel",
+      "loc": "Ab'Dendriel harbour, west side",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 130
+        },
+        {
+          "dest": "Carlin",
+          "price": 80
+        },
+        {
+          "dest": "Venore",
+          "price": 150
+        },
+        {
+          "dest": "Edron",
+          "price": 160
+        },
+        {
+          "dest": "Svargrond",
+          "price": 150
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Ab'Dendriel."
+    },
+    {
+      "name": "Dalbrect",
+      "city": "Darashia",
+      "loc": "Darashia harbour, south",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 210
+        },
+        {
+          "dest": "Venore",
+          "price": 60
+        },
+        {
+          "dest": "Ankrahmun",
+          "price": 40
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 100
+        },
+        {
+          "dest": "Port Hope",
+          "price": 100
+        },
+        {
+          "dest": "Edron",
+          "price": 110
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Darashia."
+    },
+    {
+      "name": "Karith",
+      "city": "Yalahar",
+      "loc": "Yalahar harbour, south docks",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Thais",
+          "price": 200
+        },
+        {
+          "dest": "Carlin",
+          "price": 185
+        },
+        {
+          "dest": "Svargrond",
+          "price": 100
+        },
+        {
+          "dest": "Venore",
+          "price": 200
+        },
+        {
+          "dest": "Edron",
+          "price": 175
+        },
+        {
+          "dest": "Liberty Bay",
+          "price": 210
+        }
+      ],
+      "quest": null,
+      "notes": "Boat captain from Yalahar."
+    },
+    {
+      "name": "Gnomus",
+      "city": "Kazordoon",
+      "loc": "Kazordoon steamship, underground harbour",
+      "role": [
+        "transport"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [
+        {
+          "dest": "Cormaya",
+          "price": 20
+        },
+        {
+          "dest": "Farmine",
+          "price": 100
+        }
+      ],
+      "quest": null,
+      "notes": "Steamship operator from Kazordoon."
+    },
+    {
+      "name": "Sam",
+      "city": "Thais",
+      "loc": "Sam's Armory, south-east Thais",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 195
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Halberd",
+          "p": 200
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Battle Hammer",
+          "p": 120
+        },
+        {
+          "n": "Brass Armor",
+          "p": 150
+        },
+        {
+          "n": "Plate Armor",
+          "p": 400
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        },
+        {
+          "n": "Brass Shield",
+          "p": 16
+        },
+        {
+          "n": "Plate Shield",
+          "p": 45
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Brass Armor",
+          "p": 450
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Chain Legs",
+          "p": 200
+        },
+        {
+          "n": "Brass Shield",
+          "p": 65
+        },
+        {
+          "n": "Plate Shield",
+          "p": 125
+        },
+        {
+          "n": "Dagger",
+          "p": 5
+        },
+        {
+          "n": "Rapier",
+          "p": 15
+        },
+        {
+          "n": "Sabre",
+          "p": 25
+        },
+        {
+          "n": "Hatchet",
+          "p": 25
+        },
+        {
+          "n": "Hand Axe",
+          "p": 8
+        },
+        {
+          "n": "Chain Helmet",
+          "p": 52
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Thais armory. Buys/sells basic weapons and armor."
+    },
+    {
+      "name": "Xodet",
+      "city": "Thais",
+      "loc": "Xodet's Magic Shopee, centre of Thais",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Wand of Vortex",
+          "p": 100
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 200
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 1000
+        },
+        {
+          "n": "Wand of Cosmic Energy",
+          "p": 2000
+        },
+        {
+          "n": "Wand of Inferno",
+          "p": 3000
+        },
+        {
+          "n": "Wand of Starstorm",
+          "p": 3600
+        },
+        {
+          "n": "Wand of Everblazing",
+          "p": 6000
+        }
+      ],
+      "sells": [
+        {
+          "n": "Wand of Vortex",
+          "p": 500
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 1000
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 5000
+        },
+        {
+          "n": "Wand of Cosmic Energy",
+          "p": 10000
+        },
+        {
+          "n": "Wand of Inferno",
+          "p": 15000
+        },
+        {
+          "n": "Wand of Starstorm",
+          "p": 18000
+        },
+        {
+          "n": "Moonlight Rod",
+          "p": 400
+        },
+        {
+          "n": "Necrotic Rod",
+          "p": 5000
+        },
+        {
+          "n": "Hailstorm Rod",
+          "p": 15000
+        },
+        {
+          "n": "Springsprout Rod",
+          "p": 18000
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells wands and rods. Main magic shop in Thais."
+    },
+    {
+      "name": "Nah'Bob (Thais)",
+      "city": "Thais",
+      "loc": "Thais food shop, near depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Meat",
+          "p": 5
+        },
+        {
+          "n": "Ham",
+          "p": 8
+        },
+        {
+          "n": "Fish",
+          "p": 4
+        },
+        {
+          "n": "Brown Mushroom",
+          "p": 10
+        },
+        {
+          "n": "Mana Potion",
+          "p": 56
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Food and potion shop."
+    },
+    {
+      "name": "Al Dee",
+      "city": "Thais",
+      "loc": "General store, north-west Thais",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Rope",
+          "p": 50
+        },
+        {
+          "n": "Shovel",
+          "p": 50
+        },
+        {
+          "n": "Torch",
+          "p": 2
+        },
+        {
+          "n": "Pick",
+          "p": 50
+        },
+        {
+          "n": "Machete",
+          "p": 35
+        },
+        {
+          "n": "Scythe",
+          "p": 12
+        },
+        {
+          "n": "Fishing Rod",
+          "p": 150
+        },
+        {
+          "n": "Bag",
+          "p": 5
+        },
+        {
+          "n": "Backpack",
+          "p": 20
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Thais. Sells essential adventuring equipment."
+    },
+    {
+      "name": "Nelliem",
+      "city": "Thais",
+      "loc": "Nelliem's shop, near Thais depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        },
+        {
+          "n": "Supreme Health Potion",
+          "p": 625
+        },
+        {
+          "n": "Great Spirit Potion",
+          "p": 228
+        },
+        {
+          "n": "Ultimate Spirit Potion",
+          "p": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells potions in Thais."
+    },
+    {
+      "name": "Bashira",
+      "city": "Carlin",
+      "loc": "Equipment shop, north-east Carlin",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Plate Armor",
+          "p": 400
+        },
+        {
+          "n": "Brass Armor",
+          "p": 150
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        },
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Brass Shield",
+          "p": 16
+        }
+      ],
+      "sells": [
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Brass Armor",
+          "p": 450
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Chain Legs",
+          "p": 200
+        },
+        {
+          "n": "Brass Shield",
+          "p": 65
+        },
+        {
+          "n": "Plate Shield",
+          "p": 125
+        },
+        {
+          "n": "Dagger",
+          "p": 5
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Carlin."
+    },
+    {
+      "name": "Edvard",
+      "city": "Venore",
+      "loc": "Venore weapon shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 195
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 450
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Halberd",
+          "p": 400
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Venore."
+    },
+    {
+      "name": "Esrik",
+      "city": "Venore",
+      "loc": "Venore magic shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Wand of Vortex",
+          "p": 100
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 200
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 1000
+        }
+      ],
+      "sells": [
+        {
+          "n": "Wand of Vortex",
+          "p": 500
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 1000
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 5000
+        },
+        {
+          "n": "Moonlight Rod",
+          "p": 400
+        },
+        {
+          "n": "Necrotic Rod",
+          "p": 5000
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop in Venore."
+    },
+    {
+      "name": "Willard",
+      "city": "Edron",
+      "loc": "Edron weapon/armor shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        },
+        {
+          "n": "Plate Armor",
+          "p": 400
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Chain Helmet",
+          "p": 52
+        },
+        {
+          "n": "Plate Shield",
+          "p": 125
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon and armor shop in Edron."
+    },
+    {
+      "name": "Grizzly Adams",
+      "city": "Port Hope",
+      "loc": "Port Hope, north of depot, big building",
+      "role": [
+        "task"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Killing in the Name of...",
+      "notes": "Head of the Adventurers' Guild. Gives creature tasks (kill X monsters). Completing tasks awards Paw and Fur points for Charm unlocks."
+    },
+    {
+      "name": "Lugri",
+      "city": "Edron",
+      "loc": "Edron Hero Cave entrance",
+      "role": [
+        "task",
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Hero Cave Quest",
+      "notes": "Quest NPC for Hero Cave access."
+    },
+    {
+      "name": "A Wrinkled Bonelord",
+      "city": "Darashia",
+      "loc": "Drefia, underground",
+      "role": [
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "The Explorer Society",
+      "notes": "Key NPC for The Explorer Society quest. Gives access to various explored areas."
+    },
+    {
+      "name": "Emperor Kruzak",
+      "city": "Kazordoon",
+      "loc": "Kazordoon throne room",
+      "role": [
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "The New Frontier",
+      "notes": "Part of The New Frontier quest chain."
+    },
+    {
+      "name": "Jack Fate",
+      "city": "Liberty Bay",
+      "loc": "Liberty Bay, north-west",
+      "role": [
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Pirate Outfits Quest",
+      "notes": "Gives pirate outfit addons and pirate-related quests."
+    },
+    {
+      "name": "Hugo",
+      "city": "Thais",
+      "loc": "Thais Adventurer's Guild (north of the temple)",
+      "role": [
+        "quest",
+        "other"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Outfit quests",
+      "notes": "Gives various addon quests. Important outfit NPC."
+    },
+    {
+      "name": "Alexander",
+      "city": "Edron",
+      "loc": "Edron, near magic academy",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        },
+        {
+          "n": "Supreme Health Potion",
+          "p": 625
+        },
+        {
+          "n": "Great Spirit Potion",
+          "p": 228
+        },
+        {
+          "n": "Ultimate Spirit Potion",
+          "p": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Edron."
+    },
+    {
+      "name": "Aneus",
+      "city": "Venore",
+      "loc": "Venore potion shop, near depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Venore."
+    },
+    {
+      "name": "Sigurd",
+      "city": "Carlin",
+      "loc": "Carlin potion shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        },
+        {
+          "n": "Supreme Health Potion",
+          "p": 625
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Carlin."
+    },
+    {
+      "name": "Asima",
+      "city": "Darashia",
+      "loc": "Darashia magic shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Wand of Vortex",
+          "p": 100
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 200
+        }
+      ],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Wand of Vortex",
+          "p": 500
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 1000
+        },
+        {
+          "n": "Moonlight Rod",
+          "p": 400
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop and potions in Darashia."
+    },
+    {
+      "name": "Obi",
+      "city": "Thais",
+      "loc": "Obi's Weaponry, near Thais depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 195
+        },
+        {
+          "n": "Axe",
+          "p": 7
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Morning Star",
+          "p": 100
+        },
+        {
+          "n": "Battle Hammer",
+          "p": 120
+        }
+      ],
+      "sells": [
+        {
+          "n": "Club",
+          "p": 5
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Morning Star",
+          "p": 430
+        },
+        {
+          "n": "Battle Hammer",
+          "p": 350
+        },
+        {
+          "n": "Dagger",
+          "p": 5
+        },
+        {
+          "n": "Rapier",
+          "p": 15
+        },
+        {
+          "n": "Sabre",
+          "p": 25
+        },
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 450
+        },
+        {
+          "n": "Axe",
+          "p": 20
+        },
+        {
+          "n": "Hatchet",
+          "p": 25
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Thais."
+    },
+    {
+      "name": "Uzgod",
+      "city": "Kazordoon",
+      "loc": "Kazordoon weapon shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 195
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Double Axe",
+          "p": 260
+        },
+        {
+          "n": "Fire Sword",
+          "p": 1000
+        },
+        {
+          "n": "Halberd",
+          "p": 200
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 450
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Double Axe",
+          "p": 580
+        },
+        {
+          "n": "Fire Sword",
+          "p": 4000
+        },
+        {
+          "n": "Halberd",
+          "p": 400
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Battle Hammer",
+          "p": 350
+        },
+        {
+          "n": "Dragon Lance",
+          "p": 9000
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon and armor shop in Kazordoon. Good selection of mid-tier weapons."
+    },
+    {
+      "name": "Brengus (Armor)",
+      "city": "Thais",
+      "loc": "Thais armor shop, near temple",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Leather Armor",
+          "p": 12
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        },
+        {
+          "n": "Brass Armor",
+          "p": 150
+        },
+        {
+          "n": "Plate Armor",
+          "p": 400
+        }
+      ],
+      "sells": [
+        {
+          "n": "Leather Armor",
+          "p": 25
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Brass Armor",
+          "p": 450
+        },
+        {
+          "n": "Scale Armor",
+          "p": 260
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Leather Legs",
+          "p": 10
+        },
+        {
+          "n": "Chain Legs",
+          "p": 200
+        },
+        {
+          "n": "Brass Legs",
+          "p": 195
+        },
+        {
+          "n": "Leather Boots",
+          "p": 2
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Armor shop in Thais."
+    },
+    {
+      "name": "Telas",
+      "city": "Ankrahmun",
+      "loc": "Ankrahmun magic shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Wand of Vortex",
+          "p": 100
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 200
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 1000
+        }
+      ],
+      "sells": [
+        {
+          "n": "Wand of Vortex",
+          "p": 500
+        },
+        {
+          "n": "Wand of Dragonbreath",
+          "p": 1000
+        },
+        {
+          "n": "Wand of Decay",
+          "p": 5000
+        },
+        {
+          "n": "Wand of Cosmic Energy",
+          "p": 10000
+        },
+        {
+          "n": "Wand of Inferno",
+          "p": 15000
+        },
+        {
+          "n": "Moonlight Rod",
+          "p": 400
+        },
+        {
+          "n": "Necrotic Rod",
+          "p": 5000
+        },
+        {
+          "n": "Hailstorm Rod",
+          "p": 15000
+        },
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Magic shop in Ankrahmun. Sells wands, rods, and potions."
+    },
+    {
+      "name": "Rachel",
+      "city": "Svargrond",
+      "loc": "Svargrond equipment shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Chain Legs",
+          "p": 200
+        },
+        {
+          "n": "Brass Shield",
+          "p": 65
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Svargrond."
+    },
+    {
+      "name": "Xodet (Runes)",
+      "city": "Thais",
+      "loc": "Xodet's Magic Shopee",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Sudden Death Rune",
+          "p": 135
+        },
+        {
+          "n": "Avalanche Rune",
+          "p": 57
+        },
+        {
+          "n": "Thunderstorm Rune",
+          "p": 47
+        },
+        {
+          "n": "Great Fireball Rune",
+          "p": 57
+        },
+        {
+          "n": "Explosion Rune",
+          "p": 31
+        },
+        {
+          "n": "Heavy Magic Missile Rune",
+          "p": 12
+        },
+        {
+          "n": "Ultimate Healing Rune",
+          "p": 175
+        },
+        {
+          "n": "Intense Healing Rune",
+          "p": 95
+        },
+        {
+          "n": "Magic Wall Rune",
+          "p": 116
+        },
+        {
+          "n": "Wild Growth Rune",
+          "p": 160
+        },
+        {
+          "n": "Destroy Field Rune",
+          "p": 15
+        },
+        {
+          "n": "Convince Creature Rune",
+          "p": 80
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Rune shop. Sells all commonly used runes."
+    },
+    {
+      "name": "Flint",
+      "city": "Liberty Bay",
+      "loc": "Liberty Bay weapon shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 450
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Brass Shield",
+          "p": 65
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Liberty Bay."
+    },
+    {
+      "name": "Briasol",
+      "city": "Yalahar",
+      "loc": "Yalahar Trade Quarter, near depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 195
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Two Handed Sword",
+          "p": 450
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Equipment shop in Yalahar Trade Quarter."
+    },
+    {
+      "name": "Frederik",
+      "city": "Liberty Bay",
+      "loc": "Liberty Bay potion shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Liberty Bay."
+    },
+    {
+      "name": "Shanar",
+      "city": "Ab'Dendriel",
+      "loc": "Ab'Dendriel weapon shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        },
+        {
+          "n": "Battle Axe",
+          "p": 80
+        },
+        {
+          "n": "Halberd",
+          "p": 200
+        }
+      ],
+      "sells": [
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Battle Axe",
+          "p": 235
+        },
+        {
+          "n": "Halberd",
+          "p": 400
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Brass Shield",
+          "p": 65
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Ab'Dendriel."
+    },
+    {
+      "name": "Henricus",
+      "city": "Thais",
+      "loc": "Thais, southeast, near the Tibia temple",
+      "role": [
+        "quest",
+        "other"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Inquisition Quest",
+      "notes": "Main NPC for The Inquisition quest. Also gives access to Demon Forge."
+    },
+    {
+      "name": "Tamoril",
+      "city": "Edron",
+      "loc": "Edron tower, ivory towers area",
+      "role": [
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "The Explorer Society",
+      "notes": "Explorer Society quest NPC."
+    },
+    {
+      "name": "Percybald",
+      "city": "Edron",
+      "loc": "Edron castle",
+      "role": [
+        "quest"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Postman Quest",
+      "notes": "Postman quest NPC."
+    },
+    {
+      "name": "Yaman (Task)",
+      "city": "Ankrahmun",
+      "loc": "Ankrahmun palace",
+      "role": [
+        "task"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Killing in the Name of...",
+      "notes": "Gives high-level creature tasks (e.g., Demons, Hydras)."
+    },
+    {
+      "name": "Kroox",
+      "city": "Kazordoon",
+      "loc": "Kazordoon armor shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Brass Armor",
+          "p": 150
+        },
+        {
+          "n": "Chain Armor",
+          "p": 70
+        },
+        {
+          "n": "Plate Armor",
+          "p": 400
+        }
+      ],
+      "sells": [
+        {
+          "n": "Chain Armor",
+          "p": 200
+        },
+        {
+          "n": "Brass Armor",
+          "p": 450
+        },
+        {
+          "n": "Plate Armor",
+          "p": 1200
+        },
+        {
+          "n": "Knight Armor",
+          "p": 5000
+        },
+        {
+          "n": "Chain Legs",
+          "p": 200
+        },
+        {
+          "n": "Brass Legs",
+          "p": 195
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Armor shop in Kazordoon."
+    },
+    {
+      "name": "Amaro",
+      "city": "Port Hope",
+      "loc": "Port Hope shop, near depot",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        },
+        {
+          "n": "Supreme Health Potion",
+          "p": 625
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Port Hope."
+    },
+    {
+      "name": "Hanna (Svargrond)",
+      "city": "Svargrond",
+      "loc": "Svargrond potion shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Svargrond."
+    },
+    {
+      "name": "Dove",
+      "city": "Thais",
+      "loc": "Thais temple",
+      "role": [
+        "other"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Amulet of Loss",
+          "p": 50000
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Sells Amulet of Loss. Also serves as temple healer."
+    },
+    {
+      "name": "Iwan",
+      "city": "Rathleton",
+      "loc": "Rathleton, glooth factory area",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Glooth Blade",
+          "p": 15000
+        },
+        {
+          "n": "Glooth Club",
+          "p": 15000
+        },
+        {
+          "n": "Glooth Axe",
+          "p": 15000
+        },
+        {
+          "n": "Glooth Amulet",
+          "p": 2000
+        },
+        {
+          "n": "Glooth Cape",
+          "p": 5000
+        }
+      ],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Glooth equipment trader in Rathleton. Buys glooth drops."
+    },
+    {
+      "name": "Percybald (Postman)",
+      "city": "Carlin",
+      "loc": "Carlin post office",
+      "role": [
+        "other"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Letter",
+          "p": 8
+        },
+        {
+          "n": "Parcel",
+          "p": 15
+        },
+        {
+          "n": "Label",
+          "p": 1
+        }
+      ],
+      "transport": [],
+      "quest": "Postman Quest",
+      "notes": "Post office NPC. Can send letters and parcels after Postman quest."
+    },
+    {
+      "name": "Isimov",
+      "city": "Yalahar",
+      "loc": "Yalahar, Alchemist Quarter",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        },
+        {
+          "n": "Ultimate Health Potion",
+          "p": 379
+        },
+        {
+          "n": "Supreme Health Potion",
+          "p": 625
+        },
+        {
+          "n": "Great Spirit Potion",
+          "p": 228
+        },
+        {
+          "n": "Ultimate Spirit Potion",
+          "p": 438
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Yalahar."
+    },
+    {
+      "name": "Gewen",
+      "city": "Ab'Dendriel",
+      "loc": "Ab'Dendriel potion shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Mana Potion",
+          "p": 56
+        },
+        {
+          "n": "Strong Mana Potion",
+          "p": 93
+        },
+        {
+          "n": "Great Mana Potion",
+          "p": 144
+        },
+        {
+          "n": "Health Potion",
+          "p": 50
+        },
+        {
+          "n": "Strong Health Potion",
+          "p": 115
+        },
+        {
+          "n": "Great Health Potion",
+          "p": 225
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Potion seller in Ab'Dendriel."
+    },
+    {
+      "name": "Asnarus (Runes)",
+      "city": "Ankrahmun",
+      "loc": "Ankrahmun magic shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Sudden Death Rune",
+          "p": 135
+        },
+        {
+          "n": "Avalanche Rune",
+          "p": 57
+        },
+        {
+          "n": "Thunderstorm Rune",
+          "p": 47
+        },
+        {
+          "n": "Great Fireball Rune",
+          "p": 57
+        },
+        {
+          "n": "Explosion Rune",
+          "p": 31
+        },
+        {
+          "n": "Heavy Magic Missile Rune",
+          "p": 12
+        },
+        {
+          "n": "Ultimate Healing Rune",
+          "p": 175
+        },
+        {
+          "n": "Magic Wall Rune",
+          "p": 116
+        },
+        {
+          "n": "Wild Growth Rune",
+          "p": 160
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Rune shop in Ankrahmun."
+    },
+    {
+      "name": "Cipfried",
+      "city": "Rookgaard",
+      "loc": "Rookgaard temple",
+      "role": [
+        "other"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": null,
+      "notes": "Temple NPC in Rookgaard. Heals players."
+    },
+    {
+      "name": "Obi (Rookgaard)",
+      "city": "Rookgaard",
+      "loc": "Rookgaard weapon shop",
+      "role": [
+        "trader"
+      ],
+      "buys": [
+        {
+          "n": "Sword",
+          "p": 25
+        },
+        {
+          "n": "Mace",
+          "p": 30
+        }
+      ],
+      "sells": [
+        {
+          "n": "Dagger",
+          "p": 5
+        },
+        {
+          "n": "Rapier",
+          "p": 15
+        },
+        {
+          "n": "Sabre",
+          "p": 25
+        },
+        {
+          "n": "Sword",
+          "p": 85
+        },
+        {
+          "n": "Mace",
+          "p": 90
+        },
+        {
+          "n": "Club",
+          "p": 5
+        },
+        {
+          "n": "Leather Armor",
+          "p": 25
+        },
+        {
+          "n": "Chain Armor",
+          "p": 200
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "Weapon shop in Rookgaard for new players."
+    },
+    {
+      "name": "Seymour",
+      "city": "Rookgaard",
+      "loc": "Rookgaard Academy",
+      "role": [
+        "quest",
+        "other"
+      ],
+      "buys": [],
+      "sells": [],
+      "transport": [],
+      "quest": "Rookgaard Tutorial",
+      "notes": "Tutorial NPC in Rookgaard Academy. New players start here."
+    },
+    {
+      "name": "Sharonka",
+      "city": "Carlin",
+      "loc": "Carlin general store",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Rope",
+          "p": 50
+        },
+        {
+          "n": "Shovel",
+          "p": 50
+        },
+        {
+          "n": "Pick",
+          "p": 50
+        },
+        {
+          "n": "Torch",
+          "p": 2
+        },
+        {
+          "n": "Fishing Rod",
+          "p": 150
+        },
+        {
+          "n": "Bag",
+          "p": 5
+        },
+        {
+          "n": "Backpack",
+          "p": 20
+        },
+        {
+          "n": "Machete",
+          "p": 35
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Carlin."
+    },
+    {
+      "name": "Bezil",
+      "city": "Edron",
+      "loc": "Edron general store",
+      "role": [
+        "trader"
+      ],
+      "buys": [],
+      "sells": [
+        {
+          "n": "Rope",
+          "p": 50
+        },
+        {
+          "n": "Shovel",
+          "p": 50
+        },
+        {
+          "n": "Pick",
+          "p": 50
+        },
+        {
+          "n": "Torch",
+          "p": 2
+        },
+        {
+          "n": "Fishing Rod",
+          "p": 150
+        },
+        {
+          "n": "Bag",
+          "p": 5
+        },
+        {
+          "n": "Backpack",
+          "p": 20
+        }
+      ],
+      "transport": [],
+      "quest": null,
+      "notes": "General tools shop in Edron."
+    }
+  ]
+}

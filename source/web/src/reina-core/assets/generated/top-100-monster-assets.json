@@ -76,7 +76,7 @@
     "experience": 2000000,
     "health": 300000,
     "lootEntryCount": 0,
-    "hasImage": false,
+    "hasImage": true,
     "priorityScore": 20300
   },
   {
@@ -586,7 +586,7 @@
     "experience": 75000,
     "health": 75000,
     "lootEntryCount": 32,
-    "hasImage": false,
+    "hasImage": true,
     "priorityScore": 1145
   },
   {
@@ -736,7 +736,7 @@
     "experience": 50000,
     "health": 150000,
     "lootEntryCount": 35,
-    "hasImage": false,
+    "hasImage": true,
     "priorityScore": 1000
   },
   {
@@ -906,7 +906,7 @@
     "experience": 55000,
     "health": 75000,
     "lootEntryCount": 23,
-    "hasImage": false,
+    "hasImage": true,
     "priorityScore": 855
   },
   {

@@ -32,6 +32,7 @@ export type NpcRelatedItem = {
   itemId: number | null;
   itemName: string;
   price: number | null;
+  tradeType: "npcBuys" | "npcSells" | "reference";
   imagePath: string;
   hasImage: boolean;
   itemHref: string | null;
