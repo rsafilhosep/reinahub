@@ -6,7 +6,7 @@ import { HelpTip, HelpToggle } from "@/components/Help";
 import { Modal } from "@/components/Modal";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
 import { Tabs } from "@/components/Tabs";
-import { integer, moneySmart } from "@/services/format";
+import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { StorageService } from "@/services/storage-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import { RcCalculatorService } from "@/source/web/src/features/rc-calculator/services/rc-calculator-service";
@@ -54,6 +54,7 @@ export default function CalculadoraRcPage() {
   }, [precoPacote, quantidade, cotacao, gold, goldMochila, goldBanco, server?.lote]);
 
   const currencyName = server?.moeda ?? "moeda premium";
+  const currencyShort = currencyShortName(currencyName) || currencyName;
   const loteBase = server?.lote ?? 25;
   const quickConversion = useMemo(
     () => convertQuickValue(quickConverterMode, quickConverterValue, cotacao, precoPacote / loteBase),
@@ -124,12 +125,12 @@ export default function CalculadoraRcPage() {
             </p>
           </Panel>
           <div className="slots">
-            <ResultSlot label={`${currencyName} calculadas`} value={`${integer(calc.normalizedQuantidade)} ${server?.moeda ?? ""}`} />
-            <ResultSlot label={`Preco de 1 ${currencyName}`} value={<MoneyValue value={calc.precoMoeda} />} tone="small" />
+            <ResultSlot label={`${currencyShort} calculadas`} value={`${integer(calc.normalizedQuantidade)} ${currencyShort}`} />
+            <ResultSlot label={`Preco de 1 ${currencyShort}`} value={<MoneyValue value={calc.precoMoeda} />} tone="small" />
             <ResultSlot label="Valor total em R$" value={<MoneyValue value={calc.valorTotal} />} tone="gold" />
             <ResultSlot label="Gold necessario" value={`${integer(calc.totalGold)} gold`} />
-            <ResultSlot label={<HelpLabel text={`${currencyName} possiveis (exato)`} help="Resultado fracionado. Ele mostra a conversao matematica exata do seu gold, mesmo que o jogo negocie apenas lotes inteiros." />} value={moneySmart(calc.moedasPossiveisExatas, 8)} />
-            <ResultSlot label={`${currencyName} compraveis em lote`} value={integer(calc.rcPossiveis)} />
+            <ResultSlot label={<HelpLabel text={`${currencyShort} possiveis (exato)`} help="Resultado fracionado. Ele mostra a conversao matematica exata do seu gold, mesmo que o jogo negocie apenas lotes inteiros." />} value={`${moneySmart(calc.moedasPossiveisExatas, 8)} ${currencyShort}`} />
+            <ResultSlot label={`${currencyShort} compraveis em lote`} value={`${integer(calc.rcPossiveis)} ${currencyShort}`} />
             <ResultSlot label="Valor possivel em reais" value={<MoneyValue value={calc.valorPossivel} />} tone="gold" />
             <ResultSlot label="Valor de 1 gold" value={<MoneyValue value={calc.preco1Gc} maxDecimals={10} />} />
             <ResultSlot label="Valor de 100 gold" value={<MoneyValue value={calc.preco100Gc} maxDecimals={10} />} />
@@ -146,7 +147,7 @@ export default function CalculadoraRcPage() {
                 {[
                   { key: "gold", label: "Digitar gold" },
                   { key: "brl", label: "Digitar R$" },
-                  { key: "premium", label: `Digitar ${currencyName}` }
+                  { key: "premium", label: `Digitar ${currencyShort}` }
                 ].map((mode) => (
                   <button
                     className={`quick-btn${quickConverterMode === mode.key ? " primary" : ""}`}
@@ -161,7 +162,7 @@ export default function CalculadoraRcPage() {
                   </button>
                 ))}
               </div>
-              <Field label={getQuickConverterLabel(quickConverterMode, currencyName)}>
+              <Field label={getQuickConverterLabel(quickConverterMode, currencyShort)}>
                 <input
                   inputMode="decimal"
                   value={quickConverterMode === "gold" ? formatIntegerString(quickConverterValue) : quickConverterValue}
@@ -170,12 +171,12 @@ export default function CalculadoraRcPage() {
                 />
               </Field>
               <div className="slots">
-                <ResultSlot label="Gold Coins" value={`${integer(quickConversion.gold)} gold`} tone="gold" />
-                <ResultSlot label={currencyName} value={moneySmart(quickConversion.premium, 8)} />
+                <ResultSlot label="GC" value={`${integer(quickConversion.gold)} GC`} tone="gold" />
+                <ResultSlot label={currencyShort} value={`${moneySmart(quickConversion.premium, 8)} ${currencyShort}`} />
                 <ResultSlot label="Valor em reais" value={<MoneyValue value={quickConversion.brl} />} tone="gold" />
               </div>
               <p className="note">
-                Conversao rapida usando {integer(cotacao)} gold por 1 {currencyName} e R$ {moneySmart(precoPacote / loteBase)} por {currencyName}.
+                Conversao rapida usando {integer(cotacao)} gold por 1 {currencyShort} e R$ {moneySmart(precoPacote / loteBase)} por {currencyShort}.
               </p>
             </div>
           </Modal>
@@ -186,7 +187,7 @@ export default function CalculadoraRcPage() {
         <Panel title="Cotas de mercado" eyebrow="compra vs venda">
           <div className="market-grid">
             <div className="market-card"><div className="label">Servidor ativo</div><div className="value gold">{ReinaEconomyService.getDisplayName(server)}</div></div>
-            <div className="market-card"><div className="label">Lote base</div><div className="value">{server?.lote ?? 25} {server?.moeda ?? ""}</div></div>
+            <div className="market-card"><div className="label">Lote base</div><div className="value">{server?.lote ?? 25} {currencyShort}</div></div>
             <div className="market-card"><div className="label">Preco unitario venda</div><div className="value">R$ {moneySmart((server?.loteVenda ?? precoPacote) / (server?.lote ?? 25))}</div></div>
             <div className="market-card"><div className="label">Preco unitario compra</div><div className="value red">R$ {moneySmart((server?.loteCompra ?? precoPacote) / (server?.lote ?? 25))}</div></div>
             <div className="market-card"><div className="label">Spread</div><div className="value gold">R$ {moneySmart(((server?.loteCompra ?? precoPacote) - (server?.loteVenda ?? precoPacote)) / (server?.lote ?? 25))}</div></div>
@@ -213,7 +214,7 @@ export default function CalculadoraRcPage() {
             </div>
             <div className="history-list">
               {history.length ? history.slice().reverse().map((entry) => (
-                <div className="history-item" key={entry.ts}><span>{new Date(entry.ts).toLocaleString("pt-BR")}</span><span>{integer(entry.gcPorMoeda)} gc/{entry.moeda} - R$ {moneySmart(entry.unitVenda * (server?.lote ?? 25))}</span></div>
+                <div className="history-item" key={entry.ts}><span>{new Date(entry.ts).toLocaleString("pt-BR")}</span><span>{integer(entry.gcPorMoeda)} GC/{currencyShortName(entry.moeda)} - R$ {moneySmart(entry.unitVenda * (server?.lote ?? 25))}</span></div>
               )) : <div className="empty-msg">Nenhuma cotacao salva ainda.</div>}
             </div>
           </Panel>

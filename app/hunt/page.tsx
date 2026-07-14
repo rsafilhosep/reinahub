@@ -8,8 +8,10 @@ import html2canvas from "html2canvas";
 import Link from "next/link";
 import { AppShell } from "@/components/AppShell";
 import { CollapsiblePanel } from "@/components/CollapsiblePanel";
+import { EmptyState } from "@/components/EmptyState";
 import { MonsterAvatar } from "@/components/GameAvatar";
 import { Panel } from "@/components/Panel";
+import { ToolGuide } from "@/components/ToolGuide";
 import { integer, money } from "@/services/format";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE, getMonsterImagePath } from "@/source/web/src/reina-core/assets";
 import { ReinaActiveContextService } from "@/source/web/src/reina-core/active-context";
@@ -221,6 +223,35 @@ export default function HuntPage() {
 
   return (
     <AppShell current="hunt" mark="HA" subtitle="Hunt Analyzer - loot - exportacao">
+      <ToolGuide
+        title="Fluxo recomendado"
+        summary="Importe uma hunt, confira o resumo, revise loot/imbuements e gere o card apenas quando quiser compartilhar."
+        steps={[
+          {
+            moduleKey: "hunt",
+            title: "1. Importar ou colar",
+            description: "Use arquivo JSON/TXT ou cole o texto copiado do Session Analyzer."
+          },
+          {
+            moduleKey: "cotacao",
+            title: "2. Conferir contexto",
+            description: "O balance usa o servidor ativo para converter GC em moeda premium e reais.",
+            href: "/cotacao"
+          },
+          {
+            moduleKey: "imbuement",
+            title: "3. Revisar imbuements",
+            description: "Materiais encontrados podem usar precos de Market salvos no Imbuement Database.",
+            href: "/imbuements"
+          },
+          {
+            moduleKey: "live-goal",
+            title: "4. Compartilhar",
+            description: "Gere PNG/PDF da hunt ou use metas no Live Goal para acompanhar progresso.",
+            href: "/live-goal"
+          }
+        ]}
+      />
       {!summary ? (
         <>
           <div className="tabs">
@@ -543,7 +574,11 @@ function HuntHistoryPanel({
   if (!history.length) {
     return (
       <Panel title="Historico de hunts" eyebrow="salvo localmente">
-        <div className="empty-msg">Nenhuma hunt salva ainda. Ao processar uma hunt, ela entra aqui automaticamente.</div>
+        <EmptyState
+          moduleKey="hunt"
+          title="Nenhuma hunt salva ainda"
+          description="Importe um arquivo JSON/TXT ou cole o texto do Session Analyzer. Depois disso, o ReinaHub monta historico, graficos, comparacoes e exportacoes."
+        />
       </Panel>
     );
   }
@@ -625,7 +660,13 @@ function HuntHistoryPanel({
               </span>
             </div>
           ))}
-          {!filteredHistory.length ? <div className="empty-msg">Nenhuma hunt encontrada para este periodo.</div> : null}
+          {!filteredHistory.length ? (
+            <EmptyState
+              moduleKey="hunt"
+              title="Nenhuma hunt neste filtro"
+              description="Altere o periodo ou importe novas hunts para preencher esta lista."
+            />
+          ) : null}
         </div>
       </CollapsiblePanel>
 
@@ -695,11 +736,19 @@ function HuntHistoryPanel({
                 </div>
               </>
             ) : (
-              <div className="empty-msg">Escolha duas hunts diferentes para comparar.</div>
+              <EmptyState
+                moduleKey="hunt"
+                title="Escolha duas hunts diferentes"
+                description="Use uma sessao como base e outra como comparacao para ver diferencas de balance, XP, loot e monstros."
+              />
             )}
           </>
         ) : (
-          <div className="empty-msg">Salve pelo menos duas hunts para comparar.</div>
+          <EmptyState
+            moduleKey="hunt"
+            title="Comparacao ainda indisponivel"
+            description="Salve pelo menos duas hunts no mesmo contexto para liberar comparacao entre sessoes."
+          />
         )}
       </CollapsiblePanel>
 

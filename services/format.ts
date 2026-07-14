@@ -19,6 +19,19 @@ export function integer(value: number) {
   return Math.round(value).toLocaleString("pt-BR");
 }
 
+export function currencyShortName(value?: string | null) {
+  const normalized = String(value ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, " ");
+
+  if (!normalized) return "";
+  if (["tc", "tibia coin", "tibia coins"].includes(normalized)) return "TC";
+  if (["rc", "rubini coin", "rubini coins", "rubin coin", "rubin coins"].includes(normalized)) return "RC";
+  if (["gc", "gold coin", "gold coins", "gold"].includes(normalized)) return "GC";
+  return String(value ?? "").trim();
+}
+
 export function parseGameNumber(value: string | number | undefined) {
   if (typeof value === "number") return value;
   if (!value) return 0;

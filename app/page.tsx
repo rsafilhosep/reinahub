@@ -10,6 +10,7 @@ import assetsReport from "@/source/web/src/reina-core/assets/generated/assets-re
 import items from "@/source/web/src/reina-core/database/generated/items.json";
 import monsters from "@/source/web/src/reina-core/database/generated/monsters.json";
 import npcs from "@/source/web/src/reina-core/database/generated/npcs.json";
+import { getLatestUpdates } from "@/source/web/src/reina-core/updates/updates";
 
 const quickAccess = [
   {
@@ -157,6 +158,7 @@ const sections = [
 ];
 
 const assetTotals = assetsReport.totals;
+const latestUpdates = getLatestUpdates(3);
 
 export default function Home() {
   return (
@@ -189,6 +191,29 @@ export default function Home() {
                 <div className="value small" style={{ color: "var(--gold)" }}>{step.title}</div>
                 <div className="note">{step.description}</div>
               </div>
+            </Link>
+          ))}
+        </div>
+      </Panel>
+
+      <Panel title="Atualizacoes recentes" eyebrow="O que ha de novo">
+        <div className="updates-preview-head">
+          <p className="note">
+            Um resumo das ultimas melhorias para voce acompanhar o rumo do projeto.
+          </p>
+          <Link className="quick-btn" href="/updates">Ver todas</Link>
+        </div>
+        <div className="updates-preview-grid">
+          {latestUpdates.map((update) => (
+            <Link className="update-preview-card" href="/updates" key={update.id}>
+              <div className="dashboard-card-head">
+                <ModuleIcon moduleKey="updates" size={38} />
+                <div>
+                  <div className="label">{update.date}</div>
+                  <div className="value small" style={{ color: "var(--gold)" }}>{update.title}</div>
+                </div>
+              </div>
+              <div className="note">{update.summary}</div>
             </Link>
           ))}
         </div>

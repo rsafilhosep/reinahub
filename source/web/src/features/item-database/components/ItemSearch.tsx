@@ -55,7 +55,9 @@ export function ItemSearch({ query, results, loading, onQueryChange, onSelectIte
         ))}
       </div>
 
-      {!loading && query.trim() && results.length === 0 ? <div className="empty-msg">Nenhum item encontrado.</div> : null}
+      {!loading && query.trim() && results.length === 0 ? (
+        <div className="empty-msg">Nenhum item encontrado. Tente o nome em ingles, parte do nome ou verifique acentos/apostrofos.</div>
+      ) : null}
     </div>
   );
 }

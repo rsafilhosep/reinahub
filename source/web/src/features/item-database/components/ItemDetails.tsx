@@ -3,6 +3,7 @@
 import { ChevronDown, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { EmptyState } from "@/components/EmptyState";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { ItemDatabaseRecord } from "../types";
 import type { ItemDroppedByMonster, ItemNpcTradeReference } from "../types";
@@ -35,7 +36,13 @@ export function ItemDetails({ item }: { item: ItemDatabaseRecord | null }) {
   }, [item?.id, item?.boughtByNpcCount, item?.soldByNpcCount, item?.droppedByCount]);
 
   if (!item) {
-    return <div className="empty-msg">Selecione um item para ver os detalhes.</div>;
+    return (
+      <EmptyState
+        moduleKey="items"
+        title="Escolha um item"
+        description="Pesquise ou selecione um item para ver preco NPC, NPCs compradores/vendedores, monstros que dropam e asset local."
+      />
+    );
   }
 
   return (

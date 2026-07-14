@@ -65,7 +65,9 @@ export function MonsterSearch({
         ))}
       </div>
 
-      {!loading && (query.trim() || hasActiveFilter) && results.length === 0 ? <div className="empty-msg">Nenhum monstro encontrado.</div> : null}
+      {!loading && (query.trim() || hasActiveFilter) && results.length === 0 ? (
+        <div className="empty-msg">Nenhum monstro encontrado. Tente parte do nome, outra classe ou remova o filtro ativo.</div>
+      ) : null}
     </div>
   );
 }

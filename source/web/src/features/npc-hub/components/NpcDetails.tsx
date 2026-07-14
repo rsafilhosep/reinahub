@@ -1,12 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { EmptyState } from "@/components/EmptyState";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import type { NpcHubRecord } from "../types";
 
 export function NpcDetails({ npc }: { npc: NpcHubRecord | null }) {
   if (!npc) {
-    return <div className="empty-msg">Selecione um NPC para ver os detalhes.</div>;
+    return (
+      <EmptyState
+        moduleKey="npcs"
+        title="Escolha um NPC"
+        description="Pesquise ou selecione um NPC para ver cidade, itens comprados, itens vendidos e links para a base de itens."
+      />
+    );
   }
 
   return (

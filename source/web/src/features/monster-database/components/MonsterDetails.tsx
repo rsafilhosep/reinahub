@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { EmptyState } from "@/components/EmptyState";
 import { useEffect, useMemo, useState } from "react";
 import { integer, moneySmart } from "@/services/format";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
@@ -20,7 +21,13 @@ export function MonsterDetails({ monster }: { monster: MonsterDatabaseRecord | n
   const pricedLootCount = useMemo(() => monster?.loot.filter((loot) => loot.sellPrice && loot.sellPrice > 0).length ?? 0, [monster]);
 
   if (!monster) {
-    return <div className="empty-msg">Selecione um monstro para ver os detalhes.</div>;
+    return (
+      <EmptyState
+        moduleKey="monsters"
+        title="Escolha um monstro"
+        description="Pesquise ou selecione um monstro para ver XP, vida, loot, preco NPC dos itens e links para a base de itens."
+      />
+    );
   }
 
   return (

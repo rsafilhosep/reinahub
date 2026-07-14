@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { EmptyState } from "@/components/EmptyState";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
-import { integer, moneySmart } from "@/services/format";
+import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { ReinaActiveContextService } from "@/source/web/src/reina-core/active-context";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import type { VaultServer } from "@/types/vault";
@@ -31,6 +32,7 @@ export function PremiumGoalsPage() {
   const costInUse = override?.cost ?? product?.defaultCost ?? 0;
   const calculation = useMemo(() => PremiumGoalsService.calculate(productId, server, ownedPremium), [productId, server, ownedPremium, costInUse]);
   const estimate = useMemo(() => GoalProgressEstimatorService.estimatePremiumGoal(calculation, server), [calculation, server]);
+  const currencyShort = currencyShortName(server?.moeda) || "moeda premium";
 
   useEffect(() => {
     setOverrideCost(costInUse);
@@ -67,11 +69,11 @@ export function PremiumGoalsPage() {
               ))}
             </select>
           </Field>
-          <Field label={`Quanto voce ja tem (${server?.moeda ?? "moeda premium"})`}>
-            <input type="number" value={ownedPremium} onChange={(event) => setOwnedPremium(Number(event.target.value))} />
+          <Field label={`Quanto voce ja tem (${currencyShort})`}>
+            <IntegerInput value={ownedPremium} onChange={setOwnedPremium} />
           </Field>
-          <Field label={`Preco neste servidor (${server?.moeda ?? "moeda premium"})`}>
-            <input type="number" value={overrideCost} onChange={(event) => setOverrideCost(Number(event.target.value))} />
+          <Field label={`Preco neste servidor (${currencyShort})`}>
+            <IntegerInput value={overrideCost} onChange={setOverrideCost} />
           </Field>
         </div>
         <div className="quick-row">
@@ -90,16 +92,16 @@ export function PremiumGoalsPage() {
             <div className="label">Objetivo ativo</div>
             <div className="value gold">{calculation.product.name}</div>
             <div className="note">
-              {ReinaEconomyService.getDisplayName(server)} - custa {integer(calculation.cost)} {calculation.currencyName}
+              {ReinaEconomyService.getDisplayName(server)} - custa {integer(calculation.cost)} {currencyShortName(calculation.currencyName)}
               {override ? " neste servidor" : " pelo padrao do catalogo"}
             </div>
           </div>
 
           <div className="slots">
-            <ResultSlot label="Custo total" value={`${integer(calculation.cost)} ${calculation.currencyName}`} tone="gold" />
-            <ResultSlot label="Voce ja tem" value={`${integer(calculation.ownedPremium)} ${calculation.currencyName}`} />
-            <ResultSlot label="Falta" value={`${integer(calculation.missingPremium)} ${calculation.currencyName}`} tone="gold" />
-            <ResultSlot label="Gold necessario" value={`${integer(calculation.missingGold)} gold`} />
+            <ResultSlot label="Custo total" value={`${integer(calculation.cost)} ${currencyShortName(calculation.currencyName)}`} tone="gold" />
+            <ResultSlot label="Voce ja tem" value={`${integer(calculation.ownedPremium)} ${currencyShortName(calculation.currencyName)}`} />
+            <ResultSlot label="Falta" value={`${integer(calculation.missingPremium)} ${currencyShortName(calculation.currencyName)}`} tone="gold" />
+            <ResultSlot label="Gold necessario" value={`${integer(calculation.missingGold)} GC`} />
             <ResultSlot label="Valor para vender" value={`R$ ${moneySmart(calculation.missingBrlVenda)}`} tone="red" />
             <ResultSlot label="Custo para comprar" value={`R$ ${moneySmart(calculation.missingBrlCompra)}`} />
           </div>
@@ -120,15 +122,25 @@ export function PremiumGoalsPage() {
                 </p>
               </>
             ) : (
-              <div className="empty-msg">
-                Importe hunts no Hunt Analyzer neste perfil/personagem para estimar quantas horas faltam ate a meta.
-              </div>
+              <EmptyState
+                actionHref="/hunt"
+                actionLabel="Abrir Hunt Analyzer"
+                moduleKey="hunt"
+                title="Sem hunts para estimar tempo"
+                description="Importe hunts neste perfil/personagem para o ReinaHub calcular quantas horas ou sessoes faltam ate a meta."
+              />
             )}
           </Panel>
         </>
       ) : (
         <Panel title="Configure a cotacao" eyebrow="servidor ativo">
-          <div className="empty-msg">Cadastre ou selecione um servidor na Cotacao Central.</div>
+          <EmptyState
+            actionHref="/cotacao"
+            actionLabel="Abrir Cotacao Central"
+            moduleKey="cotacao"
+            title="Cotacao necessaria"
+            description="Selecione ou cadastre um servidor ativo para converter custo em TC/RC, GC e reais."
+          />
         </Panel>
       )}
 
@@ -140,7 +152,7 @@ export function PremiumGoalsPage() {
                 {item.name}
                 <span className="note" style={{ marginLeft: 10 }}>{item.category} - {item.availability}</span>
               </span>
-              <span style={{ color: "var(--gold)" }}>{integer(item.defaultCost)} moeda premium</span>
+              <span style={{ color: "var(--gold)" }}>{integer(item.defaultCost)} {currencyShort}</span>
             </div>
           ))}
         </div>
@@ -153,4 +165,19 @@ function formatHours(value: number) {
   if (!Number.isFinite(value)) return "-";
   if (value < 1) return `${Math.ceil(value * 60)} min`;
   return `${value.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}h`;
+}
+
+function IntegerInput({ value, onChange }: { value: number; onChange: (value: number) => void }) {
+  return (
+    <input
+      inputMode="numeric"
+      value={value > 0 ? integer(value) : ""}
+      onChange={(event) => onChange(parseIntegerInput(event.target.value))}
+    />
+  );
+}
+
+function parseIntegerInput(value: string) {
+  const digits = value.replace(/\D/g, "");
+  return digits ? Number(digits) : 0;
 }

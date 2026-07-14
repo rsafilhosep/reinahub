@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
+import { EmptyState } from "@/components/EmptyState";
 import { integer, money, moneySmart } from "@/services/format";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
@@ -67,7 +68,13 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
   }, [imbuement, marketPrices, server]);
 
   if (!imbuement) {
-    return <div className="empty-msg">Selecione um imbuement para ver os materiais.</div>;
+    return (
+      <EmptyState
+        moduleKey="imbuement"
+        title="Escolha um imbuement"
+        description="Selecione um imbuement na lista ao lado para ver materiais, referencia NPC, preco de Market, equivalencia em moeda premium e fontes de drop."
+      />
+    );
   }
 
   const activeImbuement = imbuement;

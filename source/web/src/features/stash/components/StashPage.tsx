@@ -4,9 +4,11 @@ import { Pencil, Plus, Trash2 } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { CollapsiblePanel } from "@/components/CollapsiblePanel";
+import { EmptyState } from "@/components/EmptyState";
 import { Modal } from "@/components/Modal";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
-import { integer, moneySmart } from "@/services/format";
+import { ToolGuide } from "@/components/ToolGuide";
+import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { loadServers } from "@/services/quote-service";
 import { MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
@@ -192,12 +194,42 @@ export function StashPage() {
     <>
       <ProfileSelector onChange={() => setItems(StashService.loadItems())} />
 
+      <ToolGuide
+        title="Como organizar seu stash"
+        summary="Use o perfil ativo, adicione itens manualmente e deixe o ReinaHub calcular GC, moeda premium e reais."
+        steps={[
+          {
+            moduleKey: "characters",
+            title: "1. Perfil correto",
+            description: "Garanta que personagem, mundo e servidor ativos representam esse stash.",
+            href: "/characters"
+          },
+          {
+            moduleKey: "stash",
+            title: "2. Adicionar itens",
+            description: "Busque o item na base local, informe quantidade e preco unitario em GC."
+          },
+          {
+            moduleKey: "cotacao",
+            title: "3. Converter valores",
+            description: "A Cotacao Central transforma o patrimonio em TC/RC e reais.",
+            href: "/cotacao"
+          },
+          {
+            moduleKey: "market",
+            title: "4. Revisar precos",
+            description: "Use Market Analyzer quando quiser comparar NPC, market e margem.",
+            href: "/market"
+          }
+        ]}
+      />
+
       <Panel title="Patrimonio do stash" eyebrow="base local - manual">
         <div className="slots">
           <ResultSlot label="Itens cadastrados" value={integer(totals.totalItems)} />
           <ResultSlot label="Quantidade total" value={integer(totals.totalQuantity)} />
           <ResultSlot label="Valor total GC" value={`${integer(totals.totalGold)} GC`} tone="gold" />
-          <ResultSlot label={server ? `Valor em ${server.moeda}` : "Valor em moeda premium"} value={server ? moneySmart(totals.totalPremium) : "-"} />
+          <ResultSlot label={server ? `Valor em ${currencyShortName(server.moeda)}` : "Valor em moeda premium"} value={server ? `${moneySmart(totals.totalPremium)} ${currencyShortName(server.moeda)}` : "-"} />
           <ResultSlot label="Valor para vender" value={`R$ ${moneySmart(totals.totalBrlVenda)}`} tone="gold" />
           <ResultSlot label="Custo para comprar" value={`R$ ${moneySmart(totals.totalBrlCompra)}`} />
         </div>
@@ -402,7 +434,13 @@ export function StashPage() {
             onEditItem={openEditItemModal}
             onRemove={removeItem}
           />
-        ) : <div className="empty-msg">Nenhum item no stash ainda.</div>}
+        ) : (
+          <EmptyState
+            moduleKey="stash"
+            title="Seu stash ainda esta vazio"
+            description="Adicione o primeiro item para calcular patrimonio em GC, moeda premium e reais usando o perfil ativo."
+          />
+        )}
       </CollapsiblePanel>
 
       <CollapsiblePanel

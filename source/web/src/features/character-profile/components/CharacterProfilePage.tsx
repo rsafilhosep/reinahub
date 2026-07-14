@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLink, Pencil, Plus, Save, Search, Trash2 } from "lucide-react";
+import { ExternalLink, Pencil, Plus, Save, Search, Trash2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { CollapsiblePanel } from "@/components/CollapsiblePanel";
 import { Modal } from "@/components/Modal";
@@ -12,6 +12,7 @@ import worldCatalog from "@/source/web/src/reina-core/worlds/generated/world-cat
 import { HuntHistoryService, type HuntHistoryRecord } from "@/source/web/src/features/hunt-analyzer/services/hunt-history-service";
 import { CharacterProfileService, getExperienceForLevel } from "../services/character-profile-service";
 import type { CharacterLookupResult, CharacterPlatform, CharacterProfile, CharacterVocation } from "../types/character-profile.types";
+import type { MonsterSearchResult } from "@/source/web/src/features/monster-database/types";
 
 const platforms: CharacterPlatform[] = ["Tibia Global", "RubinOT", "DeusOT", "Taleon", "OTServer", "Outro"];
 const vocations: CharacterVocation[] = [
@@ -44,6 +45,10 @@ export function CharacterProfilePage() {
   const [isLookupLoading, setIsLookupLoading] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
   const [lookupOpen, setLookupOpen] = useState(false);
+  const [monsterQuery, setMonsterQuery] = useState("");
+  const [monsterResults, setMonsterResults] = useState<MonsterSearchResult[]>([]);
+  const [selectedMonsters, setSelectedMonsters] = useState<Array<MonsterSearchResult & { xpOverride?: number }>>([]);
+  const [isMonsterLoading, setIsMonsterLoading] = useState(false);
 
   useEffect(() => {
     const sync = () => {
@@ -71,11 +76,54 @@ export function CharacterProfilePage() {
     () => (xpInfo ? calculateProgressPlan(xpInfo.missingToTargetLevel, plannerXpHour, hoursPerDay, sessionHours) : null),
     [xpInfo, plannerXpHour, hoursPerDay, sessionHours]
   );
+  const monsterKillPlans = useMemo(
+    () =>
+      xpInfo
+        ? selectedMonsters.map((monster) => ({
+            monster,
+            plan: calculateMonsterKillPlan(
+              xpInfo.missingToNextLevel,
+              xpInfo.missingToTargetLevel,
+              monster.xpOverride && monster.xpOverride > 0 ? monster.xpOverride : monster.experience
+            )
+          }))
+        : [],
+    [selectedMonsters, xpInfo]
+  );
   const lookupUrl = character ? CharacterProfileService.getCharacterLookupUrl(character) : "";
   const filteredWorlds = useMemo(
     () => worldCatalogEntries.filter((entry) => entry.platform === character?.platform),
     [character?.platform]
   );
+
+  useEffect(() => {
+    const query = monsterQuery.trim();
+    if (query.length < 2) {
+      setMonsterResults([]);
+      setIsMonsterLoading(false);
+      return;
+    }
+
+    const controller = new AbortController();
+    setIsMonsterLoading(true);
+    const timeout = window.setTimeout(async () => {
+      try {
+        const params = new URLSearchParams({ query });
+        const response = await fetch(`/api/monsters?${params.toString()}`, { signal: controller.signal });
+        const result = (await response.json()) as { results?: MonsterSearchResult[] };
+        setMonsterResults(result.results ?? []);
+      } catch {
+        if (!controller.signal.aborted) setMonsterResults([]);
+      } finally {
+        if (!controller.signal.aborted) setIsMonsterLoading(false);
+      }
+    }, 180);
+
+    return () => {
+      controller.abort();
+      window.clearTimeout(timeout);
+    };
+  }, [monsterQuery]);
 
   function patch(next: Partial<CharacterProfile>) {
     if (!character) return;
@@ -128,6 +176,25 @@ export function CharacterProfilePage() {
     const selected = CharacterProfileService.getCharactersForProfile(ReinaActiveContextService.getActiveContext().profileId).find((row) => row.id === id) ?? null;
     setCharacter(selected);
     setMessage("");
+  }
+
+  function selectMonster(monster: MonsterSearchResult) {
+    setSelectedMonsters((current) => {
+      if (current.some((row) => row.name === monster.name)) return current;
+      return [...current, monster];
+    });
+    setMonsterQuery("");
+    setMonsterResults([]);
+  }
+
+  function removeMonsterFromPlan(monsterName: string) {
+    setSelectedMonsters((current) => current.filter((monster) => monster.name !== monsterName));
+  }
+
+  function updateMonsterXp(monsterName: string, xpOverride: number) {
+    setSelectedMonsters((current) =>
+      current.map((monster) => (monster.name === monsterName ? { ...monster, xpOverride } : monster))
+    );
   }
 
   async function lookupCharacter() {
@@ -301,6 +368,91 @@ export function CharacterProfilePage() {
             ? `Faltam ${formatNumber(xpInfo.missingToTargetLevel)} XP. Com esse ritmo, voce chega no level ${xpInfo.targetLevel} em aproximadamente ${formatHours(progressPlan.hoursNeeded)}.`
             : "Importe uma hunt no Hunt Analyzer ou informe um XP/h manual para estimar o tempo ate o level alvo."}
         </p>
+      </CollapsiblePanel>
+
+      <CollapsiblePanel
+        title="Calculadora por criatura"
+        eyebrow="kills para upar"
+        summary={
+          monsterKillPlans.length
+            ? `${formatNumber(monsterKillPlans.length)} criatura(s) comparadas para o proximo level.`
+            : "Escolha criaturas para calcular quantas kills faltam para passar de level."
+        }
+      >
+        <div className="character-monster-planner">
+          <div className="inputs-grid compact">
+            <Field label="Criatura">
+              <input
+                value={monsterQuery}
+                onChange={(event) => setMonsterQuery(event.target.value)}
+                placeholder="Ex: Corym Charlatan, Dragon, Rat"
+              />
+            </Field>
+            <Field label="Como funciona">
+              <input value="Cada criatura calcula separada, sem somar com as outras." readOnly />
+            </Field>
+          </div>
+
+          {monsterResults.length || isMonsterLoading ? (
+            <div className="monster-kill-results">
+              {isMonsterLoading ? <div className="empty-msg">Buscando criatura...</div> : null}
+              {monsterResults.slice(0, 8).map((monster) => (
+                <button
+                  className={`monster-kill-option${selectedMonsters.some((row) => row.name === monster.name) ? " active" : ""}`}
+                  key={monster.name}
+                  type="button"
+                  onClick={() => selectMonster(monster)}
+                >
+                  <img src={monster.image.path} alt="" loading="lazy" />
+                  <span>
+                    <strong>{monster.name}</strong>
+                    <small>{formatNumber(monster.experience)} XP por kill</small>
+                  </span>
+                </button>
+              ))}
+            </div>
+          ) : null}
+
+          {monsterKillPlans.length ? (
+            <div className="monster-kill-plan-list">
+              {monsterKillPlans.map(({ monster, plan }) => (
+                <div className="monster-kill-plan-row" key={monster.name}>
+                  <div className="monster-kill-plan-title">
+                    <img src={monster.image.path} alt="" loading="lazy" />
+                    <span>
+                      <strong>{monster.name}</strong>
+                      <small>{monster.health ? `${formatNumber(monster.health)} HP` : "criatura selecionada"}</small>
+                    </span>
+                  </div>
+                  <label>
+                    <span>XP/kill</span>
+                    <IntegerInput
+                      value={monster.xpOverride || monster.experience}
+                      onChange={(value) => updateMonsterXp(monster.name, value)}
+                    />
+                  </label>
+                  <div>
+                    <span>Proximo level</span>
+                    <strong>{plan ? `${formatNumber(plan.killsToNextLevel)} kills` : "-"}</strong>
+                  </div>
+                  <div>
+                    <span>Ate level {xpInfo.targetLevel}</span>
+                    <strong>{plan ? `${formatNumber(plan.killsToTargetLevel)} kills` : "-"}</strong>
+                  </div>
+                  <button className="icon-btn danger" type="button" onClick={() => removeMonsterFromPlan(monster.name)} aria-label={`Remover ${monster.name}`}>
+                    <X size={15} />
+                  </button>
+                </div>
+              ))}
+            </div>
+          ) : null}
+
+          <p className="note">
+            {monsterKillPlans.length
+              ? `Faltam ${formatNumber(xpInfo.missingToNextLevel)} XP para o level ${xpInfo.level + 1}. Cada linha mostra quantas kills daquela criatura seriam necessarias sozinha.`
+              : "A conta usa a experiencia base da criatura. Se o servidor tiver XP diferente, edite o XP/kill na propria linha."}
+          </p>
+        </div>
       </CollapsiblePanel>
 
       <CollapsiblePanel
@@ -582,6 +734,17 @@ function calculateProgressPlan(missingExperience: number, xpHour: number, hoursP
     hoursNeeded,
     sessionsNeeded: Math.ceil(hoursNeeded / safeSessionHours),
     daysNeeded: Math.ceil(hoursNeeded / safeHoursPerDay)
+  };
+}
+
+function calculateMonsterKillPlan(missingToNextLevel: number, missingToTargetLevel: number, xpPerKill: number) {
+  const safeXpPerKill = Math.max(0, Math.trunc(Number(xpPerKill) || 0));
+  if (!safeXpPerKill) return null;
+
+  return {
+    xpPerKill: safeXpPerKill,
+    killsToNextLevel: Math.ceil(Math.max(0, missingToNextLevel) / safeXpPerKill),
+    killsToTargetLevel: Math.ceil(Math.max(0, missingToTargetLevel) / safeXpPerKill)
   };
 }
 

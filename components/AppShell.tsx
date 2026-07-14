@@ -1,11 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
 import { ActiveServerBanner } from "./ActiveServerBanner";
 import { BrandMark } from "./BrandMark";
+import { GlobalSupportRail } from "./GlobalSupportRail";
 import { HubNav } from "./HubNav";
 import { ModuleIcon } from "./ModuleIcon";
+import { QuickEconomyConverter } from "./QuickEconomyConverter";
 import { ThemeToggle } from "./ThemeProvider";
+import { StorageService } from "@/services/storage-service";
 
 export function AppShell({
   current,
@@ -18,28 +23,61 @@ export function AppShell({
   subtitle: string;
   children: React.ReactNode;
 }) {
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+
+  useEffect(() => {
+    setSidebarCollapsed(StorageService.get("reinahub_sidebar_collapsed", false));
+  }, []);
+
+  function toggleSidebar() {
+    const next = !sidebarCollapsed;
+    setSidebarCollapsed(next);
+    StorageService.set("reinahub_sidebar_collapsed", next);
+  }
+
   return (
-    <div className="wrap">
-      <header className="topbar">
-        <div className="brand">
-          <BrandMark mark={mark} />
-          <div>
-            <h1>ReinaHub</h1>
-            <div className="brand-subtitle-row">
-              <ModuleIcon moduleKey={current} size={22} />
-              <p>{subtitle}</p>
+    <div className={`app-shell${sidebarCollapsed ? " sidebar-is-collapsed" : ""}`}>
+      <HubNav
+        collapsed={sidebarCollapsed}
+        current={current}
+        mobileOpen={mobileNavOpen}
+        onCloseMobile={() => setMobileNavOpen(false)}
+        onToggleCollapsed={toggleSidebar}
+      />
+      <main className="wrap app-content" data-page={current}>
+        <header className="topbar">
+          <div className="brand">
+            <button
+              aria-label="Abrir navegacao"
+              className="mobile-nav-toggle"
+              type="button"
+              onClick={() => setMobileNavOpen(true)}
+            >
+              <Menu size={18} />
+            </button>
+            <BrandMark mark={mark} />
+            <div>
+              <h1>ReinaHub</h1>
+              <div className="brand-subtitle-row">
+                <ModuleIcon moduleKey={current} size={22} />
+                <p>{subtitle}</p>
+              </div>
             </div>
           </div>
-        </div>
-        <ThemeToggle />
-      </header>
-      <HubNav current={current} />
-      {current !== "cotacao" ? <ActiveServerBanner /> : null}
-      {children}
-      <footer className="app-footer">
-        <span>Valores ilustrativos. Confirme as cotacoes atuais antes de negociar.</span>
-        <Link href="/disclaimer">Isencao de responsabilidade</Link>
-      </footer>
+          <div className="topbar-actions">
+            <QuickEconomyConverter />
+            <ThemeToggle />
+          </div>
+        </header>
+        {current !== "cotacao" ? <ActiveServerBanner /> : null}
+        {children}
+        <GlobalSupportRail />
+        <footer className="app-footer">
+          <span>Valores ilustrativos. Confirme as cotacoes atuais antes de negociar.</span>
+          <Link href="/disclaimer">Isencao de responsabilidade</Link>
+        </footer>
+      </main>
     </div>
   );
 }

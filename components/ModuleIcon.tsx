@@ -8,6 +8,7 @@ import {
   Gem,
   PackageSearch,
   PackageOpen,
+  Newspaper,
   UserRound,
   ScrollText,
   Shield,
@@ -34,6 +35,7 @@ const moduleVisuals: Record<string, { icon: ElementType; sprite?: string; tone?:
   items: { icon: Archive, sprite: getItemImagePath(3003), tone: "gold" },
   npcs: { icon: Shield, tone: "teal" },
   bosses: { icon: Crown, sprite: getMonsterImagePath("Demon"), tone: "red" },
+  updates: { icon: Newspaper, tone: "gold" },
   home: { icon: Castle, tone: "gold" }
 };
 

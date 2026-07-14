@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { integer, moneySmart } from "@/services/format";
+import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { ReinaActiveContextService, type ReinaActiveContext } from "@/source/web/src/reina-core/active-context";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import { loadServers } from "@/services/quote-service";
@@ -26,7 +26,7 @@ export function ActiveServerBanner() {
   if (!economy?.server) {
     return (
       <div className="active-banner" style={{ borderColor: "var(--line)", color: "var(--ink-faint)" }}>
-        Nenhum servidor ativo. Configure na <Link href="/cotacao" style={{ color: "var(--gold)" }}>Cotacao Central</Link>.
+        Nenhum servidor ativo. Escolha um mundo na <Link href="/cotacao" style={{ color: "var(--gold)" }}>Cotacao Central</Link> para liberar conversoes em GC, moeda premium e R$.
       </div>
     );
   }
@@ -37,7 +37,7 @@ export function ActiveServerBanner() {
         <span>Contexto ativo:</span>
         <strong>{activeContext?.displayName ?? economy.serverName}</strong>
         <span>
-          1 {economy.currencyName} = {integer(economy.goldPerPremium)} gc - venda R$ {moneySmart(economy.sellUnitPrice)} /
+          1 {currencyShortName(economy.currencyName)} = {integer(economy.goldPerPremium)} GC - venda R$ {moneySmart(economy.sellUnitPrice)} /
           compra R$ {moneySmart(economy.buyUnitPrice)}
         </span>
       </div>

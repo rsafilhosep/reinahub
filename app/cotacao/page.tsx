@@ -7,7 +7,7 @@ import { CollapsiblePanel } from "@/components/CollapsiblePanel";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
 import { Modal } from "@/components/Modal";
 import { Tabs } from "@/components/Tabs";
-import { integer, money, moneySmart } from "@/services/format";
+import { currencyShortName, integer, money, moneySmart } from "@/services/format";
 import { ManualPriceSourceService, type ManualPriceSource, type ManualPriceSourceInput } from "@/services/manual-price-source-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import worldCatalog from "@/source/web/src/reina-core/worlds/generated/world-catalog.json";
@@ -41,6 +41,7 @@ type WorldCatalogEntry = {
 };
 
 const worldCatalogEntries = worldCatalog.worlds as WorldCatalogEntry[];
+const worldCatalogPlatforms = Array.from(new Set(worldCatalogEntries.map((entry) => entry.platform))).sort((a, b) => a.localeCompare(b));
 
 const emptyForm: ServerForm = {
   nome: "",
@@ -67,6 +68,7 @@ export default function CotacaoPage() {
   const [servers, setServers] = useState<VaultServer[]>([]);
   const [activeId, setActiveId] = useState("");
   const [form, setForm] = useState(emptyForm);
+  const [catalogPlatform, setCatalogPlatform] = useState("");
   const [editingId, setEditingId] = useState<string | null>(null);
   const [isServerModalOpen, setIsServerModalOpen] = useState(false);
   const [priceSources, setPriceSources] = useState<ManualPriceSource[]>([]);
@@ -92,6 +94,11 @@ export default function CotacaoPage() {
   const brlVenda = activeServer ? premiumToBrl(activeServer, premium, "venda") : 0;
   const brlCompra = activeServer ? premiumToBrl(activeServer, premium, "compra") : 0;
   const activePriceSources = activeServer ? priceSources.filter((source) => source.serverId === activeServer.id) : [];
+  const activeCurrencyShort = currencyShortName(activeServer?.moeda) || activeServer?.moeda || "";
+  const filteredWorldCatalogEntries = useMemo(
+    () => worldCatalogEntries.filter((entry) => entry.platform === catalogPlatform),
+    [catalogPlatform]
+  );
 
   function persist(next: VaultServer[]) {
     setServers(next);
@@ -124,6 +131,7 @@ export default function CotacaoPage() {
 
   function editServer(server: VaultServer) {
     setEditingId(server.id);
+    setCatalogPlatform(getServerPlatformName(server));
     setForm({
       nome: getServerWorldName(server),
       plataforma: getServerPlatformName(server),
@@ -141,6 +149,7 @@ export default function CotacaoPage() {
 
   function resetForm() {
     setEditingId(null);
+    setCatalogPlatform("");
     setForm(emptyForm);
   }
 
@@ -152,6 +161,7 @@ export default function CotacaoPage() {
   function applyWorldCatalog(value: string) {
     const entry = worldCatalogEntries.find((item) => `${item.platform}:::${item.world}` === value);
     if (!entry) return;
+    setCatalogPlatform(entry.platform);
     setForm({
       ...form,
       plataforma: entry.platform,
@@ -160,6 +170,33 @@ export default function CotacaoPage() {
       tipo: entry.type,
       moeda: entry.premiumCurrency,
       lote: entry.defaultLot
+    });
+  }
+
+  function applyCatalogPlatform(platform: string) {
+    if (platform === "__manual__") {
+      setCatalogPlatform("");
+      setForm({
+        ...form,
+        plataforma: "",
+        mundo: "",
+        nome: "",
+        tipo: "ot",
+        moeda: "",
+        lote: form.lote || 25
+      });
+      return;
+    }
+
+    setCatalogPlatform(platform);
+    if (!platform) return;
+    const firstEntry = worldCatalogEntries.find((entry) => entry.platform === platform);
+    setForm({
+      ...form,
+      plataforma: platform,
+      tipo: firstEntry?.type ?? form.tipo,
+      moeda: firstEntry?.premiumCurrency ?? form.moeda,
+      lote: firstEntry?.defaultLot ?? form.lote
     });
   }
 
@@ -259,8 +296,8 @@ export default function CotacaoPage() {
                   </div>
                 </div>
                 <div className="hero-grid">
-                  <ResultSlot label="Moeda premium" value={activeServer.moeda} tone="gold" />
-                  <ResultSlot label={`Gold por ${activeServer.moeda}`} value={`${integer(activeServer.gcPorMoeda)} gc`} />
+                  <ResultSlot label="Moeda premium" value={activeCurrencyShort} tone="gold" />
+                  <ResultSlot label={`Gold por ${activeCurrencyShort}`} value={`${integer(activeServer.gcPorMoeda)} GC`} />
                   <ResultSlot label="Preco venda" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
                   <ResultSlot label="Preco compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
                 </div>
@@ -297,7 +334,7 @@ export default function CotacaoPage() {
                     {getServerWorldName(server)}
                   </div>
                   <div className="note">
-                    1 {server.moeda} = {integer(server.gcPorMoeda)} gc - lote base {server.lote}
+                    1 {currencyShortName(server.moeda)} = {integer(server.gcPorMoeda)} GC - lote base {server.lote}
                   </div>
                   <div className="quick-row">
                     <span className="quick-btn">Venda R$ {moneySmart(server.loteVenda / server.lote)}</span>
@@ -342,24 +379,50 @@ export default function CotacaoPage() {
             open={isServerModalOpen}
             onClose={() => setIsServerModalOpen(false)}
           >
-            <div className="inputs-grid" style={{ marginBottom: 16 }}>
-              <Field label="Catalogo rapido">
-                <select defaultValue="" onChange={(event) => applyWorldCatalog(event.target.value)}>
-                  <option value="">Escolher mundo conhecido...</option>
-                  {worldCatalogEntries.map((entry) => (
+            <div className="world-picker">
+              <Field label="1. Servidor / plataforma do catalogo">
+                <select value={catalogPlatform} onChange={(event) => applyCatalogPlatform(event.target.value)}>
+                  <option value="">Escolher plataforma...</option>
+                  {worldCatalogPlatforms.map((platform) => (
+                    <option value={platform} key={platform}>
+                      {platform} ({worldCatalogEntries.filter((entry) => entry.platform === platform).length} mundos)
+                    </option>
+                  ))}
+                  <option value="__manual__">Outro servidor / cadastro manual</option>
+                </select>
+              </Field>
+              <Field label="2. Mundo do catalogo">
+                <select
+                  value=""
+                  onChange={(event) => applyWorldCatalog(event.target.value)}
+                  disabled={!catalogPlatform}
+                >
+                  <option value="">{catalogPlatform ? "Escolher mundo..." : "Escolha uma plataforma primeiro"}</option>
+                  {filteredWorldCatalogEntries.map((entry) => (
                     <option value={`${entry.platform}:::${entry.world}`} key={`${entry.platform}-${entry.world}`}>
-                      {entry.platform} - {entry.world}{entry.pvpType ? ` (${entry.pvpType})` : ""}
+                      {entry.world}{entry.pvpType ? ` (${entry.pvpType})` : ""}{entry.location ? ` - ${entry.location}` : ""}
                     </option>
                   ))}
                 </select>
               </Field>
+              <div className="world-picker-summary">
+                <div className="label">Catalogo local</div>
+                <div className="note">
+                  {catalogPlatform
+                    ? `${filteredWorldCatalogEntries.length} mundo(s) em ${catalogPlatform}. Ao escolher um mundo, o ReinaHub preenche plataforma, moeda, tipo e lote base.`
+                    : "Use o catalogo para preencher rapido ou escolha cadastro manual e informe qualquer OTServer/mundo abaixo."}
+                </div>
+                <button className="quick-btn" type="button" onClick={() => applyCatalogPlatform("__manual__")}>
+                  Usar cadastro manual
+                </button>
+              </div>
             </div>
             <div className="inputs-grid">
               <Field label="Servidor / plataforma">
-                <input value={form.plataforma ?? ""} onChange={(e) => setForm({ ...form, plataforma: e.target.value })} placeholder="Tibia Global, RubiniOT..." />
+                <input value={form.plataforma ?? ""} onChange={(e) => setForm({ ...form, plataforma: e.target.value })} placeholder="Ex: Taleon, Canary, OTServer proprio..." />
               </Field>
               <Field label="Mundo">
-                <input value={form.mundo ?? form.nome} onChange={(e) => setForm({ ...form, nome: e.target.value, mundo: e.target.value })} placeholder="Yubra, DeusOT, Taleon..." />
+                <input value={form.mundo ?? form.nome} onChange={(e) => setForm({ ...form, nome: e.target.value, mundo: e.target.value })} placeholder="Ex: Elysian, Yubra, mundo custom..." />
               </Field>
               <Field label="Tipo">
                 <select value={form.tipo} onChange={(e) => setForm({ ...form, tipo: e.target.value as "global" | "ot" })}>
@@ -500,33 +563,33 @@ export default function CotacaoPage() {
           <div className="verdict">
             <div className="label">Servidor ativo</div>
             <div className="value gold">{activeServer ? getServerDisplayName(activeServer) : "-"}</div>
-            <div className="note">{activeServer ? `1 ${activeServer.moeda} = ${integer(activeServer.gcPorMoeda)} gc - lote base ${activeServer.lote}` : "Cadastre um servidor"}</div>
+            <div className="note">{activeServer ? `1 ${activeCurrencyShort} = ${integer(activeServer.gcPorMoeda)} GC - lote base ${activeServer.lote}` : "Cadastre um servidor"}</div>
           </div>
           <Panel title="Conversor de valores" eyebrow="gold - moeda premium - real">
-            <Field label="Quantidade em Gold Coins">
+            <Field label="Quantidade em GC">
               <div className="field-wrap">
-                <span className="field-suffix">gc</span>
-                <input className="with-suffix" type="number" value={gold} onChange={(e) => setGold(Number(e.target.value))} />
+                <span className="field-suffix">GC</span>
+                <input className="with-suffix" inputMode="numeric" value={integer(gold)} onChange={(e) => setGold(parseIntegerInput(e.target.value))} />
               </div>
             </Field>
             <div className="quick-row">
               {[80000, 800000, 2000000].map((value) => (
                 <button className="quick-btn" key={value} type="button" onClick={() => setGold(value)}>
-                  {integer(value)} gc
+                  {integer(value)} GC
                 </button>
               ))}
             </div>
           </Panel>
           <div className="slots">
-            <ResultSlot label="Platinum coins" value={`${money(gold / 100, 2)} pc`} />
-            <ResultSlot label="Crystal coins" value={`${money(gold / 10000, 4)} cc`} />
-            <ResultSlot label="Moeda premium" value={`${money(premium, 4)} ${activeServer?.moeda ?? ""}`} tone="gold" />
+            <ResultSlot label="Platinum Coins" value={`${money(gold / 100, 2)} PC`} />
+            <ResultSlot label="Crystal Coins" value={`${money(gold / 10000, 4)} CC`} />
+            <ResultSlot label="Moeda premium" value={`${money(premium, 4)} ${activeCurrencyShort}`} tone="gold" />
             <ResultSlot label="Se eu vender (recebo)" value={`R$ ${moneySmart(brlVenda)}`} tone="red" />
             <ResultSlot label="Custo para comprar" value={`R$ ${moneySmart(brlCompra)}`} />
             <ResultSlot label="Spread" value={`R$ ${moneySmart(brlCompra - brlVenda)}`} tone="gold" />
           </div>
           <p className="note">
-            Para Tibia Coin, compra e venda usam o lote base de 25 TC e seus multiplos. Valores em reais pequenos exibem mais casas decimais quando necessario.
+            Para TC, compra e venda usam o lote base de 25 TC e seus multiplos. Valores em reais pequenos exibem mais casas decimais quando necessario.
           </p>
         </>
       ) : null}
@@ -541,7 +604,7 @@ export default function CotacaoPage() {
             {history.length ? history.slice().reverse().map((entry) => (
               <div className="history-item" key={entry.ts}>
                 <span>{new Date(entry.ts).toLocaleString("pt-BR")} - {entry.nome}</span>
-                <span style={{ color: "var(--gold)" }}>1 {entry.moeda} = {integer(entry.gcPorMoeda)} gc - R$ {money(entry.unitVenda, 4)}/{money(entry.unitCompra, 4)}</span>
+                <span style={{ color: "var(--gold)" }}>1 {currencyShortName(entry.moeda)} = {integer(entry.gcPorMoeda)} GC - R$ {money(entry.unitVenda, 4)}/{money(entry.unitCompra, 4)}</span>
               </div>
             )) : <div className="empty-msg">Nenhum snapshot salvo ainda.</div>}
           </div>
@@ -576,4 +639,9 @@ function InfoCard({ icon: Icon, title, text }: { icon: React.ElementType; title:
       <p className="note">{text}</p>
     </div>
   );
+}
+
+function parseIntegerInput(value: string) {
+  const digits = value.replace(/\D/g, "");
+  return digits ? Number(digits) : 0;
 }

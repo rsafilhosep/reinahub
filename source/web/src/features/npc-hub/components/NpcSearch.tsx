@@ -52,7 +52,9 @@ export function NpcSearch({ query, results, loading, onQueryChange, onSelectNpc 
         ))}
       </div>
 
-      {!loading && query.trim() && results.length === 0 ? <div className="empty-msg">Nenhum NPC encontrado.</div> : null}
+      {!loading && query.trim() && results.length === 0 ? (
+        <div className="empty-msg">Nenhum NPC encontrado na base local. Tente parte do nome ou revise se esse NPC ja foi importado.</div>
+      ) : null}
     </div>
   );
 }
