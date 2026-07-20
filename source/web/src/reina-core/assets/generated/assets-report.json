@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T09:40:42.317Z",
+  "generatedAt": "2026-07-20T00:15:40.664Z",
   "directories": {
     "items": "public/assets/items",
     "monsters": "public/assets/monsters",
@@ -10,10 +10,10 @@
     "items": 38116,
     "sourceItems": 38078,
     "supplementalItems": 38,
-    "itemImagesFound": 372,
-    "itemImagesMissing": 37744,
+    "itemImagesFound": 1607,
+    "itemImagesMissing": 36509,
     "monsters": 1765,
-    "monsterImagesFound": 806,
-    "monsterImagesMissing": 959
+    "monsterImagesFound": 813,
+    "monsterImagesMissing": 952
   }
 }

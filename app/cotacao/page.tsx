@@ -259,21 +259,21 @@ export default function CotacaoPage() {
   }
 
   return (
-    <AppShell current="cotacao" mark="CC" subtitle="Cotacao Central - multi-servidor">
+    <AppShell current="cotacao" mark="CC" subtitle="Cotação Central - multi-servidor">
       <Tabs
         active={tab}
         onChange={setTab}
         tabs={[
           { key: "servidores", label: "I - Servidores" },
           { key: "conversor", label: "II - Conversor" },
-          { key: "historico", label: "III - Historico" },
+          { key: "historico", label: "III - Histórico" },
           { key: "sobre", label: "IV - Como funciona" }
         ]}
       />
 
       {tab === "servidores" ? (
         <>
-          <Panel title="Cotacao ativa" eyebrow="fonte unica do hub">
+          <Panel title="Cotação ativa" eyebrow="fonte única do hub">
             {activeServer ? (
               <>
                 <div className="character-hero">
@@ -283,7 +283,7 @@ export default function CotacaoPage() {
                       {getServerWorldName(activeServer)}
                     </h2>
                     <p className="note">
-                      Esta cotacao alimenta Calculadora RC, Market Analyzer, Hunt Analyzer, Stash, Premium Goals e Live Goal.
+                      Esta cotação alimenta Calculadora RC, Market Analyzer, Hunt Analyzer, Stash, Premium Goals e Live Goal.
                     </p>
                   </div>
                   <div className="character-actions">
@@ -298,21 +298,21 @@ export default function CotacaoPage() {
                 <div className="hero-grid">
                   <ResultSlot label="Moeda premium" value={activeCurrencyShort} tone="gold" />
                   <ResultSlot label={`Gold por ${activeCurrencyShort}`} value={`${integer(activeServer.gcPorMoeda)} GC`} />
-                  <ResultSlot label="Preco venda" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
-                  <ResultSlot label="Preco compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
+                  <ResultSlot label="Preço venda" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
+                  <ResultSlot label="Preço compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
                 </div>
                 {hasInvertedSpread(activeServer) ? (
                   <div className="empty-msg" style={{ borderColor: "var(--crimson)", color: "var(--crimson-glow)", marginTop: 16 }}>
-                    Atencao: nesta cotacao o valor de venda esta maior que o valor de compra. Confira se os campos nao foram invertidos.
+                    Atenção: nesta cotação o valor de venda está maior que o valor de compra. Confira se os campos não foram invertidos.
                   </div>
                 ) : null}
               </>
             ) : (
-              <div className="empty-msg">Cadastre um servidor/mundo para iniciar as conversoes do ReinaHub.</div>
+              <div className="empty-msg">Cadastre um servidor/mundo para iniciar as conversões do ReinaHub.</div>
             )}
           </Panel>
 
-          <Panel title="Meus servidores / mundos" eyebrow="fonte unica do hub">
+          <Panel title="Meus servidores / mundos" eyebrow="fonte única do hub">
             <div className="quick-row" style={{ marginBottom: 16 }}>
               <button className="quick-btn primary" type="button" onClick={openNewServerModal}>Adicionar servidor / mundo</button>
             </div>
@@ -380,7 +380,7 @@ export default function CotacaoPage() {
             onClose={() => setIsServerModalOpen(false)}
           >
             <div className="world-picker">
-              <Field label="1. Servidor / plataforma do catalogo">
+              <Field label="1. Servidor / plataforma do catálogo">
                 <select value={catalogPlatform} onChange={(event) => applyCatalogPlatform(event.target.value)}>
                   <option value="">Escolher plataforma...</option>
                   {worldCatalogPlatforms.map((platform) => (
@@ -391,7 +391,7 @@ export default function CotacaoPage() {
                   <option value="__manual__">Outro servidor / cadastro manual</option>
                 </select>
               </Field>
-              <Field label="2. Mundo do catalogo">
+              <Field label="2. Mundo do catálogo">
                 <select
                   value=""
                   onChange={(event) => applyWorldCatalog(event.target.value)}
@@ -406,11 +406,11 @@ export default function CotacaoPage() {
                 </select>
               </Field>
               <div className="world-picker-summary">
-                <div className="label">Catalogo local</div>
+                <div className="label">Catálogo local</div>
                 <div className="note">
                   {catalogPlatform
                     ? `${filteredWorldCatalogEntries.length} mundo(s) em ${catalogPlatform}. Ao escolher um mundo, o ReinaHub preenche plataforma, moeda, tipo e lote base.`
-                    : "Use o catalogo para preencher rapido ou escolha cadastro manual e informe qualquer OTServer/mundo abaixo."}
+                    : "Use o catálogo para preencher rápido ou escolha cadastro manual e informe qualquer OTServer/mundo abaixo."}
                 </div>
                 <button className="quick-btn" type="button" onClick={() => applyCatalogPlatform("__manual__")}>
                   Usar cadastro manual
@@ -419,7 +419,7 @@ export default function CotacaoPage() {
             </div>
             <div className="inputs-grid">
               <Field label="Servidor / plataforma">
-                <input value={form.plataforma ?? ""} onChange={(e) => setForm({ ...form, plataforma: e.target.value })} placeholder="Ex: Taleon, Canary, OTServer proprio..." />
+                <input value={form.plataforma ?? ""} onChange={(e) => setForm({ ...form, plataforma: e.target.value })} placeholder="Ex: Taleon, Canary, OTServer próprio..." />
               </Field>
               <Field label="Mundo">
                 <input value={form.mundo ?? form.nome} onChange={(e) => setForm({ ...form, nome: e.target.value, mundo: e.target.value })} placeholder="Ex: Elysian, Yubra, mundo custom..." />
@@ -439,13 +439,13 @@ export default function CotacaoPage() {
               <Field label="Gold por moeda premium">
                 <input type="number" value={form.gcPorMoeda} onChange={(e) => setForm({ ...form, gcPorMoeda: Number(e.target.value) })} />
               </Field>
-              <Field label="Preco do lote - venda">
+              <Field label="Preço do lote - venda">
                 <div className="field-wrap">
                   <span className="field-prefix">R$</span>
                   <input className="with-prefix" type="number" step="0.000001" value={form.loteVenda} onChange={(e) => setForm({ ...form, loteVenda: Number(e.target.value) })} />
                 </div>
               </Field>
-              <Field label="Preco do lote - compra">
+              <Field label="Preço do lote - compra">
                 <div className="field-wrap">
                   <span className="field-prefix">R$</span>
                   <input className="with-prefix" type="number" step="0.000001" value={form.loteCompra} onChange={(e) => setForm({ ...form, loteCompra: Number(e.target.value) })} />
@@ -453,26 +453,26 @@ export default function CotacaoPage() {
               </Field>
             </div>
             <p className="note">
-              Para Tibia Coin, use lote base 25. O catalogo rapido e apenas sugestao local; confirme moeda, gold por moeda e precos antes de salvar.
+              Para Tibia Coin, use lote base 25. O catálogo rápido é apenas sugestão local; confirme moeda, gold por moeda e preços antes de salvar.
             </p>
             <div className="quick-row">
-              <button className="quick-btn primary" type="button" onClick={saveServer}>{editingId ? "Salvar alteracoes" : "Salvar servidor"}</button>
-              <button className="quick-btn" type="button" onClick={resetForm}>Limpar formulario</button>
+              <button className="quick-btn primary" type="button" onClick={saveServer}>{editingId ? "Salvar alterações" : "Salvar servidor"}</button>
+              <button className="quick-btn" type="button" onClick={resetForm}>Limpar formulário</button>
               <button className="quick-btn" type="button" onClick={() => setIsServerModalOpen(false)}>Cancelar</button>
             </div>
           </Modal>
 
           <CollapsiblePanel
-            title="Fontes manuais de preco"
-            eyebrow="usuario controla os nomes"
+            title="Fontes manuais de preço"
+            eyebrow="usuário controla os nomes"
             summary={
               activeServer
-                ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use quando quiser acompanhar preco oficial ou externo manual.`
+                ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use quando quiser acompanhar preço oficial ou externo manual.`
                 : "Cadastre ou selecione um servidor antes de adicionar fontes manuais."
             }
           >
             <p className="note" style={{ marginTop: -4, marginBottom: 16 }}>
-              Cadastre aqui precos que voce acompanha manualmente. O ReinaHub nao traz nomes de revendedores, nao recomenda fontes externas e nao exibe propaganda. Use “Aplicar” para transformar uma fonte na cotacao ativa do servidor.
+              Cadastre aqui preços que você acompanha manualmente. O ReinaHub não traz nomes de revendedores, não recomenda fontes externas e não exibe propaganda. Use “Aplicar” para transformar uma fonte na cotação ativa do servidor.
             </p>
             {activeServer ? (
               <>
@@ -481,7 +481,7 @@ export default function CotacaoPage() {
                     <input
                       value={priceSourceForm.label}
                       onChange={(event) => setPriceSourceForm({ ...priceSourceForm, label: event.target.value })}
-                      placeholder="Ex: Oficial, Fonte 1, Cotacao manual..."
+                      placeholder="Ex: Oficial, Fonte 1, Cotação manual..."
                     />
                   </Field>
                   <Field label="Tipo">
@@ -493,7 +493,7 @@ export default function CotacaoPage() {
                       <option value="official">Oficial</option>
                     </select>
                   </Field>
-                  <Field label="Preco do lote - venda">
+                  <Field label="Preço do lote - venda">
                     <div className="field-wrap">
                       <span className="field-prefix">R$</span>
                       <input
@@ -505,7 +505,7 @@ export default function CotacaoPage() {
                       />
                     </div>
                   </Field>
-                  <Field label="Preco do lote - compra">
+                  <Field label="Preço do lote - compra">
                     <div className="field-wrap">
                       <span className="field-prefix">R$</span>
                       <input
@@ -595,10 +595,10 @@ export default function CotacaoPage() {
       ) : null}
 
       {tab === "historico" ? (
-        <Panel title="Historico de cotacoes" eyebrow="snapshots locais">
+        <Panel title="Histórico de cotações" eyebrow="snapshots locais">
           <div className="quick-row" style={{ marginBottom: 16 }}>
-            <button className="quick-btn primary" type="button" onClick={snapshot}>Salvar cotacao atual</button>
-            <button className="quick-btn danger" type="button" onClick={() => { StorageService.remove(QUOTE_HISTORY_KEY); setHistory([]); }}>Limpar historico</button>
+            <button className="quick-btn primary" type="button" onClick={snapshot}>Salvar cotação atual</button>
+            <button className="quick-btn danger" type="button" onClick={() => { StorageService.remove(QUOTE_HISTORY_KEY); setHistory([]); }}>Limpar histórico</button>
           </div>
           <div className="history-list">
             {history.length ? history.slice().reverse().map((entry) => (
@@ -615,11 +615,11 @@ export default function CotacaoPage() {
         <Panel title="Como funciona" eyebrow="coracao do hub">
           <div className="market-grid">
             <InfoCard icon={Globe2} title="Multi-servidor" text="Cada mundo tem sua moeda, lote e taxas salvos localmente." />
-            <InfoCard icon={ServerCog} title="Servidor ativo" text="Os outros modulos leem sempre a cotacao ativa daqui." />
-            <InfoCard icon={History} title="Historico" text="Snapshots permitem acompanhar variacao de mercado." />
-            <InfoCard icon={Calculator} title="Calculo" text="GC vira moeda premium, e moeda premium vira reais pelo preco unitario do lote." />
-            <InfoCard icon={HandCoins} title="Fontes manuais" text="O usuario cadastra precos externos/oficiais manualmente, sem nomes de revendedores nem propaganda." />
-            <InfoCard icon={DatabaseZap} title="Fonte unica" text="Market, Hunt, Stash e metas premium usam a mesma cotacao ativa." />
+            <InfoCard icon={ServerCog} title="Servidor ativo" text="Os outros módulos leem sempre a cotação ativa daqui." />
+            <InfoCard icon={History} title="Histórico" text="Snapshots permitem acompanhar variação de mercado." />
+            <InfoCard icon={Calculator} title="Cálculo" text="GC vira moeda premium, e moeda premium vira reais pelo preço unitário do lote." />
+            <InfoCard icon={HandCoins} title="Fontes manuais" text="O usuário cadastra preços externos/oficiais manualmente, sem nomes de revendedores nem propaganda." />
+            <InfoCard icon={DatabaseZap} title="Fonte única" text="Market, Hunt, Stash e metas premium usam a mesma cotação ativa." />
           </div>
         </Panel>
       ) : null}

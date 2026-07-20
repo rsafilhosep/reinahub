@@ -49,7 +49,7 @@ export function AppShell({
         <header className="topbar">
           <div className="brand">
             <button
-              aria-label="Abrir navegacao"
+              aria-label="Abrir navegação"
               className="mobile-nav-toggle"
               type="button"
               onClick={() => setMobileNavOpen(true)}
@@ -74,8 +74,8 @@ export function AppShell({
         {children}
         <GlobalSupportRail />
         <footer className="app-footer">
-          <span>Valores ilustrativos. Confirme as cotacoes atuais antes de negociar.</span>
-          <Link href="/disclaimer">Isencao de responsabilidade</Link>
+          <span>Valores ilustrativos. Confirme as cotações atuais antes de negociar.</span>
+          <Link href="/disclaimer">Isenção de responsabilidade</Link>
         </footer>
       </main>
     </div>

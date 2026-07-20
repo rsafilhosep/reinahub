@@ -3,11 +3,13 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../../../..");
-const inboxRoots = [
+const repositoryRoot = path.join(root, "files_repository");
+const baseInboxRoots = [
   path.join(root, "files_repository", "assets_inbox"),
   path.join(root, "files_repository", "Imgs Assets"),
   path.join(root, "files_repository", "Imgs Testes")
 ];
+const inboxRoots = uniquePaths([...baseInboxRoots, ...discoverRepositoryAssetRoots(repositoryRoot)]);
 const itemsRoot = path.join(root, "public", "assets", "items");
 const monstersRoot = path.join(root, "public", "assets", "monsters");
 const npcsRoot = path.join(root, "public", "assets", "npcs");
@@ -87,25 +89,27 @@ function matchInboxFile(filePath) {
   const numeric = basename.match(/^\d+$/)?.[0];
   if (numeric && itemById.has(numeric)) return { type: "item", item: itemById.get(numeric), matchedBy: "itemId" };
 
-  const normalized = itemLookupKey(basename);
-  const aliasMatch = matchAlias(normalized);
-  if (aliasMatch) return aliasMatch;
+  for (const lookupName of getLookupNameCandidates(basename)) {
+    const normalized = itemLookupKey(lookupName);
+    const aliasMatch = matchAlias(normalized);
+    if (aliasMatch) return aliasMatch;
 
-  if (monsterByName.has(normalized)) return { type: "monster", monster: monsterByName.get(normalized), matchedBy: "normalizedMonsterName" };
-  if (itemByName.has(normalized)) return { type: "item", item: itemByName.get(normalized), matchedBy: "normalizedItemName" };
-  if (npcByName.has(normalized)) return { type: "npc", npc: npcByName.get(normalized), matchedBy: "normalizedNpcName" };
+    if (monsterByName.has(normalized)) return { type: "monster", monster: monsterByName.get(normalized), matchedBy: "normalizedMonsterName" };
+    if (itemByName.has(normalized)) return { type: "item", item: itemByName.get(normalized), matchedBy: "normalizedItemName" };
+    if (npcByName.has(normalized)) return { type: "npc", npc: npcByName.get(normalized), matchedBy: "normalizedNpcName" };
 
-  const compact = normalized.replace(/\s+/g, "");
-  for (const [nameKey, monster] of monsterByName.entries()) {
-    if (nameKey.replace(/\s+/g, "") === compact) return { type: "monster", monster, matchedBy: "compactNormalizedMonsterName" };
-  }
+    const compact = normalized.replace(/\s+/g, "");
+    for (const [nameKey, monster] of monsterByName.entries()) {
+      if (nameKey.replace(/\s+/g, "") === compact) return { type: "monster", monster, matchedBy: "compactNormalizedMonsterName" };
+    }
 
-  for (const [nameKey, item] of itemByName.entries()) {
-    if (nameKey.replace(/\s+/g, "") === compact) return { type: "item", item, matchedBy: "compactNormalizedItemName" };
-  }
+    for (const [nameKey, item] of itemByName.entries()) {
+      if (nameKey.replace(/\s+/g, "") === compact) return { type: "item", item: itemByName.get(nameKey), matchedBy: "compactNormalizedItemName" };
+    }
 
-  for (const [nameKey, npc] of npcByName.entries()) {
-    if (nameKey.replace(/\s+/g, "") === compact) return { type: "npc", npc, matchedBy: "compactNormalizedNpcName" };
+    for (const [nameKey, npc] of npcByName.entries()) {
+      if (nameKey.replace(/\s+/g, "") === compact) return { type: "npc", npc: npcByName.get(nameKey), matchedBy: "compactNormalizedNpcName" };
+    }
   }
 
   return null;
@@ -201,6 +205,38 @@ function walkFiles(dir) {
     const stats = statSync(fullPath);
     return stats.isDirectory() ? walkFiles(fullPath) : [fullPath];
   });
+}
+
+function discoverRepositoryAssetRoots(repositoryPath) {
+  if (!existsSync(repositoryPath)) return [];
+  return readdirSync(repositoryPath)
+    .map((entry) => path.join(repositoryPath, entry))
+    .filter((entryPath) => statSync(entryPath).isDirectory())
+    .filter((entryPath) => {
+      const name = path.basename(entryPath).toLowerCase();
+      return /^\d{8}(_|-)?new$/.test(name) || /^\d{2}_\d{2}_\d{4}$/.test(name);
+    });
+}
+
+function uniquePaths(paths) {
+  return [...new Set(paths.map((entry) => path.resolve(entry)))];
+}
+
+function getLookupNameCandidates(basename) {
+  const withoutSize = basename.replace(/^\d+px[-_\s]+/i, "");
+  const withoutHashSuffix = withoutSize.replace(/_[a-z0-9]{4}$/i, "");
+  const withoutWikiSuffix = withoutHashSuffix
+    .replace(/_ua[a-z0-9]+$/i, "")
+    .replace(/_[0-9a-f]{8,}$/i, "");
+  const withoutParenthetical = withoutWikiSuffix.replace(/\s*\([^)]*\)\s*$/g, "");
+
+  return [
+    basename,
+    withoutSize,
+    withoutHashSuffix,
+    withoutWikiSuffix,
+    withoutParenthetical
+  ].filter(Boolean);
 }
 
 function toUnmatched(filePath, reason) {

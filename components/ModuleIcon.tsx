@@ -33,6 +33,7 @@ const moduleVisuals: Record<string, { icon: ElementType; sprite?: string; tone?:
   legal: { icon: ScrollText, tone: "gold" },
   monsters: { icon: Castle, sprite: getMonsterImagePath("Demon"), tone: "red" },
   items: { icon: Archive, sprite: getItemImagePath(3003), tone: "gold" },
+  equipment: { icon: Swords, sprite: getItemImagePath(3271), tone: "gold" },
   npcs: { icon: Shield, tone: "teal" },
   bosses: { icon: Crown, sprite: getMonsterImagePath("Demon"), tone: "red" },
   updates: { icon: Newspaper, tone: "gold" },

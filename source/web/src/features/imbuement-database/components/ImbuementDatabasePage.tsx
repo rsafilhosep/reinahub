@@ -20,7 +20,7 @@ export function ImbuementDatabasePage({ initialImbuementId }: { initialImbuement
     <>
       <ToolGuide
         title="Como usar imbuements"
-        summary="Escolha um imbuement, revise materiais, preencha precos de Market e compare comprar versus farmar."
+        summary="Escolha um imbuement, revise materiais, preencha preços de Market e compare comprar versus farmar."
         steps={[
           {
             moduleKey: "imbuement",
@@ -30,13 +30,13 @@ export function ImbuementDatabasePage({ initialImbuementId }: { initialImbuement
           {
             moduleKey: "items",
             title: "2. Revisar materiais",
-            description: "Cada material aponta para a base de itens quando houver correspondencia.",
+            description: "Cada material aponta para a base de itens quando houver correspondência.",
             href: "/items"
           },
           {
             moduleKey: "market",
             title: "3. Preencher Market",
-            description: "Informe preco unitario em GC para calcular custo total, moeda premium e reais."
+            description: "Informe preço unitário em GC para calcular custo total, moeda premium e reais."
           },
           {
             moduleKey: "monsters",

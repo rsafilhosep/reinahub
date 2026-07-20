@@ -3,7 +3,7 @@ import { StashPage } from "@/source/web/src/features/stash/components";
 
 export default function StashRoute() {
   return (
-    <AppShell current="stash" mark="ST" subtitle="Stash - patrimonio e itens">
+    <AppShell current="stash" mark="ST" subtitle="Stash - patrimônio e itens">
       <StashPage />
     </AppShell>
   );

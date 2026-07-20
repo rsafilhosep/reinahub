@@ -16,7 +16,7 @@ const quickAccess = [
   {
     moduleKey: "hunt",
     title: "Analisar hunt",
-    description: "Importar sessao, calcular profit e gerar card.",
+    description: "Importar sessão, calcular profit e gerar card.",
     href: "/hunt",
     action: "Abrir Hunt Analyzer"
   },
@@ -30,7 +30,7 @@ const quickAccess = [
   {
     moduleKey: "characters",
     title: "Meu personagem",
-    description: "Salvar char, mundo, vocacao, level e progresso de experiencia.",
+    description: "Salvar char, mundo, vocação, level e progresso de experiência.",
     href: "/characters",
     action: "Abrir Characters"
   },
@@ -44,7 +44,7 @@ const quickAccess = [
   {
     moduleKey: "items",
     title: "Buscar item",
-    description: "Preco NPC, drops, NPCs e imagens locais.",
+    description: "Preço NPC, drops, NPCs e imagens locais.",
     href: "/items",
     action: "Abrir Itens"
   },
@@ -61,10 +61,10 @@ const onboardingSteps = [
   {
     step: "1",
     moduleKey: "cotacao",
-    title: "Defina o perfil economico",
+    title: "Defina o perfil econômico",
     description: "Escolha o servidor/mundo ativo para TC, RC, gold e reais ficarem iguais em todo o hub.",
     href: "/cotacao",
-    action: "Ajustar cotacao"
+    action: "Ajustar cotação"
   },
   {
     step: "2",
@@ -78,7 +78,7 @@ const onboardingSteps = [
     step: "3",
     moduleKey: "hunt",
     title: "Importe uma hunt",
-    description: "Cole ou envie arquivos de sessao para calcular profit, XP, loot e gerar o card PNG/PDF.",
+    description: "Cole ou envie arquivos de sessão para calcular profit, XP, loot e gerar o card PNG/PDF.",
     href: "/hunt",
     action: "Analisar hunt"
   },
@@ -86,7 +86,7 @@ const onboardingSteps = [
     step: "4",
     moduleKey: "stash",
     title: "Organize seus itens",
-    description: "Use o Stash para acompanhar patrimonio por perfil e comparar valores em gold, moeda premium e reais.",
+    description: "Use o Stash para acompanhar patrimônio por perfil e comparar valores em gold, moeda premium e reais.",
     href: "/stash",
     action: "Abrir Stash"
   },
@@ -94,7 +94,7 @@ const onboardingSteps = [
     step: "5",
     moduleKey: "premium-goals",
     title: "Crie uma meta",
-    description: "Transforme VIP, Premium, item ou objetivo de live em progresso claro para jogar com direcao.",
+    description: "Transforme VIP, Premium, item ou objetivo de live em progresso claro para jogar com direção.",
     href: "/premium-goals",
     action: "Criar meta"
   }
@@ -103,56 +103,57 @@ const onboardingSteps = [
 const sections = [
   {
     title: "Ferramentas",
-    description: "Analises e calculadoras para transformar sessoes, mercado e cotacoes em decisao pratica.",
+    description: "Análises e calculadoras para transformar sessões, mercado e cotações em decisão prática.",
     cards: [
-      { key: "hunt", title: "Hunt Analyzer", description: "Importe JSON de hunt, calcule loot, balance, XP e exporte relatorios.", href: "/hunt" },
-      { key: "loot", title: "Loot Analyzer", description: "Analise de loot consolidada a partir da base local.", status: "em breve" },
-      { key: "market", title: "Market Analyzer", description: "Compare preco NPC, preco de market, taxas e margem.", href: "/market" },
-      { key: "stash", title: "Stash", description: "Organize itens, quantidades e patrimonio usando a base local e a cotacao ativa.", href: "/stash" },
-      { key: "characters", title: "Characters", description: "Cadastre personagens, mundos, vocacao, level e XP para futuras integracoes.", href: "/characters" },
+      { key: "hunt", title: "Hunt Analyzer", description: "Importe JSON de hunt, calcule loot, balance, XP e exporte relatórios.", href: "/hunt" },
+      { key: "loot", title: "Loot Analyzer", description: "Análise de loot consolidada a partir da base local.", status: "em breve" },
+      { key: "market", title: "Market Analyzer", description: "Compare preço NPC, preço de market, taxas e margem.", href: "/market" },
+      { key: "stash", title: "Stash", description: "Organize itens, quantidades e patrimônio usando a base local e a cotação ativa.", href: "/stash" },
+      { key: "characters", title: "Characters", description: "Cadastre personagens, mundos, vocação, level e XP para futuras integrações.", href: "/characters" },
       { key: "imbuement", title: "Imbuements", description: "Consulte materiais e custo NPC dos imbuements iniciais.", href: "/imbuements" },
-      { key: "cotacao", title: "Cotacao Central", description: "Servidor ativo, Tibia Coins, gold e conversoes do ReinaHub.", href: "/cotacao" }
+      { key: "cotacao", title: "Cotação Central", description: "Servidor ativo, Tibia Coins, gold e conversões do ReinaHub.", href: "/cotacao" }
     ]
   },
   {
     title: "Biblioteca",
-    description: "Base local reutilizavel para itens, monstros, bosses, NPCs e futuras ferramentas.",
+    description: "Base local reutilizável para itens, monstros, bosses, NPCs e futuras ferramentas.",
     cards: [
-      { key: "monsters", title: "Monster Database", description: "Consulte monstros, vida, experiencia, loot e assets.", href: "/monsters" },
-      { key: "items", title: "Item Database", description: "Consulte itens, preco NPC e monstros que dropam.", href: "/items" },
-      { key: "npcs", title: "NPC Hub", description: "Consulte NPCs, itens comprados, itens vendidos e relacoes com a biblioteca.", href: "/npcs" },
+      { key: "monsters", title: "Monster Database", description: "Consulte monstros, vida, experiência, loot e assets.", href: "/monsters" },
+      { key: "items", title: "Item Database", description: "Consulte itens, preço NPC e monstros que dropam.", href: "/items" },
+      { key: "equipment", title: "Equipment Database", description: "Compare armas, shields e sets por level, ataque, defesa, slots e peso.", href: "/equipment" },
+      { key: "npcs", title: "NPC Hub", description: "Consulte NPCs, itens comprados, itens vendidos e relações com a biblioteca.", href: "/npcs" },
       { key: "bosses", title: "Boss Database", description: "Base futura de bosses, loot especial, timers e locais.", status: "placeholder" }
     ]
   },
   {
     title: "Economia",
-    description: "Camada economica para TC, gold, reais, historico, profit e comparacoes.",
+    description: "Camada econômica para TC, gold, reais, histórico, profit e comparações.",
     cards: [
       { key: "rc", title: "Tibia Coins", description: "Calculadora RC/Tibia Coin baseada no servidor ativo.", href: "/calculadora-rc" },
       { key: "premium-goals", title: "Premium Goals", description: "Calcule quanto falta para comprar VIP, Premium e produtos de moeda premium.", href: "/premium-goals" },
       { key: "live-goal", title: "Live Goal", description: "Janela de objetivo para live, video e captura no OBS.", href: "/live-goal" },
-      { key: "stash", title: "Patrimonio", description: "Veja quanto seu stash representa em gold, moeda premium e reais.", href: "/stash" },
-      { key: "cotacao", title: "Conversoes", description: "Converta gold, Tibia Coins e reais usando a Cotacao Central.", href: "/cotacao" },
-      { key: "market", title: "Historico", description: "Historico futuro de cotacoes, analises e precos.", status: "placeholder" }
+      { key: "stash", title: "Patrimônio", description: "Veja quanto seu stash representa em gold, moeda premium e reais.", href: "/stash" },
+      { key: "cotacao", title: "Conversões", description: "Converta gold, Tibia Coins e reais usando a Cotação Central.", href: "/cotacao" },
+      { key: "market", title: "Histórico", description: "Histórico futuro de cotações, análises e preços.", status: "placeholder" }
     ]
   },
   {
     title: "Studio",
-    description: "Area futura para gerar materiais visuais, cards e exportacoes do ReinaHub.",
+    description: "Área futura para gerar materiais visuais, cards e exportações do ReinaHub.",
     cards: [
-      { key: "hunt", title: "Exportacoes", description: "Saidas PNG/PDF para hunts, reports e comparativos.", status: "placeholder" },
+      { key: "hunt", title: "Exportações", description: "Saídas PNG/PDF para hunts, reports e comparativos.", status: "placeholder" },
       { key: "live-goal", title: "Overlay de objetivo", description: "Meta visual para stream, TikTok Live e YouTube.", href: "/live-goal" },
-      { key: "assets", title: "Cards", description: "Cards visuais para resultados, loot e sessoes.", status: "placeholder" }
+      { key: "assets", title: "Cards", description: "Cards visuais para resultados, loot e sessões.", status: "placeholder" }
     ]
   },
   {
-    title: "Administracao",
+    title: "Administração",
     description: "Ferramentas internas para manter dados, assets e fontes brutas organizados.",
     cards: [
       { key: "assets", title: "Assets", description: "Cache, scanner e prioridade de imagens locais.", href: "/assets" },
-      { key: "items", title: "Repository", description: "Biblioteca bruta e scanners seguros de referencia.", status: "relatorios" },
+      { key: "items", title: "Repository", description: "Biblioteca bruta e scanners seguros de referência.", status: "relatórios" },
       { key: "cotacao", title: "Importadores", description: "Pipelines XML/Lua futuros para dados locais.", status: "scripts" },
-      { key: "market", title: "Validacoes", description: "Relatorios de integridade da base e assets.", status: "scripts" }
+      { key: "market", title: "Validações", description: "Relatórios de integridade da base e assets.", status: "scripts" }
     ]
   }
 ];
@@ -168,12 +169,12 @@ export default function Home() {
           <div className="eyebrow">Hub central</div>
           <h2>Escolha uma ferramenta e continue daqui.</h2>
           <p className="note">
-            O ReinaHub organiza hunts, mercado, biblioteca e patrimonio usando a mesma base local de dados.
+            O ReinaHub organiza hunts, mercado, biblioteca e patrimônio usando a mesma base local de dados.
           </p>
         </div>
         <div className="home-intro-actions">
-          <Link className="quick-btn primary" href="/hunt">Comecar por Hunt</Link>
-          <Link className="quick-btn" href="/cotacao">Ajustar cotacao</Link>
+          <Link className="quick-btn primary" href="/hunt">Começar por Hunt</Link>
+          <Link className="quick-btn" href="/cotacao">Ajustar cotação</Link>
         </div>
       </section>
 
@@ -185,7 +186,7 @@ export default function Home() {
           {onboardingSteps.map((step) => (
             <Link className="onboarding-step" href={step.href} key={step.title}>
               <div className="onboarding-step-index">{step.step}</div>
-              <ModuleIcon moduleKey={step.moduleKey} size={38} />
+              <ModuleIcon moduleKey={step.moduleKey} size={34} />
               <div className="onboarding-step-body">
                 <div className="label">{step.action}</div>
                 <div className="value small" style={{ color: "var(--gold)" }}>{step.title}</div>
@@ -196,10 +197,10 @@ export default function Home() {
         </div>
       </Panel>
 
-      <Panel title="Atualizacoes recentes" eyebrow="O que ha de novo">
+      <Panel title="Atualizações recentes" eyebrow="O que há de novo">
         <div className="updates-preview-head">
           <p className="note">
-            Um resumo das ultimas melhorias para voce acompanhar o rumo do projeto.
+            Um resumo das últimas melhorias para você acompanhar o rumo do projeto.
           </p>
           <Link className="quick-btn" href="/updates">Ver todas</Link>
         </div>
@@ -234,7 +235,7 @@ export default function Home() {
           value={formatNumber(assetTotals.itemImagesFound + assetTotals.monsterImagesFound)}
           sub="itens e monstros"
         />
-        <Stat label="Ultima atualizacao" value="-" sub="placeholder" />
+        <Stat label="Última atualização" value="-" sub="placeholder" />
       </div>
       <AdSlot placement="home-after-stats" />
       <SupportSlot placement="home-support" />
@@ -306,7 +307,7 @@ function DashboardCard({
       <div className="dashboard-card-head">
         <ModuleIcon moduleKey={moduleKey} size={40} />
         <div>
-          <div className="label">{status ?? "disponivel"}</div>
+          <div className="label">{status ?? "disponível"}</div>
           <div className="value small" style={{ color: href ? "var(--gold)" : "var(--ink-dim)" }}>
             {title}
           </div>

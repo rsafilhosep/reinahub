@@ -30,7 +30,7 @@ export async function GET(request: NextRequest) {
       return NextResponse.json<CharacterLookupResult>({
         ok: false,
         source: platform,
-        message: "Fonte ainda nao possui consulta automatica."
+        message: "Fonte ainda não possui consulta automática."
       });
     }
 
@@ -175,7 +175,7 @@ function getBlockedMessage(platform: CharacterPlatform, blockedBy: CharacterLook
     return `RubinOT protege a pagina de personagens com verificacao anti-bot (${status}). Abra a fonte no navegador e cole a ficha no ReinaHub por enquanto.`;
   }
   if (blockedBy === "tls") {
-    return "A fonte nao completou a conexao segura. Use preenchimento manual por enquanto.";
+    return "A fonte não completou a conexão segura. Use preenchimento manual por enquanto.";
   }
   return `A fonte bloqueou a consulta (${status}). Use preenchimento manual por enquanto.`;
 }

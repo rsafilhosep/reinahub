@@ -68,7 +68,7 @@ export default function AssetsPage() {
         <Stat label="Sprites em cache" value={integer(Object.keys(cache).length)} sub="criaturas salvas" />
         <Stat label="Tamanho do cache" value={`${money(bytes / 1024, 1)} KB`} sub="localStorage" tone="gold" />
         <Stat label="Pendentes" value={integer(pending.length)} sub="fila de download" />
-        <Stat label="Com erro" value={integer(errors)} sub="sprites nao encontrados" tone="red" />
+        <Stat label="Com erro" value={integer(errors)} sub="sprites não encontrados" tone="red" />
       </div>
 
       <Panel title="Importar criaturas" eyebrow="JSON de hunt ou manual">

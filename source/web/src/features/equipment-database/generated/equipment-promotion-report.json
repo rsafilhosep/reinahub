@@ -1,0 +1,25 @@
+{
+  "promotedAt": "2026-07-17T23:15:55.244Z",
+  "source": "source\\web\\src\\features\\equipment-database\\generated\\equipment-ready-candidates.json",
+  "backupPath": "source\\web\\src\\features\\equipment-database\\generated\\backups\\equipment-20260717-201555.json",
+  "previousTotal": 687,
+  "candidatesRead": 13,
+  "promotedCount": 13,
+  "skippedCount": 0,
+  "newTotal": 700,
+  "promotedByCategory": {
+    "container": 3,
+    "armor": 1,
+    "boots": 1,
+    "shield": 1,
+    "helmet": 1,
+    "legs": 1,
+    "weapon": 5
+  },
+  "promotedByWeaponType": {
+    "none": 8,
+    "distance": 3,
+    "ammo": 2
+  },
+  "skipped": []
+}

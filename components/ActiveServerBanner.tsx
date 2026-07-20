@@ -26,7 +26,7 @@ export function ActiveServerBanner() {
   if (!economy?.server) {
     return (
       <div className="active-banner" style={{ borderColor: "var(--line)", color: "var(--ink-faint)" }}>
-        Nenhum servidor ativo. Escolha um mundo na <Link href="/cotacao" style={{ color: "var(--gold)" }}>Cotacao Central</Link> para liberar conversoes em GC, moeda premium e R$.
+        Nenhum servidor ativo. Escolha um mundo na <Link href="/cotacao" style={{ color: "var(--gold)" }}>Cotação Central</Link> para liberar conversões em GC, moeda premium e R$.
       </div>
     );
   }

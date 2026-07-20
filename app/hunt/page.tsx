@@ -92,7 +92,7 @@ export default function HuntPage() {
 
     if (!imported.length) {
       setImportMessage("");
-      setImportError("Nao foi possivel importar nenhum arquivo selecionado.");
+      setImportError("Não foi possível importar nenhum arquivo selecionado.");
       return;
     }
 
@@ -128,7 +128,7 @@ export default function HuntPage() {
       setPastedText("");
       setImportError("");
     } catch (error) {
-      setImportError(error instanceof Error ? error.message : "Nao foi possivel ler o texto da hunt.");
+      setImportError(error instanceof Error ? error.message : "Não foi possível ler o texto da hunt.");
     }
   }
 
@@ -150,7 +150,7 @@ export default function HuntPage() {
     });
 
     if (!response.ok) {
-      throw new Error("Nao foi possivel processar a hunt.");
+      throw new Error("Não foi possível processar a hunt.");
     }
 
     return (await response.json()) as HuntSummary;
@@ -193,7 +193,7 @@ export default function HuntPage() {
     const fileName = createHuntExportName("png");
     const file = new File([blob], fileName, { type: "image/png" });
     const shared = await shareExportFile(file, "ReinaHub Hunt Report", "Resumo de hunt gerado no ReinaHub.");
-    setExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador nao suporta compartilhar este arquivo; PNG baixado.");
+    setExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador não suporta compartilhar este arquivo; PNG baixado.");
     if (!shared) downloadBlob(blob, fileName);
   }
 
@@ -206,13 +206,13 @@ export default function HuntPage() {
     const fileName = createHuntExportName("pdf");
     const file = new File([blob], fileName, { type: "application/pdf" });
     const shared = await shareExportFile(file, "ReinaHub Hunt Report", "Resumo de hunt gerado no ReinaHub.");
-    setExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador nao suporta compartilhar este arquivo; PDF baixado.");
+    setExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador não suporta compartilhar este arquivo; PDF baixado.");
     if (!shared) downloadBlob(blob, fileName);
   }
 
   function generateExportCard() {
     setPreview(true);
-    setExportMessage("Imagem gerada. Agora voce pode baixar ou compartilhar.");
+    setExportMessage("Imagem gerada. Agora você pode baixar ou compartilhar.");
   }
 
   function getExportCardElement() {
@@ -222,7 +222,7 @@ export default function HuntPage() {
   }
 
   return (
-    <AppShell current="hunt" mark="HA" subtitle="Hunt Analyzer - loot - exportacao">
+    <AppShell current="hunt" mark="HA" subtitle="Hunt Analyzer - loot - exportação">
       <ToolGuide
         title="Fluxo recomendado"
         summary="Importe uma hunt, confira o resumo, revise loot/imbuements e gere o card apenas quando quiser compartilhar."
@@ -241,7 +241,7 @@ export default function HuntPage() {
           {
             moduleKey: "imbuement",
             title: "3. Revisar imbuements",
-            description: "Materiais encontrados podem usar precos de Market salvos no Imbuement Database.",
+            description: "Materiais encontrados podem usar preços de Market salvos no Imbuement Database.",
             href: "/imbuements"
           },
           {
@@ -257,7 +257,7 @@ export default function HuntPage() {
           <div className="tabs">
             {[
               { key: "import", label: "I - Importar" },
-              { key: "history", label: `II - Historico (${history.length})` }
+              { key: "history", label: `II - Histórico (${history.length})` }
             ].map((tab) => (
               <button className={`tab-btn${mode === tab.key ? " active" : ""}`} key={tab.key} type="button" onClick={() => setMode(tab.key)}>{tab.label}</button>
             ))}
@@ -271,12 +271,12 @@ export default function HuntPage() {
                   accept=".json,.txt"
                   multiple
                   onChange={(e) => e.target.files?.length && handleFiles(e.target.files).catch((error) => {
-                    setImportError(error instanceof Error ? error.message : "Nao foi possivel importar o arquivo.");
+                    setImportError(error instanceof Error ? error.message : "Não foi possível importar o arquivo.");
                   })}
                 />
                 <div style={{ fontSize: 42, marginBottom: 14 }}>HA</div>
-                <h2 style={{ fontFamily: "var(--font-display)", letterSpacing: 1 }}>Importar Sessao de Hunt</h2>
-                <p className="note">Arraste ou selecione um ou varios JSON/TXT exportados da hunt.</p>
+                <h2 style={{ fontFamily: "var(--font-display)", letterSpacing: 1 }}>Importar Sessão de Hunt</h2>
+                <p className="note">Arraste ou selecione um ou vários JSON/TXT exportados da hunt.</p>
               </div>
               {importMessage ? <div className="note" style={{ marginBottom: 14, color: "var(--teal-glow)" }}>{importMessage}</div> : null}
 
@@ -313,16 +313,16 @@ export default function HuntPage() {
         </>
       ) : (
         <>
-          <Panel title="Sessao de Hunt" eyebrow={fileName || summary.sessionLength}>
+          <Panel title="Sessão de Hunt" eyebrow={fileName || summary.sessionLength}>
             <div className="hero-grid">
               <Hero label="Balance" value={`${integer(summary.balance)} gp`} sub={`Loot ${integer(summary.lootValue)} (${lootSourceLabel(summary)}) - Suprimentos ${integer(summary.supplies)}`} tone="gold" />
               <Hero label="XP ganho" value={integer(summary.xpGain)} sub={`${integer(summary.xpHour)} XP/h`} />
-              <Hero label="Monstros mortos" value={integer(summary.totalKills)} sub={`${summary.kills.length} especies`} />
+              <Hero label="Monstros mortos" value={integer(summary.totalKills)} sub={`${summary.kills.length} espécies`} />
               <Hero label="Dano total" value={integer(summary.damage)} sub={`${integer(summary.damageHour)} dano/h`} />
-              <Hero label="Duracao" value={summary.sessionLength} sub={summary.sessionStart.split(",")[0] ?? ""} />
+              <Hero label="Duração" value={summary.sessionLength} sub={summary.sessionStart.split(",")[0] ?? ""} />
               <Hero label="Itens lootados" value={`${summary.loot.length} tipos`} sub={`Cura ${integer(summary.healing)}`} />
               <Hero label="Materiais imbue" value={`${summary.imbuementSummary.totalMaterialTypes} tipos`} sub={`${integer(summary.imbuementSummary.totalMaterialCount)} itens`} />
-              <Hero label="Valor imbue" value={`${integer(imbuementMarketSummary.totalMarketValue)} gp`} sub={`${imbuementMarketSummary.pricedTypes}/${summary.imbuementSummary.totalMaterialTypes} com preco`} tone="gold" />
+              <Hero label="Valor imbue" value={`${integer(imbuementMarketSummary.totalMarketValue)} gp`} sub={`${imbuementMarketSummary.pricedTypes}/${summary.imbuementSummary.totalMaterialTypes} com preço`} tone="gold" />
             </div>
           </Panel>
 
@@ -336,7 +336,7 @@ export default function HuntPage() {
             </div>
           ) : null}
 
-          <Panel title="Detalhes da hunt" eyebrow="monstros - loot - grafico">
+          <Panel title="Detalhes da hunt" eyebrow="monstros - loot - gráfico">
             <div className="tabs">
               {[
                 "kills",
@@ -431,7 +431,7 @@ async function canvasToBlob(canvas: HTMLCanvasElement, type: string) {
   return new Promise<Blob>((resolve, reject) => {
     canvas.toBlob((blob) => {
       if (blob) resolve(blob);
-      else reject(new Error("Nao foi possivel gerar o arquivo."));
+      else reject(new Error("Não foi possível gerar o arquivo."));
     }, type);
   });
 }
@@ -528,11 +528,11 @@ function HuntHistoryPanel({
 
   function generateHistoryExportCard() {
     if (!filteredHistory.length) {
-      setHistoryExportMessage("Nao ha hunts no periodo filtrado para gerar o card.");
+      setHistoryExportMessage("Não há hunts no período filtrado para gerar o card.");
       return;
     }
     setHistoryPreview(true);
-    setHistoryExportMessage("Resumo gerado. Agora voce pode baixar ou compartilhar.");
+    setHistoryExportMessage("Resumo gerado. Agora você pode baixar ou compartilhar.");
   }
 
   function getHistoryExportCardElement() {
@@ -567,17 +567,17 @@ function HuntHistoryPanel({
     const fileName = createHuntHistoryExportName("png");
     const file = new File([blob], fileName, { type: "image/png" });
     const shared = await shareExportFile(file, "ReinaHub Hunt History", "Resumo de hunts gerado no ReinaHub.");
-    setHistoryExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador nao suporta compartilhar este arquivo; PNG baixado.");
+    setHistoryExportMessage(shared ? "Compartilhamento aberto." : "Seu navegador não suporta compartilhar este arquivo; PNG baixado.");
     if (!shared) downloadBlob(blob, fileName);
   }
 
   if (!history.length) {
     return (
-      <Panel title="Historico de hunts" eyebrow="salvo localmente">
+      <Panel title="Histórico de hunts" eyebrow="salvo localmente">
         <EmptyState
           moduleKey="hunt"
           title="Nenhuma hunt salva ainda"
-          description="Importe um arquivo JSON/TXT ou cole o texto do Session Analyzer. Depois disso, o ReinaHub monta historico, graficos, comparacoes e exportacoes."
+          description="Importe um arquivo JSON/TXT ou cole o texto do Session Analyzer. Depois disso, o ReinaHub monta histórico, gráficos, comparações e exportações."
         />
       </Panel>
     );
@@ -585,7 +585,7 @@ function HuntHistoryPanel({
 
   return (
     <>
-      <Panel title="Resumo do historico" eyebrow="comparativo geral">
+      <Panel title="Resumo do histórico" eyebrow="comparativo geral">
         <PeriodFilter
           period={period}
           customStart={customStart}
@@ -597,11 +597,11 @@ function HuntHistoryPanel({
           onCustomEndChange={setCustomEnd}
         />
         <div className="hero-grid">
-          <Hero label="Hunts salvas" value={integer(totals.huntCount)} sub="ate 200 sessoes locais" />
+          <Hero label="Hunts salvas" value={integer(totals.huntCount)} sub="até 200 sessões locais" />
           <Hero label="Balance total" value={`${integer(totals.totalBalance)} gp`} sub={`Loot ${integer(totals.totalLootValue)}`} tone="gold" />
-          <Hero label={server ? `Balance em ${server.moeda}` : "Balance em moeda"} value={server ? money(totalPremium, 4) : "-"} sub={server ? ReinaEconomyService.getDisplayName(server) : "configure a cotacao"} tone="gold" />
-          <Hero label="Balance em R$" value={server ? `R$ ${money(totalBrlVenda, 2)}` : "-"} sub={server ? `compra R$ ${money(totalBrlCompra, 2)}` : "configure a cotacao"} />
-          <Hero label="XP total" value={integer(totals.totalXpGain)} sub={`${integer(totals.averageXpHour)} XP/h medio`} />
+          <Hero label={server ? `Balance em ${server.moeda}` : "Balance em moeda"} value={server ? money(totalPremium, 4) : "-"} sub={server ? ReinaEconomyService.getDisplayName(server) : "configure a cotação"} tone="gold" />
+          <Hero label="Balance em R$" value={server ? `R$ ${money(totalBrlVenda, 2)}` : "-"} sub={server ? `compra R$ ${money(totalBrlCompra, 2)}` : "configure a cotação"} />
+          <Hero label="XP total" value={integer(totals.totalXpGain)} sub={`${integer(totals.averageXpHour)} XP/h médio`} />
           <Hero label="Kills totais" value={integer(totals.totalKills)} sub={`Supplies ${integer(totals.totalSupplies)} gp`} />
           <Hero label={server ? `Loot em ${server.moeda}` : "Loot em moeda"} value={server ? money(lootPremium, 4) : "-"} sub={`${integer(totals.totalLootValue)} gp`} />
           <Hero label={server ? `Supplies em ${server.moeda}` : "Supplies em moeda"} value={server ? money(suppliesPremium, 4) : "-"} sub={`${integer(totals.totalSupplies)} gp`} />
@@ -611,7 +611,7 @@ function HuntHistoryPanel({
       <CollapsiblePanel
         title="Exportar resumo"
         eyebrow="PNG / PDF"
-        summary="Gere um card consolidado do periodo filtrado para baixar ou compartilhar."
+        summary="Gere um card consolidado do período filtrado para baixar ou compartilhar."
       >
         <div className="quick-row">
           <button className="quick-btn primary" type="button" onClick={generateHistoryExportCard}><Eye size={15} /> Gerar resumo</button>
@@ -639,10 +639,10 @@ function HuntHistoryPanel({
         title="Hunts salvas"
         eyebrow="abrir - comparar - limpar"
         defaultOpen={filteredHistory.length <= 6}
-        summary={`${integer(filteredHistory.length)} hunt(s) no periodo filtrado. Abra uma sessao apenas quando precisar revisar detalhes.`}
+        summary={`${integer(filteredHistory.length)} hunt(s) no período filtrado. Abra uma sessão apenas quando precisar revisar detalhes.`}
       >
         <div className="quick-row" style={{ marginTop: 0 }}>
-          <button className="quick-btn danger" type="button" onClick={onClear}>Limpar historico</button>
+          <button className="quick-btn danger" type="button" onClick={onClear}>Limpar histórico</button>
         </div>
         <div className="history-list" style={{ marginTop: 14 }}>
           {filteredHistory.map((record) => (
@@ -664,7 +664,7 @@ function HuntHistoryPanel({
             <EmptyState
               moduleKey="hunt"
               title="Nenhuma hunt neste filtro"
-              description="Altere o periodo ou importe novas hunts para preencher esta lista."
+              description="Altere o período ou importe novas hunts para preencher esta lista."
             />
           ) : null}
         </div>
@@ -673,7 +673,7 @@ function HuntHistoryPanel({
       <CollapsiblePanel
         title="Comparar hunts"
         eyebrow="base vs comparada"
-        summary={filteredHistory.length >= 2 ? "Compare duas sessoes e veja diferenca de balance, XP, loot e monstros." : "Salve pelo menos duas hunts para comparar."}
+        summary={filteredHistory.length >= 2 ? "Compare duas sessões e veja diferença de balance, XP, loot e monstros." : "Salve pelo menos duas hunts para comparar."}
       >
         {filteredHistory.length >= 2 ? (
           <>
@@ -739,24 +739,24 @@ function HuntHistoryPanel({
               <EmptyState
                 moduleKey="hunt"
                 title="Escolha duas hunts diferentes"
-                description="Use uma sessao como base e outra como comparacao para ver diferencas de balance, XP, loot e monstros."
+                description="Use uma sessão como base e outra como comparação para ver diferenças de balance, XP, loot e monstros."
               />
             )}
           </>
         ) : (
           <EmptyState
             moduleKey="hunt"
-            title="Comparacao ainda indisponivel"
-            description="Salve pelo menos duas hunts no mesmo contexto para liberar comparacao entre sessoes."
+            title="Comparação ainda indisponível"
+            description="Salve pelo menos duas hunts no mesmo contexto para liberar comparação entre sessões."
           />
         )}
       </CollapsiblePanel>
 
       <CollapsiblePanel
-        title="Graficos do historico"
-        eyebrow="evolucao das ultimas 20 hunts"
+        title="Gráficos do histórico"
+        eyebrow="evolução das últimas 20 hunts"
         defaultOpen
-        summary="Veja a evolucao de balance e XP das sessoes mais recentes."
+        summary="Veja a evolução de balance e XP das sessões mais recentes."
       >
         <div className="hunt-history-chart-grid">
           <HistoryChart
@@ -936,7 +936,7 @@ function PeriodFilter({
           </div>
         </div>
       ) : null}
-      <div className="note">{filteredCount} de {totalCount} hunt(s) no periodo selecionado.</div>
+      <div className="note">{filteredCount} de {totalCount} hunt(s) no período selecionado.</div>
     </div>
   );
 }
@@ -1003,8 +1003,8 @@ function ImbuementLootPanel({
       <div className="hero-grid" style={{ marginBottom: 16 }}>
         <Hero label="Materiais encontrados" value={`${summary.imbuementSummary.totalMaterialTypes} tipos`} sub={`${integer(summary.imbuementSummary.totalMaterialCount)} itens lootados`} />
         <Hero label="Imbuements relacionados" value={`${summary.imbuementSummary.relatedImbuements.length}`} sub="basic / intricate / powerful" />
-        <Hero label="Valor Market salvo" value={`${integer(marketSummary.totalMarketValue)} gp`} sub={`${marketSummary.pricedTypes}/${summary.imbuementSummary.totalMaterialTypes} materiais com preco`} tone="gold" />
-        <Hero label={server ? `Em ${server.moeda}` : "Moeda premium"} value={server ? money(premium, 4) : "-"} sub={server ? `R$ ${money(brl, 2)}` : "configure a cotacao"} />
+        <Hero label="Valor Market salvo" value={`${integer(marketSummary.totalMarketValue)} gp`} sub={`${marketSummary.pricedTypes}/${summary.imbuementSummary.totalMaterialTypes} materiais com preço`} tone="gold" />
+        <Hero label={server ? `Em ${server.moeda}` : "Moeda premium"} value={server ? money(premium, 4) : "-"} sub={server ? `R$ ${money(brl, 2)}` : "configure a cotação"} />
       </div>
 
       {summary.imbuementSummary.relatedImbuements.length > 0 ? (
@@ -1043,7 +1043,7 @@ function ImbuementLootPanel({
               <span style={{ color: "var(--gold)" }}>
                 {integer(item.Count)}x
                 <span className="note" style={{ marginLeft: 10 }}>
-                  {hasPrice ? `${integer(totalValue)} gp` : "sem preco"}
+                  {hasPrice ? `${integer(totalValue)} gp` : "sem preço"}
                 </span>
               </span>
             </div>
@@ -1173,7 +1173,7 @@ function UnmatchedLootPanel({
   return (
     <div>
       <div className="note" style={{ marginBottom: 12 }}>
-        Estes itens foram lidos da hunt, mas ainda nao casaram com `items.json`. Use esta lista para revisar aliases,
+        Estes itens foram lidos da hunt, mas ainda não casaram com `items.json`. Use esta lista para revisar aliases,
         nomes antigos ou itens ausentes na base local.
       </div>
       <div className="quick-row" style={{ marginTop: 0, marginBottom: 12 }}>
@@ -1315,7 +1315,7 @@ function ExportCard({
 
       <div style={{ display: "grid", gridTemplateColumns: "1.5fr 1fr", gap: 14, marginBottom: 16 }}>
         <div style={{ border: "1px solid #c8922a", borderRadius: 14, background: "linear-gradient(160deg, #1e2330, #171b24)", padding: 20 }}>
-          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 8 }}>Balance da sessao</div>
+          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 8 }}>Balance da sessão</div>
           <div style={{ fontFamily: "JetBrains Mono, monospace", fontSize: 36, color: profitTone, fontWeight: 800, lineHeight: 1.1 }}>{integer(summary.balance)} gp</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 12, fontSize: 12, color: "#8c93a3" }}>
             <span>Loot {integer(summary.lootValue)} gp</span>
@@ -1326,7 +1326,7 @@ function ExportCard({
         </div>
 
         <div style={{ border: "1px solid #2a3040", borderRadius: 14, background: "#11151d", padding: 18 }}>
-          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 10 }}>Resumo rapido</div>
+          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 10 }}>Resumo rápido</div>
           <ExportMiniRow label="Duracao" value={summary.sessionLength} />
           <ExportMiniRow label="XP/h" value={integer(summary.xpHour)} />
           <ExportMiniRow label="Kills" value={integer(summary.totalKills)} />
@@ -1536,18 +1536,18 @@ function HistoryExportCard({
         </div>
 
         <div style={{ border: "1px solid #2a3040", borderRadius: 14, background: "#11151d", padding: 18 }}>
-          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 10 }}>Resumo rapido</div>
+          <div style={{ fontSize: 11, color: "#8c93a3", letterSpacing: 1.8, textTransform: "uppercase", marginBottom: 10 }}>Resumo rápido</div>
           <ExportMiniRow label="Hunts" value={integer(totals.huntCount)} />
           <ExportMiniRow label="XP total" value={integer(totals.totalXpGain)} />
-          <ExportMiniRow label="XP/h medio" value={integer(totals.averageXpHour)} />
+          <ExportMiniRow label="XP/h médio" value={integer(totals.averageXpHour)} />
           <ExportMiniRow label="Kills" value={integer(totals.totalKills)} />
         </div>
       </div>
 
       <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 10, marginBottom: 18 }}>
-        <ExportMetric label="Hunts salvas" value={integer(totals.huntCount)} sub="no periodo" />
-        <ExportMetric label="Loot total" value={`${integer(totals.totalLootValue)} gp`} sub={server ? `${money(ReinaEconomyService.goldToPremium(server, totals.totalLootValue), 4)} ${server.moeda}` : "moeda nao configurada"} />
-        <ExportMetric label="Supplies" value={`${integer(totals.totalSupplies)} gp`} sub={server ? `${money(ReinaEconomyService.goldToPremium(server, totals.totalSupplies), 4)} ${server.moeda}` : "moeda nao configurada"} />
+        <ExportMetric label="Hunts salvas" value={integer(totals.huntCount)} sub="no período" />
+        <ExportMetric label="Loot total" value={`${integer(totals.totalLootValue)} gp`} sub={server ? `${money(ReinaEconomyService.goldToPremium(server, totals.totalLootValue), 4)} ${server.moeda}` : "moeda não configurada"} />
+        <ExportMetric label="Supplies" value={`${integer(totals.totalSupplies)} gp`} sub={server ? `${money(ReinaEconomyService.goldToPremium(server, totals.totalSupplies), 4)} ${server.moeda}` : "moeda não configurada"} />
         <ExportMetric label="Em reais" value={server ? `R$ ${money(totalBrlVenda, 2)}` : "-"} sub="valor venda estimado" />
       </div>
 
@@ -1592,7 +1592,7 @@ function getHistoryPeriodLabel(period: HuntHistoryPeriod, customStart: string, c
   if (period === "7d") return "Ultimos 7 dias";
   if (period === "30d") return "Ultimos 30 dias";
   if (period === "custom") return `${customStart || "inicio"} - ${customEnd || "hoje"}`;
-  return "Todo o historico";
+  return "Todo o histórico";
 }
 
 function getHuntHistoryContextLabel(record: HuntHistoryRecord) {

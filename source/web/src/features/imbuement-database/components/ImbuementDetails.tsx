@@ -6,6 +6,7 @@ import { EmptyState } from "@/components/EmptyState";
 import { integer, money, moneySmart } from "@/services/format";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { ItemPriceMemoryService, type ItemPriceMemorySuggestion } from "@/source/web/src/reina-core/prices";
 import type { VaultServer } from "@/types/vault";
 import { ImbuementMarketService, type ImbuementMarketPriceMap, type ImbuementMarketSnapshot } from "../services/imbuement-market-service";
 import type { ImbuementRecord } from "../types";
@@ -18,17 +19,17 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
   useEffect(() => {
     const activeServer = ReinaEconomyService.getActiveContext().server;
     setServer(activeServer);
-    setMarketPrices(ImbuementMarketService.loadPrices(activeServer));
+    setMarketPrices(mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(activeServer), imbuement, activeServer));
     setSnapshots(ImbuementMarketService.loadSnapshots());
 
     function syncQuote() {
       const nextServer = ReinaEconomyService.getActiveContext().server;
       setServer(nextServer);
-      setMarketPrices(ImbuementMarketService.loadPrices(nextServer));
+      setMarketPrices(mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(nextServer), imbuement, nextServer));
     }
 
     return ReinaEconomyService.subscribe(syncQuote);
-  }, []);
+  }, [imbuement]);
 
   const economySummary = useMemo(() => {
     if (!imbuement) {
@@ -67,25 +68,31 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
     };
   }, [imbuement, marketPrices, server]);
 
+  const priceSuggestions = useMemo(() => {
+    if (!imbuement) return {};
+    return getMaterialPriceSuggestions(imbuement, server);
+  }, [imbuement, server]);
+
   if (!imbuement) {
     return (
       <EmptyState
         moduleKey="imbuement"
         title="Escolha um imbuement"
-        description="Selecione um imbuement na lista ao lado para ver materiais, referencia NPC, preco de Market, equivalencia em moeda premium e fontes de drop."
+        description="Selecione um imbuement na lista ao lado para ver materiais, referência NPC, preço de Market, equivalência em moeda premium e fontes de drop."
       />
     );
   }
 
   const activeImbuement = imbuement;
 
-  function updateMarketPrice(key: string, value: string) {
+  function updateMarketPrice(material: ImbuementRecord["materials"][number], key: string, value: string) {
     const numericValue = Number(value);
     const next = { ...marketPrices };
     if (!Number.isFinite(numericValue) || numericValue <= 0) {
       delete next[key];
     } else {
       next[key] = numericValue;
+      rememberMaterialPrice(material, numericValue, server, "input");
     }
     setMarketPrices(next);
     ImbuementMarketService.savePrices(server, next);
@@ -102,6 +109,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
 
   function saveSnapshot() {
     if (!server || economySummary.marketTotal === null) return;
+    rememberImbuementMaterialPrices(activeImbuement, marketPrices, server, "snapshot");
     const next = ImbuementMarketService.createSnapshot({
       imbuement: activeImbuement,
       server,
@@ -139,29 +147,29 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
         <Metric label="Tier" value={formatText(imbuement.tier)} />
         <Metric label="Materiais" value={`${imbuement.materialCount}`} />
         <Metric label="Materiais encontrados" value={`${imbuement.matchedMaterialCount}`} />
-        <Metric label="Referencia NPC" value={economySummary.npcReferenceTotal !== null ? `${integer(economySummary.npcReferenceTotal)} gp` : `${economySummary.npcPricedCount}/${imbuement.materialCount}`} />
+        <Metric label="Referência NPC" value={economySummary.npcReferenceTotal !== null ? `${integer(economySummary.npcReferenceTotal)} gp` : `${economySummary.npcPricedCount}/${imbuement.materialCount}`} />
         <Metric label="Custo Market" value={economySummary.marketTotal !== null ? `${integer(economySummary.marketTotal)} gp` : `${economySummary.marketPricedCount}/${imbuement.materialCount}`} />
         <Metric label={server ? `Em ${server.moeda}` : "Moeda premium"} value={economySummary.marketTotal !== null && server ? moneySmart(economySummary.premium, 8) : "-"} />
-        <Metric label="Equivalencia R$" value={economySummary.marketTotal !== null && server ? `R$ ${money(economySummary.brl, 2)}` : "-"} />
-        <Metric label="Farmaveis" value={`${economySummary.farmableCount}/${imbuement.materialCount}`} />
-        <Metric label="Com preco Market" value={`${economySummary.buyableCount}/${imbuement.materialCount}`} />
+        <Metric label="Equivalência R$" value={economySummary.marketTotal !== null && server ? `R$ ${money(economySummary.brl, 2)}` : "-"} />
+        <Metric label="Farmáveis" value={`${economySummary.farmableCount}/${imbuement.materialCount}`} />
+        <Metric label="Com preço Market" value={`${economySummary.buyableCount}/${imbuement.materialCount}`} />
       </div>
 
       <div className="market-card" style={{ marginTop: 18 }}>
-        <div className="label">Simulacao economica</div>
+        <div className="label">Simulação econômica</div>
         <div className="note" style={{ marginTop: 8 }}>
           {economySummary.marketTotal !== null && server
-            ? `Custo total calculado com precos de Market preenchidos. Cotacao ativa: ${ReinaEconomyService.getDisplayName(server)}.`
+            ? `Custo total calculado com preços de Market preenchidos. Cotação ativa: ${ReinaEconomyService.getDisplayName(server)}.`
             : economySummary.missingMarketCount > 0
-              ? `Preencha ${economySummary.missingMarketCount} preco(s) de Market para calcular custo total, moeda premium e reais.`
-              : "Configure a Cotacao Central para converter o custo em moeda premium e reais."}
+              ? `Preencha ${economySummary.missingMarketCount} preço(s) de Market para calcular custo total, moeda premium e reais.`
+              : "Configure a Cotação Central para converter o custo em moeda premium e reais."}
         </div>
         <div className="note" style={{ marginTop: 8 }}>
           Precos salvos para: {server ? ReinaEconomyService.getDisplayName(server) : "perfil geral"}.
         </div>
         <div className="quick-row" style={{ marginTop: 12 }}>
-          <span className="quick-btn">Farmaveis {economySummary.farmableCount}</span>
-          <span className="quick-btn">Com preco {economySummary.buyableCount}</span>
+          <span className="quick-btn">Farmáveis {economySummary.farmableCount}</span>
+          <span className="quick-btn">Com preço {economySummary.buyableCount}</span>
           <span className="quick-btn">Revisar dados {economySummary.missingDataCount}</span>
         </div>
       </div>
@@ -171,11 +179,11 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
           Salvar snapshot
         </button>
         <button className="quick-btn danger" type="button" onClick={clearImbuementPrices}>
-          Limpar precos deste imbuement
+          Limpar preços deste imbuement
         </button>
         {visibleSnapshots.length > 0 ? (
           <button className="quick-btn danger" type="button" onClick={clearSnapshotsForImbuement}>
-            Limpar historico
+            Limpar histórico
           </button>
         ) : null}
       </div>
@@ -195,7 +203,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
                   {integer(snapshot.totalMarketCost)} gp
                   {diff !== null ? (
                     <span className="note" style={{ marginLeft: 10 }}>
-                      {diff === 0 ? "sem variacao" : `${diff > 0 ? "+" : ""}${integer(diff)} gp`}
+                      {diff === 0 ? "sem variação" : `${diff > 0 ? "+" : ""}${integer(diff)} gp`}
                     </span>
                   ) : null}
                 </span>
@@ -211,6 +219,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
           const unitMarketPrice = marketPrices[priceKey] ?? "";
           const totalMarketValue = typeof unitMarketPrice === "number" ? unitMarketPrice * material.count : null;
           const insight = getMaterialInsight(material, unitMarketPrice);
+          const suggestion = priceSuggestions[priceKey];
 
           return (
           <div className="history-item" key={`${imbuement.id}-${material.itemName}`} style={{ display: "block" }}>
@@ -246,7 +255,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
                     type="number"
                     min="0"
                     value={unitMarketPrice}
-                    onChange={(event) => updateMarketPrice(priceKey, event.target.value)}
+                    onChange={(event) => updateMarketPrice(material, priceKey, event.target.value)}
                     style={{ width: 110, minHeight: 34, padding: "8px 10px" }}
                   />
                 </label>
@@ -261,6 +270,11 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
               </span>
               {insight.canFarm ? <span className="quick-btn">{material.droppedByCount} fonte{material.droppedByCount === 1 ? "" : "s"} de drop</span> : null}
               {insight.hasMarketPrice ? <span className="quick-btn">Market informado</span> : null}
+              {suggestion && !insight.hasMarketPrice ? (
+                <span className="quick-btn" title={`Preço sugerido: ${integer(suggestion.value)} gp via ${suggestion.label}`}>
+                  Sugestão {integer(suggestion.value)} gp
+                </span>
+              ) : null}
             </div>
             <DropSources material={material} />
           </div>
@@ -273,7 +287,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
 
 function DropSources({ material }: { material: ImbuementRecord["materials"][number] }) {
   if (!material.droppedByCount) {
-    return <div className="note" style={{ marginTop: 10 }}>Drops ainda nao encontrados na base local.</div>;
+    return <div className="note" style={{ marginTop: 10 }}>Drops ainda não encontrados na base local.</div>;
   }
 
   return (
@@ -329,7 +343,7 @@ function getMaterialInsight(material: ImbuementRecord["materials"][number], unit
     return {
       status: "missing-data",
       label: "Revisar item",
-      description: "Material ainda nao foi encontrado na base local.",
+      description: "Material ainda não foi encontrado na base local.",
       hasMarketPrice,
       canFarm
     };
@@ -339,7 +353,7 @@ function getMaterialInsight(material: ImbuementRecord["materials"][number], unit
     return {
       status: "balanced",
       label: "Comprar ou farmar",
-      description: "Tem preco de Market e fontes de drop locais para comparar.",
+      description: "Tem preço de Market e fontes de drop locais para comparar.",
       hasMarketPrice,
       canFarm
     };
@@ -349,7 +363,7 @@ function getMaterialInsight(material: ImbuementRecord["materials"][number], unit
     return {
       status: "market-only",
       label: "Comprar no Market",
-      description: "Tem preco informado, mas ainda nao temos fonte de drop local.",
+      description: "Tem preço informado, mas ainda não temos fonte de drop local.",
       hasMarketPrice,
       canFarm
     };
@@ -359,7 +373,7 @@ function getMaterialInsight(material: ImbuementRecord["materials"][number], unit
     return {
       status: "farm-only",
       label: "Farmar ou precificar",
-      description: "Tem fonte de drop local, mas falta preco de Market.",
+      description: "Tem fonte de drop local, mas falta preço de Market.",
       hasMarketPrice,
       canFarm
     };
@@ -367,9 +381,82 @@ function getMaterialInsight(material: ImbuementRecord["materials"][number], unit
 
   return {
     status: "needs-price",
-    label: "Sem preco/drop",
-    description: "Falta preco de Market e fonte de drop local.",
+    label: "Sem preço/drop",
+    description: "Falta preço de Market e fonte de drop local.",
     hasMarketPrice,
     canFarm
   };
+}
+
+function mergeSavedMaterialPrices(prices: ImbuementMarketPriceMap, imbuement: ImbuementRecord | null, server: VaultServer | null) {
+  if (!imbuement || !server) return prices;
+
+  let changed = false;
+  const next = { ...prices };
+  for (const material of imbuement.materials) {
+    if (!material.itemId) continue;
+
+    const key = ImbuementMarketService.getMaterialPriceKey(material);
+    const current = next[key];
+    if (Number.isFinite(current) && current > 0) continue;
+
+    const suggestion = ItemPriceMemoryService.getBestPrice(server, material.itemId, { includeNpc: false });
+    if (!suggestion) continue;
+
+    next[key] = suggestion.value;
+    changed = true;
+  }
+
+  if (changed) {
+    ImbuementMarketService.savePrices(server, next);
+  }
+
+  return changed ? next : prices;
+}
+
+function getMaterialPriceSuggestions(imbuement: ImbuementRecord, server: VaultServer | null) {
+  if (!server) return {};
+
+  return imbuement.materials.reduce<Record<string, ItemPriceMemorySuggestion>>((acc, material) => {
+    if (!material.itemId) return acc;
+
+    const suggestion = ItemPriceMemoryService.getBestPrice(server, material.itemId, { includeNpc: false });
+    if (!suggestion) return acc;
+
+    acc[ImbuementMarketService.getMaterialPriceKey(material)] = suggestion;
+    return acc;
+  }, {});
+}
+
+function rememberImbuementMaterialPrices(
+  imbuement: ImbuementRecord,
+  prices: ImbuementMarketPriceMap,
+  server: VaultServer,
+  context: string
+) {
+  for (const material of imbuement.materials) {
+    const key = ImbuementMarketService.getMaterialPriceKey(material);
+    const price = prices[key];
+    if (Number.isFinite(price) && price > 0) {
+      rememberMaterialPrice(material, price, server, context);
+    }
+  }
+}
+
+function rememberMaterialPrice(
+  material: ImbuementRecord["materials"][number],
+  value: number,
+  server: VaultServer | null,
+  context: string
+) {
+  if (!server || !material.itemId || !Number.isFinite(value) || value <= 0) return;
+
+  ItemPriceMemoryService.rememberPrice({
+    server,
+    itemId: material.itemId,
+    itemName: material.resolvedName || material.itemName,
+    source: "imbuement-market",
+    value,
+    context: `Imbuement Database - ${context}`
+  });
 }

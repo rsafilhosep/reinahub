@@ -12,6 +12,7 @@ import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { loadServers } from "@/services/quote-service";
 import { MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { ItemPriceMemoryService, type ItemPriceMemorySuggestion } from "@/source/web/src/reina-core/prices";
 import type { VaultServer } from "@/types/vault";
 import { ProfileSelector } from "@/source/web/src/reina-core/profiles/ProfileSelector";
 import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-service";
@@ -48,6 +49,7 @@ export function StashPage() {
   const [servers, setServers] = useState<VaultServer[]>([]);
   const [compareServerId, setCompareServerId] = useState("");
   const [error, setError] = useState("");
+  const [priceSuggestion, setPriceSuggestion] = useState<ItemPriceMemorySuggestion | null>(null);
 
   useEffect(() => {
     const sync = () => {
@@ -76,7 +78,7 @@ export function StashPage() {
         setResults(await ItemSearchClientService.searchItems({ query: trimmed, signal: controller.signal }));
       } catch (searchError) {
         if (!controller.signal.aborted) {
-          setError(searchError instanceof Error ? searchError.message : "Nao foi possivel buscar itens.");
+      setError(searchError instanceof Error ? searchError.message : "Não foi possível buscar itens.");
         }
       }
     }, 180);
@@ -107,14 +109,27 @@ export function StashPage() {
     setQuery(item.name);
     setResults([]);
     const existing = items.find((stashItem) => stashItem.itemId === item.id);
+    const suggestion = ItemPriceMemoryService.getBestPrice(server, item.id, { includeNpc: true });
+    const suggestedSource = suggestion
+      ? suggestion.source === "npc" ? "npc" : "manual"
+      : item.npcPrice ? "npc" : "manual";
     setQuantity(existing?.quantity ?? 1);
-    setUnitGoldPrice(existing?.unitGoldPrice ?? item.npcPrice ?? 0);
-    setPriceSource(existing?.priceSource ?? (item.npcPrice ? "npc" : "manual"));
+    setUnitGoldPrice(existing?.unitGoldPrice ?? suggestion?.value ?? item.npcPrice ?? 0);
+    setPriceSource(existing?.priceSource ?? suggestedSource);
+    setPriceSuggestion(suggestion);
   }
 
   function saveItem() {
     if (editingStashItem) {
       updateItem(editingStashItem.itemId, { quantity, unitGoldPrice, priceSource });
+      ItemPriceMemoryService.rememberPrice({
+        server,
+        itemId: editingStashItem.itemId,
+        itemName: editingStashItem.name,
+        source: priceSource === "npc" ? "npc" : "stash-manual",
+        value: unitGoldPrice,
+        context: "Stash"
+      });
       closeItemModal();
       return;
     }
@@ -131,6 +146,14 @@ export function StashPage() {
       priceSource
     });
     StashService.saveItems(next);
+    ItemPriceMemoryService.rememberPrice({
+      server,
+      itemId: selectedItem.id,
+      itemName: selectedItem.name,
+      source: priceSource === "npc" ? "npc" : "stash-manual",
+      value: unitGoldPrice,
+      context: "Stash"
+    });
     setItems(next);
     setSelectedItem(null);
     setQuery("");
@@ -178,6 +201,7 @@ export function StashPage() {
     setQuantity(item.quantity);
     setUnitGoldPrice(item.unitGoldPrice);
     setPriceSource(item.priceSource);
+    setPriceSuggestion(ItemPriceMemoryService.getBestPrice(server, item.itemId, { includeNpc: true }));
     setError("");
     setIsItemModalOpen(true);
   }
@@ -187,6 +211,7 @@ export function StashPage() {
     setEditingStashItem(null);
     setSelectedItem(null);
     setResults([]);
+    setPriceSuggestion(null);
     setError("");
   }
 
@@ -207,24 +232,24 @@ export function StashPage() {
           {
             moduleKey: "stash",
             title: "2. Adicionar itens",
-            description: "Busque o item na base local, informe quantidade e preco unitario em GC."
+            description: "Busque o item na base local, informe quantidade e preço unitário em GC."
           },
           {
             moduleKey: "cotacao",
             title: "3. Converter valores",
-            description: "A Cotacao Central transforma o patrimonio em TC/RC e reais.",
+            description: "A Cotação Central transforma o patrimônio em TC/RC e reais.",
             href: "/cotacao"
           },
           {
             moduleKey: "market",
-            title: "4. Revisar precos",
+            title: "4. Revisar preços",
             description: "Use Market Analyzer quando quiser comparar NPC, market e margem.",
             href: "/market"
           }
         ]}
       />
 
-      <Panel title="Patrimonio do stash" eyebrow="base local - manual">
+      <Panel title="Patrimônio do stash" eyebrow="base local - manual">
         <div className="slots">
           <ResultSlot label="Itens cadastrados" value={integer(totals.totalItems)} />
           <ResultSlot label="Quantidade total" value={integer(totals.totalQuantity)} />
@@ -234,23 +259,23 @@ export function StashPage() {
           <ResultSlot label="Custo para comprar" value={`R$ ${moneySmart(totals.totalBrlCompra)}`} />
         </div>
         <p className="note">
-          {server ? `Cotacao ativa: ${ReinaEconomyService.getDisplayName(server)}.` : "Configure uma cotacao ativa para converter GC em moeda premium e reais."}
-          {" "}A leitura por print/OCR fica preparada para uma etapa futura com revisao manual.
+          {server ? `Cotação ativa: ${ReinaEconomyService.getDisplayName(server)}.` : "Configure uma cotação ativa para converter GC em moeda premium e reais."}
+          {" "}A leitura por print/OCR fica preparada para uma etapa futura com revisão manual.
         </p>
         <div className="quick-row">
           <button className="quick-btn primary" type="button" onClick={openAddItemModal}>
             <Plus size={15} aria-hidden="true" /> Adicionar item
           </button>
-          <Link className="quick-btn" href="/cotacao">Trocar cotacao</Link>
+          <Link className="quick-btn" href="/cotacao">Trocar cotação</Link>
         </div>
       </Panel>
 
       <CollapsiblePanel
-        title="Comparar cotacao"
-        eyebrow="perfil - mundo - conversao"
+        title="Comparar cotação"
+        eyebrow="perfil - mundo - conversão"
         summary={
           compareServer
-            ? `Recalcule este stash com a cotacao de ${ReinaEconomyService.getDisplayName(compareServer)} sem alterar seus itens.`
+            ? `Recalcule este stash com a cotação de ${ReinaEconomyService.getDisplayName(compareServer)} sem alterar seus itens.`
             : "Compare seu stash com outro servidor/mundo cadastrado."
         }
       >
@@ -258,7 +283,7 @@ export function StashPage() {
           <Field label="Perfil calculado com">
             <input value={ReinaEconomyService.getDisplayName(server)} readOnly />
           </Field>
-          <Field label="Comparar com cotacao">
+          <Field label="Comparar com cotação">
             <select value={compareServerId} onChange={(event) => setCompareServerId(event.target.value)}>
               {servers.map((quoteServer) => (
                 <option value={quoteServer.id} key={quoteServer.id}>{ReinaEconomyService.getDisplayName(quoteServer)}</option>
@@ -274,11 +299,11 @@ export function StashPage() {
             tone="gold"
           />
           <ResultSlot
-            label={compareServer ? `Na cotacao (${compareServer.moeda})` : "Na cotacao comparada"}
+            label={compareServer ? `Na cotação (${compareServer.moeda})` : "Na cotação comparada"}
             value={compareServer ? moneySmart(comparison.compare.totalPremium) : "-"}
           />
           <ResultSlot
-            label="Diferenca moeda"
+            label="Diferença moeda"
             value={compareServer ? formatSigned(comparison.diffPremium, compareServer.moeda) : "-"}
             tone={comparison.diffPremium >= 0 ? "gold" : "red"}
           />
@@ -292,20 +317,20 @@ export function StashPage() {
             value={`R$ ${moneySmart(comparison.compare.totalBrlVenda)}`}
           />
           <ResultSlot
-            label="Diferenca R$"
+            label="Diferença R$"
             value={`R$ ${formatSignedNumber(comparison.diffBrlVenda)}`}
             tone={comparison.diffBrlVenda >= 0 ? "gold" : "red"}
           />
         </div>
         <p className="note">
-          O comparativo usa os mesmos itens do perfil ativo e recalcula com outra cotacao cadastrada. Ele nao copia nem altera seu Stash.
+          O comparativo usa os mesmos itens do perfil ativo e recalcula com outra cotação cadastrada. Ele não copia nem altera seu Stash.
         </p>
       </CollapsiblePanel>
 
       <CollapsiblePanel
-        title="Acoes do stash"
+        title="Ações do stash"
         eyebrow="adicionar - limpar"
-        summary="Acoes manuais para cadastrar itens, limpar o perfil atual ou preparar revisoes."
+        summary="Ações manuais para cadastrar itens, limpar o perfil atual ou preparar revisões."
       >
         <div className="quick-row" style={{ marginTop: 0 }}>
           <button className="quick-btn primary" type="button" onClick={openAddItemModal}>
@@ -314,13 +339,13 @@ export function StashPage() {
           <button className="quick-btn danger" type="button" onClick={clearStash} disabled={!items.length}>Limpar stash</button>
         </div>
         <p className="note">
-          A inclusao e edicao de itens agora abre em janela para manter a tabela mais limpa.
+          A inclusão e edição de itens agora abre em janela para manter a tabela mais limpa.
         </p>
       </CollapsiblePanel>
 
       <Modal
         title={editingStashItem ? "Editar item do stash" : "Adicionar item ao stash"}
-        eyebrow={editingStashItem ? "quantidade - preco" : "busca - quantidade - preco"}
+        eyebrow={editingStashItem ? "quantidade - preço" : "busca - quantidade - preço"}
         open={isItemModalOpen}
         onClose={closeItemModal}
       >
@@ -331,16 +356,23 @@ export function StashPage() {
             </Field>
           ) : (
             <Field label="Buscar item">
-              <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex: gold coin, dragon ham, steel boots..." />
+              <input
+                value={query}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setPriceSuggestion(null);
+                }}
+                placeholder="Ex: gold coin, dragon ham, steel boots..."
+              />
             </Field>
           )}
           <Field label="Quantidade">
             <input type="number" value={quantity} onChange={(event) => setQuantity(Number(event.target.value))} />
           </Field>
-          <Field label="Preco unitario (GC)">
+          <Field label="Preço unitário (GC)">
             <input type="number" value={unitGoldPrice} onChange={(event) => { setUnitGoldPrice(Number(event.target.value)); setPriceSource("manual"); }} />
           </Field>
-          <Field label="Fonte do preco">
+          <Field label="Fonte do preço">
             <select value={priceSource} onChange={(event) => setPriceSource(event.target.value as "npc" | "manual")}>
               <option value="manual">Manual</option>
               <option value="npc">NPC/database</option>
@@ -375,7 +407,7 @@ export function StashPage() {
                   {item.name}
                   <span className="note">#{item.id}</span>
                 </span>
-                <span style={{ color: "var(--gold)" }}>{item.npcPrice ? `${integer(item.npcPrice)} GC NPC` : "preco manual"}</span>
+                <span style={{ color: "var(--gold)" }}>{item.npcPrice ? `${integer(item.npcPrice)} GC NPC` : "preço manual"}</span>
               </button>
             ))}
           </div>
@@ -386,12 +418,17 @@ export function StashPage() {
             Selecionado: <strong>{selectedItem.name}</strong> #{selectedItem.id}
           </div>
         ) : null}
+        {priceSuggestion ? (
+          <div className="note">
+            Preço sugerido: <strong>{integer(priceSuggestion.value)} GC</strong> via {priceSuggestion.label}.
+          </div>
+        ) : null}
         {error ? <div className="note" style={{ color: "var(--crimson-glow)" }}>{error}</div> : null}
 
         <div className="quick-row">
-          <button className="quick-btn primary" type="button" onClick={saveItem}>{editingStashItem ? "Salvar alteracoes" : "Salvar no stash"}</button>
+          <button className="quick-btn primary" type="button" onClick={saveItem}>{editingStashItem ? "Salvar alterações" : "Salvar no stash"}</button>
           <button className="quick-btn" type="button" onClick={() => selectedItem?.npcPrice && setUnitGoldPrice(selectedItem.npcPrice)} disabled={!selectedItem?.npcPrice}>
-            Usar preco NPC
+            Usar preço NPC
           </button>
           <button className="quick-btn" type="button" onClick={closeItemModal}>Cancelar</button>
         </div>
@@ -401,7 +438,7 @@ export function StashPage() {
         title="Itens no stash"
         eyebrow="ordenar - filtrar - revisar"
         defaultOpen={items.length <= 8}
-        summary={`${integer(visibleItems.length)} item(ns) visiveis de ${integer(items.length)} cadastrados. Valor total: ${integer(totals.totalGold)} GC.`}
+        summary={`${integer(visibleItems.length)} item(ns) visíveis de ${integer(items.length)} cadastrados. Valor total: ${integer(totals.totalGold)} GC.`}
       >
         <div className="inputs-grid" style={{ marginBottom: 16 }}>
           <Field label="Categoria">
@@ -438,7 +475,7 @@ export function StashPage() {
           <EmptyState
             moduleKey="stash"
             title="Seu stash ainda esta vazio"
-            description="Adicione o primeiro item para calcular patrimonio em GC, moeda premium e reais usando o perfil ativo."
+            description="Adicione o primeiro item para calcular patrimônio em GC, moeda premium e reais usando o perfil ativo."
           />
         )}
       </CollapsiblePanel>

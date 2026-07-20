@@ -1,0 +1,198 @@
+[
+  {
+    "id": "25-years-backpack",
+    "name": "25 Years Backpack",
+    "category": "container",
+    "slot": "container",
+    "sourceStatus": "imported",
+    "level": 0,
+    "weightOz": 17,
+    "sourcePath": "files_repository\\20260717_new\\Recipientes - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "albino-plate",
+    "name": "Albino Plate",
+    "category": "armor",
+    "slot": "armor",
+    "sourceStatus": "imported",
+    "level": 0,
+    "vocations": [
+      "Todas"
+    ],
+    "armor": 11,
+    "imbuementSlots": 2,
+    "tier": 3,
+    "weightOz": 84,
+    "sourcePath": "files_repository\\20260717_new\\Armaduras - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "alchemists-boots",
+    "name": "Alchemist's Boots",
+    "category": "boots",
+    "slot": "boots",
+    "sourceStatus": "imported",
+    "level": 250,
+    "vocations": [
+      "Sorcerers"
+    ],
+    "armor": 2,
+    "imbuementSlots": 1,
+    "tier": 4,
+    "weightOz": 16,
+    "sourcePath": "files_repository\\20260717_new\\Botas - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "alchemists-notepad",
+    "name": "Alchemist's Notepad",
+    "category": "shield",
+    "slot": "shield",
+    "sourceStatus": "imported",
+    "level": 250,
+    "vocations": [
+      "Sorcerers"
+    ],
+    "defense": 32,
+    "imbuementSlots": 1,
+    "weightOz": 13,
+    "sourcePath": "files_repository\\20260717_new\\Spellbooks - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "alicorn-headguard",
+    "name": "Alicorn Headguard",
+    "category": "helmet",
+    "slot": "helmet",
+    "sourceStatus": "imported",
+    "level": 400,
+    "vocations": [
+      "Paladins"
+    ],
+    "armor": 11,
+    "imbuementSlots": 2,
+    "tier": 4,
+    "weightOz": 39,
+    "sourcePath": "files_repository\\20260717_new\\Capacetes - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "alicorn-quiver",
+    "name": "Alicorn Quiver",
+    "category": "container",
+    "slot": "container",
+    "sourceStatus": "imported",
+    "level": 400,
+    "vocations": [
+      "Paladins"
+    ],
+    "weightOz": 20,
+    "sourcePath": "files_repository\\20260717_new\\Aljavas - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "alloy-legs",
+    "name": "Alloy Legs",
+    "category": "legs",
+    "slot": "legs",
+    "sourceStatus": "imported",
+    "level": 60,
+    "vocations": [
+      "Todas"
+    ],
+    "armor": 6,
+    "imbuementSlots": 0,
+    "tier": 2,
+    "weightOz": 45,
+    "sourcePath": "files_repository\\20260717_new\\Calças - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "amber-bow",
+    "name": "Amber Bow",
+    "category": "weapon",
+    "slot": "weapon",
+    "sourceStatus": "imported",
+    "weaponType": "distance",
+    "level": 330,
+    "vocations": [
+      "Paladins"
+    ],
+    "hands": 2,
+    "element": "Nenhum",
+    "range": 6,
+    "hitModifier": 6,
+    "imbuementSlots": 3,
+    "tier": 4,
+    "weightOz": 37,
+    "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "amber-crossbow",
+    "name": "Amber Crossbow",
+    "category": "weapon",
+    "slot": "weapon",
+    "sourceStatus": "imported",
+    "weaponType": "distance",
+    "level": 330,
+    "vocations": [
+      "Paladins"
+    ],
+    "hands": 2,
+    "element": "Nenhum",
+    "range": 6,
+    "hitModifier": 7,
+    "imbuementSlots": 3,
+    "tier": 4,
+    "weightOz": 39,
+    "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "amphora",
+    "name": "Amphora",
+    "category": "container",
+    "slot": "container",
+    "sourceStatus": "imported",
+    "level": 0,
+    "weightOz": 97,
+    "sourcePath": "files_repository\\20260717_new\\Recipientes - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "arrow",
+    "name": "Arrow",
+    "category": "weapon",
+    "slot": "weapon",
+    "sourceStatus": "imported",
+    "weaponType": "ammo",
+    "level": 0,
+    "element": "Nenhum",
+    "weightOz": 0.7,
+    "sourcePath": "files_repository\\20260717_new\\Munição - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "assassin-star",
+    "name": "Assassin Star",
+    "category": "weapon",
+    "slot": "weapon",
+    "sourceStatus": "imported",
+    "weaponType": "distance",
+    "level": 80,
+    "vocations": [
+      "Todas"
+    ],
+    "hands": 1,
+    "element": "Nenhum",
+    "range": 4,
+    "hitModifier": 0,
+    "imbuementSlots": 0,
+    "tier": 0,
+    "weightOz": 2,
+    "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  },
+  {
+    "id": "bolt",
+    "name": "Bolt",
+    "category": "weapon",
+    "slot": "weapon",
+    "sourceStatus": "imported",
+    "weaponType": "ammo",
+    "level": 0,
+    "element": "Nenhum",
+    "weightOz": 0.8,
+    "sourcePath": "files_repository\\20260717_new\\Munição - Tibia Wiki - A Enciclopédia do Tibia.htm"
+  }
+]

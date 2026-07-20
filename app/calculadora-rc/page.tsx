@@ -66,7 +66,7 @@ export default function CalculadoraRcPage() {
       ...history,
       {
         ts: Date.now(),
-        nome: server?.nome ?? "Cotacao manual",
+        nome: server?.nome ?? "Cotação manual",
         moeda: server?.moeda ?? "RC",
         gcPorMoeda: cotacao,
         unitVenda: precoPacote / (server?.lote ?? 25),
@@ -85,30 +85,30 @@ export default function CalculadoraRcPage() {
         tabs={[
           { key: "calculadora", label: "I - Calculadora" },
           { key: "mercado", label: "II - Mercado" },
-          { key: "patrimonio", label: "III - Patrimonio" }
+          { key: "patrimonio", label: "III - Patrimônio" }
         ]}
       />
 
       {tab === "calculadora" ? (
         <>
-          <Panel title="Parametros base" eyebrow="preenchidos pela Cotacao Central">
+          <Panel title="Parâmetros base" eyebrow="preenchidos pela Cotação Central">
             <div className="help-panel-row">
               <p className="note">
-                Estes campos usam a Cotacao Central como referencia para converter gold, moeda premium e reais.
+                Estes campos usam a Cotação Central como referência para converter gold, moeda premium e reais.
               </p>
               <HelpToggle />
             </div>
             <div className="inputs-grid" style={{ alignItems: "end" }}>
-              <Field label={<HelpLabel text={`Preco em R$ do lote (${loteBase} ${currencyName})`} help={`Valor em reais do lote inteiro de ${loteBase} ${currencyName}. Ele vem da Cotacao Central, mas pode ser ajustado aqui para simular.`} />}>
+              <Field label={<HelpLabel text={`Preço em R$ do lote (${loteBase} ${currencyName})`} help={`Valor em reais do lote inteiro de ${loteBase} ${currencyName}. Ele vem da Cotação Central, mas pode ser ajustado aqui para simular.`} />}>
                 <div className="field-wrap"><span className="field-prefix">R$</span><input className="with-prefix" type="number" step="0.000001" value={precoPacote} onChange={(e) => setPrecoPacote(Number(e.target.value))} /></div>
               </Field>
-              <Field label={<HelpLabel text={`${currencyName} desejadas (multiplos de ${loteBase})`} help={`Quantidade de moeda premium que voce quer simular. Se digitar um valor fora do lote, o ReinaHub usa o multiplo valido abaixo.`} />}>
+              <Field label={<HelpLabel text={`${currencyName} desejadas (múltiplos de ${loteBase})`} help={`Quantidade de moeda premium que você quer simular. Se digitar um valor fora do lote, o ReinaHub usa o múltiplo válido abaixo.`} />}>
                 <IntegerInput value={quantidade} onChange={setQuantidade} />
               </Field>
               <Field label={<HelpLabel text={`Gold por 1 ${currencyName}`} help={`Quanto gold custa 1 ${currencyName}. Exemplo: 40000 significa 40.000 gold para comprar 1 ${currencyName}.`} />}>
                 <IntegerInput value={cotacao} onChange={setCotacao} />
               </Field>
-              <Field label={<HelpLabel text="Gold disponivel" help={`Gold coins que voce tem disponivel. O ReinaHub calcula quantas ${currencyName} isso compra e quanto vale em reais.`} />}>
+              <Field label={<HelpLabel text="Gold disponível" help={`Gold coins que você tem disponível. O ReinaHub calcula quantas ${currencyName} isso compra e quanto vale em reais.`} />}>
                 <input inputMode="numeric" value={formatIntegerString(gold)} onChange={(e) => setGold(RcCalculatorService.sanitizeGoldInput(e.target.value))} placeholder="100.000.000" />
               </Field>
             </div>
@@ -118,30 +118,30 @@ export default function CalculadoraRcPage() {
               ))}
             </div>
             <div className="quick-row">
-              <button className="quick-btn primary" type="button" onClick={() => setQuickConverterOpen(true)}>Abrir conversor rapido</button>
+              <button className="quick-btn primary" type="button" onClick={() => setQuickConverterOpen(true)}>Abrir conversor rápido</button>
             </div>
             <p className="note">
-              Para {currencyName}, a negociacao usa lote base de {loteBase} e seus multiplos. Se informar outro numero, o calculo usa o multiplo valido abaixo.
+              Para {currencyName}, a negociação usa lote base de {loteBase} e seus múltiplos. Se informar outro número, o cálculo usa o múltiplo válido abaixo.
             </p>
           </Panel>
           <div className="slots">
             <ResultSlot label={`${currencyShort} calculadas`} value={`${integer(calc.normalizedQuantidade)} ${currencyShort}`} />
-            <ResultSlot label={`Preco de 1 ${currencyShort}`} value={<MoneyValue value={calc.precoMoeda} />} tone="small" />
+            <ResultSlot label={`Preço de 1 ${currencyShort}`} value={<MoneyValue value={calc.precoMoeda} />} tone="small" />
             <ResultSlot label="Valor total em R$" value={<MoneyValue value={calc.valorTotal} />} tone="gold" />
             <ResultSlot label="Gold necessario" value={`${integer(calc.totalGold)} gold`} />
-            <ResultSlot label={<HelpLabel text={`${currencyShort} possiveis (exato)`} help="Resultado fracionado. Ele mostra a conversao matematica exata do seu gold, mesmo que o jogo negocie apenas lotes inteiros." />} value={`${moneySmart(calc.moedasPossiveisExatas, 8)} ${currencyShort}`} />
+            <ResultSlot label={<HelpLabel text={`${currencyShort} possíveis (exato)`} help="Resultado fracionado. Ele mostra a conversão matemática exata do seu gold, mesmo que o jogo negocie apenas lotes inteiros." />} value={`${moneySmart(calc.moedasPossiveisExatas, 8)} ${currencyShort}`} />
             <ResultSlot label={`${currencyShort} compraveis em lote`} value={`${integer(calc.rcPossiveis)} ${currencyShort}`} />
-            <ResultSlot label="Valor possivel em reais" value={<MoneyValue value={calc.valorPossivel} />} tone="gold" />
+            <ResultSlot label="Valor possível em reais" value={<MoneyValue value={calc.valorPossivel} />} tone="gold" />
             <ResultSlot label="Valor de 1 gold" value={<MoneyValue value={calc.preco1Gc} maxDecimals={10} />} />
             <ResultSlot label="Valor de 100 gold" value={<MoneyValue value={calc.preco100Gc} maxDecimals={10} />} />
             <ResultSlot label="Valor de 1K gold" value={<MoneyValue value={calc.preco1K} maxDecimals={10} />} />
             <ResultSlot label="Valor de 10K gold" value={<MoneyValue value={calc.preco10K} maxDecimals={10} />} />
             <ResultSlot label="Valor de 100K gold" value={<MoneyValue value={calc.preco100K} maxDecimals={10} />} />
             <ResultSlot label="Valor de 1KK gold" value={<MoneyValue value={calc.precoKk} maxDecimals={10} />} />
-            <ResultSlot label={<HelpLabel text="Valor de 100KK gold" help="100KK significa 100.000.000 gold coins convertidos para reais pela cotacao ativa." />} value={<MoneyValue value={calc.preco100Kk} />} tone="gold" />
+            <ResultSlot label={<HelpLabel text="Valor de 100KK gold" help="100KK significa 100.000.000 gold coins convertidos para reais pela cotação ativa." />} value={<MoneyValue value={calc.preco100Kk} />} tone="gold" />
           </div>
 
-          <Modal title="Conversor rapido" eyebrow={server ? ReinaEconomyService.getDisplayName(server) : "cotacao manual"} open={quickConverterOpen} onClose={() => setQuickConverterOpen(false)}>
+          <Modal title="Conversor rápido" eyebrow={server ? ReinaEconomyService.getDisplayName(server) : "cotação manual"} open={quickConverterOpen} onClose={() => setQuickConverterOpen(false)}>
             <div className="converter-overlay-grid">
               <div className="converter-mode-row">
                 {[
@@ -176,7 +176,7 @@ export default function CalculadoraRcPage() {
                 <ResultSlot label="Valor em reais" value={<MoneyValue value={quickConversion.brl} />} tone="gold" />
               </div>
               <p className="note">
-                Conversao rapida usando {integer(cotacao)} gold por 1 {currencyShort} e R$ {moneySmart(precoPacote / loteBase)} por {currencyShort}.
+                Conversão rápida usando {integer(cotacao)} gold por 1 {currencyShort} e R$ {moneySmart(precoPacote / loteBase)} por {currencyShort}.
               </p>
             </div>
           </Modal>
@@ -188,8 +188,8 @@ export default function CalculadoraRcPage() {
           <div className="market-grid">
             <div className="market-card"><div className="label">Servidor ativo</div><div className="value gold">{ReinaEconomyService.getDisplayName(server)}</div></div>
             <div className="market-card"><div className="label">Lote base</div><div className="value">{server?.lote ?? 25} {currencyShort}</div></div>
-            <div className="market-card"><div className="label">Preco unitario venda</div><div className="value">R$ {moneySmart((server?.loteVenda ?? precoPacote) / (server?.lote ?? 25))}</div></div>
-            <div className="market-card"><div className="label">Preco unitario compra</div><div className="value red">R$ {moneySmart((server?.loteCompra ?? precoPacote) / (server?.lote ?? 25))}</div></div>
+            <div className="market-card"><div className="label">Preço unitário venda</div><div className="value">R$ {moneySmart((server?.loteVenda ?? precoPacote) / (server?.lote ?? 25))}</div></div>
+            <div className="market-card"><div className="label">Preço unitário compra</div><div className="value red">R$ {moneySmart((server?.loteCompra ?? precoPacote) / (server?.lote ?? 25))}</div></div>
             <div className="market-card"><div className="label">Spread</div><div className="value gold">R$ {moneySmart(((server?.loteCompra ?? precoPacote) - (server?.loteVenda ?? precoPacote)) / (server?.lote ?? 25))}</div></div>
           </div>
         </Panel>
@@ -197,25 +197,25 @@ export default function CalculadoraRcPage() {
 
       {tab === "patrimonio" ? (
         <>
-          <Panel title="Seu patrimonio no jogo" eyebrow="avaliacao em reais">
+          <Panel title="Seu patrimônio no jogo" eyebrow="avaliação em reais">
             <div className="inputs-grid">
-              <Field label={<HelpLabel text="Gold na mochila" help="Gold que esta carregado no personagem. Soma com o banco para estimar o patrimonio total." />}><input inputMode="numeric" value={formatIntegerString(goldMochila)} onChange={(e) => setGoldMochila(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
-              <Field label={<HelpLabel text="Gold no banco" help="Gold guardado no banco. O valor estimado usa o preco de 1 GC calculado pela cotacao ativa." />}><input inputMode="numeric" value={formatIntegerString(goldBanco)} onChange={(e) => setGoldBanco(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
+              <Field label={<HelpLabel text="Gold na mochila" help="Gold que está carregado no personagem. Soma com o banco para estimar o patrimônio total." />}><input inputMode="numeric" value={formatIntegerString(goldMochila)} onChange={(e) => setGoldMochila(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
+              <Field label={<HelpLabel text="Gold no banco" help="Gold guardado no banco. O valor estimado usa o preço de 1 GC calculado pela cotação ativa." />}><input inputMode="numeric" value={formatIntegerString(goldBanco)} onChange={(e) => setGoldBanco(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
             </div>
           </Panel>
           <div className="verdict">
             <div className="label">Valor estimado do personagem</div>
             <div className="value gold">R$ {moneySmart(calc.patrimonio, 10)}</div>
           </div>
-          <Panel title="Historico de cotacoes" eyebrow="salvo localmente">
+          <Panel title="Histórico de cotações" eyebrow="salvo localmente">
             <div className="quick-row" style={{ marginBottom: 16 }}>
-              <button className="quick-btn primary" type="button" onClick={saveHistory}>Salvar cotacao atual</button>
-              <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); StorageService.remove("rc_history"); }}>Limpar historico</button>
+              <button className="quick-btn primary" type="button" onClick={saveHistory}>Salvar cotação atual</button>
+              <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); StorageService.remove("rc_history"); }}>Limpar histórico</button>
             </div>
             <div className="history-list">
               {history.length ? history.slice().reverse().map((entry) => (
                 <div className="history-item" key={entry.ts}><span>{new Date(entry.ts).toLocaleString("pt-BR")}</span><span>{integer(entry.gcPorMoeda)} GC/{currencyShortName(entry.moeda)} - R$ {moneySmart(entry.unitVenda * (server?.lote ?? 25))}</span></div>
-              )) : <div className="empty-msg">Nenhuma cotacao salva ainda.</div>}
+              )) : <div className="empty-msg">Nenhuma cotação salva ainda.</div>}
             </div>
           </Panel>
         </>

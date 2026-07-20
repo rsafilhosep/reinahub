@@ -9,6 +9,7 @@ import { Tabs } from "@/components/Tabs";
 import { integer, money } from "@/services/format";
 import { MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { ItemPriceMemoryService, type ItemPriceMemorySuggestion } from "@/source/web/src/reina-core/prices";
 import { ItemSearchClientService } from "@/source/web/src/features/item-database/services/item-search-client-service";
 import type { ItemSearchResult } from "@/source/web/src/features/item-database/types";
 import { MarketEconomyService } from "@/source/web/src/features/market-analyzer/services/market-economy-service";
@@ -45,6 +46,7 @@ export default function MarketPage() {
   const [marketMinProfitPct, setMarketMinProfitPct] = useState(5);
   const [marketMinProfitGp, setMarketMinProfitGp] = useState(0);
   const [history, setHistory] = useState<MarketAnalysis[]>([]);
+  const [priceSuggestion, setPriceSuggestion] = useState<ItemPriceMemorySuggestion | null>(null);
 
   useEffect(() => {
     const sync = () => setServer(ReinaEconomyService.getActiveContext().server);
@@ -52,6 +54,15 @@ export default function MarketPage() {
     setHistory(MarketEconomyService.loadHistory());
     return ReinaEconomyService.subscribe(sync);
   }, []);
+
+  useEffect(() => {
+    if (!selectedItem) {
+      setPriceSuggestion(null);
+      return;
+    }
+    const suggestion = ItemPriceMemoryService.getBestPrice(server, selectedItem.id, { includeNpc: false });
+    setPriceSuggestion(suggestion);
+  }, [selectedItem, server]);
 
   useEffect(() => {
     const query = nome.trim();
@@ -99,6 +110,32 @@ export default function MarketPage() {
 
   function saveAnalysis() {
     const next = MarketEconomyService.saveAnalysis(history, analysis);
+    if (analysis.itemId) {
+      ItemPriceMemoryService.rememberPrice({
+        server,
+        itemId: analysis.itemId,
+        itemName: analysis.nome,
+        source: "npc",
+        value: analysis.npcUnit,
+        context: "Market Analyzer"
+      });
+      ItemPriceMemoryService.rememberPrice({
+        server,
+        itemId: analysis.itemId,
+        itemName: analysis.nome,
+        source: "market-manual",
+        value: analysis.marketUnit,
+        context: "Market Analyzer"
+      });
+      ItemPriceMemoryService.rememberPrice({
+        server,
+        itemId: analysis.itemId,
+        itemName: analysis.nome,
+        source: "last-analysis",
+        value: analysis.marketUnit,
+        context: "Market Analyzer"
+      });
+    }
     setHistory(next);
   }
 
@@ -106,6 +143,7 @@ export default function MarketPage() {
     setNome(value);
     if (selectedItem && value.trim().toLowerCase() !== selectedItem.name.toLowerCase()) {
       setSelectedItem(null);
+      setPriceSuggestion(null);
     }
   }
 
@@ -113,6 +151,9 @@ export default function MarketPage() {
     setSelectedItem(item);
     setNome(item.name);
     if (item.npcPrice !== null) setNpcUnit(item.npcPrice);
+    const suggestion = ItemPriceMemoryService.getBestPrice(server, item.id, { includeNpc: false });
+    setPriceSuggestion(suggestion);
+    if (suggestion) setMarketUnit(suggestion.value);
     setItemResults([]);
   }
 
@@ -121,20 +162,21 @@ export default function MarketPage() {
     setItemResults([]);
     if (selectedItem && category && !itemMatchesCategory(selectedItem, category)) {
       setSelectedItem(null);
+      setPriceSuggestion(null);
     }
   }
 
   return (
     <AppShell current="market" mark="MA" subtitle="Market Analyzer - NPC vs Market">
       <Tabs active={tab} onChange={setTab} tabs={[
-        { key: "analise", label: "I - Analise" },
-        { key: "historico", label: "II - Historico" },
+        { key: "analise", label: "I - Análise" },
+        { key: "historico", label: "II - Histórico" },
         { key: "ranking", label: "III - Ranking" }
       ]} />
 
       {tab === "analise" ? (
         <>
-          <Panel title="Parametros do item" eyebrow="npc vs market">
+          <Panel title="Parâmetros do item" eyebrow="npc vs market">
             <div className="quick-row" style={{ marginTop: 0, marginBottom: 14 }}>
               {ITEM_CATEGORY_FILTERS.map((filter) => (
                 <button
@@ -152,16 +194,16 @@ export default function MarketPage() {
                 <input value={nome} onChange={(e) => updateItemName(e.target.value)} />
               </Field>
               <Field label="Quantidade"><input type="number" value={qtd} onChange={(e) => setQtd(Number(e.target.value))} /></Field>
-              <Field label="Valor unitario NPC"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={npcUnit} onChange={(e) => setNpcUnit(Number(e.target.value))} /></div></Field>
-              <Field label="Valor unitario Market"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={marketUnit} onChange={(e) => setMarketUnit(Number(e.target.value))} /></div></Field>
+              <Field label="Valor unitário NPC"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={npcUnit} onChange={(e) => setNpcUnit(Number(e.target.value))} /></div></Field>
+              <Field label="Valor unitário Market"><div className="field-wrap"><span className="field-suffix">gp</span><input className="with-suffix" type="number" value={marketUnit} onChange={(e) => setMarketUnit(Number(e.target.value))} /></div></Field>
               <Field label="Taxa do Market"><div className="field-wrap"><span className="field-suffix">%</span><input className="with-suffix" type="number" step="0.1" value={taxa} onChange={(e) => setTaxa(Number(e.target.value))} /></div></Field>
-              <Field label="Vantagem minima Market">
+              <Field label="Vantagem mínima Market">
                 <div className="field-wrap">
                   <span className="field-suffix">%</span>
                   <input className="with-suffix" type="number" min="0" step="0.1" value={marketMinProfitPct} onChange={(e) => setMarketMinProfitPct(Number(e.target.value))} />
                 </div>
               </Field>
-              <Field label="Ganho minimo Market">
+              <Field label="Ganho mínimo Market">
                 <div className="field-wrap">
                   <span className="field-suffix">gp</span>
                   <input className="with-suffix" type="number" min="0" value={marketMinProfitGp} onChange={(e) => setMarketMinProfitGp(Number(e.target.value))} />
@@ -187,6 +229,11 @@ export default function MarketPage() {
                   {formatItemMeta(selectedItem)}
                 </span>
               </div>
+            ) : null}
+            {selectedItem && priceSuggestion ? (
+              <p className="note">
+                Preço sugerido para Market: {integer(priceSuggestion.value)} gp via {priceSuggestion.label}.
+              </p>
             ) : null}
             {!selectedItem && itemResults.length ? (
               <div className="history-list" style={{ marginTop: 14 }}>
@@ -219,12 +266,12 @@ export default function MarketPage() {
             ) : null}
             {!selectedItem && itemSearchLoading ? <div className="note" style={{ marginTop: 12 }}>Buscando na base local...</div> : null}
             <div className="quick-row">
-              <button className="quick-btn primary" type="button" onClick={saveAnalysis}>Salvar analise</button>
+              <button className="quick-btn primary" type="button" onClick={saveAnalysis}>Salvar análise</button>
             </div>
           </Panel>
 
           <div className="verdict">
-            <div className="label">Melhor opcao</div>
+            <div className="label">Melhor opção</div>
             <div className={`value ${economy.bestOption === "market" ? "" : "red"}`}>{economy.bestOption === "market" ? "Vender no Market" : "Vender para NPC"}</div>
             <div className="note">
               {analysis.diffAbs >= 0 ? "+" : ""}{integer(analysis.diffAbs)} gp ({money(analysis.diffPct, 2)}%) - {analysis.recommendationReason}
@@ -235,12 +282,12 @@ export default function MarketPage() {
             <ResultSlot label="NPC total" value={`${integer(analysis.npcTotal)} gp`} tone="red" />
             <ResultSlot label="Market bruto" value={`${integer(analysis.marketBruto)} gp`} />
             <ResultSlot label="Taxa descontada" value={`${integer(analysis.taxaValor)} gp`} tone="small" />
-            <ResultSlot label="Market liquido" value={`${integer(analysis.marketLiquido)} gp`} />
-            <ResultSlot label="Equivalencia ativa" value={`${money(premium, 4)} ${server?.moeda ?? ""}`} tone="gold" />
+            <ResultSlot label="Market líquido" value={`${integer(analysis.marketLiquido)} gp`} />
+            <ResultSlot label="Equivalência ativa" value={`${money(premium, 4)} ${server?.moeda ?? ""}`} tone="gold" />
             <ResultSlot label="Estimativa em reais" value={`R$ ${money(brl, 2)}`} />
           </div>
 
-          <Panel title="Comparacao" eyebrow="npc vs market liquido">
+          <Panel title="Comparação" eyebrow="npc vs market líquido">
             <div className="chart-wrap">
               <Bar
                 data={{
@@ -255,8 +302,8 @@ export default function MarketPage() {
       ) : null}
 
       {tab === "historico" ? (
-        <Panel title="Historico de analises" eyebrow="salvo localmente">
-          <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); MarketEconomyService.clearHistory(); }}>Limpar historico</button>
+        <Panel title="Histórico de análises" eyebrow="salvo localmente">
+          <button className="quick-btn danger" type="button" onClick={() => { setHistory([]); MarketEconomyService.clearHistory(); }}>Limpar histórico</button>
           <div className="history-list" style={{ marginTop: 16 }}>
             {history.length ? history.slice().reverse().map((entry) => (
               <div className="history-item" key={entry.ts}>
@@ -277,17 +324,17 @@ export default function MarketPage() {
                 </span>
                 <span style={{ color: "var(--gold)" }}>{formatMarketRecommendation(entry)} - {integer(entry.diffAbs)} gp</span>
               </div>
-            )) : <div className="empty-msg">Nenhuma analise salva ainda.</div>}
+            )) : <div className="empty-msg">Nenhuma análise salva ainda.</div>}
           </div>
         </Panel>
       ) : null}
 
       {tab === "ranking" ? (
-        <Panel title="Ranking de economia" eyebrow="maiores diferencas">
+        <Panel title="Ranking de economia" eyebrow="maiores diferenças">
           <div className="rank-list">
             {history.length ? history.slice().sort((a, b) => Math.abs(b.diffAbs) - Math.abs(a.diffAbs)).slice(0, 10).map((entry, index) => (
               <div className="rank-item" key={`${entry.ts}-${index}`}><strong style={{ color: "var(--gold)" }}>{index + 1}</strong><span>{entry.nome}</span><span>{formatMarketRecommendation(entry)} - {integer(entry.diffAbs)} gp</span></div>
-            )) : <div className="empty-msg">Salve analises para ver o ranking.</div>}
+            )) : <div className="empty-msg">Salve análises para ver o ranking.</div>}
           </div>
         </Panel>
       ) : null}

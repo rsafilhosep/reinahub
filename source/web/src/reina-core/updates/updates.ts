@@ -12,20 +12,20 @@ export const REINAHUB_UPDATES: ReinaUpdate[] = [
     id: "navigation-sidebar",
     date: "Jul 2026",
     category: "major",
-    title: "Navegacao lateral e hub mais organizado",
-    summary: "O ReinaHub ganhou uma navegacao lateral para crescer sem poluir o topo da tela.",
+    title: "Navegação lateral e hub mais organizado",
+    summary: "O ReinaHub ganhou uma navegação lateral para crescer sem poluir o topo da tela.",
     highlights: [
       "Menu separado por Hub, Objetivos, Database e Sistema.",
-      "Dashboard inicial mais claro para novos usuarios.",
-      "Perfil economico ativo visivel em todas as areas principais."
+      "Dashboard inicial mais claro para novos usuários.",
+      "Perfil econômico ativo visível em todas as áreas principais."
     ]
   },
   {
     id: "economy-context",
     date: "Jul 2026",
     category: "system",
-    title: "Perfil economico ativo para servidores e mundos",
-    summary: "Cotacao, mundo, moeda premium e conversoes passaram a sair de uma fonte central.",
+    title: "Perfil econômico ativo para servidores e mundos",
+    summary: "Cotação, mundo, moeda premium e conversões passaram a sair de uma fonte central.",
     highlights: [
       "Suporte a Tibia Global, RubinOT e cadastro manual.",
       "Troca de servidor ativa refletida nas ferramentas.",
@@ -36,12 +36,12 @@ export const REINAHUB_UPDATES: ReinaUpdate[] = [
     id: "hunt-analyzer-export",
     date: "Jul 2026",
     category: "feature",
-    title: "Hunt Analyzer com historico, multiplos arquivos e card",
-    summary: "A analise de hunts ficou mais completa para acompanhar evolucao e compartilhar resultado.",
+    title: "Hunt Analyzer com histórico, múltiplos arquivos e card",
+    summary: "A análise de hunts ficou mais completa para acompanhar evolução e compartilhar resultado.",
     highlights: [
-      "Importacao por arquivo e texto colado.",
-      "Historico local de sessoes salvas.",
-      "Geracao de PNG/PDF com visual do ReinaHub."
+      "Importação por arquivo e texto colado.",
+      "Histórico local de sessões salvas.",
+      "Geração de PNG/PDF com visual do ReinaHub."
     ]
   },
   {
@@ -49,11 +49,11 @@ export const REINAHUB_UPDATES: ReinaUpdate[] = [
     date: "Jul 2026",
     category: "data",
     title: "Base local de itens, monstros, NPCs e imbuements",
-    summary: "O projeto deixou de depender de uma tela isolada e passou a ter dados reutilizaveis.",
+    summary: "O projeto deixou de depender de uma tela isolada e passou a ter dados reutilizáveis.",
     highlights: [
       "Item Database, Monster Database e NPC Hub.",
-      "Imbuement Database com materiais e simulacao economica.",
-      "Servicos compartilhados para evitar duplicacao de leitura."
+      "Imbuement Database com materiais e simulação econômica.",
+      "Serviços compartilhados para evitar duplicação de leitura."
     ]
   },
   {
@@ -61,7 +61,7 @@ export const REINAHUB_UPDATES: ReinaUpdate[] = [
     date: "Jul 2026",
     category: "feature",
     title: "Stash, Premium Goals e Live Goal",
-    summary: "Novas ferramentas ajudam a transformar loot, patrimonio e metas em progresso visivel.",
+    summary: "Novas ferramentas ajudam a transformar loot, patrimônio e metas em progresso visível.",
     highlights: [
       "Stash manual por item e quantidade.",
       "Objetivos de premium, VIP, item ou moeda premium.",
@@ -77,7 +77,7 @@ export const REINAHUB_UPDATES: ReinaUpdate[] = [
     highlights: [
       "Fallbacks seguros para imagens ausentes.",
       "Scanner e importador de inbox para GIFs/PNGs.",
-      "Relatorios de assets faltantes e prioridades."
+      "Relatórios de assets faltantes e prioridades."
     ]
   }
 ];

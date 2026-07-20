@@ -13,10 +13,10 @@ const categoryLabel: Record<string, string> = {
 
 export default function UpdatesPage() {
   return (
-    <AppShell current="updates" mark="UP" subtitle="Atualizacoes - novidades do ReinaHub">
-      <Panel title="Atualizacoes do ReinaHub" eyebrow="O que ha de novo">
+    <AppShell current="updates" mark="UP" subtitle="Atualizações - novidades do ReinaHub">
+      <Panel title="Atualizações do ReinaHub" eyebrow="O que há de novo">
         <p className="note updates-intro">
-          Registro simples das melhorias feitas no projeto, para acompanhar a evolucao do hub sem depender da memoria.
+          Registro simples das melhorias feitas no projeto, para acompanhar a evolução do hub sem depender da memória.
         </p>
         <div className="updates-list">
           {REINAHUB_UPDATES.map((update) => (

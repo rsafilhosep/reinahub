@@ -1,0 +1,33 @@
+{
+  "scannedAt": "2026-07-20T00:15:42.304Z",
+  "repositoryDir": "files_repository",
+  "filesScanned": 25,
+  "filesSkipped": 46,
+  "rawCandidateRows": 30,
+  "duplicatedCandidateNames": 0,
+  "candidatesFound": 30,
+  "readyCandidates": 0,
+  "reviewCandidates": 30,
+  "alreadyInEquipmentDatabase": 14,
+  "matchedLocalItems": 26,
+  "byCategory": {
+    "container": 3,
+    "weapon": 20,
+    "shield": 3,
+    "armor": 1,
+    "boots": 1,
+    "helmet": 1,
+    "legs": 1
+  },
+  "byWeaponType": {
+    "none": 13,
+    "club": 1,
+    "axe": 2,
+    "distance": 4,
+    "fist": 1,
+    "rod": 2,
+    "sword": 1,
+    "wand": 4,
+    "ammo": 2
+  }
+}

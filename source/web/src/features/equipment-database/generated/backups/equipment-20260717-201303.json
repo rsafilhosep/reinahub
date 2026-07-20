@@ -1,0 +1,459 @@
+[
+  {
+    "id": "spike-sword",
+    "name": "Spike Sword",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 0,
+    "vocations": [
+      "Knight",
+      "Paladin"
+    ],
+    "hands": 1,
+    "attack": 24,
+    "defense": 21,
+    "imbuementSlots": 2,
+    "weightOz": 50,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "bright-sword",
+    "name": "Bright Sword",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 0,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 36,
+    "defense": 30,
+    "imbuementSlots": 2,
+    "weightOz": 29,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "fire-sword",
+    "name": "Fire Sword",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 35,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 35,
+    "defense": 20,
+    "element": "fire",
+    "imbuementSlots": 1,
+    "weightOz": 23,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "magic-sword",
+    "name": "Magic Sword",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 80,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 48,
+    "defense": 35,
+    "imbuementSlots": 2,
+    "weightOz": 42,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "avenger",
+    "name": "The Avenger",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 75,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 2,
+    "attack": 50,
+    "defense": 38,
+    "imbuementSlots": 3,
+    "weightOz": 64,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "emerald-sword",
+    "name": "Emerald Sword",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "sword",
+    "level": 100,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 49,
+    "defense": 33,
+    "imbuementSlots": 2,
+    "weightOz": 48,
+    "sourceUrl": "https://www.tibiawiki.com.br/wiki/Espadas",
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "knight-axe",
+    "name": "Knight Axe",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "axe",
+    "level": 0,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 33,
+    "defense": 21,
+    "imbuementSlots": 2,
+    "weightOz": 59,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "fire-axe",
+    "name": "Fire Axe",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "axe",
+    "level": 35,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 38,
+    "defense": 16,
+    "element": "fire",
+    "imbuementSlots": 1,
+    "weightOz": 40,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "crystalline-axe",
+    "name": "Crystalline Axe",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "axe",
+    "level": 90,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 47,
+    "defense": 29,
+    "imbuementSlots": 2,
+    "weightOz": 52,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "clerical-mace",
+    "name": "Clerical Mace",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "club",
+    "level": 0,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 28,
+    "defense": 15,
+    "imbuementSlots": 2,
+    "weightOz": 58,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "dragon-hammer",
+    "name": "Dragon Hammer",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "club",
+    "level": 0,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 1,
+    "attack": 32,
+    "defense": 20,
+    "imbuementSlots": 2,
+    "weightOz": 68,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "thunder-hammer",
+    "name": "Thunder Hammer",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "club",
+    "level": 85,
+    "vocations": [
+      "Knight"
+    ],
+    "hands": 2,
+    "attack": 49,
+    "defense": 35,
+    "imbuementSlots": 3,
+    "weightOz": 125,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "elvish-bow",
+    "name": "Elvish Bow",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "distance",
+    "level": 0,
+    "vocations": [
+      "Paladin"
+    ],
+    "hands": 2,
+    "attack": 0,
+    "range": 6,
+    "hitModifier": 5,
+    "imbuementSlots": 3,
+    "weightOz": 39,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "warsinger-bow",
+    "name": "Warsinger Bow",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "distance",
+    "level": 80,
+    "vocations": [
+      "Paladin"
+    ],
+    "hands": 2,
+    "range": 6,
+    "hitModifier": 3,
+    "imbuementSlots": 3,
+    "weightOz": 45,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "royal-crossbow",
+    "name": "Royal Crossbow",
+    "category": "weapon",
+    "slot": "weapon",
+    "weaponType": "distance",
+    "level": 130,
+    "vocations": [
+      "Paladin"
+    ],
+    "hands": 2,
+    "range": 5,
+    "hitModifier": 5,
+    "imbuementSlots": 3,
+    "weightOz": 120,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "dwarven-shield",
+    "name": "Dwarven Shield",
+    "category": "shield",
+    "slot": "shield",
+    "level": 0,
+    "defense": 26,
+    "imbuementSlots": 1,
+    "weightOz": 55,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "dragon-shield",
+    "name": "Dragon Shield",
+    "category": "shield",
+    "slot": "shield",
+    "level": 0,
+    "defense": 31,
+    "imbuementSlots": 1,
+    "weightOz": 60,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "demon-shield",
+    "name": "Demon Shield",
+    "category": "shield",
+    "slot": "shield",
+    "level": 0,
+    "defense": 35,
+    "imbuementSlots": 1,
+    "weightOz": 26,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "mastermind-shield",
+    "name": "Mastermind Shield",
+    "category": "shield",
+    "slot": "shield",
+    "level": 0,
+    "defense": 37,
+    "imbuementSlots": 1,
+    "weightOz": 57,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "plate-armor",
+    "name": "Plate Armor",
+    "category": "armor",
+    "slot": "armor",
+    "level": 0,
+    "armor": 10,
+    "imbuementSlots": 1,
+    "weightOz": 120,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "knight-armor",
+    "name": "Knight Armor",
+    "category": "armor",
+    "slot": "armor",
+    "level": 0,
+    "armor": 12,
+    "imbuementSlots": 1,
+    "weightOz": 120,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "crown-armor",
+    "name": "Crown Armor",
+    "category": "armor",
+    "slot": "armor",
+    "level": 0,
+    "armor": 13,
+    "imbuementSlots": 1,
+    "weightOz": 99,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "magic-plate-armor",
+    "name": "Magic Plate Armor",
+    "category": "armor",
+    "slot": "armor",
+    "level": 80,
+    "armor": 17,
+    "imbuementSlots": 1,
+    "weightOz": 85,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "focus-cape",
+    "name": "Focus Cape",
+    "category": "armor",
+    "slot": "armor",
+    "level": 0,
+    "vocations": [
+      "Sorcerer",
+      "Druid"
+    ],
+    "armor": 9,
+    "imbuementSlots": 1,
+    "weightOz": 21,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "steel-helmet",
+    "name": "Steel Helmet",
+    "category": "helmet",
+    "slot": "helmet",
+    "level": 0,
+    "armor": 6,
+    "imbuementSlots": 1,
+    "weightOz": 46,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "crown-helmet",
+    "name": "Crown Helmet",
+    "category": "helmet",
+    "slot": "helmet",
+    "level": 0,
+    "armor": 7,
+    "imbuementSlots": 1,
+    "weightOz": 29,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "zaoan-helmet",
+    "name": "Zaoan Helmet",
+    "category": "helmet",
+    "slot": "helmet",
+    "level": 0,
+    "armor": 9,
+    "imbuementSlots": 1,
+    "weightOz": 66,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "knight-legs",
+    "name": "Knight Legs",
+    "category": "legs",
+    "slot": "legs",
+    "level": 0,
+    "armor": 8,
+    "imbuementSlots": 0,
+    "weightOz": 70,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "crown-legs",
+    "name": "Crown Legs",
+    "category": "legs",
+    "slot": "legs",
+    "level": 0,
+    "armor": 8,
+    "imbuementSlots": 0,
+    "weightOz": 65,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "golden-legs",
+    "name": "Golden Legs",
+    "category": "legs",
+    "slot": "legs",
+    "level": 0,
+    "armor": 9,
+    "imbuementSlots": 0,
+    "weightOz": 56,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "boots-of-haste",
+    "name": "Boots of Haste",
+    "category": "boots",
+    "slot": "boots",
+    "level": 0,
+    "armor": 0,
+    "imbuementSlots": 0,
+    "speed": 20,
+    "weightOz": 8,
+    "sourceStatus": "seed"
+  },
+  {
+    "id": "steel-boots",
+    "name": "Steel Boots",
+    "category": "boots",
+    "slot": "boots",
+    "level": 0,
+    "armor": 3,
+    "imbuementSlots": 0,
+    "weightOz": 29,
+    "sourceStatus": "seed"
+  }
+]

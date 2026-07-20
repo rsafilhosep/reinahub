@@ -38,6 +38,8 @@ Mooh'Tah Warrior -> public/assets/monsters/mooh-tah-warrior.gif
 
 `public/assets` e material limpo e publicado pelo Next.js. Somente imagens revisadas que o app pode servir devem entrar aqui.
 
+Leia tambem `ASSET_POLICY.md` na raiz do projeto antes de subir lotes grandes para GitHub/Vercel.
+
 ## Importacao segura da inbox
 
 Coloque GIFs/PNGs brutos em:
@@ -149,6 +151,26 @@ Os relatorios sao gerados em `source/web/src/reina-core/assets/generated/`:
 - `missing-assets.json`
 
 `assets-report.json` contem totais agregados. `missing-assets.json` contem a lista de imagens que ainda precisam ser adicionadas.
+
+## Auditoria de Git para assets
+
+Antes de commitar ou publicar um lote grande, rode:
+
+```bash
+npm run assets:git-report
+```
+
+Isso gera:
+
+- `source/web/src/reina-core/assets/generated/asset-git-report.json`
+
+O relatorio mostra:
+
+- quantidade de assets alterados no Git;
+- peso total dos arquivos alterados;
+- separacao entre `public/assets` e relatorios gerados;
+- maiores arquivos alterados;
+- recomendacoes para dividir commit, revisar relatorios grandes ou considerar Git LFS/CDN no futuro.
 
 ## Amostra inicial recomendada
 

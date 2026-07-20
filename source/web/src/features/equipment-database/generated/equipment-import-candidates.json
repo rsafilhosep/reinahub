@@ -1,0 +1,947 @@
+{
+  "scannedAt": "2026-07-20T00:15:42.304Z",
+  "note": "Review these rows before promoting anything to data/equipment.json.",
+  "candidates": [
+    {
+      "proposedId": "25-years-backpack",
+      "name": "25 Years Backpack",
+      "category": "container",
+      "slot": "container",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 17,
+      "sourcePath": "files_repository\\20260717_new\\Recipientes - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 39693,
+        "clientId": null,
+        "name": "25 years backpack"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "abacus-replica",
+      "name": "Abacus (Réplica)",
+      "category": "weapon",
+      "slot": "weapon",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 12,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": null,
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "no-local-item-match",
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "abyss-hammer",
+      "name": "Abyss Hammer",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "club",
+      "level": 60,
+      "vocations": [
+        "Knights"
+      ],
+      "hands": 2,
+      "attack": null,
+      "defense": 21,
+      "armor": null,
+      "element": "Nenhum",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 3,
+      "tier": 2,
+      "weightOz": 55,
+      "sourcePath": "files_repository\\20260717_new\\Clavas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 7414,
+        "clientId": null,
+        "name": "abyss hammer"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "adamant-shield",
+      "name": "Adamant Shield",
+      "category": "shield",
+      "slot": "shield",
+      "level": 0,
+      "vocations": [
+        "Todas"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 0,
+      "tier": null,
+      "weightOz": 91,
+      "sourcePath": "files_repository\\20260717_new\\Escudos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 28915,
+        "clientId": null,
+        "name": "adamant shield"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "albino-plate",
+      "name": "Albino Plate",
+      "category": "armor",
+      "slot": "armor",
+      "level": 0,
+      "vocations": [
+        "Todas"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": 11,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 3,
+      "weightOz": 84,
+      "sourcePath": "files_repository\\20260717_new\\Armaduras - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 19358,
+        "clientId": null,
+        "name": "albino plate"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "alchemists-boots",
+      "name": "Alchemist's Boots",
+      "category": "boots",
+      "slot": "boots",
+      "level": 250,
+      "vocations": [
+        "Sorcerers"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": 2,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 1,
+      "tier": 4,
+      "weightOz": 16,
+      "sourcePath": "files_repository\\20260717_new\\Botas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 40592,
+        "clientId": null,
+        "name": "alchemist's boots"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "alchemists-notepad",
+      "name": "Alchemist's Notepad",
+      "category": "shield",
+      "slot": "shield",
+      "level": 250,
+      "vocations": [
+        "Sorcerers"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": 32,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 1,
+      "tier": null,
+      "weightOz": 13,
+      "sourcePath": "files_repository\\20260717_new\\Spellbooks - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 40594,
+        "clientId": null,
+        "name": "alchemist's notepad"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "alicorn-headguard",
+      "name": "Alicorn Headguard",
+      "category": "helmet",
+      "slot": "helmet",
+      "level": 400,
+      "vocations": [
+        "Paladins"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": 11,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 39,
+      "sourcePath": "files_repository\\20260717_new\\Capacetes - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 39149,
+        "clientId": null,
+        "name": "alicorn headguard"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "alicorn-quiver",
+      "name": "Alicorn Quiver",
+      "category": "container",
+      "slot": "container",
+      "level": 400,
+      "vocations": [
+        "Paladins"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 20,
+      "sourcePath": "files_repository\\20260717_new\\Aljavas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 39150,
+        "clientId": null,
+        "name": "alicorn quiver"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "alloy-legs",
+      "name": "Alloy Legs",
+      "category": "legs",
+      "slot": "legs",
+      "level": 60,
+      "vocations": [
+        "Todas"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": 6,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 0,
+      "tier": 2,
+      "weightOz": 45,
+      "sourcePath": "files_repository\\20260717_new\\Calças - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 21168,
+        "clientId": null,
+        "name": "alloy legs"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "amber-axe",
+      "name": "Amber Axe",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "axe",
+      "level": 330,
+      "vocations": [
+        "Knights"
+      ],
+      "hands": 1,
+      "attack": null,
+      "defense": 32,
+      "armor": null,
+      "element": "46 Ice",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 53,
+      "sourcePath": "files_repository\\20260717_new\\Machados - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47375,
+        "clientId": null,
+        "name": "amber axe"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "amber-bow",
+      "name": "Amber Bow",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "distance",
+      "level": 330,
+      "vocations": [
+        "Paladins"
+      ],
+      "hands": 2,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": "Nenhum",
+      "range": 6,
+      "hitModifier": 6,
+      "imbuementSlots": 3,
+      "tier": 4,
+      "weightOz": 37,
+      "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47371,
+        "clientId": null,
+        "name": "amber bow"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "amber-crossbow",
+      "name": "Amber Crossbow",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "distance",
+      "level": 330,
+      "vocations": [
+        "Paladins"
+      ],
+      "hands": 2,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": "Nenhum",
+      "range": 6,
+      "hitModifier": 7,
+      "imbuementSlots": 3,
+      "tier": 4,
+      "weightOz": 39,
+      "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47377,
+        "clientId": null,
+        "name": "amber crossbow"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "amber-kusarigama",
+      "name": "Amber Kusarigama",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "fist",
+      "level": 330,
+      "vocations": [
+        "Monks"
+      ],
+      "hands": 2,
+      "attack": null,
+      "defense": 20,
+      "armor": null,
+      "element": "Physical",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 86,
+      "sourcePath": "files_repository\\20260717_new\\Punhos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 50239,
+        "clientId": null,
+        "name": "amber kusarigama"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "amber-rod",
+      "name": "Amber Rod",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "rod",
+      "level": 330,
+      "vocations": [
+        "Druids"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 18,
+      "sourcePath": "files_repository\\20260717_new\\Rods - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47373,
+        "clientId": null,
+        "name": "amber rod"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "amber-sabre",
+      "name": "Amber Sabre",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "sword",
+      "level": 330,
+      "vocations": [
+        "Knights"
+      ],
+      "hands": 1,
+      "attack": null,
+      "defense": 32,
+      "armor": null,
+      "element": "46 Energy",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 50,
+      "sourcePath": "files_repository\\20260717_new\\Espadas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47374,
+        "clientId": null,
+        "name": "amber sabre"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists",
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "amber-wand",
+      "name": "Amber Wand",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "wand",
+      "level": 330,
+      "vocations": [
+        "Sorcerers"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 2,
+      "tier": 4,
+      "weightOz": 20,
+      "sourcePath": "files_repository\\20260717_new\\Wands - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 47372,
+        "clientId": null,
+        "name": "amber wand"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "amphora",
+      "name": "Amphora",
+      "category": "container",
+      "slot": "container",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 97,
+      "sourcePath": "files_repository\\20260717_new\\Recipientes - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 2893,
+        "clientId": null,
+        "name": "amphora"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "arrow",
+      "name": "Arrow",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "ammo",
+      "level": 0,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": "Nenhum",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 0.7,
+      "sourcePath": "files_repository\\20260717_new\\Munição - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 3447,
+        "clientId": null,
+        "name": "arrow"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "assassin-star",
+      "name": "Assassin Star",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "distance",
+      "level": 80,
+      "vocations": [
+        "Todas"
+      ],
+      "hands": 1,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": "Nenhum",
+      "range": 4,
+      "hitModifier": 0,
+      "imbuementSlots": 0,
+      "tier": 0,
+      "weightOz": 2,
+      "sourcePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 7368,
+        "clientId": null,
+        "name": "assassin star"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "blue-spell-wand",
+      "name": "Blue Spell Wand",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "wand",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 0,
+      "tier": 0,
+      "weightOz": 23,
+      "sourcePath": "files_repository\\20260717_new\\Antigas Wands e Rods - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": null,
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "no-local-item-match",
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "bolt",
+      "name": "Bolt",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "ammo",
+      "level": 0,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": "Nenhum",
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 0.8,
+      "sourcePath": "files_repository\\20260717_new\\Munição - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 3446,
+        "clientId": null,
+        "name": "bolt"
+      },
+      "alreadyExists": true,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "already-exists"
+      ]
+    },
+    {
+      "proposedId": "demon-powered-shield",
+      "name": "Demon Powered Shield",
+      "category": "shield",
+      "slot": "shield",
+      "level": 0,
+      "vocations": [
+        "Todas"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": 50,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 0,
+      "tier": null,
+      "weightOz": 50,
+      "sourcePath": "files_repository\\20260717_new\\Escudos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": null,
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "no-local-item-match"
+      ]
+    },
+    {
+      "proposedId": "earth-barbaric-axe-replica",
+      "name": "Earth Barbaric Axe Replica",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "axe",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 51,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 25950,
+        "clientId": null,
+        "name": "earth barbaric axe replica"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "earth-basher-replica",
+      "name": "Earth Basher Replica",
+      "category": "weapon",
+      "slot": "weapon",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 78,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 25957,
+        "clientId": null,
+        "name": "earth basher replica"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "earth-blacksteel-replica",
+      "name": "Earth Blacksteel Replica",
+      "category": "weapon",
+      "slot": "weapon",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 59,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 25948,
+        "clientId": null,
+        "name": "earth blacksteel replica"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "ornate-carving-bow",
+      "name": "Ornate Carving Bow",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "distance",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 55,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 26064,
+        "clientId": null,
+        "name": "ornate carving bow"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "ornate-carving-rod",
+      "name": "Ornate Carving Rod",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "rod",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 35,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 26073,
+        "clientId": null,
+        "name": "ornate carving rod"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "ornate-carving-wand",
+      "name": "Ornate Carving Wand",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "wand",
+      "level": null,
+      "vocations": [],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": null,
+      "tier": null,
+      "weightOz": 35,
+      "sourcePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": {
+        "id": 26070,
+        "clientId": null,
+        "name": "ornate carving wand"
+      },
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "missing-core-stats"
+      ]
+    },
+    {
+      "proposedId": "quagmire-rod",
+      "name": "Quagmire Rod",
+      "category": "weapon",
+      "slot": "weapon",
+      "weaponType": "wand",
+      "level": 26,
+      "vocations": [
+        "Druids"
+      ],
+      "hands": null,
+      "attack": null,
+      "defense": null,
+      "armor": null,
+      "element": null,
+      "range": null,
+      "hitModifier": null,
+      "imbuementSlots": 0,
+      "tier": 0,
+      "weightOz": 26.5,
+      "sourcePath": "files_repository\\20260717_new\\Antigas Wands e Rods - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "sourceStatus": "manual-review",
+      "itemMatch": null,
+      "alreadyExists": false,
+      "reviewStatus": "review-required",
+      "reviewReasons": [
+        "no-local-item-match",
+        "missing-core-stats"
+      ]
+    }
+  ]
+}

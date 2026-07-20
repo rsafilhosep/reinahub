@@ -1,0 +1,465 @@
+{
+  "scannedAt": "2026-07-20T00:15:42.304Z",
+  "files": [
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\CMakePresets.json",
+      "extension": ".json",
+      "size": 3672,
+      "sourceHint": {},
+      "extractionStatus": "json-no-array",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\vcpkg.json",
+      "extension": ".json",
+      "size": 750,
+      "sourceHint": {},
+      "extractionStatus": "json-no-array",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\opentibia_sprite_pack-master\\LICENSE.txt",
+      "extension": ".txt",
+      "size": 18652,
+      "sourceHint": {},
+      "extractionStatus": "text",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Aljavas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 101978,
+      "sourceHint": {
+        "category": "container"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Antigas Wands e Rods - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 109846,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "wand"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 17,
+      "candidatesFound": 2
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Armaduras - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 393070,
+      "sourceHint": {
+        "category": "armor"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Botas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 209656,
+      "sourceHint": {
+        "category": "boots"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Calças - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 213924,
+      "sourceHint": {
+        "category": "legs"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Capacetes - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 340131,
+      "sourceHint": {
+        "category": "helmet"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Clavas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 310521,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "club"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Distância - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 266415,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "distance"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 18,
+      "candidatesFound": 3
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Escudos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 235447,
+      "sourceHint": {
+        "category": "shield"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 17,
+      "candidatesFound": 2
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Espadas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 266209,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "sword"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Espadas - Tibia Wiki - A Enciclopédia do Tibia.pdf",
+      "extension": ".pdf",
+      "size": 3136326,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "sword"
+      },
+      "extractionStatus": "pdfplumber-missing: No module named 'pdfplumber'",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Espadas - Tibia Wiki - A Enciclopédia do Tibia_files\\a_8TjV.htm",
+      "extension": ".htm",
+      "size": 385,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "sword"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Extra Slot - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 201051,
+      "sourceHint": {},
+      "extractionStatus": "html-tables",
+      "rowsRead": 19,
+      "candidatesFound": 0
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Machados - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 289185,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "axe"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Munição - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 138186,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "ammo"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 17,
+      "candidatesFound": 2
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Punhos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 143733,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "fist"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Recipientes - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 221726,
+      "sourceHint": {
+        "category": "container"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 17,
+      "candidatesFound": 2
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Rods - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 168492,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "rod"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Réplicas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 241738,
+      "sourceHint": {},
+      "extractionStatus": "html-tables",
+      "rowsRead": 7,
+      "candidatesFound": 7
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Spellbooks - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 154288,
+      "sourceHint": {
+        "category": "shield"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Wands - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "extension": ".htm",
+      "size": 171857,
+      "sourceHint": {
+        "category": "weapon",
+        "weaponType": "wand"
+      },
+      "extractionStatus": "html-tables",
+      "rowsRead": 16,
+      "candidatesFound": 1
+    },
+    {
+      "filePath": "files_repository\\README-SAFETY.txt",
+      "extension": ".txt",
+      "size": 884,
+      "sourceHint": {},
+      "extractionStatus": "text",
+      "rowsRead": 0,
+      "candidatesFound": 0
+    }
+  ],
+  "skippedFiles": [
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\.luarc.json",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\items\\proficiencies.json",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\data\\json\\eventscheduler\\events.json",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\package.json",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\account\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\config\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\creatures\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\database\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\game\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\io\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\items\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\kv\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lib\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\callbacks\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\creature\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\core\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\creatures\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\events\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\items\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\functions\\map\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\global\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\modules\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\lua\\scripts\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\map\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\protobuf\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\security\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\server\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\src\\utils\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\integration\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\account\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\items\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\kv\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\lib\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\lib\\di\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\security\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\server\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\06_30_2026\\crystalserver-main\\tests\\unit\\utils\\CMakeLists.txt",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Itens de Imbuements - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Líquidos - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "reason": "not-equipment-source"
+    },
+    {
+      "filePath": "files_repository\\20260717_new\\Runas - Tibia Wiki - A Enciclopédia do Tibia.htm",
+      "reason": "not-equipment-source"
+    }
+  ]
+}

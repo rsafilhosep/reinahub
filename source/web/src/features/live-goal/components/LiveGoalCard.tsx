@@ -52,6 +52,17 @@ export function LiveGoalCard({
 
       <div className="live-goal-percent">{formatPercent(calculation.progressPct)}% concluido</div>
 
+      {goal.showGold && !calculation.isKillGoal ? (
+        <div className="live-goal-gold-objective">
+          <div className="live-goal-gold-head">
+            <span>Objetivo em gold</span>
+            <strong>{integer(calculation.currentGold)} / {integer(calculation.totalGold)} GC</strong>
+          </div>
+          <ProgressBar value={calculation.progressPct} />
+          <small>Faltam {integer(calculation.missingGold)} GC para completar a meta.</small>
+        </div>
+      ) : null}
+
       <div className="live-goal-stats">
         <div>
           <span>Falta</span>
