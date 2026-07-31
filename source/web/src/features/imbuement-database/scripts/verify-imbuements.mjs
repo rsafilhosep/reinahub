@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const featureRoot = path.join(root, "source", "web", "src", "features", "imbuement-database");
 const databaseRoot = path.join(root, "source", "web", "src", "reina-core", "database", "generated");
 const outputRoot = path.join(featureRoot, "generated");
+const readonly = process.env.REINAHUB_VERIFY_READONLY === "1";
 const imbuements = readJson(path.join(featureRoot, "data", "imbuements.json"));
 const items = mergeItems(
   readJson(path.join(databaseRoot, "items.json")),
@@ -50,11 +51,14 @@ const report = {
   unmatched
 };
 
-mkdirSync(outputRoot, { recursive: true });
-writeJson(path.join(outputRoot, "imbuements-report.json"), report);
-writeJson(path.join(outputRoot, "unmatched-imbuement-materials.json"), unmatched);
+if (!readonly) {
+  mkdirSync(outputRoot, { recursive: true });
+  writeJson(path.join(outputRoot, "imbuements-report.json"), report);
+  writeJson(path.join(outputRoot, "unmatched-imbuement-materials.json"), unmatched);
+}
 
 console.log("Imbuements verification complete");
+if (readonly) console.log("Readonly mode: imbuement reports were not rewritten.");
 console.log({
   powerfulImbuements: report.powerfulImbuements,
   powerfulMaterialRows: report.powerfulMaterialRows,

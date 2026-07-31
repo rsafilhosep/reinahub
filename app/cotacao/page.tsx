@@ -10,6 +10,7 @@ import { Tabs } from "@/components/Tabs";
 import { currencyShortName, integer, money, moneySmart } from "@/services/format";
 import { ManualPriceSourceService, type ManualPriceSource, type ManualPriceSourceInput } from "@/services/manual-price-source-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import type { ExternalQuoteReadResult } from "@/source/web/src/reina-core/external-quotes/external-quote-source.types";
 import worldCatalog from "@/source/web/src/reina-core/worlds/generated/world-catalog.json";
 import {
   QUOTE_HISTORY_KEY,
@@ -57,11 +58,30 @@ const emptyForm: ServerForm = {
 
 const emptyPriceSourceForm: ManualPriceSourceForm = {
   label: "",
-  kind: "manual",
+  kind: "reseller",
+  url: "",
   loteVenda: 0,
   loteCompra: 0,
   note: ""
 };
+
+const externalPriceSourceReferences = [
+  {
+    label: "TibiaPay",
+    url: "https://tibiapay.com.br/",
+    note: "Referencia externa para compra/venda de moedas premium."
+  },
+  {
+    label: "Coins4Gamers - Tibia Coins",
+    url: "https://coins4gamers.com.br/tibia/tibia-coins",
+    note: "Referencia externa para Tibia Coins."
+  },
+  {
+    label: "Coins4Gamers - Rubini Coins",
+    url: "https://coins4gamers.com.br/rubinot/rubinot-coins",
+    note: "Referencia externa para Rubini Coins."
+  }
+];
 
 export default function CotacaoPage() {
   const [tab, setTab] = useState("servidores");
@@ -74,6 +94,9 @@ export default function CotacaoPage() {
   const [priceSources, setPriceSources] = useState<ManualPriceSource[]>([]);
   const [priceSourceForm, setPriceSourceForm] = useState<ManualPriceSourceForm>(emptyPriceSourceForm);
   const [editingPriceSourceId, setEditingPriceSourceId] = useState<string | null>(null);
+  const [externalQuoteResults, setExternalQuoteResults] = useState<ExternalQuoteReadResult[]>([]);
+  const [externalQuoteLoading, setExternalQuoteLoading] = useState(false);
+  const [externalQuoteMessage, setExternalQuoteMessage] = useState("");
   const [gold, setGold] = useState(100000);
   const [history, setHistory] = useState<QuoteSnapshot[]>([]);
 
@@ -226,6 +249,7 @@ export default function CotacaoPage() {
     setPriceSourceForm({
       label: source.label,
       kind: source.kind,
+      url: source.url ?? "",
       loteVenda: source.loteVenda,
       loteCompra: source.loteCompra,
       note: source.note
@@ -251,6 +275,34 @@ export default function CotacaoPage() {
     };
     const next = servers.map((server) => (server.id === activeServer.id ? nextServer : server));
     persist(next);
+  }
+
+  async function checkExternalQuoteSources() {
+    setExternalQuoteLoading(true);
+    setExternalQuoteMessage("");
+    try {
+      const response = await fetch("/api/external-quotes", { cache: "no-store" });
+      const payload = await response.json();
+      setExternalQuoteResults(Array.isArray(payload.results) ? payload.results : []);
+      setExternalQuoteMessage("Fontes verificadas. Revise os valores antes de salvar.");
+    } catch {
+      setExternalQuoteMessage("Nao foi possivel verificar as fontes externas agora.");
+    } finally {
+      setExternalQuoteLoading(false);
+    }
+  }
+
+  function fillPriceSourceFromExternalResult(result: ExternalQuoteReadResult) {
+    if (!activeServer) return;
+    const lotRatio = activeServer.lote / (result.lotSize || activeServer.lote || 25);
+    setPriceSourceForm({
+      label: result.label,
+      kind: result.kind === "official" ? "official" : "reseller",
+      url: result.url,
+      loteVenda: result.playerSellLotPrice ? Number((result.playerSellLotPrice * lotRatio).toFixed(6)) : priceSourceForm.loteVenda,
+      loteCompra: result.playerBuyLotPrice ? Number((result.playerBuyLotPrice * lotRatio).toFixed(6)) : priceSourceForm.loteCompra,
+      note: `Candidato externo (${result.confidence}). Revisado em ${new Date(result.fetchedAt).toLocaleString("pt-BR")}.`
+    });
   }
 
   function snapshot() {
@@ -298,12 +350,12 @@ export default function CotacaoPage() {
                 <div className="hero-grid">
                   <ResultSlot label="Moeda premium" value={activeCurrencyShort} tone="gold" />
                   <ResultSlot label={`Gold por ${activeCurrencyShort}`} value={`${integer(activeServer.gcPorMoeda)} GC`} />
-                  <ResultSlot label="Preço venda" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
-                  <ResultSlot label="Preço compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
+                  <ResultSlot label="Jogador vende" value={`R$ ${moneySmart(activeServer.loteVenda / activeServer.lote)}`} />
+                  <ResultSlot label="Jogador compra" value={`R$ ${moneySmart(activeServer.loteCompra / activeServer.lote)}`} tone="gold" />
                 </div>
                 {hasInvertedSpread(activeServer) ? (
                   <div className="empty-msg" style={{ borderColor: "var(--crimson)", color: "var(--crimson-glow)", marginTop: 16 }}>
-                    Atenção: nesta cotação o valor de venda está maior que o valor de compra. Confira se os campos não foram invertidos.
+                    Atenção: nesta cotação o valor para jogador vender está maior que o valor para jogador comprar. Confira se os campos não foram invertidos.
                   </div>
                 ) : null}
               </>
@@ -337,7 +389,7 @@ export default function CotacaoPage() {
                     1 {currencyShortName(server.moeda)} = {integer(server.gcPorMoeda)} GC - lote base {server.lote}
                   </div>
                   <div className="quick-row">
-                    <span className="quick-btn">Venda R$ {moneySmart(server.loteVenda / server.lote)}</span>
+                    <span className="quick-btn">Vende R$ {moneySmart(server.loteVenda / server.lote)}</span>
                     <span className="quick-btn">Compra R$ {moneySmart(server.loteCompra / server.lote)}</span>
                     <span className="quick-btn" style={{ color: "var(--teal-glow)" }}>
                       {server.id === activeId ? "ativo" : "ativar"}
@@ -439,13 +491,13 @@ export default function CotacaoPage() {
               <Field label="Gold por moeda premium">
                 <input type="number" value={form.gcPorMoeda} onChange={(e) => setForm({ ...form, gcPorMoeda: Number(e.target.value) })} />
               </Field>
-              <Field label="Preço do lote - venda">
+              <Field label="Jogador vende - recebe por lote">
                 <div className="field-wrap">
                   <span className="field-prefix">R$</span>
                   <input className="with-prefix" type="number" step="0.000001" value={form.loteVenda} onChange={(e) => setForm({ ...form, loteVenda: Number(e.target.value) })} />
                 </div>
               </Field>
-              <Field label="Preço do lote - compra">
+              <Field label="Jogador compra - paga por lote">
                 <div className="field-wrap">
                   <span className="field-prefix">R$</span>
                   <input className="with-prefix" type="number" step="0.000001" value={form.loteCompra} onChange={(e) => setForm({ ...form, loteCompra: Number(e.target.value) })} />
@@ -463,19 +515,70 @@ export default function CotacaoPage() {
           </Modal>
 
           <CollapsiblePanel
-            title="Fontes manuais de preço"
-            eyebrow="usuário controla os nomes"
+            title="Fontes de cotação"
+            eyebrow="oficial - revendedor - manual"
             summary={
               activeServer
-                ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use quando quiser acompanhar preço oficial ou externo manual.`
-                : "Cadastre ou selecione um servidor antes de adicionar fontes manuais."
+                ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use para comparar jogador compra e jogador vende.`
+                : "Cadastre ou selecione um servidor antes de adicionar fontes de cotação."
             }
           >
             <p className="note" style={{ marginTop: -4, marginBottom: 16 }}>
-              Cadastre aqui preços que você acompanha manualmente. O ReinaHub não traz nomes de revendedores, não recomenda fontes externas e não exibe propaganda. Use “Aplicar” para transformar uma fonte na cotação ativa do servidor.
+              Comprar = jogador compra do vendedor. Vender = jogador vende para o vendedor. Por enquanto o ReinaHub salva e compara fontes manualmente; a leitura automatica sera feita fonte por fonte quando existir um metodo confiavel.
             </p>
             {activeServer ? (
               <>
+                <div className="history-list" style={{ marginBottom: 16 }}>
+                  {externalPriceSourceReferences.map((source) => (
+                    <div className="history-item" key={source.url}>
+                      <span>
+                        {source.label}
+                        <span className="note" style={{ marginLeft: 10 }}>{source.note}</span>
+                      </span>
+                      <a className="quick-btn" href={source.url} target="_blank" rel="noreferrer">
+                        Abrir site
+                      </a>
+                    </div>
+                  ))}
+                </div>
+                <div className="quick-row" style={{ marginBottom: 16 }}>
+                  <button className="quick-btn primary" type="button" onClick={checkExternalQuoteSources} disabled={externalQuoteLoading}>
+                    {externalQuoteLoading ? "Verificando..." : "Verificar fontes externas"}
+                  </button>
+                  <span className="note">A leitura externa apenas sugere valores. Nada e salvo ou aplicado automaticamente.</span>
+                </div>
+                {externalQuoteMessage ? <p className="note" style={{ marginTop: -6 }}>{externalQuoteMessage}</p> : null}
+                {externalQuoteResults.length ? (
+                  <div className="history-list" style={{ marginBottom: 18 }}>
+                    {externalQuoteResults.map((result) => {
+                      const hasCandidate = result.playerSellLotPrice !== null || result.playerBuyLotPrice !== null;
+                      return (
+                        <div className="history-item external-quote-result" key={result.sourceId}>
+                          <span>
+                            {result.label}
+                            <span className="note" style={{ marginLeft: 10 }}>
+                              {getExternalQuoteStatusLabel(result.status)} - confianca {result.confidence}
+                            </span>
+                            <span className="note external-quote-snippet">{result.message}</span>
+                            {result.snippets[0] ? <span className="note external-quote-snippet">Trecho: {result.snippets[0]}</span> : null}
+                          </span>
+                          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+                            <span style={{ color: "var(--gold)" }}>
+                              Vende {result.playerSellLotPrice !== null ? `R$ ${moneySmart(result.playerSellLotPrice / result.lotSize)}/${currencyShortName(result.currency) || result.currency}` : "-"}
+                            </span>
+                            <span>
+                              Compra {result.playerBuyLotPrice !== null ? `R$ ${moneySmart(result.playerBuyLotPrice / result.lotSize)}/${currencyShortName(result.currency) || result.currency}` : "-"}
+                            </span>
+                            {hasCandidate ? (
+                              <button className="quick-btn" type="button" onClick={() => fillPriceSourceFromExternalResult(result)}>Usar no formulario</button>
+                            ) : null}
+                            <a className="quick-btn" href={result.url} target="_blank" rel="noreferrer">Abrir</a>
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                ) : null}
                 <div className="inputs-grid">
                   <Field label="Nome da fonte">
                     <input
@@ -489,11 +592,19 @@ export default function CotacaoPage() {
                       value={priceSourceForm.kind}
                       onChange={(event) => setPriceSourceForm({ ...priceSourceForm, kind: event.target.value as ManualPriceSourceForm["kind"] })}
                     >
-                      <option value="manual">Manual / externo</option>
                       <option value="official">Oficial</option>
+                      <option value="reseller">Revendedor</option>
+                      <option value="manual">Manual / outro</option>
                     </select>
                   </Field>
-                  <Field label="Preço do lote - venda">
+                  <Field label="URL da fonte">
+                    <input
+                      value={priceSourceForm.url ?? ""}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, url: event.target.value })}
+                      placeholder="https://..."
+                    />
+                  </Field>
+                  <Field label="Jogador vende - recebe por lote">
                     <div className="field-wrap">
                       <span className="field-prefix">R$</span>
                       <input
@@ -505,7 +616,7 @@ export default function CotacaoPage() {
                       />
                     </div>
                   </Field>
-                  <Field label="Preço do lote - compra">
+                  <Field label="Jogador compra - paga por lote">
                     <div className="field-wrap">
                       <span className="field-prefix">R$</span>
                       <input
@@ -536,12 +647,15 @@ export default function CotacaoPage() {
                       <span>
                         {source.label}
                         <span className="note" style={{ marginLeft: 10 }}>
-                          {source.kind === "official" ? "oficial" : "manual"} - {new Date(source.updatedAt).toLocaleString("pt-BR")}
+                          {getPriceSourceKindLabel(source.kind)} - {new Date(source.updatedAt).toLocaleString("pt-BR")}
                         </span>
                       </span>
                       <span style={{ display: "inline-flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-                        <span style={{ color: "var(--gold)" }}>Venda R$ {moneySmart(source.loteVenda / activeServer.lote)}</span>
-                        <span>Compra {source.loteCompra ? `R$ ${moneySmart(source.loteCompra / activeServer.lote)}` : "-"}</span>
+                        <span style={{ color: "var(--gold)" }}>Jogador vende R$ {moneySmart(source.loteVenda / activeServer.lote)}</span>
+                        <span>Jogador compra {source.loteCompra ? `R$ ${moneySmart(source.loteCompra / activeServer.lote)}` : "-"}</span>
+                        {source.url ? (
+                          <a className="quick-btn" href={source.url} target="_blank" rel="noreferrer">Abrir</a>
+                        ) : null}
                         <button className="quick-btn" type="button" onClick={() => applyPriceSource(source)}>Aplicar</button>
                         <button className="quick-btn" type="button" onClick={() => editPriceSource(source)}>Editar</button>
                         <button className="quick-btn danger" type="button" onClick={() => removePriceSource(source.id)}>Remover</button>
@@ -618,7 +732,7 @@ export default function CotacaoPage() {
             <InfoCard icon={ServerCog} title="Servidor ativo" text="Os outros módulos leem sempre a cotação ativa daqui." />
             <InfoCard icon={History} title="Histórico" text="Snapshots permitem acompanhar variação de mercado." />
             <InfoCard icon={Calculator} title="Cálculo" text="GC vira moeda premium, e moeda premium vira reais pelo preço unitário do lote." />
-            <InfoCard icon={HandCoins} title="Fontes manuais" text="O usuário cadastra preços externos/oficiais manualmente, sem nomes de revendedores nem propaganda." />
+            <InfoCard icon={HandCoins} title="Fontes de cotação" text="Oficial, revendedor ou manual: sempre separando jogador compra de jogador vende." />
             <InfoCard icon={DatabaseZap} title="Fonte única" text="Market, Hunt, Stash e metas premium usam a mesma cotação ativa." />
           </div>
         </Panel>
@@ -639,6 +753,20 @@ function InfoCard({ icon: Icon, title, text }: { icon: React.ElementType; title:
       <p className="note">{text}</p>
     </div>
   );
+}
+
+function getPriceSourceKindLabel(kind: ManualPriceSource["kind"]) {
+  if (kind === "official") return "oficial";
+  if (kind === "reseller") return "revendedor";
+  return "manual";
+}
+
+function getExternalQuoteStatusLabel(status: ExternalQuoteReadResult["status"]) {
+  if (status === "ok") return "ok";
+  if (status === "needs-review") return "revisar";
+  if (status === "manual-required") return "manual";
+  if (status === "blocked") return "bloqueada";
+  return "erro";
 }
 
 function parseIntegerInput(value: string) {

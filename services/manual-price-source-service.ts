@@ -2,13 +2,14 @@ import { StorageService } from "./storage-service";
 
 const MANUAL_PRICE_SOURCES_KEY = "reinahub_manual_price_sources";
 
-export type ManualPriceSourceKind = "official" | "manual";
+export type ManualPriceSourceKind = "official" | "reseller" | "manual";
 
 export type ManualPriceSource = {
   id: string;
   serverId: string;
   label: string;
   kind: ManualPriceSourceKind;
+  url?: string;
   loteVenda: number;
   loteCompra: number;
   note: string;
@@ -34,8 +35,10 @@ export class ManualPriceSourceService {
       ...input,
       id: editingId ?? `price_${Date.now()}`,
       label: input.label.trim() || "Fonte manual",
+      url: input.url?.trim() || "",
       loteVenda: Number(input.loteVenda) || 0,
       loteCompra: Number(input.loteCompra) || 0,
+      note: input.note?.trim() || "",
       updatedAt: Date.now()
     };
     const next = editingId ? current.map((item) => (item.id === editingId ? source : item)) : [source, ...current];

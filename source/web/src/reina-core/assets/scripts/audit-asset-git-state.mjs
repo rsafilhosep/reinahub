@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../../../../..");
 const outputRoot = path.join(root, "source", "web", "src", "reina-core", "assets", "generated");
+const readonly = process.env.REINAHUB_VERIFY_READONLY === "1";
 
 const trackedRoots = [
   "public/assets",
@@ -39,10 +40,13 @@ const report = {
   files
 };
 
-mkdirSync(outputRoot, { recursive: true });
-writeJson(path.join(outputRoot, "asset-git-report.json"), report);
+if (!readonly) {
+  mkdirSync(outputRoot, { recursive: true });
+  writeJson(path.join(outputRoot, "asset-git-report.json"), report);
+}
 
 console.log("Asset Git audit complete");
+if (readonly) console.log("Readonly mode: asset git report was not rewritten.");
 console.log(report.summary);
 console.log(report.byPublicAssetFolder);
 

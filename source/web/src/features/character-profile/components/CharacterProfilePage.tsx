@@ -14,6 +14,7 @@ import { ItemSearchClientService } from "@/source/web/src/features/item-database
 import { PremiumGoalsService } from "@/source/web/src/features/premium-goals/services/premium-goals-service";
 import { MonsterSearchClientService } from "@/source/web/src/features/monster-database/services/monster-search-client-service";
 import { CharacterProfileService, getExperienceForLevel } from "../services/character-profile-service";
+import { CharacterProgressService } from "../services/character-progress-service";
 import type { CharacterLookupResult, CharacterPlatform, CharacterProfile, CharacterVocation } from "../types/character-profile.types";
 import type { MonsterSearchResult } from "@/source/web/src/features/monster-database/types";
 import type { ItemSearchResult } from "@/source/web/src/features/item-database/types";
@@ -85,7 +86,7 @@ export function CharacterProfilePage() {
     return selectedHunt?.summary.xpHour ?? 0;
   }, [manualXpHour, selectedHunt]);
   const progressPlan = useMemo(
-    () => (xpInfo ? calculateProgressPlan(xpInfo.missingToTargetLevel, plannerXpHour, hoursPerDay, sessionHours) : null),
+    () => (xpInfo ? CharacterProgressService.calculateProgressPlan(xpInfo.missingToTargetLevel, plannerXpHour, hoursPerDay, sessionHours) : null),
     [xpInfo, plannerXpHour, hoursPerDay, sessionHours]
   );
   const goalProduct = useMemo(() => PremiumGoalsService.getProduct(goalProductId), [goalProductId]);
@@ -99,7 +100,7 @@ export function CharacterProfilePage() {
       xpInfo
         ? selectedMonsters.map((monster) => ({
             monster,
-            plan: calculateMonsterKillPlan(
+            plan: CharacterProgressService.calculateMonsterKillPlan(
               xpInfo.missingToNextLevel,
               xpInfo.missingToTargetLevel,
               monster.xpOverride && monster.xpOverride > 0 ? monster.xpOverride : monster.experience
@@ -947,33 +948,6 @@ function formatHours(value: number) {
   if (!Number.isFinite(value)) return "-";
   if (value < 1) return `${formatNumber(Math.ceil(value * 60))} min`;
   return `${value.toLocaleString("pt-BR", { maximumFractionDigits: 1 })}h`;
-}
-
-function calculateProgressPlan(missingExperience: number, xpHour: number, hoursPerDay: number, sessionHours: number) {
-  const safeMissingExperience = Math.max(0, Number(missingExperience) || 0);
-  const safeXpHour = Math.max(0, Number(xpHour) || 0);
-  if (!safeMissingExperience || !safeXpHour) return null;
-
-  const safeHoursPerDay = Math.max(0.1, Number(hoursPerDay) || 1);
-  const safeSessionHours = Math.max(0.1, Number(sessionHours) || 1);
-  const hoursNeeded = safeMissingExperience / safeXpHour;
-
-  return {
-    hoursNeeded,
-    sessionsNeeded: Math.ceil(hoursNeeded / safeSessionHours),
-    daysNeeded: Math.ceil(hoursNeeded / safeHoursPerDay)
-  };
-}
-
-function calculateMonsterKillPlan(missingToNextLevel: number, missingToTargetLevel: number, xpPerKill: number) {
-  const safeXpPerKill = Math.max(0, Math.trunc(Number(xpPerKill) || 0));
-  if (!safeXpPerKill) return null;
-
-  return {
-    xpPerKill: safeXpPerKill,
-    killsToNextLevel: Math.ceil(Math.max(0, missingToNextLevel) / safeXpPerKill),
-    killsToTargetLevel: Math.ceil(Math.max(0, missingToTargetLevel) / safeXpPerKill)
-  };
 }
 
 function calculatePremiumObjective(server: VaultServer | null, cost: number, ownedPremium: number) {

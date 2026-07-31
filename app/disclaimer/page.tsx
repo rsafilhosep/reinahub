@@ -50,6 +50,25 @@ export default function DisclaimerPage() {
         </div>
       </Panel>
 
+      <Panel title="Privacidade e cookies" eyebrow="armazenamento local">
+        <div className="legal-page">
+          <p>
+            O ReinaHub usa armazenamento local do navegador para salvar preferencias e dados das ferramentas,
+            como tema, perfil ativo, cotacoes, personagens, stash, hunts salvas, metas e configuracoes de
+            overlay.
+          </p>
+          <p>
+            Esses dados ficam no dispositivo do usuario e servem para evitar retrabalho ao atualizar a pagina.
+            O projeto esta preparado para areas futuras de anuncios, doacoes e parcerias, mantendo esses
+            espacos separados dos dados do jogador.
+          </p>
+          <p>
+            Caso o ReinaHub passe a usar servicos externos de analise, anuncios ou login, esta pagina devera
+            ser atualizada com uma politica de privacidade mais detalhada antes da ativacao dessas integracoes.
+          </p>
+        </div>
+      </Panel>
+
       <Panel title="Marcas e independência" eyebrow="Tibia - CipSoft">
         <div className="legal-page">
           <p>

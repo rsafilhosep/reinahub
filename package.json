@@ -11,6 +11,7 @@
     "assets:verify": "node source/web/src/reina-core/assets/scripts/verify-assets.mjs",
     "assets:git-report": "node source/web/src/reina-core/assets/scripts/audit-asset-git-state.mjs",
     "verify:all": "node scripts/verify-all.mjs",
+    "reports:refresh": "node scripts/refresh-generated-reports.mjs",
     "database:import": "node source/web/src/reina-core/database/importers/import-database.mjs",
     "database:enrich-items": "node source/web/src/reina-core/database/importers/generate-supplemental-items.mjs",
     "database:import-npc-trades": "node source/web/src/reina-core/database/importers/import-npc-trades.mjs",

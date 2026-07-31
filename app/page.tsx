@@ -60,6 +60,7 @@ const quickAccess = [
 const onboardingSteps = [
   {
     step: "1",
+    status: "essencial",
     moduleKey: "cotacao",
     title: "Defina o perfil econômico",
     description: "Escolha o servidor/mundo ativo para TC, RC, gold e reais ficarem iguais em todo o hub.",
@@ -68,6 +69,7 @@ const onboardingSteps = [
   },
   {
     step: "2",
+    status: "recomendado",
     moduleKey: "characters",
     title: "Vincule seu personagem",
     description: "Salve char, plataforma, mundo, level e meta de XP para as ferramentas usarem o mesmo contexto.",
@@ -76,6 +78,7 @@ const onboardingSteps = [
   },
   {
     step: "3",
+    status: "principal",
     moduleKey: "hunt",
     title: "Importe uma hunt",
     description: "Cole ou envie arquivos de sessão para calcular profit, XP, loot e gerar o card PNG/PDF.",
@@ -84,6 +87,7 @@ const onboardingSteps = [
   },
   {
     step: "4",
+    status: "opcional",
     moduleKey: "stash",
     title: "Organize seus itens",
     description: "Use o Stash para acompanhar patrimônio por perfil e comparar valores em gold, moeda premium e reais.",
@@ -92,11 +96,71 @@ const onboardingSteps = [
   },
   {
     step: "5",
+    status: "opcional",
     moduleKey: "premium-goals",
     title: "Crie uma meta",
     description: "Transforme VIP, Premium, item ou objetivo de live em progresso claro para jogar com direção.",
     href: "/premium-goals",
     action: "Criar meta"
+  }
+];
+
+const intentCards = [
+  {
+    moduleKey: "cotacao",
+    title: "Quero converter dinheiro",
+    description: "Abra o conversor rapido ou ajuste a cotacao ativa para TC, RC, GC e R$.",
+    href: "/cotacao",
+    action: "Economia"
+  },
+  {
+    moduleKey: "hunt",
+    title: "Quero analisar uma hunt",
+    description: "Cole ou importe uma sessao para ver profit, XP, loot, imbuements e exportar card.",
+    href: "/hunt",
+    action: "Hunt"
+  },
+  {
+    moduleKey: "stash",
+    title: "Quero saber quanto tenho",
+    description: "Use o Stash para somar itens por perfil e comparar em gold, moeda premium e reais.",
+    href: "/stash",
+    action: "Patrimonio"
+  },
+  {
+    moduleKey: "premium-goals",
+    title: "Quero comprar Premium/VIP",
+    description: "Calcule quanto falta em TC/RC, gold, reais e acompanhe progresso.",
+    href: "/premium-goals",
+    action: "Metas"
+  },
+  {
+    moduleKey: "monsters",
+    title: "Quero pesquisar criatura",
+    description: "Veja XP, vida, loot, imagem e ligacoes com itens e hunts.",
+    href: "/monsters",
+    action: "Biblioteca"
+  },
+  {
+    moduleKey: "equipment",
+    title: "Quero comparar equipamento",
+    description: "Filtre por level, vocacao, peso, slots, ataque e defesa.",
+    href: "/equipment",
+    action: "Equipamento"
+  },
+  {
+    moduleKey: "imbuement",
+    title: "Quero revisar imbuements",
+    description: "Consulte materiais, preco NPC, preco de Market e relacao com hunts.",
+    href: "/imbuements",
+    action: "Imbuements"
+  },
+  {
+    moduleKey: "live-goal",
+    title: "Quero mostrar objetivo na live",
+    description: "Crie overlay com meta de gold, TC/RC, item e criaturas para stream.",
+    href: "/live-goal",
+    action: "Overlay"
   }
 ];
 
@@ -167,9 +231,9 @@ export default function Home() {
       <section className="home-intro">
         <div>
           <div className="eyebrow">Hub central</div>
-          <h2>Escolha uma ferramenta e continue daqui.</h2>
+          <h2>O mapa rapido do seu ReinaHub.</h2>
           <p className="note">
-            O ReinaHub organiza hunts, mercado, biblioteca e patrimônio usando a mesma base local de dados.
+            Comece pelo que voce quer resolver agora. As ferramentas usam o mesmo perfil, cotacao e base local de dados.
           </p>
         </div>
         <div className="home-intro-actions">
@@ -177,6 +241,21 @@ export default function Home() {
           <Link className="quick-btn" href="/cotacao">Ajustar cotação</Link>
         </div>
       </section>
+
+      <Panel title="O que voce quer fazer agora?" eyebrow="Mapa do hub">
+        <div className="intent-grid">
+          {intentCards.map((card) => (
+            <Link className="intent-card" href={card.href} key={card.title}>
+              <ModuleIcon moduleKey={card.moduleKey} size={34} />
+              <div>
+                <div className="label">{card.action}</div>
+                <div className="value small" style={{ color: "var(--gold)" }}>{card.title}</div>
+                <div className="note">{card.description}</div>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </Panel>
 
       <Panel title="Comece por aqui" eyebrow="Primeiro uso">
         <p className="note" style={{ marginTop: -4, marginBottom: 16 }}>
@@ -188,7 +267,10 @@ export default function Home() {
               <div className="onboarding-step-index">{step.step}</div>
               <ModuleIcon moduleKey={step.moduleKey} size={34} />
               <div className="onboarding-step-body">
-                <div className="label">{step.action}</div>
+                <div className="onboarding-step-meta">
+                  <span className="label">{step.action}</span>
+                  <span className="status-pill">{step.status}</span>
+                </div>
                 <div className="value small" style={{ color: "var(--gold)" }}>{step.title}</div>
                 <div className="note">{step.description}</div>
               </div>
@@ -219,12 +301,6 @@ export default function Home() {
           ))}
         </div>
       </Panel>
-
-      <div className="quick-access-grid">
-        {quickAccess.map((card) => (
-          <QuickAccessCard key={card.moduleKey} {...card} />
-        ))}
-      </div>
 
       <div className="hero-grid" style={{ marginBottom: 22 }}>
         <Stat label="Itens na base" value={formatNumber(items.length)} sub="items.json" tone="gold" />

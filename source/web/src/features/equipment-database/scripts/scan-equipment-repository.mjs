@@ -8,6 +8,7 @@ const featureDir = path.join(rootDir, "source", "web", "src", "features", "equip
 const generatedDir = path.join(featureDir, "generated");
 const equipmentPath = path.join(featureDir, "data", "equipment.json");
 const itemsPath = path.join(rootDir, "source", "web", "src", "reina-core", "database", "generated", "items.json");
+const readonly = process.env.REINAHUB_VERIFY_READONLY === "1";
 
 const readableExtensions = new Set([".html", ".htm", ".csv", ".tsv", ".json", ".txt", ".pdf"]);
 const maxFileBytes = 5 * 1024 * 1024;
@@ -38,7 +39,7 @@ const headerAliases = {
   weightOz: ["peso", "weight", "oz"]
 };
 
-await fs.mkdir(generatedDir, { recursive: true });
+if (!readonly) await fs.mkdir(generatedDir, { recursive: true });
 
 const scannedAt = new Date().toISOString();
 const existingEquipment = await readJson(equipmentPath, []);
@@ -114,27 +115,30 @@ const report = {
   byWeaponType: countBy(candidates, (candidate) => candidate.weaponType ?? "none")
 };
 
-await writeJson(path.join(generatedDir, "equipment-scan-report.json"), report);
-await writeJson(path.join(generatedDir, "equipment-source-files-report.json"), {
-  scannedAt,
-  files: fileReports,
-  skippedFiles
-});
-await writeJson(path.join(generatedDir, "equipment-import-candidates.json"), {
-  scannedAt,
-  note: "Review these rows before promoting anything to data/equipment.json.",
-  candidates
-});
-await writeJson(path.join(generatedDir, "equipment-ready-candidates.json"), {
-  scannedAt,
-  candidates: readyCandidates
-});
-await writeJson(path.join(generatedDir, "equipment-review-needed.json"), {
-  scannedAt,
-  candidates: reviewCandidates
-});
+if (!readonly) {
+  await writeJson(path.join(generatedDir, "equipment-scan-report.json"), report);
+  await writeJson(path.join(generatedDir, "equipment-source-files-report.json"), {
+    scannedAt,
+    files: fileReports,
+    skippedFiles
+  });
+  await writeJson(path.join(generatedDir, "equipment-import-candidates.json"), {
+    scannedAt,
+    note: "Review these rows before promoting anything to data/equipment.json.",
+    candidates
+  });
+  await writeJson(path.join(generatedDir, "equipment-ready-candidates.json"), {
+    scannedAt,
+    candidates: readyCandidates
+  });
+  await writeJson(path.join(generatedDir, "equipment-review-needed.json"), {
+    scannedAt,
+    candidates: reviewCandidates
+  });
+}
 
 console.log("Equipment repository scan completed");
+if (readonly) console.log("Readonly mode: equipment scan reports were not rewritten.");
 console.log(JSON.stringify(report, null, 2));
 
 async function extractRows(filePath, ext, sourceHint) {

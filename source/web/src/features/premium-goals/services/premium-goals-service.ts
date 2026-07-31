@@ -1,6 +1,7 @@
 import { StorageService } from "@/services/storage-service";
 import { ReinaActiveContextService } from "@/source/web/src/reina-core/active-context";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { GoalService } from "@/source/web/src/features/goals/services";
 import type { VaultServer } from "@/types/vault";
 import { PREMIUM_PRODUCTS } from "../data/premium-products";
 import type { PremiumGoalCalculation, PremiumGoalProgress, PremiumProductOverride } from "../types/premium-goals.types";
@@ -82,18 +83,23 @@ export class PremiumGoalsService {
 
     const override = this.getOverride(product.id, server.id);
     const cost = override?.cost ?? product.defaultCost;
-    const missingPremium = Math.max(0, cost - (Number(ownedPremium) || 0));
-    const missingGold = missingPremium * server.gcPorMoeda;
+    const goal = GoalService.calculateMoneyGoal(
+      { server },
+      "premium",
+      cost,
+      Number(ownedPremium) || 0,
+      product.name
+    );
 
     return {
       product,
       cost,
       currencyName: server.moeda,
       ownedPremium: Number(ownedPremium) || 0,
-      missingPremium,
-      missingGold,
-      missingBrlVenda: ReinaEconomyService.premiumToBrl(server, missingPremium, "venda"),
-      missingBrlCompra: ReinaEconomyService.premiumToBrl(server, missingPremium, "compra")
+      missingPremium: goal.missingPremium,
+      missingGold: goal.missingGold,
+      missingBrlVenda: goal.missingBrlVenda,
+      missingBrlCompra: goal.missingBrlCompra
     };
   }
 

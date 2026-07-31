@@ -1,6 +1,7 @@
 import { StorageService } from "@/services/storage-service";
 import { ReinaActiveContextService } from "@/source/web/src/reina-core/active-context";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
+import { GoalService } from "@/source/web/src/features/goals/services";
 import type { VaultServer } from "@/types/vault";
 import type { LiveBestiarySlot, LiveGoal, LiveGoalCalculation, LiveGoalCurrency, LiveGoalTheme, LiveGoalType } from "../types/live-goal.types";
 
@@ -162,7 +163,7 @@ export class LiveGoalService {
     const total = Math.max(0, normalizedGoal.total);
     const current = Math.max(0, normalizedGoal.current);
     const missing = Math.max(0, total - current);
-    const progressPct = total > 0 ? clamp((current / total) * 100, 0, 100) : 0;
+    const progressPct = GoalService.progressPercent(current, total);
     const goldPerUnit = getGoldPerUnit(normalizedGoal.currency, server);
 
     return {
@@ -298,40 +299,27 @@ function parseBoolean(value: string | null, fallback: boolean) {
   return value === "true" || value === "1" || value === "yes";
 }
 
-function clamp(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, value));
-}
-
 function getCreatureCalculation(goal: LiveGoal) {
   if (!goal.showCreatureGoal || goal.bestiarySlots?.length) return null;
-  const total = Math.max(0, Number(goal.creatureTotal) || 0);
-  const current = Math.max(0, Number(goal.creatureCurrent) || 0);
-  const missing = Math.max(0, total - current);
-  return {
-    name: goal.creatureName,
-    imageUrl: goal.creatureImageUrl,
-    total,
-    current,
-    missing,
-    progressPct: total > 0 ? clamp((current / total) * 100, 0, 100) : 0
-  };
+  return toLiveCreatureGoal(GoalService.calculateKillGoal(goal.creatureName, goal.creatureTotal, goal.creatureCurrent, goal.creatureImageUrl));
 }
 
 function getBestiaryCalculations(goal: LiveGoal) {
   if (!goal.showCreatureGoal) return [];
   return normalizeBestiarySlots(goal).slots.map((slot) => {
-    const total = Math.max(0, Number(slot.total) || 0);
-    const current = Math.max(0, Number(slot.current) || 0);
-    const missing = Math.max(0, total - current);
-    return {
-      name: slot.name,
-      imageUrl: slot.imageUrl ?? "",
-      total,
-      current,
-      missing,
-      progressPct: total > 0 ? clamp((current / total) * 100, 0, 100) : 0
-    };
+    return toLiveCreatureGoal(GoalService.calculateKillGoal(slot.name, slot.total, slot.current, slot.imageUrl));
   });
+}
+
+function toLiveCreatureGoal(goal: ReturnType<typeof GoalService.calculateKillGoal>) {
+  return {
+    name: goal.name,
+    imageUrl: goal.imagePath ?? "",
+    total: goal.total,
+    current: goal.current,
+    missing: goal.missing,
+    progressPct: goal.progressPct
+  };
 }
 
 function normalizeBestiarySlots(goal: LiveGoal) {

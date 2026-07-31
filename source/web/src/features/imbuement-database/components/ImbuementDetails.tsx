@@ -6,8 +6,9 @@ import { EmptyState } from "@/components/EmptyState";
 import { integer, money, moneySmart } from "@/services/format";
 import { MISSING_CREATURE_IMAGE, MISSING_ITEM_IMAGE } from "@/source/web/src/reina-core/assets";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
-import { ItemPriceMemoryService, type ItemPriceMemorySuggestion } from "@/source/web/src/reina-core/prices";
+import type { ItemPriceMemorySuggestion } from "@/source/web/src/reina-core/prices";
 import type { VaultServer } from "@/types/vault";
+import { ImbuementInsightService } from "../services/imbuement-insight-service";
 import { ImbuementMarketService, type ImbuementMarketPriceMap, type ImbuementMarketSnapshot } from "../services/imbuement-market-service";
 import type { ImbuementRecord } from "../types";
 
@@ -19,58 +20,25 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
   useEffect(() => {
     const activeServer = ReinaEconomyService.getActiveContext().server;
     setServer(activeServer);
-    setMarketPrices(mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(activeServer), imbuement, activeServer));
+    setMarketPrices(ImbuementInsightService.mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(activeServer), imbuement, activeServer));
     setSnapshots(ImbuementMarketService.loadSnapshots());
 
     function syncQuote() {
       const nextServer = ReinaEconomyService.getActiveContext().server;
       setServer(nextServer);
-      setMarketPrices(mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(nextServer), imbuement, nextServer));
+      setMarketPrices(ImbuementInsightService.mergeSavedMaterialPrices(ImbuementMarketService.loadPrices(nextServer), imbuement, nextServer));
     }
 
     return ReinaEconomyService.subscribe(syncQuote);
   }, [imbuement]);
 
   const economySummary = useMemo(() => {
-    if (!imbuement) {
-      return {
-        marketPricedCount: 0,
-        marketTotal: null as number | null,
-        npcPricedCount: 0,
-        npcReferenceTotal: null as number | null,
-        missingMarketCount: 0,
-        premium: 0,
-        brl: 0,
-        farmableCount: 0,
-        buyableCount: 0,
-        missingDataCount: 0
-      };
-    }
-
-    const marketSummary = ImbuementMarketService.summarizeImbuement(imbuement, marketPrices, server);
-    const npcPricedValues = imbuement.materials
-      .map((material) => material.totalNpcValue)
-      .filter((value): value is number => value !== null);
-    const npcReferenceTotal = npcPricedValues.length === imbuement.materials.length ? npcPricedValues.reduce((sum, value) => sum + value, 0) : null;
-    const materialInsights = imbuement.materials.map((material) => getMaterialInsight(material, marketPrices[ImbuementMarketService.getMaterialPriceKey(material)]));
-
-    return {
-      marketPricedCount: marketSummary.pricedCount,
-      marketTotal: marketSummary.total,
-      npcPricedCount: npcPricedValues.length,
-      npcReferenceTotal,
-      missingMarketCount: marketSummary.missingCount,
-      premium: marketSummary.premium,
-      brl: marketSummary.brl,
-      farmableCount: materialInsights.filter((insight) => insight.canFarm).length,
-      buyableCount: materialInsights.filter((insight) => insight.hasMarketPrice).length,
-      missingDataCount: materialInsights.filter((insight) => insight.status === "missing-data").length
-    };
+    return ImbuementInsightService.summarizeWorkflow(imbuement, marketPrices, server);
   }, [imbuement, marketPrices, server]);
 
   const priceSuggestions = useMemo(() => {
     if (!imbuement) return {};
-    return getMaterialPriceSuggestions(imbuement, server);
+    return ImbuementInsightService.getMaterialPriceSuggestions(imbuement, server);
   }, [imbuement, server]);
 
   if (!imbuement) {
@@ -92,7 +60,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
       delete next[key];
     } else {
       next[key] = numericValue;
-      rememberMaterialPrice(material, numericValue, server, "input");
+      ImbuementInsightService.rememberMaterialPrice(material, numericValue, server, "input");
     }
     setMarketPrices(next);
     ImbuementMarketService.savePrices(server, next);
@@ -107,17 +75,43 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
     ImbuementMarketService.savePrices(server, next);
   }
 
+  function applyPriceSuggestions() {
+    const next = { ...marketPrices };
+    let changed = false;
+
+    for (const material of activeImbuement.materials) {
+      const key = ImbuementMarketService.getMaterialPriceKey(material);
+      const current = next[key];
+      const suggestion = priceSuggestions[key];
+      if (!suggestion || (Number.isFinite(current) && current > 0)) continue;
+      next[key] = suggestion.value;
+      ImbuementInsightService.rememberMaterialPrice(material, suggestion.value, server, "suggestion");
+      changed = true;
+    }
+
+    if (!changed) return;
+    setMarketPrices(next);
+    ImbuementMarketService.savePrices(server, next);
+  }
+
+  function applyMaterialSuggestion(material: ImbuementRecord["materials"][number], key: string, suggestion: ItemPriceMemorySuggestion) {
+    const next = { ...marketPrices, [key]: suggestion.value };
+    setMarketPrices(next);
+    ImbuementInsightService.rememberMaterialPrice(material, suggestion.value, server, "material-suggestion");
+    ImbuementMarketService.savePrices(server, next);
+  }
+
   function saveSnapshot() {
-    if (!server || economySummary.marketTotal === null) return;
-    rememberImbuementMaterialPrices(activeImbuement, marketPrices, server, "snapshot");
+    if (!server || economySummary.total === null) return;
+    ImbuementInsightService.rememberImbuementMaterialPrices(activeImbuement, marketPrices, server, "snapshot");
     const next = ImbuementMarketService.createSnapshot({
       imbuement: activeImbuement,
       server,
       prices: marketPrices,
       summary: {
-        pricedCount: economySummary.marketPricedCount,
-        total: economySummary.marketTotal,
-        missingCount: economySummary.missingMarketCount,
+        pricedCount: economySummary.pricedCount,
+        total: economySummary.total,
+        missingCount: economySummary.missingCount,
         premium: economySummary.premium,
         brl: economySummary.brl
       },
@@ -134,6 +128,11 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
   const visibleSnapshots = snapshots
     .filter((snapshot) => snapshot.imbuementId === activeImbuement.id && snapshot.serverId === (server?.id ?? ""))
     .slice(0, 5);
+  const suggestionCount = activeImbuement.materials.filter((material) => {
+    const key = ImbuementMarketService.getMaterialPriceKey(material);
+    const current = marketPrices[key];
+    return priceSuggestions[key] && (!Number.isFinite(current) || current <= 0);
+  }).length;
 
   return (
     <div>
@@ -148,9 +147,9 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
         <Metric label="Materiais" value={`${imbuement.materialCount}`} />
         <Metric label="Materiais encontrados" value={`${imbuement.matchedMaterialCount}`} />
         <Metric label="Referência NPC" value={economySummary.npcReferenceTotal !== null ? `${integer(economySummary.npcReferenceTotal)} gp` : `${economySummary.npcPricedCount}/${imbuement.materialCount}`} />
-        <Metric label="Custo Market" value={economySummary.marketTotal !== null ? `${integer(economySummary.marketTotal)} gp` : `${economySummary.marketPricedCount}/${imbuement.materialCount}`} />
-        <Metric label={server ? `Em ${server.moeda}` : "Moeda premium"} value={economySummary.marketTotal !== null && server ? moneySmart(economySummary.premium, 8) : "-"} />
-        <Metric label="Equivalência R$" value={economySummary.marketTotal !== null && server ? `R$ ${money(economySummary.brl, 2)}` : "-"} />
+        <Metric label="Custo Market" value={economySummary.total !== null ? `${integer(economySummary.total)} gp` : `${economySummary.pricedCount}/${imbuement.materialCount}`} />
+        <Metric label={server ? `Em ${server.moeda}` : "Moeda premium"} value={economySummary.total !== null && server ? moneySmart(economySummary.premium, 8) : "-"} />
+        <Metric label="Equivalência R$" value={economySummary.total !== null && server ? `R$ ${money(economySummary.brl, 2)}` : "-"} />
         <Metric label="Farmáveis" value={`${economySummary.farmableCount}/${imbuement.materialCount}`} />
         <Metric label="Com preço Market" value={`${economySummary.buyableCount}/${imbuement.materialCount}`} />
       </div>
@@ -158,11 +157,9 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
       <div className="market-card" style={{ marginTop: 18 }}>
         <div className="label">Simulação econômica</div>
         <div className="note" style={{ marginTop: 8 }}>
-          {economySummary.marketTotal !== null && server
+          {economySummary.total !== null && server
             ? `Custo total calculado com preços de Market preenchidos. Cotação ativa: ${ReinaEconomyService.getDisplayName(server)}.`
-            : economySummary.missingMarketCount > 0
-              ? `Preencha ${economySummary.missingMarketCount} preço(s) de Market para calcular custo total, moeda premium e reais.`
-              : "Configure a Cotação Central para converter o custo em moeda premium e reais."}
+            : economySummary.nextAction}
         </div>
         <div className="note" style={{ marginTop: 8 }}>
           Precos salvos para: {server ? ReinaEconomyService.getDisplayName(server) : "perfil geral"}.
@@ -175,9 +172,14 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
       </div>
 
       <div className="quick-row" style={{ marginTop: 18 }}>
-        <button className="quick-btn primary" type="button" onClick={saveSnapshot} disabled={!server || economySummary.marketTotal === null}>
+        <button className="quick-btn primary" type="button" onClick={saveSnapshot} disabled={!server || economySummary.total === null}>
           Salvar snapshot
         </button>
+        {suggestionCount > 0 ? (
+          <button className="quick-btn" type="button" onClick={applyPriceSuggestions}>
+            Aplicar {suggestionCount} sugestao{suggestionCount === 1 ? "" : "es"}
+          </button>
+        ) : null}
         <button className="quick-btn danger" type="button" onClick={clearImbuementPrices}>
           Limpar preços deste imbuement
         </button>
@@ -218,7 +220,7 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
           const priceKey = ImbuementMarketService.getMaterialPriceKey(material);
           const unitMarketPrice = marketPrices[priceKey] ?? "";
           const totalMarketValue = typeof unitMarketPrice === "number" ? unitMarketPrice * material.count : null;
-          const insight = getMaterialInsight(material, unitMarketPrice);
+          const insight = ImbuementInsightService.getMaterialInsight(material, unitMarketPrice);
           const suggestion = priceSuggestions[priceKey];
 
           return (
@@ -271,9 +273,14 @@ export function ImbuementDetails({ imbuement }: { imbuement: ImbuementRecord | n
               {insight.canFarm ? <span className="quick-btn">{material.droppedByCount} fonte{material.droppedByCount === 1 ? "" : "s"} de drop</span> : null}
               {insight.hasMarketPrice ? <span className="quick-btn">Market informado</span> : null}
               {suggestion && !insight.hasMarketPrice ? (
-                <span className="quick-btn" title={`Preço sugerido: ${integer(suggestion.value)} gp via ${suggestion.label}`}>
+                <button
+                  className="quick-btn"
+                  type="button"
+                  onClick={() => applyMaterialSuggestion(material, priceKey, suggestion)}
+                  title={`Preço sugerido: ${integer(suggestion.value)} gp via ${suggestion.label}`}
+                >
                   Sugestão {integer(suggestion.value)} gp
-                </span>
+                </button>
               ) : null}
             </div>
             <DropSources material={material} />
@@ -333,130 +340,4 @@ function Metric({ label, value }: { label: string; value: string }) {
 
 function formatText(value: string) {
   return value.charAt(0).toUpperCase() + value.slice(1);
-}
-
-function getMaterialInsight(material: ImbuementRecord["materials"][number], unitMarketPrice: number | "") {
-  const hasMarketPrice = typeof unitMarketPrice === "number" && Number.isFinite(unitMarketPrice) && unitMarketPrice > 0;
-  const canFarm = material.droppedByCount > 0;
-
-  if (material.dataStatus === "unmatched") {
-    return {
-      status: "missing-data",
-      label: "Revisar item",
-      description: "Material ainda não foi encontrado na base local.",
-      hasMarketPrice,
-      canFarm
-    };
-  }
-
-  if (hasMarketPrice && canFarm) {
-    return {
-      status: "balanced",
-      label: "Comprar ou farmar",
-      description: "Tem preço de Market e fontes de drop locais para comparar.",
-      hasMarketPrice,
-      canFarm
-    };
-  }
-
-  if (hasMarketPrice) {
-    return {
-      status: "market-only",
-      label: "Comprar no Market",
-      description: "Tem preço informado, mas ainda não temos fonte de drop local.",
-      hasMarketPrice,
-      canFarm
-    };
-  }
-
-  if (canFarm) {
-    return {
-      status: "farm-only",
-      label: "Farmar ou precificar",
-      description: "Tem fonte de drop local, mas falta preço de Market.",
-      hasMarketPrice,
-      canFarm
-    };
-  }
-
-  return {
-    status: "needs-price",
-    label: "Sem preço/drop",
-    description: "Falta preço de Market e fonte de drop local.",
-    hasMarketPrice,
-    canFarm
-  };
-}
-
-function mergeSavedMaterialPrices(prices: ImbuementMarketPriceMap, imbuement: ImbuementRecord | null, server: VaultServer | null) {
-  if (!imbuement || !server) return prices;
-
-  let changed = false;
-  const next = { ...prices };
-  for (const material of imbuement.materials) {
-    if (!material.itemId) continue;
-
-    const key = ImbuementMarketService.getMaterialPriceKey(material);
-    const current = next[key];
-    if (Number.isFinite(current) && current > 0) continue;
-
-    const suggestion = ItemPriceMemoryService.getBestPrice(server, material.itemId, { includeNpc: false });
-    if (!suggestion) continue;
-
-    next[key] = suggestion.value;
-    changed = true;
-  }
-
-  if (changed) {
-    ImbuementMarketService.savePrices(server, next);
-  }
-
-  return changed ? next : prices;
-}
-
-function getMaterialPriceSuggestions(imbuement: ImbuementRecord, server: VaultServer | null) {
-  if (!server) return {};
-
-  return imbuement.materials.reduce<Record<string, ItemPriceMemorySuggestion>>((acc, material) => {
-    if (!material.itemId) return acc;
-
-    const suggestion = ItemPriceMemoryService.getBestPrice(server, material.itemId, { includeNpc: false });
-    if (!suggestion) return acc;
-
-    acc[ImbuementMarketService.getMaterialPriceKey(material)] = suggestion;
-    return acc;
-  }, {});
-}
-
-function rememberImbuementMaterialPrices(
-  imbuement: ImbuementRecord,
-  prices: ImbuementMarketPriceMap,
-  server: VaultServer,
-  context: string
-) {
-  for (const material of imbuement.materials) {
-    const key = ImbuementMarketService.getMaterialPriceKey(material);
-    const price = prices[key];
-    if (Number.isFinite(price) && price > 0) {
-      rememberMaterialPrice(material, price, server, context);
-    }
-  }
-}
-
-function rememberMaterialPrice(
-  material: ImbuementRecord["materials"][number],
-  value: number,
-  server: VaultServer | null,
-  context: string
-) {
-  if (!server || !material.itemId || !Number.isFinite(value) || value <= 0) return;
-
-  ItemPriceMemoryService.rememberPrice({
-    server,
-    itemId: material.itemId,
-    itemName: material.resolvedName || material.itemName,
-    source: "imbuement-market",
-    value,
-    context: `Imbuement Database - ${context}`
-  });
 }

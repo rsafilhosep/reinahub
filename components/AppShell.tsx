@@ -5,10 +5,11 @@ import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ActiveServerBanner } from "./ActiveServerBanner";
 import { BrandMark } from "./BrandMark";
+import { CookieConsent } from "./CookieConsent";
 import { GlobalSupportRail } from "./GlobalSupportRail";
 import { HubNav } from "./HubNav";
 import { ModuleIcon } from "./ModuleIcon";
-import { QuickEconomyConverter } from "./QuickEconomyConverter";
+import { QuickEconomyConverter } from "@/source/web/src/features/quick-tools/components";
 import { ThemeToggle } from "./ThemeProvider";
 import { StorageService } from "@/services/storage-service";
 
@@ -73,6 +74,7 @@ export function AppShell({
         {current !== "cotacao" ? <ActiveServerBanner /> : null}
         {children}
         <GlobalSupportRail />
+        <CookieConsent />
         <footer className="app-footer">
           <span>Valores ilustrativos. Confirme as cotações atuais antes de negociar.</span>
           <Link href="/disclaimer">Isenção de responsabilidade</Link>

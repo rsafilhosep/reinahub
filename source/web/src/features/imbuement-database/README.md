@@ -50,14 +50,19 @@ A simulacao economica usa esses precos locais de Market para calcular:
 
 Tambem e possivel salvar snapshots locais do custo total por imbuement e servidor. Esses snapshots ficam no `localStorage` e servem para comparar variacao de preco entre revisoes manuais.
 
+Quando ja existir preco lembrado por Stash, Market Analyzer, Hunt Analyzer ou outro ponto do ReinaHub, a tela de imbuement pode sugerir esse valor e aplicar em lote ou por material. Isso reduz retrabalho e ajuda todas as ferramentas a convergirem para a mesma base de preco local.
+
 ## Servicos compartilhados
 
 A feature possui dois servicos principais:
 
 - `ImbuementDatabaseService`: server-side, consulta receitas, materiais, itens relacionados e relacao item -> imbuements.
 - `ImbuementMarketService`: client-side, centraliza localStorage, chaves de preco por servidor, snapshots e calculos de custo Market.
+- `ImbuementInsightService`: client-side, centraliza sugestoes de preco, leitura comprar/farmar/revisar, resumo de fluxo e memoria de precos por material.
 
 Paginas como `/imbuements` e `/hunt` devem consumir `ImbuementMarketService` para ler os mesmos precos e evitar duplicacao de regra entre telas.
+
+O `ImbuementInsightService` deve ser importado pelo arquivo especifico, e nao pelo barrel `services/index.ts`, porque ele e client-side enquanto `ImbuementDatabaseService` e server-only.
 
 O preco NPC aparece como referencia da base local. Para materiais de imbuement, ele nao deve ser tratado automaticamente como custo real de compra, porque muitos materiais sao negociados por Market ou farmados.
 

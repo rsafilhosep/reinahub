@@ -1,6 +1,6 @@
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import { StorageService } from "@/services/storage-service";
-import experienceTable from "../generated/experience-table.json";
+import { CharacterProgressService } from "./character-progress-service";
 import type { CharacterExperienceInfo, CharacterPlatform, CharacterProfile, CharacterVocation } from "../types/character-profile.types";
 
 export const CHARACTERS_KEY = "reinahub_character_profiles";
@@ -117,26 +117,7 @@ export class CharacterProfileService {
   }
 
   static getExperienceInfo(character: CharacterProfile): CharacterExperienceInfo {
-    const level = Math.max(1, Math.trunc(Number(character.level) || 1));
-    const targetLevel = Math.max(level + 1, Math.trunc(Number(character.targetLevel) || level + 1));
-    const currentLevelExperience = getExperienceForLevel(level);
-    const nextLevelExperience = getExperienceForLevel(level + 1);
-    const targetLevelExperience = getExperienceForLevel(targetLevel);
-    const currentExperience = Math.max(Number(character.experience) || 0, currentLevelExperience);
-    const span = Math.max(1, nextLevelExperience - currentLevelExperience);
-    const gainedInLevel = Math.max(0, currentExperience - currentLevelExperience);
-
-    return {
-      level,
-      targetLevel,
-      currentExperience,
-      currentLevelExperience,
-      nextLevelExperience,
-      missingToNextLevel: Math.max(0, nextLevelExperience - currentExperience),
-      targetLevelExperience,
-      missingToTargetLevel: Math.max(0, targetLevelExperience - currentExperience),
-      levelProgressPct: Math.min(100, Math.max(0, (gainedInLevel / span) * 100))
-    };
+    return CharacterProgressService.getExperienceInfo(character);
   }
 
   static getCharacterLookupUrl(character: CharacterProfile) {
@@ -170,10 +151,7 @@ export class CharacterProfileService {
 }
 
 export function getExperienceForLevel(level: number) {
-  const safeLevel = Math.max(1, Math.trunc(Number(level) || 1));
-  const row = experienceTable.levels.find((entry) => entry.level === safeLevel);
-  if (row) return row.experience;
-  return Math.floor((50 * safeLevel ** 3 - 150 * safeLevel ** 2 + 400 * safeLevel) / 3);
+  return CharacterProgressService.getExperienceForLevel(level);
 }
 
 function normalizeCharacter(character: CharacterProfile): CharacterProfile {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:48:30.249Z",
+  "generatedAt": "2026-07-24T16:53:21.691Z",
   "repository": "files_repository",
   "safety": "Active high risk items exclude manually allowlisted false positives. No Lua files are executed.",
   "allowlistFile": "source\\web\\src\\reina-core\\repository\\lua-risk-allowlist.json",

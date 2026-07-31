@@ -5,8 +5,9 @@ const rootDir = process.cwd();
 const dataSourcesDir = path.join(rootDir, "source", "web", "src", "reina-core", "data-sources");
 const manifestPath = path.join(dataSourcesDir, "source-manifest.json");
 const generatedDir = path.join(dataSourcesDir, "generated");
+const readonly = process.env.REINAHUB_VERIFY_READONLY === "1";
 
-await fs.mkdir(generatedDir, { recursive: true });
+if (!readonly) await fs.mkdir(generatedDir, { recursive: true });
 
 const manifest = JSON.parse(await fs.readFile(manifestPath, "utf8"));
 const generatedAt = new Date().toISOString();
@@ -37,7 +38,10 @@ const report = {
   note: "Data sources are references for controlled import. They must not be required by app pages at runtime."
 };
 
-await fs.writeFile(path.join(generatedDir, "data-sources-report.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+if (!readonly) {
+  await fs.writeFile(path.join(generatedDir, "data-sources-report.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
+}
 
 console.log("Data sources verification complete");
+if (readonly) console.log("Readonly mode: data sources report was not rewritten.");
 console.log(report);

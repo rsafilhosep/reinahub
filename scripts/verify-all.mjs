@@ -25,6 +25,10 @@ for (const [name, scriptName] of checks) {
 
   const result = spawnSync(process.execPath, [npmCli, "run", scriptName], {
     cwd: process.cwd(),
+    env: {
+      ...process.env,
+      REINAHUB_VERIFY_READONLY: "1"
+    },
     stdio: "inherit"
   });
 

@@ -6,6 +6,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../.
 const generatedRoot = path.join(root, "source", "web", "src", "reina-core", "database", "generated");
 const publicAssetsRoot = path.join(root, "public", "assets");
 const reportRoot = path.join(root, "source", "web", "src", "reina-core", "assets", "generated");
+const readonly = process.env.REINAHUB_VERIFY_READONLY === "1";
 
 const items = readJson(path.join(generatedRoot, "items.json"));
 const supplementalItems = readJson(path.join(generatedRoot, "supplemental-items.json"), []);
@@ -66,11 +67,14 @@ const missingAssets = {
   monsters: missingMonsters.map(({ name, normalizedName, expectedPath }) => ({ name, normalizedName, expectedPath }))
 };
 
-mkdirSync(reportRoot, { recursive: true });
-writeJson(path.join(reportRoot, "assets-report.json"), report);
-writeJson(path.join(reportRoot, "missing-assets.json"), missingAssets);
+if (!readonly) {
+  mkdirSync(reportRoot, { recursive: true });
+  writeJson(path.join(reportRoot, "assets-report.json"), report);
+  writeJson(path.join(reportRoot, "missing-assets.json"), missingAssets);
+}
 
 console.log("Assets verification complete");
+if (readonly) console.log("Readonly mode: generated asset reports were not rewritten.");
 console.log(report.totals);
 
 function readJson(filePath, fallback = null) {
