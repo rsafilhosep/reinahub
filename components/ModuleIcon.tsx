@@ -16,28 +16,28 @@ import {
   Trophy
 } from "lucide-react";
 import type { ElementType } from "react";
-import { getItemImagePath, getMonsterImagePath } from "@/source/web/src/reina-core/assets";
+const iconAsset = (name: string) => `/visual/nav-icons/${name}.png`;
 
 const moduleVisuals: Record<string, { icon: ElementType; sprite?: string; tone?: "gold" | "teal" | "red" }> = {
-  cotacao: { icon: Coins, sprite: getItemImagePath(3031), tone: "gold" },
-  rc: { icon: Gem, sprite: getItemImagePath(3035), tone: "gold" },
-  market: { icon: BarChart3, sprite: getItemImagePath(3031), tone: "teal" },
-  hunt: { icon: Swords, sprite: getMonsterImagePath("Dragon"), tone: "red" },
-  stash: { icon: PackageOpen, sprite: getItemImagePath(3031), tone: "gold" },
-  "premium-goals": { icon: Crown, sprite: getItemImagePath(3035), tone: "gold" },
-  "live-goal": { icon: Trophy, sprite: getItemImagePath(3035), tone: "teal" },
-  characters: { icon: UserRound, sprite: getItemImagePath(3577), tone: "gold" },
-  assets: { icon: Boxes, tone: "teal" },
-  loot: { icon: PackageSearch, sprite: getItemImagePath(3003), tone: "gold" },
-  imbuement: { icon: ScrollText, sprite: getItemImagePath(3003), tone: "teal" },
-  legal: { icon: ScrollText, tone: "gold" },
-  monsters: { icon: Castle, sprite: getMonsterImagePath("Demon"), tone: "red" },
-  items: { icon: Archive, sprite: getItemImagePath(3003), tone: "gold" },
-  equipment: { icon: Swords, sprite: getItemImagePath(3271), tone: "gold" },
-  npcs: { icon: Shield, tone: "teal" },
-  bosses: { icon: Crown, sprite: getMonsterImagePath("Demon"), tone: "red" },
-  updates: { icon: Newspaper, tone: "gold" },
-  home: { icon: Castle, tone: "gold" }
+  cotacao: { icon: Coins, sprite: iconAsset("cotacao"), tone: "gold" },
+  rc: { icon: Gem, sprite: iconAsset("rc"), tone: "gold" },
+  market: { icon: BarChart3, sprite: iconAsset("market"), tone: "teal" },
+  hunt: { icon: Swords, sprite: iconAsset("hunt"), tone: "red" },
+  stash: { icon: PackageOpen, sprite: iconAsset("stash"), tone: "gold" },
+  "premium-goals": { icon: Crown, sprite: iconAsset("premium-goals"), tone: "gold" },
+  "live-goal": { icon: Trophy, sprite: iconAsset("live-goal"), tone: "teal" },
+  characters: { icon: UserRound, sprite: iconAsset("characters"), tone: "gold" },
+  assets: { icon: Boxes, sprite: iconAsset("assets"), tone: "teal" },
+  loot: { icon: PackageSearch, sprite: iconAsset("loot"), tone: "gold" },
+  imbuement: { icon: ScrollText, sprite: iconAsset("imbuement"), tone: "teal" },
+  legal: { icon: ScrollText, sprite: iconAsset("legal"), tone: "gold" },
+  monsters: { icon: Castle, sprite: iconAsset("monsters"), tone: "red" },
+  items: { icon: Archive, sprite: iconAsset("items"), tone: "gold" },
+  equipment: { icon: Swords, sprite: iconAsset("equipment"), tone: "gold" },
+  npcs: { icon: Shield, sprite: iconAsset("npcs"), tone: "teal" },
+  bosses: { icon: Crown, sprite: iconAsset("bosses"), tone: "red" },
+  updates: { icon: Newspaper, sprite: iconAsset("updates"), tone: "gold" },
+  home: { icon: Castle, sprite: iconAsset("home"), tone: "gold" }
 };
 
 export function ModuleIcon({

@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 import { ActiveServerBanner } from "./ActiveServerBanner";
 import { BrandMark } from "./BrandMark";
 import { CookieConsent } from "./CookieConsent";
+import { DashboardProfile } from "./DashboardProfile";
 import { GlobalSupportRail } from "./GlobalSupportRail";
+import { FirstRunOnboarding } from "./FirstRunOnboarding";
 import { HubNav } from "./HubNav";
 import { ModuleIcon } from "./ModuleIcon";
 import { QuickEconomyConverter } from "@/source/web/src/features/quick-tools/components";
@@ -47,8 +49,9 @@ export function AppShell({
         onToggleCollapsed={toggleSidebar}
       />
       <main className="wrap app-content" data-page={current}>
+        <FirstRunOnboarding />
         <header className="topbar">
-          <div className="brand">
+          {current === "home" ? <DashboardProfile /> : <div className="brand">
             <button
               aria-label="Abrir navegação"
               className="mobile-nav-toggle"
@@ -65,15 +68,17 @@ export function AppShell({
                 <p>{subtitle}</p>
               </div>
             </div>
-          </div>
+          </div>}
           <div className="topbar-actions">
             <QuickEconomyConverter />
             <ThemeToggle />
           </div>
         </header>
         {current !== "cotacao" ? <ActiveServerBanner /> : null}
-        {children}
-        <GlobalSupportRail />
+        <div className="dashboard-layout">
+          <div className="dashboard-main">{children}</div>
+          <GlobalSupportRail />
+        </div>
         <CookieConsent />
         <footer className="app-footer">
           <span>Valores ilustrativos. Confirme as cotações atuais antes de negociar.</span>

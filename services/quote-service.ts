@@ -6,16 +6,16 @@ export const ACTIVE_SERVER_KEY = "vot_active_server";
 export const QUOTE_HISTORY_KEY = "vot_quote_history";
 
 export const defaultServer: VaultServer = {
-  id: "srv_global",
-  nome: "Yubra",
+  id: "srv_example",
+  nome: "Mundo de exemplo",
   plataforma: "Tibia Global",
-  mundo: "Yubra",
+  mundo: "Mundo de exemplo",
   tipo: "global",
   moeda: "Tibia Coin",
   lote: 25,
-  gcPorMoeda: 80000,
-  loteVenda: 1.75,
-  loteCompra: 2.33
+  gcPorMoeda: 40000,
+  loteVenda: 0,
+  loteCompra: 0
 };
 
 export function loadServers() {

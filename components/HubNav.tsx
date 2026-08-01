@@ -155,7 +155,7 @@ function SidebarItem({
   const label = item.key === "cotacao" && economy?.worldName ? `${item.label} - ${economy.worldName}` : item.label;
   const content = (
     <>
-      <ModuleIcon moduleKey={item.key} size={24} showSprite={false} />
+      <ModuleIcon moduleKey={item.key} size={30} showSprite />
       <span className="sidebar-item-label">{label}</span>
     </>
   );

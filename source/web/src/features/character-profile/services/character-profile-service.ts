@@ -9,9 +9,9 @@ export const ACTIVE_CHARACTER_KEY = "reinahub_active_character";
 const defaultCharacter: CharacterProfile = {
   id: "character-default",
   profileId: "",
-  name: "Reina Kinaity",
+  name: "Aventureiro",
   platform: "Tibia Global",
-  world: "Yubra",
+  world: "Mundo de exemplo",
   linkedServerId: "",
   vocation: "Elite Knight",
   level: 1,

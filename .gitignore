@@ -5,3 +5,6 @@ tmp/
 
 # Reference-only source dumps. Do not commit or execute.
 files_repository/
+
+.vercel
+.env*
