@@ -10,7 +10,7 @@ import type { CharacterPlatform } from "@/source/web/src/features/character-prof
 import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-service";
 import type { ServerKind, VaultServer } from "@/types/vault";
 
-const ONBOARDING_KEY = "reinahub_first_run_v4";
+const ONBOARDING_KEY = "reinahub_first_run_v5";
 
 type GameChoice = "Tibia Global" | "RubinOT" | "Outro servidor";
 
@@ -39,6 +39,12 @@ export function FirstRunOnboarding() {
 
   useEffect(() => {
     setOpen(!StorageService.getString(ONBOARDING_KEY, ""));
+    const reopen = () => {
+      setStep(1);
+      setOpen(true);
+    };
+    window.addEventListener("reinahub:open-onboarding", reopen);
+    return () => window.removeEventListener("reinahub:open-onboarding", reopen);
   }, []);
 
   const selectedGame = useMemo(() => games.find((item) => item.value === game) ?? games[0], [game]);
@@ -65,6 +71,11 @@ export function FirstRunOnboarding() {
   function finish() {
     const timestamp = Date.now();
     const serverId = `srv-welcome-${timestamp}`;
+    const baseLot = Math.max(1, Number(lotSize) || 1);
+    const sellerMinimumQuantity = Math.max(1, Number(sellerMinimum) || baseLot);
+    const buyerMinimumQuantity = Math.max(1, Number(buyerMinimum) || baseLot);
+    const sellerBaseLotPrice = (Number(sellerPrice) / sellerMinimumQuantity) * baseLot;
+    const buyerBaseLotPrice = (Number(buyerPrice) / buyerMinimumQuantity) * baseLot;
     const server: VaultServer = {
       id: serverId,
       nome: world.trim(),
@@ -72,10 +83,10 @@ export function FirstRunOnboarding() {
       mundo: world.trim(),
       tipo: selectedGame.kind,
       moeda: currency.trim(),
-      lote: Math.max(1, Number(lotSize) || 1),
+      lote: baseLot,
       gcPorMoeda: Math.max(0, Number(goldPerCoin) || 0),
-      loteVenda: Number(buyerPrice),
-      loteCompra: Number(sellerPrice)
+      loteVenda: buyerBaseLotPrice,
+      loteCompra: sellerBaseLotPrice
     };
 
     saveServers([server]);
@@ -91,10 +102,10 @@ export function FirstRunOnboarding() {
       linkedServerId: serverId
     });
     if (sameCompany) {
-      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: Number(sellerPrice), minimumPlayerSellQuantity: Number(buyerMinimum), minimumPlayerBuyQuantity: Number(sellerMinimum), note: "Empresa informada no primeiro acesso: compra e vende moeda premium." }, `price-welcome-both-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: buyerBaseLotPrice, loteCompra: sellerBaseLotPrice, minimumPlayerSellQuantity: buyerMinimumQuantity, minimumPlayerBuyQuantity: sellerMinimumQuantity, note: "Empresa informada no primeiro acesso: compra e vende moeda premium." }, `price-welcome-both-${timestamp}`);
     } else {
-      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: 0, loteCompra: Number(sellerPrice), minimumPlayerSellQuantity: 0, minimumPlayerBuyQuantity: Number(sellerMinimum), note: "Empresa informada no primeiro acesso: vende moeda premium ao jogador." }, `price-welcome-seller-${timestamp}`);
-      ManualPriceSourceService.save({ serverId, label: buyerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: 0, minimumPlayerSellQuantity: Number(buyerMinimum), minimumPlayerBuyQuantity: 0, note: "Empresa informada no primeiro acesso: compra moeda premium do jogador." }, `price-welcome-buyer-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: 0, loteCompra: sellerBaseLotPrice, minimumPlayerSellQuantity: 0, minimumPlayerBuyQuantity: sellerMinimumQuantity, note: "Empresa informada no primeiro acesso: vende moeda premium ao jogador." }, `price-welcome-seller-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: buyerCompany, kind: "reseller", url: "", loteVenda: buyerBaseLotPrice, loteCompra: 0, minimumPlayerSellQuantity: buyerMinimumQuantity, minimumPlayerBuyQuantity: 0, note: "Empresa informada no primeiro acesso: compra moeda premium do jogador." }, `price-welcome-buyer-${timestamp}`);
     }
     StorageService.setString(ONBOARDING_KEY, "completed");
     window.dispatchEvent(new Event("reinahub:quote-change"));
@@ -172,12 +183,12 @@ export function FirstRunOnboarding() {
                 <strong>Empresa que vende para o jogador</strong>
                 <div className="welcome-company-grid">
                   <label className="field"><span>Empresa / site</span><input value={sellerCompany} onChange={(event) => setSellerCompany(event.target.value)} placeholder="Nome do vendedor" /></label>
-                  <label className="field"><span>Preço de venda do lote</span><input type="number" min="0" step="0.000001" value={sellerPrice} onChange={(event) => setSellerPrice(event.target.value)} placeholder="R$" /></label>
+                  <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={sellerPrice} onChange={(event) => setSellerPrice(event.target.value)} placeholder="R$" /></label>
                   <label className="field"><span>Mínimo que vende</span><input inputMode="numeric" value={sellerMinimum} onChange={(event) => setSellerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                 </div>
                 {sameCompany ? (
                   <div className="welcome-field-grid welcome-same-price">
-                    <label className="field"><span>Preço que paga pelo lote</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                    <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
                     <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                   </div>
                 ) : null}
@@ -187,11 +198,15 @@ export function FirstRunOnboarding() {
                   <strong>Empresa que compra do jogador</strong>
                   <div className="welcome-company-grid">
                     <label className="field"><span>Empresa / site</span><input value={buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" /></label>
-                    <label className="field"><span>Preço de compra do lote</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                    <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
                     <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                   </div>
                 </div>
               ) : null}
+              <div className="welcome-quote-preview">
+                <span>Empresa vende: {formatQuotePreview(sellerPrice, sellerMinimum, lotSize)}</span>
+                <span>Empresa compra: {formatQuotePreview(buyerPrice, buyerMinimum, lotSize)}</span>
+              </div>
             </div>
           ) : null}
 
@@ -212,4 +227,17 @@ export function FirstRunOnboarding() {
 function mapCharacterPlatform(game: GameChoice): CharacterPlatform {
   if (game === "Tibia Global" || game === "RubinOT") return game;
   return "OTServer";
+}
+
+function formatQuotePreview(total: string, minimum: string, baseLot: string) {
+  const totalValue = Number(total) || 0;
+  const minimumValue = Number(minimum) || 0;
+  const baseLotValue = Number(baseLot) || 0;
+  if (!totalValue || !minimumValue || !baseLotValue) return "preencha preço e mínimo";
+  const normalized = (totalValue / minimumValue) * baseLotValue;
+  return `${minimumValue} moedas por ${formatBrl(totalValue)} → lote-base ${baseLotValue} = ${formatBrl(normalized)}`;
+}
+
+function formatBrl(value: number) {
+  return new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL", minimumFractionDigits: 2, maximumFractionDigits: 4 }).format(value);
 }

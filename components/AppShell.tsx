@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Menu } from "lucide-react";
+import { Menu, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import { ActiveServerBanner } from "./ActiveServerBanner";
 import { BrandMark } from "./BrandMark";
@@ -70,6 +70,10 @@ export function AppShell({
             </div>
           </div>}
           <div className="topbar-actions">
+            <button className="quick-converter-trigger onboarding-trigger" type="button" onClick={() => window.dispatchEvent(new Event("reinahub:open-onboarding"))}>
+              <Sparkles size={15} />
+              <span>Assistente</span>
+            </button>
             <QuickEconomyConverter />
             <ThemeToggle />
           </div>

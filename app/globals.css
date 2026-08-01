@@ -3819,6 +3819,8 @@ footer {
 .welcome-company-grid .field > span { align-items: flex-end; display: flex; line-height: 1.18; padding-bottom: 5px; }
 .welcome-company-grid .field > input { height: 42px; min-width: 0; width: 100%; }
 .welcome-same-price { margin-top: 2px !important; }
+.welcome-quote-preview { background: rgba(31, 159, 141, 0.08); border: 1px solid rgba(53, 201, 178, 0.2); border-radius: 7px; color: var(--teal-glow); display: grid; font-family: var(--font-mono); font-size: 10px; gap: 4px; line-height: 1.35; padding: 8px 10px; }
+.onboarding-trigger svg { color: var(--gold); }
 .welcome-actions { display: flex; gap: 9px; justify-content: flex-end; margin-top: 28px; }
 .welcome-actions .quick-btn:first-child { margin-right: auto; }
 .welcome-actions .quick-btn { align-items: center; display: inline-flex; gap: 7px; }
