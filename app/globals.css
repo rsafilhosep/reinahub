@@ -3795,7 +3795,7 @@ footer {
 }
 
 .welcome-skip-icon { align-items: center; background: transparent; border: 1px solid var(--line); border-radius: 8px; color: var(--ink-faint); cursor: pointer; display: flex; height: 32px; justify-content: center; position: absolute; right: 22px; top: 22px; width: 32px; }
-.welcome-progress { display: grid; gap: 7px; grid-template-columns: repeat(3, 34px); margin-bottom: 28px; }
+.welcome-progress { display: grid; gap: 7px; grid-template-columns: repeat(4, 34px); margin-bottom: 28px; }
 .welcome-progress span { background: var(--line); border-radius: 99px; height: 3px; }
 .welcome-progress span.active { background: linear-gradient(90deg, var(--gold), var(--teal-glow)); }
 .welcome-step { display: grid; gap: 14px; margin: auto 0; }
@@ -3806,6 +3806,15 @@ footer {
 .welcome-input { align-items: center; background: var(--bg-deep); border: 1px solid var(--line); border-radius: 7px; color: var(--gold); display: grid; grid-template-columns: 20px 1fr; padding-left: 12px; }
 .welcome-input input { background: transparent; border: 0; }
 .welcome-ready { align-items: flex-start; background: rgba(31, 159, 141, 0.09); border: 1px solid rgba(53, 201, 178, 0.22); border-radius: 7px; color: var(--teal-glow); display: flex; font-size: 12px; gap: 8px; line-height: 1.45; padding: 12px; }
+.welcome-step-quotes { gap: 10px; }
+.welcome-step-quotes > p { margin-bottom: 2px; }
+.welcome-lot-grid { align-items: end; }
+.welcome-check { align-items: center; color: var(--ink-dim); cursor: pointer; display: flex; font-size: 12px; gap: 9px; min-height: 42px; }
+.welcome-check input { accent-color: var(--teal-glow); height: 16px; width: 16px; }
+.welcome-company-card { background: rgba(255, 255, 255, 0.025); border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 10px; padding: 12px; }
+.welcome-company-card > strong { color: var(--gold); font-family: var(--font-display); font-size: 13px; }
+.welcome-company-card .field { margin: 0; }
+.welcome-same-price { margin-top: 2px !important; }
 .welcome-actions { display: flex; gap: 9px; justify-content: flex-end; margin-top: 28px; }
 .welcome-actions .quick-btn:first-child { margin-right: auto; }
 .welcome-actions .quick-btn { align-items: center; display: inline-flex; gap: 7px; }

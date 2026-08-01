@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowRight, Check, Coins, Compass, Sparkles, UserRound, X } from "lucide-react";
+import { ArrowRight, Building2, Check, Coins, Compass, Sparkles, UserRound, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { ManualPriceSourceService } from "@/services/manual-price-source-service";
 import { saveServers, setActiveServerId } from "@/services/quote-service";
 import { StorageService } from "@/services/storage-service";
 import { CharacterProfileService } from "@/source/web/src/features/character-profile/services/character-profile-service";
@@ -9,7 +10,7 @@ import type { CharacterPlatform } from "@/source/web/src/features/character-prof
 import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-service";
 import type { ServerKind, VaultServer } from "@/types/vault";
 
-const ONBOARDING_KEY = "reinahub_first_run_v1";
+const ONBOARDING_KEY = "reinahub_first_run_v2";
 
 type GameChoice = "Tibia Global" | "RubinOT" | "Outro servidor";
 
@@ -27,18 +28,31 @@ export function FirstRunOnboarding() {
   const [world, setWorld] = useState("");
   const [currency, setCurrency] = useState("Tibia Coin");
   const [goldPerCoin, setGoldPerCoin] = useState("40000");
+  const [lotSize, setLotSize] = useState("25");
+  const [sameCompany, setSameCompany] = useState(false);
+  const [sellerCompany, setSellerCompany] = useState("");
+  const [sellerPrice, setSellerPrice] = useState("");
+  const [buyerCompany, setBuyerCompany] = useState("");
+  const [buyerPrice, setBuyerPrice] = useState("");
 
   useEffect(() => {
     setOpen(!StorageService.getString(ONBOARDING_KEY, ""));
   }, []);
 
   const selectedGame = useMemo(() => games.find((item) => item.value === game) ?? games[0], [game]);
-  const canContinue = step === 1 ? Boolean(name.trim()) : step === 2 ? Boolean(world.trim() && currency.trim()) : Number(goldPerCoin) > 0;
+  const canContinue = step === 1
+    ? Boolean(name.trim())
+    : step === 2
+      ? Boolean(world.trim() && currency.trim())
+      : step === 3
+        ? Number(goldPerCoin) > 0
+        : Boolean(Number(lotSize) > 0 && sellerCompany.trim() && Number(sellerPrice) > 0 && Number(buyerPrice) > 0 && (sameCompany || buyerCompany.trim()));
 
   function chooseGame(next: GameChoice) {
     const choice = games.find((item) => item.value === next) ?? games[0];
     setGame(next);
     setCurrency(choice.currency);
+    setSameCompany(next === "RubinOT");
   }
 
   function skip() {
@@ -56,10 +70,10 @@ export function FirstRunOnboarding() {
       mundo: world.trim(),
       tipo: selectedGame.kind,
       moeda: currency.trim(),
-      lote: 1,
+      lote: Math.max(1, Number(lotSize) || 1),
       gcPorMoeda: Math.max(0, Number(goldPerCoin) || 0),
-      loteVenda: 0,
-      loteCompra: 0
+      loteVenda: Number(buyerPrice),
+      loteCompra: Number(sellerPrice)
     };
 
     saveServers([server]);
@@ -74,6 +88,12 @@ export function FirstRunOnboarding() {
       world: world.trim(),
       linkedServerId: serverId
     });
+    if (sameCompany) {
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: Number(sellerPrice), note: "Empresa informada no primeiro acesso: compra e vende moeda premium." }, `price-welcome-both-${timestamp}`);
+    } else {
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: 0, loteCompra: Number(sellerPrice), note: "Empresa informada no primeiro acesso: vende moeda premium ao jogador." }, `price-welcome-seller-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: buyerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: 0, note: "Empresa informada no primeiro acesso: compra moeda premium do jogador." }, `price-welcome-buyer-${timestamp}`);
+    }
     StorageService.setString(ONBOARDING_KEY, "completed");
     window.dispatchEvent(new Event("reinahub:quote-change"));
     setOpen(false);
@@ -94,10 +114,10 @@ export function FirstRunOnboarding() {
 
         <div className="welcome-content">
           <button className="welcome-skip-icon" type="button" onClick={skip} aria-label="Explorar sem configurar"><X size={17} /></button>
-          <div className="welcome-progress" aria-label={`Etapa ${step} de 3`}>
-            {[1, 2, 3].map((item) => <span className={item <= step ? "active" : ""} key={item} />)}
+          <div className="welcome-progress" aria-label={`Etapa ${step} de 4`}>
+            {[1, 2, 3, 4].map((item) => <span className={item <= step ? "active" : ""} key={item} />)}
           </div>
-          <div className="eyebrow">Primeiros passos · {step}/3</div>
+          <div className="eyebrow">Primeiros passos · {step}/4</div>
 
           {step === 1 ? (
             <div className="welcome-step">
@@ -137,11 +157,40 @@ export function FirstRunOnboarding() {
             </div>
           ) : null}
 
+          {step === 4 ? (
+            <div className="welcome-step welcome-step-quotes">
+              <Building2 size={28} />
+              <h2 id="welcome-title">Quem compra e vende?</h2>
+              <p>Cadastre os revendedores e os preços em reais para um lote de {currency || "moeda premium"}.</p>
+              <div className="welcome-field-grid welcome-lot-grid">
+                <label className="field"><span>Quantidade no lote</span><input inputMode="numeric" value={lotSize} onChange={(event) => setLotSize(event.target.value.replace(/[^0-9]/g, ""))} /></label>
+                <label className="welcome-check"><input type="checkbox" checked={sameCompany} onChange={(event) => setSameCompany(event.target.checked)} /><span>A mesma empresa compra e vende</span></label>
+              </div>
+              <div className="welcome-company-card">
+                <strong>Empresa que vende para o jogador</strong>
+                <div className="welcome-field-grid">
+                  <label className="field"><span>Empresa / site</span><input value={sellerCompany} onChange={(event) => setSellerCompany(event.target.value)} placeholder="Nome do vendedor" /></label>
+                  <label className="field"><span>Preço de venda do lote</span><input type="number" min="0" step="0.000001" value={sellerPrice} onChange={(event) => setSellerPrice(event.target.value)} placeholder="R$" /></label>
+                </div>
+                {sameCompany ? <label className="field welcome-same-price"><span>Preço que a empresa paga pelo lote do jogador</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label> : null}
+              </div>
+              {!sameCompany ? (
+                <div className="welcome-company-card">
+                  <strong>Empresa que compra do jogador</strong>
+                  <div className="welcome-field-grid">
+                    <label className="field"><span>Empresa / site</span><input value={buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" /></label>
+                    <label className="field"><span>Preço de compra do lote</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
+
           <div className="welcome-actions">
             <button className="quick-btn" type="button" onClick={skip}>Explorar sem configurar</button>
             {step > 1 ? <button className="quick-btn" type="button" onClick={() => setStep(step - 1)}>Voltar</button> : null}
-            <button className="quick-btn primary" type="button" disabled={!canContinue} onClick={() => step < 3 ? setStep(step + 1) : finish()}>
-              {step < 3 ? <>Continuar <ArrowRight size={16} /></> : <>Entrar no ReinaHub <Check size={16} /></>}
+            <button className="quick-btn primary" type="button" disabled={!canContinue} onClick={() => step < 4 ? setStep(step + 1) : finish()}>
+              {step < 4 ? <>Continuar <ArrowRight size={16} /></> : <>Entrar no ReinaHub <Check size={16} /></>}
             </button>
           </div>
           <small className="welcome-privacy">Seus dados ficam somente neste navegador.</small>
