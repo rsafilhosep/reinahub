@@ -12,6 +12,8 @@ export type ManualPriceSource = {
   url?: string;
   loteVenda: number;
   loteCompra: number;
+  minimumPlayerSellQuantity?: number;
+  minimumPlayerBuyQuantity?: number;
   note: string;
   updatedAt: number;
 };
@@ -20,7 +22,7 @@ export type ManualPriceSourceInput = Omit<ManualPriceSource, "id" | "updatedAt">
 
 export class ManualPriceSourceService {
   static load() {
-    return StorageService.get<ManualPriceSource[]>(MANUAL_PRICE_SOURCES_KEY, []);
+    return StorageService.get<ManualPriceSource[]>(MANUAL_PRICE_SOURCES_KEY, []).map(normalizeSource);
   }
 
   static listByServer(serverId: string) {
@@ -38,10 +40,13 @@ export class ManualPriceSourceService {
       url: input.url?.trim() || "",
       loteVenda: Number(input.loteVenda) || 0,
       loteCompra: Number(input.loteCompra) || 0,
+      minimumPlayerSellQuantity: Math.max(0, Number(input.minimumPlayerSellQuantity) || 0),
+      minimumPlayerBuyQuantity: Math.max(0, Number(input.minimumPlayerBuyQuantity) || 0),
       note: input.note?.trim() || "",
       updatedAt: Date.now()
     };
-    const next = editingId ? current.map((item) => (item.id === editingId ? source : item)) : [source, ...current];
+    const exists = Boolean(editingId && current.some((item) => item.id === editingId));
+    const next = exists ? current.map((item) => (item.id === editingId ? source : item)) : [source, ...current];
     StorageService.set(MANUAL_PRICE_SOURCES_KEY, next);
     return next;
   }
@@ -51,4 +56,12 @@ export class ManualPriceSourceService {
     StorageService.set(MANUAL_PRICE_SOURCES_KEY, next);
     return next;
   }
+}
+
+function normalizeSource(source: ManualPriceSource): ManualPriceSource {
+  return {
+    ...source,
+    minimumPlayerSellQuantity: Math.max(0, Number(source.minimumPlayerSellQuantity) || 0),
+    minimumPlayerBuyQuantity: Math.max(0, Number(source.minimumPlayerBuyQuantity) || 0)
+  };
 }

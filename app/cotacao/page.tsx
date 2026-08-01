@@ -62,6 +62,8 @@ const emptyPriceSourceForm: ManualPriceSourceForm = {
   url: "",
   loteVenda: 0,
   loteCompra: 0,
+  minimumPlayerSellQuantity: 25,
+  minimumPlayerBuyQuantity: 25,
   note: ""
 };
 
@@ -252,6 +254,8 @@ export default function CotacaoPage() {
       url: source.url ?? "",
       loteVenda: source.loteVenda,
       loteCompra: source.loteCompra,
+      minimumPlayerSellQuantity: source.minimumPlayerSellQuantity || activeServer?.lote || 25,
+      minimumPlayerBuyQuantity: source.minimumPlayerBuyQuantity || activeServer?.lote || 25,
       note: source.note
     });
   }
@@ -629,6 +633,26 @@ export default function CotacaoPage() {
                       />
                     </div>
                   </Field>
+                  <Field label="Mínimo que a empresa compra">
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      value={priceSourceForm.minimumPlayerSellQuantity ?? activeServer.lote}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, minimumPlayerSellQuantity: Number(event.target.value) })}
+                      placeholder={`${activeServer.lote} moedas`}
+                    />
+                  </Field>
+                  <Field label="Mínimo que a empresa vende">
+                    <input
+                      type="number"
+                      min="1"
+                      step="1"
+                      value={priceSourceForm.minimumPlayerBuyQuantity ?? activeServer.lote}
+                      onChange={(event) => setPriceSourceForm({ ...priceSourceForm, minimumPlayerBuyQuantity: Number(event.target.value) })}
+                      placeholder={`${activeServer.lote} moedas`}
+                    />
+                  </Field>
                   <Field label="Observacao">
                     <input
                       value={priceSourceForm.note}
@@ -653,6 +677,8 @@ export default function CotacaoPage() {
                       <span style={{ display: "inline-flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
                         <span style={{ color: "var(--gold)" }}>Jogador vende R$ {moneySmart(source.loteVenda / activeServer.lote)}</span>
                         <span>Jogador compra {source.loteCompra ? `R$ ${moneySmart(source.loteCompra / activeServer.lote)}` : "-"}</span>
+                        {source.loteVenda ? <span className="status-pill">Empresa compra mín. {source.minimumPlayerSellQuantity || activeServer.lote}: R$ {moneySmart((source.loteVenda / activeServer.lote) * (source.minimumPlayerSellQuantity || activeServer.lote))}</span> : null}
+                        {source.loteCompra ? <span className="status-pill">Empresa vende mín. {source.minimumPlayerBuyQuantity || activeServer.lote}: R$ {moneySmart((source.loteCompra / activeServer.lote) * (source.minimumPlayerBuyQuantity || activeServer.lote))}</span> : null}
                         {source.url ? (
                           <a className="quick-btn" href={source.url} target="_blank" rel="noreferrer">Abrir</a>
                         ) : null}

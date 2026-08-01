@@ -3814,6 +3814,7 @@ footer {
 .welcome-company-card { background: rgba(255, 255, 255, 0.025); border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 10px; padding: 12px; }
 .welcome-company-card > strong { color: var(--gold); font-family: var(--font-display); font-size: 13px; }
 .welcome-company-card .field { margin: 0; }
+.welcome-company-grid { display: grid; gap: 10px; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr) minmax(95px, 0.72fr); }
 .welcome-same-price { margin-top: 2px !important; }
 .welcome-actions { display: flex; gap: 9px; justify-content: flex-end; margin-top: 28px; }
 .welcome-actions .quick-btn:first-child { margin-right: auto; }
@@ -3826,6 +3827,7 @@ footer {
   .welcome-art { display: none; }
   .welcome-content { min-height: 540px; padding: 28px 22px; }
   .welcome-field-grid { grid-template-columns: 1fr; }
+  .welcome-company-grid { grid-template-columns: 1fr; }
   .welcome-actions { flex-wrap: wrap; }
   .welcome-actions .quick-btn:first-child { order: 3; width: 100%; }
 }

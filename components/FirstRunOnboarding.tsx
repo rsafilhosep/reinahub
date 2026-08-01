@@ -10,7 +10,7 @@ import type { CharacterPlatform } from "@/source/web/src/features/character-prof
 import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-service";
 import type { ServerKind, VaultServer } from "@/types/vault";
 
-const ONBOARDING_KEY = "reinahub_first_run_v2";
+const ONBOARDING_KEY = "reinahub_first_run_v4";
 
 type GameChoice = "Tibia Global" | "RubinOT" | "Outro servidor";
 
@@ -32,8 +32,10 @@ export function FirstRunOnboarding() {
   const [sameCompany, setSameCompany] = useState(false);
   const [sellerCompany, setSellerCompany] = useState("");
   const [sellerPrice, setSellerPrice] = useState("");
+  const [sellerMinimum, setSellerMinimum] = useState("25");
   const [buyerCompany, setBuyerCompany] = useState("");
   const [buyerPrice, setBuyerPrice] = useState("");
+  const [buyerMinimum, setBuyerMinimum] = useState("25");
 
   useEffect(() => {
     setOpen(!StorageService.getString(ONBOARDING_KEY, ""));
@@ -46,7 +48,7 @@ export function FirstRunOnboarding() {
       ? Boolean(world.trim() && currency.trim())
       : step === 3
         ? Number(goldPerCoin) > 0
-        : Boolean(Number(lotSize) > 0 && sellerCompany.trim() && Number(sellerPrice) > 0 && Number(buyerPrice) > 0 && (sameCompany || buyerCompany.trim()));
+        : Boolean(Number(lotSize) > 0 && sellerCompany.trim() && Number(sellerPrice) > 0 && Number(sellerMinimum) > 0 && Number(buyerPrice) > 0 && Number(buyerMinimum) > 0 && (sameCompany || buyerCompany.trim()));
 
   function chooseGame(next: GameChoice) {
     const choice = games.find((item) => item.value === next) ?? games[0];
@@ -89,10 +91,10 @@ export function FirstRunOnboarding() {
       linkedServerId: serverId
     });
     if (sameCompany) {
-      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: Number(sellerPrice), note: "Empresa informada no primeiro acesso: compra e vende moeda premium." }, `price-welcome-both-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: Number(sellerPrice), minimumPlayerSellQuantity: Number(buyerMinimum), minimumPlayerBuyQuantity: Number(sellerMinimum), note: "Empresa informada no primeiro acesso: compra e vende moeda premium." }, `price-welcome-both-${timestamp}`);
     } else {
-      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: 0, loteCompra: Number(sellerPrice), note: "Empresa informada no primeiro acesso: vende moeda premium ao jogador." }, `price-welcome-seller-${timestamp}`);
-      ManualPriceSourceService.save({ serverId, label: buyerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: 0, note: "Empresa informada no primeiro acesso: compra moeda premium do jogador." }, `price-welcome-buyer-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: sellerCompany, kind: "reseller", url: "", loteVenda: 0, loteCompra: Number(sellerPrice), minimumPlayerSellQuantity: 0, minimumPlayerBuyQuantity: Number(sellerMinimum), note: "Empresa informada no primeiro acesso: vende moeda premium ao jogador." }, `price-welcome-seller-${timestamp}`);
+      ManualPriceSourceService.save({ serverId, label: buyerCompany, kind: "reseller", url: "", loteVenda: Number(buyerPrice), loteCompra: 0, minimumPlayerSellQuantity: Number(buyerMinimum), minimumPlayerBuyQuantity: 0, note: "Empresa informada no primeiro acesso: compra moeda premium do jogador." }, `price-welcome-buyer-${timestamp}`);
     }
     StorageService.setString(ONBOARDING_KEY, "completed");
     window.dispatchEvent(new Event("reinahub:quote-change"));
@@ -161,25 +163,32 @@ export function FirstRunOnboarding() {
             <div className="welcome-step welcome-step-quotes">
               <Building2 size={28} />
               <h2 id="welcome-title">Quem compra e vende?</h2>
-              <p>Cadastre os revendedores e os preços em reais para um lote de {currency || "moeda premium"}.</p>
+              <p>Informe o preço do lote-base e o mínimo aceito por cada empresa. O padrão é 25 {currency || "moedas premium"}.</p>
               <div className="welcome-field-grid welcome-lot-grid">
-                <label className="field"><span>Quantidade no lote</span><input inputMode="numeric" value={lotSize} onChange={(event) => setLotSize(event.target.value.replace(/[^0-9]/g, ""))} /></label>
+                <label className="field"><span>Quantidade no lote-base</span><input inputMode="numeric" value={lotSize} onChange={(event) => setLotSize(event.target.value.replace(/[^0-9]/g, ""))} /></label>
                 <label className="welcome-check"><input type="checkbox" checked={sameCompany} onChange={(event) => setSameCompany(event.target.checked)} /><span>A mesma empresa compra e vende</span></label>
               </div>
               <div className="welcome-company-card">
                 <strong>Empresa que vende para o jogador</strong>
-                <div className="welcome-field-grid">
+                <div className="welcome-company-grid">
                   <label className="field"><span>Empresa / site</span><input value={sellerCompany} onChange={(event) => setSellerCompany(event.target.value)} placeholder="Nome do vendedor" /></label>
                   <label className="field"><span>Preço de venda do lote</span><input type="number" min="0" step="0.000001" value={sellerPrice} onChange={(event) => setSellerPrice(event.target.value)} placeholder="R$" /></label>
+                  <label className="field"><span>Mínimo que vende</span><input inputMode="numeric" value={sellerMinimum} onChange={(event) => setSellerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                 </div>
-                {sameCompany ? <label className="field welcome-same-price"><span>Preço que a empresa paga pelo lote do jogador</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label> : null}
+                {sameCompany ? (
+                  <div className="welcome-field-grid welcome-same-price">
+                    <label className="field"><span>Preço que paga pelo lote</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                    <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
+                  </div>
+                ) : null}
               </div>
               {!sameCompany ? (
                 <div className="welcome-company-card">
                   <strong>Empresa que compra do jogador</strong>
-                  <div className="welcome-field-grid">
+                  <div className="welcome-company-grid">
                     <label className="field"><span>Empresa / site</span><input value={buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" /></label>
                     <label className="field"><span>Preço de compra do lote</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                    <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                   </div>
                 </div>
               ) : null}
