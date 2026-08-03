@@ -86,6 +86,7 @@ export function AppShell({
         <CookieConsent />
         <footer className="app-footer">
           <span>Valores ilustrativos. Confirme as cotações atuais antes de negociar.</span>
+          <span>Seus perfis e históricos ficam somente no seu navegador; o ReinaHub não recebe esses dados.</span>
           <Link href="/disclaimer">Isenção de responsabilidade</Link>
         </footer>
       </main>

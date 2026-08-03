@@ -14,6 +14,7 @@ import { ItemSearchClientService } from "@/source/web/src/features/item-database
 import type { ItemSearchResult } from "@/source/web/src/features/item-database/types";
 import { MarketEconomyService } from "@/source/web/src/features/market-analyzer/services/market-economy-service";
 import type { MarketAnalysis, VaultServer } from "@/types/vault";
+import { cleanupLegacyHistoriesOnce } from "@/services/release-cleanup-service";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip);
 
@@ -49,6 +50,7 @@ export default function MarketPage() {
   const [priceSuggestion, setPriceSuggestion] = useState<ItemPriceMemorySuggestion | null>(null);
 
   useEffect(() => {
+    cleanupLegacyHistoriesOnce();
     const sync = () => setServer(ReinaEconomyService.getActiveContext().server);
     sync();
     setHistory(MarketEconomyService.loadHistory());

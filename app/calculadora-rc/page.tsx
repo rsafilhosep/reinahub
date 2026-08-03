@@ -8,6 +8,7 @@ import { Field, Panel, ResultSlot } from "@/components/Panel";
 import { Tabs } from "@/components/Tabs";
 import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { StorageService } from "@/services/storage-service";
+import { cleanupLegacyHistoriesOnce } from "@/services/release-cleanup-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
 import { RcCalculatorService } from "@/source/web/src/features/rc-calculator/services/rc-calculator-service";
 import type { QuoteSnapshot, VaultServer } from "@/types/vault";
@@ -27,6 +28,7 @@ export default function CalculadoraRcPage() {
   const [quickConverterValue, setQuickConverterValue] = useState("1000000");
 
   useEffect(() => {
+    cleanupLegacyHistoriesOnce();
     const sync = () => {
       const active = ReinaEconomyService.getActiveContext().server;
       setServer(active);
@@ -78,7 +80,7 @@ export default function CalculadoraRcPage() {
   }
 
   return (
-    <AppShell current="rc" mark="RC" subtitle="Calculadora RC - moeda premium - gold">
+    <AppShell current="rc" mark={currencyShort || "C"} subtitle={`Calculadora ${currencyShort || "de moeda premium"} - gold e reais`}>
       <Tabs
         active={tab}
         onChange={setTab}
@@ -173,7 +175,7 @@ export default function CalculadoraRcPage() {
               <div className="slots">
                 <ResultSlot label="GC" value={`${integer(quickConversion.gold)} GC`} tone="gold" />
                 <ResultSlot label={currencyShort} value={`${moneySmart(quickConversion.premium, 8)} ${currencyShort}`} />
-                <ResultSlot label="Valor em reais" value={<MoneyValue value={quickConversion.brl} />} tone="gold" />
+                <ResultSlot label="Valor em reais" value={<MoneyValue value={quickConversion.brl} maxDecimals={12} />} tone="gold" />
               </div>
               <p className="note">
                 Conversão rápida usando {integer(cotacao)} gold por 1 {currencyShort} e R$ {moneySmart(precoPacote / loteBase)} por {currencyShort}.
@@ -188,9 +190,9 @@ export default function CalculadoraRcPage() {
           <div className="market-grid">
             <div className="market-card"><div className="label">Servidor ativo</div><div className="value gold">{ReinaEconomyService.getDisplayName(server)}</div></div>
             <div className="market-card"><div className="label">Lote base</div><div className="value">{server?.lote ?? 25} {currencyShort}</div></div>
-            <div className="market-card"><div className="label">Preço unitário venda</div><div className="value">R$ {moneySmart((server?.loteVenda ?? precoPacote) / (server?.lote ?? 25))}</div></div>
-            <div className="market-card"><div className="label">Preço unitário compra</div><div className="value red">R$ {moneySmart((server?.loteCompra ?? precoPacote) / (server?.lote ?? 25))}</div></div>
-            <div className="market-card"><div className="label">Spread</div><div className="value gold">R$ {moneySmart(((server?.loteCompra ?? precoPacote) - (server?.loteVenda ?? precoPacote)) / (server?.lote ?? 25))}</div></div>
+            <div className="market-card"><div className="label">Preço unitário venda</div><div className="value">R$ {moneySmart((server?.loteVenda ?? precoPacote) / (server?.lote ?? 25), 12)}</div></div>
+            <div className="market-card"><div className="label">Preço unitário compra</div><div className="value red">R$ {moneySmart((server?.loteCompra ?? precoPacote) / (server?.lote ?? 25), 12)}</div></div>
+            <div className="market-card"><div className="label">Spread</div><div className="value gold">R$ {moneySmart(((server?.loteCompra ?? precoPacote) - (server?.loteVenda ?? precoPacote)) / (server?.lote ?? 25), 12)}</div></div>
           </div>
         </Panel>
       ) : null}
@@ -233,7 +235,7 @@ function HelpLabel({ text, help }: { text: string; help: string }) {
   );
 }
 
-function MoneyValue({ value, maxDecimals = 8 }: { value: number; maxDecimals?: number }) {
+function MoneyValue({ value, maxDecimals = 12 }: { value: number; maxDecimals?: number }) {
   return (
     <span className="inline-money">
       <span>R$</span>

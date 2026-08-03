@@ -790,8 +790,8 @@ function CharacterLookupContent({
       </div>
 
       <div className="character-links">
-        <button className="quick-btn primary" type="button" onClick={onLookupCharacter} disabled={isLookupLoading}>
-          {isLookupLoading ? "Buscando..." : "Buscar online"}
+        <button className="quick-btn primary" type="button" onClick={onLookupCharacter} disabled={isLookupLoading || !["Tibia Global", "RubinOT"].includes(character.platform)}>
+          {isLookupLoading ? "Buscando..." : ["Tibia Global", "RubinOT"].includes(character.platform) ? `Buscar em ${character.platform}` : "Preenchimento manual"}
         </button>
         <button className="quick-btn" type="button" onClick={onUseActiveServer} disabled={!server}>
           Usar servidor ativo
@@ -805,6 +805,7 @@ function CharacterLookupContent({
           <ExternalLink size={15} /> Tabela de experiência
         </a>
       </div>
+      <p className="note">A busca automática está disponível para Tibia Global e RubinOT. Em outros servidores, use o preenchimento manual. O perfil salvo permanece somente neste navegador.</p>
 
       <div className="character-paste-import">
         <Field label="Colar ficha do personagem">

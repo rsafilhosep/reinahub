@@ -1,12 +1,12 @@
 "use client";
 
-import { ArrowRight, Building2, Check, Coins, Compass, Sparkles, UserRound, X } from "lucide-react";
+import { ArrowRight, Building2, Check, Coins, Compass, Search, Sparkles, UserRound, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { ManualPriceSourceService } from "@/services/manual-price-source-service";
 import { saveServers, setActiveServerId } from "@/services/quote-service";
 import { StorageService } from "@/services/storage-service";
 import { CharacterProfileService } from "@/source/web/src/features/character-profile/services/character-profile-service";
-import type { CharacterPlatform } from "@/source/web/src/features/character-profile/types/character-profile.types";
+import type { CharacterLookupResult, CharacterPlatform } from "@/source/web/src/features/character-profile/types/character-profile.types";
 import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-service";
 import type { ServerKind, VaultServer } from "@/types/vault";
 
@@ -36,6 +36,8 @@ export function FirstRunOnboarding() {
   const [buyerCompany, setBuyerCompany] = useState("");
   const [buyerPrice, setBuyerPrice] = useState("");
   const [buyerMinimum, setBuyerMinimum] = useState("25");
+  const [lookupLoading, setLookupLoading] = useState(false);
+  const [lookupMessage, setLookupMessage] = useState("");
 
   useEffect(() => {
     setOpen(!StorageService.getString(ONBOARDING_KEY, ""));
@@ -61,6 +63,32 @@ export function FirstRunOnboarding() {
     setGame(next);
     setCurrency(choice.currency);
     setSameCompany(next === "RubinOT");
+    setLookupMessage("");
+  }
+
+  async function lookupCharacter() {
+    if (!name.trim()) {
+      setLookupMessage("Informe o nome do personagem na primeira etapa.");
+      return;
+    }
+    if (game === "Outro servidor") {
+      setLookupMessage("Para outro servidor, informe o mundo e a moeda manualmente.");
+      return;
+    }
+    setLookupLoading(true);
+    setLookupMessage("");
+    try {
+      const response = await fetch(`/api/characters/lookup?name=${encodeURIComponent(name.trim())}&platform=${encodeURIComponent(mapCharacterPlatform(game))}`);
+      const result = await response.json() as CharacterLookupResult;
+      if (!response.ok || !result.character) throw new Error(result.message || "Personagem não encontrado.");
+      setName(result.character.name || name);
+      setWorld(result.character.world || world);
+      setLookupMessage(`Personagem encontrado${result.character.world ? ` em ${result.character.world}` : ""}.`);
+    } catch (error) {
+      setLookupMessage(error instanceof Error ? error.message : "Não foi possível buscar agora. Você pode continuar manualmente.");
+    } finally {
+      setLookupLoading(false);
+    }
   }
 
   function skip() {
@@ -154,6 +182,12 @@ export function FirstRunOnboarding() {
                 <label className="field"><span>Mundo / servidor</span><input value={world} onChange={(event) => setWorld(event.target.value)} placeholder="Ex.: Yubra, Elysian..." /></label>
                 <label className="field"><span>Moeda premium</span><input value={currency} onChange={(event) => setCurrency(event.target.value)} /></label>
               </div>
+              <div className="welcome-lookup-row">
+                <button className="quick-btn" type="button" onClick={lookupCharacter} disabled={lookupLoading}>
+                  <Search size={15} /> {lookupLoading ? "Buscando..." : game === "Outro servidor" ? "Preencher manualmente" : `Buscar em ${game}`}
+                </button>
+                {lookupMessage ? <span className="welcome-lookup-message">{lookupMessage}</span> : null}
+              </div>
             </div>
           ) : null}
 
@@ -186,23 +220,16 @@ export function FirstRunOnboarding() {
                   <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={sellerPrice} onChange={(event) => setSellerPrice(event.target.value)} placeholder="R$" /></label>
                   <label className="field"><span>Mínimo que vende</span><input inputMode="numeric" value={sellerMinimum} onChange={(event) => setSellerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                 </div>
-                {sameCompany ? (
-                  <div className="welcome-field-grid welcome-same-price">
-                    <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
-                    <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
-                  </div>
-                ) : null}
               </div>
-              {!sameCompany ? (
-                <div className="welcome-company-card">
-                  <strong>Empresa que compra do jogador</strong>
-                  <div className="welcome-company-grid">
-                    <label className="field"><span>Empresa / site</span><input value={buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" /></label>
-                    <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
-                    <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
-                  </div>
+              <div className="welcome-company-card">
+                <strong>Empresa que compra do jogador</strong>
+                <div className="welcome-company-grid">
+                  <label className="field"><span>Empresa / site</span><input value={sameCompany ? sellerCompany : buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" disabled={sameCompany} /></label>
+                  <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
+                  <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                 </div>
-              ) : null}
+                {sameCompany ? <span className="welcome-same-company-note">Mesmo revendedor informado acima; preços e mínimos continuam independentes.</span> : null}
+              </div>
               <div className="welcome-quote-preview">
                 <span>Empresa vende: {formatQuotePreview(sellerPrice, sellerMinimum, lotSize)}</span>
                 <span>Empresa compra: {formatQuotePreview(buyerPrice, buyerMinimum, lotSize)}</span>

@@ -171,7 +171,7 @@ function IntegerInput({ value, onChange }: { value: number; onChange: (value: nu
   return (
     <input
       inputMode="numeric"
-      value={value > 0 ? integer(value) : ""}
+      value={integer(value)}
       onChange={(event) => onChange(parseIntegerInput(event.target.value))}
     />
   );

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { BrandMark } from "./BrandMark";
 import { ModuleIcon } from "./ModuleIcon";
 import { ReinaEconomyService, type ReinaEconomyContext } from "@/source/web/src/reina-core/economy";
+import { currencyShortName } from "@/services/format";
 
 type NavItem = {
   key: string;
@@ -20,7 +21,7 @@ const navigationSections: Array<{ title: string; items: NavItem[] }> = [
       { key: "home", label: "Dashboard", href: "/" },
       { key: "updates", label: "Atualizações", href: "/updates" },
       { key: "cotacao", label: "Cotação Central", href: "/cotacao" },
-      { key: "rc", label: "Calculadora RC", href: "/calculadora-rc" },
+      { key: "rc", label: "Calculadora", href: "/calculadora-rc" },
       { key: "market", label: "Market Analyzer", href: "/market" },
       { key: "hunt", label: "Hunt Analyzer", href: "/hunt" },
       { key: "stash", label: "Stash", href: "/stash" },
@@ -152,7 +153,11 @@ function SidebarItem({
   item: NavItem;
   onNavigate: () => void;
 }) {
-  const label = item.key === "cotacao" && economy?.worldName ? `${item.label} - ${economy.worldName}` : item.label;
+  const label = item.key === "cotacao" && economy?.worldName
+    ? `${item.label} - ${economy.worldName}`
+    : item.key === "rc"
+      ? `Calculadora${economy?.currencyName ? ` ${currencyShortName(economy.currencyName) || economy.currencyName}` : ""}`
+      : item.label;
   const content = (
     <>
       <ModuleIcon moduleKey={item.key} size={30} showSprite />

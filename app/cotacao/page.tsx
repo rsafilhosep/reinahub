@@ -10,7 +10,7 @@ import { Tabs } from "@/components/Tabs";
 import { currencyShortName, integer, money, moneySmart } from "@/services/format";
 import { ManualPriceSourceService, type ManualPriceSource, type ManualPriceSourceInput } from "@/services/manual-price-source-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
-import type { ExternalQuoteReadResult } from "@/source/web/src/reina-core/external-quotes/external-quote-source.types";
+import { cleanupLegacyHistoriesOnce } from "@/services/release-cleanup-service";
 import worldCatalog from "@/source/web/src/reina-core/worlds/generated/world-catalog.json";
 import {
   QUOTE_HISTORY_KEY,
@@ -67,24 +67,6 @@ const emptyPriceSourceForm: ManualPriceSourceForm = {
   note: ""
 };
 
-const externalPriceSourceReferences = [
-  {
-    label: "TibiaPay",
-    url: "https://tibiapay.com.br/",
-    note: "Referencia externa para compra/venda de moedas premium."
-  },
-  {
-    label: "Coins4Gamers - Tibia Coins",
-    url: "https://coins4gamers.com.br/tibia/tibia-coins",
-    note: "Referencia externa para Tibia Coins."
-  },
-  {
-    label: "Coins4Gamers - Rubini Coins",
-    url: "https://coins4gamers.com.br/rubinot/rubinot-coins",
-    note: "Referencia externa para Rubini Coins."
-  }
-];
-
 export default function CotacaoPage() {
   const [tab, setTab] = useState("servidores");
   const [servers, setServers] = useState<VaultServer[]>([]);
@@ -96,13 +78,11 @@ export default function CotacaoPage() {
   const [priceSources, setPriceSources] = useState<ManualPriceSource[]>([]);
   const [priceSourceForm, setPriceSourceForm] = useState<ManualPriceSourceForm>(emptyPriceSourceForm);
   const [editingPriceSourceId, setEditingPriceSourceId] = useState<string | null>(null);
-  const [externalQuoteResults, setExternalQuoteResults] = useState<ExternalQuoteReadResult[]>([]);
-  const [externalQuoteLoading, setExternalQuoteLoading] = useState(false);
-  const [externalQuoteMessage, setExternalQuoteMessage] = useState("");
   const [gold, setGold] = useState(100000);
   const [history, setHistory] = useState<QuoteSnapshot[]>([]);
 
   useEffect(() => {
+    cleanupLegacyHistoriesOnce();
     const loaded = loadServers();
     setServers(loaded);
     setActiveId(getActiveServerId() || loaded[0]?.id || "");
@@ -279,34 +259,6 @@ export default function CotacaoPage() {
     };
     const next = servers.map((server) => (server.id === activeServer.id ? nextServer : server));
     persist(next);
-  }
-
-  async function checkExternalQuoteSources() {
-    setExternalQuoteLoading(true);
-    setExternalQuoteMessage("");
-    try {
-      const response = await fetch("/api/external-quotes", { cache: "no-store" });
-      const payload = await response.json();
-      setExternalQuoteResults(Array.isArray(payload.results) ? payload.results : []);
-      setExternalQuoteMessage("Fontes verificadas. Revise os valores antes de salvar.");
-    } catch {
-      setExternalQuoteMessage("Nao foi possivel verificar as fontes externas agora.");
-    } finally {
-      setExternalQuoteLoading(false);
-    }
-  }
-
-  function fillPriceSourceFromExternalResult(result: ExternalQuoteReadResult) {
-    if (!activeServer) return;
-    const lotRatio = activeServer.lote / (result.lotSize || activeServer.lote || 25);
-    setPriceSourceForm({
-      label: result.label,
-      kind: result.kind === "official" ? "official" : "reseller",
-      url: result.url,
-      loteVenda: result.playerSellLotPrice ? Number((result.playerSellLotPrice * lotRatio).toFixed(6)) : priceSourceForm.loteVenda,
-      loteCompra: result.playerBuyLotPrice ? Number((result.playerBuyLotPrice * lotRatio).toFixed(6)) : priceSourceForm.loteCompra,
-      note: `Candidato externo (${result.confidence}). Revisado em ${new Date(result.fetchedAt).toLocaleString("pt-BR")}.`
-    });
   }
 
   function snapshot() {
@@ -520,7 +472,7 @@ export default function CotacaoPage() {
 
           <CollapsiblePanel
             title="Fontes de cotação"
-            eyebrow="oficial - revendedor - manual"
+            eyebrow="fontes cadastradas pelo usuário"
             summary={
               activeServer
                 ? `${activePriceSources.length} fonte(s) salvas para ${getServerDisplayName(activeServer)}. Use para comparar jogador compra e jogador vende.`
@@ -532,57 +484,9 @@ export default function CotacaoPage() {
             </p>
             {activeServer ? (
               <>
-                <div className="history-list" style={{ marginBottom: 16 }}>
-                  {externalPriceSourceReferences.map((source) => (
-                    <div className="history-item" key={source.url}>
-                      <span>
-                        {source.label}
-                        <span className="note" style={{ marginLeft: 10 }}>{source.note}</span>
-                      </span>
-                      <a className="quick-btn" href={source.url} target="_blank" rel="noreferrer">
-                        Abrir site
-                      </a>
-                    </div>
-                  ))}
-                </div>
-                <div className="quick-row" style={{ marginBottom: 16 }}>
-                  <button className="quick-btn primary" type="button" onClick={checkExternalQuoteSources} disabled={externalQuoteLoading}>
-                    {externalQuoteLoading ? "Verificando..." : "Verificar fontes externas"}
-                  </button>
-                  <span className="note">A leitura externa apenas sugere valores. Nada e salvo ou aplicado automaticamente.</span>
-                </div>
-                {externalQuoteMessage ? <p className="note" style={{ marginTop: -6 }}>{externalQuoteMessage}</p> : null}
-                {externalQuoteResults.length ? (
-                  <div className="history-list" style={{ marginBottom: 18 }}>
-                    {externalQuoteResults.map((result) => {
-                      const hasCandidate = result.playerSellLotPrice !== null || result.playerBuyLotPrice !== null;
-                      return (
-                        <div className="history-item external-quote-result" key={result.sourceId}>
-                          <span>
-                            {result.label}
-                            <span className="note" style={{ marginLeft: 10 }}>
-                              {getExternalQuoteStatusLabel(result.status)} - confianca {result.confidence}
-                            </span>
-                            <span className="note external-quote-snippet">{result.message}</span>
-                            {result.snippets[0] ? <span className="note external-quote-snippet">Trecho: {result.snippets[0]}</span> : null}
-                          </span>
-                          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
-                            <span style={{ color: "var(--gold)" }}>
-                              Vende {result.playerSellLotPrice !== null ? `R$ ${moneySmart(result.playerSellLotPrice / result.lotSize)}/${currencyShortName(result.currency) || result.currency}` : "-"}
-                            </span>
-                            <span>
-                              Compra {result.playerBuyLotPrice !== null ? `R$ ${moneySmart(result.playerBuyLotPrice / result.lotSize)}/${currencyShortName(result.currency) || result.currency}` : "-"}
-                            </span>
-                            {hasCandidate ? (
-                              <button className="quick-btn" type="button" onClick={() => fillPriceSourceFromExternalResult(result)}>Usar no formulario</button>
-                            ) : null}
-                            <a className="quick-btn" href={result.url} target="_blank" rel="noreferrer">Abrir</a>
-                          </span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                ) : null}
+                <p className="privacy-inline-note">
+                  Apenas fontes cadastradas por você aparecem aqui. O ReinaHub não recomenda empresas, não recebe seus dados e não aplica preços automaticamente.
+                </p>
                 <div className="inputs-grid">
                   <Field label="Nome da fonte">
                     <input
@@ -785,14 +689,6 @@ function getPriceSourceKindLabel(kind: ManualPriceSource["kind"]) {
   if (kind === "official") return "oficial";
   if (kind === "reseller") return "revendedor";
   return "manual";
-}
-
-function getExternalQuoteStatusLabel(status: ExternalQuoteReadResult["status"]) {
-  if (status === "ok") return "ok";
-  if (status === "needs-review") return "revisar";
-  if (status === "manual-required") return "manual";
-  if (status === "blocked") return "bloqueada";
-  return "erro";
 }
 
 function parseIntegerInput(value: string) {
