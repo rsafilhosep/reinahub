@@ -49,6 +49,7 @@ const navigationSections: Array<{ title: string; items: NavItem[] }> = [
   {
     title: "Sistema",
     items: [
+      { key: "settings", label: "Configurações e dados", href: "/configuracoes" },
       { key: "assets", label: "Assets Manager", href: "/assets" },
       { key: "legal", label: "Isenção", href: "/disclaimer" }
     ]
