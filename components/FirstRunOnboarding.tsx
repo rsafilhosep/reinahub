@@ -153,7 +153,7 @@ export function FirstRunOnboarding() {
           </div>
         </div>
 
-        <div className="welcome-content">
+        <div className={`welcome-content${step === 4 ? " welcome-content-quotes" : ""}`}>
           <button className="welcome-skip-icon" type="button" onClick={skip} aria-label="Explorar sem configurar"><X size={17} /></button>
           <div className="welcome-progress" aria-label={`Etapa ${step} de 4`}>
             {[1, 2, 3, 4].map((item) => <span className={item <= step ? "active" : ""} key={item} />)}
@@ -222,13 +222,13 @@ export function FirstRunOnboarding() {
                 </div>
               </div>
               <div className="welcome-company-card">
-                <strong>Empresa que compra do jogador</strong>
+                <strong>{sameCompany ? "A mesma empresa também compra do jogador" : "Empresa que compra do jogador"}</strong>
                 <div className="welcome-company-grid">
-                  <label className="field"><span>Empresa / site</span><input value={sameCompany ? sellerCompany : buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder="Nome do comprador" disabled={sameCompany} /></label>
+                  <label className="field"><span>{sameCompany ? "Empresa / site compartilhado" : "Empresa / site"}</span><input value={sameCompany ? sellerCompany || "Preencha o nome acima" : buyerCompany} onChange={(event) => setBuyerCompany(event.target.value)} placeholder={sameCompany ? "Mesmo vendedor informado acima" : "Nome do comprador"} disabled={sameCompany} /></label>
                   <label className="field"><span>Preço total do mínimo</span><input type="number" min="0" step="0.000001" value={buyerPrice} onChange={(event) => setBuyerPrice(event.target.value)} placeholder="R$" /></label>
                   <label className="field"><span>Mínimo que compra</span><input inputMode="numeric" value={buyerMinimum} onChange={(event) => setBuyerMinimum(event.target.value.replace(/[^0-9]/g, ""))} placeholder="25" /></label>
                 </div>
-                {sameCompany ? <span className="welcome-same-company-note">Mesmo revendedor informado acima; preços e mínimos continuam independentes.</span> : null}
+                {sameCompany ? <span className="welcome-same-company-note">O nome vem automaticamente do cadastro acima. Informe aqui somente o preço e o mínimo de compra.</span> : null}
               </div>
               <div className="welcome-quote-preview">
                 <span>Empresa vende: {formatQuotePreview(sellerPrice, sellerMinimum, lotSize)}</span>
