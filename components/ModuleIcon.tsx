@@ -9,6 +9,7 @@ import {
   PackageSearch,
   PackageOpen,
   Newspaper,
+  ListChecks,
   UserRound,
   ScrollText,
   Settings,
@@ -38,6 +39,7 @@ const moduleVisuals: Record<string, { icon: ElementType; sprite?: string; tone?:
   npcs: { icon: Shield, sprite: iconAsset("npcs"), tone: "teal" },
   bosses: { icon: Crown, sprite: iconAsset("bosses"), tone: "red" },
   updates: { icon: Newspaper, sprite: iconAsset("updates"), tone: "gold" },
+  "closed-test": { icon: ListChecks, tone: "teal" },
   settings: { icon: Settings, tone: "teal" },
   home: { icon: Castle, sprite: iconAsset("home"), tone: "gold" }
 };

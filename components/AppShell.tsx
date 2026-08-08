@@ -9,6 +9,7 @@ import { CookieConsent } from "./CookieConsent";
 import { DashboardProfile } from "./DashboardProfile";
 import { GlobalSupportRail } from "./GlobalSupportRail";
 import { FirstRunOnboarding } from "./FirstRunOnboarding";
+import { FeedbackDialog } from "./FeedbackDialog";
 import { HubNav } from "./HubNav";
 import { ModuleIcon } from "./ModuleIcon";
 import { QuickEconomyConverter } from "@/source/web/src/features/quick-tools/components";
@@ -70,6 +71,7 @@ export function AppShell({
             </div>
           </div>}
           <div className="topbar-actions">
+            <FeedbackDialog />
             <button className="quick-converter-trigger onboarding-trigger" type="button" onClick={() => window.dispatchEvent(new Event("reinahub:open-onboarding"))}>
               <Sparkles size={15} />
               <span>Assistente</span>
