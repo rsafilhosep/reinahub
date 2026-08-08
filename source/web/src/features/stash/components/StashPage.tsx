@@ -1,6 +1,6 @@
 "use client";
 
-import { Pencil, Plus, Trash2 } from "lucide-react";
+import { Check, FileImage, LoaderCircle, Pencil, Plus, ScanText, Trash2, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { CollapsiblePanel } from "@/components/CollapsiblePanel";
@@ -19,6 +19,7 @@ import { ProfileService } from "@/source/web/src/reina-core/profiles/profile-ser
 import { ItemSearchClientService } from "../../item-database/services/item-search-client-service";
 import type { ItemSearchResult } from "../../item-database/types";
 import { StashService } from "../services/stash-service";
+import { StashPrintDetectorService } from "../services/stash-print-detector-service";
 import type { StashItem, StashSortDirection, StashSortKey } from "../types";
 
 const SORT_OPTIONS: Array<{ key: StashSortKey; label: string }> = [
@@ -31,6 +32,15 @@ const SORT_OPTIONS: Array<{ key: StashSortKey; label: string }> = [
   { key: "unitBrl", label: "R$ unitario" },
   { key: "totalBrl", label: "R$ total" }
 ];
+
+type PrintCandidate = {
+  id: string;
+  raw: string;
+  query: string;
+  quantity: number;
+  match: ItemSearchResult | null;
+  selected: boolean;
+};
 
 export function StashPage() {
   const [server, setServer] = useState<VaultServer | null>(null);
@@ -50,6 +60,12 @@ export function StashPage() {
   const [compareServerId, setCompareServerId] = useState("");
   const [error, setError] = useState("");
   const [priceSuggestion, setPriceSuggestion] = useState<ItemPriceMemorySuggestion | null>(null);
+  const [printPreviewUrl, setPrintPreviewUrl] = useState("");
+  const [printFile, setPrintFile] = useState<File | null>(null);
+  const [printCandidates, setPrintCandidates] = useState<PrintCandidate[]>([]);
+  const [printProgress, setPrintProgress] = useState(0);
+  const [printStatus, setPrintStatus] = useState("");
+  const [isDetectingPrint, setIsDetectingPrint] = useState(false);
 
   useEffect(() => {
     const sync = () => {
@@ -88,6 +104,10 @@ export function StashPage() {
       controller.abort();
     };
   }, [query]);
+
+  useEffect(() => () => {
+    if (printPreviewUrl) URL.revokeObjectURL(printPreviewUrl);
+  }, [printPreviewUrl]);
 
   const totals = useMemo(() => StashService.summarize(items, server), [items, server]);
   const compareServer = useMemo(
@@ -181,6 +201,61 @@ export function StashPage() {
     setItems([]);
   }
 
+  function choosePrint(file: File | null) {
+    if (printPreviewUrl) URL.revokeObjectURL(printPreviewUrl);
+    setPrintFile(file);
+    setPrintPreviewUrl(file ? URL.createObjectURL(file) : "");
+    setPrintCandidates([]);
+    setPrintProgress(0);
+    setPrintStatus(file ? "Print pronto para analisar." : "");
+  }
+
+  async function detectPrintItems() {
+    if (!printFile) return;
+    setIsDetectingPrint(true);
+    setError("");
+    setPrintCandidates([]);
+    try {
+      const text = await StashPrintDetectorService.readText(printFile, (progress, status) => {
+        setPrintProgress(progress);
+        setPrintStatus(status);
+      });
+      const lines = StashPrintDetectorService.parseLines(text);
+      setPrintStatus("Comparando nomes com a base local...");
+      const detected: PrintCandidate[] = [];
+      for (const line of lines) {
+        const matches = await ItemSearchClientService.searchItems({ query: line.query });
+        const match = chooseBestPrintMatch(line.query, matches);
+        detected.push({ ...line, match, selected: Boolean(match) });
+      }
+      setPrintCandidates(detected);
+      setPrintProgress(100);
+      setPrintStatus(detected.length ? `${detected.filter((row) => row.match).length} item(ns) encontrados para revisão.` : "Nenhum nome de item foi reconhecido. Tente um recorte mais nítido.");
+    } catch (nextError) {
+      setError(nextError instanceof Error ? nextError.message : "Não foi possível analisar o print.");
+      setPrintStatus("Falha na leitura. Nenhum dado foi salvo.");
+    } finally {
+      setIsDetectingPrint(false);
+    }
+  }
+
+  function saveDetectedItems() {
+    let next = items;
+    printCandidates.filter((row) => row.selected && row.match).forEach((row) => {
+      const match = row.match!;
+      const suggestion = ItemPriceMemoryService.getBestPrice(server, match.id, { includeNpc: true });
+      const unitGoldPrice = suggestion?.value ?? match.npcPrice ?? 0;
+      const priceSource = suggestion
+        ? suggestion.source === "npc" ? "npc" : "manual"
+        : match.npcPrice ? "npc" : "manual";
+      next = StashService.upsertItem(next, { item: match, quantity: row.quantity, unitGoldPrice, priceSource });
+    });
+    StashService.saveItems(next);
+    setItems(next);
+    setPrintStatus(`${printCandidates.filter((row) => row.selected && row.match).length} item(ns) adicionados ao stash.`);
+    setPrintCandidates([]);
+  }
+
   function openAddItemModal() {
     setEditingStashItem(null);
     setSelectedItem(null);
@@ -260,7 +335,7 @@ export function StashPage() {
         </div>
         <p className="note">
           {server ? `Cotação ativa: ${ReinaEconomyService.getDisplayName(server)}.` : "Configure uma cotação ativa para converter GC em moeda premium e reais."}
-          {" "}A leitura por print/OCR fica preparada para uma etapa futura com revisão manual.
+          {" "}Na Entrada por print, o ReinaHub detecta nomes e quantidades e sempre pede sua revisão antes de adicionar.
         </p>
         <div className="quick-row">
           <button className="quick-btn primary" type="button" onClick={openAddItemModal}>
@@ -482,13 +557,40 @@ export function StashPage() {
 
       <CollapsiblePanel
         title="Entrada por print"
-        eyebrow="preparado para OCR"
-        summary="Espaco reservado para leitura de print com revisao manual antes de salvar."
+        eyebrow="OCR local - revisão obrigatória"
+        summary="Envie um print com nomes e quantidades visíveis. Nada é salvo antes da sua confirmação."
       >
-        <div className="empty-msg">
-          Futuramente esta area vai aceitar print do Stash, detectar itens/quantidades e pedir confirmacao antes de salvar.
-          Por enquanto, o fluxo manual garante dados confiaveis e editaveis.
+        <div className="stash-print-layout">
+          <div className="stash-print-upload">
+            {printPreviewUrl ? <img src={printPreviewUrl} alt="Prévia do print do stash" /> : <FileImage size={42} aria-hidden="true" />}
+            <div>
+              <strong>{printFile?.name || "Selecione um print do Stash"}</strong>
+              <p>PNG, JPG ou WEBP. Para esta primeira versão, os nomes dos itens precisam estar visíveis no print.</p>
+              <div className="quick-row">
+                <label className="quick-btn stash-print-file"><FileImage size={15} /> Escolher print<input type="file" accept="image/png,image/jpeg,image/webp" onChange={(event) => choosePrint(event.target.files?.[0] ?? null)} /></label>
+                <button className="quick-btn primary" type="button" onClick={detectPrintItems} disabled={!printFile || isDetectingPrint}>
+                  {isDetectingPrint ? <LoaderCircle className="spin-icon" size={15} /> : <ScanText size={15} />} {isDetectingPrint ? "Analisando..." : "Detectar itens"}
+                </button>
+              </div>
+            </div>
+          </div>
+          {printStatus ? <div className="stash-print-status"><span>{printStatus}</span><strong>{printProgress}%</strong><div><i style={{ width: `${printProgress}%` }} /></div></div> : null}
         </div>
+        {printCandidates.length ? (
+          <div className="stash-print-review">
+            <div className="stash-print-review-head"><div><strong>Revise antes de adicionar</strong><span>Desmarque resultados incorretos e ajuste as quantidades.</span></div><span>{printCandidates.filter((row) => row.selected && row.match).length} selecionado(s)</span></div>
+            {printCandidates.map((candidate) => (
+              <div className={`stash-print-candidate${candidate.match ? "" : " unmatched"}`} key={candidate.id}>
+                <input type="checkbox" checked={candidate.selected} disabled={!candidate.match} onChange={(event) => setPrintCandidates((current) => current.map((row) => row.id === candidate.id ? { ...row, selected: event.target.checked } : row))} aria-label={`Selecionar ${candidate.match?.name || candidate.query}`} />
+                {candidate.match ? <img src={candidate.match.image.path} alt="" width={34} height={34} /> : <X size={22} />}
+                <div><strong>{candidate.match?.name || "Não reconhecido"}</strong><span>{candidate.match ? `Lido como: ${candidate.raw}` : candidate.raw}</span></div>
+                <label><span>Qtd.</span><input inputMode="numeric" value={candidate.quantity} onChange={(event) => setPrintCandidates((current) => current.map((row) => row.id === candidate.id ? { ...row, quantity: Math.max(1, Number(event.target.value.replace(/\D/g, "")) || 1) } : row))} /></label>
+              </div>
+            ))}
+            <div className="quick-row"><button className="quick-btn primary" type="button" onClick={saveDetectedItems} disabled={!printCandidates.some((row) => row.selected && row.match)}><Check size={15} /> Adicionar selecionados ao stash</button><button className="quick-btn" type="button" onClick={() => setPrintCandidates([])}>Descartar leitura</button></div>
+          </div>
+        ) : null}
+        <p className="note">Privacidade: o OCR roda no seu navegador e a imagem não é armazenada pelo ReinaHub. Prints somente com ícones ainda podem exigir cadastro manual.</p>
       </CollapsiblePanel>
     </>
   );
@@ -625,4 +727,20 @@ function formatSigned(value: number, suffix: string) {
 function formatSignedNumber(value: number) {
   const sign = value > 0 ? "+" : "";
   return `${sign}${moneySmart(value)}`;
+}
+
+function chooseBestPrintMatch(query: string, matches: ItemSearchResult[]) {
+  if (!matches.length) return null;
+  const normalized = normalizePrintName(query);
+  const exact = matches.find((item) => normalizePrintName(item.name) === normalized);
+  if (exact) return exact;
+  const queryWords = normalized.split(" ").filter((word) => word.length > 2);
+  return matches.find((item) => {
+    const itemName = normalizePrintName(item.name);
+    return queryWords.length > 0 && queryWords.every((word) => itemName.includes(word));
+  }) ?? null;
+}
+
+function normalizePrintName(value: string) {
+  return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, " ").replace(/\s+/g, " ").trim();
 }

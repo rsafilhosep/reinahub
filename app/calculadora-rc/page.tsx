@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { AppShell } from "@/components/AppShell";
+import { CollapsiblePanel } from "@/components/CollapsiblePanel";
 import { HelpTip, HelpToggle } from "@/components/Help";
 import { Modal } from "@/components/Modal";
 import { Field, Panel, ResultSlot } from "@/components/Panel";
@@ -10,11 +12,11 @@ import { currencyShortName, integer, moneySmart } from "@/services/format";
 import { StorageService } from "@/services/storage-service";
 import { cleanupLegacyHistoriesOnce } from "@/services/release-cleanup-service";
 import { ReinaEconomyService } from "@/source/web/src/reina-core/economy";
-import { RcCalculatorService } from "@/source/web/src/features/rc-calculator/services/rc-calculator-service";
+import { RcCalculatorService, type RcCalculatorResult } from "@/source/web/src/features/rc-calculator/services/rc-calculator-service";
 import type { QuoteSnapshot, VaultServer } from "@/types/vault";
 
 export default function CalculadoraRcPage() {
-  const [tab, setTab] = useState("calculadora");
+  const [tab, setTab] = useState("patrimonio");
   const [server, setServer] = useState<VaultServer | null>(null);
   const [precoPacote, setPrecoPacote] = useState(2.33);
   const [quantidade, setQuantidade] = useState(25);
@@ -85,9 +87,9 @@ export default function CalculadoraRcPage() {
         active={tab}
         onChange={setTab}
         tabs={[
-          { key: "calculadora", label: "I - Calculadora" },
-          { key: "mercado", label: "II - Mercado" },
-          { key: "patrimonio", label: "III - Patrimônio" }
+          { key: "patrimonio", label: "I - Patrimônio" },
+          { key: "calculadora", label: "II - Calculadora" },
+          { key: "mercado", label: "III - Mercado" }
         ]}
       />
 
@@ -100,7 +102,7 @@ export default function CalculadoraRcPage() {
               </p>
               <HelpToggle />
             </div>
-            <div className="inputs-grid" style={{ alignItems: "end" }}>
+            <div className="inputs-grid calculator-quote-inputs" style={{ alignItems: "end" }}>
               <Field label={<HelpLabel text={`Preço em R$ do lote (${loteBase} ${currencyName})`} help={`Valor em reais do lote inteiro de ${loteBase} ${currencyName}. Ele vem da Cotação Central, mas pode ser ajustado aqui para simular.`} />}>
                 <div className="field-wrap"><span className="field-prefix">R$</span><input className="with-prefix" type="number" step="0.000001" value={precoPacote} onChange={(e) => setPrecoPacote(Number(e.target.value))} /></div>
               </Field>
@@ -109,9 +111,6 @@ export default function CalculadoraRcPage() {
               </Field>
               <Field label={<HelpLabel text={`Gold por 1 ${currencyName}`} help={`Quanto gold custa 1 ${currencyName}. Exemplo: 40000 significa 40.000 gold para comprar 1 ${currencyName}.`} />}>
                 <IntegerInput value={cotacao} onChange={setCotacao} />
-              </Field>
-              <Field label={<HelpLabel text="Gold disponível" help={`Gold coins que você tem disponível. O ReinaHub calcula quantas ${currencyName} isso compra e quanto vale em reais.`} />}>
-                <input inputMode="numeric" value={formatIntegerString(gold)} onChange={(e) => setGold(RcCalculatorService.sanitizeGoldInput(e.target.value))} placeholder="100.000.000" />
               </Field>
             </div>
             <div className="quick-row">
@@ -126,22 +125,27 @@ export default function CalculadoraRcPage() {
               Para {currencyName}, a negociação usa lote base de {loteBase} e seus múltiplos. Se informar outro número, o cálculo usa o múltiplo válido abaixo.
             </p>
           </Panel>
-          <div className="slots">
+          <Panel title="Simulação de compra" eyebrow="quanto você quer comprar">
+            <div className="calculator-result-groups">
+              <div className="slots">
             <ResultSlot label={`${currencyShort} calculadas`} value={`${integer(calc.normalizedQuantidade)} ${currencyShort}`} />
             <ResultSlot label={`Preço de 1 ${currencyShort}`} value={<MoneyValue value={calc.precoMoeda} />} tone="small" />
             <ResultSlot label="Valor total em R$" value={<MoneyValue value={calc.valorTotal} />} tone="gold" />
             <ResultSlot label="Gold necessario" value={`${integer(calc.totalGold)} gold`} />
+              </div>
+            </div>
+          </Panel>
+          <Panel title="Poder de compra do seu gold" eyebrow="gold disponível → moeda e reais">
+            <Field label={<HelpLabel text="Gold disponível" help={`Gold coins que você tem disponível. O ReinaHub calcula quantas ${currencyName} isso compra e quanto vale em reais.`} />}>
+              <input inputMode="numeric" value={formatIntegerString(gold)} onChange={(e) => setGold(RcCalculatorService.sanitizeGoldInput(e.target.value))} placeholder="100.000.000" />
+            </Field>
+            <div className="slots calculator-power-slots">
             <ResultSlot label={<HelpLabel text={`${currencyShort} possíveis (exato)`} help="Resultado fracionado. Ele mostra a conversão matemática exata do seu gold, mesmo que o jogo negocie apenas lotes inteiros." />} value={`${moneySmart(calc.moedasPossiveisExatas, 8)} ${currencyShort}`} />
             <ResultSlot label={`${currencyShort} compraveis em lote`} value={`${integer(calc.rcPossiveis)} ${currencyShort}`} />
             <ResultSlot label="Valor possível em reais" value={<MoneyValue value={calc.valorPossivel} />} tone="gold" />
-            <ResultSlot label="Valor de 1 gold" value={<MoneyValue value={calc.preco1Gc} maxDecimals={10} />} />
-            <ResultSlot label="Valor de 100 gold" value={<MoneyValue value={calc.preco100Gc} maxDecimals={10} />} />
-            <ResultSlot label="Valor de 1K gold" value={<MoneyValue value={calc.preco1K} maxDecimals={10} />} />
-            <ResultSlot label="Valor de 10K gold" value={<MoneyValue value={calc.preco10K} maxDecimals={10} />} />
-            <ResultSlot label="Valor de 100K gold" value={<MoneyValue value={calc.preco100K} maxDecimals={10} />} />
-            <ResultSlot label="Valor de 1KK gold" value={<MoneyValue value={calc.precoKk} maxDecimals={10} />} />
-            <ResultSlot label={<HelpLabel text="Valor de 100KK gold" help="100KK significa 100.000.000 gold coins convertidos para reais pela cotação ativa." />} value={<MoneyValue value={calc.preco100Kk} />} tone="gold" />
-          </div>
+            </div>
+          </Panel>
+          <CollapsibleReferenceValues calc={calc} />
 
           <Modal title="Conversor rápido" eyebrow={server ? ReinaEconomyService.getDisplayName(server) : "cotação manual"} open={quickConverterOpen} onClose={() => setQuickConverterOpen(false)}>
             <div className="converter-overlay-grid">
@@ -199,15 +203,20 @@ export default function CalculadoraRcPage() {
 
       {tab === "patrimonio" ? (
         <>
-          <Panel title="Seu patrimônio no jogo" eyebrow="avaliação em reais">
+          <div className="patrimony-hero">
+            <div><span>Ferramenta de patrimônio</span><h2>Quanto vale seu personagem hoje?</h2><p>Some mochila e banco e converta imediatamente para {currencyShort}, gold e reais.</p></div>
+            <Link className="quick-btn" href="/stash">Somar itens do Stash</Link>
+          </div>
+          <Panel title="Seu patrimônio em gold" eyebrow="mochila + banco">
             <div className="inputs-grid">
               <Field label={<HelpLabel text="Gold na mochila" help="Gold que está carregado no personagem. Soma com o banco para estimar o patrimônio total." />}><input inputMode="numeric" value={formatIntegerString(goldMochila)} onChange={(e) => setGoldMochila(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
               <Field label={<HelpLabel text="Gold no banco" help="Gold guardado no banco. O valor estimado usa o preço de 1 GC calculado pela cotação ativa." />}><input inputMode="numeric" value={formatIntegerString(goldBanco)} onChange={(e) => setGoldBanco(RcCalculatorService.sanitizeGoldInput(e.target.value))} /></Field>
             </div>
           </Panel>
-          <div className="verdict">
-            <div className="label">Valor estimado do personagem</div>
-            <div className="value gold">R$ {moneySmart(calc.patrimonio, 10)}</div>
+          <div className="patrimony-summary-grid">
+            <div className="patrimony-summary-card"><span>Total em gold</span><strong>{integer(RcCalculatorService.parseGoldInput(goldMochila) + RcCalculatorService.parseGoldInput(goldBanco))} GC</strong></div>
+            <div className="patrimony-summary-card"><span>Equivalente em {currencyShort}</span><strong>{moneySmart(ReinaEconomyService.goldToPremium(server, RcCalculatorService.parseGoldInput(goldMochila) + RcCalculatorService.parseGoldInput(goldBanco)), 8)} {currencyShort}</strong></div>
+            <div className="patrimony-summary-card featured"><span>Valor estimado em reais</span><strong>R$ {moneySmart(calc.patrimonio, 10)}</strong></div>
           </div>
           <Panel title="Histórico de cotações" eyebrow="salvo localmente">
             <div className="quick-row" style={{ marginBottom: 16 }}>
@@ -232,6 +241,22 @@ function HelpLabel({ text, help }: { text: string; help: string }) {
       <span>{text}</span>
       <HelpTip text={help} />
     </span>
+  );
+}
+
+function CollapsibleReferenceValues({ calc }: { calc: RcCalculatorResult }) {
+  return (
+    <CollapsiblePanel title="Tabela de referência do gold" eyebrow="1 GC até 100KK" summary="Consulte valores unitários em reais sem misturar com a simulação principal.">
+      <div className="slots">
+        <ResultSlot label="Valor de 1 gold" value={<MoneyValue value={calc.preco1Gc} maxDecimals={10} />} />
+        <ResultSlot label="Valor de 100 gold" value={<MoneyValue value={calc.preco100Gc} maxDecimals={10} />} />
+        <ResultSlot label="Valor de 1K gold" value={<MoneyValue value={calc.preco1K} maxDecimals={10} />} />
+        <ResultSlot label="Valor de 10K gold" value={<MoneyValue value={calc.preco10K} maxDecimals={10} />} />
+        <ResultSlot label="Valor de 100K gold" value={<MoneyValue value={calc.preco100K} maxDecimals={10} />} />
+        <ResultSlot label="Valor de 1KK gold" value={<MoneyValue value={calc.precoKk} maxDecimals={10} />} />
+        <ResultSlot label={<HelpLabel text="Valor de 100KK gold" help="100KK significa 100.000.000 gold coins convertidos para reais pela cotação ativa." />} value={<MoneyValue value={calc.preco100Kk} />} tone="gold" />
+      </div>
+    </CollapsiblePanel>
   );
 }
 
